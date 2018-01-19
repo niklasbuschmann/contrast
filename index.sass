@@ -1,0 +1,86 @@
+---
+---
+
+$margin: {{ site.style.margin }}
+
+html
+  background-color: #222
+
+body
+  background-color: white
+  color: #333
+  display: flex
+  font-size: calc(.6vw + .8em)
+  margin: 0
+  min-height: 100vh
+
+{% if site.style.dark %}
+
+body
+  background: #282828
+  color: white
+
+body > footer:last-of-type
+  background-color: #222
+  color: white
+
+{% else %}
+
+body > footer:last-of-type
+  background-color: #f8f8f8
+  color: #666
+  border-top: 1px solid #f0f0f0
+
+{% endif %}
+
+article, body > header, body > footer
+  padding: 1em calc(#{$margin * 18%} - #{$margin * 3em})
+
+h1, h2, h3, h4, h5, h6
+  font-family: "Gentium Basic"
+  letter-spacing: 2px
+  text-transform: uppercase
+  a
+    line-height: 1.1em
+    font-size: 1.1em
+  header &
+    margin: 0.4em 0
+
+table
+  width: 100%
+
+nav
+  margin: 1em 0
+
+nav li
+  margin-right: 2em
+
+article
+  border-top: 1px solid rgba(148, 148, 148, .08)
+  &:first-of-type
+    border-top: none
+  header
+    text-align: center
+  footer
+    padding: 1.5em 0
+
+body > header
+  background-color: #222
+  color: white
+
+body > footer
+  display: flex
+  justify-content: space-between
+
+.fa
+  margin: 0 0.25em
+
+.paginate
+  color: gray
+  padding: .4em .8em
+
+.archive
+  h3
+    margin-left: 1em
+  h4
+    margin-left: 2.34em

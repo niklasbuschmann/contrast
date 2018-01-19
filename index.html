@@ -1,0 +1,32 @@
+---
+layout: blank
+---
+<main>
+  {% for page in paginator.posts %}
+  <article>
+    <header>
+      <h2>
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </h2>
+      {% if page.author %}<span>{{ page.author }} • </span>{% endif %}
+      {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}
+      {% if page.categories and page.categories != empty %}<span> • {{ page.categories | array_to_sentence_string }}</span>{% endif %}
+    </header>
+    <div>
+{{ page.excerpt }}
+    </div>
+    {% unless page.excerpt == page.content %}
+    <footer>
+      <a class="ghost" href="{{ page.url | prepend: site.baseurl }}">{{ site.more }}</a>
+    </footer>
+    {% endunless %}
+  </article>
+{% endfor %}
+</main>
+{% if paginator.total_pages > 1 %}
+<footer>
+    <a class="{% if paginator.previous_page %} gray {% else %} disabled {% endif %}" {% if paginator.previous_page %} href="{{ paginator.previous_page_path | prepend: site.baseurl }}" {% endif %}>« newer posts</a>
+    <span class="paginate">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <a class="{% if paginator.next_page %} gray {% else %}disabled{% endif %}" {% if paginator.next_page %} href="{{ paginator.next_page_path | prepend: site.baseurl }}" {% endif %}>older posts »</a>
+</footer>
+{% endif %}

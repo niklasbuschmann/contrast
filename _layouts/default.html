@@ -1,0 +1,21 @@
+---
+layout: blank
+---
+<main>
+  <article>
+    <header>
+      <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+      {% if page.author %}<span>{{ page.author }} • </span>{% endif %}{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.categories and page.categories != empty %}<span> • {{ page.categories | array_to_sentence_string }}</span>{% endif %}
+    </header>
+    <div>
+{{ content }}
+    </div>
+    {% if site.comments.isso and page.comments %}
+    <hr><div id="isso-thread"></div>
+    {% endif %}
+    {% if site.comments.disqus and page.comments %}
+    <hr><div id="disqus_thread"></div>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    {% endif %}
+  </article>
+</main>

@@ -1,0 +1,36 @@
+a
+  color: inherit
+  text-decoration: inherit
+  transition: color .2s ease-out
+  &.selected, &:hover
+    color: reduce(100)
+
+a.ghost
+  background-color: #68f
+  border: 2px solid #68f
+  color: white
+  transition: .1s
+
+a.ghost:hover
+  background-color: transparent
+  border-color: #68f
+  color: #68f
+
+a.gray, a.disabled
+  background-color: reduce(8)
+  color: reduce(100)
+  transition: .25s
+
+a.gray:hover
+  background-color: reduce(20)
+
+a.ghost, a.gray, a.disabled
+  border-radius: 2px
+  padding: .4em .8em
+
+article a
+  color: #68f
+
+header a, footer a
+  color: inherit
+  font-weight: 300

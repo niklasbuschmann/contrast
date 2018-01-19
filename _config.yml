@@ -1,0 +1,38 @@
+title: "Blog Title"
+author: "Blog Author"
+description: "Really cool blog about ... something"
+more: "read more »"
+url: "https://niklasbuschmann.github.io/"
+baseurl: "/contrast"
+paginate: 2
+permalink: pretty
+excerpt_separator: "\n\n\n" # two blank lines
+
+style:
+  margin: 1 # factor for the margin width
+  dark: false # dark theme
+
+comments:
+  disqus: "disqus-contrast"
+#  isso: "comments.mysite.org"
+
+navigation:
+  - about.md
+  - archive.html
+
+links:
+  - github: {url: "https://github.com/me/", square: true}
+  - reddit: {url: "https://www.reddit.com/user/me/", square: true}
+  - twitter: {url: "https://twitter.com/me/", square: true}
+  - facebook: {url: "https://www.facebook.com/me", square: true}
+  - google-plus: {url: "https://plus.google.com/+me", square: true}
+  - youtube: {url: "https://www.youtube.com/user/me", square: true}
+  - tumblr: {url: "http://me.tumblr.com/", square: true}
+  - steam: {url: "http://steamcommunity.com/id/me/", square: true}
+
+# see http://fontawesome.io/icons/#brand for all possible icons
+# notice: squared icons only work if supported by font-awesome
+
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
+sass: {style: expanded}
+plugins: [jekyll-feed, jekyll-paginate]
