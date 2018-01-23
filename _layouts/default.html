@@ -5,7 +5,7 @@ layout: blank
   <article>
     <header>
       <h1><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
-      {% if page.author %}<span>{{ page.author }} • </span>{% endif %}{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.categories and page.categories != empty %}<span> • {{ page.categories | array_to_sentence_string }}</span>{% endif %}
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
     </header>
     <div>
 {{ content }}
