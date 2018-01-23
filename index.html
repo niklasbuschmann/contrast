@@ -6,20 +6,14 @@ layout: blank
   {% for page in paginator.posts %}
   <article>
     <header>
-      <h1>
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      </h1>
-      {% if page.author %}<span>{{ page.author }} • </span>{% endif %}
-      {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}
-      {% if page.categories and page.categories != empty %}<span> • {{ page.categories | array_to_sentence_string }}</span>{% endif %}
+      <h1><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
     </header>
     <div>
 {{ page.excerpt }}
     </div>
     {% unless page.excerpt == page.content %}
-    <footer>
-      <a class="ghost" href="{{ page.url | prepend: site.baseurl }}">{{ site.more }}</a>
-    </footer>
+    <footer><a class="ghost" href="{{ page.url | prepend: site.baseurl }}">{{ site.more }}</a></footer>
     {% endunless %}
   </article>
 {% endfor %}
