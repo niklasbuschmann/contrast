@@ -24,6 +24,9 @@ body > footer
   background-color: #222
   color: white
 
+article:first-of-type
+  border-top: none
+
 {% else %}
 
 body > footer
@@ -32,6 +35,10 @@ body > footer
   border-top: 1px solid #f4f4f4
 
 {% endif %}
+
+body > header
+  background-color: #222
+  color: white
 
 article, body > header, body > footer
   padding: 1em calc(#{$margin * 18%} - #{$margin * 3em})
@@ -57,17 +64,11 @@ nav li
   margin-right: 2em
 
 article
-  border-top: 1px solid rgba(148, 148, 148, .08)
-  &:first-of-type
-    border-top: none
+  border-top: 2px solid rgba(148, 148, 148, .08)
   header
     text-align: center
   footer
     padding: 1.5em 0
-
-body > header
-  background-color: #222
-  color: white
 
 nav, body > footer
   display: flex
