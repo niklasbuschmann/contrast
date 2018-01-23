@@ -17,7 +17,7 @@
 <header>
   <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
   <nav>
-    <li>{% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<li><a href="{{ node.url | prepend: site.baseurl }}"{% if page.url == node.url %} class="selected"{% endif %}>{{ node.title }}</a></li>{% endfor %}
+    {% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<li><a href="{{ node.url | prepend: site.baseurl }}"{% if page.url == node.url %} class="selected"{% endif %}>{{ node.title }}</a></li>{% endfor %}
   </nav>
 </header>
 {{ content }}
