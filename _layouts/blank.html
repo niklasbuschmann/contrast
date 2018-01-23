@@ -22,3 +22,9 @@
   </nav>
 </header>
 {{ content }}
+{% if page.previous.url or page.next.url %}
+<footer>
+    {% if page.previous.url %}<a href="{{ page.previous.url | prepend: site.baseurl }}">« {{ page.previous.title }}</a>{% endif %}
+    {% if page.next.url %}<a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }} »</a>{% endif %}
+</footer>
+{% endif %}
