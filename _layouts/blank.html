@@ -17,12 +17,8 @@
 <header>
   <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
   <nav>
-    {% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<li><a href="{{ node.url | prepend: site.baseurl }}"{% if page.url == node.url %} class="selected"{% endif %}>{{ node.title }}</a></li>{% endfor %}
+    <div>{% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<li><a href="{{ node.url | prepend: site.baseurl }}"{% if page.url == node.url %} class="selected"{% endif %}>{{ node.title }}</a></li>{% endfor %}</div>
+    <div>{% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}{% endfor %}</div>
   </nav>
 </header>
 {{ content }}
-<footer>
-  <span><a href="{{ site.baseurl }}{% link about.md %}">{% if page.author %}{{ page.author }}{% else %}{{site.author}}{% endif %}</a></span>
-  <span>{% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}{% endfor %}</span>
-  <span>© {{ site.time | date: "%Y" }}</span>
-</footer>
