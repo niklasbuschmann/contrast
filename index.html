@@ -26,8 +26,8 @@ layout: blank
 </main>
 {% if paginator.total_pages > 1 %}
 <footer>
-    <a class="{% if paginator.previous_page %} gray {% else %} disabled {% endif %}" {% if paginator.previous_page %} href="{{ paginator.previous_page_path | prepend: site.baseurl }}" {% endif %}>« newer posts</a>
+    <a {% if paginator.previous_page %} class="gray" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" {% else %} class="disabled" {% endif %}>« newer posts</a>
     <span class="paginate">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    <a class="{% if paginator.next_page %} gray {% else %}disabled{% endif %}" {% if paginator.next_page %} href="{{ paginator.next_page_path | prepend: site.baseurl }}" {% endif %}>older posts »</a>
+    <a {% if paginator.next_page %} class="gray" href="{{ paginator.next_page_path | prepend: site.baseurl }}" {% else %} class="disabled" {% endif %}>older posts »</a>
 </footer>
 {% endif %}
