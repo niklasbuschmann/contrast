@@ -34,14 +34,24 @@ article:first-of-type
 article, body > header, body > footer
   padding: 1em calc(#{$margin * 18%} - #{$margin * 3em})
 
-body > header, body > footer
-  background-color: #282828
-
 body > header
+  background-color: #282828
   color: white
 
+{% if site.style.dark %}
+
 body > footer
-  color: darkgray
+  background-color: #282828
+  color: white
+
+{% else %}
+
+body > footer
+  background-color: #fafafa
+  color: gray
+  border-top: 1px solid #f0f0f0
+
+{% endif %}
 
 {% else %}
 
