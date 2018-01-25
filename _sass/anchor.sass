@@ -1,9 +1,6 @@
-a
-  color: inherit
-  text-decoration: inherit
-  transition: color .2s ease-out
-  &.selected, &:hover
-    color: reduce(100)
+a.ghost, a.gray, a.disabled
+  border-radius: 2px
+  padding: .4em .8em
 
 a.ghost
   background-color: #68f
@@ -22,14 +19,3 @@ a.gray, a.disabled
 
 a.gray:hover
   background-color: reduce(20)
-
-a.ghost, a.gray, a.disabled
-  border-radius: 2px
-  padding: .4em .8em
-
-article a
-  color: #68f
-
-header a, footer a
-  color: inherit
-  font-weight: 300
