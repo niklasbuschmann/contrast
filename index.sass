@@ -4,11 +4,9 @@
 $margin: {{ site.style.margin }}
 
 html
-  background-color: #222
+  background-color: #282828
 
 body
-  background-color: white
-  color: #333
   display: flex
   font-size: calc(.6vw + .8em)
   margin: 0
@@ -19,6 +17,12 @@ body
 body
   background: #2d2d2d
   color: white
+
+{% else %}
+
+body
+  background: white
+  color: #333333
 
 {% endif %}
 
@@ -35,7 +39,7 @@ body > header
   color: white
 
 body > footer
-  color: gray
+  color: darkgray
 
 header h1
   margin: 0.4em 0
