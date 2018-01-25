@@ -7,29 +7,29 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-body, aside, main
-  flex-direction: column
+a
+  color: inherit
+  text-decoration: inherit
+  transition: color .2s ease-out
+  &.selected, &:hover
+    color: reduce(100)
 
-header, footer, aside li
-  padding: .5em 1.5em
+a, b, strong, th, h1, h2, h3, h4, h5, h6
+  font-weight: 400
 
 main
   flex-grow: 1
 
-h1, h2, h3, h4, h5, h6
-  font-weight: 400
+article a
+  color: #68f
 
-strong, a, b, th
-  font-weight: 400
+header a, footer a
+  color: inherit
+  font-weight: 300
 
 nav li
   display: inline-block
   list-style-type: none
-
-img
-  max-width: 100%
-  height: auto
-  border-radius: 2px
 
 hr
   border: 1px solid reduce(16)
@@ -38,10 +38,21 @@ hr
 header span, header time
   color: #949494
 
-figure
-  margin: 1em 0
-
 blockquote
   border-left: 5px solid #68f
   padding-left: 1.5em
   margin: 0
+
+body, aside, main
+  flex-direction: column
+
+header, footer, aside li
+  padding: .5em 1.5em
+
+img
+  max-width: 100%
+  height: auto
+  border-radius: 2px
+
+figure
+  margin: 1em 0
