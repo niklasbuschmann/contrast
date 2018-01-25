@@ -1,8 +1,6 @@
 ---
 ---
 
-$margin: {{ site.style.margin }}
-
 body
   display: flex
   font-size: calc(.6vw + .8em)
@@ -23,7 +21,18 @@ body
 
 {% endif %}
 
-{% if true %}
+{% if site.style.minimalist %}
+
+body
+  margin: 0 calc(18% - 3em)
+
+article, body > header, body > footer
+  padding: 1em 0
+
+body > footer
+  border-top: 2px solid rgba(148, 148, 148, .08)
+
+{% else %}
 
 html
   background-color: #282828
@@ -32,7 +41,7 @@ article:first-of-type
   border-top: none
 
 article, body > header, body > footer
-  padding: 1em calc(#{$margin * 18%} - #{$margin * 3em})
+  padding: 1em calc(18% - 3em)
 
 body > header
   background-color: #282828
@@ -53,35 +62,14 @@ body > footer
 
 {% endif %}
 
-{% else %}
-
-body
-  margin: 0 calc(#{$margin * 18%} - #{$margin * 3em})
-
-article, body > header, body > footer
-  padding: 1em 0
-
-body > footer
-  border-top: 2px solid rgba(148, 148, 148, .08)
-
-{% endif %}
-
-{% if false %}
-
-h1, h2, h3, h4, h5, h6
-  font-family: "Gentium Basic"
-
-header h1
-  letter-spacing: 2px
-  text-transform: uppercase
-
 {% endif %}
 
 header h1
   margin: 0.4em 0
-  a
-    line-height: 1.1em
-    font-size: 1.1em
+
+header h1 a
+  line-height: 1.1em
+  font-size: 1.1em
 
 table
   width: 100%
@@ -94,20 +82,20 @@ nav li
 
 article
   border-top: 2px solid rgba(148, 148, 148, .08)
-  header
-    text-align: center
-  footer
-    padding: 1.5em 0
+
+article header
+  text-align: center
+
+article footer
+  padding: 1.5em 0
 
 nav, body > footer
   display: flex
   justify-content: space-between
+  align-items: center
 
-.fa
+nav .fa
   margin-left: 1.5em
-
-.paginate
-  padding: .4em .8em
 
 .archive h3
   margin: .5em 1em
