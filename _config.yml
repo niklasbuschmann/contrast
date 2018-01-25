@@ -18,7 +18,7 @@ navigation:
   - archive.html
 
 comments:
-#  disqus: "disqus-contrast"
+  disqus: "disqus-contrast"
 #  isso: "comments.mysite.org"
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
