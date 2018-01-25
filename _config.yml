@@ -12,21 +12,19 @@ style:
   minimalist: false
   dark: false
 
-comments:
-  disqus: "disqus-contrast"
-#  isso: "comments.mysite.org"
-
 navigation:
   - index.html
   - about.md
   - archive.html
 
-links:
+comments:
+#  disqus: "disqus-contrast"
+#  isso: "comments.mysite.org"
+
+links: # see http://fontawesome.io/icons/#brand for all possible icons
   - twitter: "https://twitter.com/me/"
   - github: "https://github.com/me/"
   - envelope: "mailto:me@example.com"
-
-# see http://fontawesome.io/icons/#brand for all possible icons
 
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
 sass: {style: expanded}
