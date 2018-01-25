@@ -9,8 +9,8 @@ permalink: pretty
 excerpt_separator: "\n\n\n" # two blank lines
 
 style:
-  margin: 1 # factor for the margin width
-  dark: false # dark theme
+  minimalist: false
+  dark: false
 
 comments:
   disqus: "disqus-contrast"
