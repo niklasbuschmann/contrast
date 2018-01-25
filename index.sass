@@ -17,34 +17,25 @@ body
 {% if site.style.dark %}
 
 body
-  background: #282828
+  background: #2d2d2d
   color: white
-
-body > footer
-  background-color: #222
-  color: white
-
-article:first-of-type
-  border-top: none
-
-{% else %}
-
-body > footer
-  background-color: #fcfcfc
-  color: #666
-  border-top: 1px solid #f4f4f4
 
 {% endif %}
 
-body > header
-  background-color: #222
-  color: white
+h1, h2, h3, h4, h5, h6
+  font-family: "Gentium Basic"
 
 article, body > header, body > footer
   padding: 1em calc(#{$margin * 18%} - #{$margin * 3em})
 
-h1, h2, h3, h4, h5, h6
-  font-family: "Gentium Basic"
+body > header, body > footer
+  background-color: #282828
+
+body > header
+  color: white
+
+body > footer
+  color: gray
 
 header h1
   margin: 0.4em 0
@@ -65,6 +56,8 @@ nav li
 
 article
   border-top: 2px solid rgba(148, 148, 148, .08)
+  &:first-of-type
+    border-top: none
   header
     text-align: center
   footer
@@ -78,7 +71,6 @@ nav, body > footer
   margin-left: 1.5em
 
 .paginate
-  color: gray
   padding: .4em .8em
 
 .archive h3
