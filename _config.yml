@@ -10,7 +10,7 @@ excerpt_separator: "\n\n\n" # two blank lines
 
 style:
   minimalist: false
-  dark: false
+  dark: true
 
 comments:
   disqus: "disqus-contrast"
