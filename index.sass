@@ -3,14 +3,14 @@
 
 $margin: {{ site.style.margin }}
 
-html
-  background-color: #282828
-
 body
   display: flex
   font-size: calc(.6vw + .8em)
-  margin: 0
+  margin: 0 calc(#{$margin * 18%} - #{$margin * 3em})
   min-height: 100vh
+
+article, body > header, body > footer
+  padding: 1em 0
 
 {% if site.style.dark %}
 
@@ -25,9 +25,19 @@ body
   color: #333333
 
 {% endif %}
+/*
+html
+  background-color: #282828
 
 h1, h2, h3, h4, h5, h6
   font-family: "Gentium Basic"
+
+header h1
+  letter-spacing: 2px
+  text-transform: uppercase
+
+article:first-of-type
+  border-top: none
 
 article, body > header, body > footer
   padding: 1em calc(#{$margin * 18%} - #{$margin * 3em})
@@ -40,11 +50,9 @@ body > header
 
 body > footer
   color: darkgray
-
+*/
 header h1
   margin: 0.4em 0
-  letter-spacing: 2px
-  text-transform: uppercase
   a
     line-height: 1.1em
     font-size: 1.1em
@@ -60,8 +68,6 @@ nav li
 
 article
   border-top: 2px solid rgba(148, 148, 148, .08)
-  &:first-of-type
-    border-top: none
   header
     text-align: center
   footer
