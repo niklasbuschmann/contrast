@@ -6,17 +6,8 @@ $margin: {{ site.style.margin }}
 body
   display: flex
   font-size: calc(.6vw + .8em)
-  margin: 0 calc(#{$margin * 18%} - #{$margin * 3em})
+  margin: 0
   min-height: 100vh
-
-article, body > header, body > footer
-  padding: 1em 0
-
-body > footer
-  border-top: 2px solid rgba(148, 148, 148, .08)
-
-header a, footer a
-  font-weight: 400
 
 {% if site.style.dark %}
 
@@ -32,7 +23,7 @@ body
 
 {% endif %}
 
-{% if false %}
+{% if true %}
 
 html
   background-color: #282828
@@ -59,8 +50,19 @@ body > header
 body > footer
   color: darkgray
 
-.paginate
-  padding: .4em .8em
+{% else %}
+
+body
+  margin: 0 calc(#{$margin * 18%} - #{$margin * 3em})
+
+article, body > header, body > footer
+  padding: 1em 0
+
+body > footer
+  border-top: 2px solid rgba(148, 148, 148, .08)
+
+header a, footer a
+  font-weight: 400
 
 {% endif %}
 
@@ -92,6 +94,9 @@ nav, body > footer
 
 .fa
   margin-left: 1.5em
+
+.paginate
+  padding: .4em .8em
 
 .archive h3
   margin: .5em 1em
