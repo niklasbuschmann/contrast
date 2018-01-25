@@ -9,18 +9,12 @@ layout: blank
         {%- assign year = post.date | date: '%Y' -%}
         {%- assign prev_year = post.next.date | date: '%Y' -%}
         {%- if year != prev_year -%}
-          <header><h1>{{ post.date | date: '%Y' }}</h1></header>
-        {%- endif -%}
-        {%- assign month = post.date | date: '%B' -%}
-        {%- assign prev_month = post.next.date | date: '%B' -%}
-        {%- if month != prev_month -%}
-          <h2>{{ post.date | date: '%B' }}</h2>
+          <h1>{{ post.date | date: '%Y' }}</h1>
         {%- endif -%}
       {%- else -%}
-        <header><h1>{{ post.date | date: '%Y' }}</h1></header>
-        <h2>{{ post.date | date: '%B' }}</h>
+        <h1>{{ post.date | date: '%Y' }}</h1>
       {%- endif -%}
-      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {%- endfor -%}
   </article>
 </main>
