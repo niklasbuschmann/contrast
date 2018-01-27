@@ -69,21 +69,16 @@ body > footer
 
 {% endif %}
 
+h1, h2, h3, h4, h5, h6
+  text-decoration: underline
+
 header h1
   margin: 0.4em 0
+  text-decoration: none
 
 header h1 a
   line-height: 1.1em
   font-size: 1.1em
-
-table
-  width: 100%
-
-nav
-  margin: 1em 0
-
-nav li
-  margin-right: 2em
 
 article
   border-top: 2px solid rgba(148, 148, 148, .08)
@@ -93,6 +88,15 @@ article header
 
 article footer
   padding: 1.5em 0
+
+table
+  width: 100%
+
+nav
+  margin: 1em 0
+
+nav li
+  margin-right: 2em
 
 nav, body > footer
   display: flex
@@ -107,7 +111,6 @@ nav .fa
     font-size: 1.7em
   li
     list-style-type: none
-    text-decoration: underline
     margin: .4em 0
   a
     color: inherit
