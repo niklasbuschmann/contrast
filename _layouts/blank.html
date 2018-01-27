@@ -16,7 +16,7 @@
 <header>
   <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
   <nav>
-    <div>{% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<li><a href="{{ node.url | prepend: site.baseurl }}"{>{{ node.title }}</a></li>{% endfor %}</div>
+    <div>{% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<a href="{{ node.url | prepend: site.baseurl }}"{>{{ node.title }}</a>{% endfor %}</div>
     <div>{% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}{% endfor %}</div>
   </nav>
 </header>
