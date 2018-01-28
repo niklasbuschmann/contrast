@@ -3,7 +3,6 @@ title: "Pagination works"
 date: 2017-01-01 00:30:00
 ---
 
-This is an empty post to show how the pagination works.
 
 > Pagination is the process of dividing a document into discrete pages, either electronic pages or printed pages.
 >
