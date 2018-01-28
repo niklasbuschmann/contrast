@@ -12,20 +12,18 @@ Create a `master`-branch and adjust `_config.yml` if you want to use this theme 
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/35478340-d391eda8-03da-11e8-9352-e4dd5cdb74d2.png)
 
+### Usage
+
+Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done ... or read more about [Jekyll](https://jekyllrb.com/).
+
 ### Features
 
  - responsive
- - minimal theme
- - dark theme
  - pagination
  - archive page
  - feed.xml generation
  - syntax highlighting
  - comments ([disqus](https://disqus.com/) / [isso](http://posativ.org/isso/))
-
-### Usage
-
-Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done ... or read more about [Jekyll](https://jekyllrb.com/).
 
 ### Based on
 
