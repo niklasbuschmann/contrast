@@ -14,7 +14,7 @@ layout: blank
       {%- else -%}
         <h1>{{ post.date | date: '%Y' }}</h1>
       {%- endif -%}
-      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+      <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time><h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3></li>
     {%- endfor -%}
   </article>
 </main>
