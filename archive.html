@@ -9,12 +9,15 @@ layout: blank
         {%- assign year = post.date | date: '%Y' -%}
         {%- assign prev_year = post.next.date | date: '%Y' -%}
         {%- if year != prev_year -%}
-          <h1>{{ post.date | date: '%Y' }}</h1>
+          <header><h1>{{ post.date | date: '%Y' }}</h1></header>
         {%- endif -%}
       {%- else -%}
-        <h1>{{ post.date | date: '%Y' }}</h1>
+        <header><h1>{{ post.date | date: '%Y' }}</h1></header>
       {%- endif -%}
-      <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time><h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3></li>
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      </li>
     {%- endfor -%}
   </article>
 </main>
