@@ -3,7 +3,7 @@ author: "Blog Author"
 description: "Really cool blog about ... something"
 more: "read more »"
 url: "https://i-like-hamigaki.github.io/"
-baseurl: "/contrast"
+baseurl: ""
 paginate: 2
 permalink: pretty
 excerpt_separator: "\n\n\n" # two blank lines
