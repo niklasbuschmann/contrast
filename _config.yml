@@ -2,7 +2,7 @@ title: "Blog Title"
 author: "Alex Farra"
 description: "Really cool blog about ... something"
 more: "read more »"
-url: "https://alexfarra.github.io/"
+url: "https://impendeon.github.io/"
 baseurl: "/contrast"
 paginate: 2
 permalink: pretty
