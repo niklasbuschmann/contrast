@@ -1,8 +1,8 @@
 title: "Blog Title"
-author: "Blog Author"
+author: "Alex Farra"
 description: "Really cool blog about ... something"
 more: "read more »"
-url: "https://niklasbuschmann.github.io/"
+url: "https://alexfarra.github.io/"
 baseurl: "/contrast"
 paginate: 2
 permalink: pretty
@@ -22,9 +22,9 @@ comments:
 #  isso: "comments.mysite.org"
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
-  - twitter: "https://twitter.com/twitter/"
-  - github: "https://github.com/niklasbuschmann/contrast"
-  - envelope: "mailto:niklas.buschmann@posteo.de"
+  #- twitter: "https://twitter.com/twitter/"
+  - github: "https://github.com/impendeon"
+  - envelope: "mailto:farra.alexr@gmail.com"
 
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
 sass: {style: expanded}
