@@ -46,10 +46,18 @@ plugins:
 
 ## Additional Screenshots
 
-### Navigation instead of icons, dark menu
+### With navbar
 
-![screenshot](https://user-images.githubusercontent.com/4943215/50294575-7c535980-0476-11e9-9cd3-4328264d99c7.png)
+![screenshot](https://user-images.githubusercontent.com/4943215/50602342-6bafd400-0eb7-11e9-8275-d0986af3061f.png)
 
-### With navigation and page excerpts
+### With navbar and dark_nav: true
 
-![screenshot](https://user-images.githubusercontent.com/4943215/50294515-5332c900-0476-11e9-8661-910cba1a9afe.png)
+![screenshot](https://user-images.githubusercontent.com/4943215/50602434-82562b00-0eb7-11e9-86f3-ac9b6f577843.png)
+
+### With navbar and style: minimal
+
+![screenshot](https://user-images.githubusercontent.com/4943215/50602485-ae71ac00-0eb7-11e9-8b37-5dd9b5c09d8d.png)
+
+### With navbar and style: frame
+
+![screenshot](https://user-images.githubusercontent.com/4943215/50602509-c34e3f80-0eb7-11e9-8aa3-5e07650daeaf.png)
