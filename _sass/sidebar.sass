@@ -1,0 +1,14 @@
+aside
+  background: reduce(7)
+  overflow: auto
+
+aside.blue li:hover
+  background: reduce(12)
+
+aside.blue li.selected
+  background: $blue
+  color: white
+
+aside.fancy li:hover, aside.fancy li.selected
+  background: reduce(6)
+  box-shadow: 4px 0 $blue inset

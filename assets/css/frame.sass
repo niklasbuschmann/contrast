@@ -1,0 +1,25 @@
+---
+---
+
+@function reduce ($percent)
+  @return rgba(mix(#282828, #fff), $percent / 100)
+
+$link-color: #68f
+
+@import anchor
+
+html
+  background: #666
+
+body
+  margin: 0 calc(20% - 5rem)
+
+body > header, article, body > footer
+  padding: 1.5em calc(24% - 5rem)
+
+body > header, body > footer
+  background: #282828
+  color: white
+
+article
+  border-top: 1px solid reduce(10)

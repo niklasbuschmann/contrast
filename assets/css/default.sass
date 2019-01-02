@@ -1,0 +1,30 @@
+---
+---
+
+@function reduce ($percent)
+  @return rgba(mix(#282828, #fff), $percent / 100)
+
+$link-color: #68f
+
+@import anchor
+
+body > header, article, body > footer
+  padding: 1.5em calc(27.5% - 5rem)
+
+body > footer
+  background: reduce(5)
+  color: reduce(100)
+
+article, body > footer
+  border-top: 1px solid reduce(8)
+
+article
+  background: reduce(2)
+
+{% if site.dark_header %}
+
+body > header
+  background: #282828
+  color: #fff
+
+{% endif %}

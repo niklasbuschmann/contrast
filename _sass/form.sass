@@ -1,0 +1,33 @@
+button
+  cursor: pointer
+
+button, input
+  font-family: inherit
+  font-weight: inherit
+  font-size: inherit
+  line-height: inherit
+  background-color: initial
+  color: inherit
+  outline: none
+  border: none
+  padding: 0
+  border-radius: 2px
+
+input.fancy, button.fancy
+  background: reduce(8)
+  box-sizing: border-box
+  padding: 0 1.2em
+
+input.fancy
+  font-size: .8em
+  height: 3.125em
+  min-width: 6.25em
+
+input.fancy:focus
+  box-shadow: 0 0 0px 1px $blue inset
+
+button.fancy
+  height: 2.5em
+  min-width: 5em
+  border-top: 3px solid transparent!important
+  border-bottom: 3px solid transparent

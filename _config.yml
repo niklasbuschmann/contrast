@@ -1,0 +1,38 @@
+title: ""
+author: ""
+description: ""
+
+# Jekyll settings
+permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
+paginate: 2                  # number of articles per page, remove to disable pagination
+excerpt_separator: "\n\n\n"  # indicates the end of the excerpt by two blank lines
+
+# Page settings
+show_excerpts: true          # show article previews on the home page instead of headlines
+hide_title: false            # remove site heading in the header
+post_footer: true            # show previous and next links at the end of each post
+date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
+
+# Theme settings
+style: default               # choose between "minimal", "frame" and "default"
+dark_theme: false            # enables dark mode
+dark_header: false           # keep header dark event in light theme (applies only to the default style)
+
+navigation:                  # (optional) site navigation in the header
+  - index.html
+  - archive.md
+  - about.md
+
+icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
+  envelope: "mailto:"
+  github: "https://github.com"
+  rss: "/feed.xml"
+
+comments:                    # embed disqus or isso comments
+#  disqus: ""
+#  isso: ""
+
+plugins: 
+ - jekyll-feed
+ - jekyll-paginate
+ - jekyll-default-layout

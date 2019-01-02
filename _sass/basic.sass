@@ -1,0 +1,50 @@
+body
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+  font-size: $font-size
+  font-weight: $font-weight
+  line-height: $line-height
+  background: $background
+  color: $color
+  margin: 0
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+a
+  color: inherit
+  text-decoration: inherit
+  transition: color .2s
+  &.selected, &:hover
+    color: reduce(100)
+
+article a, b, strong, th
+  font-weight: $font-weight + 100
+
+h1, h2, h3, h4, h5, h6
+  font-weight: $heading-weight
+
+article a
+  color: $link-color
+
+article header a, article footer a
+  font-weight: inherit
+  color: inherit
+
+header time
+  color: reduce(100)
+
+hr
+  border: 1px solid reduce(30)
+  margin: 2em 0
+
+blockquote
+  border-left: 4px solid $link-color
+  padding-left: 1.5em
+  margin: 0
+
+img
+  max-width: 100%
+  height: auto
+  border-radius: 2px
+
+figure
+  margin: 1em 0
