@@ -16,7 +16,7 @@ date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 # Theme settings
 style: default               # choose between "minimal", "frame" and "default"
 dark_theme: false            # enables dark mode
-dark_header: false           # keep header dark event in light theme (applies only to the default style)
+dark_header: false           # enable dark header with the light theme (applies only to the default style)
 
 navigation:                  # (optional) site navigation in the header
   - index.html
