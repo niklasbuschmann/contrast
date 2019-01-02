@@ -20,6 +20,8 @@ plugins:
   - jekyll-remote-theme
 ```
 
+For an example repo you can look at the [demo](https://github.com/niklasbuschmann/contrast-demo) of this theme.
+
 ## Features
 
  - supports dark mode in macOS Mojave
