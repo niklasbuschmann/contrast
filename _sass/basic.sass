@@ -5,9 +5,11 @@ body
   line-height: $line-height
   background: $background
   color: $color
-  margin: 0
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+
+body, blockquote, figure
+  margin: 0
 
 a
   color: inherit
@@ -39,12 +41,9 @@ hr
 blockquote
   border-left: 4px solid $link-color
   padding-left: 1.5em
-  margin: 0
 
 img
+  border-radius: 2px
   max-width: 100%
   height: auto
-  border-radius: 2px
-
-figure
-  margin: 1em 0
+  margin: .5em 0
