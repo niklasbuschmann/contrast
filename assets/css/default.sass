@@ -12,7 +12,7 @@ body > header, article, body > footer
   padding: 1.5em calc(27.5% - 5rem)
 
 article, body > footer
-  border-top: 1px solid reduce(8)
+  border-top: 1px solid reduce(10)
 
 {% if site.dark_nav %}
 
@@ -29,7 +29,10 @@ body > footer
 {% else %}
 
 article
-  background: reduce(2)
+  background: reduce(1)
+
+body > header
+  box-shadow: 0 0 2em rgba(60,60,60,.03)
 
 body > footer
   background: reduce(5)
