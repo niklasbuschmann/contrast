@@ -1,16 +1,12 @@
 ---
 ---
 
-@function reduce ($percent)
-  @return rgba(mix(#282828, #fff), $percent / 100)
-
 $font-size: calc(0.8em + 0.25vw)
-$font-weight: 300
 $heading-weight: 300
-$line-height: 1.65
-$link-color: #68f
-$background: {% if site.dark_theme %} #282828 {% else %} #ffffff {% endif %}
-$color: {% if site.dark_theme %} #ffffff {% else %} #000000 {% endif %}
+{% if site.dark_theme %}
+$background: #282828
+$color: #ffffff
+{% endif %}
 
 @import basic
 @import darkmode
