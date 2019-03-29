@@ -18,6 +18,9 @@ body
 table
   width: 100%
 
+nav
+  margin: 0.5em 0
+
 h1
   font-size: 1.85em
 
@@ -37,11 +40,11 @@ article header h1
 article footer
   padding: 1em 0
 
+article, body > footer
+  border-top: 1px solid
+
 {% unless site.hide_title %}
 {% if site.navigation and site.icons %}
-
-nav
-  margin: 0.5em 0
 
 body > header h1
   width: 100%
