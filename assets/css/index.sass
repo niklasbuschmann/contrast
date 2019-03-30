@@ -4,22 +4,17 @@
 $font-size: calc(0.8em + 0.25vw)
 $heading-weight: 300
 
-@import basic
-@import darkmode
-@import layout
-@import code
-@import table
-@import highlight
+@import basic, darkmode, layout, code, table, highlight
 
 body
   display: flex
   min-height: 100vh
 
-table
-  width: 100%
-
 nav
   margin: 0.5em 0
+
+table
+  width: 100%
 
 h1
   font-size: 1.7em
@@ -27,20 +22,6 @@ h1
 header h1
   margin: 0
 
-article header
-  display: block
-  margin-bottom: 1.5em
-
-article header h1
-  margin: 0.2em 0
-
-article footer
-  padding: 1em 0
-
-article, body > footer
-  border-top: 1px solid
-
-{% unless site.hide_title %}
 {% if site.navigation and site.icons %}
 
 body > header h1
@@ -54,4 +35,16 @@ body > header h1
   font-size: 1.6em
 
 {% endif %}
-{% endunless %}
+
+article header
+  display: block
+  margin-bottom: 1.5em
+
+article header h1
+  margin: 0.2em 0
+
+article footer
+  padding: 1em 0
+
+article, body > footer
+  border-top: 1px solid
