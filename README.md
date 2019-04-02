@@ -46,6 +46,8 @@ For an example repo you can look at the [demo](https://github.com/niklasbuschman
 
 ## Screenshots
 
+<div class="large" markdown="1">
+
 ### Simple
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/50294425-2da5bf80-0476-11e9-8a27-8c59a7192cf6.png)
@@ -61,3 +63,6 @@ For an example repo you can look at the [demo](https://github.com/niklasbuschman
 ### With dark navbar
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/50602434-82562b00-0eb7-11e9-86f3-ac9b6f577843.png)
+
+</div>
+

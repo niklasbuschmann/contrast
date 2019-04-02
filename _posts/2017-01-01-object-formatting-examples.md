@@ -53,6 +53,6 @@ You can also embed a lot of stuff, for example from YouTube. To scale the video 
 
 You can use a `.large` wrapper to increase the width of an image or iframe:
 
-<a class="large" href="/contrast-demo/assets/swiss-alps.jpg">![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)</a>
+<div class="large" markdown="1">![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)</div>
 
 [Swiss Alps](https://unsplash.com/photos/u0DmxB76uF4) by René Reichelt
