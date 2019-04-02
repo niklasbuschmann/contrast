@@ -52,10 +52,6 @@ For an example repo you can look at the [demo](https://github.com/niklasbuschman
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/50602342-6bafd400-0eb7-11e9-8275-d0986af3061f.png)
 
-### With navbar and style: contrast
+### With dark navbar
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/50602434-82562b00-0eb7-11e9-86f3-ac9b6f577843.png)
-
-### With navbar and style: minimal
-
-![screenshot](https://user-images.githubusercontent.com/4943215/50602485-ae71ac00-0eb7-11e9-8b37-5dd9b5c09d8d.png)
