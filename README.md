@@ -1,4 +1,7 @@
-# Contrast
+---
+title: "About"
+permalink: "/about/"
+---
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/50294425-2da5bf80-0476-11e9-8a27-8c59a7192cf6.png)
 ![screenshot](https://user-images.githubusercontent.com/4943215/50294472-3f876280-0476-11e9-8458-6a40fe735335.png)
@@ -6,8 +9,6 @@
 ## Installation (recommended)
 
 Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
-
-*Note:* If you want to use this theme in a subfolder, then you need to create a `gh-pages` branch in your repo.
 
 ## Installation (jekyll-remote-theme method)
 
