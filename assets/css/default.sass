@@ -3,15 +3,18 @@
 
 @import index
 
-body > header, article, body > footer
+body > *
   padding: 1.5em calc(25% - 4.5rem)
 
+body > header
+  box-shadow: 0 0 1em rgba(40, 40, 40, .03)
+
 article, body > footer
-  border-color: reduce(12)
+  border-top: 1px solid reduce(12)
 
 article
-  background: reduce(2)
+  background: reduce(1)
 
 body > footer
-  background: reduce(6)
+  background: reduce(5)
   color: reduce(100)
