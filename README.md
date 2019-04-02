@@ -3,9 +3,6 @@ title: "About"
 permalink: "/about/"
 ---
 
-![screenshot](https://user-images.githubusercontent.com/4943215/50294425-2da5bf80-0476-11e9-8a27-8c59a7192cf6.png)
-![screenshot](https://user-images.githubusercontent.com/4943215/50294472-3f876280-0476-11e9-8458-6a40fe735335.png)
-
 ## Installation (recommended)
 
 Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
@@ -47,7 +44,15 @@ For an example repo you can look at the [demo](https://github.com/niklasbuschman
 
 [public domain](http://unlicense.org/)
 
-## Additional Screenshots
+## Screenshots
+
+### Simple
+
+![screenshot](https://user-images.githubusercontent.com/4943215/50294425-2da5bf$
+
+### Dark mode
+
+![screenshot](https://user-images.githubusercontent.com/4943215/50294472-3f8762$
 
 ### With navbar
 

@@ -9,7 +9,7 @@ paginate: 8                  # number of articles per page, remove to disable pa
 excerpt_separator: "\n\n\n"  # indicates the end of the excerpt by two blank lines
 
 # Page settings
-show_excerpts: true          # show article previews on the home page instead of headlines
+show_excerpts: false         # show article previews on the home page instead of headlines
 hide_title: false            # remove site heading in the header
 post_footer: true            # show previous and next links at the end of each post
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
