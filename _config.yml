@@ -15,12 +15,14 @@ post_footer: true            # show previous and next links at the end of each p
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 
 # Theme settings
-dark_theme: false            # enable dark mode
+# style: minimal             # use a style inspired by the minima theme
+dark_theme: false            # use the dark mode as default
 dark_header: false           # keep the header dark
 
 navigation:                  # (optional) site navigation in the header
   - index.html
   - README.md
+# - title: "https://"        # linking external sites is supported
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
   envelope: "mailto:niklasbuschmann@users.noreply.github.com"

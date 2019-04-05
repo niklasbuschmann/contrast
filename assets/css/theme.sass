@@ -1,7 +1,14 @@
 ---
 ---
 
-@import index
+@import index, anchor
+
+body > *
+  padding: 1.5em calc(34% - 12rem)
+
+@media (max-width: 40em)
+  body > *
+    padding: 1.5em 1em
 
 body > header
   box-shadow: 0 0 1em rgba(40, 40, 40, .03)
