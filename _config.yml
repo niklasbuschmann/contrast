@@ -15,9 +15,9 @@ dark_header: false           # keep the header dark
 # style: minimal             # use a simpler style inspired by the minima theme
 
 navigation:                  # (optional) site navigation in the header
-  - index.html
-  - README.md
-# - title: "https://"        # linking external sites is also supported
+#  - index.html
+#  - README.md
+#  - title: "https://"       # linking external sites is also supported
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
   envelope: "mailto:niklasbuschmann@users.noreply.github.com"
