@@ -11,7 +11,8 @@ post_footer: true            # show previous and next links at the end of each p
 
 # Theme settings
 dark_theme: false            # use the dark mode as default
-dark_header: false           # keep the header dark
+dark_header: true            # keep the header dark
+dark_footer: true            # keep the footer dark
 # style: minimal             # use a simpler style inspired by the minima theme
 
 navigation:                  # (optional) site navigation in the header
