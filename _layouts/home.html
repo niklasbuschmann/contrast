@@ -16,7 +16,7 @@ layout: default
 </article>
 {% endfor %}
 {% if paginator.total_pages > 1 %}
-<footer>
+<footer class="{% if site.dark_footer %}dark{% endif %}">
   <a {% if paginator.previous_page %}class="gray" href="{{ paginator.previous_page_path | relative_url }}"{% else %}class="disabled"{% endif %}>« newer posts</a>
   <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
   <a {% if paginator.next_page %}class="gray" href="{{ paginator.next_page_path | relative_url }}"{% else %}class="disabled"{% endif %}>older posts »</a>
