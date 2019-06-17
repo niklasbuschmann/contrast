@@ -6,29 +6,25 @@ lang: "en"
 # Page settings
 permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
-hide_title: false            # remove site heading in the header
-post_footer: true            # show previous and next links at the end of each post
+#paginate: 8                 # use "layout: paginate" in the index.html to enable pagination
 
 # Theme settings
+hide_title: false            # remove site heading in the header
+hide_footer: false           # hide the "previous" and "next" links at the end of each post
 dark_theme: false            # use the dark mode as default
 dark_header: false           # keep the header dark
 dark_footer: false           # keep the footer dark
 # style: minimal             # use a simpler style inspired by the minima theme
 
-navigation:                  # (optional) site navigation in the header
+navigation:                  # site navigation in the header
   - index.html
   - README.md
 #  - title: "https://"       # linking external sites is also supported
 
-#icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
+#icons:                      # icons in the header, see http://fontawesome.com/icons
 #  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
 #  github: "https://github.com/niklasbuschmann/contrast"
 #  rss: "/contrast/feed.xml"
-
-# Pagination
-show_excerpts: false         # preview articles on the home page
-paginate: 8                  # number of articles per page
-excerpt_separator: "\n\n\n"  # indicate the end of the excerpt by two blank lines
 
 comments:                    # embed disqus or isso comments
 #  disqus: ""
