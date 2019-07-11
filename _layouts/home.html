@@ -1,19 +1,19 @@
 ---
 layout: default
 ---
-{% for page in paginator.posts %}
 <article>
-  <header>
-    {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-    <h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1>
-    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time>
-  </header>
-  {{ page.excerpt }}
-  {% unless page.excerpt == page.content %}
-  <footer><a class="ghost" href="{{ page.url | relative_url }}">read more »</a></footer>
-  {% endunless %}
+  {{ content }}
+  <header><h1>Posts</h1></header>
+  <ul>
+    {% for post in paginator.posts %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 </article>
-{% endfor %}
+
 {% if paginator.total_pages > 1 %}
 <footer class="{% if site.dark_footer %}dark{% endif %}">
   <a {% if paginator.previous_page %}class="gray" href="{{ paginator.previous_page_path | relative_url }}"{% else %}class="disabled"{% endif %}>« newer posts</a>
