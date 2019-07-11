@@ -1,13 +1,9 @@
 title: "Blog Title"
 author: "Blog Author"
 description: "Really cool blog about ... something"
+permalink: /:title/
 lang: "en"
 
-# Page settings
-permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
-#paginate: 8                 # use "layout: paginate" in the index.html to enable pagination
-
-# Theme settings
 # style: minimal             # use a simpler style inspired by the minima theme
 hide_title: false            # remove site heading in the header
 hide_footer: false           # hide the "previous" and "next" links at the end of each post
@@ -29,7 +25,6 @@ comments:                    # embed disqus or isso comments
 #  disqus: ""
 #  isso: ""
 
-plugins: 
+plugins:
  - jekyll-feed
- - jekyll-paginate
  - jekyll-default-layout
