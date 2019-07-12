@@ -10,21 +10,34 @@ body > header, article, body > footer
   body > header, article, body > footer
     padding: 1.5em 1em
 
-body > header:not(.dark)
-  box-shadow: 0 0 1em rgba(40, 40, 40, .03)
-
-body > header.dark, body > footer.dark
-  background: #2b2b2b
-
-body > footer.dark
-  color: #aaa
-
 article, body > footer
   border-top: 1px solid reduce(12)
+
+{% if site.dark_header %}
+
+body > header
+  background: #2b2b2b
+
+{% else %}
+
+body > header
+  box-shadow: 0 0 1em rgba(40, 40, 40, .03)
 
 article
   background: reduce(1)
 
+{% endif %}
+
+{% if site.dark_footer %}
+
+body > footer
+  background: #2b2b2b
+  color: #aaa
+
+{% else %}
+
 body > footer
   background: reduce(5)
   color: reduce(100)
+
+{% endif %}
