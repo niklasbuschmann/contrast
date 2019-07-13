@@ -10,7 +10,7 @@ You can enable MathJax by setting `mathjax: true` on a page or globally in the `
 
 [Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
 
-$$ e^{ix}=cos(x)+isin(x) $$
+$$ e^{i\theta}=\cos(\theta)+i\sin(\theta) $$
 
 The [Euler-Lagrange](https://en.wikipedia.org/wiki/Lagrangian_mechanics) differential equation is the fundamental equation of calculus of variations.
 
