@@ -6,7 +6,7 @@ lang: "en"
 
 # style: minimal             # use a simpler style inspired by the minima theme
 hide_title: false            # remove site heading in the header
-hide_footer: false           # hide the "previous" and "next" links at the end of each post
+hide_footer: true            # hide the "previous" and "next" links at the end of each post
 dark_theme: false            # use the dark mode as default
 dark_header: true            # keep the header dark
 dark_footer: false           # keep the footer dark
