@@ -1,9 +1,17 @@
 ---
 ---
 
+{% if site.show_footer %}
+
 body
   display: flex
+  flex-direction: column
   min-height: 100vh
+
+body > footer
+  margin-top: auto
+
+{% endif %}
 
 nav
   margin: 0.5em -0.8em
@@ -42,7 +50,6 @@ header h1
   margin: 0
 
 article header
-  display: block
   margin-bottom: 1.5em
 
 article header h1
