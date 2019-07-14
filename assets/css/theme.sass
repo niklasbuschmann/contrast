@@ -1,7 +1,7 @@
 ---
 ---
 
-@import index, anchor
+@import index
 
 body > header, article, body > footer
   padding: 1.5em calc(34% - 12rem)
@@ -26,6 +26,12 @@ body > header
 
 article
   background: reduce(1)
+
+{% endif %}
+
+{% if site.show_footer %}
+
+@import anchor
 
 {% endif %}
 

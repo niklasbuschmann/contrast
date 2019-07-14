@@ -20,9 +20,7 @@
 {% if site.comments.isso %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
 
 <header>
-  {% unless site.hide_title %}
-    <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-  {% endunless %}
+  <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
   {% if site.navigation %}
     <nav>
     {% for path in site.navigation %}
@@ -44,5 +42,12 @@
 </header>
 
 {{ content }}
+
+{% if site.show_footer and page.previous.url or page.next.url %}
+<footer>
+  {% if page.next.url %}<a class="gray" href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a>{% else %}<span></span>{% endif %}
+  {% if page.previous.url %}<a class="gray" href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% else %}<span></span>{% endif %}
+</footer>
+{% endif %}
 
 </html>
