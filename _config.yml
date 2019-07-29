@@ -6,7 +6,7 @@ lang: "en"
 
 show_footer: false           # show the "previous" and "next" links at the end of each post
 dark_theme: false            # use the dark mode as default
-dark_header: false           # keep the header dark
+dark_header: true            # keep the header dark
 dark_footer: false           # keep the footer dark
 # style: minimal             # use a simpler style inspired by the minima theme
 
