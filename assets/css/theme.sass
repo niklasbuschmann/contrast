@@ -4,11 +4,11 @@
 @import index
 
 body > header, article, body > footer
-  padding: 1.5em calc(34% - 12rem)
+  padding: 1.5em 1em
 
-@media (max-width: 40em)
+@media (min-width: 40em)
   body > header, article, body > footer
-    padding: 1.5em 1em
+    padding: 1.5em calc(34% - 12rem)
 
 article, body > footer
   border-top: 1px solid reduce(12)
