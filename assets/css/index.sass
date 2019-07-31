@@ -13,32 +13,18 @@ body > footer
 
 {% endif %}
 
-nav
-  margin: 0.5em -0.8em
-
-nav a
-  display: inline-flex
-  align-items: center
-  padding: 0 0.8em
-
 h1
   font-size: 1.7em
 
-header h1
-  margin: 0
-
-article header
-  margin-bottom: 1.5em
-
 article header h1
-  margin-bottom: 0.2em
+  margin-bottom: .2em
 
 {% if site.navigation and site.icons %}
 
 body > header h1
   width: 100%
-  margin-top: 0.1em
-  margin-bottom: 0.5em
+  margin-top: .1em
+  margin-bottom: .5em
 
 {% else %}
 
@@ -48,6 +34,10 @@ body > header h1
 {% endif %}
 
 {% if site.icons %}
+
+nav a
+  display: inline-flex
+  align-items: center
 
 nav svg
   height: 1em
@@ -72,7 +62,7 @@ nav svg
   display: inline-block
   font-size: 1.05em
   width: 6em
-  margin: 0 0.25em
+  margin: 0 .25em
 
 .embed
   position: relative
