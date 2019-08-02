@@ -17,7 +17,7 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
  - feed generation
  - responsive
  - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+ - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/) or [google analytics](https://analytics.google.com/analytics/web/)
 
 ## Based on
 

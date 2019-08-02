@@ -22,6 +22,7 @@ navigation:                  # site navigation in the header
 comments:                    # embed disqus or isso comments
 #  disqus: ""
 #  isso: ""
+#  google_analytics: ""     (e.g. UA-1000000-1)
 
 plugins:
  - jekyll-feed
