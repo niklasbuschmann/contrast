@@ -1,5 +1,5 @@
 ---
-title:  "Object formatting examples"
+title:  "Advanced examples"
 categories: example
 mathjax: true
 ---
