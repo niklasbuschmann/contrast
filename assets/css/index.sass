@@ -20,21 +20,17 @@ header p
   margin-top: .3em
   margin-bottom: 1.5em
 
-{% if site.navigation and site.icons %}
+{% if site.icons %}
 
-body > header h1
+{% if site.navigation %}
+
+body > header h2
+  font-size: 1.7em
   width: 100%
   margin-top: .1em
   margin-bottom: .5em
 
-{% else %}
-
-body > header h1
-  font-size: 1.6em
-
 {% endif %}
-
-{% if site.icons %}
 
 nav a
   display: inline-flex
