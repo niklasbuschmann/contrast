@@ -1,6 +1,6 @@
 ---
 title:  "Advanced examples"
-categories: example
+categories: markdown
 mathjax: true
 ---
 
