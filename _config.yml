@@ -5,6 +5,7 @@ permalink: /:title/
 lang: "en"
 
 show_footer: false           # show the "previous" and "next" links at the end of each post
+hide_title: false            # don't show the site title in the header
 dark_theme: false            # use the dark mode as default
 dark_header: false           # keep the header dark
 dark_footer: false           # keep the footer dark
@@ -14,10 +15,10 @@ navigation:                  # site navigation in the header
   - README.md
   - Github: "http://github.com/niklasbuschmann/contrast"
 
-icons:                      # icons in the header, see http://fontawesome.com/icons
-  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
-  github: "https://github.com/niklasbuschmann/contrast"
-  rss: "/contrast/feed.xml"
+#icons:                      # icons in the header, see http://fontawesome.com/icons
+#  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
+#  github: "https://github.com/niklasbuschmann/contrast"
+#  rss: "/contrast/feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: ""
