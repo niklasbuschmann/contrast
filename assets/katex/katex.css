@@ -129,7 +129,7 @@
   -ms-high-contrast-adjust: none !important;
 }
 .katex .katex-version::after {
-  content: "0.10.2";
+  content: "0.11.1";
 }
 .katex .katex-mathml {
   position: absolute;
@@ -332,10 +332,6 @@
 .katex .sqrt > .root {
   margin-left: 0.27777778em;
   margin-right: -0.55555556em;
-}
-.katex .sizing,
-.katex .fontsize-ensurer {
-  display: inline-block;
 }
 .katex .sizing.reset-size1.size1,
 .katex .fontsize-ensurer.reset-size1.size1 {
@@ -872,12 +868,7 @@
 }
 .katex .mtable .vertical-separator {
   display: inline-block;
-  margin: 0 -0.025em;
-  border-right: 0.05em solid;
   min-width: 1px;
-}
-.katex .mtable .vs-dashed {
-  border-right: 0.05em dashed;
 }
 .katex .mtable .arraycolsep {
   display: inline-block;
