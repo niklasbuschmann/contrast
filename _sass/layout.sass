@@ -1,3 +1,15 @@
+{% if site.show_footer %}
+
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+body > footer
+  margin-top: auto
+
+{% endif %}
+
 body > header, body > footer
   display: flex
   flex-wrap: wrap
@@ -6,6 +18,13 @@ body > header, body > footer
 
 header h1, header h2
   margin: 0
+
+article header
+  margin-bottom: 2em
+
+article header h1
+  font-size: 1.75em
+  padding: .25em 0
 
 nav
   margin: .5em -.8em

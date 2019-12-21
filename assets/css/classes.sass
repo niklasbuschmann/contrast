@@ -1,54 +1,24 @@
 ---
 ---
 
-{% if site.show_footer %}
-
-body
-  display: flex
-  flex-direction: column
-  min-height: 100vh
-
-body > footer
-  margin-top: auto
-
-{% endif %}
-
-{% if site.icons %}
-
-nav svg
+.icons svg
   font-size: 1.1em
   height: 1em
   width: 1em
   fill: currentColor
+  transition: .2s color
 
-{% if site.navigation %}
-{% unless site.hide_title %}
+.icons a:hover svg
+  color: #919191
 
-body > header h2
+.full h2
   font-size: 1.7em
   width: 100%
   margin-top: .1em
   margin-bottom: .5em
 
-{% endunless %}
-{% endif %}
-
-{% endif %}
-
-h1
-  font-size: 1.8em
-
-.headline
-  padding: .25em 0
-  border-bottom: 1px solid rgba(145,145,145,0.25)
-
 .categories
   color: #68f
-  text-transform: uppercase
-
-.meta
-  margin-top: 1.25em
-  margin-bottom: 2em
 
 .archive li
   padding: .3em 0

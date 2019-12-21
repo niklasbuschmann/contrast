@@ -8,7 +8,7 @@
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
-<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/classes.css" | relative_url }}">
 <link rel="stylesheet" href="{{ site.style | default: "theme" | prepend: "/assets/css/" | append: ".css" | relative_url }}">
 {% if site.plugins contains "jekyll-feed" %}<link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | relative_url }}" title="{{ site.title }}" />{% endif %}
 {% if page.mathjax or site.mathjax %}
@@ -19,7 +19,7 @@
 {% if site.comments.disqus %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
 {% if site.comments.isso %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
 
-<header>
+<header {% if site.navigation and site.icons %}class="full"{% endif %}>
   {% unless site.hide_title %}<h2><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h2>{% endunless %}
   {% if site.navigation %}
     <nav>
@@ -33,7 +33,7 @@
     </nav>
   {% endif %}
   {% if site.icons %}
-    <nav>
+    <nav class="icons">
     {% for link in site.icons %}
       <a href="{{ link[1] }}"><svg><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ link[0] }}"></use></svg></a>
     {% endfor %}

@@ -4,11 +4,11 @@ description: "Really cool blog about ... something"
 permalink: /:title/
 lang: "en"
 
+dark_header: true            # keep the header dark
+dark_footer: false           # keep the footer dark
+dark_theme: false            # use the dark mode as default
 show_footer: false           # show the "previous" and "next" links at the end of each post
 hide_title: false            # don't show the site title in the header
-dark_theme: false            # use the dark mode as default
-dark_header: false           # keep the header dark
-dark_footer: false           # keep the footer dark
 # style: minimal             # use a simpler style inspired by the minima theme
 
 navigation:                  # site navigation in the header

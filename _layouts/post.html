@@ -3,10 +3,10 @@ layout: default
 ---
 <article>
   <header>
-    {% if page.categories %}<span class="categories">{{ page.categories | join: ", " }}</span>{% endif %}
-    <h1 class="headline">{{ page.title }}</h1>
+    {% if page.categories %}<span class="categories">{{ page.categories | join: ", "  | upcase }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
     {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-    <p class="meta">{{ page.author | default: site.author | escape }}<time datetime="{{ page.date | date_to_xmlschema }}"> | {{ page.date | date: date_format }}</time></p>
+    <span>{{ page.author | default: site.author | escape }}<time datetime="{{ page.date | date_to_xmlschema }}"> | {{ page.date | date: date_format }}</time></span>
   </header>
 {{ content }}
   {% if site.comments.isso %}
