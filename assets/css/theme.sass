@@ -10,10 +10,6 @@ body > header, article, body > footer
   body > header, article, body > footer
     padding: 1.5em calc(34% - 12rem)
 
-article header h1
-  margin-bottom : .7em
-  border-bottom: 1px solid reduce(16)
-
 {% if site.dark_header %}
 
 body > header
@@ -21,11 +17,19 @@ body > header
   color: #fff
   border-bottom: 1px solid rgba(255, 255, 255, .05)
 
+article header h1
+  margin-bottom: .7em
+  border-bottom: 1px solid reduce(28)
+
 {% else %}
 
 body > header
   box-shadow: 0 0 .6em rgba(34, 34, 34, .05)
   border-bottom: 1px solid reduce(12)
+
+article header h1
+  margin-bottom: .7em
+  border-bottom: 1px solid reduce(16)
 
 {% endif %}
 
