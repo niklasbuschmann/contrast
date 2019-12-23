@@ -4,12 +4,10 @@ body
   font-size: $font-size
   font-weight: $font-weight
   line-height: $line-height
+  margin: 0
   -webkit-text-size-adjust: 100%
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
-body, blockquote, figure
-  margin: 0
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
@@ -38,11 +36,16 @@ blockquote
   border-left: 4px solid $link-color
   padding: 1px 1.5em
 
+blockquote, figure
+  margin: 0 1em
+
+img, li
+  margin: .5em 0
+
 img
   border-radius: 2px
   max-width: 100%
   height: auto
-  margin: .5em 0
 
 table
   box-shadow: 0 0 0 1px reduce(12) inset
