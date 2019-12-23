@@ -40,16 +40,16 @@ article header h1
 {% if site.dark_footer %}
 
 body > footer
-  background: #242424
+  background: rgba(34,34,34,0.9)
   color: #aaa
   border-top: 1px solid rgba(255, 255, 255, .05)
 
 {% else %}
 
 body > footer
-  background: reduce(5)
+  box-shadow: 0 0 .6em rgba(34, 34, 34, .05) inset
   color: reduce(100)
-  border-top: 1px solid reduce(12)
+  border-top: 1px solid reduce(10)
 
 {% endif %}
 
