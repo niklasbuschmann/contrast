@@ -10,25 +10,21 @@ body > header, article, body > footer
   body > header, article, body > footer
     padding: 1.5em calc(34% - 12rem)
 
+article header h1
+  margin-bottom: .7em
+  border-bottom: 1px solid reduce(16)
+
 {% if site.dark_header %}
 
 body > header
-  background: #242424
+  background: lighten($dark, 1%)
   color: #fff
-  border-bottom: 1px solid rgba(255, 255, 255, .05)
-
-article header h1
-  margin-bottom: .7em
-  border-bottom: 1px solid reduce(28)
+  border-bottom: 1px solid rgba($light, 0.04)
 
 {% else %}
 
 body > header
-  box-shadow: 0 0 .6em rgba(34, 34, 34, .05)
-  border-bottom: 1px solid reduce(12)
-
-article header h1
-  margin-bottom: .7em
+  box-shadow: 0 0 .6em rgba($dark, 0.06)
   border-bottom: 1px solid reduce(16)
 
 {% endif %}
@@ -40,14 +36,14 @@ article header h1
 {% if site.dark_footer %}
 
 body > footer
-  background: rgba(34,34,34,0.9)
+  background: rgba($dark, 0.9)
   color: #aaa
-  border-top: 1px solid rgba(255, 255, 255, .05)
+  border-top: 1px solid rgba($light, 0.05)
 
 {% else %}
 
 body > footer
-  box-shadow: 0 0 .6em rgba(34, 34, 34, .05) inset
+  box-shadow: 0 0 .6em rgba($dark, 0.05) inset
   color: reduce(100)
   border-top: 1px solid reduce(10)
 
