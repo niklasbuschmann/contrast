@@ -11,8 +11,10 @@ body > header, article, body > footer
     padding: 1.5em calc(34% - 12rem)
 
 article header h1
+  font-size: 1.75em
+  padding: .25em 0
+  border-bottom: {% if site.dark_header %}1.5px solid lighten($dark, 5%){% else %}1px solid reduce(16){% endif %}
   margin-bottom: .7em
-  border-bottom: 1px solid reduce(16)
 
 {% if site.dark_header %}
 
