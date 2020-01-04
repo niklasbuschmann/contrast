@@ -13,7 +13,7 @@ body > header, article, body > footer
 article header h1
   font-size: 1.75em
   padding: .25em 0
-  border-bottom: {% if site.dark_header %}1.5px solid lighten($dark, 5%){% else %}1px solid reduce(16){% endif %}
+  border-bottom: 1px solid {% if site.dark_header %}reduce(24){% else %}reduce(16){% endif %}
   margin-bottom: .7em
 
 {% if site.dark_header %}
