@@ -36,6 +36,12 @@ static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocato
 
 {% endhighlight %}
 
+## Gists
+
+With Github Pages you can emebd gists simply by using the `gist` command:
+
+{% gist 5555251 gist.md %}
+
 ## Images
 
 Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.

@@ -3,7 +3,7 @@ title:  "Markdown examples"
 categories: markdown
 ---
 
-With Markdown, it is possible to emphasize words by making them *italicized*, using *astericks* or _underscores_, or making them **bold**, using **double astericks** or __double underscores__. Of course, you can combine those two formats, with both _**bold and italicized**_ text, using any combination of the above syntax. You can also add a strikethrough to text using a ~~double tilde~~.
+With Markdown, it is possible to emphasize words by making them *italicized*, using *astericks* or _underscores_, or making them **bold**, using **double astericks** or __double underscores__.
 
 You can create [inline links](https://github.com) by wrapping link text in square brackets [ ], and then wrapping the URL in parentheses ( ). For example you can link your [home page](/).
 
@@ -47,6 +47,26 @@ You can create [inline links](https://github.com) by wrapping link text in squar
 | Fifth entry      | Sixth entry      | Seventh entry   | Eight entry     |
 | Ninth entry      | Tenth entry      | Eleventh entry  | Twelfth entry   |
 | Thirteenth entry | Fourteenth entry | Fifteenth entry | Sixteenth entry |
+
+## Code
+
+Source code can be included by fencing the code with three backticks. Syntax highlighting works automatically when specifying the language after the backticks.
+
+<pre>
+```javascript
+function foo () {
+    return "bar";
+}
+```
+</pre>
+
+This would be rendered as:
+
+```javascript
+function foo () {
+    return "bar";
+}
+```
 
 ## Lists
 
