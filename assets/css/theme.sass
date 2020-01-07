@@ -8,11 +8,11 @@ body > header, article, body > footer
 
 @media (min-width: 40em)
   body > header, article, body > footer
-    padding: 1.5em calc(34% - 12rem)
+    padding: 1.5em calc(35% - 12rem)
 
 article header h1
   padding: .2em 0
-  border-bottom: 1px solid {% if site.dark_header %}reduce(24){% else %}reduce(16){% endif %}
+  border-bottom: 1px solid reduce(16)
   margin-bottom: .5em
 
 {% if site.dark_header %}
@@ -38,7 +38,7 @@ body > header
 {% if site.dark_footer %}
 
 body > footer
-  background: rgba(lighten($dark, 1%), 0.9)
+  background: lighten($dark, 1%)
   color: #aaa
   border-top: 1px solid rgba($light, 0.05)
 
