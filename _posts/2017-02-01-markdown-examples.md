@@ -52,13 +52,13 @@ You can create [inline links](https://github.com) by wrapping link text in squar
 
 Source code can be included by fencing the code with three backticks. Syntax highlighting works automatically when specifying the language after the backticks.
 
-<pre>
+````
 ```javascript
 function foo () {
     return "bar";
 }
 ```
-</pre>
+````
 
 This would be rendered as:
 

@@ -38,7 +38,7 @@ static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocato
 
 ## Gists
 
-With Github Pages you can emebd gists simply by using the `gist` command:
+With Github Pages you can embed gists simply by using the `gist` command:
 
 {% gist 5555251 gist.md %}
 

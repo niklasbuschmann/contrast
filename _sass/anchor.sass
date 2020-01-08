@@ -3,21 +3,20 @@ a.ghost, a.gray, a.disabled
   padding: .4em .8em
 
 a.ghost
-  background: $link-color
-  box-shadow: 0 0 0 2px $link-color inset
-  color: white
+  border: 1px solid $link-color
+  color: $link-color
   transition: .1s
 
 a.ghost:hover
-  background: transparent
-  color: $link-color
+  background: $link-color
+  color: inherit
 
 a.gray, a.disabled
-  background: reduce(10)
+  background: reduce(12)
   transition: background, .2s
 
-a.gray:hover, a.disabled:hover
+a.ghost:hover, a.gray:hover, a.disabled:hover
   text-decoration: inherit
 
 a.gray:hover
-  background: reduce(20)
+  background: reduce(24)
