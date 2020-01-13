@@ -3,12 +3,16 @@
 
 @import index
 
-body > header, article, body > footer
-  padding: 1.5rem
+body > header, body > article, body > footer
+  padding: 1.5em
 
-@media (min-width: 40em)
-  body > header, article, body > footer
-    padding: 1.5rem calc(35% - 12rem)
+@media (min-width: 32em)
+  body > header, body > article, body > footer
+    padding: 1.5em calc(38% - 12em)
+
+@media (min-width: 100em)
+  body > header, body > article, body > footer
+    padding: 1.5em calc(46% - 20em)
 
 article header h1
   padding: .2em 0
