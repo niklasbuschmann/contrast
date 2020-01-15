@@ -1,6 +1,5 @@
 body
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif
-  font-size: 16px
+  font-family: "PT Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif
   font-size: $font-size
   font-weight: $font-weight
   line-height: $line-height
@@ -36,8 +35,11 @@ hr
 
 blockquote
   background: reduce(4)
-  border-left: 4px solid $link-color
+  border-left: 3px solid $link-color
   padding: 1px 1.5em
+
+blockquote p
+  opacity: .7
 
 blockquote, figure
   margin: 1em 0
@@ -73,7 +75,7 @@ pre
 \:not(pre) > code
   font-size: .9em
   background: reduce(15)
-  opacity: .75
+  opacity: .7
   border-radius: 2px
   margin: 0 .1em
   padding: .2em .4em
