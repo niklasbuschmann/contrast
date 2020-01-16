@@ -3,7 +3,7 @@ layout: default
 ---
 <article>
   <header>
-    {% if page.categories %}<span class="categories">{{ page.categories | join: ", "  | upcase }}</span>{% endif %}
+    {% if page.categories.size > 0 %}<span class="categories">{{ page.categories | join: ", "  | upcase }}</span>{% endif %}
     <h1>{{ page.title }}</h1>
     {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time>
