@@ -9,12 +9,14 @@ $light: #ffffff !default
 @function reduce ($percent)
   @return rgba(mix($dark, $light), $percent / 100)
 
-@import basic, highlight, layout, darkmode
+@media (prefers-color-scheme: light)
+  html
+    background: $light
+    color: $dark
 
-.light
-  background: $light
-  color: $dark
+@media (prefers-color-scheme: dark)
+  html
+    background: $dark
+    color: $light
 
-.dark
-  background: $dark
-  color: $light
+@import basic, highlight, layout
