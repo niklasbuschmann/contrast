@@ -35,7 +35,7 @@ hr
 
 blockquote
   background: reduce(4)
-  border-left: 3px solid $link-color
+  border-left: 3px solid reduce(70)
   padding: 1px 1.5em
 
 blockquote p
@@ -53,16 +53,17 @@ img
   height: auto
 
 table
-  box-shadow: 0 0 0 1px reduce(12) inset
-  border-spacing: 1px
   width: 100%
-
-tr:hover, tr:nth-child(odd) td
-  background: reduce(6)
+  border-collapse: collapse
 
 th, td
-  box-shadow: 0 0 0 1px reduce(12)
   padding: .5em 1em
+
+tr
+  border: 1px solid reduce(20)
+
+tr:hover, tr:nth-child(odd) td
+  background: reduce(4)
 
 pre
   background: reduce(12)
