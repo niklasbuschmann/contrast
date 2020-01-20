@@ -10,14 +10,16 @@ show_footer: false           # show the "previous" and "next" links at the end o
 hide_title: false            # don't show the site title in the header
 # style: minimal             # use a simpler style inspired by the minima theme
 
-navigation:                  # site navigation in the header
-  - README.md
-  - Github: "http://github.com/niklasbuschmann/contrast"
+# see http://fontawesome.com/icons for icons
 
-#icons:                      # icons in the header, see http://fontawesome.com/icons
-#  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
-#  github: "https://github.com/niklasbuschmann/contrast"
-#  rss: "/contrast/feed.xml"
+navigation:
+  - {file: "index.html", icon: home}
+  - {file: "README.md", icon: address-card}
+
+external:
+  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
+  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:                    # embed disqus or isso comments
 #  disqus: ""

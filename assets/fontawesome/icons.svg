@@ -3,13 +3,13 @@ icons: {"500px": {"changes": ["4.4","5.0.0"],"ligatures": [],"search": {"terms":
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-{% for link in site.menu %}
+{% for link in site.navigation %}
   {% assign icon = link.icon %}
   {% assign svg = page.icons[icon].svg | first %}
   <symbol id="{{ icon }}" viewBox="0 0 {{ svg[1].width }} {{ svg[1].height }}"><path d="{{ svg[1].path }}" /></symbol>
 {% endfor %}
-{% for link in site.icons %}
-  {% assign icon = link[0] %}
+{% for link in site.external %}
+  {% assign icon = link.icon %}
   {% assign svg = page.icons[icon].svg | first %}
   <symbol id="{{ icon }}" viewBox="0 0 {{ svg[1].width }} {{ svg[1].height }}"><path d="{{ svg[1].path }}" /></symbol>
 {% endfor %}

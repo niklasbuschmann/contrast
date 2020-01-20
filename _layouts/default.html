@@ -10,7 +10,7 @@
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <link rel="stylesheet" href="{{ "/assets/css/classes.css" | relative_url }}">
 <link rel="stylesheet" href="{{ site.style | default: "theme" | prepend: "/assets/css/" | append: ".css" | relative_url }}">
-{% if site.plugins contains "jekyll-feed" %}<link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | relative_url }}" title="{{ site.title }}" />{% endif %}
+{% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
 {% if page.mathjax or site.mathjax %}
 <link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">
 <script defer src="{{ "/assets/katex/katex.min.js" | relative_url }}"></script>
@@ -19,25 +19,27 @@
 {% if site.comments.disqus %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
 {% if site.comments.isso %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
 
-<header {% if site.navigation and site.icons %}class="full"{% endif %}>
+<header class="icons {% if site.navigation and site.external %}full{% endif %}">
   {% unless site.hide_title %}<a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>{% endunless %}
   {% if site.navigation %}
     <nav>
-    {% for path in site.navigation %}
-      {% if path.first %}
-        <a href="{{ path.first[1] }}">{{ path.first[0] }}</a>
-      {% else %}
-        {% assign node = site.pages | where: "name", path | first %}<a href="{{ node.url | relative_url }}">{{ node.title }}</a>
-      {% endif %}
+    {% for item in site.navigation %}
+      {% assign node = site.pages | where: "name", item.file | first %}
+      {% assign url = item.url | default: node.url %}
+      {% assign title = item.title | default: node.title %}
+      <a {% if url == page.url %}class="selected"{% endif %} href="{{ url | relative_url }}">{% if item.icon and site.sidebar %}<svg class="hidden"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{% endif %}<span>{{ title }}</span></a>
     {% endfor %}
     </nav>
   {% endif %}
-  {% if site.icons %}
-    <nav class="icons">
-    {% for link in site.icons %}
-      <a href="{{ link[1] }}"><svg><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ link[0] }}"></use></svg></a>
+  {% if site.external %}
+    <nav>
+    {% for item in site.external %}
+      <a href="{{ item.url | relative_url }}"><svg><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{% if item.title and site.sidebar %}<span class="hidden">{{ item.title }}</span>{% endif %}</a>
     {% endfor %}
     </nav>
+  {% endif %}
+  {% if site.sidebar %}
+  <p class="hidden">{{ site.description }}</p>
   {% endif %}
 </header>
 
