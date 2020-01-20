@@ -32,7 +32,7 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
 You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, add an `index.md` file (which can be empty but needs to contain front matter) and add this to your `_config.yml`:
 
 ```yaml
-remote_theme: niklasbuschmann/contrast@v1.3
+remote_theme: niklasbuschmann/contrast@v1.4
 
 plugins:
   - jekyll-remote-theme
