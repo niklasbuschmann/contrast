@@ -10,6 +10,7 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
 ## Features
 
  - supports dark mode on macOS Mojave
+ - optional sidebar
  - MathJax support
  - no external ressources
  - included archive page
@@ -21,6 +22,7 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
 
 ## Based on
 
+- [Hyde](https://github.com/poole/hyde)
 - [Minima](https://github.com/jekyll/minima)
 - [Lagrange](https://github.com/LeNPaul/Lagrange)
 - [Font Awesome](http://fontawesome.io/)
