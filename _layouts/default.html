@@ -10,6 +10,7 @@
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <link rel="stylesheet" href="{{ "/assets/css/classes.css" | relative_url }}">
 <link rel="stylesheet" href="{{ site.style | default: "theme" | prepend: "/assets/css/" | append: ".css" | relative_url }}">
+{% if site.sidebar %}<link rel="stylesheet" href="{{ "/assets/css/sidebar.css" | relative_url }}" media="screen and (min-width: 70em)">{% endif %}
 {% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
 {% if page.mathjax or site.mathjax %}
 <link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">

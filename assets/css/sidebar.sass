@@ -1,0 +1,54 @@
+---
+---
+
+body
+  max-width: 60em
+  margin-left: 16em
+  padding: 0
+
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+
+body > header
+  display: block
+  position: fixed
+  background: #1d1e23
+  color: #eee
+  border-bottom: none
+  border-right: 1px solid #28292e
+  padding: 2.2em 2em
+  width: 12em
+  top: 0
+  bottom: 0
+  left: 0
+
+header h1
+  font-size: 2em
+
+body > article, body > footer
+  padding: 2em 4em
+
+nav
+  margin: 0 -2em
+
+nav a
+  display: flex
+  align-items: center
+  margin: 0
+  padding: .5em 2em
+
+nav a:hover, nav a.selected
+  background: #26272c
+  text-decoration: inherit
+
+nav a svg
+  margin-right: 1.2em
+
+body > header > a
+  display: none
+
+body > header > p
+  margin-top: 3em
+
+.hidden
+  display: block
