@@ -14,13 +14,13 @@
 .full > a
   font-size: 1.5em
   width: 100%
-  margin-top: .1em
-  margin-bottom: .5em
+  margin: .1em 0 .5em
 
 .categories
-  display: inline-block
   color: #68f
-  margin-bottom: .15em
+
+.categories + h1
+  margin: .1em 0 .2em
 
 .archive li
   font-size: 1.05em
@@ -44,8 +44,7 @@
 @media (min-width: 60em)
   .large img, .large.embed
     max-width: 140%
-    margin-right: -20%
-    margin-left: -20%
+    margin: .5em -20%
 
   .embed.large
     padding-bottom: 78.75%
