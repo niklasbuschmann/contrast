@@ -19,13 +19,16 @@ b, strong, th
   font-weight: $font-weight + 200
 
 a
-  color: inherit
+  color: $link-color
   text-decoration: inherit
   &:hover
     text-decoration: underline
 
-article a
-  color: $link-color
+header a, footer a
+  color: inherit
+
+article:not(:last-child)
+  border-bottom: 1px solid reduce(10)
 
 header time
   color: reduce(100)

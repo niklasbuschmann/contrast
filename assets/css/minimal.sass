@@ -11,8 +11,5 @@ body
 body > header, body > article, body > footer
   padding: 1.5em 0
 
-body > header
+body > header, article:not(:last-child)
   border-bottom: 1.5px solid lighten($dark, 10%)
-
-body > footer
-  border-top: 1.5px solid lighten($dark, 10%)

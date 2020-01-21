@@ -1,10 +1,23 @@
 ---
 layout: default
 ---
+{%- assign posts = paginator.posts | default: site.posts -%}
+{%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
+
+{% if site.show_excerpts %}
+{% for post in posts %}
+<article>
+  <header>
+    <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+  </header>
+  {{ post.excerpt }}
+</article>
+{% endfor %}
+{% else %}
 <article>
   <header><h1>Posts</h1></header>
   <ul class="archive">
-    {%- assign posts = paginator.posts | default: site.posts -%}
     {% for post in posts %}
     <li>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
@@ -14,6 +27,7 @@ layout: default
   </ul>
   {{ content }}
 </article>
+{% endif %}
 
 {% if paginator.total_pages > 1 %}
 <footer>
