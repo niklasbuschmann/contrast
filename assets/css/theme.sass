@@ -45,21 +45,8 @@ body > header
 
 {% if site.show_footer %}
 
-@import anchor, footer
-
-{% if site.dark_footer %}
-
 body > footer
-  background: lighten($dark, 1%)
-  color: #aaa
-
-{% else %}
-
-body > footer
-  background: rgba($light, 0.01)
-  box-shadow: 0 0 .6em rgba($dark, 0.05) inset
+  background: reduce(2)
   color: reduce(100)
-
-{% endif %}
 
 {% endif %}

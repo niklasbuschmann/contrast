@@ -8,7 +8,7 @@ layout: default
 {% for post in posts %}
 <article>
   <header>
-    <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+    <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
   </header>
   {{ post.excerpt }}
@@ -31,8 +31,8 @@ layout: default
 
 {% if paginator.total_pages > 1 %}
 <footer>
-  <a {% if paginator.previous_page %}class="gray" href="{{ paginator.previous_page_path | relative_url }}"{% else %}class="disabled"{% endif %}>« newer posts</a>
+  {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
   <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  <a {% if paginator.next_page %}class="gray" href="{{ paginator.next_page_path | relative_url }}"{% else %}class="disabled"{% endif %}>older posts »</a>
+  {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
 </footer>
 {% endif %}
