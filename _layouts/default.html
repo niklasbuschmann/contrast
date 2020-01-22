@@ -23,6 +23,15 @@
 
 <header class="icons {% if site.navigation and site.external %}full{% endif %}">
   {% unless site.hide_title or site.sidebar %}<a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>{% endunless %}
+  {% unless site.navigation or site.external %}
+    <nav>
+    {% for page in site.pages %}
+      {% if page.title %}
+        <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
+    </nav>
+  {% endunless %}
   {% if site.navigation %}
     <nav>
     {% for item in site.navigation %}
