@@ -1,29 +1,11 @@
 ---
 ---
 
-.hidden
-  display: none
-
-.icons svg
-  height: 1em
-  width: 1em
-  fill: currentColor
-  transition: .2s color
-
 .categories
   color: #68f
 
 .categories + h1
   margin: .1em 0
-
-.archive li
-  font-size: 1.1em
-  margin: .6em 0
-
-.archive time
-  display: inline-block
-  min-width: 10ch
-  margin: 0 .25em
 
 .embed
   position: relative
@@ -34,6 +16,36 @@
   position: absolute
   width: 100%
   height: 100%
+
+{% if site.sidebar %}
+
+.hidden
+  display: none
+
+{% endif %}
+
+{% if site.sidebar or site.external %}
+
+.icons svg
+  height: 1em
+  width: 1em
+  fill: currentColor
+  transition: .2s color
+
+{% endif %}
+
+{% unless site.show_excerpts %}
+
+.archive li
+  font-size: 1.1em
+  margin: .6em 0
+
+.archive time
+  display: inline-block
+  min-width: 10ch
+  margin: 0 .2em
+
+{% endunless %}
 
 {% unless site.sidebar %}
 
