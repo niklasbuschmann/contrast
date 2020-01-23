@@ -26,7 +26,7 @@
   {% unless site.navigation or site.external %}
     <nav>
     {% for page in site.pages %}
-      {% if page.title %}
+      {% if page.title and page.sitemap != false %}
         <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
       {% endif %}
     {% endfor %}
