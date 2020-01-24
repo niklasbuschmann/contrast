@@ -14,23 +14,6 @@ body > header, body > article, body > footer
   body > header, body > article, body > footer
     padding: 1.5em calc(38% - 12em)
 
-@media (min-width: 100em)
-  body > header, body > article, body > footer
-    padding: 1.5em calc(46% - 20em)
-
-{% if site.sidebar %}
-
-@media (max-width: 70em)
-  h1, h2, h3, h4, h5, h6
-    font-weight: inherit
-
-{% else %}
-
-h1, h2, h3, h4, h5, h6
-  font-weight: inherit
-
-{% endif %}
-
 {% if site.dark_header %}
 
 body > header
@@ -44,5 +27,23 @@ body > header
   background: rgba($light, 0.01)
   box-shadow: {% if site.minimal %}none{% else %}0 0 .6em rgba($dark, 0.06){% endif %}
   border-bottom: 1px solid reduce(16)
+
+{% endif %}
+
+{% unless site.sidebar %}
+
+@media (min-width: 100em)
+  body > header, body > article, body > footer
+    padding: 1.5em calc(46% - 20em)
+
+h1, h2, h3, h4, h5, h6
+  font-weight: inherit
+
+{% endunless %}
+
+{% if site.show_excerpts %}
+
+article:not(:last-child)
+  border-bottom: 1px solid reduce(10)
 
 {% endif %}
