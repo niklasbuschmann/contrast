@@ -12,21 +12,11 @@ layout: default
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
   </header>
   {{ post.excerpt }}
+  <p><a href="{{ post.url | relative_url }}">read more</a></p>
 </article>
 {% endfor %}
 {% else %}
-<article>
-  <header><h1>Posts</h1></header>
-  <ul class="archive">
-    {% for post in posts %}
-    <li>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  {{ content }}
-</article>
+  {% include archive.html %}
 {% endif %}
 
 {% if paginator.total_pages > 1 %}
