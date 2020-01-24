@@ -60,6 +60,6 @@ The `.large` wrapper can be used to increase the width of an image or iframe.
 
 ## Embedded content
 
-You can also embed a lot of stuff, for example from YouTube. To scale the video to full width use the `<div class="embed"></div>` wrapper around the iframe.
+You can also embed a lot of stuff, for example from YouTube, using the `embed.html` include.
 
-<div class="large embed"><iframe src="https://www.youtube.com/embed/_C0A5zX-iqM" frameborder="0" allowfullscreen></iframe></div>
+{% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}

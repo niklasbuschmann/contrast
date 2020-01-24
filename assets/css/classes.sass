@@ -7,16 +7,6 @@
 .categories + h1
   margin: .1em 0
 
-.embed
-  position: relative
-  padding-bottom: 56.25%
-  margin: 1.5em 0
-
-.embed iframe
-  position: absolute
-  width: 100%
-  height: 100%
-
 {% if site.sidebar %}
 
 .hidden
@@ -58,11 +48,8 @@
   margin: .1em 0 .6em
 
 @media (min-width: 60em)
-  .large img, .large.embed
+  .large img
     max-width: 140%
     margin: .5em -20%
-
-  .embed.large
-    padding-bottom: 78.75%
 
 {% endunless %}
