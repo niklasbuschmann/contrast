@@ -46,13 +46,3 @@ body > header
   border-bottom: 1px solid reduce(16)
 
 {% endif %}
-
-{% if site.show_footer or site.show_excerpts %}
-
-body > footer
-  color: reduce(100)
-  box-shadow: {% if site.minimal %}none{% else %}0 0 .6em rgba($dark, 0.04) inset{% endif %}
-  padding-top: 2em
-  padding-bottom: 2em
-
-{% endif %}

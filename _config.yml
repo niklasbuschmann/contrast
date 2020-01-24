@@ -6,7 +6,6 @@ lang: "en"
 
 sidebar: true                # show a sidebar instead of the usual header
 show_excerpts: false         # show article excerpts on the home page
-show_footer: false           # show the "previous" and "next" links at the end of each post
 dark_header: false           # keep the top-header dark
 hide_title: false            # hide the site title in the header
 minimal: false               # minima-inspired style without box-shadows

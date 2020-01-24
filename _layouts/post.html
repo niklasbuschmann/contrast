@@ -17,10 +17,3 @@ layout: default
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   {% endif %}
 </article>
-
-{% if site.show_footer and page.previous.url or page.next.url %}
-<footer>
-  {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a>{% else %}<span></span>{% endif %}
-  {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% else %}<span></span>{% endif %}
-</footer>
-{% endif %}
