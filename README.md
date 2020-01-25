@@ -32,14 +32,13 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
 
 ## Installation (jekyll-remote-theme method)
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, add an `index.md` file (which can be empty but needs to contain front matter) and add this to your `_config.yml`:
+You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
 
 ```yaml
-remote_theme: niklasbuschmann/contrast@v1.4
+remote_theme: niklasbuschmann/contrast@v2.0
 
 plugins:
   - jekyll-remote-theme
-  - jekyll-default-layout
 ```
 
 ## License
@@ -50,9 +49,9 @@ plugins:
 
 <div class="large" markdown="1">
 
-![screenshot](https://user-images.githubusercontent.com/4943215/61584980-d5d94f00-ab51-11e9-843a-af4ea884d4c5.png)
+![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
 
-![screenshot](https://user-images.githubusercontent.com/4943215/61584981-d5d94f00-ab51-11e9-8755-92bf20205879.png)
+![screenshot](https://user-images.githubusercontent.com/4943215/73125195-5fa42200-3fa4-11ea-89f8-d09c1d6fe252.png)
 
 </div>
 
