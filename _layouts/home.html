@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-{%- assign posts = paginator.posts | default: site.posts -%}
-{%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
 
 {% if site.show_excerpts %}
+{%- assign posts = paginator.posts | default: site.posts -%}
+{%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
 {% for post in posts %}
 <article>
   <header>
@@ -12,7 +12,7 @@ layout: default
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
   </header>
   {{ post.excerpt }}
-  <p><a href="{{ post.url | relative_url }}">read more</a></p>
+  <div><a href="{{ post.url | relative_url }}">read more</a></div>
 </article>
 {% endfor %}
 {% else %}
