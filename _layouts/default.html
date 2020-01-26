@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
 <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +31,7 @@
     {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" %}
     {% include menu.html menu=pages %}
   {% endif %}
-  {% if site.sidebar %}
+  {% if site.sidebar and site.description %}
     <p class="hidden">{{ site.description }}</p>
   {% endif %}
 </header>

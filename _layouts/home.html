@@ -1,28 +1,19 @@
 ---
 layout: default
 ---
-
 {% if site.show_excerpts %}
-{%- assign posts = paginator.posts | default: site.posts -%}
-{%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-{% for post in posts %}
-<article>
-  <header>
-    <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
-  </header>
-  {{ post.excerpt }}
-  <div><a href="{{ post.url | relative_url }}">read more</a></div>
-</article>
-{% endfor %}
+  {%- assign posts = paginator.posts | default: site.posts -%}
+  {% for post in posts %}
+    {% include post.html post=post preview=true %}
+  {% endfor %}
 {% else %}
   {% include archive.html title="Posts" %}
 {% endif %}
 
 {% if paginator.total_pages > 1 %}
-<footer>
-  {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
-  <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
-</footer>
+  <footer>
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
+    <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
+  </footer>
 {% endif %}
