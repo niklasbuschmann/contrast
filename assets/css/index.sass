@@ -30,17 +30,12 @@ body > header
 
 {% endif %}
 
-{% if site.sidebar or site.hide_title %}
-
-header h1
-  font-size: 2em
-
-{% else %}
+{% unless site.sidebar %}
 
 h1, h2, h3, h4, h5, h6
   font-weight: inherit
 
-{% endif %}
+{% endunless %}
 
 {% if site.show_excerpts %}
 
