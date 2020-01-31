@@ -26,7 +26,7 @@ body > header
 
 {% endif %}
 
-{% unless site.sidebar %}
+{% unless site.sidebar or site.minimal %}
 
 h1, h2, h3, h4, h5, h6
   font-weight: inherit
