@@ -62,4 +62,6 @@ The `.large` wrapper can be used to increase the width of an image or iframe.
 
 You can also embed a lot of stuff, for example from YouTube, using the `embed.html` include.
 
+<div class="large">
 {% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
+</div>
