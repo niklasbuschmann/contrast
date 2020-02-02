@@ -4,12 +4,12 @@
     {%- assign node = site.pages | where: "name", item.file | first -%}
     {%- assign url = item.url | default: node.url -%}
     {%- assign title = item.title | default: node.title -%}
-    <a href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
+    <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
       {%- if item.icon and site.sidebar or include.icons == true -%}
-        <svg {% unless include.icons %}class="hidden"{% endunless %}><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>
+        <svg aria-hidden="true" {% unless include.icons %}class="hidden"{% endunless %}><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>
       {%- endif -%}
       {%- if title and site.sidebar or include.icons != true -%}
-        <span {% if include.icons %}class="hidden"{% endif %}>{{ title }}</span>
+        <span aria-hidden="true" {% if include.icons %}class="hidden"{% endif %}>{{ title }}</span>
       {%- endif -%}
     </a>
   {% endfor %}
