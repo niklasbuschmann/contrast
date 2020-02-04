@@ -7,6 +7,7 @@ date_format: "%B %d, %Y"
 
 sidebar: true                # show a sidebar instead of the usual header
 show_excerpts: false         # show article excerpts on the home page
+show_related: true           # show the previous and next links after every post
 dark_header: false           # keep the top-header dark
 hide_title: false            # hide the site title in the header
 minimal: false               # minima-inspired style without box-shadows
