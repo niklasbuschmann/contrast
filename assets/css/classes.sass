@@ -65,10 +65,19 @@
 
 {% if site.show_title and site.navigation and site.external %}
 
+{% if site.sidebar %}
+
+.title
+  display: none
+
+{% else %}
+
 .title
   font-size: 1.5em
   width: 100%
   margin: .1em 0 .6em
+
+{% endif %}
 
 {% endif %}
 
