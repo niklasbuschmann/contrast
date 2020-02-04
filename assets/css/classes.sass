@@ -63,15 +63,19 @@
 
 {% endif %}
 
+{% if site.show_title and site.navigation and site.external %}
+
+.title
+  font-size: 1.5em
+  width: 100%
+  margin: .1em 0 .6em
+
+{% endif %}
+
 {% unless site.sidebar %}
 
 .icons a:hover svg
   color: reduce(100)
-
-.full
-  font-size: 1.5em
-  width: 100%
-  margin: .1em 0 .6em
 
 @media (min-width: 60em)
   .large

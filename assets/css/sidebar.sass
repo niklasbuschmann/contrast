@@ -45,8 +45,22 @@ nav a svg
 article header h1
   font-size: 2em
 
-body > header div
-  margin-top: 3em
-
 .hidden
   display: inline-block
+
+{% if site.show_title %}
+
+.title
+  display: block
+  font-family: "PT Serif", Georgia
+  font-size: 2.4em
+  margin: 0 0 .8em
+
+{% endif %}
+
+{% if site.description %}
+
+.description
+  margin-top: 3em
+
+{% endif %}

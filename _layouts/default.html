@@ -21,8 +21,8 @@
 {% if site.comments.isso %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
 
 <header class="icons">
-  {% unless site.hide_title or site.sidebar %}
-    <a href="{{ "/" | relative_url }}" {% if site.navigation and site.external %}class="full"{% endif %}>{{ site.title | escape }}</a>
+  {% unless site.show_title != true and site.sidebar or site.navigation and site.external %}
+    <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% endunless %}
   {% if site.navigation or site.external %}
     {% include menu.html menu=site.navigation icons=false %}
@@ -32,7 +32,7 @@
     {% include menu.html menu=pages %}
   {% endif %}
   {% if site.sidebar and site.description %}
-    <div class="hidden">{{ site.description }}</div>
+    <div class="hidden description">{{ site.description }}</div>
   {% endif %}
 </header>
 
