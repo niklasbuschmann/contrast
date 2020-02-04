@@ -31,7 +31,7 @@
     {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" %}
     {% include menu.html menu=pages %}
   {% endif %}
-  {% if site.sidebar and site.description %}
+  {% if site.sidebar and site.show_description %}
     <div class="hidden description">{{ site.description }}</div>
   {% endif %}
 </header>

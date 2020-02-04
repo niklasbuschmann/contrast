@@ -5,19 +5,20 @@ permalink: /:title/
 lang: "en"
 date_format: "%B %d, %Y"
 
-### Layout ###
+# Layout
 
 sidebar: true                # show a sidebar instead of the usual header
 show_excerpts: false         # show article excerpts on the home page
 show_related: true           # show the previous and next links after every post
+show_description: true       # show the site description in the sidebar
 show_title: false            # always keep the site title visible
 
-### Styling ###
+# Styling
 
 dark_header: false           # always keep the header dark
 minimal: false               # minima-inspired style without box-shadows
 
-### Menu ###
+# Menu
 
 navigation:
   - {file: "index.html", icon: home}
