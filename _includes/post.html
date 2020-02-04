@@ -12,15 +12,6 @@
     <div><a href="{{ include.post.url | relative_url }}">read more</a></div>
   {% else %}
     {{ include.post.content }}
-    {% if site.show_related %}
-      <p class="separator">Related posts</p>
-      {% if include.post.next.url %}
-        <p class="related"><span>Next Post</span><a href="{{ include.post.next.url | relative_url }}">{{ include.post.next.title }}</a></p>
-      {% endif %}
-      {% if include.post.previous.url %}
-        <p class="related"><span>Previous Post</span><a href="{{ include.post.previous.url | relative_url }}">{{ include.post.previous.title }}</a></p>
-      {% endif %}
-    {% endif %}
     {% if include.post.comments != false and site.comments.isso or site.comments.disqus %}
       <hr>
       {% if site.comments.isso %}<div id="isso-thread"></div>{% endif %}

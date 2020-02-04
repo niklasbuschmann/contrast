@@ -40,26 +40,19 @@
 
 {% if site.show_related %}
 
-.separator
-  display: flex
-  color: reduce(100)
-  margin: 2em -.8em
-
-.separator::before, .separator::after
-  display: block
-  content: " "
-  margin: .8em
-  border-top: 1px solid reduce(26)
-  flex: 1
+.related
+  border-top: 1px solid reduce(25)
 
 .related span
   display: block
   color: reduce(100)
 
 .related a
-  color: inherit
   font-size: 1.2em
   font-weight: bold
+
+.next
+  text-align: right
 
 {% endif %}
 
