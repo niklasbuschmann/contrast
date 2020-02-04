@@ -5,34 +5,7 @@
 
 .categories
   color: #68f
-
-.categories + h1
-  margin: .1em 0
-
-{% if site.show_related %}
-
-.separator
-  display: flex
-  color: reduce(100)
-  margin: 2em -.8em
-
-.separator::before, .separator::after
-  display: block
-  content: " "
-  margin: .8em
-  border-top: 1px solid reduce(26)
-  flex: 1
-
-.related span
-  display: block
-  color: reduce(100)
-
-.related a
-  color: inherit
-  font-size: 1.2em
-  font-weight: bold
-
-{% endif %}
+  margin-bottom: .15em
 
 {% if site.sidebar %}
 
@@ -65,12 +38,37 @@
 
 {% endunless %}
 
+{% if site.show_related %}
+
+.separator
+  display: flex
+  color: reduce(100)
+  margin: 2em -.8em
+
+.separator::before, .separator::after
+  display: block
+  content: " "
+  margin: .8em
+  border-top: 1px solid reduce(26)
+  flex: 1
+
+.related span
+  display: block
+  color: reduce(100)
+
+.related a
+  color: inherit
+  font-size: 1.2em
+  font-weight: bold
+
+{% endif %}
+
 {% unless site.sidebar %}
 
 .icons a:hover svg
   color: reduce(100)
 
-.full > a
+.full
   font-size: 1.5em
   width: 100%
   margin: .1em 0 .6em

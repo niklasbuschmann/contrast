@@ -1,7 +1,7 @@
 <article>
   <header>
     {% if include.post.categories.size > 0 and include.preview != true %}
-      <span class="categories">{{ include.post.categories | join: ", "  | upcase }}</span>
+      <div class="categories">{{ include.post.categories | join: ", "  | upcase }}</div>
     {% endif %}
     <h1><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>
     {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
