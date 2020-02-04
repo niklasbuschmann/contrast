@@ -5,27 +5,32 @@ permalink: /:title/
 lang: "en"
 date_format: "%B %d, %Y"
 
+### Layout ###
+
 sidebar: true                # show a sidebar instead of the usual header
 show_excerpts: false         # show article excerpts on the home page
 show_related: true           # show the previous and next links after every post
-show_title: false            # always show the site title
-dark_header: false           # always keep the top-header dark
+show_title: false            # always keep the site title visible
+
+### Styling ###
+
+dark_header: false           # always keep the header dark
 minimal: false               # minima-inspired style without box-shadows
 
-# see http://fontawesome.com/icons for icons
+### Menu ###
 
 navigation:
   - {file: "index.html", icon: home}
   - {file: "README.md", icon: address-card}
 
-external:
+external:                    # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
   - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
-comments:                    # embed disqus or isso comments
-#  disqus: ""
-#  isso: ""
+comments:
+#  disqus: ""                # see https://disqus.com/
+#  isso: ""                  # see https://posativ.org/isso/
 
 plugins:
  - jekyll-feed
