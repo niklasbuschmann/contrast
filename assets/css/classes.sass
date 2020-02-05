@@ -7,6 +7,14 @@
   color: #68f
   margin-bottom: .15em
 
+{% unless site.navigation and site.external %}
+
+.title
+  font-size: 1.3em
+  margin: .2em 0
+
+{% endunless %}
+
 {% if site.sidebar %}
 
 .hidden
@@ -40,9 +48,6 @@
 
 {% if site.show_related %}
 
-.related
-  border-top: 1px solid reduce(25)
-
 .related span
   display: block
   color: reduce(100)
@@ -58,19 +63,10 @@
 
 {% if site.show_title and site.navigation and site.external %}
 
-{% if site.sidebar %}
-
-.title
-  display: none
-
-{% else %}
-
 .title
   font-size: 1.5em
   width: 100%
   margin: .1em 0 .6em
-
-{% endif %}
 
 {% endif %}
 
