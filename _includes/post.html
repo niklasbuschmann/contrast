@@ -9,7 +9,7 @@
   </header>
   {% if include.preview %}
     {{ include.post.excerpt }}
-    <div><a href="{{ include.post.url | relative_url }}">read more</a></div>
+    <div class="more"><a href="{{ include.post.url | relative_url }}">read more</a></div>
   {% else %}
     {{ include.post.content }}
     {% if include.post.comments != false and site.comments.isso or site.comments.disqus %}
