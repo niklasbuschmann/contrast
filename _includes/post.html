@@ -1,6 +1,6 @@
 <article>
-  <header>
-    {% if include.post.categories.size > 0 and include.preview != true %}
+  <header class="meta">
+    {% if site.minimal != true and include.post.categories.size > 0 and include.preview != true %}
       <div class="categories">{{ include.post.categories | join: ", "  | upcase }}</div>
     {% endif %}
     <h1><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>

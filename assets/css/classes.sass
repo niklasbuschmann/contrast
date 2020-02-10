@@ -3,9 +3,13 @@
 
 @import index, highlight
 
+{% unless site.minimal %}
+
 .categories
   color: #68f
   margin-bottom: .15em
+
+{% endunless %}
 
 {% unless site.navigation and site.external %}
 
@@ -95,7 +99,6 @@
 
 @media (min-width: 60em)
   .large
-    max-width: 140%
-    margin: .5em -20%
+    margin: 1em -20%
 
 {% endunless %}
