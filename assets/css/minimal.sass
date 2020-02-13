@@ -4,9 +4,12 @@
 @import index, font, basic, layout
 
 body
-  font-size: 1.1em
-  margin: 2em 1em 0
-  padding: 0 calc(36% - 12em)
+  font-size: 1.08em
+  margin: 0 1em
+  padding: .5em calc(38% - 12em)
 
-body > article, body > footer
-  padding: 2em 0
+body > header, body > article, body > footer
+  margin: 2em 0
+
+article:not(:last-child)
+  padding-bottom: 2em
