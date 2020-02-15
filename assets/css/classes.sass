@@ -6,7 +6,7 @@
 {% unless site.minimal %}
 
 .categories
-  color: #68f
+  color: $link-color
   margin-bottom: .15em
 
 {% endunless %}
@@ -105,3 +105,24 @@
     width: 100%
 
 {% endunless %}
+
+{% if site.line_count %}
+
+.rouge-table
+  width: initial
+
+.rouge-table tr, .rouge-table td
+  background: inherit!important
+  border: none
+
+.rouge-table pre
+  font-size: inherit
+  background: inherit
+  margin: 0
+  padding: 0
+
+.rouge-gutter
+  opacity: .5
+  padding: 0 .5em
+
+{% endif %}

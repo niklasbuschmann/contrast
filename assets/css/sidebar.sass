@@ -6,7 +6,7 @@
 body
   font-size: 1.08em
   margin: 0 0 0 16em
-  padding: 0
+  max-width: inherit
   overscroll-behavior: none
 
 body > article, body > footer
@@ -40,6 +40,12 @@ nav a
 nav a:hover, nav a.selected
   background: lighten($dark, 2%)
   text-decoration: inherit
+
+article header h1
+  font-size: 2em
+
+article:not(:last-child)
+  border-bottom-color: reduce(20)
 
 .icons svg
   margin-right: 1.2em
