@@ -31,7 +31,7 @@
     {% include menu.html menu=site.navigation icons=false %}
     {% include menu.html menu=site.external icons=true %}
   {% else %}
-    {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" %}
+    {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
     {% include menu.html menu=pages %}
   {% endif %}
   {% if site.sidebar and site.show_description %}
