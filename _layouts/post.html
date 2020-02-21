@@ -4,7 +4,7 @@ layout: default
 
 <article>
   {% include meta.html post=page %}
-  {{ page.content }}
+  {{ content }}
   {% if page.comments != false and site.comments.isso or site.comments.disqus %}
     <hr>
     {% if site.comments.isso %}<div id="isso-thread"></div>{% endif %}
