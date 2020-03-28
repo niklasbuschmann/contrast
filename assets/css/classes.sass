@@ -66,8 +66,7 @@
 {% if site.show_related %}
 
 .related div
-  flex: 1 50%
-  min-width: 15em
+  flex: 1 0 15em
 
 .related span
   display: block
@@ -77,8 +76,9 @@
   font-size: 1.2em
   font-weight: bold
 
-.next
-  text-align: right
+@media (min-width: 30em)
+  .next
+    text-align: right
 
 {% endif %}
 
