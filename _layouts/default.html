@@ -7,11 +7,7 @@
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
-{% if site.minimal %}
-<link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
-{% else %}
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
-{% endif %}
 <link rel="stylesheet" href="{{ "/assets/css/classes.css" | relative_url }}">
 {% if site.sidebar %}<link rel="stylesheet" href="{{ "/assets/css/sidebar.css" | relative_url }}" media="screen and (min-width: 70em)">{% endif %}
 {% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
