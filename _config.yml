@@ -17,6 +17,7 @@ show_title: false            # always keep the site title visible
 # Styling (only applies with sidebar disabled)
 
 dark_header: false           # always keep the header dark
+show_frame: false            # add gray frame to the site
 
 # Menu
 

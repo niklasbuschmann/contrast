@@ -6,11 +6,35 @@
 body > header, body > article, body > footer
   padding: 1.5em
 
+{% if site.show_frame %}
+
+body
+  min-height: 100vh
+
+@media (prefers-color-scheme: light)
+  html
+    background: lighten($dark, 12.5%)
+
+@media (prefers-color-scheme: dark)
+  body
+    box-shadow: 0 0 0 1px rgba($light, 0.05)
+
+@media (min-width: 36em)
+  body
+    margin: 0 calc(38% - 18em)
+
+  body > header, body > article, body > footer
+    padding: 1.7em 12.5%
+
+{% else %}
+
 @media (min-width: 32em)
   body > header, body > article, body > footer
     padding: 1.7em calc(38% - 12em)
 
-{% if site.dark_header %}
+{% endif %}
+
+{% if site.dark_header or site.show_frame %}
 
 body > header
   background: $dark
@@ -25,7 +49,7 @@ body > header
 
 {% endif %}
 
-{% unless site.sidebar %}
+{% unless site.sidebar or site.show_frame %}
 
 body > footer
   box-shadow: 0 0 .6em rgba($dark, 0.04) inset
