@@ -6,7 +6,7 @@ layout: page
 
 ## Installation
 
-Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
 
 ## Features
 
@@ -35,7 +35,7 @@ Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https
 You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
 
 ```yaml
-remote_theme: niklasbuschmann/contrast@v2.8
+remote_theme: niklasbuschmann/contrast@v2.9
 
 plugins:
   - jekyll-remote-theme
