@@ -6,31 +6,23 @@
 body > header, body > article, body > footer
   padding: 1.5em
 
-{% if site.show_frame %}
-
-body
-  min-height: 100vh
-
-@media (prefers-color-scheme: light)
-  html
-    background: lighten($dark, 12.5%)
-
-@media (prefers-color-scheme: dark)
-  body
-    box-shadow: 0 0 0 1px rgba($light, 0.05)
-
-@media (min-width: 36em)
-  body
-    margin: 0 calc(38% - 18em)
-
-  body > header, body > article, body > footer
-    padding: 1.7em 12.5%
-
-{% else %}
-
 @media (min-width: 32em)
   body > header, body > article, body > footer
     padding: 1.7em calc(38% - 12em)
+
+{% if site.show_frame %}
+
+@media (prefers-color-scheme: light) and (min-width: 36em)
+  html
+    background: lighten($dark, 12.5%)
+    padding: 0 calc(38% - 18em)
+
+  body
+    background: $light
+    min-height: 100vh
+
+  body > header, body > article, body > footer
+    padding: 1.7em 12.5%
 
 {% endif %}
 
@@ -38,7 +30,7 @@ body
 
 body > header
   background: $dark
-  color: #fff
+  color: $light
   border-bottom: 1px solid rgba($light, 0.05)
 
 {% else %}
