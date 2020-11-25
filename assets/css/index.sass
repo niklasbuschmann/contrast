@@ -13,14 +13,10 @@ body > header, body > article, body > footer
 {% if site.show_frame %}
 {% unless site.sidebar %}
 
-@media (prefers-color-scheme: light) and (min-width: 36em)
+@media (prefers-color-scheme: light) and (min-width: 44em)
   html
     background: lighten($dark, 12.5%)
     padding: 0 calc(38% - 18em)
-
-  body
-    background: $light
-    min-height: 100vh
 
   body > header, body > article, body > footer
     padding: 1.7em 12.5%
