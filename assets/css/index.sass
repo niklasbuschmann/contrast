@@ -10,21 +10,7 @@ body > header, body > article, body > footer
   body > header, body > article, body > footer
     padding: 1.7em calc(38% - 12em)
 
-{% if site.show_frame %}
-{% unless site.sidebar %}
-
-@media (prefers-color-scheme: light) and (min-width: 44em)
-  html
-    background: lighten($dark, 12.5%)
-    padding: 0 calc(38% - 18em)
-
-  body > header, body > article, body > footer
-    padding: 1.7em 12.5%
-
-{% endunless %}
-{% endif %}
-
-{% if site.dark_header or site.show_frame %}
+{% if site.dark_header %}
 
 body > header
   background: $dark
@@ -39,7 +25,7 @@ body > header
 
 {% endif %}
 
-{% unless site.sidebar or site.show_frame %}
+{% unless site.sidebar %}
 
 body > footer
   box-shadow: 0 0 .6em rgba($dark, 0.04) inset
