@@ -3,30 +3,27 @@
 
 @import index, font, basic, layout
 
-body > header, body > article, body > footer
-  padding: 1.5em
-
 html
-  background: lighten($dark, 12%)
-  padding: 0 calc(38% - 18em)
-
-@media (min-width: 40em)
-  body > header, body > article, body > footer
-    padding: 1.65em 12.5%
+  background: lighten($dark, 14%)
+  padding: 0 calc(38% - 20em)
 
 body
+  box-shadow: 0 0 0 1px rgba(lighten($dark, 14%), 0.6)
   min-height: 100vh
-  box-shadow: 0 0 0 1px lighten($dark, 12%)
 
 body > header
-  background: darken($dark, 1%)
+  background: $dark
   color: $light
-  border-bottom: 1px solid lighten($dark, 12%)
+  border-bottom: 1px solid rgba(lighten($dark, 14%), 0.6)
 
-@media (prefers-color-scheme: dark) 
-  html
-    background: darken($dark, 3%)
+body > header, body > article, body > footer
+  padding: 1.65em calc(20% - 4em)
 
-@media (prefers-color-scheme: light) 
-  html
-    background: lighten($dark, 12%)
+@media (max-width: 36em)
+  body > header, body > article, body > footer
+    padding: 1.5em
+
+@media (prefers-color-scheme: dark)
+  html, body
+    background: $dark
+    color: $light
