@@ -9,15 +9,15 @@ date_format: "%B %d, %Y"
 # Layout
 
 sidebar: false               # show a sidebar instead of the usual header
-show_excerpts: false         # show article excerpts on the home page
-show_related: true           # show the previous and next links after every post
 show_description: true       # show the site description in the sidebar
+show_excerpts: false         # show article excerpts on the home page
+show_related: false          # show the previous and next links after every post
 show_title: false            # always keep the site title visible
 
 # Styling (only applies with sidebar disabled)
 
+show_frame: true             # add gray frame to the site
 dark_header: false           # always keep the header dark
-show_frame: false            # add gray frame to the site
 
 # Menu
 
