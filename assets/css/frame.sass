@@ -4,24 +4,23 @@
 @import index, font, basic, layout
 
 html
-  background: lighten($dark, 14%)
+  background: lighten($dark, 25%)
   padding: 0 calc(38% - 20em)
 
 body
-  box-shadow: 0 0 0 1px rgba(lighten($dark, 14%), 0.6)
-  min-height: 100vh
+  box-shadow: 0 0 0 1px rgba(lighten($dark, 25%), 0.3)
 
-body > header
+body > header, body > footer
   background: $dark
   color: $light
-  border-bottom: 1px solid rgba(lighten($dark, 14%), 0.6)
+  box-shadow: 0 1px rgba(lighten($dark, 25%), 0.3)
 
 body > header, body > article, body > footer
-  padding: 1.65em calc(20% - 4em)
+  padding: 1.5em
 
-@media (max-width: 36em)
+@media (min-width: 36em)
   body > header, body > article, body > footer
-    padding: 1.5em
+    padding: 1.65em calc(20% - 4em)
 
 @media (prefers-color-scheme: dark)
   html, body
