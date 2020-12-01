@@ -15,20 +15,9 @@ body > header, body > article, body > footer
   body > header, body > article, body > footer
     padding: 1.7em calc(38% - 12em)
 
-{% if site.dark_header %}
-
-body > header
-  background: $dark
-  color: $light
-  border-bottom: 1px solid rgba($light, 0.05)
-
-{% else %}
-
 body > header
   box-shadow: 0 0 .6em rgba($dark, 0.05)
   border-bottom: 1px solid reduce(16)
-
-{% endif %}
 
 body > footer
   box-shadow: 0 0 .6em rgba($dark, 0.04) inset

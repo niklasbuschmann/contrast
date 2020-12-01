@@ -18,7 +18,6 @@ show_title: false            # always keep the site title visible
 
 show_frame: true             # add gray frame to the site
 show_social: false           # show site description and social links in the footer
-dark_header: false           # always keep the header dark
 
 # Menu
 
