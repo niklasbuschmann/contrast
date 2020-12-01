@@ -3,6 +3,9 @@
 
 @import index, highlight
 
+.title
+  font-size: 1.4em
+
 .archive
   font-size: 1.1em
 
@@ -11,19 +14,9 @@
   min-width: 10ch
   margin: 0 .2em
 
-.title
-  font-size: 1.4em
+{% if site.external %}
 
-{% if site.sidebar %}
-
-.hidden
-  display: none
-
-{% endif %}
-
-{% if site.sidebar or site.show_social %}
-
-.icons svg
+.icon
   height: 1em
   width: 1em
   fill: currentColor
@@ -31,7 +24,7 @@
   vertical-align: middle
   margin-bottom: .15em
 
-footer.icons a:hover svg
+.icon:hover
   color: reduce(100)
 
 {% endif %}

@@ -6,13 +6,12 @@
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
-{% if site.show_frame and site.sidebar != true %}
+{% if site.show_frame %}
 <link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
 {% else %}
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
 {% endif %}
 <link rel="stylesheet" href="{{ "/assets/css/classes.css" | relative_url }}">
-{% if site.sidebar %}<link rel="stylesheet" href="{{ "/assets/css/sidebar.css" | relative_url }}" media="screen and (min-width: 70em)">{% endif %}
 {% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
 {% if page.mathjax or site.mathjax %}
 <link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">
@@ -21,6 +20,7 @@
 {% endif %}
 {% if site.comments.disqus_shortname and page.layout == "post" %}<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>{% endif %}
 {% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
+{% if site.sidebar %}{% include sidebar.html %}{% endif %}
 
 {% if site.navigation %}
   {% assign pages = site.navigation %}
@@ -28,23 +28,17 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
-<header class="icons">
-  {% if site.show_title or site.sidebar != true %}
-    <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
-  {% endif %}
-  {% include menu.html menu=pages %}
-  {% if site.sidebar %}
-    {% include menu.html menu=site.external icons=true %}
-    {% if site.show_description %}<div class="hidden description">{{ site.description }}</div>{% endif %}
-  {% endif %}
+<header>
+  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+  {% include menu.html menu=pages text=true %}
 </header>
 
 {{ content }}
 
-{% if site.show_social and site.sidebar != true %}
-  <footer class="icons">
+{% if site.show_social %}
+  <footer>
     <div>{{ site.description | default: site.title }}</div>
-    {% include menu.html menu=site.external icons=true %}
+    {% include menu.html menu=site.external icon=true %}
   </footer>
 {% endif %}
 

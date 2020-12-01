@@ -8,15 +8,10 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-sidebar: false               # show a sidebar instead of the usual header
-show_description: true       # show the site description in the sidebar
-show_excerpts: false         # show article excerpts on the home page
-show_title: false            # always keep the site title visible
-
-# Styling (only applies with sidebar disabled)
-
-show_frame: true             # add gray frame to the site
-show_social: false           # show site description and social links in the footer
+sidebar: false             # show a sidebar instead of the usual header
+show_excerpts: false       # show article excerpts on the home page
+show_social: false         # show site description and social links in the footer
+show_frame: true           # add gray frame to the site
 
 # Menu
 
@@ -24,14 +19,14 @@ navigation:
   - {file: "index.html", icon: home}
   - {file: "README.md", icon: address-card}
 
-external:                    # see http://fontawesome.com/icons
+external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
   - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
-#  disqus_shortname: ""      # see https://disqus.com/
-#  isso_domain: ""           # see https://posativ.org/isso/
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
 
 plugins:
  - jekyll-feed

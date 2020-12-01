@@ -3,27 +3,29 @@
 
 @import index
 
+html
+  padding: 0
+
 body
   font-size: 1.06em
   margin: 0 0 0 16.5em
   max-width: inherit
   overscroll-behavior: none
 
-body > article, body > footer
+body > header, body > footer
+  display: none
+
+body > article
   margin: 0 5em
   padding: 2em 0
   max-width: 50em
 
-body > header
-  display: block
+aside
+  display: block!important
   position: fixed
   overflow: auto
   background: darken($dark, 2%)
   color: #fff
-  border: none
-  box-shadow: none
-  opacity: .98
-  margin: 0
   padding: 2.25em
   width: 12em
   top: 0
@@ -45,23 +47,9 @@ nav a:hover, nav a.selected
   background: lighten($dark, 2%)
   text-decoration: inherit
 
-.icons svg
+.icon
   margin-right: 1.2em
-
-.hidden
-  display: inline-block
-
-{% if site.show_title %}
-
-.title
-  display: block
-  margin-bottom: 1em
-
-{% endif %}
-
-{% if site.show_description %}
+  color: inherit!important
 
 .description
   margin: 2em 0
-
-{% endif %}
