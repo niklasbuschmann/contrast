@@ -12,10 +12,3 @@ layout: default
     <noscript>Please enable JavaScript to view comments.</noscript>
   {% endif %}
 </article>
-
-{% if site.show_related and site.show_social != true or site.sidebar %}
-  <footer class="related">
-    <div class="previous">{% if page.previous.url %}<span>Previous Post</span><a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>{% endif %}</div>
-    <div class="next">{% if page.next.url %}<span>Next Post</span><a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>{% endif %}</div>
-  </footer>
-{% endif %}
