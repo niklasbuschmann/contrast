@@ -30,7 +30,7 @@ body > header
   bottom: 0
   left: 0
 
-article:only-of-type header h1
+article header h1
   font-size: 2em
 
 nav
@@ -57,10 +57,12 @@ nav a:hover, nav a.selected
   display: block
   margin-bottom: 1em
 
-{% else %}
+{% endif %}
 
-.title
-  display: none
+{% if site.show_related %}
+
+.related
+  box-shadow: none
 
 {% endif %}
 

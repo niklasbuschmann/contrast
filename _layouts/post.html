@@ -13,7 +13,7 @@ layout: default
   {% endif %}
 </article>
 
-{% if site.show_related %}
+{% if site.show_social != true or site.sidebar and site.show_related %}
   <footer class="related">
     <div class="previous">{% if page.previous.url %}<span>Previous Post</span><a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>{% endif %}</div>
     <div class="next">{% if page.next.url %}<span>Next Post</span><a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>{% endif %}</div>

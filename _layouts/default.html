@@ -3,7 +3,6 @@
 <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -23,22 +22,30 @@
 {% if site.comments.disqus_shortname and page.layout == "post" %}<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>{% endif %}
 {% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
 
+{% if site.navigation %}
+  {% assign pages = site.navigation %}
+{% else %}
+  {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
+{% endif %}
+
 <header class="icons">
-  {% unless site.show_title != true and site.navigation and site.external %}
+  {% if site.show_title or site.sidebar != true %}
     <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
-  {% endunless %}
-  {% if site.navigation or site.external %}
-    {% include menu.html menu=site.navigation icons=false %}
-    {% include menu.html menu=site.external icons=true %}
-  {% else %}
-    {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
-    {% include menu.html menu=pages %}
   {% endif %}
-  {% if site.sidebar and site.show_description %}
-    <div class="hidden description">{{ site.description }}</div>
+  {% include menu.html menu=pages %}
+  {% if site.sidebar %}
+    {% include menu.html menu=site.external icons=true %}
+    {% if site.show_description %}<div class="hidden description">{{ site.description }}</div>{% endif %}
   {% endif %}
 </header>
 
 {{ content }}
+
+{% if site.show_social and site.sidebar != true %}
+  <footer class="icons">
+    <div>{{ site.description | default: site.title }}</div>
+    {% include menu.html menu=site.external icons=true %}
+  </footer>
+{% endif %}
 
 </html>

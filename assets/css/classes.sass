@@ -15,12 +15,8 @@
   color: $link-color
   margin-bottom: .15em
 
-{% unless site.navigation and site.external %}
-
 .title
   font-size: 1.4em
-
-{% endunless %}
 
 {% if site.sidebar %}
 
@@ -29,7 +25,7 @@
 
 {% endif %}
 
-{% if site.sidebar or site.external %}
+{% if site.sidebar or site.show_social %}
 
 .icons svg
   height: 1em
@@ -38,6 +34,9 @@
   transition: .2s color
   vertical-align: middle
   margin-bottom: .15em
+
+footer.icons a:hover svg
+  color: reduce(100)
 
 {% endif %}
 
@@ -77,19 +76,3 @@
     text-align: right
 
 {% endif %}
-
-{% if site.show_title and site.navigation and site.external %}
-
-.title
-  font-size: 1.5em
-  width: 100%
-  margin: .1em 0 .6em
-
-{% endif %}
-
-{% unless site.sidebar %}
-
-.icons a:hover svg
-  color: reduce(100)
-
-{% endunless %}
