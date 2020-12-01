@@ -3,8 +3,6 @@ title:  "Markdown examples"
 layout: post
 ---
 
-![Laptop](https://user-images.githubusercontent.com/4943215/74586452-bcb15780-4fe7-11ea-94a8-7a9b52bf04b3.jpeg)
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit.
