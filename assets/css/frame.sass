@@ -11,7 +11,7 @@ body
   box-shadow: 0 0 0 1px rgba(lighten($dark, 25%), 0.3)
 
 body > header, body > footer
-  background: lighten($dark, 6%)
+  background: $dark
   color: $light
   box-shadow: 0 1px rgba($light, 0.08), 0 -1px rgba($light, 0.08)
 
@@ -23,5 +23,5 @@ body > header, body > article, body > footer
     padding: 1.65em calc(20% - 4em)
 
 @media (prefers-color-scheme: dark)
-  html, body > header, body > footer
-    background: $dark
+  html
+    background: darken($dark, 2%)
