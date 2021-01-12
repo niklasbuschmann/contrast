@@ -1,0 +1,46 @@
+---
+layout: page
+---
+		<link rel="stylesheet" media="screen" href="{{ site.baseurl }}/css/screen.css">
+		{% if page.print_stylesheet %}
+			<link rel="stylesheet" media="print" href="{{ site.baseurl }}/css/print.css">
+		{% endif %}
+
+<article class="post">
+	<div class="image">
+		<img class="photo" src="../assets/images/drinks/{{ page.image | replace:'.jpg','.webp' }}" alt="{{ page.name }}">
+	</div>
+
+	<div class="recipe-contents">
+		<div class="ingredients">
+			<h2>Ingredients</h2>
+            <ul>
+            {% for item in page.ingredients %}
+            <li><b>{% unless item.quantity == blank %}{{ item.quantity }}{% endunless %}</b> {{item.measure}} {{item.ingredient}}</li>
+            {% endfor %}
+            </ul>
+		</div>
+
+		<div class="directions">
+			<h2>Directions</h2>
+            <ol>
+            {% for item in page.directions %}
+            <li>{{ item }}</li>
+            {% endfor %}
+            </ol>
+		</div>
+	</div>
+
+	<div class="sharing">
+		{% assign share_url = page.url | absolute_url | cgi_escape %}
+		<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}">{% include social-icon.html icon="Facebook" %}</a>
+		<a class="twitter" href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=I'm%20going%20to%20this%20event!">{% include social-icon.html icon="Twitter" %}</a>
+		<a class="instagram" href="https://instagram.com">{% include social-icon.html icon="Instagram" %}</a>
+		<a class="email" href="mailto:?subject=I've%20found%20a%20great%20recipe&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include social-icon.html icon="Email" %}</a>
+	</div>
+
+	<div class="cta">
+		<h2>More delicious cocktails</h2>
+		<div class="button"><a href="{{ site.baseurl }}/drinks/">Check out more delicious cocktails</a></div>
+	</div>
+</article>

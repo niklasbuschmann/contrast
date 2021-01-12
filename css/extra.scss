@@ -1,0 +1,161 @@
+---
+---
+
+img.icon {
+    height: 30px;
+    width: 30px;
+}
+
+a>li {
+    padding-right: 15px;
+}
+
+
+.content{
+    padding: 40px 15px;
+}
+
+.column-small {
+    float: left;
+    width: 17%;
+}
+
+.column {
+    float: left;
+    width: 83%;
+}
+
+/* Header */
+#title {
+    color: white;
+}
+
+.texture-black {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header {
+    min-width: 300px;
+    max-height: 110px;
+    min-height: 70px;
+}
+
+header h3 {
+    margin: 0px;
+    margin-top: 0.8em;
+    height: 100%;
+}
+
+main{
+    padding-top: 90px;
+}
+
+ul.social {
+    margin: 0;
+    line-height: 0.5em;
+    overflow: visible;
+}
+
+.social>li {
+    padding-right: 15px;
+    height: 47px;
+}
+
+a.icon {
+    padding-top: 15px;
+    display: block;
+}
+
+a#title {
+    padding-right: 30px;
+}
+
+header {
+    padding: 0px 0;
+    padding-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Resume Stuff */
+.main-row {
+    float: left;
+    width: 100%;
+    line-height: 1em;
+}
+
+.sub-row {
+    float: left;
+    width: 100%;
+}
+
+.sub-row > div {
+    line-height: 1em;
+}
+
+div.column-small>ul {
+    margin-right: 30px;
+    padding: 0;
+}
+
+.column-small {
+    min-width: 100px;
+}
+
+.org {
+    float: left;
+    font-size:16px;
+}
+
+.when{
+    float: right;
+    font-size: 12px;
+}
+
+.role {
+    float: left;
+    font-size: 12px;
+}
+
+.location{
+    float: right;
+    font-size: 12px;
+}
+
+ul.bullets>li {
+    font-size: 14px;
+    color:#494949;
+}
+
+
+.block {
+    padding-bottom: 40px;
+    line-height: 0.9em;
+}
+
+p {
+    display: block;
+    margin: 0em;
+}
+
+.section > h3 {
+    margin-bottom: 0em;
+}
+
+.cloud-section {
+    font-size: 14px;
+}
+
+// Home
+
+.home {
+    margin: 0px;
+}

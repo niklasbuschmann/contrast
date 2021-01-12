@@ -1,0 +1,39 @@
+
+main .container{
+	margin: 0;
+	max-width: 5000px;
+}
+
+.text-hover {
+	font-size: 14px;
+	color: white;
+	margin: 0px;
+}
+
+.bottom-left {
+	/* position: absolute; */
+	/* bottom: 8px; */
+	/* left: 16px; */
+	height: 30px;
+	width: 100%;
+}
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+	grid-gap: 10px;
+	align-items: stretch;
+}
+
+.image-container {
+	float: left;
+	position: relative;
+	text-align: center;
+}
+
+.photo-large {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+}
+

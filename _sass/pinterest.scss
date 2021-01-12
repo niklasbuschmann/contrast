@@ -1,0 +1,46 @@
+/**
+* @license lyradesigns.com v1
+* Updated: Dec 17, 2014
+* Add pin buttons to images
+* Copyright (c) 2014 Jonas Goslow - LYRA
+* Released under the MIT license
+* https://github.com/timmywil/jquery.panzoom/blob/master/MIT-License.txt
+
+Customize these however you like.
+
+*/
+
+.imgPinWrap {
+	position: relative;
+	display: inline-block;
+}
+
+.imgPinWrap .pin {
+	opacity: 0;
+	position: absolute;
+	display: block;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out;
+	-o-transition:all .25s ease-in-out;
+	transition:all .25s ease-in-out;
+}
+.imgPinWrap .pin img {
+	display: block;
+}
+
+.imgPinWrap .pin:hover {
+	box-shadow: 0 0 5px #fff;
+}
+
+.imgPinWrap:hover .pin {
+	opacity: 1;
+}
+
+.imgPinWrap .left { left: 15px; }
+.imgPinWrap .right { right: 15px; }
+.imgPinWrap .bottom { bottom: 15px; }
+.imgPinWrap .top { top: 15px; }
+.imgPinWrap .center {
+	left: 50%;
+	top:50%;
+}

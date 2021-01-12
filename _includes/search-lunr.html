@@ -1,0 +1,90 @@
+<script src="/js/lunr.js"></script>
+
+<script>
+{% assign counter = 0 %}
+var documents = [{% for file in site.data.drinks %}{
+  {% assign cocktail = file[1] %} {% assign cocktail_stub = file[0] %}
+  "id": {{ counter }},
+  "stub": "{{ cocktail_stub }}",
+  "name": "{{ cocktail.name }}",
+  "description": "{{ cocktail.description | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}",
+  "url": "{{ site.url }}/drinks/{{ cocktail.name | downcase | replace: ' ', '-' | replace: 'á', 'a' | replace: 'ñ', 'n' | remove: '(' | remove: ')' | remove: '[' | remove: ']' | remove: "'" | remove: '&' | remove: '!' | remove: '’' | remove: ','  }}.html",
+  "ingredient_list": "{{ cocktail.ingredients | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}",
+  "directions_list": "{{ cocktail.directions | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}",
+  {% assign counter_ingredients = 0 %}
+  {% for item in cocktail.ingredients %}
+    "ingredient{{ counter_ingredients }}": "{% unless item.quantity == blank %}{{ item.quantity }}{% endunless %} {{item.measure}} {{item.ingredient | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}",
+    {% assign counter_ingredients = counter_ingredients | plus: 1 %}
+  {% endfor %}
+  {% assign counter_directions = 0 %}
+  {% for item in cocktail.directions %}
+    "direction{{ counter_directions }}": "{{item | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}",
+    {% assign counter_directions = counter_directions | plus: 1 %}
+  {% endfor %}
+  {% assign counter = counter | plus: 1 %}
+}, {% endfor %}];
+
+console.log(documents)
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('name')
+    this.field('description')
+    this.field('ingredient0')
+    this.field('ingredient1')
+    this.field('ingredient2')
+    this.field('ingredient3')
+    this.field('ingredient4')
+    this.field('ingredient5')
+    this.field('direction0')
+    this.field('direction1')
+    this.field('direction2')
+    this.field('direction3')
+    this.field('direction4')
+    this.field('direction5')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+function lunr_search(term) {
+    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+    if(term) {
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+        //put results on the screen.
+        var results = idx.search(term);
+        if(results.length>0){
+            //console.log(idx.search(term));
+            //if results
+            for (var i = 0; i < results.length; i++) {
+                // more statements
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var name = documents[ref]['name'];
+                var description = documents[ref]['description'];
+                var ingredient_list = documents[ref]['ingredient_list'];
+                var ingredient0 = documents[ref]['ingredient0'];
+                //var body = documents[ref]['body'].substring(0,160)+'...';
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + name + "</span></a><br /><span>"+ description +"</span><br /></li>";
+            }
+        } else {
+            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
+        }
+    }
+    return false;
+}
+</script>
+<style>
+    #lunrsearchresults {padding-top: 0.2rem;}
+    .lunrsearchresult {padding-bottom: 1rem;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search Cocktails" /></p>
+</form>
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>

@@ -1,0 +1,65 @@
+---
+---
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0 0 10px 0;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: .8em;
+}
+
+.sidebar, .sharing, footer, .recipe-body, nav, img, time, .take-me, .cta {
+	display: none;
+}
+
+.recipe-overview {
+	padding: 0;
+	margin: 0 0 30px 0;
+
+	svg {
+		position: relative;
+		top: 6px;
+	}
+
+	span {
+		margin: 0 18px 0 3px;
+	}
+
+	li {
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+	}
+}
+
+.recipe-contents {
+	display: flex;
+
+	.ingredients {
+		width: 200px;
+		padding: 0 43px 0 0;
+	}
+
+	.directions {
+		flex: 1;
+	}
+}
+
+ul, ol {
+	padding-left: 17px;
+	margin: 0;
+}
+
+ol li {
+	margin: 10px 0 0 0;
+}
+
+

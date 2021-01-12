@@ -1,0 +1,124 @@
+---
+layout: page
+---
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Recipe",
+  "author": {
+		{% if page.source_url == "" %}
+		"@type": "Person",
+		{% if page.source == "Me" or page.source == "Chris Nicholson" or page.source == "Chris F. Nicholson" or page.source == "" %}
+		"name": "Chris F Nicholson",
+		"url": "https://www.chrisfnicholson.com"
+		{% else %}
+		"name": {{page.source}},
+		"url": ""
+		{% endif %}
+		{% else %}
+		"@type": "Organization",
+		"name": "{{page.source}}",
+		"url": "{{page.source_url}}"
+		{% endif  %}
+	},
+	"description": "A recipe for {{page.name}}, with my rating and potentially some notes. Adapted from: {{page.source_url}}",
+	"image": "{{site.baseurl}}/assets/{{page.image_url | replace:'.jpg','.webp'}}",
+	"url": "{{page.url}}",
+	{% if page.servings != "" %}
+	"recipeYield": "{{ page.servings }}",
+	{% endif %}
+	{% if page.prep_time != "" %}
+	"prepTime": "{{ page.prep_time}}",
+	{% endif %}
+	{% if page.cook_time != "" %}
+	"cookTime": "{{ page.cook_time}}",
+	{% endif %}
+	{% if page.rating!= 0 %}
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "{{ page.rating }}",
+		"reviewCount": "1"
+	},
+	{% endif %}
+	"recipeIngredient": [
+		{% for item in page.ingredients %}
+		"{{ item | escape }}"{% unless forloop.last %},{% endunless %}
+		{% endfor %}
+	],
+	"name": "{{page.title}}",
+	"recipeInstructions": [
+	{% for item in page.directions %}
+	{
+  	"@type": "HowToStep",
+  	"text": "{{ item | escape }}"
+	}{% unless forloop.last %},{% endunless %}
+	{% endfor %}
+	]
+}
+</script>
+
+		<link rel="stylesheet" media="screen" href="{{ site.baseurl }}/css/screen.css">
+		{% if page.print_stylesheet %}
+			<link rel="stylesheet" media="print" href="{{ site.baseurl }}/css/print.css">
+		{% endif %}
+{% capture image_path %}
+	{{ page.image_url }}
+{% endcapture %}
+<article class="post">
+	<img class="photo" src="../assets/{{ page.image_url | replace:'.jpg','.webp' }}" alt="{{ page.name }}">
+	<ul id="recipe" class="recipe-overview">
+		{% if page.servings != "" %}
+		<li title="Servings">{% include recipe-icon.html icon="quantity" %}<span>{{ page.servings }}</span></li>
+		{% endif %}
+		{% if page.prep_time != "" %}
+		<li title="Prep Time">{% include recipe-icon.html icon="time" %}<span>{{ page.prep_time }}</span></li>
+		{% endif %}
+		{% if page.cook_time != "" %}
+		<li title="Cook Time">{% include recipe-icon.html icon="cook" %}<span>{{ page.cook_time }}</span></li>
+		{% endif %}
+		{% if page.rating!= 0 %}
+		<li>Rating: <b class="rating">{% for i in (1..page.rating) %}★{% endfor %}</b></li>
+		{% endif %}
+		<li>
+			{% if page.source == "Me" or page.source == "Chris Nicholson" or page.source == "Chris F. Nicholson" or page.source == "" %}
+			{% elsif page.source_url == "" %}
+			by {{page.source}}
+			{% else %}
+			<a href="{{page.source_url}}">{{page.source}}</a>
+			{% endif %}
+		</li>
+	</ul
+	<div class="recipe-contents">
+		<div class="ingredients">
+			<h2>Ingredients</h2>
+            <ul>
+            {% for item in page.ingredients %}
+            <li>{{ item }}</li>
+            {% endfor %}
+            </ul>
+		</div>
+
+		<div class="directions">
+			<h2>Directions</h2>
+            <ol>
+            {% for item in page.directions %}
+            <li>{{ item }}</li>
+            {% endfor %}
+            </ol>
+		</div>
+	</div>
+
+	<div class="sharing">
+		{% assign share_url = page.url | absolute_url | cgi_escape %}
+		<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}">{% include social-icon.html icon="Facebook" %}</a>
+		<a class="twitter" href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=I'm%20going%20to%20this%20event!">{% include social-icon.html icon="Twitter" %}</a>
+		<a class="instagram" href="https://instagram.com">{% include social-icon.html icon="Instagram" %}</a>
+		<a class="pinterest" href="//pinterest.com/pin/create/link/?url={{ share_url }}&amp;description={{ page.description }}">{% include social-icon.html icon="Pinterest" %}</a>
+		<a class="email" href="mailto:?subject=I've%20found%20a%20great%20recipe&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include social-icon.html icon="Email" %}</a>
+	</div>
+
+	<div class="cta">
+		<h2>More delicious recipes</h2>
+		<div class="button"><a href="{{ site.baseurl }}/recipes/">Check out more recipes</a></div>
+	</div>
+</article>
