@@ -43,7 +43,7 @@
 <script defer src="{{ "/assets/katex/contrib/auto-render.min.js" | relative_url }}" onload="renderMathInElement(document.body)"></script>
 {% endif %}
 {% if site.comments.disqus_shortname and page.layout == "post" %}<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>{% endif %}
-{% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
+{% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/assets/js/embed.min.js"></script>{% endif %}
 
 {% seo %}
 </head>
@@ -77,7 +77,7 @@
   {% include menu.html menu=site.external icon=true %}
 </footer>
 {% endif %}
-<script src="{{site.url}}/js/pwa-1.0.min.js"></script>
+<script src="{{site.url}}/assets/js/pwa-1.0.min.js"></script>
 {% include analytics.html %}
 </body>
 </html>
