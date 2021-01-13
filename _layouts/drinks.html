@@ -5,7 +5,10 @@ layout: page
 <link rel="stylesheet" media="screen" href="{{ site.baseurl }}/css/screen.css">
 
 <div id="drinks">
-	<input class="search" placeholder="Type an ingredient" style="height: 1.5em; width: 10em; margin-left: 0em; font-size: 12pt;"/>
+	<label>
+		Ingredient Search
+		<input class="search" placeholder="Type an ingredient" style="height: 1.5em; width: 10em; margin-left: 0em; font-size: 12pt;"/>
+	</label>
 	<ul class="list" style="list-style: none; padding: 0; margin-left: 0em;">
 	{% for file in site.data.drinks %}
 		{% assign cocktail = file[1] %} {% assign cocktail_stub = file[0] %}  {% comment %} The assign is needed, because we have different json files!{% endcomment %}
