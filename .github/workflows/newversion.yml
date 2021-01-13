@@ -20,4 +20,4 @@ jobs:
     # Runs a single command using the runners shell
     - name: send
       run: |
-        curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/datapolitical/chrisfnicholson.github.io/actions/workflows/build.yaml/dispatches --data '{"ref": "main"}'
+        curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/datapolitical/chrisfnicholson.github.io/actions/workflows/build-jekyll.yml/dispatches --data '{"ref": "main"}'
