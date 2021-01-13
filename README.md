@@ -4,6 +4,8 @@ permalink: "/about/"
 layout: page
 ---
 
+This is my fork of the theme. Many changes have been made and I need to update this page to credit the people.
+
 ## Installation
 
 Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
@@ -50,4 +52,3 @@ plugins:
 ![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
 
 ![screenshot](https://user-images.githubusercontent.com/4943215/73125195-5fa42200-3fa4-11ea-89f8-d09c1d6fe252.png)
-
