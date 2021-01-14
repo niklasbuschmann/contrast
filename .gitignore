@@ -2,6 +2,10 @@
 .bundle
 .jekyll-cache
 .sass-cache
+Gemfile
 Gemfile.lock
 _site
 *.gem
+_data/drinks/*
+_data/recipes.yaml
+assets/images/*
