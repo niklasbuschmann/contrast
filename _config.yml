@@ -16,8 +16,8 @@ show_sidebar: false        # show a sidebar instead of the usual header
 # Menu
 
 navigation:
-  - {file: "index.html", icon: home}
-  - {file: "README.md", icon: address-card}
+  - {title: Recipes, url: "/recipes/"}
+  - {title: Cocktails, url: "/drinks/"}
 
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
@@ -30,3 +30,28 @@ comments:
 
 plugins:
  - jekyll-feed
+ - jekyll-datapage-generator
+ - jekyll-responsive-image
+ - jekyll-seo-tag
+
+page_gen:
+ - data: recipes
+   template: recipe
+   name: name
+   dir: recipes
+   extension: html
+
+ - data: drinks
+   template: drink
+   name: name
+   title: name
+   dir: drinks
+   extension: html
+
+responsive_image:
+  template: _includes/responsive-image.html
+  base_path: assets
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800
