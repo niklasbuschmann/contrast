@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Kathryn Schuler"
+author: "Katie Schuler"
+description: "University of Pennsylvania"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -9,20 +9,20 @@ date_format: "%B %d, %Y"
 # Layout
 
 show_social: true          # show site description and social links in the footer
-show_excerpts: true        # show article excerpts on the home page
+show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 
 # Menu
 
 navigation:
-  - {file: "index.html", icon: home}
-  - {file: "README.md", icon: address-card}
+  - {file: "index.html", title: Home Change, icon: home}
+  - {file: "README.md", title: About me, icon: address-card}
 
 external:                  # see http://fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:kschuler@sas.upenn.edu"}
+  - {title: Github, icon: github, url: "https://github.com/kschuler"}
+  - {title: Twitter, icon: twitter, url: "https://twitter.com/kathrynschuler"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
