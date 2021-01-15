@@ -1,56 +1,75 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+# Setup
+title:            Chris F. Nicholson
+tagline:          'A place for the things I enjoy.'
+description:      'Recipes and some writings by Chris F. Nicholson'
+url:              https://www.chrisfnicholson.com
+baseurl:          ''
+                  # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
+
+author:
+  name:           'Chris F. Nicholson'
+  url:            https://www.chrisfnicholson.com
+
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
 
 # Layout
 
-show_social: true          # show site description and social links in the footer
+show_social: false          # show site description and social links in the footer
 show_excerpts: false       # show article excerpts on the home page
 show_frame: false          # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 
-# Menu
+# Theme
+style: default
+# dark_theme: true
+# dark_nav: true
 
+# Menu
 navigation:
+#  - {title: Home, file: "index.html", icon: home}
   - {title: Recipes, url: "/recipes/"}
   - {title: Cocktails, url: "/drinks/"}
 
-external:                  # see http://fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
 plugins:
- - jekyll-feed
- - jekyll-datapage-generator
- - jekyll-responsive-image
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-datapage-generator
+  - jekyll-responsive-image
+  - jekyll-webp
+  - jekyll-sitemap
+  - jekyll-seo-tag
+#  - jekyll-pwa-workbox
 
-page_gen-dirs: false
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+  - .gitignore
+  - vendor
+  - Pipfile
+  - package.json
 
 page_gen:
- - data: recipes
-   template: recipe
-   name: name
-   index_files: false
-   dir: recipes
-   extension: html
+  - data: recipes
+    template: recipe
+    name: name
+    dir: recipes
+    extension: html
 
- - data: drinks
-   template: drink
-   name: name
-   title: name
-   index_files: false
-   dir: drinks
-   extension: html
+  - data: drinks
+    template: drink
+    name: name
+    title: name
+    dir: drinks
+    extension: html
 
 responsive_image:
   template: _includes/responsive-image.html
@@ -59,3 +78,60 @@ responsive_image:
     - width: 320
     - width: 480
     - width: 800
+
+pwa:
+  enabled: true # Optional
+  sw_src_filepath: service-worker.js # Optional
+  sw_dest_filename: service-worker.js # Optional
+  dest_js_directory: /js # Required
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "/**/*.{js,json,css}"
+    - "/assets/images/recipes/*.{ico,png,svg,webp}"
+#    - "/assets/images/drinks/*.{ico,png,svg,webp}"
+    - "/recipes/*.html"
+    - "/drinks/*.html"
+    - "/index.html"
+  precache_glob_ignores: # Optional
+    - "sw-register.js"
+    - "fonts/**/*"
+
+
+############################################################
+# Site configuration for the WebP Generator Plugin
+# The values here represent the defaults if nothing is set
+webp:
+  enabled: true
+
+  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
+  quality: 75
+
+  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
+  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
+  img_dir: ["assets/images/recipes", "assets/images/drinks"]
+
+  # Whether to search in nested directories or not
+  nested: no
+
+  # add ".gif" to the format list to generate webp for animated gifs as well
+  formats: [".jpeg", ".jpg", ".png", ".tiff"]
+
+  # File extensions for animated gif files
+  gifs: [".gif"]
+
+  # Set to true to always regenerate existing webp files
+  regenerate: false
+
+  # Local path to the WebP utilities to use (relative or absolute)
+  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
+  webp_path: nil
+
+  # List of files or directories to exclude
+  # e.g. custom or hand generated webp conversion files
+  exclude: []
+
+  # append '.webp' to filename after original extension rather than replacing it.
+  # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
+  append_ext: false
+############################################################
