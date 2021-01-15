@@ -21,7 +21,7 @@ navigation:
   - {title: "Blog", file: "blog.md"}
 
 external:                  # see http://fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:kschuler@sas.upenn.edu"}
+  - {title: Mail, icon: envelope, url: "mailto:kathryn.schuler@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/kschuler"}
   - {title: Twitter, icon: twitter, url: "https://twitter.com/kathrynschuler"}
 
