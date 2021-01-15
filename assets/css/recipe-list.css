@@ -29,13 +29,6 @@ main .container{
 	float: left;
 	position: relative;
 	text-align: center;
-
-	img {
-	    border-radius: 2px;
-	    max-width: 100%;
-	    height: 220px;
-			width: 220px;
-	}
 }
 
 .photo-large {
