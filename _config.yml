@@ -16,8 +16,8 @@ show_sidebar: false        # show a sidebar instead of the usual header
 # Menu
 
 navigation:
-  - {file: "index.html", title: Home Change, icon: home}
-  - {file: "README.md", title: About me, icon: address-card}
+  - {file: "index.html", title: "Home Change", icon: home}
+  - {file: "README.md", title: "About me", icon: address-card}
 
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:kschuler@sas.upenn.edu"}
