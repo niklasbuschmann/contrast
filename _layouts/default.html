@@ -30,15 +30,15 @@
 
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
-  {% include menu.html menu=pages text=true %}
+  {% include menu.html menu=pages %}
 </header>
 
 {{ content }}
 
-{% if site.show_social %}
+{% if site.external %}
 <footer>
   <div>{{ site.description | default: site.title }}</div>
-  {% include menu.html menu=site.external icon=true %}
+  {% include menu.html menu=site.external %}
 </footer>
 {% endif %}
 
