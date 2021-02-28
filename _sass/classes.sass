@@ -1,6 +1,52 @@
-// https://github.com/richleland/pygments-css/blob/master/monokai.css <http://unlicense.org>
+.title
+  font-size: 1.4em
 
-.highlight
+.more
+  margin: 2em 0 1em
+
+.more a
+  border-radius: 2px
+  border: 1.5px solid $link-color
+  padding: .4em .8em
+  transition: .2s background, .2s color
+
+.more a:hover
+  color: #fff
+  background: $link-color
+  text-decoration: inherit
+
+.archive
+  font-size: 1.1em
+
+.archive time
+  display: inline-block
+  min-width: 10ch
+  margin: 0 .2em
+
+.icon
+  height: 1em
+  width: 1em
+  fill: currentColor
+  transition: .2s color
+  vertical-align: middle
+  margin-bottom: .15em
+
+a:hover .icon
+  color: reduce(100)
+
+.rouge-table
+  &, th, td, tr, pre
+    font-size: inherit
+    background: inherit !important
+    box-shadow: none
+    width: initial
+    margin: 0
+    padding: 0
+  .gl pre
+    margin: 0 1.5em 0 .25em
+    opacity: .5
+
+.highlight // https://github.com/richleland/pygments-css/blob/master/monokai.css <http://unlicense.org>
   pre
     background: rgba(lighten($dark, 6%), 0.9)
     color: white
@@ -83,15 +129,3 @@
     color: #f92672
   .gi
     color: #a6e22e
-
-.rouge-table
-  &, th, td, tr, pre
-    font-size: inherit
-    background: inherit !important
-    box-shadow: none
-    width: initial
-    margin: 0
-    padding: 0
-  .gl pre
-    margin: 0 1.5em 0 .25em
-    opacity: .5
