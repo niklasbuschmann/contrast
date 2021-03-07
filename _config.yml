@@ -33,8 +33,9 @@ style: default
 # Menu
 navigation:
 #  - {title: Home, file: "index.html", icon: home}
-  - {title: Recipes, url: "/recipes/"}
-  - {title: Cocktails, url: "/drinks/"}
+  - {title: Recipes, icon: utensils, url: "/recipes/"}
+  - {title: Cocktails, icon: glass-martini-alt, url: "/drinks/"}
+  - {title: Crosswords, icon: crossword, url: "crosswords.html"}
 
 plugins:
   - jekyll-feed
