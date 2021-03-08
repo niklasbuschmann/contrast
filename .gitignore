@@ -8,4 +8,5 @@ _site
 *.gem
 _data/drinks/*
 _data/recipes.yaml
+_data/puzzles.yaml
 assets/images/*

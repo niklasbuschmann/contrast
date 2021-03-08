@@ -65,6 +65,12 @@ page_gen:
     dir: recipes
     extension: html
 
+  - data: puzzles
+    template: crossword
+    name: name
+    dir: crosswords
+    extension: html
+
   - data: drinks
     template: drink
     name: name
