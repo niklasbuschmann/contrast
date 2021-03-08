@@ -6,7 +6,7 @@ layout: default
   {% include meta.html post=page %}
   My Puzzles:
   {% for puzzle in site.data.puzzles %}
-    <a href="crosswords/{{ puzzle.name | downcase | replace: " ", "-" | replace: "á", "a" | remove: "(" | remove: ")" | remove: "[" | remove: "]" | remove: "'" | remove: "&" | remove: "!" | remove: "’" | remove: ","  }}.html" target="puzzle">{{ puzzle.name }}</a>{% unless forloop.last %} | {% endunless %}
+    <a href="{{ puzzle.link}}" target="puzzle">{{ puzzle.name }}</a>{% unless forloop.last %} | {% endunless %}
   {% endfor %}
   <br />
   <iframe name="puzzle" style="height: 90vh; width: 100%;" src="{{site.data.puzzles[0].link}}" frameborder="0" allowfullscreen="true" allowtransparency="true"></iframe>
