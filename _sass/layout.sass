@@ -1,7 +1,9 @@
 body
   display: flex
   flex-direction: column
-  min-height: 100vh
+
+article
+  flex-grow: 1
 
 body > header, body > footer
   display: flex
@@ -11,9 +13,6 @@ body > header, body > footer
 
 body > header, body > article, body > footer
   padding: 1.5em
-
-article
-  flex-grow: 1
 
 article header
   margin-bottom: 1.5em
