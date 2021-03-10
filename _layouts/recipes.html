@@ -15,16 +15,10 @@ layout: page
             	{% for category in recipe.categories %}
               	{% if category == "Web" %}
             			<a class="image-container" href="{{ recipe.name | downcase | replace: " ", "-" | replace: "á", "a" | remove: "(" | remove: ")" | remove: "[" | remove: "]" | remove: "'" | remove: "&" | remove: "!" | remove: "’" | remove: ","  }}.html">
-										{% responsive_image_block %}
-										  path: assets/{{ recipe.image_url }}
-										  alt: {{ recipe.name }}
-										  {% if recipe.name %}
-										  title: {{ recipe.name }}
-										  {% endif %}
-										{% endresponsive_image_block %}
-										<!-- <img class="photo-large lazysizes" data-src="{{ recipe.image_url | default: "" }}"> -->
+										<img class="photo-large" src="{{ recipe.image_url | default: "" }}">
                 		<div class="bottom-left"><h3 class="text-hover"><b>{{ recipe.name }}</b></h3></div>
             			</a>
+
                 {% endif %}
               {% endfor %}
     		    {% endif %}

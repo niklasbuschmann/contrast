@@ -42,7 +42,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-datapage-generator
-  - jekyll-responsive-image
+#  - jekyll-responsive-image
   - jekyll-webp
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -78,13 +78,13 @@ page_gen:
     dir: drinks
     extension: html
 
-responsive_image:
-  template: _includes/responsive-image.html
-  base_path: assets
-  sizes:
-    - width: 320
-    - width: 480
-    - width: 800
+# responsive_image:
+#  template: _includes/responsive-image.html
+#  base_path: assets
+#  sizes:
+#    - width: 320
+#    - width: 480
+#    - width: 800
 
 pwa:
   enabled: true # Optional
