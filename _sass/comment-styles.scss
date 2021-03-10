@@ -1,9 +1,16 @@
 // comment styles from
 // https://github.com/willymcallister/willymcallister.github.io/blob/fbc7f396fbe80186b1abc63e436ec509190c1b3a/assets/main.scss
 
-$base-font-size:    18px !default;
-$comment-font-size: 17px !default;
+@import "index";
 
+$base-font-family:  -apple-system, sans-serif !default;
+$base-font-size:  16pt !default;
+$base-font-weight: $font-weight !default;
+$small-font-size:  0.8 * $base-font-size !default;
+$base-line-height: $line-height !default;
+$comment-font-size: $small-font-size !default;
+$grey-color: #808080;
+$grey-color-light: #808080;
 
 //
 // Staticman new comment form
@@ -11,8 +18,8 @@ $comment-font-size: 17px !default;
 input, select, textarea, label, button {
 //    @extend body;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
+    color: $light;
+    background-color: $dark;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
         -moz-font-feature-settings: "kern" 1;
@@ -46,7 +53,7 @@ textarea {
     vertical-align: top;
 }
 .textfield__input {
-    border: 1px solid rgba(0,0,0,.12);
+    border: 1px solid $light;
     padding: 4px 5px;
     width: 100%;
     font-size: $comment-font-size;

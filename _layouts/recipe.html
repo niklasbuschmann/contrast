@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 <script type="application/ld+json">
 {
@@ -64,6 +64,9 @@ layout: page
 {% capture image_path %}
 	{{ page.image_url }}
 {% endcapture %}
+
+<header><h2><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h2></header>
+
 <article class="post">
 	<meta property="og:title" content="{{page.source}}" />
 	<meta property="og:image" content="https://www.chrisfnicholson.com/assets/{{ page.image_url | replace:'.jpg','.webp' }}" />
