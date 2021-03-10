@@ -15,7 +15,7 @@ layout: page
             	{% for category in recipe.categories %}
               	{% if category == "Web" %}
             			<a class="image-container" href="{{ recipe.name | downcase | replace: " ", "-" | replace: "á", "a" | remove: "(" | remove: ")" | remove: "[" | remove: "]" | remove: "'" | remove: "&" | remove: "!" | remove: "’" | remove: ","  }}.html">
-										<img class="photo-large" src="{{ recipe.image_url | default: "" }}">
+										<img class="photo-large" src="assets/{{ recipe.image_url | default: "" }}">
                 		<div class="bottom-left"><h3 class="text-hover"><b>{{ recipe.name }}</b></h3></div>
             			</a>
 
