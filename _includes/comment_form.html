@@ -1,4 +1,4 @@
-<form class="js-form form" method="post" action="{{ site.staticman_url }}">
+<form class="js-form form" id="new-comment" method="post" action="{{ site.staticman_url }}">
   <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
   <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
   <input type="hidden" id="comment-replying-to-uid" name="fields[replying_to_uid]" value="">
@@ -30,13 +30,20 @@
       </label>
     </div>
 
-    <div id="reCaptcha" class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
-
-    <button class="button" id="comment-form-submit">
+    <button class="button g-recaptcha" id="comment-form-submit"
+        data-sitekey="{{ site.reCaptcha.siteKey }}"
+        data-callback='onSubmit'
+        data-action='submit'>
       Submit
     </button>
 
 </form>
+
+<script>
+  function onSubmit(token) {
+    document.getElementById("new-comment").submit();
+  }
+</script>
 
 <article class="modal mdl-card mdl-shadow--2dp">
   <div>
