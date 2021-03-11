@@ -1,6 +1,9 @@
 
 {%- capture article_class %}js-comment comment{% if include.name == site.author.name %} admin{% endif %}{% if include.is_reply %} child{% endif %}{% endcapture %}
 {% assign comment_id = include.uid | prepend: 'comment-' %}
+{% assign urlslug = page.url | remove:'.html' | remove_first:'/' | split: '/' %}
+{% assign urlfolder = urlslug[0] %}
+{% assign urlfilename = urlslug[1] %}
 <article id="{{ comment_id }}" class="{{ article_class }}" uid="{{ include.uid }}">
 
   <div class="comment__author">
@@ -27,7 +30,7 @@
 </article>
 
   {%- capture this_uid %}{{ include.uid }}{% endcapture %}
-  {%- assign replies = site.data.comments[page.slug] | where_exp: 'item', 'item.replying_to_uid == this_uid' %}
+  {%- assign replies = site.data.comments.recipes[urlfilename] | where_exp: 'entry', 'entry.replying_to_uid == this_uid' %}
   {%- assign replies_date = replies | sort: 'date' %}
   {% for reply in replies_date %}
     {%- assign email       = reply.email -%}
@@ -36,6 +39,7 @@
     {%- assign date        = reply.date -%}
     {%- assign message     = reply.message -%}
     {%- assign uid         = reply._id -%}
+
     {% include comment.html is_reply=true uid=uid email=email name=name url=url date=date message=message %}
   {% endfor %}
 

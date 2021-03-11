@@ -106,9 +106,10 @@ pwa:
 
 staticman_url: https://chrisfnicholson-staticman.herokuapp.com/v2/entry/datapolitical/chrisfnicholson.github.io/main/comments
 
-siteKey: 6Ld6YHkaAAAAADYH6TZFvNMjTBnZa7NCSIZMlRQ_
-secret: oIWqlCzkykNTc4xd+MBjVRjWUHqcn99OiOfOV53swm8yksTwYDAiP+3duj63LVrMPZJ/fLFunVjAqyG3C9PTHM3qz2hnxhWg36hmU5B401oMsHcFX6+Q1tCqJ3sbdvKe2OnaTl6gIyh+vwyltVyxFy3Rj7Rn9wX2spw13vyIEE5vgA9y/7qNDiSO52esH5FPFV1gD6/4WPZDtHjTH9+H9wja4Jxva0nCtZ8iQvjYnxzZXRBiz8BhTDdjH54cM2Ok9mjTxvzvsv9nsQSmmm3DfVvYvXFAfGIAN4fNFpa7G/7dKBX7HKD5/NUqfvBtzSn06NaGgey36BCEb5pKgfcPBrMOybmZK1jqobsApZ6ob4umQiFIWiW8eBv5JrLQisROrhB6+ZivD7PKGjRiTJmybTJ/gHNFMO9owv/WGop3XUy+WS3BcTnN2MtxPgSrhYTPTriL2NnB8O834009W2KbyjmmEqi7R0ZmPnAPxtqZ/YBu7/JVqe3eEKARBIHFy6XeMij7FXtz36ihcJj5lZFrQ6t6YJHg+Qw+21azZjjVurnpMMrPjsdLRTZAe82nSPYH3cixDUnIzm1vnKjMRhNnqiD/Lj4K6C6FV/U+VIyVlGTtN0rWE23P1tluAzG5Zsn4yWxmxwSDbHjGzqMniWz8kL2lv6rSfIqPqKEVs+YXsEw=
-
+reCaptcha:
+  enabled: false
+  siteKey: 6Lc2ZnkaAAAAAEMYrdwBDeveZUzFW9mWRcO--6no
+  secret: iPME/bOaQsskDaX9gtPcYgvA9o7ePKfHv3uluOSni99jmfQ8dVGaMhGMRPPb3FAOMo4E3EmqbrhMgQYjc3KXK81M1Vzg5oMvgwSQQmJ/ZiAEd6W9udXtYC1f0isv7igbotMYoruKaufxL5f6urpf1nsxRoR3IHRiA/lSB9sbEKfgbrUf0EgTIy+//IcLJ6//5AnOXr/Pxfp5TRZtPUg3aKPgqkOxRp41VuxudkpTdDN0vF5fVEI8YjXPs1Z6o8pRalV2w5t/PfoaAndetMyBevMRm2udxG11gOFxptgTQeJKdIBnvEHYNAcD7jZT+6wQpBOXU+NQ9/G3L9YztYOwnKYkeRW1WpX2anWmu4aBsFoTMkMVuGdz15iVjNAVPDwCvjjqGlFDYACfEtdso+r6m0lFNIiooSBPfyz2uQ9AuqwOXAY1AFgYMqeZQebdo6vtIlAxVuNxPnyfmtFS8OTSmrCVk9RY25Uu/fLKlsaUfXRUiFa8rCRIhrv+g9bVhVphHmH3ZZGmgxTRdo8eqlRPpH2rx4N2YG2IXTzUuwhBwTmQcMhS4krhpEue3zkMscB8Is3qO3qzVeown+dHTTBs3eHyBHZi0WfXAwYKAM+qTO3NpChN5ZL9zbd9r5mVc2XEjS9PBFyjaWsmjLdTEpCnEp6dp+O94lRCgENw5Hs3pHg=
 
 ############################################################
 # Site configuration for the WebP Generator Plugin

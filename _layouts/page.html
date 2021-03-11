@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% capture post_slug %}{{ page.title | slugify: "latin" }}{% endcapture %}
 <article>
   <header><h2><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h2></header>
   {{ content }}
