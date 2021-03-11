@@ -26,9 +26,9 @@
       {%- assign date        = comment[1].date %}
       {%- assign message     = comment[1].message %}
       {%- assign uid         = comment[1]._id %}
-      {% unless replying_to %}
+      {% if replying_to == '' %}
         {% include comment.html index=index replying_to=0 email=email name=name url=url date=date message=message uid=uid %}
-      {% endunless %}
+      {% endif %}
     {% endfor %}
     </div>
 
