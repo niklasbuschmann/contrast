@@ -107,6 +107,7 @@ pwa:
 staticman_url: https://chrisfnicholson-staticman.herokuapp.com/v2/entry/datapolitical/chrisfnicholson.github.io/main/comments
 
 comments: false
+
 reCaptcha:
   enabled: true
   siteKey: 6Lc2ZnkaAAAAAEMYrdwBDeveZUzFW9mWRcO--6no
