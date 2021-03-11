@@ -15,19 +15,22 @@
             {% endif %}
             Comments
           </h2>
+    {% assign count = 0 %}
     {% assign comments = site.data.comments.recipes[urlfilename] %}
     {% assign comments = (comments | sort) %}
     {% for comment in comments %}
-      {%- assign index       = forloop.index %}
-      {%- assign email       = comment[1].email %}
-      {%- assign name        = comment[1].name %}
-      {%- assign replying_to = comment[1].replying_to | to_integer %}
-      {%- assign url         = comment[1].url %}
-      {%- assign date        = comment[1].date %}
-      {%- assign message     = comment[1].message %}
-      {%- assign uid         = comment[1]._id %}
-      {% if replying_to == '' %}
-        {% include comment.html index=index replying_to=0 email=email name=name url=url date=date message=message uid=uid %}
+      {% if comment[1].replying_to_uid == "" %}
+        {%- assign index       = (forloop.index | minus: count) %}
+        {%- assign email       = comment[1].email %}
+        {%- assign name        = comment[1].name %}
+        {%- assign replying_to_uid = comment[1].replying_to_uid | to_integer %}
+        {%- assign url         = comment[1].url %}
+        {%- assign date        = comment[1].date %}
+        {%- assign message     = comment[1].message %}
+        {%- assign uid         = comment[1]._id %}
+        {% include comment.html index=index replying_to_uid=0 email=email name=name url=url date=date message=message uid=uid %}
+      {% else %}
+        {% assign count = count | plus: 1 %}
       {% endif %}
     {% endfor %}
     </div>
