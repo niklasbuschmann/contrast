@@ -46,6 +46,39 @@
   </div>
 </section>
 
+<script>
+
+  // Function that loads recaptcha on form input focus
+  function reCaptchaOnFocus() {
+    var head = document.getElementsByTagName('head')[0]
+    var script = document.createElement('script')
+    script.type = 'text/javascript'
+    script.src = 'https://www.google.com/recaptcha/api.js'
+    head.appendChild(script)
+
+    // remove focus to avoid js error:
+    document
+      .getElementById('comment-form-message')
+      .removeEventListener('focus', reCaptchaOnFocus)
+    document
+      .getElementById('comment-form-name')
+      .removeEventListener('focus', reCaptchaOnFocus)
+    document
+      .getElementById('comment-form-email')
+      .removeEventListener('focus', reCaptchaOnFocus)
+  }
+  // add initial event listener to the form inputs
+  document
+    .getElementById('comment-form-message')
+    .addEventListener('focus', reCaptchaOnFocus, false)
+  document
+    .getElementById('comment-form-name')
+    .addEventListener('focus', reCaptchaOnFocus, false)
+  document
+    .getElementById('comment-form-email')
+    .addEventListener('focus', reCaptchaOnFocus, false)
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
