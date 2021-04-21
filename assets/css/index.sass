@@ -7,11 +7,22 @@
   body > header, body > article, body > footer
     padding: 1.7em calc(38% - 14em)
 
+{% if site.minimal %}
+
 body > header
-  {% unless site.minimal %}box-shadow: 0 0 .6em rgba($dark, 0.04){% endunless %}
+  background: $dark
+  color: $light
   border-bottom: 1px solid reduce(14)
 
+{% else %}
+
+body > header
+  box-shadow: 0 0 .6em rgba($dark, 0.04)
+  border-bottom: 1px solid reduce(14)
+
+{% endif %}
+
 body > footer
-  {% unless site.minimal %}box-shadow: 0 0 .6em rgba($dark, 0.04) inset{% endunless %}
+  box-shadow: 0 0 .6em rgba($dark, 0.04) inset
   border-top: 1px solid reduce(14)
   opacity: .9
