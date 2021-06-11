@@ -4,7 +4,7 @@ layout: post
 ---
 \>details here<
 
-{% highlight c %}
+{% highlight  c++ %}
 
     #include <iomanip>	// for right, setw
     #include <iostream>

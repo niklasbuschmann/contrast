@@ -6,7 +6,7 @@ layout: post
 
 The STL is the Standard Template Library.
 
-{% highlight c %}
+{% highlight  c++ %}
 
     #include <iostream>
     #include <fstream>
