@@ -1,25 +1,25 @@
 ---
 ---
 
-@function reduce ($percent)
-  @return rgba(mix(#282828, #fff), $percent / 100)
-
-$link-color: #68f
-
-@import anchor
+@import index, font, basic, layout, classes
 
 html
-  background: #666
+  background: lighten($dark, 70%)
+  padding: 0 calc(38% - 22em)
 
 body
-  margin: 0 calc(20% - 5rem)
-
-body > header, article, body > footer
-  padding: 1.5em calc(24% - 5rem)
+  box-shadow: 0 0 .3em lighten($dark, 65%)
 
 body > header, body > footer
-  background: #282828
-  color: white
+  background: lighten($dark, 5%)
+  color: $light
 
-article
-  border-top: 1px solid reduce(10)
+@media (min-width: 32em)
+  body > header, body > article, body > footer
+    padding: 1.65em calc(22% - 6em)
+
+@media (prefers-color-scheme: dark)
+  body, body > header, body > footer
+    box-shadow: 0 0 0 1px lighten($dark, 8%)
+  html, body > header, body > footer
+    background: $dark

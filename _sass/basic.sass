@@ -1,32 +1,37 @@
 body
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
-  font-size: $font-size
+  background: $light
+  color: $dark
+  font-family: $font-family
   font-weight: $font-weight
+  font-size: $font-size
   line-height: $line-height
-  background: $background
-  color: $color
   margin: 0
+  min-height: 100vh
+  -webkit-text-size-adjust: 100%
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-a
-  color: inherit
-  text-decoration: inherit
-  transition: color .2s
-  &.selected, &:hover
-    color: reduce(100)
-
-article a, b, strong, th
-  font-weight: $font-weight + 100
+@media (prefers-color-scheme: dark)
+  body
+    background: $dark
+    color: $light
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
 
-article a
-  color: $link-color
+b, strong, th
+  font-weight: $font-weight + 200
 
-article header a, article footer a
-  font-weight: inherit
+p
+  text-align: justify
+
+a
+  color: $link-color
+  text-decoration: inherit
+  &:hover
+    text-decoration: underline
+
+header a, footer a, aside a
   color: inherit
 
 header time
@@ -36,15 +41,56 @@ hr
   border: 1px solid reduce(30)
   margin: 2em 0
 
+article:not(:last-of-type)
+  border-bottom: 1px solid reduce(14)
+
 blockquote
-  border-left: 4px solid $link-color
-  padding-left: 1.5em
-  margin: 0
+  background: reduce(6)
+  border-left: 3px solid reduce(90)
+  padding: 1px 1.5em
+  opacity: .75
+
+blockquote, figure
+  margin: 1em 0
 
 img
+  margin: .5em 0
+
+li
+  margin: .25em 0
+
+img
+  border-radius: 2px
   max-width: 100%
   height: auto
-  border-radius: 2px
 
-figure
-  margin: 1em 0
+table
+  display: inline-block
+  max-width: 100%
+  overflow-y: scroll
+  border-spacing: 1px
+  border-radius: 2px
+  box-shadow: 0 0 0 1px reduce(12) inset
+
+th, td
+  padding: .5em 1em
+  box-shadow: 0 0 0 1px reduce(12)
+
+tr:hover, tr:nth-child(odd) td
+  background: reduce(4)
+
+pre
+  background: reduce(12)
+  border-radius: 2px
+  font-size: .8em
+  margin: 1.5em 0
+  padding: .8em 1.2em
+  overflow-x: auto
+
+\:not(pre) > code
+  font-size: .9em
+  background: reduce(15)
+  opacity: .7
+  border-radius: 2px
+  margin: 0 .1em
+  padding: .2em .4em

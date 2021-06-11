@@ -1,35 +1,140 @@
-.light
-  background: white
-  color: black
+.title
+  font-size: 1.25em
 
-.dark
-  background: #282828
-  color: white
+.more
+  margin: 2em 0 1em
 
-.full
-  height: 100vh
-  width: 100vw
+.more a
+  border-radius: 2px
+  border: 1.5px solid $link-color
+  padding: .4em .8em
+  transition: .2s background, .2s color
 
-.hidden, .hover:not(:hover) .hide, .hover:hover .show
-  display: none
+.more a:hover
+  color: #fff
+  background: $link-color
+  text-decoration: inherit
 
-.color.red-hover:hover
-  color: $red
-.color.green-hover:hover
-  color: $green
-.color.blue-hover:hover
-  color: $blue
+.archive
+  font-size: 1.1em
 
-.border.red-hover:hover
-  border-color: $red
-.border.green-hover:hover
-  border-color: $green
-.border.blue-hover:hover
-  border-color: $blue
+.archive time
+  display: inline-block
+  min-width: 10ch
+  min-height: 1.75em
+  margin: 0 .2em
 
-.background.red-hover:hover
-  background: $red
-.background.green-hover:hover
-  background: $green
-.background.blue-hover:hover
-  background: $blue
+.icon
+  height: 1em
+  width: 1em
+  fill: currentColor
+  transition: .2s color
+  vertical-align: middle
+  margin-bottom: .15em
+
+a:hover .icon
+  color: reduce(100)
+
+.full table
+  display: table
+  width: 100%
+
+.katex
+  overflow-x: auto
+  overflow-y: hidden
+
+.rouge-table
+  &, th, td, tr, pre
+    font-size: inherit
+    background: inherit !important
+    box-shadow: none
+    width: initial
+    margin: 0
+    padding: 0
+  .gl pre
+    margin: 0 1.5em 0 .25em
+    opacity: .5
+
+.highlight // https://github.com/richleland/pygments-css/blob/master/monokai.css <http://unlicense.org>
+  pre
+    background: rgba(lighten($dark, 6%), 0.9)
+    color: white
+  .c
+    color: #a29f90
+  .err
+    color: #960050
+    background-color: #1e0010
+  .k
+    color: #66d9ef
+  .l
+    color: #ae81ff
+  .n
+    color: #f8f8f2
+  .o
+    color: #f92672
+  .p
+    color: #f8f8f2
+  .cm, .cp, .c1, .cs
+    color: #75715e
+  .ge
+    font-style: italic
+  .gs
+    font-weight: bold
+  .kc, .kd
+    color: #66d9ef
+  .kn
+    color: #f92672
+  .kp, .kr, .kt
+    color: #66d9ef
+  .ld
+    color: #e6db74
+  .m
+    color: #ae81ff
+  .s
+    color: #e6db74
+  .na
+    color: #a6e22e
+  .nb
+    color: #f8f8f2
+  .nc
+    color: #a6e22e
+  .no
+    color: #66d9ef
+  .nd
+    color: #a6e22e
+  .ni
+    color: #f8f8f2
+  .ne, .nf
+    color: #a6e22e
+  .nl, .nn
+    color: #f8f8f2
+  .nx
+    color: #a6e22e
+  .py
+    color: #f8f8f2
+  .nt
+    color: #f92672
+  .nv
+    color: #f8f8f2
+  .ow
+    color: #f92672
+  .w
+    color: #f8f8f2
+  .mf, .mh, .mi, .mo
+    color: #ae81ff
+  .sb, .sc, .sd, .s2
+    color: #e6db74
+  .se
+    color: #ae81ff
+  .sh, .si, .sx, .sr, .s1, .ss
+    color: #e6db74
+  .bp, .vc, .vg, .vi
+    color: #f8f8f2
+  .il
+    color: #ae81ff
+  .gu
+    color: #75715e
+  .gd
+    color: #f92672
+  .gi
+    color: #a6e22e

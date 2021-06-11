@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>Game</title>
+	</head>
+  <head>
+    <style>
+      body {
+        color:burlywood;
+        font-size: 16px;
+    		font-size: 2vw;
+        background-image:url("bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed; 
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+      }
+      a:link    {color:beige; background-color:transparent; text-decoration:none}
+      a:visited {color:chocolate; background-color:transparent; text-decoration:none}
+      a:hover   {color:coral; background-color:transparent; text-decoration:underline}
+      a:active  {color:chocolate; background-color:transparent; text-decoration:underline}
+    </style>
+    <body>
+      <table border="0" width="350" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img border="0" src="roulette.jpg" width="152" height="216"></td>
+          <td>
+      <form name="fire">
+        Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+        <p>
+        <input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+        </p>
+      </form>
+      <script>
+        //Russian Roulette Game- by javascriptkit.com
+        //Visit JavaScript Kit (http://javascriptkit.com) for script
+        //Credit must stay intact for use
+
+        function fireit(){
+          var theone=Math.floor(Math.random()*6)
+
+          if (theone<=document.fire.bullets.value-1)
+            alert("Bang. You\'re dead!")
+          else{
+            document.fire.message.value="Whew. Got lucky!"
+            setTimeout("document.fire.message.value='Play Roulette'",500)
+          }
+        }
+      </script>
+      </td>
+        </tr>
+      </table>
+      <h1><a href="1.Home.html">Home</a></h1>
+      </p>
+      <h3><a href="2.TV-Shows.html">TV Shows</a></h3>
+      <a href="3.Last-Week-Tonight.html">Last Week Tonight</a> | <a href="4.Ted-Lasso.html">Ted Lasso</a> | <a href="5.The-Morning-Show.html">The Morning Show</a> | <a href="6.Atlanta.html">Atlanta</a> | <a href="7.Avatar.html">Avatar</a><br>
+      </p>
+      <h3><a href="8.Movies.html">Movies</a></h3>
+      <a href="9.The-Upside.html">The Upside</a> | <a href="10.The-White-Tiger.html">The White Tiger</a> | <a href="11.Queen-and-Slim.html">Queen and Slim</a> | <a href="12.6-Underground.html">6 Underground</a> | <a href="13.Pokemon-Detective-Pikachu.html">Pok&eacutemon Detective Pikachu</a><br>
+      </p>
+      <h3><a href="14.Artists.html">Artists</a></h3>
+      <a href="15.Mac-Miller.html">Mac Miller</a> | <a href="16.Drake.html">Drake</a> | <a href="17.J.-Cole.html">J. Cole</a> | <a href="18.Jaden.html">Jaden</a> | <a href="19.Logic.html">Logic</a><br>
+      </p>
+      <h3><a href="20.Game.html">Extra's</a></h3>
+      <a href="20.Game.html">Game</a> | <a href="21.Slide-Show.html">Slide Show</a> | <a href="22.Survey.html">Survey</a>
+      </p>
+      <h3><a href="https://brocklli.github.io">Back To Brock Kaess' Portfolio</a></h3>
+      <br>
+      <br>
+      <br>
+      <br>
+    </body>
+  </head>
+</html>

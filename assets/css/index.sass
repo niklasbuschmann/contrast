@@ -1,66 +1,28 @@
 ---
 ---
 
-@function reduce ($percent)
-  @return rgba(mix(#282828, #fff), $percent / 100)
+@import index, font, basic, layout, classes
 
-$font-size: calc(0.8em + 0.25vw)
-$font-weight: 300
-$heading-weight: 400
-$line-height: 1.65
-$link-color: #68f
-$background: {% if site.dark_theme %} #282828 {% else %} #ffffff {% endif %}
-$color: {% if site.dark_theme %} #ffffff {% else %} #000000 {% endif %}
+@media (min-width: 38em)
+  body > header, body > article, body > footer
+    padding: 1.65em calc(38% - 14em)
 
-@import basic
-@import darkmode
-@import layout
-@import code
-@import table
-@import highlight
+{% if site.minimal %}
 
-body
-  display: flex
-  min-height: 100vh
-
-h1
-  font-size: 1.85em
-
-table
-  width: 100%
-
-header h1
-  font-weight: inherit
-  margin: 0
-
-article header
-  flex-direction: column
-  align-items: inherit
-
-article header
-  margin-bottom: 1.5em
-
-article header h1
-  margin-bottom: 0.2em
-
-article footer
-  padding: 1em 0
-
-{% unless site.hide_title %}
-{% if site.navigation and site.icons %}
-
-nav
-  margin: 0.5em 0
-
-body > header h1
-  width: 100%
-  line-height: 1.8
-  margin-bottom: 0.5em
+body > header
+  background: $dark
+  color: $light
+  border-bottom: 1px solid reduce(14)
 
 {% else %}
 
-body > header h1
-  font-size: 1.7em
+body > header
+  box-shadow: 0 0 .6em rgba($dark, 0.04)
+  border-bottom: 1px solid reduce(14)
 
 {% endif %}
-{% endunless %}
+
+body > footer
+  box-shadow: 0 0 .6em rgba($dark, 0.04) inset
+  border-top: 1px solid reduce(14)
+  opacity: .9

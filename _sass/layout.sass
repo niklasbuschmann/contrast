@@ -1,20 +1,28 @@
-body, aside, main
+body
+  display: flex
   flex-direction: column
 
-main, article
+article
   flex-grow: 1
 
-header, footer
+body > header, body > footer
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
   align-items: center
+  justify-content: space-between
 
-  nav > *
-    margin: 0 0.8em
+body > header, body > article, body > footer
+  padding: 1.5em
 
-  nav > :first-child
-    margin-left: 0
+article header
+  margin-bottom: 1.5em
 
-  nav > :last-child
-    margin-right: 0
+article header h1
+  font-size: 1.7em
+  margin: 0 0 .1em
+
+nav
+  margin: .5em -1em
+
+nav a
+  margin: .5em 1em

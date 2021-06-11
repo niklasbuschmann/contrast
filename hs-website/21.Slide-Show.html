@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slide Show</title>
+	</head>
+	<head>
+		<script>
+			var slideimages=new Array()
+			var slidelinks=new Array()
+			function slideshowimages(){
+				for (i=0;i<slideshowimages.arguments.length;i++){
+					slideimages[i]=new Image()
+					slideimages[i].src=slideshowimages.arguments[i]
+				}
+			}
+
+			function slideshowlinks(){
+				for (i=0;i<slideshowlinks.arguments.length;i++)
+					slidelinks[i]=slideshowlinks.arguments[i]
+			}
+
+			function gotoshow(){
+				if (!window.winslide||winslide.closed)
+					winslide=window.open(slidelinks[whichlink])
+				else
+					winslide.location=slidelinks[whichlink]
+				winslide.focus()
+			}
+		</script>
+		<style>
+			body {
+				color:burlywood;
+				font-size: 16px;
+    			font-size: 2vw;
+				background-image:url("bg.jpg");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-attachment: fixed; 
+				background-size: cover;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				height: 100%;
+			}
+			a:link    {color:beige; background-color:transparent; text-decoration:none}
+			a:visited {color:chocolate; background-color:transparent; text-decoration:none}
+			a:hover   {color:coral; background-color:transparent; text-decoration:underline}
+			a:active  {color:chocolate; background-color:transparent; text-decoration:underline}
+		</style>
+	</head>
+	<a href="javascript:gotoshow()"><img src="Mac Miller.jpg" name="slide" border=0 width=100% height=90%></a>
+	<script>
+		slideshowimages("Mac Miller.jpg","Drake.jpg","J. Cole.jpg","Jaden.jpeg","Logic.jpg")
+		slideshowlinks("http://www.macmillerswebsite.com/",
+						"https://us.octobersveryown.com",
+						"http://www.dreamville.com/artist/cole/",
+						"https://jadensmith.com",
+						"http://www.logicmerch.com/")
+
+		var slideshowspeed=5000
+		var whichlink=0
+		var whichimage=0
+		function slideit(){
+			if (!document.images)
+				return
+			document.images.slide.src=slideimages[whichimage].src
+			whichlink=whichimage
+			if (whichimage<slideimages.length-1)
+				whichimage++
+			else
+				whichimage=0
+			setTimeout("slideit()",slideshowspeed)
+		}
+		slideit()
+	</script>
+	<body>
+		</br>
+		</p>
+		</p>
+		</p>
+		</p>
+		</p>
+		</p>
+		</p>
+		</p>
+		</p>
+		</p>
+		</p>
+		<h1><a href="1.Home.html">Home</a></h1>
+		</p>
+		<h3><a href="2.TV-Shows.html">TV Shows</a></h3>
+		<a href="3.Last-Week-Tonight.html">Last Week Tonight</a> | <a href="4.Ted-Lasso.html">Ted Lasso</a> | <a href="5.The-Morning-Show.html">The Morning Show</a> | <a href="6.Atlanta.html">Atlanta</a> | <a href="7.Avatar.html">Avatar</a><br>
+		</p>
+		<h3><a href="8.Movies.html">Movies</a></h3>
+		<a href="9.The-Upside.html">The Upside</a> | <a href="10.The-White-Tiger.html">The White Tiger</a> | <a href="11.Queen-and-Slim.html">Queen and Slim</a> | <a href="12.6-Underground.html">6 Underground</a> | <a href="13.Pokemon-Detective-Pikachu.html">Pok&eacutemon Detective Pikachu</a><br>
+		</p>
+		<h3><a href="14.Artists.html">Artists</a></h3>
+		<a href="15.Mac-Miller.html">Mac Miller</a> | <a href="16.Drake.html">Drake</a> | <a href="17.J.-Cole.html">J. Cole</a> | <a href="18.Jaden.html">Jaden</a> | <a href="19.Logic.html">Logic</a><br>
+		</p>
+		<h3><a href="20.Game.html">Extra's</a></h3>
+		<a href="20.Game.html">Game</a> | <a href="21.Slide-Show.html">Slide Show</a> | <a href="22.Survey.html">Survey</a>
+		</p>
+		<h3><a href="https://brocklli.github.io">Back To Brock Kaess' Portfolio</a></h3>
+		<br>
+		<br>
+		<br>
+		<br>
+	</body>
+</html>

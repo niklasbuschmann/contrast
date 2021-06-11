@@ -1,38 +1,41 @@
-title: ""
-author: ""
-description: ""
+title: "Brock Kaess"
+author: "Brock Kaess"
+description: "Colorado State University"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
 
-# Jekyll settings
-permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
-paginate: 2                  # number of articles per page, remove to disable pagination
-excerpt_separator: "\n\n\n"  # indicates the end of the excerpt by two blank lines
+# Layout
 
-# Page settings
-show_excerpts: true          # show article previews on the home page instead of headlines
-hide_title: false            # remove site heading in the header
-post_footer: true            # show previous and next links at the end of each post
-date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
+show_excerpts: true        # show article excerpts on the home page
+show_frame: true           # adds a gray frame to the site
+show_sidebar: true        # show a sidebar instead of the usual header
+minimal: true             # use a dark header
 
-# Theme settings
-style: default               # choose between "minimal", "frame" and "default"
-dark_theme: false            # enables dark mode
-dark_header: false           # keep header dark event in light theme (applies only to the default style)
+# Menu
 
-navigation:                  # (optional) site navigation in the header
-  - index.html
-  - archive.md
-  - about.md
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "README.md", icon: "home"}
+  - {file: "index.html", icon: "archive"}
+  - {file: "resume.md", icon: "file"}
+  - {file: "rocket-league.md", icon: "gamepad"}
+  - {file: "cat.md", title: "Cat", icon: "cat"}
+  - {file: "misc.md", icon: "file-archive"}
+#  url: "brocklli.github.io/nav/music.md",
 
-icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
-  envelope: "mailto:"
-  github: "https://github.com"
-  rss: "/feed.xml"
 
-comments:                    # embed disqus or isso comments
-#  disqus: ""
-#  isso: ""
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Mail, icon: envelope, url: "mailto:kaess2017@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/Brocklli"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/brock-kaess/"}
+  - {file: "faq.md", icon: "question"}
 
-plugins: 
+comments:
+  # disqus_shortname: ""    # see https://disqus.com/
+  # isso_domain: ""         # see https://posativ.org/isso/
+
+plugins:
  - jekyll-feed
- - jekyll-paginate
- - jekyll-default-layout
+ - jekyll-seo-tag
+ - jekyll-redirect-from
