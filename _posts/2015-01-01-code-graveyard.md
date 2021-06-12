@@ -8,12 +8,16 @@ This is my collection of all my old coding projects from college that were so sm
 
 <!--more-->
 
->Saving for later...
->
-MATH 360
-If you would like to see the class instructions you can find them here as long as the website is still up and running:
-[MATH 360]()
+Below is code that belongs to me that I turned in for classes. They currently are not shown due to school and moral policy to not share code as a student. I will keep their descriptions and class websites available to understand what I have accomplished, but the code will not be release until either
+>1. I get the OKAY from my academic advisor
 
+*OR*
+
+>2. I have since graduated.
+It may be possible for you to request to see the code yourself as someone not attending CSU, looking to hire me, or a friend looking to satisfy your curiosity. Thank you for understanding :)
+
+**Liability Waiver**
+---> I'm not responsible for YOUR academic dishonesty if you choose to hack my files and website to find these coding projects because I refuse to remove the links due to the sheer amount of work it would take to do and undue such actions. I will just hide the links themselves.
 
 R.I.P. >Project Name here<
 ==========================
@@ -21,7 +25,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-[HW 6](/graveyard/cs370/hw6)
+<!-- [HW 6](/graveyard/cs370/hw6) -->
 
 |
 
@@ -31,7 +35,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-[HW 5](/graveyard/cs370/hw5)
+<!-- [HW 5](/graveyard/cs370/hw5) -->
 
 |
 
@@ -41,7 +45,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-[HW 4](/graveyard/cs370/hw4)
+<!-- [HW 4](/graveyard/cs370/hw4) -->
 
 |
 
@@ -51,7 +55,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-[HW 3](/graveyard/cs370/hw3)
+<!-- [HW 3](/graveyard/cs370/hw3) -->
 
 |
 
@@ -61,7 +65,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-[HW 2](/graveyard/cs370/hw2)
+<!-- [HW 2](/graveyard/cs370/hw2) -->
 
 |
 
@@ -71,7 +75,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-[HW 1](/graveyard/cs370/hw1)
+<!-- [HW 1](/graveyard/cs370/hw1) -->
 
 |
 
@@ -81,7 +85,7 @@ cs320
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 320](https://www.cs.colostate.edu/~cs320/spring21/home_progress.php)
 
-[P3](/graveyard/cs320/p3)
+<!-- [P3](/graveyard/cs320/p3) -->
 
 |
 
@@ -91,7 +95,7 @@ cs320
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 320](https://www.cs.colostate.edu/~cs320/spring21/home_progress.php)
 
-[P2](/graveyard/cs320/p2)
+<!-- [P2](/graveyard/cs320/p2) -->
 
 |
 
@@ -101,7 +105,7 @@ cs320
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 320](https://www.cs.colostate.edu/~cs320/spring21/home_progress.php)
 
-[P1](/graveyard/cs320/p1)
+<!-- [P1](/graveyard/cs320/p1) -->
 
 |
 
@@ -111,7 +115,7 @@ cs270
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 270](https://www.cs.colostate.edu/~cs270/.Fall20/)
 
-[More Bit Manipulation](/graveyard/cs270/bits)
+<!-- [More Bit Manipulation](/graveyard/cs270/bits) -->
 
 |
 
@@ -121,7 +125,7 @@ cs270
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 270](https://www.cs.colostate.edu/~cs270/.Fall20/)
 
-[Bit Fields](/graveyard/cs270/bitfields)
+<!-- [Bit Fields](/graveyard/cs270/bitfields) -->
 
 |
 
@@ -131,7 +135,7 @@ cs270
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 270](https://www.cs.colostate.edu/~cs270/.Fall20/)
 
-[Factorial](/graveyard/cs270/factorial)
+<!-- [Factorial](/graveyard/cs270/factorial) -->
 
 |
 
@@ -141,19 +145,9 @@ cs253
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
 
-[HW7](/graveyard/cs253/hw7)
+<!-- [HW7](/graveyard/cs253/hw7) -->
 
-[download](/graveyard/cs253/hw7.tar)
-
-|
-
-R.I.P. >Project Name here<
-==========================
-cs253
-If you would like to see the class instructions you can find them here as long as the website is still up and running:
-[CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
-
-[RegEx](/graveyard/cs253/regex)
+<!-- [download](/graveyard/cs253/hw7.tar) -->
 
 |
 
@@ -163,7 +157,7 @@ cs253
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
 
-[stl](/graveyard/cs253/stl)
+<!-- [RegEx](/graveyard/cs253/regex) -->
 
 |
 
@@ -173,7 +167,17 @@ cs253
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
 
-[template](/graveyard/cs253/template)
+<!-- [stl](/graveyard/cs253/stl) -->
+
+|
+
+R.I.P. >Project Name here<
+==========================
+cs253
+If you would like to see the class instructions you can find them here as long as the website is still up and running:
+[CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
+
+<!-- [template](/graveyard/cs253/template) -->
 
 |
 
@@ -183,7 +187,7 @@ cs220
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 220](https://www.cs.colostate.edu/~cs220/spring20/)
 
-[dfbf](/graveyard/cs220/dfbf)
+<!-- [dfbf](/graveyard/cs220/dfbf) -->
 
 |
 
@@ -193,6 +197,6 @@ cs220
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 220](https://www.cs.colostate.edu/~cs220/spring20/)
 
-[coins](/graveyard/cs220/coins)
+<!-- [coins](/graveyard/cs220/coins) -->
 
 |

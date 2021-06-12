@@ -33,7 +33,7 @@ Logo (Used in gifyourgame)
 
 |
 
-<!-- CLIPS
+CLIPS
 =====
 
 The following are some of my best plays from fakes and doubles to demos and whacky hits with some funny clips sprinkled in as well. I've got 44 clips for you to get goosebumps or laugh at if you have the time :) I will link the five of my favorites and put the rest on [here](/clips/) to help this page load faster.
@@ -52,6 +52,6 @@ Clip 4
 ![clip4](/assets/videos/clip4.mp4)
 Clip 5
 
-![clip5](/assets/videos/clip5.mp4) -->
+![clip5](/assets/videos/clip5.mp4)
 
 <!-- {% include embed.html url="" %} -->
