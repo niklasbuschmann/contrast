@@ -14,6 +14,7 @@ Below is code that belongs to me that I turned in for classes. They currently ar
 *OR*
 
 >2. I have since graduated.
+
 It may be possible for you to request to see the code yourself as someone not attending CSU, looking to hire me, or a friend looking to satisfy your curiosity. Thank you for understanding :)
 
 **Liability Waiver**
