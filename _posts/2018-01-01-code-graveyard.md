@@ -4,11 +4,12 @@ layout: post
 excerpt_separator: <!--more-->
 ---
 
-This is my collection of all my old coding projects from college that were so small or long ago that I can't really remember them to much. Because of this they will likely have no description but some may have a small description because I was really into the project or it made me cry and gave me headaches, haha! Feel free to browse around and copy paste them into your IDE or text editor to play around with and try to get it running. I make no promises these work out of the box because the Computer Science Department was very particular they wanted things to run on their machines and for their classes. Anyways, I hope you enjoy :)
+This is my collection of all my old coding projects from college that were so small or long ago that I can't really remember them too much. Because of this they will likely have no description, but some may have a small description because I was really into the project or it made me cry and gave me headaches, haha! Feel free to browse around and copy paste them into your IDE or text editor to play around with and try to get it running. I make no promises these work out of the box because the Computer Science Department was very particular, they wanted things to run on their machines and for their classes. Anyways, I hope you enjoy :)
 
 <!--more-->
 
-Below is code that belongs to me that I turned in for classes. They currently are not shown due to school and moral policy to not share code as a student. I will keep their descriptions and class websites available to understand what I have accomplished, but the code will not be release until either
+Below is code that belongs to me that I turned in for classes. They currently are not shown due to school and moral policy to not share code as a student. I will keep their descriptions and class websites available to understand what I have accomplished, but the code will not be released until either
+
 >1. I get the OKAY from my academic advisor
 
 *OR*
