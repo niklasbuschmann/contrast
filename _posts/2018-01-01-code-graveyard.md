@@ -27,7 +27,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-<!-- [HW 6](/graveyard/cs370/hw6) -->
+[HW 6](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs370/hw6.md)
 
 |
 
@@ -37,7 +37,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-<!-- [HW 5](/graveyard/cs370/hw5) -->
+[HW 5](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs370/hw5.md)
 
 |
 
@@ -47,7 +47,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-<!-- [HW 4](/graveyard/cs370/hw4) -->
+[HW 4](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs370/hw4.md)
 
 |
 
@@ -57,7 +57,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-<!-- [HW 3](/graveyard/cs370/hw3) -->
+[HW 3](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs370/hw3.md)
 
 |
 
@@ -67,7 +67,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-<!-- [HW 2](/graveyard/cs370/hw2) -->
+[HW 2](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs370/hw2.md)
 
 |
 
@@ -77,7 +77,7 @@ cs370
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 370](https://www.cs.colostate.edu/~cs370/Spring21/schedule.html)
 
-<!-- [HW 1](/graveyard/cs370/hw1) -->
+[HW 1](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs370/hw1.md)
 
 |
 
@@ -87,7 +87,7 @@ cs320
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 320](https://www.cs.colostate.edu/~cs320/spring21/home_progress.php)
 
-<!-- [P3](/graveyard/cs320/p3) -->
+[P3](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs320/P3.md)
 
 |
 
@@ -97,7 +97,7 @@ cs320
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 320](https://www.cs.colostate.edu/~cs320/spring21/home_progress.php)
 
-<!-- [P2](/graveyard/cs320/p2) -->
+[P2](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs320/P2.md)
 
 |
 
@@ -107,7 +107,7 @@ cs320
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 320](https://www.cs.colostate.edu/~cs320/spring21/home_progress.php)
 
-<!-- [P1](/graveyard/cs320/p1) -->
+[P1](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs320/P1.md)
 
 |
 
@@ -117,7 +117,7 @@ cs270
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 270](https://www.cs.colostate.edu/~cs270/.Fall20/)
 
-<!-- [More Bit Manipulation](/graveyard/cs270/bits) -->
+[More Bit Manipulation](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs270/bits.md)
 
 |
 
@@ -127,7 +127,7 @@ cs270
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 270](https://www.cs.colostate.edu/~cs270/.Fall20/)
 
-<!-- [Bit Fields](/graveyard/cs270/bitfields) -->
+[Bit Fields](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs270/bitfields.md)
 
 |
 
@@ -137,7 +137,7 @@ cs270
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 270](https://www.cs.colostate.edu/~cs270/.Fall20/)
 
-<!-- [Factorial](/graveyard/cs270/factorial) -->
+[Factorial](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs270/factorial.md)
 
 |
 
@@ -147,19 +147,9 @@ cs253
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
 
-<!-- [HW7](/graveyard/cs253/hw7) -->
+[HW7](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs253/hw7.md)
 
-<!-- [download](/graveyard/cs253/hw7.tar) -->
-
-|
-
-R.I.P. >Project Name here<
-==========================
-cs253
-If you would like to see the class instructions you can find them here as long as the website is still up and running:
-[CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
-
-<!-- [RegEx](/graveyard/cs253/regex) -->
+[download tar](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs253/hw7.tar)
 
 |
 
@@ -169,7 +159,7 @@ cs253
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
 
-<!-- [stl](/graveyard/cs253/stl) -->
+[RegEx](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs253/regex.md)
 
 |
 
@@ -179,7 +169,17 @@ cs253
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
 
-<!-- [template](/graveyard/cs253/template) -->
+[stl](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs253/stl.md)
+
+|
+
+R.I.P. >Project Name here<
+==========================
+cs253
+If you would like to see the class instructions you can find them here as long as the website is still up and running:
+[CS 253](https://cs.colostate.edu/~cs253/Spring21/Schedule)
+
+[template](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs253/template.md)
 
 |
 
@@ -189,7 +189,7 @@ cs220
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 220](https://www.cs.colostate.edu/~cs220/spring20/)
 
-<!-- [dfbf](/graveyard/cs220/dfbf) -->
+[dfbf](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs220/dfbf.md)
 
 |
 
@@ -199,6 +199,6 @@ cs220
 If you would like to see the class instructions you can find them here as long as the website is still up and running:
 [CS 220](https://www.cs.colostate.edu/~cs220/spring20/)
 
-<!-- [coins](/graveyard/cs220/coins) -->
+[coins](https://github.com/Brocklli/class-code/blob/000198626f9f9b6956e0ef11bd87ce3741cc5abe/graveyard/cs220/coins.md)
 
 |
