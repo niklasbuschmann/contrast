@@ -1,5 +1,5 @@
 ---
-title:  "Smart Mirror"
+title:  "Discord Bot"
 layout: post
 ---
 *Coming Summer 2021*
