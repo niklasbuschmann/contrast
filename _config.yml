@@ -1,6 +1,6 @@
-title: "Kathryn Schuler"
-author: "Katie Schuler"
-description: "University of Pennsylvania"
+title: "Mehrdad Mohammadi"
+author: "Mehrdad Mohammadi"
+description: "University of Illinois at Urbana-Champaign"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -10,7 +10,7 @@ date_format: "%B %d, %Y"
 
 show_social: true          # show site description and social links in the footer
 show_excerpts: false        # show article excerpts on the home page
-show_frame: false          # adds a gray frame to the site
+show_frame: True          # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 
 # Menu
@@ -21,9 +21,9 @@ navigation:
   - {title: "Blog", file: "blog.md"}
 
 external:                  # see http://fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:kathryn.schuler@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/kschuler"}
-  - {title: Twitter, icon: twitter, url: "https://twitter.com/kathrynschuler"}
+  - {title: Mail, icon: envelope, url: "mailto:mehrdad3@illinois.com"}
+  - {title: Github, icon: github, url: "https://github.com/mehrdadmhmdi"}
+  - {title: Twitter, icon: twitter, url: "https://twitter.com/mehrdad_mhmd"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
