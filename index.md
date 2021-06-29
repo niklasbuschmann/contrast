@@ -3,6 +3,6 @@ layout: page
 title: ""
 ---
 
-I'm an assistant professor in the [Linguistics Department](https://www.ling.upenn.edu) at the University of Pennsylvania and the director of the [Child Language Lab](https://childlanglab.com).  
+I'm a PhD Student in the [Statistics Department](https://stat.illinois.edu) and Graduate Student in the [Mathematics Department](https://math.illinois.edu) at the University of Illinois at Urbana-Champaign.  
 
-I teach a graduate seminar in [psycholinguistics](/ling607), an undergraduate course in [language and the brain](/ling104) and a crossover course in [neurolinguistics](https://public.3.basecamp.com/p/YWZxdZBxNSam92CL6oZQNptm). Occasionally, I also teach [LING 1](/ling001), Penn's Introduction to Linguistics.
+Before joining UIUC, I was a PhD student in the [Economics Department](https://psu.edu) at the Pennsylvania State University and I did my Master's in Economics in the in the [Economics Department](https://www.unibo.it/en/homepage) at the University of Bologna, Italy.
