@@ -16,14 +16,19 @@ show_sidebar: false        # show a sidebar instead of the usual header
 # Menu
 
 navigation:
-  - {title: "CV", url: "/katie.pdf", icon: home}
-  - {title: "Lab", url: "https://childlanglab.com"}
-  - {title: "Blog", file: "blog.md"}
-
+  - {title: "CV", url: "/cv.pdf", icon: home}
+  - {title: "Research", url: "research.md"}
+  - {title: "Teaching", file: "teaching.md"}
+  - {title: "Personal", file: "personal.md"}
+  
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:mehrdad3@illinois.com"}
   - {title: Github, icon: github, url: "https://github.com/mehrdadmhmdi"}
   - {title: Twitter, icon: twitter, url: "https://twitter.com/mehrdad_mhmd"}
+  - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/mehrdadmohammadi/"}
+  
+  
+  https://www.linkedin.com/in/mehrdadmohammadi/
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
