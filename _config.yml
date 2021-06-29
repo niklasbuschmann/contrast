@@ -27,9 +27,6 @@ external:                  # see http://fontawesome.com/icons
   - {title: Twitter, icon: twitter, url: "https://twitter.com/mehrdad_mhmd"}
   - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/mehrdadmohammadi/"}
   
-  
-  https://www.linkedin.com/in/mehrdadmohammadi/
-
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
