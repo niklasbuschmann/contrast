@@ -4,4 +4,5 @@ title: "Research"
 permalink: /Research/
 ---
 
-Research Areas
+Statistics: High Dimensional Statistics, Computational Statistics, Statistical Learning , Topological Data Analysis
+Mathematics: High Dimensional Probability, Operator Theory
