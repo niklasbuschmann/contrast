@@ -21,6 +21,7 @@ navigation:
   - {title: "Research", url: "research.md"}
   - {title: "Teaching", file: "teaching.md"}
   - {title: "Personal", file: "personal.md"}
+  - {title: "Contact", file: "contact.md"}
   
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:mehrdad3@illinois.com"}
