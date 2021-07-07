@@ -1,7 +1,7 @@
 ---
-title:  "Smart Mirror"
+title:  "Zigbee Smarthub"
 layout: post
 ---
-*Coming Summer 2021*
+*Coming Spring 2022*
 
 This project is currently in progess.

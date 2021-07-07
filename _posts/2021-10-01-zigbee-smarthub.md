@@ -1,7 +1,7 @@
 ---
-title:  "Pi Hole"
+title:  "Zigbee Smarthub"
 layout: post
 ---
-*Coming Summer 2021*
+*Coming Fall 2021*
 
 This project is currently in progess.
