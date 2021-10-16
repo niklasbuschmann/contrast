@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "Home"
 ---
 
 Hi! I'm Shakked, a Predoctoral Research Fellow at MIT. I work for [Simon Jager](https://economics.mit.edu/faculty/sjaeger) and [Benjamin Schoefer](https://eml.berkeley.edu/~schoefer/) on projects in labor economics.
