@@ -2,7 +2,7 @@
 layout: page
 ---
 
--> <img src="shakkednoy.jpeg" width="50%" /> <-
+<p align="center"> <img src="shakkednoy.jpeg" width="50%" /> </p>
 
 Hi! I'm Shakked, a Predoctoral Research Fellow at MIT. I work for [Simon Jäger](https://economics.mit.edu/faculty/sjaeger) and [Benjamin Schoefer](https://eml.berkeley.edu/~schoefer/) on projects in labor economics.
 
