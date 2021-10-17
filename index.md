@@ -10,6 +10,4 @@ I'm professionally interested in applied microeconomics, and non-professionally 
 
 On this website, you can find my research and my [CV](http://shakkednoy.com/cv.pdf).
 
-![image](shakkednoy.jpeg)
-
 <img src="shakkednoy.jpeg" width=50% height=50%>
