@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-
+# Academic Publications
 
 [The Effects of Neighborhood and Workplace Income Comparisons on Subjective Wellbeing](thesis_jeboR2.pdf) (with Isabelle Sin)<br/>
 _Journal of Economic Behavior and Organization_, 2021, 185, p.918-945<br/>
