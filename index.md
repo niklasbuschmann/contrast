@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<p align=center> 
+<p align="center"> 
   <img src="shakkednoy.jpeg" width="40%" /> 
 </p>
 
