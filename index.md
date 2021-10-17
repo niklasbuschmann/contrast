@@ -12,4 +12,4 @@ On this website, you can find my research and my [CV](http://shakkednoy.com/cv.p
 
 ![image](shakkednoy.jpeg)
 
-<img src="shakkednoy.com/shakkednoy.jpeg" width=50% height=50%>
+<img src="shakkednoy.jpeg" width=50% height=50%>
