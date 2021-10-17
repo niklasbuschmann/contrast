@@ -13,7 +13,7 @@ We investigate how a person’s happiness is affected by the incomes of her neig
 
 [What Does Codetermination Do?](wdcd_ilrrR2.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
 _ILR Review_, forthcoming<br/> 
-[Summary for Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2021/06/29/what-does-codetermination-do/)<br/>
+[Summary for the Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2021/06/29/what-does-codetermination-do/)<br/>
 <details>
   <summary>Click to expand abstract</summary>
 We provide a comprehensive overview of codetermination, i.e., worker representation in firms’ governance and management. The available micro evidence points to zero or small positive effects of codetermination on worker and firm outcomes, and leaves room for moderate positive effects on productivity, wages, and job stability. Similarly, we present new country-level, general-equilibrium event studies of codetermination reforms between the 1960s and 2010s, finding no effects on aggregate economic outcomes or the quality of industrial relations. We offer three explanations of the institution’s limited impact. First, existing codetermination laws convey little authority to workers. Second, countries with codetermination laws have high baseline levels of informal worker voice. Third, codetermination laws may interact with other labor market institutions, such as union representation and collective bargaining. We close by discussing implications for recent codetermination proposals in the United States.
