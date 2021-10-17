@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+
 ### Academic Publications
 
 [The Effects of Neighborhood and Workplace Income Comparisons on Subjective Wellbeing](thesis_jeboR2.pdf) (with Isabelle Sin)<br/>
