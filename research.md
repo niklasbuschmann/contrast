@@ -2,7 +2,7 @@
 layout: page
 ---
 
-### Academic Publications
+# Academic Publications
 
 [The Effects of Neighborhood and Workplace Income Comparisons on Subjective Wellbeing](thesis_jeboR2.pdf) (with Isabelle Sin)<br/>
 _Journal of Economic Behavior and Organization_, 2021, 185, p.918-945<br/>
@@ -25,7 +25,7 @@ _Frontiers in Psychology_, forthcoming<br/>
 Previous research has shown that people care less about men than about women who are left behind. We show that this finding extends to the domain of labor market discrimination: In identical scenarios, people judge discrimination against women more morally bad than discrimination against men. This result holds in a representative sample of the US population and in a larger but not representative sample of Amazon Mechanical Turk (Mturk) respondents. We test if this gender gap is driven by statistical fairness discrimination, a process in which people use the gender of the victim to draw inferences about other characteristics which matter for their fairness judgments. We test this explanation with a survey experiment in which we explicitly hold information about the victim of discrimination constant. Our results provide only mixed support for the statistical fairness discrimination explanation. In our representative sample, we see no meaningful or significant effect of the information treatments. By contrast, in our Mturk sample, we see that providing additional information partly reduces the effect of the victim’s gender on judgment of the discriminator. While people may engage in statistical fairness discrimination, this process is unlikely to be an exhaustive explanation for why discrimination against women is judged as worse.
 </details><br/>
 
-### Other Research
+# Other Research
 
 [Codetermination and Power in the Workplace](epi_21.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
 _Working Paper_, 2021<br/>
