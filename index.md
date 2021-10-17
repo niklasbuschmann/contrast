@@ -9,5 +9,3 @@ Previously, I worked at [Motu Economic and Public Policy Research](https://www.m
 I'm professionally interested in applied microeconomics, and non-professionally interested in metaethics, political philosophy, and [effective altruism](https://www.effectivealtruism.org/).
 
 On this website, you can find my research and my [CV](http://shakkednoy.com/cv.pdf).
-
-![personal photo](shakkednoy.jpeg "")
