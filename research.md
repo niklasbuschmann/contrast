@@ -12,7 +12,7 @@ We investigate how a person’s happiness is affected by the incomes of her neig
 </details><br/>
 
 [What Does Codetermination Do?](wdcd_ilrrR2.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
-_ILR Review_, forthcoming<br/>, [summary for Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2021/06/29/what-does-codetermination-do/)
+_ILR Review_, forthcoming, [summary for Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2021/06/29/what-does-codetermination-do/)<br/>
 <details>
   <summary>Click to expand abstract</summary>
 We provide a comprehensive overview of codetermination, i.e., worker representation in firms’ governance and management. The available micro evidence points to zero or small positive effects of codetermination on worker and firm outcomes, and leaves room for moderate positive effects on productivity, wages, and job stability. Similarly, we present new country-level, general-equilibrium event studies of codetermination reforms between the 1960s and 2010s, finding no effects on aggregate economic outcomes or the quality of industrial relations. We offer three explanations of the institution’s limited impact. First, existing codetermination laws convey little authority to workers. Second, countries with codetermination laws have high baseline levels of informal worker voice. Third, codetermination laws may interact with other labor market institutions, such as union representation and collective bargaining. We close by discussing implications for recent codetermination proposals in the United States.
@@ -35,7 +35,7 @@ How does codetermination—entitling workers to participate in firm governance, 
 </details><br/>
 
 [The Drivers of Mothers' Parental Leave Decisions: Evidence from the Growing Up in New Zealand Survey](leave_21.pdf) (with Isabelle Sin)<br/>
-_Motu Working Paper 21-08_, 2021<br/>, [coverage on Radio New Zealand](https://www.rnz.co.nz/national/programmes/ninetonoon/audio/2018801750/new-research-examines-what-drives-mothers-parental-leave)
+_Motu Working Paper 21-08_, 2021, [coverage on Radio New Zealand](https://www.rnz.co.nz/national/programmes/ninetonoon/audio/2018801750/new-research-examines-what-drives-mothers-parental-leave)<br/>
 <details>
   <summary>Click to expand abstract</summary>
 In this paper we compare mothers’ preferred leave, anticipated leave, and realised leave to shed light on how well different types of mothers are able to predict the parental leave they will take, and the factors that drive them to deviate from their plans. We use data from the Growing Up in New Zealand longitudinal survey on mothers’ preferred and anticipated leave reported antenatally, their realised leave, and the reasons they give for their leave-related choices to better understand the drivers of mothers’ leave decisions. We find mothers tend to anticipate substantially less leave than they prefer, but end up taking more leave on average than they anticipate. They have a moderate ability to take their preferred leave up to a year, but very little ability to take more than a year of leave. The 52 weeks of job-protected leave specified by law may play a role in this. Financial constraints are the most important factor driving mothers back to work. Certain types of mothers, such those with low income, are particularly prone to shocks that cause them to return to work earlier than anticipated, whereas as first-time mothers who plan a longer period of leave are vulnerable to shocks that cause them to delay their return to work.
