@@ -11,7 +11,7 @@ _Journal of Economic Behavior and Organization_, 2021, 185, p.918-945<br/>
 We investigate how a person’s happiness is affected by the incomes of her neighbours and coworkers. Using an unprecedentedly rich combination of administrative and survey data, we establish two central results. First, a person’s happiness is sensitive to her ordinal rank within her peer income distribution: people are happier the higher their income rank. Second, workplace rank matters much more than neighbourhood rank. We confirm that our results reflect a causal effect of peer income by implementing sensitivity analyses, identifying off changes in peer income over time for immobile people, exploiting plausibly exogenous moves between workplaces triggered by mass layoffs, and testing for the effects of unobservable group-level confounders. 
 </details><br/>
 
-[What Does Codetermination Do?](wdcd_ilrrR2.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
+[What Does Codetermination Do?](wdcd_ilrr.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
 _ILR Review_, forthcoming<br/> 
 [Summary for the Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2021/06/29/what-does-codetermination-do/)<br/>
 <details>
