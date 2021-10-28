@@ -30,10 +30,10 @@ Previous research has shown that people care less about men than about women who
 <h1> Other Research </h1>
 
 [Codetermination and Power in the Workplace](epi_21.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
-_Working Paper_, 2021<br/>
+_Working Paper_, prepared for the [Economic Policy Institute's Unequal Power Project](https://www.epi.org/unequalpower/publications/), 2021<br/>
 <details>
   <summary>Click to expand abstract</summary>
-How does codetermination—entitling workers to participate in firm governance, either through membership on company boards or the formation of works councils—affect corporate decision making? We critically discuss the history and contemporary operation of European codetermination arrangements and review empirical evidence on their effects on firms and workers. Our review suggests that these arrangements are unlikely to significantly shift power in the workplace for most outcomes.
+How does codetermination—entitling workers to participate in firm governance, either through membership on company boards or the formation of works councils—affect corporate decision making? We critically discuss the history and contemporary operation of European codetermination arrangements and review empirical evidence on their effects on firms and workers. Our review suggests that these arrangements are unlikely to significantly shift power in the workplace for most outcomes, but may mildly improve worker welfare.
 </details><br/>
 
 [The Drivers of Mothers' Parental Leave Decisions: Evidence from the Growing Up in New Zealand Survey](leave_21.pdf) (with Isabelle Sin)<br/>
