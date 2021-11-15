@@ -19,9 +19,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "myposts.md", title: Posts} # , icon: home for a home icon
   - {file: "Martin_Nilsson_CV.pdf", title: "CV"}
   
-  
-  - {file: "index.html"}
-  - {file: "README.md"}
+  #- {file: "index.html"}
+  #- {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:nilssonm49@gmail.com"}
