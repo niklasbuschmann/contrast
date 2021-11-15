@@ -1,7 +1,7 @@
 ---
 # Header material
 layout: page
-title: "EEG"
+title: "Title"
 ---
 
 Work in progress...
