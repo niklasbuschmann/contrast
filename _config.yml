@@ -19,8 +19,9 @@ navigation:
   - {title: "Home", url: "mehrdadmhmdi.github.io", icon: home}
   - {title: "Research", file: "research.md"}
   - {title: "Teaching", file: "teaching.md"}
+  - {title: "Blog", file: "blog.md"}
   - {title: "Contact", file: "contact.md"}
-   - {title: "Blog", file: "blog.md"}
+
   
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:mehrdad3@illinois.com"}
