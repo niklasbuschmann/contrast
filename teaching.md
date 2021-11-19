@@ -11,7 +11,7 @@ permalink: /Teaching/
 * Learning Methods Cook Book: R and Python Codes<br />
 * The Edges of A Square : Measure, Probability, Real and Functional Analysis<br />
 
-[**Teaching Assistant Experiences**]( /Teaching/experience.md)
+[**Teaching Assistant Experiences**]( /Teaching-experience/)
 <br />
 
 **Courses**
