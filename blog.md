@@ -9,4 +9,5 @@ title: "Blog"
   {% include archive.html title="Blog" %}
 {% endif %}
 
-<a class="twitter-timeline" href="https://twitter.com/mehrdad_mhmd?ref_src=twsrc%5Etfw">Tweets by mehrdad_mhmd</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+**Twitter Feed**</b>
+<a class="twitter-timeline" data-width="500" data-height="600" data-theme="dark" href="https://twitter.com/mehrdad_mhmd?ref_src=twsrc%5Etfw">Tweets by mehrdad_mhmd</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
