@@ -13,8 +13,12 @@ permalink: /Teaching/
  <br />
 * The Edges of A Square : Measure, Probability, Real and Functional Analysis, [Pdf]
 <br />
+
+
 [**Teaching Assistant Experiences**](https://mehrdadmhmdi.github.io/Teaching-experience/)
 <br />
+
+
 
 **Courses**
 <br />
