@@ -9,6 +9,11 @@ title: "Blog"
   {% include archive.html title="Blog" %}
 {% endif %}
 
+</b>
+
+**Twitter Feed**
+</b>
+
 <div style={{display:'flex',justifyContent:'center'}}>
     <a class="twitter-timeline" data-width="400" data-height="120" data-theme="dark" href="https://twitter.com/mehrdad_mhmd?ref_src=twsrc%5Etfw">Tweets by mehrdad_mhmd</a>     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
