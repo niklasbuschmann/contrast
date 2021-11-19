@@ -4,7 +4,7 @@ title: "Teaching"
 permalink: /Teaching/
 ---
 
-** Files and Materials ** 
+**Files and Materials** 
 *(Being written at the moment)*
 <br />
 * Solution Manual For High-Dimensional Probability: An Introduction with Applications in Data Science ,  by Roman Vershynin <br />
