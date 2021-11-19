@@ -4,9 +4,8 @@ title: ""
 ---
 <img src="images/mypic.jpg" align=right style="width:300px;height:300px;">                                          
 
-<div class="d">
-<h2>text-align: justify:</h2>
-  <p>
+<div align="justify">
+<p>
 I'm a PhD Student in the [Statistics Department](https://stat.illinois.edu) and Graduate Student in the [Mathematics Department](https://math.illinois.edu) at the University of Illinois at Urbana-Champaign.
 <br/>
     
