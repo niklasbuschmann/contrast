@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "Experience"
 permalink: /Teaching-experience/
 ---
 
