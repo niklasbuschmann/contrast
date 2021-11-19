@@ -2,7 +2,7 @@
 layout: page
 title: ""
 ---
-<img src="../images/mypic.jpg" align=right width="400" height=300">
+<img src="/images/mypic.jpg" align=right width="400" height=400">
 <p>
 I'm a PhD Student in the [Statistics Department](https://stat.illinois.edu) and Graduate Student in the [Mathematics Department](https://math.illinois.edu) at the University of Illinois at Urbana-Champaign.  
 
