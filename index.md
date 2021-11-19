@@ -8,4 +8,4 @@ I'm a PhD Student in the [Statistics Department](https://stat.illinois.edu) and 
     
 Before joining UIUC, I was a PhD student in the [Economics Department](https://econ.la.psu.edu) at the Pennsylvania State University and I did my Master's in Economics in the [Economics Department](https://dse.unibo.it/en/index.html) at the University of Bologna, Italy.
 
-<img src="images/mypic.jpg" align=center style="width:300px;height:300px">                                   
+<img src="images/mypic.jpg" align=center style="width:250px;height:250px">                                   
