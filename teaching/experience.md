@@ -4,9 +4,10 @@ permalink: /Teaching-experience/
 ---
 
 **Teaching Assistant:**
-<br />
+<br/>
 *(The University of Illinois at Urbana-Champaign)*<br/>
-Methods of Applied Statistics   Summer 2021<br/>
+Applied Bayesian Statistics, Fall 2021<br/>
+Methods of Applied Statistics,Summer 2021<br/>
 Probability and Statistics II , Fall 2020, Spring 2021<br/>
 
 *(The Pennsylvania State University)*<br />
