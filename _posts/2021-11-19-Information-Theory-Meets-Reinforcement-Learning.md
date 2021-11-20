@@ -2,6 +2,6 @@
 title:  "Information Theory Meets Reinforcement Learning"
 mathjax: true
 author: Mehrdad Mohammadi
-category: Learning Theory
+category: Information Theoey and Learning Theory
 ---
 webpage to be completed ...
