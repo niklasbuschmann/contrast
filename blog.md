@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Blog"
+permanent link : /blog/
 ---
 Browse by Category or [Tags](mehrdadmhmdi.github.io/blog-tag/)
 
