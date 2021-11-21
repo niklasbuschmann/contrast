@@ -3,6 +3,7 @@ layout: default
 title: "Blog"
 permanent link : /blog/
 ---
+{{page.categories | capitalize | join: ', '}}
 
 {% if site.show_excerpts %}
   {% include home.html %}
