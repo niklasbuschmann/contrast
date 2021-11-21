@@ -2,6 +2,8 @@
 layout: default
 title: "Blog"
 ---
+Browse by Category or [Tags](mehrdadmhmdi.github.io/blog-tag/)
+
 {% if site.show_excerpts %}
   {% include home.html %}
 {% else %}
