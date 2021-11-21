@@ -2,8 +2,6 @@
 layout: default
 title: "Blog"
 ---
-
-
 <center>
 <div style="display:inline-block;margin-left:.5em;">
     Browse by <a href="/blog/category/">Category</a> or <a href="/blog/tag/">Tag</a>
