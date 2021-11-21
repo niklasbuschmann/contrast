@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Blog Posts By Tag"
+permalink: /blog-tag/
 ---
 
 {% comment %}
