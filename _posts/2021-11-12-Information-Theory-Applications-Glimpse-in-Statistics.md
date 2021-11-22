@@ -17,10 +17,8 @@ There are various studied connections between information theory and statistics:
 </ul>
 <br/>
  In their classic paper, Kolmogorov and Tikhomirov(1959) make connections between statistical estimation, metric entropy and the notion of channel capacity. Let's write and draw this in information theoretic jargon. Let; <br/>
-  
-<ul>
-  <li> **Codebook:** indexed family of probability distributions</li>
-  <li> **Codeword:** nature chooses some</li>
-  <li> **Channel:** user observes n i.i.d. draws</li>
-  <li> $\textbf{Decoding:}$ estimator </li>
-</ul>
+ 
+ **Codebook:** indexed family of probability distributions</br>
+ **Codeword:** nature chooses some 
+ **Channel:** user observes n i.i.d. draws 
+ $\textbf{Decoding:}$ estimator 
