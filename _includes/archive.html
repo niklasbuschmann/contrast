@@ -5,11 +5,12 @@
     <div id="#{{ category_name | slugize }}"></div>
 {% endfor %}
 
-
+      
+<a name="{{ category_name | slugize }}"></a>
 <article>
   <header><h1>{{ include.title | default: page.title }}</h1></header>
   <ul class="archive">
-    {% for post in site.posts.[category_name] %}
+    {% for category in site.posts %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
