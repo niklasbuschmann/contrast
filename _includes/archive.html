@@ -3,8 +3,8 @@
   <header><h1>{{ include.title | default: page.title }}</h1></header>
   <ul class="archive">
     {% for post in site.posts %}
-        <a name="{{ category_name | slugize }}"></a>
-     <li>
+         <li>
+      <a name="{{ category_name | slugize }}">{{ post.category }}</a>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
