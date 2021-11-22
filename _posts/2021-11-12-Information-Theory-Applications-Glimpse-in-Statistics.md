@@ -29,4 +29,4 @@ There are various studied connections between information theory and statistics:
 *codebooks/codewords:*   graphs, vectors, matrices, functions, densities,etc.<br/>
 *channels:*              random graphs, regression models, elementwise probes of vectors/machines, random projections,etc.<br/>
 *closeness $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ subject to:*     exact/partial graph recovery in Hamming, $$mathcal{l^p}$$-distances, $$L^P(Q)$$-distances, sup-norm etc.<br/>
-
+<iframe frameBorder="0" width="100%" height="100%" style="min-width: 400px; min-height:400px" src="https://www.mathcha.io/editor/r0yDqIyjSEpUjD2dqwtdw0pOMIEgqrprHM5Om7?embedded=true" ></iframe>
