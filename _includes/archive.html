@@ -2,8 +2,8 @@
 <article>
   <header><h1>{{ include.title | default: page.title }}</h1></header>
    <ul class="archive">
-    {% for post in site.posts %}
-     <h2>{{ include.category | default: post.category }}</h2>
+    {% for post in site.posts[category] %}
+     <h4>{{ include.category | default: post.category }}</h4>
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
