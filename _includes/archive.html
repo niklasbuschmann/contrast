@@ -1,17 +1,21 @@
+<div id="archives">
+    {% for post in site.posts %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+{% endfor %}
+
 
 <article>
   <header><h1>{{ include.title | default: page.title }}</h1></header>
-   <ul class="archive">
-    {% for post in site.posts[category] %}
-     <h4>{{ include.category | default: post.category }}</h4>
+  <ul class="archive">
+    {% for post in site.posts.[category_name] %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
 </article>
-
-
 
 
 <article>
@@ -24,4 +28,3 @@
     {% endfor %}
   </ul>
 </article>
-
