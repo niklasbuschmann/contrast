@@ -30,4 +30,4 @@ There are various studied connections between information theory and statistics:
 *channels:*              random graphs, regression models, elementwise probes of vectors/machines, random projections,etc.<br/>
 *closeness $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ subject to:*     exact/partial graph recovery in Hamming, $$\mathcal{l^p}$$-distances, $$L^P(Q)$$-distances, sup-norm etc.<br/>
 
-<img src="images/blog/pic1.jpg" align=center style="width:250px;height:250px">    
+<img src="images/blog/pic1.png" align=center style="width:250px;height:250px">    
