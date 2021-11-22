@@ -20,6 +20,7 @@ There are various studied connections between information theory and statistics:
  
  **Codebook:** indexed parametric family of probability distributions $$\{Q_\theta | \theta \in
 \Theta\}$$ <br/>
- **Codeword:** nature chooses some <br/>
- **Channel:** user observes n i.i.d. draws <br/>
- **Decoding:** estimator <br/>
+ **Codeword:** nature chooses some parameter $$\theta^\ast \in
+\Theta$$ (the so-called True Parameter value) <br/>
+ **Channel:** user observes $$n$$ i.i.d. draws from the true distribution $$X_i \sim Q_\theta^\ast$$<br/>
+ **Decoding:** estimator $$X^n \mapto \hat{\theta}$$ such that $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$<br/>
