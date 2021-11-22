@@ -23,4 +23,10 @@ There are various studied connections between information theory and statistics:
  **Codeword:** nature chooses some parameter $$\theta^\ast \in
 \Theta$$ (the so-called True Parameter value) <br/>
  **Channel:** user observes $$n$$ i.i.d. draws from the true distribution $$X_i \sim Q_\theta^\ast$$<br/>
- **Decoding:** estimator $$X^n \mapto \hat{\theta}$$ such that $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ <br/>
+ **Decoding:** estimator $$X^n \mapsto \hat{\theta}$$ such that $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ <br/>
+ The setting could be defined in many variations:
+ <ul>
+ <li>*codebooks/codewords:* graphs, vectors, matrices, functions, densities,etc.</li>
+<li>*channels:* random graphs, regression models, elementwise probes of vectors/machines, random projections,etc.</li>
+<li>*closeness $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ subject to:* exact/partial graph recovery in Hamming, $mathcal{l^p}$-distances, $L^P(Q)$-distances, sup-norm etc.</li>
+</ul>
