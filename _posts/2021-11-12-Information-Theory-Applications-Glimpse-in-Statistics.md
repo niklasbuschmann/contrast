@@ -23,4 +23,4 @@ There are various studied connections between information theory and statistics:
  **Codeword:** nature chooses some parameter $$\theta^\ast \in
 \Theta$$ (the so-called True Parameter value) <br/>
  **Channel:** user observes $$n$$ i.i.d. draws from the true distribution $$X_i \sim Q_\theta^\ast$$<br/>
- **Decoding:** estimator <br/>
+ **Decoding:** estimator $$X^n \mapto \hat{\theta}$$ such that $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ <br/>
