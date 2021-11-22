@@ -26,7 +26,7 @@ There are various studied connections between information theory and statistics:
  **Decoding:** estimator $$X^n \mapsto \hat{\theta}$$ such that $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ <br/>
  The setting could be defined in many variations:
 
-*codebooks/codewords:* graphs, vectors, matrices, functions, densities,etc.<br/>
-*channels:* random graphs, regression models, elementwise probes of vectors/machines, random projections,etc.<br/>
-*closeness $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ subject to:* exact/partial graph recovery in Hamming, $mathcal{l^p}$-distances, $L^P(Q)$-distances, sup-norm etc.<br/>
+*codebooks/codewords:*   graphs, vectors, matrices, functions, densities,etc.<br/>
+*channels:*              random graphs, regression models, elementwise probes of vectors/machines, random projections,etc.<br/>
+*closeness $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ subject to:*     exact/partial graph recovery in Hamming, $$mathcal{l^p}$$-distances, $$L^P(Q)$$-distances, sup-norm etc.<br/>
 
