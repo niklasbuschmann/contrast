@@ -2,12 +2,9 @@
   <header><h1>{{ include.title | default: page.title }}</h1></header>
   <ul class="archive">
 {% for category in site.posts %}
-  <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
     {% for post in site.posts[category_name] %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -18,4 +15,15 @@
 </article>
 
 
+
+<article>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <ul class="archive">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</article>
 
