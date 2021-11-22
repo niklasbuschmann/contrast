@@ -24,10 +24,18 @@ There are various studied connections between information theory and statistics:
 \Theta$$ (the so-called True Parameter value) <br/>
  **Channel:** user observes $$n$$ i.i.d. draws from the true distribution $$X_i \sim Q_\theta^\ast$$<br/>
  **Decoding:** estimator $$X^n \mapsto \hat{\theta}$$ such that $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ <br/>
+ <br/>
  The setting could be defined in many variations:
 
-*codebooks/codewords:*   graphs, vectors, matrices, functions, densities,etc.<br/>
-*channels:*              random graphs, regression models, elementwise probes of vectors/machines, random projections,etc.<br/>
-*closeness $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ subject to:*     exact/partial graph recovery in Hamming, $$\mathcal{l^p}$$-distances, $$L^P(Q)$$-distances, sup-norm etc.<br/>
+
+<table style="border-collapse:collapse;border-spacing:0" class="tg"><tbody><tr><td style="border-color:#ffffff;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">codebooks/codewords:</td><td style="border-color:#ffffff;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">graphs, vectors, matrices, functions, densities,etc.</td></tr><tr><td style="border-color:#ffffff;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">channels:</td><td style="border-color:#ffffff;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">random graphs, regression models, elementwise probes of vectors/machines, random projections ,etc.</td></tr><tr><td style="border-color:#ffffff;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">closeness $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ <br>notion subject to:</td><td style="border-color:#ffffff;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">exact/partial graph recovery in Hamming, $$\mathcal{l^p}$$-distances, $$L^P(Q)$$-distances, sup-norm etc.</td></tr></tbody></table>
+
+
+
+
+**codebooks/codewords:**   graphs, vectors, matrices, functions, densities,etc.<br/>
+
+**channels:**              random graphs, regression models, elementwise probes of vectors/machines, random projections,etc.<br/>
+**closeness $$\hat{\theta}\overset{\mathbb{P}}{\rightarrow}\theta^\ast$$ subject to:**     exact/partial graph recovery in Hamming, $$\mathcal{l^p}$$-distances, $$L^P(Q)$$-distances, sup-norm etc.<br/>
 
 <img src="/images/blog/pic1.png" align=center style="height:250px">    
