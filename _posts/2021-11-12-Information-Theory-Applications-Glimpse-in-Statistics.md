@@ -22,5 +22,5 @@ There are various studied connections between information theory and statistics:
   <li> **Codebook:** indexed family of probability distributions</li>
   <li> **Codeword:** nature chooses some</li>
   <li> **Channel:** user observes n i.i.d. draws</li>
-  <li> **Decoding:** estimator </li>
+  <li> $\textbf{Decoding:}$ estimator </li>
 </ul>
