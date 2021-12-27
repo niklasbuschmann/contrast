@@ -5,8 +5,6 @@ permalink: /misc/
 ---
 Welcome to the rabbit hole of whatever else I want to showcase! I am running out of room for tabs in the navigation bar, and categories to put things, so here is where you will find everything else random about me.
 
-|
-
 <article>
     <header>
         <h1><a href="https://www.brockkaess.com/music/">Music</a></h1>
