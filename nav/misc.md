@@ -28,6 +28,6 @@ Welcome to the rabbit hole of whatever else I want to showcase! I am running out
         <h1><a href="https://www.brockkaess.com/clips/">RL Clips</a></h1>
     </header>
     The following are some of my best plays from fakes and doubles to demos and whacky hits with some funny clips sprinkled in as well. I've got 44 clips for you to get goosebumps or laugh at if you have the time :) Here is one of my all-time favorites:
-    ![clip1](/assets/videos/clip30.mp4)
+    [clip1](/assets/videos/clip30.mp4)
     <div class="more"><a href="https://www.brockkaess.com/clips/">read more</a></div>
 </article>
