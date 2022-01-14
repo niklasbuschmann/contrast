@@ -9,8 +9,6 @@ layout: page
 
 
 
-
-
 ## 1. NLP
 - [Retrival-based COVID-19 Chatbot](https://bilha-analytics.github.io/Retrieval-based-Chatbot/) 
 
