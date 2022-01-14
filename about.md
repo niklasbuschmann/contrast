@@ -27,5 +27,5 @@ layout: page
 - [Living Goods Referrals Pilot](http://bit.ly/Referrals_9Nov)
 
 
-## 5. Reach out 
+**Me**
 - [Resume](bilha_cv.pdf) 
