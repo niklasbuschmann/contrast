@@ -8,9 +8,12 @@ A collection of works and experiments
 
 
 # 2. Medical Imaging 
+
 []()
 
+
 # 3. Geometric Learning
+
 
 
 # 4. Data Analysis 
