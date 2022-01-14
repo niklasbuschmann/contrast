@@ -1,3 +1,9 @@
+---
+title: "About"
+permalink: "/about/"
+layout: page
+---
+
 # Introduction
 
 A collection of works and experiments 
