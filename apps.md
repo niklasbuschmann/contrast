@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: "/about/"
+permalink: "/apps/"
 layout: page
 ---
 
