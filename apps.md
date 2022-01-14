@@ -1,9 +1,12 @@
 ---
-title: ""
+title: "Apps"
 permalink: "/apps/"
 layout: page
 ---
 
 A collection of project apps you may try 
 
--[COVID-19 Chatbot online App](https://ncov-bot-app.herokuapp.com/) - description [here](https://bilha-analytics.github.io/Retrieval-based-Chatbot/)
+<ul>
+<li><a href="https://ncov-bot-app.herokuapp.com/" target="_blank">COVID-19 Chatbot online App</a> description <a href="https://bilha-analytics.github.io/Retrieval-based-Chatbot/" target="_blank">here</a></li>
+
+</ul> 
