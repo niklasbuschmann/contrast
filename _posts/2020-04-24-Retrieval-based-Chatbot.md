@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-![about-page](https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_about.png) ![bot-page](https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_bot.png) ![map-page](https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_map.png)
+![bot-page](https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_bot.png?raw=true) ![map-page](https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_map.png?raw=trues)
 
 
 ## MathJax
