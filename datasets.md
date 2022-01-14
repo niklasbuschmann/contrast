@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Datasets and data tools"
 permalink: "/datasets/"
 layout: page
 ---
