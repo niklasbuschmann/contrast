@@ -26,6 +26,3 @@ layout: page
 ## 4. Data Analysis 
 - [Living Goods Referrals Pilot](http://bit.ly/Referrals_9Nov)
 
-
-**Me**
-- [Resume](bilha_cv.pdf) 
