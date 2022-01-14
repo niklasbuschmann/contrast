@@ -4,7 +4,16 @@ permalink: "/about/"
 layout: page
 ---
 
+
+[Resume](bilha_cv.pdf) 
+
+
+
+
+
 A collection of works and experiments 
+
+
 
 ## 1. NLP
 

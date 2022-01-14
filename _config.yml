@@ -17,8 +17,8 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", title: "Home"}
-  - {file: "README.md", title: "About"}
-  - {file: "bilha_cv.pdf", title: "Resume"}
+  - {file: "about.md", title: "About"}
+  #- {file: "bilha_cv.pdf", title: "Resume"}
   - {url: "https://www.tbsi-qinlab.com/", title: "My Lab@TBSI"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
