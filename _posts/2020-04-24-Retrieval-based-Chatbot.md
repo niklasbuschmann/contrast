@@ -5,6 +5,8 @@ layout: post
 categories: media
 ---
 
+Chatbots automatically provide answers to common or well-known issues in a manner that simulates conversational interactions. In this project, we build a retrieval-based chatbot using cosine similarity on a database of frequently asked questions about COVID-19 as at 31-Mar-2019. 
+
 <p align='center'>
     <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_map.png?raw=true' width='150'> 
     <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_bot.png?raw=true' width='150'> 
@@ -12,7 +14,6 @@ categories: media
     <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_news.png?raw=true' width='150'> 
 </p> 
 
-Chatbots automatically provide answers to common or well-known issues in a manner that simulates conversational interactions. In this project, we build a retrieval-based chatbot using cosine similarity on a database of frequently asked questions about COVID-19 as at 31-Mar-2019. 
 
 [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity) is a common approach in information retrieval. It provides a measure of how similar two documents are based on their content. In this project, the two documents are, first, a user query and, second, an FAQ database from which a respose is retrieved. For this project, model performance was best when using lemmatization and TF-IDF encoding. 
 
