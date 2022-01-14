@@ -15,17 +15,17 @@ Chatbots automatically provide answers to common or well-known issues in a manne
 </p> 
 
 
-[Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity) is a common approach in information retrieval. It provides a measure of how similar two documents are based on their content. In this project, the two documents are, first, a user query and, second, an FAQ database from which a respose is retrieved. For this project, model performance was best when using lemmatization and TF-IDF encoding. 
+<a href="https://en.wikipedia.org/wiki/Cosine_similarity" target="_blank">Cosine Similarity</a> is a common approach in information retrieval. It provides a measure of how similar two documents are based on their content. In this project, the two documents are, first, a user query and, second, an FAQ database from which a respose is retrieved. For this project, model performance was best when using lemmatization and TF-IDF encoding. 
 
-The cosine similarity matching approach is also compared to other common machine learning models. [More details on the project here](https://github.com/bilha-analytics/ncov_bot_app), and try out the app [here](https://ncov-bot-app.herokuapp.com/)
+The cosine similarity matching approach is also compared to other common machine learning models. <a href="https://github.com/bilha-analytics/ncov_bot_app" target="_blank">More details on the project here</a>, and try out the app <a href="https://ncov-bot-app.herokuapp.com/" target="_blank">here</a>. 
 
 
 **Libraries used**
 
-- [NLTK](https://www.nltk.org/) NLP Toolkit 
-- [Sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) 
-- [Flask web framework](https://flask.palletsprojects.com/en/2.0.x/) and [Jinja templates](https://jinja.palletsprojects.com/en/3.0.x/) 
-- [Beautiful soup](https://beautiful-soup-4.readthedocs.io/en/latest/)
+- <a href="https://www.nltk.org/" target="_blank">NLTK, NLP Toolkit</a>.
+- <a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html" target="_blank">SKlearn</a>.  
+- <a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank">Flask web framework</a> and  <a href="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank">Jinja templates</a>.  
+- <a href="https://beautiful-soup-4.readthedocs.io/en/latest/" target="_blank">Beautiful soup</a>.  
 
 
 **Referenced resources/assets**
