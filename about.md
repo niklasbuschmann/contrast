@@ -9,8 +9,6 @@ layout: page
 
 
 
-A collection of works and experiments 
-
 
 
 ## 1. NLP
