@@ -17,6 +17,8 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", title: "Home"}
+  - {file: "datasets.md", title: "Datasets"}
+  - {file: "apps.md", title: "Apps"}
   - {file: "about.md", title: "About"}
   #- {file: "bilha_cv.pdf", title: "Resume"}
   - {url: "https://www.tbsi-qinlab.com/", title: "My Lab@TBSI"}

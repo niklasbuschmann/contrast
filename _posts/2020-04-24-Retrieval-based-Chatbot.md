@@ -17,7 +17,7 @@ Chatbots automatically provide answers to common or well-known issues in a manne
 
 [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity) is a common approach in information retrieval. It provides a measure of how similar two documents are based on their content. In this project, the two documents are, first, a user query and, second, an FAQ database from which a respose is retrieved. For this project, model performance was best when using lemmatization and TF-IDF encoding. 
 
-The cosine similarity matching approach is also compared to other common machine learning models. [More details on the project here](https://github.com/bilha-analytics/ncov_bot_app). 
+The cosine similarity matching approach is also compared to other common machine learning models. [More details on the project here](https://github.com/bilha-analytics/ncov_bot_app), and try out the app [here](https://ncov-bot-app.herokuapp.com/)
 
 
 **Libraries used**
