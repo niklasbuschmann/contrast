@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-Chatbots automatically provide answers to common or well-known issues in a manner that simulates conversational interactions. In this project, we build a retrieval-based chatbot using cosine similarity on a database of frequently asked questions about COVID-19 as at 31-Mar-2019. 
+Chatbots automatically provide answers to common or well-known issues in a manner that simulates conversational interactions. In this project, we build a retrieval-based chatbot using cosine similarity on a database of frequently asked questions about COVID-19 as at 31-Mar-2020. 
 
 <p align='center'>
     <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/eg_screen_map.png?raw=true' width='150'> 
