@@ -1,6 +1,6 @@
 title: "bilha analytics"
 author: "bilha"
-description: "projects and research works"
+description: "My projects and research works"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -19,8 +19,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", title: "Home"}
   - {file: "datasets.md", title: "Datasets"}
   - {file: "apps.md", title: "Apps"}
+  #- {file: "projects.md", title: "Projects"}
   - {file: "about.md", title: "About"}
-  #- {file: "bilha_cv.pdf", title: "Resume"}
   - {url: "https://www.tbsi-qinlab.com/", title: "My Lab@TBSI"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
