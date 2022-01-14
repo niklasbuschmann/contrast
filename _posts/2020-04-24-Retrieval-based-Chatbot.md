@@ -30,13 +30,15 @@ The cosine similarity matching approach is also compared to other common machine
 
 **Referenced resources/assets**
 
-FAQ content 
+FAQ content and News
 <ul>
     <li><a href="http://www.health.go.ke/" target="_blank"> Ministry of Health, KE </a></li>
     <li><a href="https://coronavirus.jhu.edu/" target="_blank"> Johns Hopkins University of Medicine - Corona Virus Resource Center </a></li>
     <li><a href="https://www.who.int/" target="_blank"> WHO </a></li>
     <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank"> CDC </a></li>
+    <li><a href="http://newsapi.org"> News API Org </a></li>
 </ul>
+
 Covid map and stats 
 <ul>
     <li><a href="https://coronavirus.jhu.edu/" target="_blank"> Johns Hopkins University of Medicine - Corona Virus Resource Center </a></li>
