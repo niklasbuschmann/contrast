@@ -32,10 +32,10 @@ Previous research has shown that people care less about men than about women who
 <h1> Other Research </h1>
 
 [Codetermination and Power in the Workplace](epi_21.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
-_Working Paper_, prepared for the [Economic Policy Institute's Unequal Power Project](https://www.epi.org/unequalpower/publications/), 2021<br/>
+_Working Paper_, prepared for the [Economic Policy Institute's Unequal Power Project](https://www.epi.org/unequalpower/publications/), 2022<br/>
 <details>
   <summary>Click to expand abstract</summary>
-How does codetermination—entitling workers to participate in firm governance, either through membership on company boards or the formation of works councils—affect corporate decision making? We critically discuss the history and contemporary operation of European codetermination arrangements and review empirical evidence on their effects on firms and workers. Our review suggests that these arrangements are unlikely to significantly shift power in the workplace for most outcomes, but may mildly improve worker welfare.
+How does codetermination—entitling workers to participate in firm governance, either through membership on company boards or the formation of works councils—affect corporate decision making? We critically discuss the history and contemporary operation of European codetermination arrangements and review empirical evidence on their effects on firms and workers. Our review suggests that these arrangements are unlikely to significantly shift power in the workplace, but may mildly improve worker welfare and firm performance, in part by boosting information-sharing and cooperation and in part by slightly increasing worker influence.
 </details><br/>
 
 [The Drivers of Mothers' Parental Leave Decisions: Evidence from the Growing Up in New Zealand Survey](leave_21.pdf) (with Isabelle Sin)<br/>
@@ -53,7 +53,7 @@ _Motu Working Paper 21-06_, 2021<br/>
 Workers who experience involuntary job loss suffer from deep and persistent negative consequences. In this paper, we first summarise the evidence on the effects of involuntary job loss on displaced workers’ wellbeing. We conclude that displacement harms workers’ mental health and economic security in the short term and negatively affects their earnings and mortality risk in the long term. We then extrapolate the estimates of Hyslop and Townsend (2017) to estimate the economy-wide net-present value of wages lost as a result of displacement by the workers displaced in New Zealand in a representative year. Our estimates suggest that this value is likely between $3.3 billion (in a year of economic upswing) and $15.4 billion (in a year of very severe economic downswing). Finally, we survey the policy options available for dealing with involuntary displacement. We conclude that unemployment insurance or unemployment benefits can effectively mitigate the immediate negative effects of displacement and have only small downsides. By contrast, training and job placement programs are typically ineffective, but in some circumstances might have high potential upside.
 </details><br/>
 
-[Explaining the Reliability of Our Mathematical Beliefs](phil489.pdf)<br/>
+[Explaining the Reliability of our Mathematical Beliefs](phil489.pdf)<br/>
 _Philosophy Honors Thesis_, 2019<br/>
 <details>
   <summary>Click to expand abstract</summary>
