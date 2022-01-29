@@ -52,6 +52,9 @@ Axes setter properties are also stored in rcParams. Therefore, instead of having
 
 {% highlight py %}
 ## Runtime rcParams updates 
+import numpy as np 
+import matplotlib.pyplot as plt
+import seaborn as sns
 import matplotlib as mpl
 
 ## i. directly updating an individual setting in rcParams
