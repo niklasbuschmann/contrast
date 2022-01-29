@@ -217,6 +217,7 @@ Somethings I've learnt so far on publication-quality plots that you may include 
 
 ## Appendix
 [Note book with sample code](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/notebooks/201014_matplotlib_rcparams_style_sheet.ipynb) 
+
 ![styling boxplots](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e2.png)
 <p align='center'>Can achieve similar results in both matplotlib and seaborn by updating styles</p>
 

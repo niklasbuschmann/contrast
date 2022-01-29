@@ -20,10 +20,9 @@ boxplot.showmeans : False
 boxplot.meanline : False 
 boxplot.boxprops.linewidth : .7
 boxplot.boxprops.linestyle : -
-boxplot.medianprops.color : darkgray
 boxplot.medianprops.linewidth : 1.7 
 boxplot.medianprops.linestyle : -
-
+boxplot.medianprops.color : darkgray
 boxplot.boxprops.color : 999999
 boxplot.capprops.color : 999999
 boxplot.whiskerprops.color : 999999
