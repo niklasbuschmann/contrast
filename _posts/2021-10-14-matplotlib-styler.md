@@ -216,37 +216,7 @@ Somethings I've learnt so far on publication-quality plots that you may include 
 
 
 ## Appendix
-
-{% highlight py %}
-## Example 1
-import numpy as np 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-## dummy data 
-RNG = np.random.default_rng( 234) 
-x = RNG.integers(low=0, high=12, size=100)
-m = RNG.random()*2
-c = RNG.random()*1
-y = x*m + c 
-
-## using matplotlib plot function 
-plt.plot(x, y)
-plt.title(f'Example line plot $y = {np.mean(m):.2f} X + {np.mean(c):.2f} $') 
-
-## using seaborn and accessing the axes object from seaborn
-## adding some noise to the dummy data for variability
-m = RNG.random()*2 + RNG.random( len(x) )*.1  
-c = RNG.random()*1 + RNG.random( len(x) )*.1
-y = x*m + c 
-## plotting with seaborn - same plot can be achieved with plt.scatter(x, y) 
-ax = sns.scatterplot(x=x, y=y)
-ax.set_title(f'Example scatter plot $y = {np.mean(m):.2f} X + {np.mean(c):.2f} $')
-
-{% endhighlight  %}
-
-[Note book with sample code]() 
-
+[Note book with sample code](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/notebooks/201014_matplotlib_rcparams_style_sheet.ipynb) 
 ![styling boxplots](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e2.png)
 <p align='center'>Can achieve similar results in both matplotlib and seaborn by updating styles</p>
 
