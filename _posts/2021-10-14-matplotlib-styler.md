@@ -12,6 +12,18 @@ This entry assumes that you’re already familiar with `python`, `matplotlib` an
 The idea here is to set up a reusable theme/style and find suitable settings for publication-quality plots. That way, you have consistent styling in your plots and, of course, by scripting your process, it is easier to update your report as your experiments or your output media change. 
 </p>
 
+
+## Summary 
+
+- There are different ways to create plots using matplotlib, seaborn and even pandas. However, they all share a common figure and axes interface and can, therefore, be styled consistently using the same style sheet. 
+
+- A style sheet is a matplotlib's rcParams config file, which only includes plot-styling parameters. A style sheet is loaded by `matplotlib.pyplot.style.use` and multiple style sheets can be combined/cascaded by providing them as a list. The order of listing matters; the first style in the list has the lowest priority and the last one has the highest priority. 
+
+- You may use predefined style sheets from seaborn or matplotlib. You may also chain/cascade them with your custom styles, which need only to include those elements you want to customize. For instance, different publications (or report types, e.g. executive summary vs full report) may have specific styling directives and, thus, you may have modular style sheets for specific requirements and cascade them with a core/default style sheet for general properties. 
+
+- Styles can be applied globally, which affects all plots after the style sheet has been set, or using context managers for temporary changes. Additionally, `sns.set_context` avails styles for auto-scaling your graphics to different media like notebook, talk (presentations), paper or posters. That works by applying a scaling factor to size-related elements like font sizes, line widths or label sizes. Consequently, you only need to load your style and then set_context to adjust to the current medium. 
+
+
 ## The context 
 
 Matplotlib is a massive and powerful library and there's loads you can do to customize your plots. Seaborn builds on matplotlib, providing easier-to-use functions and additional design-related implementations for nice-looking plots; it is a higher-level plotting library. Below is an overview of how a figure is structured in matplotlib. You have the figure, which is the general chart area, and the axes, which contains the plot and its components. You can style the *figure* or the *axes* directly in code or through a configuration file (pretty much a style sheet). Seaborn can take as input a matplotlib axes object and usually returns an axes object. Therefore, whether using matplotlib or seaborn, you can plan out your themes/styles similarly. 
@@ -159,39 +171,30 @@ axes.prop_cycle: cycler(
 )
 {% endhighlight %}
 
-## Conclusion
 
-- There are different ways to create plots using matplotlib, seaborn and even pandas. However, they all share a common figure and axes interface and can, therefore, be styled consistently using the same style sheet. 
+## Tips 
+Somethings I've learnt so far on publication-quality plots that you may include in your style sheets
 
-- A style sheet is a matplotlib's rcParams config file, which only includes plot-styling parameters. A style sheet is loaded by `matplotlib.pyplot.style.use` and multiple style sheets can be combined/cascaded by providing them as a list. The order of listing matters; the first style in the list has the lowest priority and the last one has the highest priority. 
+- Probably start with figure sizes of 3 - 4 inches, for width and height per plot in a figure. For instance, for a figure with five plots in one row, the initial figure size in (h, w) could be $(4, 3*5)$, then adjust as desired. If the figure has only one plot try starting with 6 inches for the width if it is for a single-column document. Forums/journals will also indicate preferred figure sizes. 
 
-- You may use predefined style sheets from seaborn or matplotlib. You may also chain/cascade them with your custom styles, which need only to include those elements you want to customize. For instance, different publications (or report types, e.g. executive summary vs full report) may have specific styling directives and, thus, you may have modular style sheets for specific requirements and cascade them with a core/default style sheet for general properties. 
+- Prefer saving figures as '.pdf' (a vector format) over '.png' or other raster formats, as they scale better without loss of quality when fitting them in your document. Pdf files work great in latex.
 
-- Styles can be applied globally, which affects all plots after the style sheet has been set, or using context managers for temporary changes. Additionally, `sns.set_context` avails styles for auto-scaling your graphics to different media like notebook, talk (presentations), paper or posters. That works by applying a scaling factor to size-related elements like font sizes, line widths or label sizes. Consequently, you only need to load your style and then set_context to adjust to the current medium. 
+- Remember to use `plt.tight_layout` unless you explicitly set the plot spacing. Do the same when saving figures (else any off-frame annotations will be truncated). In the style sheet, add `savefig.bbox : tight` 
 
-- Somethings I've learnt so far on publication-quality plots that you may include in your style sheets
+- Consider colorblind friendly color palettes. Build one using any of the many tools out there (lots from web development). Checkout <a href="https://personal.sron.nl/~pault/" target="_blank"> Paul Tol's colorblind friendly palettes</a> and <a href="https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40-%23a0c36a" target="_blank"> David's palette builder  </a>. You may also consider `patch.set_hatch`, which can add texture/shading, in addition to using colors with sufficient contrast.
 
-    - Probably start with figure sizes of 3 - 4 inches, for width and height per plot in a figure. For instance, for a figure with five plots in one row, the initial figure size in (h, w) could be $(4, 3*5)$, then adjust as desired. If the figure has only one plot try starting with 6 inches for the width if it is for a single-column document. Forums/journals will also indicate preferred figure sizes. 
+- Font sizes and figure dpi will often depend on the target forum/journal. Some forums may also prescribe a color palette. 
 
-    - Prefer saving figures as '.pdf' (a vector format) over '.png' or other raster formats, as they scale better without loss of quality when fitting them in your document. Pdf files work great in latex.
+- Usually, serif or sans-serif family of fonts e.g. Times, Arial, etc
 
-    - Remember to use `plt.tight_layout` unless you explicitly set the plot spacing. Do the same when saving figures (else any off-frame annotations will be truncated). In the style sheet, add `savefig.bbox : tight` 
+- Set axis limits and remove unnecessary tick marks (about 3 - 4 tick marks tops per axis). 
 
-    - Consider colorblind friendly color palettes. Build one using any of the many tools out there (lots from web development). Checkout <a href="https://personal.sron.nl/~pault/" target="_blank"> Paul Tol's colorblind friendly palettes</a> and <a href="https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40-%23a0c36a" target="_blank"> David's palette builder  </a>. You may also consider `patch.set_hatch`, which can add texture/shading, in addition to using colors with sufficient contrast.
+- Use latex for math formating. 
 
-    - Font sizes and figure dpi will often depend on the target forum/journal. Some forums may also prescribe a color palette. 
-
-    - Usually, serif or sans-serif family of fonts e.g. Times, Arial, etc
-
-    - Set axis limits and remove unnecessary tick marks (about 3 - 4 tick marks tops per axis). 
-
-    - Use latex for math formating. 
-
-    - Check out <a href="https://github.com/garrettj403/SciencePlots" target="_blank"> Science plots on Github</a> for examples, ideas and base style sheets for publications and some specific academic journals. 
+- Check out <a href="https://github.com/garrettj403/SciencePlots" target="_blank"> Science plots on Github</a> for examples, ideas and base style sheets for publications and some specific academic journals. 
 
 
-
-**References and Resources**
+## References and Resources 
 
 <ul>
 <li><a href=”https://matplotlib.org/stable/tutorials/introductory/customizing.html”  target="_blank">Tutorial by Matplotlib on style sheets and rcParams</a></li>
