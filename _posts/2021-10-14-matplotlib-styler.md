@@ -49,7 +49,7 @@ ax.set_title(f'Example scatter plot $y = {np.mean(m):.2f} X + {np.mean(c):.2f} $
 ![example 1 - line plot](20211014___e1.png)![example 1 - scatter plot](20211014___e1b.png)
 
 
-## Customizing plot style
+## Customizing plot styles
 There are four main ways to style your plots. In order of prioritization, from highest to lowest (higher priority settings will override lower priority definitions), the approaches are
 
 1. In code calls to `Axes` elements and their lower level rendering objects. 
@@ -110,7 +110,7 @@ with plt.style.context('ggplot'):
     plt.plot(x,y)
 
 ## iv. use multiple styles - simply pass them as a list 
-plt.style.use(['ggplot', 'mystyle','notebook'] ) 
+plt.style.use(['ggplot', 'white','mystyle'] ) 
 
 ## v. use sns context for differentiated sizing/scaling on different media
 sns.set_context('notebook') 
