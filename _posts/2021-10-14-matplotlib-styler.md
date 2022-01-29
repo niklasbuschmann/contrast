@@ -17,7 +17,7 @@ The idea here is to set up a reusable theme/style and find suitable settings for
 
 - There are different ways to create plots using matplotlib, seaborn and even pandas. However, they all share a common figure and axes interface and can, therefore, be styled consistently using the same style sheet. 
 
-- A style sheet is a matplotlib's rcParams config file, which only includes plot-styling parameters. A style sheet is loaded by `matplotlib.pyplot.style.use` and multiple style sheets can be combined/cascaded by providing them as a list. The order of listing matters; the first style in the list has the lowest priority and the last one has the highest priority. 
+- A style sheet is an rcParams config file, which only includes plot-styling parameters. A style sheet is loaded by `matplotlib.pyplot.style.use` and multiple style sheets can be combined/cascaded by providing them as a list. The order of listing matters; the first style in the list has the lowest priority and the last one has the highest priority. 
 
 - You may use predefined style sheets from seaborn or matplotlib. You may also chain/cascade them with your custom styles, which need only to include those elements you want to customize. For instance, different publications (or report types, e.g. executive summary vs full report) may have specific styling directives and, thus, you may have modular style sheets for specific requirements and cascade them with a core/default style sheet for general properties. 
 
@@ -245,11 +245,6 @@ ax.set_title(f'Example scatter plot $y = {np.mean(m):.2f} X + {np.mean(c):.2f} $
 
 {% endhighlight  %}
 
-![example 1 - line plot](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e1.png)![example 1 - scatter plot](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e1b.png)
-<p style="text-align:center"> Results from example 1 above </p>
-
-
-
-[Note book with sample code]() that produces the following plots with and without style sheets. The code that makes use of style sheets is more appealing to navigate. 
+[Note book with sample code]() 
 
 ![styling boxplots](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e2.png)
