@@ -8,7 +8,9 @@ categories: media
 
 This entry assumes that you’re already familiar with `python`, `matplotlib` and `seaborn` and are looking to be more productive when using these tools for your research work. If you’re looking for introductory coding material, there are a few links at the end of the article to get you started. All the same, this entry should still be able to frame things and you can go into the specific coding tutorials. 
 
+<p>
 The idea here is to set up a reusable theme/style and find suitable settings for publication-quality plots. That way, you have consistent styling in your plots and, of course, by scripting your process, it is easier to update your report as your experiments or your output media change. 
+</p>
 
 ## The context 
 
@@ -189,11 +191,11 @@ axes.prop_cycle: cycler(
 
 
 **References and Resources**
+
 <ul>
+<li><a href=”https://matplotlib.org/stable/tutorials/introductory/customizing.html”  target="_blank">Tutorial by Matplotlib on style sheets and rcParams</a></li>
 
-<li><a href=”https://matplotlib.org/stable/tutorials/introductory/customizing.html” target="_blank">Tutorial by Matplotlib on style sheets and rcParams</a></li>
-
-<li><a href=”http://www.jesshamrick.com/2016/04/13/reproducible-plots/” target="_blank">Step by step tutorial on how to (re)produce publication quality plots using Matplotlib and Seaborn</a> and another one that <a href="https://towardsdatascience.com/making-publication-quality-figures-in-python-part-i-fig-and-axes-d86c3903ad9b", target="_blank">includes setting axis locators</a></li>
+<li><a href=”http://www.jesshamrick.com/2016/04/13/reproducible-plots/” target="_blank">Step by step tutorial on how to (re)produce publication quality plots using Matplotlib and Seaborn</a> and another one that <a href="https://towardsdatascience.com/making-publication-quality-figures-in-python-part-i-fig-and-axes-d86c3903ad9b" target="_blank">includes setting axis locators</a></li>
 
 <li>If you’re just getting started, here are some starter tutorials I found rather informative and easy to work with - <a href=”https://realpython.com/python-matplotlib-guide/” target="_blank">Matplotlib guide</a> and <a href=”https://www.mygreatlearning.com/blog/seaborn-tutorial/” target="_blank">Seaborn tutorial </a> </li>
 
