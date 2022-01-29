@@ -6,6 +6,9 @@ figure.figsize : 3.5, 2.625
 
 ## grid settings
 axes.grid.axis : y
+grid.color : 666666
+grid.linewidth : .6
+grid.linestyle : :
 axes.spines.top : False 
 axes.spines.right : False 
 axes.spines.bottom : True 
@@ -15,11 +18,12 @@ axes.spines.left : True
 boxplot.showfliers : False 
 boxplot.showmeans : False 
 boxplot.meanline : False 
-boxplot.boxprops.color : 999999
-boxplot.boxprops.linewidth : .7 
+boxplot.boxprops.linewidth : .7
 boxplot.boxprops.linestyle : -
-boxplot.medianprops.color : gray
-boxplot.medianprops.linewidth : .7 
+boxplot.medianprops.color : darkgray
+boxplot.medianprops.linewidth : 1.7 
 boxplot.medianprops.linestyle : -
+
+boxplot.boxprops.color : 999999
 boxplot.capprops.color : 999999
 boxplot.whiskerprops.color : 999999

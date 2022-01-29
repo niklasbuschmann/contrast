@@ -100,7 +100,7 @@ with plt.style.context('ggplot'):
     plt.plot(x,y)
 
 ## iv. use multiple styles - simply pass them as a list 
-plt.style.use(['ggplot','white','mystyle'] ) 
+plt.style.use(['ggplot','whitegrid','mystyle'] ) 
 
 ## v. use sns context for differentiated sizing/scaling on different media
 sns.set_context('notebook') 
@@ -248,3 +248,5 @@ ax.set_title(f'Example scatter plot $y = {np.mean(m):.2f} X + {np.mean(c):.2f} $
 [Note book with sample code]() 
 
 ![styling boxplots](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e2.png)
+<p align='center'>Can achieve similar results in both matplotlib and seaborn by updating styles</p>
+
