@@ -18,13 +18,14 @@ Matplotlib is a massive and powerful library and there's loads you can do to cus
 
 <p style="text-align:center"><img src="https://files.realpython.com/media/fig_map.bc8c7cabd823.png" width=200 /> <br/> Main components of a plot on matplotlib. Source: <a href="https://realpython.com/python-matplotlib-guide/" target="_blank">Real Python</a> </p>
 
+
 The `figure` object is the top-level container for all plot elements (the underlying canvas), while the axes object is specific to a given plot. For instance, therefore, you can contain multiple axes objects (e.g. two line graphs) in the same figure. The figure object determines traits such as figure size, background color, spacing between plots, general line and font colors, and characteristics of figures when saved to file. The `axes` object contains the elements of an individual plot and, therefore, directs the characteristics of individual plot components such as title, axis labels, tick marks and legends, as well as color and line/edge properties. Aside from the object oriented interfaces, matplotlib also avails procedural interfaces, which automatically instantiate the relevant figure and axes objects and avail convenient methods for common types of charts. For instance, any time you use `plt.plot`. At any point, you can also access the current figure and axes object by calling `plt.gcf()` and `plt.gca()` respectively. Additionally, the wrapper or convenience methods will often fetch the current figure or axes first and delegate accordingly. Bottom line, you want the figure or axes object for any manipulation or styling and you can do it all consistently from one place irrespective of how you eventually create your plots (PS: If you're familiar with `pandas`, it provides similar plotting interfaces as `plt.plot`). 
 
 
 ## Customizing plot style
 There are four main ways to style your plots. In order of prioritization, from highest to lowest (higher priority settings will override lower priority definitions), the approaches are
 
-1. In code calls to `Axes` elements and their lower level rendering objects. 
+1. `Axes` elements and their lower level rendering objects. 
 2. Runtime style update via `rcParams`, which is a dictionary-like variable containing global settings. 
 3. Using a style sheet, which is an rcParams configuration file that is limited to plot properties only.
 4. Using `matplitlibrc` file, an rcParams configuration file that includes all kinds of properties.
@@ -103,7 +104,7 @@ Alright, let's create a style sheet. When starting off, you'll often want to use
 
 You may also go to the matplotlib installation folder and copy a style sheet file (files with extension `.mplstyle`), and then make edits as desired or only borrow those properties that you'd like customized.  As rcParams is a dictionary-like variable, the entries in the style sheet are also key-value pairs per like in the general form `<key-name>: <value>`. The style sheet can be saved with say '.txt' file extension or '.mplstyle' (or whatever you like really, just be consistent and clear of its intentions) in any location you prefer. Here's <a href="https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html" target="_blank">matplotlib's stylesheets reference</a>.
 
-{% highlight js%}
+{% highlight md%}
 ## Example style sheet entries
 ## 1. figure properties 
 figure.figsize : 3.5, 2.625
