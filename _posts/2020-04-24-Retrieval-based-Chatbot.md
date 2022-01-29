@@ -2,7 +2,7 @@
 title:  "Retrieval-based Chatbot"
 mathjax: true
 layout: post
-categories: media
+categories: NLP, COVID, 
 ---
 
 Chatbots automatically provide answers to common or well-known issues in a manner that simulates conversational interactions. In this project, we build a retrieval-based chatbot using cosine similarity on a database of frequently asked questions about COVID-19 as at 31-Mar-2020. 

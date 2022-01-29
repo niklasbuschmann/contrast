@@ -2,7 +2,7 @@
 title:  "Matplotlib styles"
 mathjax: true
 layout: post
-categories: media
+categories: matplotlib, seaborn, styles sheets, rcParams
 ---
 
 
