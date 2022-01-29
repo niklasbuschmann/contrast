@@ -145,7 +145,7 @@ axes.spines.top : False
 
 ## lines
 lines.linewidth : 1.3
-lines.linestyle : '-' 
+lines.linestyle : - 
 {% endhighlight%}
 
 
