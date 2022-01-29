@@ -23,6 +23,8 @@ The idea here is to set up a reusable theme/style and find suitable settings for
 
 - Styles can be applied globally, which affects all plots after the style sheet has been set, or using context managers for temporary changes. Additionally, `sns.set_context` avails styles for auto-scaling your graphics to different media like notebook, talk (presentations), paper or posters. That works by applying a scaling factor to size-related elements like font sizes, line widths or label sizes. Consequently, you only need to load your style and then set_context to adjust to the current medium. 
 
+- See <a href="#tips">tips section</a> for more on publication-quality style sheets. 
+
 
 ## The context 
 
@@ -175,7 +177,7 @@ axes.prop_cycle: cycler(
 {% endhighlight %}
 
 
-## Tips 
+<h2 id="tips"> Tips </h2>
 Somethings I've learnt so far on publication-quality plots that you may include in your style sheets
 
 - Probably start with figure sizes of 3 - 4 inches, for width and height per plot in a figure. For instance, for a figure with five plots in one row, the initial figure size in (h, w) could be $(4, 3*5)$, then adjust as desired. If the figure has only one plot try starting with 6 inches for the width if it is for a single-column document. Forums/journals will also indicate preferred figure sizes. 
@@ -199,12 +201,12 @@ Somethings I've learnt so far on publication-quality plots that you may include 
 
 ## References and Resources 
 
-<ul>
-<li><a href=”https://matplotlib.org/stable/tutorials/introductory/customizing.html”  target="_blank">Tutorial by Matplotlib on style sheets and rcParams</a></li>
+<ul> 
+<li><a href="https://matplotlib.org/stable/tutorials/introductory/customizing.html" target="_blank">Tutorial by Matplotlib on style sheets and rcParams</a></li>
 
-<li><a href=”http://www.jesshamrick.com/2016/04/13/reproducible-plots/” target="_blank">Step by step tutorial on how to (re)produce publication quality plots using Matplotlib and Seaborn</a> and another one that <a href="https://towardsdatascience.com/making-publication-quality-figures-in-python-part-i-fig-and-axes-d86c3903ad9b" target="_blank">includes setting axis locators</a></li>
+<li><a href="http://www.jesshamrick.com/2016/04/13/reproducible-plots/" target="_blank">Step by step tutorial on how to (re)produce publication quality plots using Matplotlib and Seaborn</a> and another one that <a href="https://towardsdatascience.com/making-publication-quality-figures-in-python-part-i-fig-and-axes-d86c3903ad9b" target="_blank">includes setting axis locators</a></li>
 
-<li>If you’re just getting started, here are some starter tutorials I found rather informative and easy to work with - <a href=”https://realpython.com/python-matplotlib-guide/” target="_blank">Matplotlib guide</a> and <a href=”https://www.mygreatlearning.com/blog/seaborn-tutorial/” target="_blank">Seaborn tutorial </a> </li>
+<li>If you’re just getting started, here are some starter tutorials I found rather informative and easy to work with - <a href="https://realpython.com/python-matplotlib-guide/" target="_blank">Matplotlib guide</a> and <a href=”https://www.mygreatlearning.com/blog/seaborn-tutorial/” target="_blank">Seaborn tutorial </a> </li>
 
 <li> <a href="https://seaborn.pydata.org/tutorial/color_palettes.html" target="_blank">Principles for using color in plots</a> by Seaborn, and <a href="https://www.codecademy.com/article/seaborn-design-ii" target="_blank"> a tutorial on color using Seaborn</a>. </li>
 
@@ -243,11 +245,11 @@ ax.set_title(f'Example scatter plot $y = {np.mean(m):.2f} X + {np.mean(c):.2f} $
 
 {% endhighlight  %}
 
-![example 1 - line plot](20211014___e1.png)![example 1 - scatter plot](20211014___e1b.png)
+![example 1 - line plot](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e1.png)![example 1 - scatter plot](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e1b.png)
 <p style="text-align:center"> Results from example 1 above </p>
 
 
 
 [Note book with sample code]() that produces the following plots with and without style sheets. The code that makes use of style sheets is more appealing to navigate. 
 
-![styling boxplots](20211014___e2.png)
+![styling boxplots](https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20211014___e2.png)
