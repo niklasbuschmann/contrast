@@ -14,14 +14,21 @@ title: "About Me"
     * STAT 2220 - Contemporary Statistics for Engineers
 ## Highschool
   - Grade 9 - 12
-    St. John's Highschool   
+    _(St. John's Highschool) _  
   - Grade 6 - 8
-    La Naval Academy, Philippines
+    _(La Naval Academy, Philippines)_
 
 # Engineering Work Experience
-##Programmer Co-op Student
-  Agriculture and Agri-Food Canada
-  Winnipeg, Manitoba
+## Programmer Co-op Student
+  _Agriculture and Agri-Food Canada
+  Winnipeg, Manitoba_
+
+# Engineering Projects
+## Electric Lock
+  _Digital Logic Systems Course Project_
+  
+## Pick & Drop Mechanism
+  _Design in Engineering Course Project_
 
 # Computer Science Languages
 ## Comfortable
