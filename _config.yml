@@ -23,6 +23,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:paulreyes74@yahoo.com"}
   - {title: Github, icon: github, url: "https://github.com/alcoranpaul"}
   - {title: Facebook, icon: facebook, url: "https://www.facebook.com/PaulReyes30/"}
+  - {title: Facebook, icon: facebook, url: "https://alcoranpaul.github.io/0-to-100-Python-Journey/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
