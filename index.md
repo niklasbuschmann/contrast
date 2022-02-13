@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "blog"
+title: "About Me"
 ---
 
 Testing
