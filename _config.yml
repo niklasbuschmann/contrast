@@ -1,6 +1,6 @@
 title: "Daisy Han"
 author: "Daisy Han"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "Made with hard work style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -17,12 +17,15 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", title: "home"}
-  - {file: "README.md", title: "about me"}
+  - {file: "project.html", title: "project"}
+  - {file: "education.html", title: "education"}
+  - {file: "experience.html", title: "experience"}
+  - {file: "programmingtidbits.html", title: "programming tidbits"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:ivyhan28@yahoo.ca"}
   - {title: Github, icon: github, url: "https://github.com/daisyhann28"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Linkedin, icon: linkedin, url: "www.linkedin.com/in/daisyhandeveloper"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
