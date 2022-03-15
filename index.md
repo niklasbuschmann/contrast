@@ -12,4 +12,7 @@ It is especially rewarding for me when I am able to solve challenging problems.
 Right now I am focusing all my time on school.
 Once school is less hectic, I hope to travel more. 
 
+
+
+
 ![Programming girl](https://thumbs.dreamstime.com/b/illustration-female-software-engineers-brown-background-illustration-female-software-engineers-brown-background-180185974.jpg)
