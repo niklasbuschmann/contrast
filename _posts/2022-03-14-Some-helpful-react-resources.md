@@ -21,4 +21,3 @@ React Course - Beginner's Tutorial for React JavaScript Library
 {% include embed.html url="https://youtube.com/embed/bMknfKXIFA8" %}
 
 
-https://www.youtube.com/embed/_C0A5zX-iqM
