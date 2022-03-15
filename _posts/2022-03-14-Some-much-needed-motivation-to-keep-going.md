@@ -9,7 +9,7 @@ categories: media
 Every now and then, inebitably there comes a feeling where you feel totally confused reading at some codes, or when solving a particularly hard homework problem. And you think to yourself if you have what it takes to learn how to program? 
 So here are some helpful posts I found for when we having those feelings, giving you the boost of motivation that you secretly needed. 
 
-Check out the [How to stay motivated and not give up when learning to code][https://www.codecademy.com/resources/blog/how-to-stay-motivated-learning-to-code/] 
-Also,  [How to Stay Motivated to Keep Learning to Code][How to Stay Motivated to Keep Learning to Codek].
+Check out the [How to stay motivated and not give up when learning to code](https://www.codecademy.com/resources/blog/how-to-stay-motivated-learning-to-code/)
+Also,  [How to Stay Motivated to Keep Learning to Code](https://www.freecodecamp.org/news/how-to-stay-motivated-to-keep-learning-to-code/).
 
 
