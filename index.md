@@ -1,6 +1,8 @@
 ---
 layout: page
 title: "Home"
+layout: post
+categories: media
 ---
 
 Hi there, I am Daisy Han. 
