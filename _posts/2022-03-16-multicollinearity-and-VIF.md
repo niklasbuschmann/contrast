@@ -89,10 +89,10 @@ _, X = dmatrices( my_model_eq, data=my_dataframe, return_type='dataframe')
 {% endhighlight %}
 
 <p align='center'>
+    The first table shows VIF results when using height and weight instead of BMI in some model. Second image shows the VIF results of the same model after replacing height and weight with BMI and removing the variable School_type. 
+    <br/> 
     <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_b4.png?raw=true' width='170'> 
-    <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_after.png?raw=true' width='190'>  
-    <br/>
-    First tables shows VIF results when using heigh and weight instead of BMI. Second image shows the VIF results of the same model after replacing height and weight with BMI and removing the variable School_type. 
+    <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_after.png?raw=true' width='190'> 
 </p> 
 
 
