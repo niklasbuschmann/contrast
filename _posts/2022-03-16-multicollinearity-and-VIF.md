@@ -11,11 +11,15 @@ $$ y = \sum_{i=1}^{p} \beta_i X_{n \times p} + \epsilon $$
 
 </p>
 
+<p>
 **Implications of multicollinearity:** Multicollinearity may not affect model accuracy much and is mainly a concern when interpreting model coefficients. If you need to speak to the importance of a feature in a model that assumes linear regression, then multicollinearity is something to watch out for. Some of the models affected include linear regression and SVM models using a linear kernel. 
+</P>
 
+<p>
 **Variance Inflation Factor (VIF)** is one way to quantify multicollinearity. It measures how much the variance (and thus the standard errors) of the model coefficients are inflated. The VIF of the ith coefficient is computed as below, where \(R^2_i\) is \(R^2\) of the model obtained by regressing the ith predictor variable on the other predictor variables. 
 
 $$ VIF_{i} = \frac{1}{1 - R^2_i}$$
+</P>
 
 ## How to use it
 An ideal value for VIF could be 1, indicating no inflation of standard errors (\(SE\)) and, therefore, no multicollinearity for that predictor variable. Another way to think about it is that VIF is a multiplier factor on the variance, therefore \(\sqrt{VIF}\) is the multiplier factor on the standard errors of the model coefficients. So, when \(VIF = 1\) \( \implies 1 * SE \), thus no inflation. If \(VIF=4\), then, \(\sqrt{4} = 2\) factor inflation, meaning that the SE of that model coefficients is two times larger than if there were no multicollinearity with other predictor variables. 
