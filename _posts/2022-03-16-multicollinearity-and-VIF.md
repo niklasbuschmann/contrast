@@ -4,10 +4,12 @@ mathjax: true
 layout: post
 categories: model fit, interpretability, python
 ---
-
+<p>
 The general setup for your regression problem may look something like below. The model coefficients (\(\beta_i\)) may then be interpreted in a manner that indicates the amount of change in your predictor variables (\(X\)) that results in a unit change in your dependent variable \(y\). A problem arises when there are significant correlations between your predictor variables so that a change in one such variable not only causes a change in \(y\) but in the other correlated predictor variables as well, thus misestimating the model coefficients and making their interpretation difficult. This is the problem of **multicollinearity**.
 
 $$ y = \sum_{i=1}^{p} \beta_i X_{n \times p} + \epsilon $$
+
+</p>
 
 **Implications of multicollinearity:** Multicollinearity may not affect model accuracy much and is mainly a concern when interpreting model coefficients. If you need to speak to the importance of a feature in a model that assumes linear regression, then multicollinearity is something to watch out for. Some of the models affected include linear regression and SVM models using a linear kernel. 
 
