@@ -4,6 +4,14 @@ mathjax: true
 layout: post
 categories: model fit, interpretability
 ---
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
 
 The general setup for your regression problem may look something like below. The model coefficients (\(\beta_i\)) may then be interpreted in a manner that indicates the amount of change in your predictor variables (\(X\)) that results in a unit change in your dependent variable \(y\). A problem arises when there are significant correlations between your predictor variables so that a change in one such variable not only causes a change in \(y\) but in the other correlated predictor variables as well, thus misestimating the model coefficients and making their interpretation difficult. This is the problem of **multicollinearity**.
 
