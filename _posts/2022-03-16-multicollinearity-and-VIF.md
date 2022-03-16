@@ -16,7 +16,7 @@ $$ y = \sum_{i=1}^{p} \beta_i X_{n \times p} + \epsilon $$
 $$ VIF_{i} = \frac{1}{1 - R^2_i}$$
 
 ## How to use it
-An ideal value for VIF could be 1, indicating no inflation of standard errors ($SE$) and, therefore, no multicollinearity for that predictor variable. Another way to think about it is that VIF is a multiplier factor on the variance, therefore \(\sqrt{VIF}\) is the multiplier factor on the standard errors of the model coefficients. So, when \(VIF = 1\) \( \implies 1 * SE \), thus no inflation. If \(VIF=4\), then, \(\sqrt{4} = 2\) factor inflation, meaning that the SE of that model coefficients is two times larger than if there were no multicollinearity with other predictor variables. 
+An ideal value for VIF could be 1, indicating no inflation of standard errors (\(SE\)) and, therefore, no multicollinearity for that predictor variable. Another way to think about it is that VIF is a multiplier factor on the variance, therefore \(\sqrt{VIF}\) is the multiplier factor on the standard errors of the model coefficients. So, when \(VIF = 1\) \( \implies 1 * SE \), thus no inflation. If \(VIF=4\), then, \(\sqrt{4} = 2\) factor inflation, meaning that the SE of that model coefficients is two times larger than if there were no multicollinearity with other predictor variables. 
 
 
 ### Rule of Thumb
@@ -81,8 +81,8 @@ _, X = dmatrices( my_model_eq, data=my_dataframe, return_type='dataframe')
 {% endhighlight %}
 
 <p align='center'>
-    <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_b4.png?raw=true' width='150'> 
-    <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_after.png?raw=true' width='170'>  
+    <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_b4.png?raw=true' width='170'> 
+    <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_after.png?raw=true' width='190'>  
     <br/>
     First tables shows VIF results when using heigh and weight instead of BMI. Second image shows the VIF results of the same model after replacing height and weight with BMI and removing the variable School_type. 
 </p> 
