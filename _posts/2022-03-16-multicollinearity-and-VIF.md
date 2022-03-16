@@ -5,11 +5,12 @@ layout: post
 categories: model fit, interpretability, python
 ---
 
-The general setup for your regression problem may look something like below. The model coefficients ($ \beta_i $) may then be interpreted in a manner that indicates the amount of change in your predictor variables (\(X\)) that results in a unit change in your dependent variable \(y\). A problem arises when there are significant correlations between your predictor variables so that a change in one such variable not only causes a change in \(y\) but in the other correlated predictor variables as well, thus misestimating the model coefficients and making their interpretation difficult. This is the problem of **multicollinearity**.
+The general setup for your regression problem may look something like below. The model coefficients ($ \beta_i $) may then be interpreted in a manner that indicates the amount of change in your predictor variables ($X$) that results in a unit change in your dependent variable $y$. A problem arises when there are significant correlations between your predictor variables so that a change in one such variable not only causes a change in $y$ but in the other correlated predictor variables as well, thus misestimating the model coefficients and making their interpretation difficult. This is the problem of **multicollinearity**.
 
 $$ y = \sum_{i=1}^{p} \beta_i X_{n \times p} + \epsilon $$
 
-<p> </p>
+<p> 
+</p>
 
 **Implications of multicollinearity:** Multicollinearity may not affect model accuracy much and is mainly a concern when interpreting model coefficients. If you need to speak to the importance of a feature in a model that assumes linear regression, then multicollinearity is something to watch out for. Some of the models affected include linear regression and SVM models using a linear kernel. 
 
@@ -24,9 +25,9 @@ An ideal value for VIF could be 1, indicating no inflation of standard errors ($
 ### Rules of thumb
 I've found different suggestions on what thresholds to apply when deciding if the VIF is reasonable or not; I suppose it depends on your problem and industry. Generally, though, most suggestions boil down to these three rules.
 
-- \(VIF = 1\): Nothing to be concerned about 
-- \(1 < VIF \le 5\): Moderate degree of correlation 
-- \(VIF > 5\): Highly correlated 
+- $VIF = 1$: Nothing to be concerned about 
+- $1 < VIF \le 5$: Moderate degree of correlation 
+- $VIF > 5$: Highly correlated 
 
 **What to do if you find moderate or high VIF.**
 Here's what I've garnered so far; see these as heuristics and not prescriptive.
@@ -45,9 +46,9 @@ Here's what I've garnered so far; see these as heuristics and not prescriptive.
 
 
 ## Code example (Python)
-In the below code snippet, I assume that you've already loaded your dataset using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html" target="_blank">pandas</a>. At the very least get your data into a matrix format, where your \(X_{n \times p}\) matrix is your data matrix of \(n\) observations and \(p\) predictor variables. 
+In the below code snippet, I assume that you've already loaded your dataset using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html" target="_blank">pandas</a>. At the very least get your data into a matrix format, where your $X_{n \times p}$ matrix is your data matrix of $n$ observations and $p$ predictor variables. 
 
-Once you have \(X\), you set up a regression model for each of the predictor variables with respect to the other predictor variables. I.E. \( V_i = \sum_j \beta_j V_j, \forall i \neq j\), where \(V\) is a predictor variable. For instance, in the code snippet, we have the variables gender, age, height and weight. For each of them, we'd compute the VIF of the resulting model. For gender, for example, we'd compute the VIF of the model `gender ~ age + height + weight`.  
+Once you have $X$, you set up a regression model for each of the predictor variables with respect to the other predictor variables. I.E. $ V_i = \sum_j \beta_j V_j, \forall i \neq j $, where $V$ is a predictor variable. For instance, in the code snippet, we have the variables gender, age, height and weight. For each of them, we'd compute the VIF of the resulting model. For gender, for example, we'd compute the VIF of the model `gender ~ age + height + weight`.  
 
 {% highlight py %}
 ## Prerequisites === Load your data 
