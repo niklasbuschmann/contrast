@@ -7,7 +7,6 @@ categories: model fit, interpretability
 
 The general setup for your regression problem may look something like below. The model coefficients ($\beta_i$) may then be interpreted in a manner that indicates the amount of change in your predictor variables ($X$) that results in a unit change in your dependent variable $y$. A problem arises when there are significant correlations between your predictor variables so that a change in one such variable not only causes a change in $y$ but in the other correlated predictor variables as well, thus misestimating the model coefficients and making their interpretation difficult. This is the problem of **multicollinearity**.
 
-
 $$ y = \sum_{i=1}^{p} \beta_i X_{n \times p} + \epsilon $$
 
 **Implications of multicollinearity:** Multicollinearity may not affect model accuracy much and is mainly a concern when interpreting model coefficients. If you need to speak to the importance of a feature in a model that assumes linear regression, then multicollinearity is something to watch out for. Some of the models affected include linear regression and SVM models using a linear kernel. 
@@ -82,15 +81,8 @@ _, X = dmatrices( my_model_eq, data=my_dataframe, return_type='dataframe')
 {% endhighlight %}
 
 <p align='center'>
-    <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/20220316_vif__b4_bmi.png?raw=true' width='150'> 
-    <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/20220316_vif__replace-bmi.png?raw=true' width='150'> 
-    <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/20220316_vif__replace_BP.png?raw=true' width='150'> 
-</p> 
-
-
-<p align='center'>
-    <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/20220316_vif_eq_b4.png?raw=true' width='150'> 
-    <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/20220316_vif_eq_after.png?raw=true' width='150'>  
+    <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_b4.png?raw=true' width='150'> 
+    <img src='https://github.com/bilha-analytics/bilha-analytics.github.io/blob/master/res/20220316_vif_eq_after.png?raw=true' width='150'>  
 </p> 
 
 
