@@ -2,7 +2,7 @@
 title:  "Multicollinearity and VIF"
 mathjax: true
 layout: post
-categories: model fit, interpretability
+categories: model fit, interpretability, python
 ---
 
 The general setup for your regression problem may look something like below. The model coefficients (\(\beta_i\)) may then be interpreted in a manner that indicates the amount of change in your predictor variables (\(X\)) that results in a unit change in your dependent variable \(y\). A problem arises when there are significant correlations between your predictor variables so that a change in one such variable not only causes a change in \(y\) but in the other correlated predictor variables as well, thus misestimating the model coefficients and making their interpretation difficult. This is the problem of **multicollinearity**.
@@ -19,14 +19,14 @@ $$ VIF_{i} = \frac{1}{1 - R^2_i}$$
 An ideal value for VIF could be 1, indicating no inflation of standard errors (\(SE\)) and, therefore, no multicollinearity for that predictor variable. Another way to think about it is that VIF is a multiplier factor on the variance, therefore \(\sqrt{VIF}\) is the multiplier factor on the standard errors of the model coefficients. So, when \(VIF = 1\) \( \implies 1 * SE \), thus no inflation. If \(VIF=4\), then, \(\sqrt{4} = 2\) factor inflation, meaning that the SE of that model coefficients is two times larger than if there were no multicollinearity with other predictor variables. 
 
 
-### Rule of Thumb
+### Rules of thumb
 I've found different suggestions on what thresholds to apply when deciding if the VIF is reasonable or not; I suppose it depends on your problem and industry. Generally, though, most suggestions boil down to these three rules.
 
 - \(VIF = 1\): Nothing to be concerned about 
 - \(1 < VIF \le 5\): Moderate degree of correlation 
 - \(VIF > 5\): Highly correlated 
 
-**What to do if you find moderate or high VIF**
+**What to do if you find moderate or high VIF.**
 Here's what I've garnered so far; see these as heuristics and not prescriptive.
 
 - VIF of the model intercept should not be a concern. The same may hold for control variables. We're more interested in the predictor variable coefficients and their interpretation. 
