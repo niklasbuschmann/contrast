@@ -39,7 +39,7 @@ Here's what I've garnered so far; see these as heuristics and not prescriptive.
 
 - Prefer or create composite indexes from the correlated predictor variables. For instance, BMI (body mass index) is computed from weight and height. Using BMI would be preferable to using weight and height (see example results below). 
 
-- Don't interpret the affected model coefficients. 
+- If your can't improve on the VIF, don't interpret the affected model coefficients as they would not be reliable. 
 
 
 ## Code example (Python)
