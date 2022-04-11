@@ -6,9 +6,9 @@ permalink: /Teaching-experience/
 **Teaching Assistant:**
 <br/>
 *(The University of Illinois at Urbana-Champaign)*<br/>
+Probability and Statistics II , Fall 2020, Spring 2021, Spring 2022<br/>
 Applied Bayesian Statistics, Fall 2021<br/>
 Methods of Applied Statistics,Summer 2021<br/>
-Probability and Statistics II , Fall 2020, Spring 2021<br/>
 
 *(The Pennsylvania State University)*<br />
 Intermediate Microeconomics, Summer 2020<br />
