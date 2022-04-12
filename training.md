@@ -1,4 +1,3 @@
-# Training
 ## Seminar
 We organized our first image analysis seminar and a workshop on April 6th, 2022. 
 
