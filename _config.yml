@@ -11,15 +11,15 @@ date_format: "%B %d, %Y"
 show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
-minimal: true             # use a dark header
+minimal: false             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {title: "My home", url: "https://imageanalysis-rockefelleruniversity.github.io/"}
+  - {title: "Home", url: "https://imageanalysis-rockefelleruniversity.github.io/"}
 #  - {file: "index.html"}
   - {title: "About", file: "README.md"}
-  - {title: "Training", file: "training.html"}
+  - {title: "Training", file: "training.md"}
   - {title: "User Group", file: "/usergroup.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
