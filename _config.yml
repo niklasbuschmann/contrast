@@ -1,6 +1,6 @@
 title: "Bio-Image Analysis at The Rockefeller University"
 author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "Bio-Imaging Resource Center"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -21,9 +21,9 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
+  - {title: Mail, icon: envelope, url: "mailto:vsharma01@rockefeller.edu"}
   - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Twitter, icon: twitter, url: "https://twitter.com/vedsharma"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
