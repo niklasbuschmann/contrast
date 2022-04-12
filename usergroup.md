@@ -1,3 +1,9 @@
+---
+title: "User Group"
+permalink: "/usergroup/"
+layout: page
+---
+
 Image analysis user group consists of Rockefeller researchers who are interested in learning image analysis.  
 We meet regularly to discuss the latest image analysis methods, pipelines, softwares or a new paper.
 
