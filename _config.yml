@@ -16,8 +16,9 @@ minimal: true             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {title: "My home", url: "https://imageanalysis-rockefelleruniversity.github.io/"}
+#  - {file: "index.html"}
+  - {title: "About", file: "README.md"}
   - {title: "Training", file: "training.html"}
   - {title: "User Group", file: "/usergroup.md"}
 
