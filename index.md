@@ -3,15 +3,15 @@ title: "Home"
 layout: page
 ---
 
+<!---
+---
+layout: default
+title: "Home"
+---
 
-
-#---
-#layout: default
-#title: "Home"
-#---
-
-#{% if site.show_excerpts %}
-#  {% include home.html %}
-#{% else %}
-#  {% include archive.html title="Posts" %}
-#{% endif %}
+{% if site.show_excerpts %}
+  {% include home.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
+--->
