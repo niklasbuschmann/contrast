@@ -1,5 +1,5 @@
 ---
-title: "Bio-Imaging Resource Center"
+title: "Bio-Imaging Resource Center, The Rockefeller University"
 permalink: "/about/"
 layout: page
 ---
