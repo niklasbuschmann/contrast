@@ -4,7 +4,8 @@ permalink: "/training/"
 layout: page
 ---
 
-## <ins>Seminar</ins>
+---
+## Seminar
 We organized our first image analysis seminar and a workshop on April 6th, 2022. 
 
 ![seminar announcement](/seminar_workkshop/Seminar_flyer.png)
@@ -12,6 +13,7 @@ We organized our first image analysis seminar and a workshop on April 6th, 2022.
 
 Please click here to download <a href="/seminar_workkshop/Image analysis seminar_v10.pdf" download>Seminar Slides<a/>
 
+---  
 ## <ins>Workshop</ins>
 In this workshop, we will work through following exercises:
 1. Segmentation using global threshold, local threshold and Deep Learning (StarDist)
@@ -64,7 +66,9 @@ A segmentation label image will be genrated with the nuclei ROIs added to the RO
 ### Exercise 2: Tracking cancer cell migration  
 [Download TIF file](seminar_workkshop/images/P31.tif)
   
-  
+Open above time-lapse sequence in Fiji and run the command: <code> Plugins › Tracking › TrackMate</code>
+
+
   
   
 
