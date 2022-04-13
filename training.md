@@ -21,7 +21,7 @@ In this workshop, we will work through following exercises:
 
 ### Getting appropriate plugins installed in your Fiji
 We will be adding the following [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
-  CSBDeep StarDist, TrackMate-StarDist
+  CSBDeep StarDist, TrackMate-StarDist  
 Step 1: Start Fiji.  
 Step 2: Select Help > Update... from the menu bar.  
 Step 3: Click on the button "Manage update sites".  
