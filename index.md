@@ -11,7 +11,10 @@ We, at the [Bio-Imaging Resource Center](https://www.rockefeller.edu/bioimaging/
 5. One-on-one user training
 6. Helpdesk session, every Wednesday, 3-5pm
 
-## Softwares
+In addition, we encourage our users to contact us at the experimental design stage to have a discussion with our team of microscopy and image analysis experts, to ensure that the imaging data acquired will be appropriate for the planned analysis and research questions
+
+
+## <ins>Softwares</ins>
 We have expertise in a variety of image analysis softwares/tools, which we use to help analyze our users' imaging data 
 ### Open-source softwares
 ImageJ/Fiji, QuPath, Napari, CellProfiler, Icy
