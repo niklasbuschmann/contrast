@@ -14,16 +14,13 @@ We organized our first image analysis seminar and a workshop on April 6th, 2022.
 Please click here to download <a href="/seminar_workkshop/Image analysis seminar_v10.pdf" download>Seminar Slides<a/>
 
 ---  
-## <ins>Workshop</ins>
+## Workshop
 In this workshop, we will work through following exercises:
 1. Segmentation using global threshold, local threshold and Deep Learning (StarDist)
 2. Cell tracking using StarDist and TrackMate
 3. Denoising using Noise2Void
 4. Bonus – 3D segmentation using StarDist and TrackMate
 
-[Download images]() for the above exercises. 
-  
-  
 ### Installing appropriate plugins in your Fiji
 We will be adding the following three [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
 - [CSBDeep](https://imagej.net/plugins/csbdeep)
