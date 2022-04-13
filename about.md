@@ -1,5 +1,5 @@
 ---
-title: "Training"
+title: "Bio-Imaging Resource Center"
 permalink: "/about/"
 layout: page
 ---
