@@ -22,9 +22,11 @@ In this workshop, we will work through following exercises:
 [Download images]() for the above exercises. 
   
   
-### Getting appropriate plugins installed in your Fiji
-We will be adding the following [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
-  CSBDeep StarDist, TrackMate-StarDist  
+### Installing appropriate plugins in your Fiji
+We will be adding the following three [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
+- [CSBDeep](https://imagej.net/plugins/csbdeep)
+- [StarDist](https://imagej.net/plugins/stardist)
+- [TrackMate-StarDist](https://imagej.net/plugins/trackmate/trackmate-stardist)  
   
 Step 1: Start Fiji.  
 Step 2: Select Help > Update... from the menu bar.  
@@ -38,7 +40,7 @@ Step 4: Scroll down the list and tick the checkboxes for update sites CSBDeep (s
 Step 5: Click on "Apply changes" to install the plugins.  
 Step 6: Restart Fiji. StarDist plugin should now be available under Plugins > StarDist > StarDist 2D.  
   
-
+---
 ### Exercise 1: Segmentation
 [Download TIF file](seminar_workkshop/images/HT29_nuclei.tif)
 #### Global segmentation  
@@ -50,13 +52,15 @@ All thresholding methods (such as Default, Huang, Otsu etc.) can be tested at on
   
 #### Local segmentation  
 Select your original image and run the command: <code>Image > Adjust > Auto Local Threshold</code>  
-Run with "Try all" methods to check which one gives the best result. For this image, the best segmentation is achieved with the **Phansalkar** method  
+Run with "Try all" methods to check which one gives the best result. For this image, the best segmentation is achieved with the *Phansalkar* method  
 
 #### Deep Learning based segmentation using [StarDist](https://imagej.net/plugins/stardist)  
 Select your original image and run the command: <code>Plugins › StarDist › StarDist 2D</code>  
 In the follow up menu, choose Model: Versatile (fluorescent nuclei) and click on the "Set optimized thresholds" tab at the bottom. Keep the other deafult options. Click on OK.  
-A lable image will be genrated with the nuclei ROIs added to the ROI Manager.  
-  
+A segmentation label image will be genrated with the nuclei ROIs added to the ROI Manager.  
+
+---  
+
 ### Exercise 2: Tracking cancer cell migration  
 [Download TIF file](seminar_workkshop/images/P31.tif)
   
