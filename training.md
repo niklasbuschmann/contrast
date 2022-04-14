@@ -66,6 +66,8 @@ A segmentation label image will be genrated with the nuclei ROIs added to the RO
 
 <img src="seminar_workkshop/images/P31_tracked.gif" alt="Cell migration with tracks">
 
+![Cell migration with tracks](seminar_workkshop/images/P31_tracked.gif)
+
 [Download TIF file](seminar_workkshop/images/P31.tif)
   
 - Open above time-lapse sequence in Fiji and run the command: <code> Plugins › Tracking › TrackMate</code>  
