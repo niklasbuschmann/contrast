@@ -31,12 +31,7 @@ Step 1: Start Fiji.
 Step 2: Select Help > Update... from the menu bar.  
 Step 3: Click on the button "Manage update sites".  
 Step 4: Scroll down the list and tick the checkboxes for update sites CSBDeep (shown below), StarDist and TrackMate-StarDist, then click the Close button.  
-
 ![CSBDeep update site](seminar_workkshop/CSBDeep_screenshot1.png)  
-
-<p align="center">
-          <img src="seminar_workkshop/CSBDeep_screenshot1.png" alt="CSBDeep update site" />
-</p>
 
 Step 5: Click on "Apply changes" to install the plugins.  
 Step 6: Restart Fiji. StarDist plugin should now be available under Plugins > StarDist > StarDist 2D.  
@@ -63,8 +58,6 @@ A segmentation label image will be genrated with the nuclei ROIs added to the RO
 ---  
 
 ### Workshop Exercise 2: Tracking cancer cell migration  
-
-<img src="seminar_workkshop/images/P31_tracked.gif" alt="Cell migration with tracks">
 
 ![Cell migration with tracks](seminar_workkshop/images/P31_tracked.gif)
 
