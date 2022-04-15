@@ -3,6 +3,6 @@ layout: page
 title: ""
 ---
 
-Welcome to my blog where I explore my thoughts
+Explore with me
 
-Personal Portfolio: [SOOWAN](https://www.soowanchoi.com)
+[SOOWAN (Portfolio)](https://www.soowanchoi.com)
