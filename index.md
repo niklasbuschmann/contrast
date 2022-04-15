@@ -3,8 +3,12 @@ layout: page
 title: ""
 ---
 
-Welcome! I have organized this site into two main sections:
-1. Machine Learning Projects
-2. Blogging My Thoughts
+```python
+function Goal () {
+    return "Goal: To explore nature and healthcare through programming";
+}
+```
+
+(Posts that start with *** are my thought blogs on books, sports and music)
 
 access my portfolio: [soowanchoi.com](https://www.soowanchoi.com)
