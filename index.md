@@ -1,6 +1,6 @@
 ---
 layout: page
-titel: "Soowan's Blog"
+title: ""
 ---
 
 Welcome to my blog where I explore my thoughts
