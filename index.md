@@ -9,4 +9,4 @@ function swanscodex():
     return Goal
 ```
 
-access my portfolio: [soowanchoi.com](https://www.soowanchoi.com)
+Personal Portfolio: [soowanchoi.com](https://www.soowanchoi.com)
