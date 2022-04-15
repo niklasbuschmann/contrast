@@ -1,6 +1,6 @@
 title: "SWANSCODEX"
 author: "Soowan Choi"
-#description: "University of Toronto"
+description: [Portfolio]("https://www.soowanchoi/com")
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
