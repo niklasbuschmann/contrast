@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "ML Projects"
+title: "Explore"
 ---
 
 {% if site.show_excerpts %}
