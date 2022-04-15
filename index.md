@@ -5,4 +5,4 @@ title: ""
 
 Welcome to my blog where I explore my thoughts
 
-Personal Portfolio: [soowan](https://www.soowanchoi.com)
+Personal Portfolio: [SOOWAN](https://www.soowanchoi.com)
