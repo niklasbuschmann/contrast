@@ -3,12 +3,9 @@ title: "Summer: A Sonnet"
 layout: post
 ---
 
-As summer breathes warm air
+>As summer breathes warm air
+> Longing for vacation must be restrained
+>The heart lies not at work but land elsewhere
+> A nostalgic memory self contained
 
-Longing for vacation must be restrained
-
-The heart lies not at work but land elsewhere
-
-A nostalgic memory self contained
-
--- a sonnet that I wrote in Korea during summer of 2018
+> - a sonnet that I wrote in Korea during summer of 2018
