@@ -5,11 +5,9 @@ title: ""
 
 ```python
 function swanscodex(): 
-
-    explore = "To explore nature and healthcare through programming"
-    thoughts = "posts that start with *** are my blogs on books, sports and music"
-    GOAL = explore + thoughts
-    
+    one = "To explore nature and healthcare through programming"
+    two = "To share my thoughts on books, sports and music"
+    GOAL = one + two
     return GOAL
 ```
 
