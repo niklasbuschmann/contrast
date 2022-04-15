@@ -23,7 +23,6 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:soowan.choi@queensu.ca"}
   - {title: Github, icon: github, url: "https://github.com/swanscodex"}
-  - {title: PORTFOLIO, url: "https://www.soowanchoi.com"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
