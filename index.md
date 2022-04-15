@@ -6,7 +6,7 @@ title: ""
 ```python
 function swanscodex(): 
     one = "To explore nature and healthcare through programming"
-    two = "To share my thoughts on books, sports and music"
+    two = "To explore my thoughts on books, sports and music"
     GOAL = one + two
     return GOAL
 ```
