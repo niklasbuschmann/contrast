@@ -4,12 +4,13 @@ title: ""
 ---
 
 ```python
-function Goal(): 
-    x = 'nature'
-    print(x)
-    return "Goal: To explore nature and healthcare through programming";
-```
+function swanscodex(): 
 
-(Posts that start with *** are my thought blogs on books, sports and music)
+    explore = "To explore nature and healthcare through programming"
+    thoughts = "posts that start with *** are my blogs on books, sports and music"
+    GOAL = explore + thoughts
+    
+    return GOAL
+```
 
 access my portfolio: [soowanchoi.com](https://www.soowanchoi.com)
