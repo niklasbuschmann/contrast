@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Explore"
+title: "Thoughts"
 ---
 
 {% if site.show_excerpts %}
