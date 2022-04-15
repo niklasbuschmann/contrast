@@ -5,7 +5,7 @@ title: "Welcome!"
 
 ```python
 function swanscodex(): 
-    Goal = "To explore nature and healthcare through programming"
+    Goal = "To explore nature and healthcare through programming (machine learning)!"
     return Goal
 ```
 
