@@ -5,4 +5,4 @@ title: ""
 
 Explore with me
 
-[SOOWAN (Portfolio)](https://www.soowanchoi.com)
+access my portfolio: [soowanchoi.com](https://www.soowanchoi.com)
