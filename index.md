@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Thank You for Joining Me"
+title: "Welcome to my Project Page"
 ---
-This is where I log my projects and my thoughts.
+Thank you for joining me on my projects and my thoughts.
 ```python
 Goal = "To explore nature and healthcare through programming (machine learning)!"
 ```
