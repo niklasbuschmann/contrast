@@ -1,7 +1,9 @@
 ---
 layout: page
-title: "Welcome!"
+title: "Welcome to my Project Page"
 ---
+
+I think a lot and I need an outlet to organize my thoughts
 
 ```python
 function swanscodex(): 
