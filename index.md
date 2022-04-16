@@ -3,12 +3,9 @@ layout: page
 title: "Welcome to my Project Page"
 ---
 
-I think a lot and I need an outlet to organize my thoughts
-
+Thank you for joining me - this is where I log my projects and my thoughts 
 ```python
-function swanscodex(): 
-    Goal = "To explore nature and healthcare through programming (machine learning)!"
-    return Goal
+Goal = "To explore nature and healthcare through programming (machine learning)!"
 ```
 
 Personal Portfolio: [soowanchoi.com](https://www.soowanchoi.com)
