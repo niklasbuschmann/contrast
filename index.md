@@ -2,7 +2,7 @@
 layout: page
 title: "Welcome to my Project Page"
 ---
-Thank you for joining me on my projects and my thoughts.
+an archive of my projects and thoughts...
 ```python
 Goal = "To explore nature and healthcare through programming (machine learning)!"
 ```
