@@ -86,23 +86,29 @@ Cancer cell migration, https://doi.org/10.5281/zenodo.5206107
 ---
 
 ### Workshop Exercise 3: Denoising using Noise2Void  
+
 | Original | Noise2Void |
 | - | - |
-| ![](seminar_workkshop/fish4_celegans_dyn-10_ceff-90_final.ics.ome_Z45.png) | ![](seminar_workkshop/fish4_celegans_dyn-10_ceff-90_final.ics.ome_n2v_Z45.png) |  
+| ![](seminar_workkshop/fish4_celegans_dyn-10_ceff-90_final.ics.ome_Z45.png) | ![](seminar_workkshop/fish4_celegans_dyn-10_ceff-90_final.ics.ome_n2v_Z45.png) | 
 
 FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image Analysis Study](https://sites.google.com/view/lmrg-image-analysis-study)  
 
 [Download TIF file](seminar_workkshop/images/fish4_celegans.tif)  
   
 - Open above Z-stack in Fiji and run the command: <code> Plugins › CSBDeep › N2V › N2V train + predict</code>  
-- You will be presented with a *N2V train + predict* window. Choose following options:
+- You will be presented with a *N2V train + predict* window. Choose the following options:
   - Axes of prediction input: XYZ
   - Number of epochs: 10
   - Number of steps per epoch: 10
   - Batch size per step: 64
   - Patch shape: 64
   - Neighborhood readius: 5
-- Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window. If training goes well, then both the red and blue curves will 
+- Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window (see below). If the training goes well, then both the red and blue curves will decrease and stabilize around a minimum loss value (see bleow). Training loss goes down from the beginning but Validation loss (blue curve) usually goes up in the beginning and then comes down and approaches the red curve.
+
+![](seminar_workkshop/N2V_training_progress.png)
+  
+  
+  If red and blue curves are do not stabilize to a minimum loss value, then incease the number of epoch to 20 or 30 and then tun 
   
   
   
