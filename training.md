@@ -103,12 +103,26 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   - Batch size per step: 64
   - Patch shape: 64
   - Neighborhood readius: 5
-- Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window (see below). If the training goes well, then both the red and blue curves will decrease and stabilize around a minimum loss value (see bleow). Training loss goes down from the beginning but Validation loss (blue curve) usually goes up in the beginning and then comes down and approaches the red curve.
+- Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window (see below). If the training goes well, then both the red and blue curves will decrease with more cycles (epochs) of training and stabilize around a minimum loss value (~ 1.0 in the image below). Training loss goes down from the beginning but Validation loss (blue curve) usually goes up in the beginning and then comes down and approaches the red curve.
 
-![](seminar_workkshop/N2V_training_progress.png)
+  ![](seminar_workkshop/N2V_training_progress.png)
+  
+  If red and blue curves are do not stabilize to a minimum loss value, then incease the number of epochs to 20 or 30 and then run the <code>N2V train + predict</code> again.
+- After program finishes, it generates a denoised Z-stack from the trained model. You might need to run <code>Image › Adjust › Brightness/Contrast...</code> and hit <code>Reset</code> to adjust the display of the denoised image.
+- Trained model could be saved as a .ZIP file (to be used for prediction in the future) by clikcing on the <code>File actions > Save to...</code>
+  
+  ![](seminar_workkshop/N2V_saving_model.png)
+- Trained model could also be applied immediately on a single noisy image or a folder full of noisy images by using <code>Predict > Single image or stack</code> or <code>Predict > Folder of images of stacks</code> options, respectively.  
+  
+  ![](seminar_workkshop/N2V_saving_model.png)
+  
+---
+### Bonus Workshop Exercise 4: 3D segmentation using TrackMate (StarDist)
   
   
-  If red and blue curves are do not stabilize to a minimum loss value, then incease the number of epoch to 20 or 30 and then tun 
+  
+  
+  
   
   
   
