@@ -3,9 +3,13 @@ layout: page
 ---
 
 <h1> Research </h1>
+The German Model of Industrial Relations: A Primer (with Simon Jäger and Benjamin Schoefer)<br/>
+Invited for consideration, and submitted to, the _Journal of Economic Perspectives_ (draft available upon request)<br/>
+
 
 [Codetermination and Power in the Workplace](epi_21.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
-_Working Paper_, prepared for the [Economic Policy Institute's Unequal Power Project](https://www.epi.org/unequalpower/publications/), 2022<br/>
+To be published in the _Journal of Law and Political Economy_<br/>
+[Economic Policy Institute Working Paper](https://www.epi.org/unequalpower/publications/codetermination-and-power-in-the-workplace/), prepared as part of the EPI's Unequal Power Series<br/>
 <details>
   <summary>Click to expand abstract</summary>
 How does codetermination—entitling workers to participate in firm governance, either through membership on company boards or the formation of works councils—affect worker welfare and corporate decision making? We critically discuss the history and contemporary operation of European codetermination arrangements and review empirical evidence on their effects on firms and workers. Our review suggests that these arrangements are unlikely to significantly shift power in the workplace, but may mildly improve worker welfare and firm performance, in part by boosting information-sharing and cooperation and in part by slightly increasing worker influence.
