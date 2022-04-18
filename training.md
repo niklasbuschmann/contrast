@@ -73,7 +73,8 @@ Cancer cell migration, https://doi.org/10.5281/zenodo.5206107
 - You can now click on the <code>Preview</code> tab, to see how well StarDist is doing in detecting the nuclei on the current slice. If detections look fine, click next to detect nuclei in the whole time-lapse sequence.  
 - Keep clicking next button until you reach the *Select a tracker* option (image B below). Select <code>Simple LAP tracker</code> and click next.  
 - In the settings, choose Linking max distance=30 pixel, Gap-closing max distance=10 pixel, Gap-closing max frame gap=10. Click next.  
-  Note: if you want to track splitting and/or merging events, then choose the <code>LAP tracker</code>, and check the splitting/merging options.
+
+  **Note**: if you want to track splitting and/or merging events, then choose the <code>LAP tracker</code>, and check the splitting/merging options.
 - Keep clicking next until you reach the <code>Display options</code> (image C below). Here, various display options for the tracks could be selected. Choose <code>Show tracks backward in time</code>.  
 - Please explore the three tabs at the bottom - <code>TrackScheme</code>, <code>Tracks</code> and <code>Spots</code>. A lot of statistics is hidden there, such as the raw values for each nuclei in each frame of the time-lapse. All the statistics could be exported to a CSV file.  
 - Keep clicking next until you reach the last window called <code>Select an action</code>. Select <code>Capture overlay</code> and click <code>Execute</code> to generate a time-lapse movie with spots and tracks overlaid on top of the original data.  
@@ -124,15 +125,26 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
 | - | - | - | 
 | ![](seminar_workkshop/images/Spheroid-3D_0.7X.gif) | ![](seminar_workkshop/images/Spheroid-3D_LblImg_0.7X.gif) | ![](seminar_workkshop/images/Spheroid-3D_LblImg_movie_0.7X.gif) |
   
-  
 [Download TIF file](seminar_workkshop/images/Spheroid-3D.tif)    
   
+- Open above Z-stack in Fiji and run the <code>TrackMate</code> command, just like in exercise 2.
+- Since this is a Z-stack and TracMate works on a time-lapse sequence, we need to swap Z and T dimensions. TrackMate automatically detects it and asks for dimensions swapping. Click OK.   
   
+  ![](seminar_workkshop/Swap_Z_T_message.png)
+- For the detector choose <code>StarDist</code> from the drop-down menu.  
+- For the tacker, choose <code>Simple LAP tracker</code> and Linking max distance=5 pixel, Gap-closing max distance=10 pixel, Gap-closing max frame gap=0.  
+- Keep clicking next until you reach the <code>Display options</code> window (image below). Choose:
+  Color spots by: Track index  
+  Uncheck <code>Display tracks</code>    
   
+  ![](seminar_workkshop/display_options.png)
   
+  Every cell will be outlines in a different color. Scroll through the stack to check the accuracy of the results. If results are not optimum, go back to the detection and/or tracker steps by clikcing on the previous button (left arrow) and changing settings.  
   
-  
-  
-  
-
+- On the last TrackMate window called <code>Select and action</code>, generate a label image by selecting <code>Export label image</code> from the drop-down list and clicking <code>Execute</code>    
+- Apply colors to different cells by selecting <code>Image › Lookup Tables › glasbey_inverted</code>  
+- For creating a 3D rendering, swap Z and T dimensions back to the original values by selecting <code>Image › Properties...</code> and entering the correct Z and T values. Click OK. 
+- Generate 3D rendering by using 3D viewer plugin: <code>Plugins › 3D Viewer</code> and selecting <code>Resampling factor = 1</code>  
+  If a pop-up comes asking to convert the Z-stack to 8-bit or RGB image, click YES.  
+  In the ImageJ 3D Viewer window, use mouse left click and drag to rotate and inspect the volume.  
 
