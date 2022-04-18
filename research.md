@@ -2,14 +2,13 @@
 layout: page
 ---
 
-<h1> Academic Publications </h1>
+<h1> Research </h1>
 
-[The Effects of Neighborhood and Workplace Income Comparisons on Subjective Wellbeing](thesis_jeboR2.pdf) (with Isabelle Sin)<br/>
-_Journal of Economic Behavior and Organization_, 2021, 185, p.918-945<br/>
-[Master's Thesis version](mcom.pdf)<br/>
+[Codetermination and Power in the Workplace](epi_21.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
+_Working Paper_, prepared for the [Economic Policy Institute's Unequal Power Project](https://www.epi.org/unequalpower/publications/), 2022<br/>
 <details>
   <summary>Click to expand abstract</summary>
-We investigate how a person’s happiness is affected by the incomes of her neighbors and coworkers. Using an unprecedentedly rich combination of administrative and survey data, we establish two central results. First, a person’s happiness is sensitive to her ordinal rank within her peer income distribution: people are happier the higher their income rank. Second, workplace rank matters much more than neighborhood rank. We confirm that our results reflect a causal effect of peer income by implementing sensitivity analyses, identifying off changes in peer income over time for immobile people, exploiting plausibly exogenous moves between workplaces triggered by mass layoffs, and testing for the effects of unobservable group-level confounders. 
+How does codetermination—entitling workers to participate in firm governance, either through membership on company boards or the formation of works councils—affect worker welfare and corporate decision making? We critically discuss the history and contemporary operation of European codetermination arrangements and review empirical evidence on their effects on firms and workers. Our review suggests that these arrangements are unlikely to significantly shift power in the workplace, but may mildly improve worker welfare and firm performance, in part by boosting information-sharing and cooperation and in part by slightly increasing worker influence.
 </details><br/>
 
 [What Does Codetermination Do?](wdcd_ilrr.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
@@ -22,21 +21,23 @@ We provide a comprehensive overview of codetermination, i.e., worker representat
 </details><br/>
 
 [People Judge Discrimination Against Women More Harshly Than Discrimination Against Men – Does Statistical Fairness Discrimination Explain Why?](efs_published.pdf) (with Jan Feld and Eberhard Feess)<br/>
-_Frontiers in Psychology_, forthcoming<br/>
+_Frontiers in Psychology_, 2021, 12, p.3504<br/>
 [Replication Package](https://osf.io/2eq43/)<br/>
 <details>
   <summary>Click to expand abstract</summary>
 Previous research has shown that people care less about men than about women who are left behind. We show that this finding extends to the domain of labor market discrimination: In identical scenarios, people judge discrimination against women more morally bad than discrimination against men. This result holds in a representative sample of the US population and in a larger but not representative sample of Amazon Mechanical Turk (Mturk) respondents. We test if this gender gap is driven by statistical fairness discrimination, a process in which people use the gender of the victim to draw inferences about other characteristics which matter for their fairness judgments. We test this explanation with a survey experiment in which we explicitly hold information about the victim of discrimination constant. Our results provide only mixed support for the statistical fairness discrimination explanation. In our representative sample, we see no meaningful or significant effect of the information treatments. By contrast, in our Mturk sample, we see that providing additional information partly reduces the effect of the victim’s gender on judgment of the discriminator. While people may engage in statistical fairness discrimination, this process is unlikely to be an exhaustive explanation for why discrimination against women is judged as worse.
 </details><br/>
 
-<h1> Other Research </h1>
 
-[Codetermination and Power in the Workplace](epi_21.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
-_Working Paper_, prepared for the [Economic Policy Institute's Unequal Power Project](https://www.epi.org/unequalpower/publications/), 2022<br/>
+[The Effects of Neighborhood and Workplace Income Comparisons on Subjective Wellbeing](thesis_jeboR2.pdf) (with Isabelle Sin)<br/>
+_Journal of Economic Behavior and Organization_, 2021, 185, p.918-945<br/>
+[Master's Thesis version](mcom.pdf)<br/>
 <details>
   <summary>Click to expand abstract</summary>
-How does codetermination—entitling workers to participate in firm governance, either through membership on company boards or the formation of works councils—affect worker welfare and corporate decision making? We critically discuss the history and contemporary operation of European codetermination arrangements and review empirical evidence on their effects on firms and workers. Our review suggests that these arrangements are unlikely to significantly shift power in the workplace, but may mildly improve worker welfare and firm performance, in part by boosting information-sharing and cooperation and in part by slightly increasing worker influence.
+We investigate how a person’s happiness is affected by the incomes of her neighbors and coworkers. Using an unprecedentedly rich combination of administrative and survey data, we establish two central results. First, a person’s happiness is sensitive to her ordinal rank within her peer income distribution: people are happier the higher their income rank. Second, workplace rank matters much more than neighborhood rank. We confirm that our results reflect a causal effect of peer income by implementing sensitivity analyses, identifying off changes in peer income over time for immobile people, exploiting plausibly exogenous moves between workplaces triggered by mass layoffs, and testing for the effects of unobservable group-level confounders. 
 </details><br/>
+
+<h1> Old Working Papers </h1>
 
 [The Drivers of Mothers' Parental Leave Decisions: Evidence from the Growing Up in New Zealand Survey](leave_21.pdf) (with Isabelle Sin)<br/>
 _Motu Working Paper 21-08_, 2021<br/> 
