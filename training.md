@@ -38,7 +38,9 @@ Step 6: Restart Fiji. StarDist plugin should now be available under Plugins > St
   
 ---
 ### Workshop Exercise 1: Segmentation
-[Download TIF file](seminar_workkshop/images/HT29_nuclei.tif)
+[Download TIF file](seminar_workkshop/images/HT29_nuclei.tif)  
+(Human HT29 colon cancer cells,  Image from [Broad Bioimage Benchmark Collection](https://bbbc.broadinstitute.org/BBBC008)) 
+  
 #### Global segmentation  
 Open above image by dragging into the Fiji window and run Threshold command: <code>Image > Adjust > Threshold...</code>  
 Choose different thresholding methods (such as Default, Huang, Otsu etc.) from the drop down list and check how they perform on your image.  
@@ -59,7 +61,9 @@ A segmentation label image will be genrated with the nuclei ROIs added to the RO
 
 ### Workshop Exercise 2: Tracking cancer cell migration  
 
-![Cell migration with tracks](seminar_workkshop/images/P31_tracked.gif)
+![Cell migration with tracks](seminar_workkshop/images/P31_tracked.gif)  
+  Cancer cell migration, https://doi.org/10.5281/zenodo.5206107
+
 
 [Download TIF file](seminar_workkshop/images/P31.tif)
   
@@ -79,7 +83,9 @@ A segmentation label image will be genrated with the nuclei ROIs added to the RO
 | ![](seminar_workkshop/TrackMate_detector.png) | ![](seminar_workkshop/TrackMate_tracker.png) | ![](seminar_workkshop/TrackMate_displayOptions.png) |
 
   
+---
 
+### Workshop Exercise 3: Denoising using Noise2Void  
   
   
 
