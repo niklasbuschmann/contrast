@@ -107,7 +107,7 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   - Neighborhood readius: 5
 - Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window (see below). If the training goes well, then both the red and blue curves will decrease with more cycles (epochs) of training and stabilize around a minimum loss value (~ 1.0 in the image below). Training loss goes down from the beginning but Validation loss (blue curve) usually goes up in the beginning and then comes down and approaches the red curve.
 
-  ![](seminar_workkshop/N2V_training_progress.png | width=300) 
+  ![](seminar_workkshop/N2V_training_progress.png | width=300px) 
 
   If red and blue curves are do not stabilize to a minimum loss value, then incease the number of epochs to 20 or 30 and then run the <code>N2V train + predict</code> again.
 - After program finishes, it generates a denoised Z-stack from the trained model. You might need to run <code>Image › Adjust › Brightness/Contrast...</code> and hit <code>Reset</code> to adjust the display of the denoised image.
@@ -127,7 +127,7 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   
 [Download TIF file](seminar_workkshop/images/Spheroid-3D.tif)    
   
-- Open above Z-stack in Fiji and run the <code>TrackMate</code> command, just like in exercise 2.
+- Open above Z-stack in Fiji and run the <code>TrackMate</code> plugin, just like in exercise 2.
 - Since this is a Z-stack and TracMate works on a time-lapse sequence, we need to swap Z and T dimensions. TrackMate automatically detects it and asks for dimensions swapping. Click OK.   
   
   ![](seminar_workkshop/Swap_Z_T_message.png)
