@@ -37,6 +37,8 @@ Step 5: Click on "Apply changes" to install the plugins.
 Step 6: Restart Fiji. StarDist plugin should now be available under Plugins > StarDist > StarDist 2D.  
   
 ---
+
+  
 ### Workshop Exercise 1: Segmentation
 [Download TIF file](seminar_workkshop/images/HT29_nuclei.tif)  
 (Human HT29 colon cancer cells,  Image from [Broad Bioimage Benchmark Collection](https://bbbc.broadinstitute.org/BBBC008)) 
@@ -59,11 +61,12 @@ A segmentation label image will be genrated with the nuclei ROIs added to the RO
 
 ---  
 
+
+  
 ### Workshop Exercise 2: Tracking cancer cell migration using [TrackMate](https://imagej.net/plugins/trackmate/) plugin  
 
 ![Cell migration with tracks](seminar_workkshop/images/P31_tracked.gif)  
 Cancer cell migration, https://doi.org/10.5281/zenodo.5206107
-
 
 [Download TIF file](seminar_workkshop/images/P31.tif)
   
@@ -87,6 +90,8 @@ Cancer cell migration, https://doi.org/10.5281/zenodo.5206107
   
 ---
 
+
+  
 ### Workshop Exercise 3: Denoising using [Noise2Void](https://imagej.net/plugins/n2v) plugin  
 
 | Original | Noise2Void |
@@ -107,7 +112,7 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   - Neighborhood readius: 5
 - Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window (see below). If the training goes well, then both the red and blue curves will decrease with more cycles (epochs) of training and stabilize around a minimum loss value (~ 1.0 in the image below). Training loss goes down from the beginning but Validation loss (blue curve) usually goes up in the beginning and then comes down and approaches the red curve.
 
-  ![](seminar_workkshop/N2V_training_progress.png | width=300px) 
+  ![](seminar_workkshop/N2V_training_progress.png|width=300px) 
 
   If red and blue curves are do not stabilize to a minimum loss value, then incease the number of epochs to 20 or 30 and then run the <code>N2V train + predict</code> again.
 - After program finishes, it generates a denoised Z-stack from the trained model. You might need to run <code>Image › Adjust › Brightness/Contrast...</code> and hit <code>Reset</code> to adjust the display of the denoised image.
@@ -119,6 +124,8 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   ![](seminar_workkshop/N2V_saving_model.png)
   
 ---
+
+  
 ### Bonus Workshop Exercise 4: 3D segmentation using TrackMate (StarDist)
 
 | Spheroid, Z-stack | Z-stack segmentation | 3D rendering |
@@ -128,18 +135,21 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
 [Download TIF file](seminar_workkshop/images/Spheroid-3D.tif)    
   
 - Open above Z-stack in Fiji and run the <code>TrackMate</code> plugin, just like in exercise 2.
-- Since this is a Z-stack and TracMate works on a time-lapse sequence, we need to swap Z and T dimensions. TrackMate automatically detects it and asks for dimensions swapping. Click OK.   
+- Since this is a Z-stack and TrackMate works on a time-lapse sequence, we need to swap Z and T dimensions. TrackMate automatically detects it and asks for dimension swapping. Click Yes.   
   
   ![](seminar_workkshop/Swap_Z_T_message.png)
-- For the detector choose <code>StarDist</code> from the drop-down menu.  
-- For the tacker, choose <code>Simple LAP tracker</code> and Linking max distance=5 pixel, Gap-closing max distance=10 pixel, Gap-closing max frame gap=0.  
-- Keep clicking next until you reach the <code>Display options</code> window (image below). Choose:
+- For the detector, choose <code>StarDist</code> from the drop-down menu.  
+- For the tracker, choose <code>Simple LAP tracker</code> and the following tracking settings:  
+  Linking max distance=5 pixel (a lower value than in exercise 2, since the cells are not moving)  
+  Gap-closing max distance=10 pixel  
+  Gap-closing max frame gap=0. (since cells are not disappearing from frame-to-frame)  
+- Keep clicking the next button until you reach the <code>Display options</code> window (image below). Choose:  
   Color spots by: Track index  
   Uncheck <code>Display tracks</code>    
   
   ![](seminar_workkshop/display_options.png)
   
-  Every cell will be outlines in a different color. Scroll through the stack to check the accuracy of the results. If results are not optimum, go back to the detection and/or tracker steps by clikcing on the previous button (left arrow) and changing settings.  
+  Every cell will be outlined in a different color. Scroll through the stack to check the accuracy of the results. If results are not optimum, go back to the detection and/or tracker steps by clikcing on the previous button (left arrow) and changing settings.  
   
 - On the last TrackMate window called <code>Select an action</code>, generate a label image by selecting <code>Export label image</code> from the drop-down list and clicking <code>Execute</code>    
 - Apply colors to different cells by selecting <code>Image › Lookup Tables › glasbey_inverted</code>  
