@@ -99,7 +99,7 @@ Cancer cell migration, image from [Zenodo](https://doi.org/10.5281/zenodo.520610
 | - | - |
 | ![](seminar_workkshop/fish4_celegans_dyn-10_ceff-90_final.ics.ome_Z45.png) | ![](seminar_workkshop/fish4_celegans_dyn-10_ceff-90_final.ics.ome_n2v_Z45.png) | 
 
-FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image Analysis Study](https://sites.google.com/view/lmrg-image-analysis-study)  
+FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image Analysis Study](https://sites.google.com/view/lmrg-image-analysis-study).  
 
 [Download TIF file](seminar_workkshop/images/fish4_celegans.tif)  
   
@@ -111,18 +111,18 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   - Batch size per step: 64
   - Patch shape: 64
   - Neighborhood readius: 5
-- Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window (see below). If the training goes well, then both the red and blue curves will decrease with more cycles (epochs) of training and stabilize around a minimum loss value (~ 1.0 in the image below). Training loss goes down from the beginning but Validation loss (blue curve) usually goes up in the beginning and then comes down and approaches the red curve.
+- Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window (see below). If training goes well, then both the red and blue curves will decrease with more cycles (epochs) of training and stabilize around a minimum loss value (~ 1.0 in the image below). Training loss goes down from the beginning but Validation loss (blue curve) usually goes up in the beginning and then comes down and approaches the red curve.
 
   ![](seminar_workkshop/N2V_training_progress.png)
  
-  If red and blue curves are do not stabilize to a minimum loss value, then incease the number of epochs to 20 or 30 and then run the <code>N2V train + predict</code> again.
+  If by the end of the training, red and blue curves do not stabilize to a minimum loss value, then increase the number of epochs to 20 or 30 and then run the command <code>N2V train + predict</code> again.
 - After program finishes, it generates a denoised Z-stack from the trained model. You might need to run <code>Image › Adjust › Brightness/Contrast...</code> and hit <code>Reset</code> to adjust the display of the denoised image.
-- Trained model could be saved as a .ZIP file (to be used for prediction in the future) by clikcing on the <code>File actions > Save to...</code>
+- The Deep Learning model you just trained could be saved as a .ZIP file (to be used for prediction in the future) by clicking on the <code>File actions > Save to...</code> (see below).
   
   ![](seminar_workkshop/N2V_saving_model.png)
-- Trained model could also be applied immediately on a single noisy image or a folder full of noisy images by using <code>Predict > Single image or stack</code> or <code>Predict > Folder of images of stacks</code> options, respectively.  
+- Trained model could also be applied immediately on a single noisy image or a folder full of noisy images by using <code>Predict > Single image or stack</code> or <code>Predict > Folder of images of stacks</code>, respectively.  
   
-  ![](seminar_workkshop/N2V_saving_model.png)
+  ![](seminar_workkshop/N2V_running_current_model.png)
   
 ---
 
