@@ -19,8 +19,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 #  - {title: "Home", url: "https://imageanalysis-rockefelleruniversity.github.io/"}
   - {title: "Home", file: "index.md"}
   - {title: "About", file: "about.md"}
-#  - {title: "Training", file: "training.md"}
-  - {title: "Training", file: "training.html"}
+  - {title: "Training", file: "training.md"}
+#  - {title: "Training", file: "training.html"}
   - {title: "User Group", file: "usergroup.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
