@@ -152,10 +152,10 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   
   ![](seminar_workkshop/display_options.png)
   
-  Every cell will be outlined in a different color. Scroll through the stack to check the accuracy of the results. If results are not optimum, go back to the detection and/or tracker steps by clicking on the previous button (left arrow) and changing the settings under detector and tracker.  
+  Every cell will be outlined in a different color. Scroll through the stack to check the accuracy of the results. If results are not optimum, go back to the detection and/or tracker steps by clicking on the previous button (green left arrow) and changing the settings under detector and tracker.  
   
 - On the last TrackMate window called <code>Select an action</code>, generate a label image by selecting <code>Export label image</code> from the drop-down list and clicking <code>Execute</code>. It will generate a grayscale Z-stack.    
-- Apply colors to different cells by selecting <code>Image › Lookup Tables › glasbey_inverted</code>  
+- Apply colors to different cells by applying an LUT: <code>Image › Lookup Tables › glasbey_inverted</code>  
 - For creating a 3D rendering, swap Z and T dimensions back to the original values by selecting <code>Image › Properties...</code> and entering Z=64 and T=1. Click OK. 
 - Generate 3D rendering by using 3D viewer plugin: <code>Plugins › 3D Viewer</code>.
   Select <code>Resampling factor = 1</code>.  
