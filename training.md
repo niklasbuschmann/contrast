@@ -6,23 +6,23 @@ layout: page
 
 ---
 ## Seminar
-We organized our first image analysis seminar and a workshop on April 6th, 2022. 
+We organized our first image analysis seminar and a follow-up workshop on April 6th, 2022. 
 
 ![seminar announcement](/seminar_workkshop/Seminar_flyer.png)
 
 
-Please click here to download <a href="/seminar_workkshop/Image analysis seminar_v10.pdf" download>Seminar Slides<a/>
+Download <a href="/seminar_workkshop/Image analysis seminar_v10.pdf" download>Seminar Slides<a/>
 
 ---  
 ## Workshop
-In this workshop, we will work through following exercises:
+In this workshop, we will work through the following exercises:
 1. Segmentation using global threshold, local threshold and Deep Learning (StarDist)
 2. Cell tracking using StarDist and TrackMate
 3. Denoising using Noise2Void
 4. Bonus – 3D segmentation using StarDist and TrackMate
 
-### Installing appropriate plugins in Fiji
-We will be adding the following three [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
+### Installing required plugins in Fiji
+We will be adding following three [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
 - [CSBDeep](https://imagej.net/plugins/csbdeep)
 - [StarDist](https://imagej.net/plugins/stardist)
 - [TrackMate-StarDist](https://imagej.net/plugins/trackmate/trackmate-stardist)  
@@ -30,34 +30,35 @@ We will be adding the following three [updates sites](https://imagej.net/update-
 Step 1: Start Fiji.  
 Step 2: Select Help > Update... from the menu bar.  
 Step 3: Click on the button "Manage update sites".  
-Step 4: Scroll down the list and tick the checkboxes for update sites CSBDeep (shown below), StarDist and TrackMate-StarDist, then click the Close button.  
+Step 4: Scroll down the list and tick the checkboxes for update sites: CSBDeep (shown below), StarDist and TrackMate-StarDist, then click the Close button.  
   ![CSBDeep update site](seminar_workkshop/CSBDeep_screenshot1.png)  
 
 Step 5: Click on "Apply changes" to install the plugins.  
-Step 6: Restart Fiji. StarDist plugin should now be available under Plugins > StarDist > StarDist 2D.  
+Step 6: Restart Fiji. StarDist plugin should now be available under <code>Plugins > StarDist > StarDist 2D</code>.  
+        Noise2Void plugin should be visible under <code>Plugins › CSBDeep › N2V</code>.
   
 ---
 
   
 ### Workshop Exercise 1: Segmentation
 [Download TIF file](seminar_workkshop/images/HT29_nuclei.tif)  
-(Human HT29 colon cancer cells,  Image from [Broad Bioimage Benchmark Collection](https://bbbc.broadinstitute.org/BBBC008)) 
+Human HT29 colon cancer cells,  Image from [Broad Bioimage Benchmark Collection](https://bbbc.broadinstitute.org/BBBC008) 
   
 #### Global segmentation  
 Open above image by dragging into the Fiji window and run Threshold command: <code>Image > Adjust > Threshold...</code>  
 Choose different thresholding methods (such as Default, Huang, Otsu etc.) from the drop down list and check how they perform on your image.  
-Once satisfied with a particular method or by manually selecting the lower and upper bounds (sliders), click on Apply button to generate a thresholded image.  
+Once satisfied with a particular method or by manually selecting the lower and upper bound values (using sliders), click on the Apply button to generate a thresholded image.  
 
-All thresholding methods (such as Default, Huang, Otsu etc.) can be tested at once by using <code>Image > Adjust > Auto Threshold</code>  
+**Note**: All thresholding methods (such as Default, Huang, Otsu etc.) can be tested at once by using <code>Image > Adjust > Auto Threshold</code>  
   
 #### Local segmentation  
-Select your original image and run the command: <code>Image > Adjust > Auto Local Threshold</code>  
-Run with "Try all" methods to check which one gives the best result. For this image, the best segmentation is achieved with the *Phansalkar* method  
+Select your original image and run the command: <code>Image > Adjust > Auto Local Threshold</code>.  
+Run with "Try all" methods to check which one gives the best result. For this image, the best segmentation is achieved with the <code>Phansalkar</code> method.  
 
 #### Deep Learning based segmentation using [StarDist](https://imagej.net/plugins/stardist)  
 Select your original image and run the command: <code>Plugins › StarDist › StarDist 2D</code>  
-In the follow up menu, choose Model: Versatile (fluorescent nuclei) and click on the "Set optimized thresholds" tab at the bottom. Keep the other deafult options. Click on OK.  
-A segmentation label image will be genrated with the nuclei ROIs added to the ROI Manager.  
+  In the follow up menu, choose Model: <code>Versatile (fluorescent nuclei)</code> and click on the <code>Set optimized thresholds</code> button at the bottom. Keep other settings as deafult. Click on OK.  
+A segmentation label image will be generated with the nuclei ROIs added to the ROI Manager.  
 
 ---  
 
@@ -156,7 +157,8 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
 - On the last TrackMate window called <code>Select an action</code>, generate a label image by selecting <code>Export label image</code> from the drop-down list and clicking <code>Execute</code>. It will generate a grayscale Z-stack.    
 - Apply colors to different cells by selecting <code>Image › Lookup Tables › glasbey_inverted</code>  
 - For creating a 3D rendering, swap Z and T dimensions back to the original values by selecting <code>Image › Properties...</code> and entering Z=64 and T=1. Click OK. 
-- Generate 3D rendering by using 3D viewer plugin: <code>Plugins › 3D Viewer</code>. Select <code>Resampling factor = 1</code>.  
+- Generate 3D rendering by using 3D viewer plugin: <code>Plugins › 3D Viewer</code>.
+  Select <code>Resampling factor = 1</code>.  
   If a window pops up asking to convert the Z-stack to 8-bit or RGB image, click Yes.  
   In the ImageJ 3D Viewer window, use left mouse click and drag to rotate and inspect the volume.  
 
