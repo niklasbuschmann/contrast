@@ -21,7 +21,7 @@ In this workshop, we will work through following exercises:
 3. Denoising using Noise2Void
 4. Bonus – 3D segmentation using StarDist and TrackMate
 
-### Installing appropriate plugins in your Fiji
+### Installing appropriate plugins in Fiji
 We will be adding the following three [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
 - [CSBDeep](https://imagej.net/plugins/csbdeep)
 - [StarDist](https://imagej.net/plugins/stardist)
@@ -31,7 +31,7 @@ Step 1: Start Fiji.
 Step 2: Select Help > Update... from the menu bar.  
 Step 3: Click on the button "Manage update sites".  
 Step 4: Scroll down the list and tick the checkboxes for update sites CSBDeep (shown below), StarDist and TrackMate-StarDist, then click the Close button.  
-![CSBDeep update site](seminar_workkshop/CSBDeep_screenshot1.png)  
+  ![CSBDeep update site](seminar_workkshop/CSBDeep_screenshot1.png)  
 
 Step 5: Click on "Apply changes" to install the plugins.  
 Step 6: Restart Fiji. StarDist plugin should now be available under Plugins > StarDist > StarDist 2D.  
@@ -59,7 +59,7 @@ A segmentation label image will be genrated with the nuclei ROIs added to the RO
 
 ---  
 
-### Workshop Exercise 2: Tracking cancer cell migration  
+### Workshop Exercise 2: Tracking cancer cell migration using [TrackMate](https://imagej.net/plugins/trackmate/) plugin  
 
 ![Cell migration with tracks](seminar_workkshop/images/P31_tracked.gif)  
 Cancer cell migration, https://doi.org/10.5281/zenodo.5206107
@@ -87,7 +87,7 @@ Cancer cell migration, https://doi.org/10.5281/zenodo.5206107
   
 ---
 
-### Workshop Exercise 3: Denoising using Noise2Void  
+### Workshop Exercise 3: Denoising using [Noise2Void](https://imagej.net/plugins/n2v) plugin  
 
 | Original | Noise2Void |
 | - | - |
@@ -108,6 +108,8 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
 - Click OK. A window showing the progress of different steps (Preparation, Training and Prediction) will open. As the training progresses, training loss (red) and validation loss (blue) curves are displayed in the window (see below). If the training goes well, then both the red and blue curves will decrease with more cycles (epochs) of training and stabilize around a minimum loss value (~ 1.0 in the image below). Training loss goes down from the beginning but Validation loss (blue curve) usually goes up in the beginning and then comes down and approaches the red curve.
 
   ![](seminar_workkshop/N2V_training_progress.png)
+
+  <img src="seminar_workkshop/N2V_training_progress.png" width="200">
   
   If red and blue curves are do not stabilize to a minimum loss value, then incease the number of epochs to 20 or 30 and then run the <code>N2V train + predict</code> again.
 - After program finishes, it generates a denoised Z-stack from the trained model. You might need to run <code>Image › Adjust › Brightness/Contrast...</code> and hit <code>Reset</code> to adjust the display of the denoised image.
