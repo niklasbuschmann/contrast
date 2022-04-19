@@ -7,6 +7,8 @@ layout: page
 The German Model of Industrial Relations: A Primer (with Simon Jäger and Benjamin Schoefer)<br/>
 Invited for consideration, and submitted to, the _Journal of Economic Perspectives_ (draft available upon request)<br/>
 
+<br/>
+
 
 [Codetermination and Power in the Workplace](epi_21.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
 To be published in the _Journal of Law and Political Economy_<br/>
