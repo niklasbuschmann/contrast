@@ -165,4 +165,4 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   
 Well done, if you reached this far!  
 
-For any questions, please contact [Ved Sharma](vsharma01@rockefeller.edu).  
+For any questions, please contact [Ved Sharma](mailto:vsharma01@rockefeller.edu).  
