@@ -22,7 +22,7 @@ In this workshop, we will work through the following exercises:
 4. Bonus – 3D segmentation using StarDist and TrackMate
 
 ### Installing required plugins in Fiji
-We will be adding following three [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
+We will be adding the following three [updates sites](https://imagej.net/update-sites/following) in our Fiji to install all the required plugins for this workshop:   
 - [CSBDeep](https://imagej.net/plugins/csbdeep)
 - [StarDist](https://imagej.net/plugins/stardist)
 - [TrackMate-StarDist](https://imagej.net/plugins/trackmate/trackmate-stardist)  
@@ -45,9 +45,9 @@ Step 6: Restart Fiji. StarDist plugin should now be available under <code>Plugin
 Human HT29 colon cancer cells,  Image from [Broad Bioimage Benchmark Collection](https://bbbc.broadinstitute.org/BBBC008) 
   
 #### Global segmentation  
-Open above image by dragging into the Fiji window and run Threshold command: <code>Image > Adjust > Threshold...</code>  
-Choose different thresholding methods (such as Default, Huang, Otsu etc.) from the drop down list and check how they perform on your image.  
-Once satisfied with a particular method or by manually selecting the lower and upper bound values (using sliders), click on the Apply button to generate a thresholded image.  
+Open above image by dragging it into the Fiji window and run Threshold command: <code>Image > Adjust > Threshold...</code>  
+Choose different thresholding methods (such as Default, Huang, Otsu etc.) from the drop down list and check how well they perform on your image.  
+Once satisfied with a particular method or by manually selecting the lower and upper threshold values (using sliders), click on the Apply button to generate a thresholded image.  
 
 **Note**: All thresholding methods (such as Default, Huang, Otsu etc.) can be tested at once by using <code>Image > Adjust > Auto Threshold</code>  
   
@@ -57,7 +57,7 @@ Run with "Try all" methods to check which one gives the best result. For this im
 
 #### Deep Learning based segmentation using [StarDist](https://imagej.net/plugins/stardist)  
 Select your original image and run the command: <code>Plugins › StarDist › StarDist 2D</code>  
-  In the follow up menu, choose Model: <code>Versatile (fluorescent nuclei)</code> and click on the <code>Set optimized thresholds</code> button at the bottom. Keep other settings as deafult. Click on OK.  
+  In the follow up menu, choose Model: <code>Versatile (fluorescent nuclei)</code> and click on the <code>Set optimized thresholds</code> button at the bottom. Keep other settings as deafult. Click OK.  
 A segmentation label image will be generated with the nuclei ROIs added to the ROI Manager.  
 
 ---  
@@ -71,15 +71,15 @@ Cancer cell migration, image from [Zenodo](https://doi.org/10.5281/zenodo.520610
 
 [Download TIF file](seminar_workkshop/images/P31.tif)
   
-- Open above time-lapse sequence in Fiji and run the command: <code> Plugins › Tracking › TrackMate</code>  
+- Open the above time-lapse sequence in Fiji and run the command: <code> Plugins › Tracking › TrackMate</code>  
 - You will be presented with a <code>TrackMate</code> window. Click Next.  
 - Select <code>StarDist detector</code> from the drop-down menu (image A below). Click next.  
 - You can now click on the <code>Preview</code> tab, to check how well StarDist is detecting the nuclei on the current slice. If detections look fine, click next to detect nuclei in the whole time-lapse sequence.  
-- Keep clicking next button until you reach the <code>Select a tracker</code> option. Select <code>Simple LAP tracker</code> and click next.  
+- Keep clicking next button until you reach the <code>Select a tracker</code> window. Select <code>Simple LAP tracker</code> and click next.  
   In the settings (image B below), choose Linking max distance=30 pixel, Gap-closing max distance=10 pixel, Gap-closing max frame gap=10. Click next.  
 
   **Note**: if you want to track splitting and/or merging events, then choose the <code>LAP tracker</code>, and tick the splitting/merging checkbox under settings.
-- Keep clicking next until you reach the <code>Display options</code> (image C below). Here, various display options for the tracks could be selected. Choose <code>Show tracks backward in time</code>.  
+- Keep clicking next until you reach the <code>Display options</code> window (image C below). Here, various display options for the tracks could be selected. Choose <code>Show tracks backward in time</code>. Play with different settings here and scroll through the stack to see the effect of these changes.  
   Please explore the three tabs at the bottom - <code>TrackScheme</code>, <code>Tracks</code> and <code>Spots</code>. A lot of statistics is hidden there, such as the raw values for each nuclei in each frame of the time-lapse. All the statistics could be exported to a CSV file.  
 - Keep clicking next until you reach the last window called <code>Select an action</code>. Select <code>Capture overlay</code> and click <code>Execute</code> to generate a time-lapse movie with spots and tracks overlaid on top of the original data.  
 - A label time-lapse movie could also be generated by selecting <code>Export label image</code> from the drop-down list and clicking <code>Execute</code>.  
@@ -103,7 +103,7 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
 
 [Download TIF file](seminar_workkshop/images/fish4_celegans.tif)  
   
-- Open above Z-stack in Fiji and run the command: <code> Plugins › CSBDeep › N2V › N2V train + predict</code>  
+- Open the above Z-stack in Fiji and run the command: <code> Plugins › CSBDeep › N2V › N2V train + predict</code>  
 - You will be presented with a <code>N2V train + predict</code> window. Choose the following options:
   - Axes of prediction input: XYZ
   - Number of epochs: 10
@@ -135,7 +135,7 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
 
 3D stack of cells in a spheroid from [Zenodo](https://doi.org/10.5281/zenodo.5220610).
 
-[Download TIF file](seminar_workkshop/images/Spheroid-3D.tif)    
+[Download TIF file](seminar_workkshop/images/Spheroid-3D_8bit.tif)    
   
 - Open above Z-stack in Fiji and run the <code>TrackMate</code> plugin, just like in exercise 2.
 - Since this is a Z-stack and TrackMate works on a time-lapse sequence, we need to swap Z and T dimensions. TrackMate automatically detects it and asks for dimension swapping. Click Yes.   
