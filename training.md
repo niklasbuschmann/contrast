@@ -141,7 +141,7 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
 - Since this is a Z-stack and TrackMate works on a time-lapse sequence, we need to swap Z and T dimensions. TrackMate automatically detects it and asks for dimension swapping. Click Yes.   
   
   ![](seminar_workkshop/Swap_Z_T_message.png)
-- For the detector, choose <code>StarDist</code> from the drop-down menu.  
+- For the detector, choose <code>StarDist detector</code> from the drop-down menu.  
 - For the tracker, choose <code>Simple LAP tracker</code> and the following tracking settings:  
   Linking max distance=5 pixel (a lower value than in exercise 2, since the cells are not moving)  
   Gap-closing max distance=10 pixel  
@@ -155,10 +155,14 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
   Every cell will be outlined in a different color. Scroll through the stack to check the accuracy of the results. If results are not optimum, go back to the detection and/or tracker steps by clicking on the previous button (green left arrow) and changing the settings under detector and tracker.  
   
 - On the last TrackMate window called <code>Select an action</code>, generate a label image by selecting <code>Export label image</code> from the drop-down list and clicking <code>Execute</code>. It will generate a grayscale Z-stack.    
-- Apply colors to different cells by applying an LUT: <code>Image › Lookup Tables › glasbey_inverted</code>  
+- Apply colors to cells with an LUT: <code>Image › Lookup Tables › glasbey_inverted</code>  
 - For creating a 3D rendering, swap Z and T dimensions back to the original values by selecting <code>Image › Properties...</code> and entering Z=64 and T=1. Click OK. 
 - Generate 3D rendering by using 3D viewer plugin: <code>Plugins › 3D Viewer</code>.
   Select <code>Resampling factor = 1</code>.  
   If a window pops up asking to convert the Z-stack to 8-bit or RGB image, click Yes.  
   In the ImageJ 3D Viewer window, use left mouse click and drag to rotate and inspect the volume.  
 
+  
+Well done, if you reached this far!  
+
+For any questions, please contact [Ved Sharma](vsharma01@rockefeller.edu).  
