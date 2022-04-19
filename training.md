@@ -129,8 +129,8 @@ FISH in C. elegans, Spinning disk confocal, image courtesy of [ABRF/LMRG Image A
 ### Bonus Workshop Exercise 4: 3D segmentation using TrackMate (StarDist)
 
 | Spheroid, Z-stack | Z-stack segmentation | 3D rendering |
-| - | - | - | 
-| ![](seminar_workkshop/images/Spheroid-3D_0.7X.gif) | ![](seminar_workkshop/images/Spheroid-3D_LblImg_0.7X.gif) | ![](seminar_workkshop/images/Spheroid-3D_LblImg_movie_0.7X.gif) |  
+| - | - | - |
+| ![](seminar_workkshop/images/Spheroid-3D_0.7X.gif) | ![](seminar_workkshop/images/Spheroid-3D_LblImg_0.7X.gif) | ![](seminar_workkshop/images/Spheroid-3D_LblImg_movie_0.7X.gif) |
 
 3D stack of cells in a spheroid from [Zenodo](https://doi.org/10.5281/zenodo.5220610).
 
