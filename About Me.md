@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ""
-
+permalink: /About-Me/
 
 ---
 I'm a passionate learner who is constantly searching for new tools and perspectives for understanding the world. I have 4+ years of professional and academic experience with research, statistical analysis, programming, and consulting. 
