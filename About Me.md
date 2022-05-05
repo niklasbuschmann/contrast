@@ -8,4 +8,4 @@ I'm a passionate learner who is constantly searching for new tools and perspecti
 
 While my qualifications are focused on technical skills, I also value qualitative thinking and communication, and am interested in all kinds of problems!
 
-Check out my portfolio to learn more about my interests, research, and skills.
+Check out my research to learn more about my interests and skills.
