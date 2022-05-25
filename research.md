@@ -4,8 +4,8 @@ layout: page
 
 <h1> Research </h1>
 
-The German Model of Industrial Relations: A Primer (with Simon Jäger and Benjamin Schoefer)<br/>
-Invited for consideration, and submitted to, the _Journal of Economic Perspectives_ (draft available upon request)<br/>
+[The German Model of Industrial Relations: A Primer](jep_germany.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
+Preliminary draft; invited for consideration in, and submitted to, the _Journal of Economic Perspectives_ <br/>
 
 <br/>
 
