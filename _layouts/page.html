@@ -1,7 +1,0 @@
----
-layout: default
----
-<article>
-  <header><h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1></header>
-  {{ content }}
-</article>
