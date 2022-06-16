@@ -26,17 +26,13 @@ external:                  # shows a footer with social links - for available ic
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
+---
+layout: default
+comments: true
+# other options
+---
   disqus_shortname: "Dat-Blog"    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "blog"
-      comments: true
 
 plugins:
  - jekyll-feed
