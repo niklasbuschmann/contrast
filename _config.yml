@@ -1,8 +1,8 @@
-title: "Blog Title"
-author: "Blog Author"
+title: "DatNT Blog"
+author: "DatNT"
 description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
-lang: "en"
+lang: "vi"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
