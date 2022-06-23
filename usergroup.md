@@ -11,4 +11,16 @@ Please contact [Ved Sharma](mailto:vsharma01@rockefeller.edu) at the [Bio-Imagin
 
 ## User Group Meetings
 
-Notes from the user group meetings will be posted here.
+### 6/23/2022 meeting minutes
+Title: "How do I do “X” in ImageJ/Fiji?"  
+Presenter: Ved Sharma, BIRC  
+Following topics were discussed:
+- Efficient menu and commands nagivation using search bar, shortcuts, Action bar plugin and control panel
+- Demonstrated the usability of "Synchronize Windows" for multiple images
+- Wand tool usability for outlining cells
+- Set Measurement options
+- Automated cell counting in fluorescence and color (RGB) images
+- Described a pipeline for the quantification of nuclear and cytoplasmic localization of IF signal
+- 
+
+
