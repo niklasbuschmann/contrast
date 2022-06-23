@@ -21,6 +21,10 @@ Following topics were discussed:
 - Set Measurement options
 - Automated cell counting in fluorescence and color (RGB) images
 - Described a pipeline for the quantification of nuclear and cytoplasmic localization of IF signal
-- 
+- Tips on figure generation
+-
+-
+-
+
 
 
