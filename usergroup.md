@@ -14,6 +14,7 @@ Please contact [Ved Sharma](mailto:vsharma01@rockefeller.edu) at the [Bio-Imagin
 ### 6/23/2022 meeting minutes
 Title: "How do I do “X” in ImageJ/Fiji?"  
 Presenter: Ved Sharma, BIRC, The Rockefeller University  
+Location/Time: 506 Greenberg Building (CRC), 2-3 pm
 
 Following topics were discussed:
 - Efficient menu and commands nagivation in ImageJ/Fiji using search bar, shortcuts, Action bar plugin and control panel
