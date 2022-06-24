@@ -13,18 +13,12 @@ Please contact [Ved Sharma](mailto:vsharma01@rockefeller.edu) at the [Bio-Imagin
 
 ### 6/23/2022 meeting minutes
 Title: "How do I do “X” in ImageJ/Fiji?"  
-Presenter: Ved Sharma, BIRC  
+Presenter: Ved Sharma, BIRC, The Rockefeller University  
+
 Following topics were discussed:
-- Efficient menu and commands nagivation using search bar, shortcuts, Action bar plugin and control panel
-- Demonstrated the usability of "Synchronize Windows" for multiple images
-- Wand tool usability for outlining cells
-- Set Measurement options
+- Efficient menu and commands nagivation in ImageJ/Fiji using search bar, shortcuts, Action bar plugin and control panel
+- Demonstrated "Synchronize Windows" feature for multichannel images; Wand tool for quickly outlining cells
+- Set Measurements options
 - Automated cell counting in fluorescence and color (RGB) images
 - Described a pipeline for the quantification of nuclear and cytoplasmic localization of IF signal
-- Tips on figure generation
--
--
--
-
-
-
+- Tips on figure generation such as savings files as PNG, using Overlay option to annotate images and some plugins such as QuickFigures,  OMERO.figure and FigureJ
