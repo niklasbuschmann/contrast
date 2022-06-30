@@ -19,7 +19,7 @@ How does codetermination—entitling workers to participate in firm governance, 
 </details><br/>
 
 [What Does Codetermination Do?](wdcd_ilrr.pdf) (with Simon Jäger and Benjamin Schoefer)<br/>
-_ILR Review_, forthcoming<br/> 
+_ILR Review_, 2022, 75(4), p.857-890<br/> 
 [Summary for the Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2021/06/29/what-does-codetermination-do/)<br/>
 [Replication Package](https://github.com/shakkednoy/wdcd_replication)<br/>
 <details>
