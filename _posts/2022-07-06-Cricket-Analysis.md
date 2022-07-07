@@ -2,7 +2,6 @@
 title:  "Cricket Analysis"
 mathjax: true
 layout: post
-image: /assets/Image/History.png
 categories:
 - github
 - website
