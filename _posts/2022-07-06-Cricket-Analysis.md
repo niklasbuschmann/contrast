@@ -26,4 +26,5 @@ The batters can run after the ball is hit. A run is scored each time they change
 ## History
 Cricket was introduced to North America via the English colonies as early as the 17th century, and in the 18th century it arrived in other parts of the globe. It was introduced to the West Indies by colonists and to India by British East India Company mariners. Since then, the game evolved into several formates. International matches have been played since the 19th-century and formal Test cricket matches are considered to date from 1877.
 
-![Cricket_History](/assets/Image/History.png)
+![Cricket_History](./assets/Image/History.png)
+
