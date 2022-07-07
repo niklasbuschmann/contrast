@@ -17,7 +17,7 @@ baseurl: /DrSampara/
 
 # Menu
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "https://github.com/naresh198457/DrSampara/blob/master/Naresh.pdf",title: "CV"}
+  - {file: "CV.md",title: "CV"}
   - {file: "README.md",title: "Research Projects"}
   - {title: "Blog", file: "blog.md"}
 
