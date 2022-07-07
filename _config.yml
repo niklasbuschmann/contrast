@@ -14,7 +14,7 @@ minimal: false             # use a dark header
 
 # Menu
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "/Naresh.pdf",title: "CV"}
+  - {file: "https://github.com/naresh198457/DrSampara.github.io/blob/master/Naresh.pdf",title: "CV"}
   - {file: "README.md",title: "Research Projects"}
   - {title: "Blog", file: "blog.md"}
 
