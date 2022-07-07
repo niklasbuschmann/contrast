@@ -1,6 +1,10 @@
 ---
-layout: default
-title: "CV"
+title:  "CV"
+mathjax: true
+layout: post
+categories:
+- github
+- website
 pdf_file: "Naresh.pdf"
 ---
 
