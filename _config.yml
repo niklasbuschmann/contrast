@@ -13,11 +13,11 @@ show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
 
 url: https://naresh198457.github.io # the base hostname & protocol for your site
-baseurl: /DrSampara.github.io/ 
+baseurl: /DrSampara/ 
 
 # Menu
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "https://github.com/naresh198457/DrSampara.github.io/blob/master/Naresh.pdf",title: "CV"}
+  - {file: "https://github.com/naresh198457/DrSampara/blob/master/Naresh.pdf",title: "CV"}
   - {file: "README.md",title: "Research Projects"}
   - {title: "Blog", file: "blog.md"}
 
