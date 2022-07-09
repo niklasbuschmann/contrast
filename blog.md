@@ -9,4 +9,3 @@ title: "Blog"
   {% include archive.html title="Posts" %}
 {% endif %}
 
-Hello children
