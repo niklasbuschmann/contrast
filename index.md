@@ -1,4 +1,0 @@
----
-layout: Page
-title: "Welcome!"
----
