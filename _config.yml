@@ -24,7 +24,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:ryan.bradshaw@talktalk.net"}
   - {title: Github, icon: github, url: "https://github.com/ryanbradshawcodes"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ryanbradshawuk/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
