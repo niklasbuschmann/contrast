@@ -1,1 +1,6 @@
-{% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
+---
+title: "The start of my YouTube channel"
+layout: post
+---
+
+{% include embed.html url="https://www.youtube.com/watch?v=npePzomVMJ8" %}
