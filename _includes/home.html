@@ -6,6 +6,7 @@
       {{ post.excerpt }}
       <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
     </article>
+  {% endif %}
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
