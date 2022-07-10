@@ -1,9 +1,9 @@
 {%- assign projects = paginator.posts | default: site.posts -%}
 {% for project in projects %}
   <article>
-    {% include meta.html project=project preview=true %}
-    {{ project.excerpt }}
-    <div class="more"><a href="{{ project.url | relative_url }}">read more</a></div>
+    {% include meta.html post=post preview=true %}
+    {{ post.excerpt }}
+    <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
   </article>
 {% endfor %}
 
