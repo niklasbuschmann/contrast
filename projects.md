@@ -5,5 +5,5 @@ title: "Projects"
 
 Hi there
 
-{% include archive.html title="Posts" %}
+{% include home.html title="Posts" %}
 
