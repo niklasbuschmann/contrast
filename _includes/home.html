@@ -1,12 +1,11 @@
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in posts %}
-  {% if post.categories contains 'revision' %}
-    <article>
-      {% include meta.html post=post preview=true %}
-      {{ post.excerpt }}
-      <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
-    </article>
-  {% endif %}
+  <article>
+     {% include meta.html post=post preview=true %}
+     {{ post.excerpt }}
+     <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
+   </article>
+
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
