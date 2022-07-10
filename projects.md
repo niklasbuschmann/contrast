@@ -5,5 +5,5 @@ title: "Projects"
 
 Hi there
 
-{% include home2.html title="Posts" %}
+{% include home.html title="Posts" %}
 
