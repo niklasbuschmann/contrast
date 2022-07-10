@@ -1,4 +1,4 @@
-{%- assign projects = paginator.posts | default: site.projects -%}
+{%- assign projects = paginator.posts | default: site.posts -%}
 {% for project in projects %}
   <article>
     {% include meta.html project=project preview=true %}
