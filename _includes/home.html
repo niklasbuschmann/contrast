@@ -1,6 +1,6 @@
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in posts %}
-  {% if post.categories contains 'project' %}
+  {% if post.categories contains 'revision' %}
     <article>
       {% include meta.html post=post preview=true %}
       {{ post.excerpt }}
