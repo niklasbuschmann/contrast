@@ -1,6 +1,6 @@
-title: "Blog Title"
+title: "Ryan Bradshaw"
 author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "The University of Warwick"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -16,13 +16,14 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "index.md"}
+  - {file: "revision.md", title: "Revision"}
+  - {file: "projects.md", title: "Projects"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:ryan.bradshaw@talktalk.net"}
+  - {title: Github, icon: github, url: "https://github.com/ryanbradshawcodes"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ryanbradshawuk/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
