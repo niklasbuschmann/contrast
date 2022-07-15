@@ -3,7 +3,7 @@ layout: page
 title: "Research"
 permalink: /Research/
 ---
-**Learning Theory, Reinforcement Learning Theory, Computational Statistics , Decision Making, Econometrics**
+**Statistical Learning , Reinforcement Learning, Sequential Decision Making,  Machine Learning Applications**
 <br/>
 
 *webpage to be completed ...*
