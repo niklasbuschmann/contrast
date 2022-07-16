@@ -18,7 +18,8 @@ minimal: false             # use a dark header
 navigation:                
   - {file: "index.html", title: "Home", icon: home}
   - {file: "README.md", title: "About me", icon: address-card}
-
+  
+  
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:noblechaos@icloud.com"}
   - {title: Github, icon: github, url: "https://github.com/Nob1eCha0z"}
