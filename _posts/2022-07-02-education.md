@@ -2,6 +2,7 @@
 title: "education"
 layout: post
 ---
+![avater](https://github.com/chkhu/image/blob/main/IMG_7760.jpg?raw=true)
 - 2021~ now: College of Computer Science and Technology & Chu Kochen Honors College, Zhejiang University
 - 2018～2021: Yiwu High School, Zhejiang Province.
 
