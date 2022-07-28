@@ -7,9 +7,13 @@ layout: post
 
 Check out the links below for more info about my education.
 
- [Yiwu High School][ywhs] on wikipedia
+
+
  [Zhejiang University][zju]
+ 
  [CCST, Zhejiang University][ccst]
+ 
+ [Yiwu High School][ywhs] on wikipedia
 
 
 [ywhs]: https://zh.wikipedia.org/wiki/%E6%B5%99%E6%B1%9F%E7%9C%81%E4%B9%89%E4%B9%8C%E4%B8%AD%E5%AD%A6
