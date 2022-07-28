@@ -1,5 +1,5 @@
 ---
-title: "Education"
+title: "education"
 layout: post
 ---
 
