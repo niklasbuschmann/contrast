@@ -3,13 +3,15 @@ title: "Education"
 layout: post
 ---
 
-- 2021~ now College of Computer Science and Technology & Chu Kochen Honors College, Zhejiang University
-- 2018～2021 Yiwu High School, Zhejiang Province.
+- 2021~ NOW: College of Computer Science and Technology & Chu Kochen Honors College, Zhejiang University
+- 2018～2021: Yiwu High School, Zhejiang Province.
 
 Check out the links below for more info about my education.
 
  [Yiwu High School][ywhs] on wikipedia
+ 
  [Zhejiang University][zju]
+ 
  [CCST, Zhejiang University][ccst]
  
 
