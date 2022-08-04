@@ -1,6 +1,6 @@
 ---
-title: "About"
-permalink: "/about/"
+title: "CV"
+permalink: "/CV/"
 layout: page
 ---
 
@@ -8,8 +8,9 @@ layout: page
 
 ## Occupation
 
-- University of Lausanne (Switzerland)
-- Working for a [National Congregation Study](https://wp.unil.ch/ncs2/le-ncs-2-en-bref/)
+- PhD candidate in sociology of religon
+   - University of Lausanne (Switzerland)
+   - Working for a [National Congregation Study](https://wp.unil.ch/ncs2/le-ncs-2-en-bref/)
 
 ## Articles
 
