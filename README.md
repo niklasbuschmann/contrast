@@ -4,8 +4,6 @@ permalink: "/CV/"
 layout: page
 ---
 
-# PhD candidate in sociology of religon
-
 ## Occupation
 
 - PhD candidate in sociology of religon
