@@ -24,6 +24,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:jeremy.senn@unil.ch"}
   - {title: Google Scholar, icon: google, url: "https://scholar.google.com/citations?user=bHbRaKkAAAAJ&hl=fr&oi=sra"}
   - {title: Researchgate, icon: researchgate, url: "https://www.researchgate.net/profile/Jeremy-Senn"}  
+  - {title: ORCID, icon: orcid, url: "https://orcid.org/0000-0002-0291-9163"}  
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
