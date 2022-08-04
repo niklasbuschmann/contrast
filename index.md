@@ -11,7 +11,10 @@ layout: page
 
 ## Articles
 
-- [Des générations à la foi décroissante : religion et sécularisation en Suisse 1930-2020](https://www.socialchangeswitzerland.ch/?p=2406)
+- Generations of declining faith: Religion and secularization in Switzerland, 1930-2020
+   - [english](https://forscenter.ch/wp-content/uploads/2022/02/stolz_final_en.pdf)
+   - [french](https://www.socialchangeswitzerland.ch/wp-content/uploads/2021/11/20211030_Stolz_Senn_FR-final_2.pdf)
+   - [german](https://www.socialchangeswitzerland.ch/wp-content/uploads/2021/11/20211030_Stolz_Senn_DE_final_2.pdf)
 
 ## Conferences / talks
 
