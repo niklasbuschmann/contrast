@@ -1,6 +1,5 @@
 ---
 title: ""
-permalink: "/CV/"
 layout: page
 ---
 
