@@ -24,6 +24,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:jeremy.senn@unil.ch"}
   - {title: Github, icon: github, url: "https://github.com/jsenn2"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Google Scholar, icon: google, url: "https://scholar.google.com/citations?user=bHbRaKkAAAAJ&hl=fr&oi=sra"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
