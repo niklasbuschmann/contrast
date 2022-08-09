@@ -17,6 +17,10 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
+  - {file: "aboutme.html", title: "About me"}
+  - {file: "research.html", title: "Research"}
+  - {file: "guzmancv.pdf", title: "Curriculum vitae"}
+  - {file: "contact.html", title: "Contact"}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
