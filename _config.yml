@@ -22,7 +22,9 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "welcome.html", title: "Welcome"}
   - {file: "aboutme.txt", title: "About"}
   - {file: "research.txt", title: "Reseach"}
+  - {file: "pubs.txt", title: "Publications"}
   - {file: "guzmancv.pdf", title: "Curriculum vitae"}
+  - {file: "pics.txt", title: "Photos"}
   - {file: "contact.txt", title: "Contact"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
