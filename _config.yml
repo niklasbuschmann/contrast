@@ -16,12 +16,11 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
+  - {file: "home.html", title: "Home", icon: home}
   - {file: "aboutme.html", title: "About me", icon: home}
   - {file: "research.html", title: "Research", icon: home}
   - {file: "guzmancv.pdf", title: "Curriculum vitae", icon: home}
   - {file: "contact.html", title: "Contact", icon: home}
-  - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:alexguzman@berkeley.edu"}
