@@ -1,6 +1,9 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Alex Guzman"
+author: "Alex Guzman"
+description: "Department of Integrative Biology
+University of Cailfornia, Berkeley
+3040 Valley Life Sciences
+Berkeley, CA 94720-3200"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -9,20 +12,24 @@ date_format: "%B %d, %Y"
 # Layout
 
 show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
+show_frame: false           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "welcome.html", title: "Welcome"}
+  - {file: "aboutme.txt", title: "About"}
+  - {file: "research.txt", title: "Reseach"}
+  - {file: "pubs.txt", title: "Publications"}
+  - {file: "guzmancv.pdf", title: "Curriculum vitae"}
+  - {file: "pics.txt", title: "Photos"}
+  - {file: "contact.txt", title: "Contact"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:alexguzman@berkeley.edu"}
+  - {title: Github, icon: github, url: "https://github.com/guzmanalex"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
