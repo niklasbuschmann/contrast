@@ -1,6 +1,10 @@
 title: "Alex Guzman"
 author: "Alex Guzman"
-description: "University of Cailfornia, Berkeley"
+description: 
+"Department of Integrative Biology
+University of Cailfornia, Berkeley
+3040 Valley Life Sciences
+Berkeley, CA 94720-3200"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
