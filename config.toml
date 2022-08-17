@@ -1,0 +1,11 @@
+relativeURLs = true
+title = "Shakked Noy"
+theme = "academimal"
+sectionPagesMenu = "main"
+defaultContentLanguage = "en"
+ignorefiles = [ "hugo_travis_ci", ".travis.yml" ]
+
+[params]
+    shortbio = "PhD student in economics, MIT"
+    logo = "shakkednoy.jpg" 
+    

@@ -1,5 +1,0 @@
-<header>
-  <h1><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>
-  {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-  <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time>
-</header>

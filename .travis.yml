@@ -1,0 +1,15 @@
+install:
+    - rm -rf public || exit 0
+
+script:
+    - ./hugo_travis_ci
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    local_dir: public
+    target-branch: master
+    github_token: $github_token
+    on:
+        branch: source
+
