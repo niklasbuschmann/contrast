@@ -20,6 +20,9 @@ layout: page
 
 ### 2022
 
+- **SSSR+RRA 2022 Annual Meeting** 
+`Baltimore, USA` 
+   - *Diversity dynamics. How local religious groups are born, stay, and die over time*
 - **Pluralité religieuse et enjeux de reconnaissance social (seminary)** 
 `University of Strasbourg` 
    - *L'évolution du paysage religieux suisse (2008-2020). Diversité, mortalité et fusions des groupes religieux locaux*
