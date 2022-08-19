@@ -1,3 +1,14 @@
+---
+layout: post
+title: "Dall-E and bias"
+categories:
+    - "paper review"
+    - "opinion"
+    - "english"
+tags:
+    - "english"
+---
+
 I have been reading a lot about bias and fairness in AI recently, and one example in particular caught my eye: DALL-E.
 
 
@@ -7,6 +18,7 @@ DALL-E is a transformers model developed by openAI to generate images from text 
 
 Like all AI models (except some that might be specifically tuned to avoid this pitfall), DALL-E reflects the biases in its training data. Ask it to represent a lawyer, and you'll get pictures of a grey-haired white male. If you ask for a nurse instead, all the pictures will represent women. "Convicted criminal" will skew heavily non-caucasian, while "police officer" will be, again, all-white. Although the model is built for fun and games, this perpetuates harmful stereotypes and needs addressing. 
 
+<!--more-->
 
 ## Bias mitigation
 

@@ -1,12 +1,20 @@
 ---
 layout: post
 title: ArXiv musings - 2022, week 33
+categories:
+    - "arxiv musings"
+    - "paper review"
+    - "english"
+tags:
+    - "english"
 ---
 
 Here is a summary of a few papers that caught my eye this week.
 
 ## [Why do tree-based models still outperform deep learning on tabular data?](https://arxiv.org/pdf/2207.08815.pdf)
 This paper by three French researchers proposes a new, extensive benchmark procedure for machine learning models on structured (tabular) data. The dataset is made of 45 different tabular datasets, some with numerical-only, and some with mixed features. The benchmark procedures rates the performance of the algorithms using accuracy (for classification) and $$R^2$$ (for regression) after an increasing number of iteration of a random hyperparameter search. 
+
+<!--more-->
 
 The authors then use this procedure to compare the performances of several tree-based models and neural networks. The tree-based models consistently outperform the deep learning ones, even when accounting for training costs of neural network (even with a very large "tuning budget", tree-based models show superior performance).
 

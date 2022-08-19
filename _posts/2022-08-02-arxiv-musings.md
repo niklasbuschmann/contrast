@@ -1,8 +1,21 @@
+---
+layout: post
+title: "ArXiv musing: 2022, week 31"
+categories:
+    - "arxiv musings"
+    - "paper review"
+    - "english"
+tags:
+    - "english"
+---
+
 Here are a few papers of interest I found in my arXiv feed. I'll add more if there are more this week.
 
 ## [Jazz Contrafact Detection](https://arxiv.org/pdf/2208.00792.pdf)
 
 A contrafact is a melody that shares the same underlying chord progression as another melody, sometimes reharmonized. The authors propose a way to detect whether a melody is a contrafact of another, using music theory to inform chord vector embedding.
+
+<!--more-->
 
 ### Problem
 

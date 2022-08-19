@@ -2,10 +2,18 @@
 layout: post
 title: Confidentialité et anonymat
 mathjax: true
+categories:
+    - "pop science"
+    - "vulgarisation"
+    - "french"
+tags:
+    - "french"
 ---
 Cela fait un moment que j'ai envie d'écrire ce que je sais sur la confidentialité différentielle. Je reprends ici la plupart des explications du chapitre 1 de [The ethical algorithm](https://global.oup.com/academic/product/the-ethical-algorithm-9780190948207?cc=us&lang=en&), de Kearns et Roth.
 
 Dans ce premier article, je décris la motivation pour une définition rigoureuse de la confidentialité, et je donne une première définition (imparfaite) de ce qu'on peut attendre d'un jeu de données anonyme.
+
+<!--more-->
 
 ## Motivation
 

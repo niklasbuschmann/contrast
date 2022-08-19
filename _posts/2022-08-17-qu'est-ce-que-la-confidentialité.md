@@ -1,9 +1,17 @@
 ---
 layout: post
 title: Qu'est-ce que la confidentialité ?
+categories:
+    - "pop science"
+    - "vulgarisation"
+    - "french"
+tags: 
+    - "french"
 ---
 
 Cet article fait partie d'une série sur la confidentialité des données, que j'écris dans le désordre. Celui-ci fait office d'introduction et de motivation du problème.
+
+<!--more-->
 
 ## Motivation : pourquoi garantir la confidentialité ?
 En 2007, Netflix lance une compétition internationale, avec un prix d'un million de dollars à qui arrivera à améliorer son algorithme de recommandation. Pour ce faire, les participants doivent entraîner un modèle d'intelligence artificielle sur un jeu de données public d'utilisateurs de Netflix. Le jeu de données contient des films visionnés et notés par 500 000 utilisateurs anonymes (dont le nom a été remplacé par une suite de chiffres), avec pour chaque film, la date à laquelle il a été visionné, et la note de l'utilisateur. 
