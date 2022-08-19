@@ -32,7 +32,7 @@ layout: page
 - **35th SISR/ISSR Conference**
    - *Mergers And Innovations. Changes In Religious Diversity In Switzerland In The Light Of Two National Congregations Censuses (2009 - 2021)*
 - **ISSR 2021 Research Symposium** 
-`University of Lausanne`
+`University of Lausanne, CH`
    - *L'évolution du paysage religieux suisse (2008-2020). Diversité, mortalité et fusions des groupes religieux locaux*
 
 ## Links
