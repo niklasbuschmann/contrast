@@ -3,7 +3,7 @@ author: "Bea"
 description:  "A public and personal notebook of sorts, where I write about my AI and Data science-related findings. Un carnet public et personnel, où je parle de mes découvertes autour de l'IA et de la science des données."
 permalink: /:title/
 lang: "en"
-excerpt_separator: "\n\n\n"
+excerpt_separator: "<!--more-->"
 date_format: "%B %d, %Y"
 
 # Layout
