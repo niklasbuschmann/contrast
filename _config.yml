@@ -25,7 +25,8 @@ external:                  # shows a footer with social links - for available ic
   - {title: Github, icon: linkedin-square, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
   - {title: LinkedIn, icon: linkedin, url: "/feed.xml"}
-  - {title: Subscribe, icon: linkedin-in, url: "/feed.xml"}
+  - {title: ResearchGate, icon: researchgate, url: "/feed.xml"}
+  - {title: GoogleScholar, icon: ai ai-google-scholar-square ai-3x, url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
