@@ -22,11 +22,9 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
   - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Github, icon: f0e1, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Github, icon: linkedin-square, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
   - {title: LinkedIn, icon: linkedin, url: "/feed.xml"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
   - {title: Subscribe, icon: linkedin-in, url: "/feed.xml"}
 
 comments:
