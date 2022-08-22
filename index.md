@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About me"
+title: ""
 ---
 
 I'm assistant professor .....
