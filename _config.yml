@@ -1,9 +1,3 @@
-<head>
-  <meta charset="utf-8">
-  <link rel="sylesheet" href="{{"/assets/css/frame.css"|relative_url}}">
-   <link rel="shortcut icon" type="image/png" href="favicon.png">
-</head>
-
 title: "Mohamed Hosni"
 author: "Mohamed Hosni"
 description: "ENSAM-Meknes, Moulay Ismail University"
