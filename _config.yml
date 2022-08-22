@@ -18,15 +18,18 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
   - {file: "README.md"}
-  - {file : "README.md", title: Teaching}
-  - {file : "README.md", title: Research}
   - {file : "README.md", title: About me}
+  - {file : "README.md", title: Publications}
+  - {file : "README.md", title: Research}
+  - {file : "README.md", title: Teaching}
+  - {file : "README.md", title: Students}
+  
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: LinkedIn, icon: linkedin, url: "/feed.xml"}
-  - {title: ResearchGate, icon: researchgate, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:hosniteaching@gmail.com"}
+  #- {title: Github, icon: github, url: "https://github.com/hosnimohamed/"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/hosnimohamed/"}
+  - {title: ResearchGate, icon: researchgate, url: "https://www.researchgate.net/profile/Mohamed_Hosni9"}
   #- {title: GoogleScholar, icon: "ai ai-google-scholar-square ai-3x", url: "/feed.xml"}
 
 comments:
