@@ -12,7 +12,7 @@ title: "Publications"
 <hr>
 <h4>Conferance Papers:</h4>
 <ol>
-  <li>Coffee <a href="./paper.pdf">[PDF]</a> </li>
-  <li>Tea</li>
+  <li>Coffee <a href="../paper.pdf">[PDF]</a> </li>
+  <li>Tea <a href="/paper.pdf">[PDF]</a> </li> </li>
   <li>Milk</li>
 </ol>
