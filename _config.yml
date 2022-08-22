@@ -26,6 +26,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
   - {title: LinkedIn, icon: linkedin, url: "/feed.xml"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
+   - {title: Subscribe, icon: linkedin-in, url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
