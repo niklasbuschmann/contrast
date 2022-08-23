@@ -20,7 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   #- {file: "README.md"}
   - {file : "../publications/publications.md", title: Publications}
   - {file : "/publications/publications.md", title: Research}
-  - {file : "README.md", title: Teaching}
+  - {file : "publications/publications.md", title: Teaching}
   - {file : "README.md", title: Students}
   #- {file : "index.md", title: About me}
   
