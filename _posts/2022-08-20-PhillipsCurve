@@ -1,15 +1,13 @@
 --
 title: "Curva de Phillips"
+layout: post
 output:
   html_document: default
-  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-
 
 
 ### A Curva de Phillips
