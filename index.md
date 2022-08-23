@@ -9,7 +9,7 @@ layout: page
    - University of Lausanne (Switzerland)
    - Working for a [National Congregation Study](https://wp.unil.ch/ncs2/le-ncs-2-en-bref/)
 
-## <span style=“color: red;”> Some text</span>
+## Articles
 
 - **Generations of declining faith: Religion and secularization in Switzerland, 1930-2020**
    - [english](https://forscenter.ch/wp-content/uploads/2022/02/stolz_final_en.pdf)
