@@ -14,10 +14,4 @@ Phillips encontrou estes resultados para a economia inglesa, entre 1861 e 1957. 
 Em 2001, George Akerlof, no discurso de recebimento do Prêmio Nobel, afirmou que "[P]robably the single most important macroeconomic relationship is the Phillips Curve.”
 
 
-### Construindo o Banco de Dados
 
-```{r echo = T, message = FALSE, warning = FALSE, paged.print = FALSE}
-# Libraries
-library(GetBCBData)
-library(tidyverse)
-```
