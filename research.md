@@ -3,7 +3,7 @@ layout: page
 title: "Research"
 
 ---
-I am affilited to three researach teams:
+I am affilited to three research teams:
 <ul>
   <li> <b>Modeling and Optimization of Industrial Systems Team (MOSI)</b>, Laboratory of Mathematical Modeling, Simulation and Smart Systems (LM2S3), ENSAM-Meknès, since 2020 as permanent member. </li>
   <li> <b>Software Engineering Research Group (SEG)</b>, University of Murcia, Spain, since 2017 as associate member. </li>
