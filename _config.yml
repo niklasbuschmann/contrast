@@ -16,12 +16,12 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md", title: "Home" , icon: home}
-  - {file: "README.md", title: "Research" , icon: address-card}
+  - {file: "index.md", title: "Home"}
+  - {file: "README.md", title: "Research"}
   - {title: "Teaching"}
   - {title: "Blogs"}
   - {title: "Resources"}
-  - {file: "/Delgado_CV.pdf", title: "CV"}
+  - {file: "_posts/Delgado_CV.pdf", title: "CV"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:ludelgad@eco.uc3m.es"}
