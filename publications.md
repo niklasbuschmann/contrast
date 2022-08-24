@@ -5,6 +5,12 @@ title: "Publications"
 ---
 For a complete list of my publications, please visit my academic profile on <a href="https://dblp.org/pid/182/7927.html">DBLP and <a href="https://scholar.google.com/citations?hl=fr&user=Cd2fxdoAAAAJ">Google Scholar.
 
+  <h4>Some recent publications</h4>
+  <ul>
+    <li> Benhar, H., <b>Hosni, M.</b>, \& Idri, A., <b><i>"Univariate and multivariate filter feature selection for heart disease classification"</i></b>, in <b>The Journal of Information Science and Engineering</b>, November 2021, 17 pages. ISSN: 1016-2364. <b>IF =  0.541 </b> (JCR Sciences Edition 2021)>/li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
 
 <h4>Journal Papers:</h4>
 <ol>
