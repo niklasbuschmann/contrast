@@ -12,8 +12,8 @@ I am affilited to three researach teams:
  
 ## Projects:
 
-  - “Air Pollution Control System in Cities using Digital Technology based on New Predictive Models Integrated in Sustainable Metaverse Channels. (METAIRVERSE)”. 2022-2025.
-  - “Towards More Sustainable Software Organisations: A holistic approach to promoting economic, human and environmental sustainability” (OASSIS). 2022-2025
+  - <b> “Air Pollution Control System in Cities using Digital Technology based on New Predictive Models Integrated in Sustainable Metaverse Channels. (METAIRVERSE)” </b>, 2022-2025.
+  - <b> “Towards More Sustainable Software Organisations: A holistic approach to promoting economic, human and environmental sustainability” (OASSIS) </b>, 2022-2025.
 
   
 ## Completed projects:
@@ -23,8 +23,12 @@ I am affilited to three researach teams:
   - “Mobile Personal Health Records in Morocco, PPR1, 2015-2020”.
   
 ## Reviwing:
-  - PhD thesis: <b><i>"Software Requirements for Energy Efficiency in Information Systems"</i></b>, of José Alberto Garcia Berna, Facultad de Informática - Universidad de Murcia, Murcia-Spain.
-  - Journals: I acted as reviewer for several journals such as: Expert Systems with Applications, PeerJ Computer Science, Journal of Biomedical Informatics, Journal of Software: Evolution and Process, Applied Soft Computing, Artificial Intelligence Review...
+
+  - <b> PhD thesis:</b> <b><i>"Software Requirements for Energy Efficiency in Information Systems"</i></b>, authored by José Alberto Garcia Berna, Facultad de Informática - Universidad de Murcia, Murcia-Spain.
+  - <b> Journals:</b> I acted as reviewer for several journals such as: Expert Systems with Applications, PeerJ Computer Science, Journal of Biomedical Informatics, Journal of Software: Evolution and Process, Applied Soft Computing, Artificial Intelligence Review...
   
 ## Guess Editor:
-I managed three special issues 
+
+I managed two special issues as guess editor :
+  - <b> Journal of Healthcare Engineering (IF = 1.803, Q2)<b> : Privacy and Security in eHealth Systems.
+  - <b> International Journal of Environmental Research and Public Health (IF = 3.390, Q1)</b>: The Computer-Human Interactions: For Promoting the Healthcare Outcomes .
