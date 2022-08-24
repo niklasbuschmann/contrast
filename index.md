@@ -3,4 +3,4 @@ layout: page
 title: "CV"
 ---
 
-I'm assistant professor .....
+I am an Associate Professor at High
