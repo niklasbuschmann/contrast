@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 ---
 
-{title: "Ph.D. Candidate in Economics, UC3M" , url: http://economics.uc3m.es/personal/delgado-prieto/}
+[Ph.D. Candidate in Economics, UC3M](http://economics.uc3m.es/personal/delgado-prieto/)
 
 Hello, welcome to my personal webpage! 
 
