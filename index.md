@@ -18,7 +18,7 @@ layout: page
 
 ## Conferences / talks
 
-### <span style="color:darkgreen">2022</span>
+### <span style="color:darkblue">2022</span>
 
 - **SSSR+RRA 2022 Annual Meeting** 
 `Baltimore, USA` 
@@ -31,7 +31,7 @@ layout: page
 `University of Lausanne`
    - *Le champ des groupes religieux locaux en Suisse. Structure institutionnelle et diversité*
 
-### <span style="color:darkgreen">2021</span>
+### <span style="color:darkblue">2021</span>
 
 - **35th SISR/ISSR Conference**
    - *Mergers And Innovations. Changes In Religious Diversity In Switzerland In The Light Of Two National Congregations Censuses (2009 - 2021)*
