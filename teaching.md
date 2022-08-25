@@ -28,3 +28,4 @@ TEACHING ASSISTANT:
 MAIN INSTRUCTOR:
 
 5. Introduction to Stata (In English) for MADE-MEDEG, Autumn 2020, Autumn 2021 and Autumn 2022
+    - [Teaching Materials](https://sites.google.com/view/ladelgadop/teaching?authuser=0)
