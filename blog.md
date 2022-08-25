@@ -21,6 +21,6 @@ ARTICLES IN SPANISH
 
 BLOG IN SPANISH
 
--[Personal blog about economic, poverty and inequality issues](http://ladelgadop.blogspot.com/)
+- [Personal blog about economic, poverty and inequality issues](http://ladelgadop.blogspot.com/)
 
--[Comprehensive guide for applying to Ph.D.'s in Economics](http://ladelgadop.blogspot.com/2020/01/doctorado-en-economia-una-guia-breve.html)
+- [Comprehensive guide for applying to Ph.D.'s in Economics](http://ladelgadop.blogspot.com/2020/01/doctorado-en-economia-una-guia-breve.html)
