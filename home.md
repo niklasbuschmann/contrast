@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: post
 title: "Home"
 ---
 
