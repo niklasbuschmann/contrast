@@ -17,7 +17,7 @@ ARTICLES IN SPANISH
 
 - [Por una Colombia sin Pobreza: una estimación aproximada](http://revistasupuestos.com/desarrollo/2017/12/9/por-una-colombia-sin-pobreza-una-estimacin-aproximada)  _Revista Supuestos_
 
--[Empleo de los jóvenes: ¿Cómo está Colombia?](https://latinamericanpost.com/es/17079-empleo-de-los-jovenes-como-esta-en-colombia-2/amp) _LatinAmerican Post_
+- [Empleo de los jóvenes: ¿Cómo está Colombia?](https://latinamericanpost.com/es/17079-empleo-de-los-jovenes-como-esta-en-colombia-2/amp) _LatinAmerican Post_
 
 BLOG IN SPANISH
 
