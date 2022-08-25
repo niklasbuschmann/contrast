@@ -1,3 +1,8 @@
+---
+title: "Teaching"
+permalink: "/teaching/"
+layout: page
+---
 
 TEACHING ASSISTANT:
 
