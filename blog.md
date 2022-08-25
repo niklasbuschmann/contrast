@@ -1,3 +1,9 @@
+---
+title: "Blog posts"
+permalink: "/blog/"
+layout: page
+---
+
 ARTICLES IN ENGLISH
 - [The Colombian Labor Market through the COVID-19 shock]
 
