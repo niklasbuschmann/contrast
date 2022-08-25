@@ -2,10 +2,13 @@
 layout: page
 title: "Home"
 ---
-
-### [Ph.D. Candidate in Economics, UC3M](http://economics.uc3m.es/personal/delgado-prieto/)
-
 ## Hello, welcome to my personal webpage! 
+#### [Ph.D. Candidate in Economics, UC3M](http://economics.uc3m.es/personal/delgado-prieto/)
+
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/57502134/186741596-b93baccb-0009-4910-8db5-26d27765dc15.png"  width="280" height="350">  
+</p>
+- Contact: 
 
 #### I am a 5th-year Ph.D. student interested in labor economics and applied microeconomics, with a focus on questions related to migration. I am also a pre-doc researcher at the Institute for Economic Analysis (IAE)-CSIC in Barcelona and a short-term consultant at the World Bank. I did my bachelor's and master's degree in Economics at Universidad de Los Andes in Colombia. 
 
