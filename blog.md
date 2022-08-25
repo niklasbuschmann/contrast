@@ -5,7 +5,8 @@ layout: page
 ---
 
 ARTICLES IN ENGLISH
-- [The Colombian Labor Market through the COVID-19 shock]
+- [The Colombian Labor Market through the COVID-19 shock](https://github.com/ludelgad/ludelgad.github.io/files/9427188/Covid_LaborMarket_2021.pdf)
+
 
 ARTICLES IN SPANISH
 - [Análisis municipal del COVID-19: Relación entre contagio, economía y geografía en Colombia](http://vox.lacea.org/?q=blog/analisis_municipal_covid19). _VOX LACEA_
