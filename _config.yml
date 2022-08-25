@@ -8,7 +8,7 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
+show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
@@ -21,8 +21,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "teaching.md" , title: "Teaching"}
   - {file: "blogs.md" , title: "Blogs"}
   - {file: "resources.md" , title: "Resources"}
-  - {file: "Delgado_CV.pdf" , title: "CV"}
-
+  
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:ludelgad@eco.uc3m.es"}
   - {title: Github, icon: github, url: "https://github.com/ludelgad"}
