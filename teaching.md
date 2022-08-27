@@ -6,11 +6,11 @@ title: Teaching
 
 Please find bellow, some of the materials that I use during my leactures and labs.<br>
 Fall 2022:
-<h2> C++ Programming language: </h2>
+<h3> C++ Programming language: </h3>
 Spring 2023:
-<h2> Java Programming language: </h2>
-<h2> Advanced data structures using C++:</h2>
-<h2> Data mining: </h2>
+<h3> Java Programming language: </h3>
+<h3> Advanced data structures using C++:</h3>
+<h3> Data mining: </h3>
 
 
 
