@@ -4,7 +4,7 @@ title: Teaching
 
 ---
 
-Please find bellow, some of the materials that I use during my leactures and labs.<br>
+Please find bellow, some of the materials that I use during my leactures and labs.<br><br><br>
 Fall 2022:
 <h3> C++ Programming language: </h3>
 Spring 2023:
