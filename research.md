@@ -10,10 +10,10 @@ I am affilited to three research teams:
   <li> <b>Mathematical modeling and scientific calculation (MMSC)</b>, LMAID, MINES-Rabat, since 2021 as associate member.</li>
  </ul>
  
-<h1 style="color:DodgerBlue;"> Projects: </h1>
+## Projects:
 
-  - <b> “Air Pollution Control System in Cities using Digital Technology based on New Predictive Models Integrated in Sustainable Metaverse Channels. (METAIRVERSE)” </b>, 2022-2025.
-  - <b> “Towards More Sustainable Software Organisations: A holistic approach to promoting economic, human and environmental sustainability” (OASSIS) </b>, 2022-2025.
+  - <b style="color:DodgerBlue;"> “Air Pollution Control System in Cities using Digital Technology based on New Predictive Models Integrated in Sustainable Metaverse Channels. (METAIRVERSE)” </b>, 2022-2025.
+  - <b style="color:DodgerBlue;"> “Towards More Sustainable Software Organisations: A holistic approach to promoting economic, human and environmental sustainability” (OASSIS) </b>, 2022-2025.
 
   
 ## Completed projects:
