@@ -13,7 +13,7 @@ I am affilited to three research teams:
 ## Projects:
 
   - <b style="color:DodgerBlue;"> “Air Pollution Control System in Cities using Digital Technology based on New Predictive Models Integrated in Sustainable Metaverse Channels. (METAIRVERSE)” </b>, 2022-2025.
-  - <b style="color:DodgerBlue;"> “Towards More Sustainable Software Organisations: A holistic approach to promoting economic, human and environmental sustainability” (OASSIS) </b>, 2022-2025.
+  - <b style="color:DarkBlue;"> “Towards More Sustainable Software Organisations: A holistic approach to promoting economic, human and environmental sustainability” (OASSIS) </b>, 2022-2025.
 
   
 ## Completed projects:
