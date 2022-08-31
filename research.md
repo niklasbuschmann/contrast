@@ -24,11 +24,11 @@ I am affilited to three research teams:
   
 ## Reviwing:
 
-  - <b> PhD thesis:</b> <b tyle="color:DarkBlue;"><i>"Software Requirements for Energy Efficiency in Information Systems"</i></b>, authored by José Alberto Garcia Berna, Facultad de Informática - Universidad de Murcia, Murcia-Spain.
+  - <b> PhD thesis:</b> <b style="color:DarkBlue;"><i>"Software Requirements for Energy Efficiency in Information Systems"</i></b>, authored by José Alberto Garcia Berna, Facultad de Informática - Universidad de Murcia, Murcia-Spain.
   - <b> Journals:</b> I acted as reviewer for several journals such as: Expert Systems with Applications, PeerJ Computer Science, Journal of Biomedical Informatics, Journal of Software: Evolution and Process, Applied Soft Computing, Artificial Intelligence Review...
   
 ## Guess Editor:
 
 I managed two special issues as guess editor :
-  - <b tyle="color:DarkBlue;"> Journal of Healthcare Engineering (IF = 1.803, Q2)</b> : Privacy and Security in eHealth Systems.
-  - <b tyle="color:DarkBlue;"> International Journal of Environmental Research and Public Health (IF = 3.390, Q1)</b>: The Computer-Human Interactions: For Promoting the Healthcare Outcomes .
+  - <b style="color:DarkBlue;"> Journal of Healthcare Engineering (IF = 1.803, Q2)</b> : Privacy and Security in eHealth Systems.
+  - <b style="color:DarkBlue;"> International Journal of Environmental Research and Public Health (IF = 3.390, Q1)</b>: The Computer-Human Interactions: For Promoting the Healthcare Outcomes .
