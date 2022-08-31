@@ -26,7 +26,7 @@
 {% else %}
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
-
+<link rel="shortcut icon" type="image/png" href="{{"/favicon.png" | relative_url}}">
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
