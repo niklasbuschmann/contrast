@@ -20,7 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "sdsu.cuta@gmail.com"}
+  - {title: Mail, icon: envelope, url: "mailto:sdsu.cuta@gmail.com"}
   - {title: CUTA, icon: link, url: "https://cuta.sdsu.edu"}
 
 comments:
