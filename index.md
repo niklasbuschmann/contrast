@@ -1,6 +1,6 @@
 ---
 title: "Our Research"
-permalink: /:title/
+permalink: /title/
 permalink: /home/
 layout: page
 ---
