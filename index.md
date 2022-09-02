@@ -41,10 +41,10 @@ This is what your 4 weeks of participation will look like:
 ## Research Team
 - **Nader Amir, Ph.D.**
   - Director, Professor
-  - <ins>namir@sdsu.edu</ins>
+  - mailto:namir@sdsu.edu
 - **Sadia Najmi, Ph.D.**
   - Research Psychologist
-  - <ins>sadia.najmi@cuta.sdsu.edu</ins>
+  - mailto:sadia.najmi@cuta.sdsu.edu
 - **Jennie Kuckertz, Ph.D.**
   - Research Psychologist
-  - <ins>jkuckertz@sdsu.edu</ins>
+  - mailto:jkuckertz@sdsu.edu
