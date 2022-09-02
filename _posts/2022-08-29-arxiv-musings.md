@@ -28,7 +28,7 @@ Well-written and accessible. I really enjoyed this paper.
 A fun paper -- the authors propose a new metric, the cost of passing (not playing a stone at one's turn), to analyze Go moves. Go-playing AIs can calculate an average winning score (total number of points -- distinguish from the winning rate) for each position. A high cost of passing denotes a position as urgent: the player is threatened and needs to make a move, or it may cost them. This metric could, for example, be used as a teaching tool that automatically warns beginner players of a dangerous position.
 
 
-[Concept-based techniques for "musicologist-friendly" explanations in a deep music classifier](https://arxiv.org/pdf/2208.12485.pdf)
+## [Concept-based techniques for "musicologist-friendly" explanations in a deep music classifier](https://arxiv.org/pdf/2208.12485.pdf)
 
 Another fun one -- today is a good day to be browsing the arxiv. This paper looks at subject concept-based explanations for a classifier that identifies the composer of a classical music piece. Instead of looking at features (PCA and the like), concept-based explanations look at "concepts"; for example, does a classifier recognize the concept of "stripes" when it classifies a picture of a zebra? Two methodologies are presented:
 
