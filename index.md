@@ -36,17 +36,17 @@ This is what your 4 weeks of participation will look like:
   - You will again complete a short task measuring your attention by clicking on the “Flanker” setting in the app.
   - At this time, you will receive SONA credit for your participation.
 
-<sub><ins>Note about privacy: All your data will remain confidential and will not be used outside of our team and lab. Any personal information will be de-identified by using an identification number.</ins></sub>
+<sub>Note about privacy: All your data will remain confidential and will not be used outside of our team and lab. Any personal information will be de-identified by using an identification number.</sub>
 
 - - - -
 
 ## Research Team
-- <ins>Nader Amir, Ph.D</ins>
+- **Nader Amir, Ph.D.**
   - Director, Professor
   - <ins>namir@sdsu.edu</ins>
-- <ins>Sadia Najmi, Ph.D</ins>
+- **Sadia Najmi, Ph.D.**
   - Research Psychologist
   - <ins>sadia.najmi@cuta.sdsu.edu</ins>
-- <ins>Jennie Kuckertz, Ph.D</ins>
+- **Jennie Kuckertz, Ph.D.**
   - Research Psychologist
   - <ins>jkuckertz@sdsu.edu</ins>
