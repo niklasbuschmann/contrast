@@ -16,19 +16,19 @@ If you are interested in participating in our study, please complete tis questio
   - Information about how to download the application and its various functionalities can be found here: <ins>[EMA Website](https://cutapublic.s3-us-west-1.amazonaws.com/cutaweb/ema/index.html)</ins>.
 
 This is what your 4 weeks of participation will look like:
-1. **<ins>Week 1</ins>**
+1. **Week 1**
   - You will complete questionnaires about your demographic information and thoughts, feelings and behaviors through the smartphone app by clicking on the “EMA” setting.
   - You will also complete a short task measuring your attention by clicking on the “Flanker” setting in the app.
   - Next, you will watch videos in the app that provide information on OCD and a self-help guide for treatment.
 
-2. **<ins>Weeks 2, 3 & 4</ins>**
+2. **Weeks 2, 3 & 4**
   - Once a day, you will receive a phone notification through the app prompting you to:
     1. Review instructions for conducting treatment activities.
     2. Practice treatment activities.
     3. Provide feedback on treatment activities.
   - Once a week, you will be prompted to complete online questionnaires about thoughts, feelings and behavior.
 
-3. **<ins>End of Week 4</ins>**
+3. **End of Week 4**
   - You will again complete questionnaires about thoughts, feelings and behavior through the smartphone app by clicking on the “EMA” setting.
   - You will again complete a short task measuring your attention by clicking on the “Flanker” setting in the app.
   - At this time, you will receive SONA credit for your participation.
