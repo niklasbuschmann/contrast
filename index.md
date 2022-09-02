@@ -1,6 +1,5 @@
 ---
 title: "Our Research"
-permalink: "/home/"
 layout: page
 ---
 
