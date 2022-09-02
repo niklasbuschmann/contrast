@@ -10,6 +10,7 @@ If you are interested in participating in our study, please complete the followi
 [PRE ASSESMENT LINK]
 
 *How to navigate this website:
+
 Before you begin, you must complete the required questionnaire linked above. Please follow the order of the pages (start page to end of study) in order to complete the activities in each one. Do not skip over pages or open all of them at once.*
 
 - - - -
