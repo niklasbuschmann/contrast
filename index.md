@@ -40,10 +40,10 @@ This is what your 4 weeks of participation will look like:
 ## Research Team
 - **Nader Amir, Ph.D.**
   - Director, Professor
-  - {url: "mailto:namir@sdsu.edu"}
+  - {title: namir@sdsu.edu, url: "mailto:namir@sdsu.edu"}
 - **Sadia Najmi, Ph.D.**
   - Research Psychologist
-  - {url: "mailto:sadia.najmi@cuta.sdsu.edu"}
+  - {title: sadia.najmi@cuta.sdsu.edu, url: "mailto:sadia.najmi@cuta.sdsu.edu"}
 - **Jennie Kuckertz, Ph.D.**
   - Research Psychologist
-  - {url: "mailto:jkuckertz@sdsu.edu"}
+  - {title: sadia.najmi@cuta.sdsu.edu, url: "mailto:jkuckertz@sdsu.edu"}
