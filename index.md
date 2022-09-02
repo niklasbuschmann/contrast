@@ -1,5 +1,7 @@
 ---
 title: "Our Research"
+permalink: /:title/
+permalink: /home/
 layout: page
 ---
 
