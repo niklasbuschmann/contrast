@@ -9,8 +9,7 @@ Welcome to the Center for Understanding and Treating Anxiety at San Diego State 
 If you are interested in participating in our study, please complete the following questionnaire, linked below: 
 [PRE ASSESMENT LINK]
 
-*How to navigate this website:*
-*Before you begin, you must complete the required questionnaire linked above. Please follow the order of the pages (start page to end of study) in order to complete the activities in each one. Do not skip over pages or open all of them at once.*
+*How to navigate this website:</br>Before you begin, you must complete the required questionnaire linked above. Please follow the order of the pages (start page to end of study) in order to complete the activities in each one. Do not skip over pages or open all of them at once.*
 
 - - - -
 
