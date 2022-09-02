@@ -9,9 +9,8 @@ Welcome to the Center for Understanding and Treating Anxiety at San Diego State 
 If you are interested in participating in our study, please complete the following questionnaire, linked below: 
 [PRE ASSESMENT LINK]
 
-*How to navigate this website:
-
-Before you begin, you must complete the required questionnaire linked above. Please follow the order of the pages (start page to end of study) in order to complete the activities in each one. Do not skip over pages or open all of them at once.*
+*How to navigate this website:*
+*Before you begin, you must complete the required questionnaire linked above. Please follow the order of the pages (start page to end of study) in order to complete the activities in each one. Do not skip over pages or open all of them at once.*
 
 - - - -
 
@@ -38,7 +37,7 @@ This is what your 4 weeks of participation will look like:
   - You will again complete a short task measuring your attention by clicking on the “Flanker” setting in the app.
   - At this time, you will receive SONA credit for your participation.
 
-<sub>Note about privacy: All your data will remain confidential and will not be used outside of our team and lab. Any personal information will be de-identified by using an identification number.</sub>
+<sub><ins>Note about privacy: All your data will remain confidential and will not be used outside of our team and lab. Any personal information will be de-identified by using an identification number.</ins></sub>
 
 - - - -
 
