@@ -43,7 +43,7 @@ This is what your 4 weeks of participation will look like:
   - [namir@sdsu.edu](mailto:namir@sdsu.edu)
 - **Sadia Najmi, Ph.D.**
   - Research Psychologist
-  - <ins>sadia.najmi@cuta.sdsu.edu</ins>
+  - [sadia.najmi@cuta.sdsu.edu](mailto:sadia.najmi@cuta.sdsu.edu)
 - **Jennie Kuckertz, Ph.D.**
   - Research Psychologist
-  - <ins>jkuckertz@sdsu.edu</ins>
+  - [jkuckertz@sdsu.edu](mailto:jkuckertz@sdsu.edu)
