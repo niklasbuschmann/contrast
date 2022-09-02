@@ -6,7 +6,7 @@ layout: page
 Welcome to the Center for Understanding and Treating Anxiety at San Diego State University. We are studying how programs on computer or mobile devices may help people with obsessive-compulsive symptoms with minimal assistance from a therapist. 
 If you are interested in participating in our study, please complete tis questionnaire: [PRE ASSESMENT LINK].
 
-*How to navigate this website:<br/>Before you begin, you must complete the required questionnaire linked above. Please follow the order of the pages (start page to end of study) in order to complete the activities in each one. Do not skip over pages or open all of them at once.*
+*<ins>How to navigate this website:</ins><br/>Before you begin, you must complete the required questionnaire linked above. Please follow the order of the pages (start page to end of study) in order to complete the activities in each one. Do not skip over pages or open all of them at once.*
 
 - - - -
 
