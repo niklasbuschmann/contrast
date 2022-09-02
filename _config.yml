@@ -16,12 +16,12 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "index.html", icon: home}
+  - {file: "README.md", icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: ""}
-  - {title: CUTA, icon: rss, url: ""}
+  - {title: Mail, icon: envelope, url: "sdsu.cuta@gmail.com"}
+  - {title: CUTA, icon: link, url: "https://cuta.sdsu.edu"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
