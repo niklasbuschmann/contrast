@@ -1,6 +1,6 @@
 ---
 title: "Symptoms of OCD"
-permalink: https://nader938.github.io/ocd/symptoms-of-ocd/
+permalink: ocd/symptoms-of-ocd/
 layout: page
 ---
 ## What to Read
