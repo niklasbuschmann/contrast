@@ -3,6 +3,7 @@ title: "Harm OCD"
 permalink: /themes/harm-ocd/
 layout: page
 ---
+- - - -
 ## What to Read
 ### What is Harm OCD?
 There are dozens of categories of different obsessions and compulsions that make up the disorder known as OCD, and while these cover a wide range of differing themes, they all share many characteristics in common. These would include **intrusive unpleasant thoughts, unceasing doubt, guilt fears of being insane, and crushing anxiety**. While all forms of OCD can be painful, paralyzing, repulsive, and debilitating one of the nastier and more startling is the type known as morbid obsessions. This is particularly true of those obsessions in this category that are **violent in nature and include thoughts of killing or injuring others or oneself, or of acting sexually in ways that are against society’s norms**. I include thoughts of acting out sexually in this category as they really represent a form of violence and have little to do with sex. 
