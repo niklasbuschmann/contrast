@@ -3,6 +3,7 @@ title: "Suicidal OCD"
 permalink: /themes/suicidal-ocd/
 layout: page
 ---
+- - - -
 ## What to Read
 ### Suicidal Thinking vs. Harm OCD Intrusive Thoughts
 Self-Harm OCD is often experienced as a vicious cycle. The first step in this cycle involves a disturbing, scary, intrusive thought or image (this is the “O” or “obsession” part of OCD) about suicide. This is often followed by an exhausting and lengthy process of attempting to figure out if you are actually suicidal (this is the “C” or “compulsion” part of OCD) by mentally reviewing questions such as:
