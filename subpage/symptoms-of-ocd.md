@@ -3,6 +3,7 @@ title: "Symptoms of OCD"
 permalink: /ocd/symptoms-of-ocd/
 layout: page
 ---
+- - - -
 ## What to Read
 ### What is OCD?
 **Obsessive compulsive disorder (OCD)** is a mental health disorder that affects people of all ages and walks of life, and occurs when a person gets caught in a cycle of <ins>obsessions and compulsions</ins>. Obsessions are unwanted, intrusive thoughts, images, or urges that trigger intensely distressing feelings. Compulsions are behaviors an individual engages in to attempt to get rid of the obsessions and/or decrease his or her distress.
