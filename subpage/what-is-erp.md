@@ -16,10 +16,12 @@ Think of your anxiety as an alarm system. If an alarm goes off, what does it mea
 OCD takes over your body’s alarm system, a system that should be there to protect you. But instead of only warning you of real danger, that alarm system begins to respond to any trigger (no matter how small) as an absolute, terrifying, catastrophic threat.
 
 When your anxiety “goes off” like an alarm system, it communicates information that you are in danger, rather than “pay attention, you might be in danger.”
-<br/>Unfortunately, with OCD, your brain tells you that you are in danger a lot, even in situations where you “know” that there is a very small likelihood that something bad might happen. This is one of the cruelest parts of this disorder.
+
+Unfortunately, with OCD, your brain tells you that you are in danger a lot, even in situations where you “know” that there is a very small likelihood that something bad might happen. This is one of the cruelest parts of this disorder.
 
 Now consider that your compulsive behaviors are your attempts to keep yourself safe when that alarm goes off. But, what does that mean you are telling your brain when you engage in these behaviors? You are reinforcing the brain’s idea that you must be in danger. A bird on the roof is the same as a real intruder breaking into your home.
-<br/>In other words, your compulsive behavior fuels that part of your brain that gives out these many unwarranted alarm signals. The bottom line is that in order to reduce your anxiety and your obsessions, you have to make a decision to stop the compulsive behaviors.
+
+In other words, your compulsive behavior fuels that part of your brain that gives out these many unwarranted alarm signals. The bottom line is that in order to reduce your anxiety and your obsessions, you have to make a decision to stop the compulsive behaviors.
 
 However, starting Exposure and Response Prevention therapy can be a difficult decision to make. It may feel like you are choosing to put yourself in danger. It is important to know that Exposure and Response Prevention changes your OCD and changes your brain. You begin to challenge and bring your alarm system (your anxiety) more in line with what is actually happening to you.
 
