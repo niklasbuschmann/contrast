@@ -1,6 +1,6 @@
 ---
 title: "Contamination OCD"
-permalink: /subtype/contamination-ocd/
+permalink: /themes/contamination-ocd/
 layout: page
 ---
 ## What to Read
