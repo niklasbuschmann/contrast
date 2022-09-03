@@ -32,4 +32,4 @@ layout: page
 - - - -
 
 ## What to Measure
-How do we treat [OCD Quiz]?
+- How do we treat [OCD Quiz]?
