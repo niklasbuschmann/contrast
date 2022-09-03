@@ -11,7 +11,7 @@ Explanation of OCD Cycle?
 - - - -
 
 ## What to Watch
-*Please watch the video below to better understand the OCD cycle.*
+<sup>*Please watch the video below to better understand the OCD cycle.*</sup>
 
 [VIDEO]
 
