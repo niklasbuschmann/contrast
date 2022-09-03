@@ -3,6 +3,7 @@ title: "Superstitious OCD"
 permalink: /themes/superstitious-ocd/
 layout: page
 ---
+- - - -
 ## What to Read
 Together with morbid obsessions, magical and superstitious thinking makes up one of the stranger and more misunderstood aspects of OCD. When my patients try to describe their symptoms, they preface their explanation with, “I know this sounds crazy, but….” The presence of magical thinking is probably the main reason why many with OCD have been misdiagnosed over the years as schizophrenic. Superstitious thinking makes strange and magical connections between things which logically don’t seem to connect in the real world, thus the apparent ‘craziness’. Some common examples would be the idea that thinking of an unlucky number can ruin your day, that clothing you wore to a funeral can lead to more unhappiness if you wear it again, or that thinking of the name of a disease will cause you or someone else to get that disease.
 
