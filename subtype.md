@@ -8,7 +8,8 @@ layout: page
 ## What to Read
 There are many OCD themes that individuals may struggle with. Just remember that each theme tends to fall under the same umbrella of uncertainty.
 Here is a list of some common themes of OCD:
-<br/><sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
+
+<sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
 
 | <ins>[Harm OCD](https://nader938.github.io/subtype/harm-ocd/)</ins> | [Checking] | [Perfectionism] | [Ritualized Eating] |
 | <ins>[Contamination OCD](https://nader938.github.io/subtype/contamination-ocd/)</ins> | [Symmetry OCD] | [Health Anxiety] | [Washing/Cleaning] |
