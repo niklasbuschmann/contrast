@@ -1,7 +1,7 @@
 ---
 title: "How Do I Treat My Specific OCD Concerns?"
 permalink: /subtype/
-layout: page
+layout: base
 ---
 <sup>***BEFORE YOU PROCEED: Make sure you have completed everything on [How Do We Treat OCD?](https://nader938.github.io/treatment).***</sup>
 
@@ -9,14 +9,15 @@ layout: page
 There are many OCD themes that individuals may struggle with. Just remember that each theme tends to fall under the same umbrella of uncertainty.
 Here is a list of some common themes of OCD:
 <sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
-1|1
-------------- | -------------
-[Harm OCD] | [Checking]
+
+|[Harm OCD] | [Checking]|
 
 <div class="begin-examples"></div>
 [Perfectionism]
 
+```
 [Ritualized Eating]
+```
 <div class="end-examples"></div>
 
 - [Contamination OCD]
