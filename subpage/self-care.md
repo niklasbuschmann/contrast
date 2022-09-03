@@ -3,6 +3,7 @@ title: "Self-Care During and After ERP"
 permalink: /treatment/self-care/
 layout: page
 ---
+- - - -
 ## What to Read
 Most mental health experts agree on the need for us to adopt good psychological hygiene. This consists of habits that give us balance and a sense of well-being in our day-to-day lives. It also enables us to get the most out of treatment and to maintain our treatment gains.
 1. **Cover our basic needs:**
