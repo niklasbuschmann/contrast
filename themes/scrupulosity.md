@@ -1,5 +1,5 @@
 ---
-title: ""Scrupulosity"
+title: "Scrupulosity"
 permalink: /themes/scrupulosity/
 layout: page
 ---
