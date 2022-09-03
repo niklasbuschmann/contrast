@@ -57,3 +57,9 @@ Examples of compulsive magical behaviors I have witnessed would include:
 [ERP Instructions]
 
 /assets/images/fear-anxiety-hierarchy.jpg
+
+- - - -
+
+## What to Measure
+
+- [Exposure Feedback Form]
