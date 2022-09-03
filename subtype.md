@@ -9,6 +9,7 @@ layout: page
 There are many OCD themes that individuals may struggle with. Just remember that each theme tends to fall under the same umbrella of uncertainty.
 Here is a list of some common themes of OCD:
 <sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
+1 | 1
 ------------- | -------------
 [Harm OCD] | [Checking]
 
