@@ -22,7 +22,7 @@ layout: page
 
 ## What to Do
 - Create your own exposure hierarchy using the form below
-/assets/images/hierarchy.jpg
+<br/>/assets/images/hierarchy.jpg
 - [Self-Care During and After an ERP]
 
 ## What to Measure
