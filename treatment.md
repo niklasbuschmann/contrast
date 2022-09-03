@@ -27,7 +27,7 @@ layout: page
 ## What to Do
 - Create your own exposure hierarchy using the form below
 <br/>/assets/images/hierarchy.jpg
-- [Self-Care During and After an ERP]
+- <ins>[Self-Care During and After an ERP](https://nader938.github.io/treatment/self-care/)</ins>
 
 - - - -
 
