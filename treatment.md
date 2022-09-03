@@ -1,6 +1,6 @@
 ---
 title: "How do we treat OCD?"
-permalink: /How to we treat OCD?/
+permalink: /treatment/
 layout: page
 ---
 <sub>***BEFORE YOU PROCEED: Make sure you have completed everything on [What is OCD?](https://nader938.github.io/What is OCD?).***</sub>
