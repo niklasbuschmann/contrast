@@ -33,7 +33,7 @@ And now we must give a brief apology. Perhaps you were lured into this article b
 <sup>*Create your ERP hierarchy following the example and instructions below.*</sup>
 
 - [ERP Instructions] 
-- Suicidal ERP Hierarchy]
+- [Suicidal ERP Hierarchy]
 
 - - - -
 
