@@ -17,10 +17,10 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", title: Home, icon: home}
-  - {file: "page1.md", title: What is OCD?, icon: 1}
-  - {file: "page2.md", title: How do we treat OCD?, icon: 2}
-  - {file: "page3.md", title: How do I treat my specfic OCD concerns?, icon: 3}
-  - {file: "page4.md", title: End of Study?, icon: 4}
+  - {file: "page1.md", title: What is OCD?}
+  - {file: "page2.md", title: How do we treat OCD?}
+  - {file: "page3.md", title: How do I treat my specfic OCD concerns?}
+  - {file: "page4.md", title: End of Study?}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:sdsu.cuta@gmail.com"}
