@@ -1,6 +1,6 @@
 ---
 title: "How Do I Treat My Specific OCD Concerns?"
-permalink: /subtype/
+permalink: /themes/
 layout: page
 ---
 <sup>***BEFORE YOU PROCEED: Make sure you have completed everything on <ins>[How Do We Treat OCD?](https://nader938.github.io/treatment)</ins>.***</sup>
@@ -11,8 +11,8 @@ Here is a list of some common themes of OCD:
 
 <sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
 
-| <ins>[Harm OCD](https://nader938.github.io/subtype/harm-ocd/)</ins> | [Checking] | [Perfectionism] | [Ritualized Eating] |
-| <ins>[Contamination OCD](https://nader938.github.io/subtype/contamination-ocd/)</ins> | [Symmetry OCD] | [Health Anxiety] | [Washing/Cleaning] |
+| <ins>[Harm OCD](https://nader938.github.io/themes/harm-ocd/)</ins> | [Checking] | [Perfectionism] | [Ritualized Eating] |
+| <ins>[Contamination OCD](https://nader938.github.io/themes/contamination-ocd/)</ins> | [Symmetry OCD] | [Health Anxiety] | [Washing/Cleaning] |
 | [Sexual Orientation OCD] | [Superstitious OCD] | [Ordering/Arranging] | [Magical Thinking OCD] |
 | [Pedophile OCD] | [Intrusive Violent Thoughts] | [Relationship OCD] | [Suicidal OCD] |
 | [Scrupulosity] | [Racial OCD] | [False Memory OCD] | [Existential OCD] |
