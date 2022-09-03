@@ -3,13 +3,14 @@ title: "How Do We Treat OCD?"
 permalink: /treatment/
 layout: page
 ---
-<sub>***BEFORE YOU PROCEED: Make sure you have completed everything on [What is OCD?](https://nader938.github.io/ocd).***</sub>
+<sup>***BEFORE YOU PROCEED: Make sure you have completed everything on [What is OCD?](https://nader938.github.io/ocd).***</sup>
 
 ## What to Read
 1. [What is ERP?]
 2. [Contamination OCD hierarchy example]
 
-## What to Watch <sub>(click on the underlined text to access videos)</sub>
+## What to Watch
+<sup>(click on the underlined text to access videos)</sup>
 - <ins>[What is ERP?](https://drive.google.com/file/d/1VTmS21W-boVxaUyAoNr0EL7MXNmZJYYv/view?usp=sharing)</ins>
 - <ins>[What is an exposure hierarchy?](https://drive.google.com/file/d/18gBz0wzQHCwIAsiW7B0Uck3qzrzwNiZm/view?usp=sharing)</ins>
 - <ins>[How to do an exposure?](https://drive.google.com/file/d/1xpb8gNW_1hRmlGI9ZFzmejJctB3iuCnk/view?usp=sharing)</ins>
@@ -25,5 +26,4 @@ layout: page
 - [Self-Care During and After an ERP]
 
 ## What to Measure
-How Do We Treat OCD Quiz?
-  - [OCD QUIZ]
+How do we treat [OCD Quiz]?
