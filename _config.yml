@@ -10,14 +10,17 @@ date_format: "%B %d, %Y"
 
 show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
+show_sidebar: true        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md", title: Home}
-  - {file: "OCD.md", title: OCD Study}
+  - {file: "index.md", title: Home, icon: home}
+  - {file: "page2.md", title: What is OCD?, icon: 1}
+  - {file: "page3.md", title: How do we treat OCD?, icon: 2}
+  - {file: "page4.md", title: How do I treat my specfic OCD concerns?, icon: 3}
+  - {file: "page5.md", title: End of Study?, icon: 4}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:sdsu.cuta@gmail.com"}
