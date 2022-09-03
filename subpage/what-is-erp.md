@@ -25,4 +25,4 @@ In other words, your compulsive behavior fuels that part of your brain that give
 
 However, starting Exposure and Response Prevention therapy can be a difficult decision to make. It may feel like you are choosing to put yourself in danger. It is important to know that Exposure and Response Prevention changes your OCD and changes your brain. You begin to challenge and bring your alarm system (your anxiety) more in line with what is actually happening to you.
 
-<sup>*Adapted from <ins>[International OCD Foundation](https://iocdf.org/about-ocd/ocd-treatment/erp/)</ins>*</sup>
+<sup>*Adapted from <ins>[International OCD Foundation](https://iocdf.org/about-ocd/ocd-treatment/erp/)</ins>.*</sup>
