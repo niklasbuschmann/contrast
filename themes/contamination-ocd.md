@@ -3,6 +3,7 @@ title: "Contamination OCD"
 permalink: /themes/contamination-ocd/
 layout: page
 ---
+- - - -
 ## What to Read
 ### What is Contamination OCD?
 On the surface, the contamination fears associated with OCD don’t seem to be a very complicated subject. After all, dirt, germs, washing — what could be simpler? Actually, when you take a closer look, contamination is quite a bit more complicated than that. First of all, this problem breaks down into two parts contamination obsessions and decontamination compulsions. Let us first examine the nature of obsessive contamination fears. 
