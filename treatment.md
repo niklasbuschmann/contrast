@@ -1,9 +1,9 @@
 ---
-title: "How do we treat OCD?"
+title: "How Do We Treat OCD?"
 permalink: /treatment/
 layout: page
 ---
-<sub>***BEFORE YOU PROCEED: Make sure you have completed everything on [What is OCD?](https://nader938.github.io/What is OCD?).***</sub>
+<sub>***BEFORE YOU PROCEED: Make sure you have completed everything on [What is OCD?](https://nader938.github.io/ocd).***</sub>
 
 ## What to Read
 1. [What is ERP?]
