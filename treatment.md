@@ -9,6 +9,8 @@ layout: page
 1. [What is ERP?]
 2. [Contamination OCD hierarchy example]
 
+- - - -
+
 ## What to Watch
 <sup>(click on the underlined text to access videos)</sup>
 - <ins>[What is ERP?](https://drive.google.com/file/d/1VTmS21W-boVxaUyAoNr0EL7MXNmZJYYv/view?usp=sharing)</ins>
@@ -20,10 +22,14 @@ layout: page
   3. ERP Demonstration 3 - Contamination OCD: <ins>[ERP Therapy Demonstration Video](https://youtu.be/wvodgCQ5F-0)</ins>
 - <ins>[Things to consider after your first exposure](https://drive.google.com/file/d/1RbeR43ieIbUx1Fid1KsHT6FIqyTBk2Ve/view?usp=sharing)</ins>
 
+- - - -
+
 ## What to Do
 - Create your own exposure hierarchy using the form below
 <br/>/assets/images/hierarchy.jpg
 - [Self-Care During and After an ERP]
+
+- - - -
 
 ## What to Measure
 How do we treat [OCD Quiz]?
