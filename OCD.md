@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /OCD/
+permalink: /OCD Study/
 ---
 
 {% if site.show_excerpts %}
