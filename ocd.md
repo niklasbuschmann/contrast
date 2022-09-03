@@ -3,7 +3,7 @@ title: "What is OCD?"
 permalink: /ocd/
 layout: page
 ---
-<sub>***BEFORE YOU PROCEED: Make sure you have completed everything on the [Home page](https://nader938.github.io).***</sub>
+<sup>***BEFORE YOU PROCEED: Make sure you have completed everything on the [Home page](https://nader938.github.io).***</sup>
 
 ## What to Read
 1. [Symptoms of OCD]
