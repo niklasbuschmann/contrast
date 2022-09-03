@@ -1,6 +1,6 @@
 ---
 title: "What is OCD?"
-permalink: /What is OCD?/
+permalink: /ocd/
 layout: page
 ---
 <sub>***BEFORE YOU PROCEED: Make sure you have completed everything on the [Home page](https://nader938.github.io).***</sub>
