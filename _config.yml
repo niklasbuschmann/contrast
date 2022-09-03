@@ -19,7 +19,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", title: Home}
   - {file: "ocd.md", title: OCD}
   - {file: "treatment.md", title: Treatment}
-  - {file: "subtype.md", title: Subtype}
+  - {file: "themes.md", title: Themes}
   - {file: "end.md", title: End}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
