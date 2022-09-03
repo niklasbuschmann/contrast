@@ -9,13 +9,8 @@ layout: page
 There are many OCD themes that individuals may struggle with. Just remember that each theme tends to fall under the same umbrella of uncertainty.
 Here is a list of some common themes of OCD:
 <sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
-<div class="begin-examples"></div>
-
-- [Harm OCD]
-
-```
-- [Checking]
-```
+------------- | -------------
+[Harm OCD] | [Checking]
 
 - [Perfectionism]
 
@@ -26,7 +21,7 @@ Here is a list of some common themes of OCD:
 - [Contamination OCD]
 
 ```
-- - [Symmetry OCD]
+- [Symmetry OCD]
 ```
 
 - [Health Anxiety]
