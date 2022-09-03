@@ -10,7 +10,7 @@ There are many OCD themes that individuals may struggle with. Just remember that
 Here is a list of some common themes of OCD:
 <br/><sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
 
-| [Harm OCD] | [Checking] | [Perfectionism] | [Ritualized Eating] |
+| <ins>[Harm OCD](https://nader938.github.io/subtype/harm-ocd/)</ins> | [Checking] | [Perfectionism] | [Ritualized Eating] |
 | [Contamination OCD] | [Symmetry OCD] | [Health Anxiety] | [Washing/Cleaning] |
 | [Sexual Orientation OCD] | [Superstitious OCD] | [Ordering/Arranging] | [Magical Thinking OCD] |
 | [Pedophile OCD] | [Intrusive Violent Thoughts] | [Relationship OCD] | [Suicidal OCD] |
