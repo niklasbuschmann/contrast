@@ -13,7 +13,7 @@ Here is a list of some common themes of OCD:
 
 | <ins>[Harm OCD](https://nader938.github.io/themes/harm-ocd/)</ins> | [Checking] | [Perfectionism] | [Ritualized Eating] |
 | <ins>[Contamination OCD](https://nader938.github.io/themes/contamination-ocd/)</ins> | [Symmetry OCD] | [Health Anxiety] | [Washing/Cleaning] |
-| [Sexual Orientation OCD] | [Superstitious OCD] | [Ordering/Arranging] | [Magical Thinking OCD] |
+| [Sexual Orientation OCD] | <ins>[Superstitious OCD](https://nader938.github.io/themes/superstitious-ocd/)</ins> | [Ordering/Arranging] | [Magical Thinking OCD] |
 | [Pedophile OCD] | [Intrusive Violent Thoughts] | [Relationship OCD] | [Suicidal OCD] |
 | [Scrupulosity] | [Racial OCD] | [False Memory OCD] | [Existential OCD] |
 | [Real Event OCD] | [Postpartum OCD] | [Just Right OCD] | [Lucky & Unlucky Numbers] |
