@@ -6,9 +6,9 @@ layout: page
 <sup>***BEFORE YOU PROCEED: Make sure you have completed everything on the [Home page](https://nader938.github.io).***</sup>
 
 ## What to Read
-1. [Symptoms of OCD](https://nader938.github.io/ocd/symptoms-of-ocd/)
-2. [Causes of OCD]
-3. [OCD Cycle]
+1. <ins>[Symptoms of OCD](https://nader938.github.io/ocd/symptoms-of-ocd/)</ins>
+2. <ins>[Causes of OCD](https://nader938.github.io/ocd/causes-of-ocd/)</ins>
+3. <ins>[OCD Cycle](https://nader938.github.io/ocd/ocd-cycle/)</ins>
 
 - - - -
 
