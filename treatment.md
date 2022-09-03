@@ -3,7 +3,7 @@ title: "How Do We Treat OCD?"
 permalink: /treatment/
 layout: page
 ---
-<sub>***BEFORE YOU PROCEED: Make sure you have completed everything on [What is OCD?](https://nader938.github.io/ocd).***</sub>
+<sup>***BEFORE YOU PROCEED: Make sure you have completed everything on [What is OCD?](https://nader938.github.io/ocd).***</sup>
 
 ## What to Read
 1. [What is ERP?]
