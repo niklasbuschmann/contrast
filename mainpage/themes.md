@@ -13,7 +13,7 @@ Here is a list of some common themes of OCD:
 <sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
 
 | <ins>[Harm OCD](https://nader938.github.io/themes/harm-ocd/)</ins> | [Checking] | <ins>[Perfectionism](https://nader938.github.io/themes/perfectionism/)</ins> | [Ritualized Eating] |
-| <ins>[Contamination OCD](https://nader938.github.io/themes/contamination-ocd/)</ins> | [Symmetry OCD] | [Health Anxiety] | [Washing/Cleaning] |
+| <ins>[Contamination OCD](https://nader938.github.io/themes/contamination-ocd/)</ins> | [Symmetry OCD] | <ins>[Health Anxiety](https://nader938.github.io/themes/health-anxiety/)</ins> | [Washing/Cleaning] |
 | [Sexual Orientation OCD] | <ins>[Superstitious OCD](https://nader938.github.io/themes/superstitious-ocd/)</ins> | [Ordering/Arranging] | [Magical Thinking OCD] |
 | [Pedophile OCD] | [Intrusive Violent Thoughts] | <ins>[Relationship OCD](https://nader938.github.io/themes/relationship-ocd/)</ins> | <ins>[Suicidal OCD](https://nader938.github.io/themes/suicidal-ocd/)</ins> |
 | <ins>[Scrupulosity](https://nader938.github.io/themes/scrupulosity/)</ins> | [Racial OCD] | <ins>[False Memory OCD](https://nader938.github.io/themes/false-memory-ocd/)</ins> | [Existential OCD] |
