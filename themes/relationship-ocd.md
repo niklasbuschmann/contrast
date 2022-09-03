@@ -3,6 +3,7 @@ title: "Relationship OCD"
 permalink: /themes/relationship-ocd/
 layout: page
 ---
+- - - -
 ## Relationship OCD (ROCD)
 It is common for people to have some doubts about the suitability of their partner or the relationship at some point during their romantic connection. In fact, experiencing changeable or opposing feelings towards a romantic partner is considered a natural part of a developing intimate relationship. Similarly, we all pay more attention to our partner’s real or imagined flaws as intimate relationships progress. In ROCD these common relationship doubts and concerns or worries about the partner’s perceived flaws become increasingly impairing, time-consuming, and distressing.
 
