@@ -1,6 +1,6 @@
 ---
 title: "Harm OCD"
-permalink: /subtype/harm-ocd/
+permalink: /themes/harm-ocd/
 layout: page
 ---
 ## What to Read
