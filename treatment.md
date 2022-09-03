@@ -12,7 +12,7 @@ layout: page
 - - - -
 
 ## What to Watch
-<sup>(click on the underlined text to access videos)</sup>
+<sup>*Click on the underlined text to access videos.*</sup>
 - <ins>[What is ERP?](https://drive.google.com/file/d/1VTmS21W-boVxaUyAoNr0EL7MXNmZJYYv/view?usp=sharing)</ins>
 - <ins>[What is an exposure hierarchy?](https://drive.google.com/file/d/18gBz0wzQHCwIAsiW7B0Uck3qzrzwNiZm/view?usp=sharing)</ins>
 - <ins>[How to do an exposure?](https://drive.google.com/file/d/1xpb8gNW_1hRmlGI9ZFzmejJctB3iuCnk/view?usp=sharing)</ins>
