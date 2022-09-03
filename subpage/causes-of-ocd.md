@@ -27,7 +27,7 @@ PANDAS (Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptoc
 - - - -
 
 ## What to Watch
-*Please watch the video below to learn more about the causes of OCD.*
+<sup>*Please watch the video below to learn more about the causes of OCD.*</sup>
 
 [VIDEO]
 
