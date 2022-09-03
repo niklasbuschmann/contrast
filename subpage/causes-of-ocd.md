@@ -16,7 +16,8 @@ Research suggests that OCD involves problems in communication between the front 
 
 ### Is OCD Inherited?
 Research shows that OCD does run in families, and that genes likely play a role in the development of the disorder. Genes appear to be only partly responsible for causing the disorder, though. No one really knows what other factors might be involved, perhaps an illness or even ordinary life stresses that may induce the activity of genes associated with the symptoms of OCD.
-<br/>Some experts think that OCD that begins in childhood may be different from the OCD that begins in adults. For example, a recent review of twin studies1 has shown that genes play a larger role when OCD starts in childhood (45-65%) compared to when it starts in adulthood (27-47%).
+
+Some experts think that OCD that begins in childhood may be different from the OCD that begins in adults. For example, a recent review of twin studies1 has shown that genes play a larger role when OCD starts in childhood (45-65%) compared to when it starts in adulthood (27-47%).
 
 ### What about PANDAS?
 PANDAS (Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal infections) is a type of OCD that occurs in childhood following the body’s reaction to infection. PANDAS looks very different from other forms of childhood OCD, the most obvious difference being that it happens very suddenly, with the child starting to have symptoms seemingly overnight, and has a very severe impact on the child’s life.
