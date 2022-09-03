@@ -11,7 +11,8 @@ While we still do not know the exact cause or causes of OCD, research suggests t
 <br/><sup>credit: Buckyball Design, Melissa Thomas Baum</sup>
 ### Is OCD a Brain Disorder?
 Research suggests that OCD involves problems in communication between the front part of the brain and deeper structures of the brain. These brain structures use a neurotransmitter (basically, a chemical messenger) called serotonin. Pictures of the brain at work also show that, in some people, the brain circuits involved in OCD become more normal with either medications that affect serotonin levels (serotonin reuptake inhibitors, or SRIs) or cognitive behavior therapy (CBT).
-<br/><sup>*Adapted from  [International OCD Foundation](https://iocdf.org/about-ocd/what-causes-ocd/).*</sup>
+
+<sup>*Adapted from [International OCD Foundation](https://iocdf.org/about-ocd/what-causes-ocd/).*</sup>
 
 ### Is OCD Inherited?
 Research shows that OCD does run in families, and that genes likely play a role in the development of the disorder. Genes appear to be only partly responsible for causing the disorder, though. No one really knows what other factors might be involved, perhaps an illness or even ordinary life stresses that may induce the activity of genes associated with the symptoms of OCD.
@@ -19,7 +20,8 @@ Research shows that OCD does run in families, and that genes likely play a role 
 
 ### What about PANDAS?
 PANDAS (Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal infections) is a type of OCD that occurs in childhood following the body’s reaction to infection. PANDAS looks very different from other forms of childhood OCD, the most obvious difference being that it happens very suddenly, with the child starting to have symptoms seemingly overnight, and has a very severe impact on the child’s life.
-<br/><sup>March J. & Benton C.(2007). *Talking Back to OCD* (pp.10-11). The Guilford Press.</sup>
+
+<sup>March J. & Benton C.(2007). *Talking Back to OCD* (pp.10-11). The Guilford Press.</sup>
 
 - - - -
 
