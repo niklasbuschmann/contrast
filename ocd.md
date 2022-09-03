@@ -3,7 +3,7 @@ title: "What is OCD?"
 permalink: /ocd/
 layout: page
 ---
-<sub>***BEFORE YOU PROCEED: Make sure you have completed everything on the [Home page](https://nader938.github.io).***</sub>
+<sup>***BEFORE YOU PROCEED: Make sure you have completed everything on the [Home page](https://nader938.github.io).***</sup>
 
 ## What to Read
 1. [Symptoms of OCD]
@@ -18,5 +18,4 @@ Try answering the following questions. You can reflect and write them down for y
   - What compulsions do I do?
 
 ## What to Measure
-What is OCD quiz?
-  - [OCD QUIZ]
+What is [OCD quiz]?
