@@ -3,7 +3,7 @@ title: "What is Exposure and Response Prevention (ERP)?"
 permalink: /treatment/what-is-erp/
 layout: page
 ---
-## What is Exposure and Response Prevention (ERP)?
+## What is ERP
 It is possible that you may have heard of **Cognitive Behavior Therapy (CBT)** before. CBT refers to a group of similar types of therapies used by mental health therapists for treating psychological disorders, with the most important type of CBT for OCD being **Exposure and Response Prevention (ERP)**.
 
 The **Exposure** in ERP refers to exposing yourself to the thoughts, images, objects and situations that make you anxious and/or start your obsessions. While the **Response Prevention** part of ERP, refers to making a choice not to do a compulsive behavior once the anxiety or obsessions have been “triggered.” 
