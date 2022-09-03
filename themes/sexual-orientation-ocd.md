@@ -8,7 +8,10 @@ layout: page
 OCD, as we know, is largely about experiencing severe and unrelenting doubt. It can cause you to doubt even the most basic things about yourself – even your sexual orientation.  In order to have doubts about one’s sexual identity, a sufferer need not ever have had a homo- or heterosexual experience, or any type of sexual experience at all.
 
 Some examples individuals may ask themselves:
-<br/>How do I know whether I prefer women or men? Maybe I really don’t know what I am. Maybe I’ll never know what I am. How does anyone tell what sex they really are? How will I ever be able to tell for certain? What will happen if I make the wrong choice and get trapped in a lifestyle that really isn’t for me?
+- How do I know whether I prefer women or men? Maybe I really don’t know what I am. Maybe I’ll never know what I am. 
+- How does anyone tell what sex they really are? 
+- How will I ever be able to tell for certain? 
+- What will happen if I make the wrong choice and get trapped in a lifestyle that really isn’t for me?
 
 Doubting something so basic about yourself can obviously be quite a torturous business. When I first see people for this problem, they are typically engaged in any number of compulsive activities which may occupy many hours of each day.
 
@@ -24,14 +27,26 @@ These can include:
 - Repeatedly questioning others, or seeking reassurance about their sexuality.
 
 Some typical cognitive errors made by OC sufferers include:
-<br/>I must always have certainty and control in life (intolerance of uncertainty). I must be in control of all my thoughts and emotions at all times. If I lose control of my thoughts, I must do something to regain that control. Thinking the thought means it is important, and it is important because I think about it. It is abnormal to have intrusive thoughts, and if I do have them it means I’m crazy, weird, etc. Having an intrusive thought and doing what it suggests are the same morally. Thinking about doing harm, and not preventing it, is just as bad as committing harm (also known as Thought-Action Fusion). Having intrusive thoughts means I am likely to act on them. I cannot take the risk that my thoughts will come true.
+- I must always have certainty and control in life (intolerance of uncertainty). 
+- I must be in control of all my thoughts and emotions at all times. If I lose control of my thoughts, I must do something to regain that control. 
+- Thinking the thought means it is important, and it is important because I think about it. 
+- It is abnormal to have intrusive thoughts, and if I do have them it means I’m crazy, weird, etc. 
+- Having an intrusive thought and doing what it suggests are the same morally. 
+- Thinking about doing harm, and not preventing it, is just as bad as committing harm (also known as Thought-Action Fusion). 
+- Having intrusive thoughts means I am likely to act on them. I cannot take the risk that my thoughts will come true.
 
 The compulsive activities sufferers perform in response to their ideas, of course, do nothing to settle the issue. Often the more checking and questioning that is done, the more doubtful the sufferer becomes. Even if they feel better for a few minutes as a result of a compulsion, the doubt quickly returns. I like to tell my patients that it is as if that information-gathering portion of their brain is coated with Teflon©. The answers just don’t stick.
 
 In addition to performing compulsions, one other way in which sufferers cope with the fears caused by the obsessions is through avoidance, and by this I mean directly avoiding everyday situations that get the thoughts going.
 
 This can involve:
-<br/>Avoiding standing close to, touching or brushing against members of the same sex (or opposite sex if the sufferer is gay). Not reading or looking at videos news reports books or articles having anything to do with gay people or other sexual subjects. Never saying the words “gay,” “homosexual,” (or “straight”) or any other related term. Trying to not look or act effeminately (if a man), or in a masculine way (if a woman), (or vice versa if the sufferer is gay). Not dressing in ways that would make one look effeminate (if a man), or masculine (if a woman), (again vice versa if the sufferer is gay). Not talking about sexual identity issues or subjects with others. Avoiding associating with anyone who may be gay or who seems to lean in that direction (if the sufferer is heterosexual).
+- Avoiding standing close to, touching or brushing against members of the same sex (or opposite sex if the sufferer is gay). 
+- Not reading or looking at videos news reports books or articles having anything to do with gay people or other sexual subjects. 
+- Never saying the words “gay,” “homosexual,” (or “straight”) or any other related term. 
+- Trying to not look or act effeminately (if a man), or in a masculine way (if a woman), (or vice versa if the sufferer is gay). 
+- Not dressing in ways that would make one look effeminate (if a man), or masculine (if a woman), (again vice versa if the sufferer is gay). 
+- Not talking about sexual identity issues or subjects with others. 
+- Avoiding associating with anyone who may be gay or who seems to lean in that direction (if the sufferer is heterosexual).
 
 People like to ask if there are any new developments in OCD treatments. Aside from a few new medications since the last article, treatment remains essentially the same. The formula of cognitive/behavioral therapy plus medication (in many cases), is still the way to go. The particular form of behavioral therapy shown to be the most effective is known as **Exposure and Response Prevention (ERP)**.
 
