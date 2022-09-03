@@ -3,6 +3,7 @@ title: "Perfectionism"
 permalink: /themes/perfectionism/
 layout: page
 ---
+- - - -
 ## What to Read
 ### What is Perfectionism?
 Perfectionism is a widespread problem for people struggling with OCD, as well as people who struggle with hoarding, panic disorder, social anxiety, post-traumatic stress disorder, eating disorders, body dysmorphic disorders, and generalised anxiety. Perfectionism is also strongly associated with depression, burnout, and chronic fatigue. As you can see, it is a process that cuts across many disorders; both causing and maintaining problems and interfering with the effectiveness of therapy. 
