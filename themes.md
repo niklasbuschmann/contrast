@@ -13,7 +13,7 @@ Here is a list of some common themes of OCD:
 <sup>*(click on the OCD themes that apply to you only to learn more about them)*</sup>
 
 | <ins>[Harm OCD](https://nader938.github.io/themes/harm-ocd/)</ins> | <ins>[Checking](https://nader938.github.io/themes/checking/)</ins> | <ins>[Perfectionism](https://nader938.github.io/themes/perfectionism/)</ins> | <ins>[Ritualized Eating](https://nader938.github.io/themes/ritualized-eating/)</ins> |
-| <ins>[Contamination OCD](https://nader938.github.io/themes/contamination-ocd/)</ins> | [Symmetry OCD] | <ins>[Health Anxiety](https://nader938.github.io/themes/health-anxiety/)</ins> | [Washing/Cleaning] |
+| <ins>[Contamination OCD](https://nader938.github.io/themes/contamination-ocd/)</ins> | <ins>[Symmetry OCD](https://nader938.github.io/themes/symmetry-ocd/)</ins> | <ins>[Health Anxiety](https://nader938.github.io/themes/health-anxiety/)</ins> | [Washing/Cleaning] |
 | <ins>[Sexual Orientation OCD](https://nader938.github.io/themes/sexual-orientation-ocd/)</ins> | <ins>[Superstitious OCD](https://nader938.github.io/themes/superstitious-ocd/)</ins> | <ins>[Ordering/Arranging](https://nader938.github.io/themes/ordering-arranging/)</ins> | [Magical Thinking OCD] |
 | <ins>[Pedophile OCD](https://nader938.github.io/themes/pedophile-ocd/)</ins> | [Intrusive Violent Thoughts] | <ins>[Relationship OCD](https://nader938.github.io/themes/relationship-ocd/)</ins> | <ins>[Suicidal OCD](https://nader938.github.io/themes/suicidal-ocd/)</ins> |
 | <ins>[Scrupulosity](https://nader938.github.io/themes/scrupulosity/)</ins> | [Racial OCD] | <ins>[False Memory OCD](https://nader938.github.io/themes/false-memory-ocd/)</ins> | [Existential OCD] |
