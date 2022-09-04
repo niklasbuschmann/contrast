@@ -17,7 +17,7 @@ layout: page
 - - - -
 
 ## What to Do
-<sup>*Create your ERP hierarchy following the example and instructions below.*</sup>
+<sup>*Create your own exposure hierarchy. Follow the link below to access instructions.*</sup>
 
 - [Blank Hierarchy Template]
 - [ERP Instructions]
