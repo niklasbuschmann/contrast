@@ -9,7 +9,7 @@ layout: page
 - - - -
 
 ## What to Watch
-<sup>*Please watch the videos below relating ordering OCD.*</sup>
+<sup>*Please watch the videos below relating Ordering/Arranging OCD.*</sup>
 
 - - - -
 
