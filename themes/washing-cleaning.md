@@ -1,5 +1,5 @@
 ---
-title: "Washing & Cleaning"
+title: "Washing/Cleaning"
 permalink: /themes/washing-cleaning/
 layout: page
 ---
@@ -10,7 +10,7 @@ layout: page
 - - - -
 
 ## What to Watch
-<sup>*Please watch the videos below relating Washing & Cleaning.*</sup>
+<sup>*Please watch the videos below relating Washing/Cleaning OCD.*</sup>
 
 [VIDEO]
 
