@@ -57,9 +57,9 @@ The best course of treatment for False Memory OCD, like all types of OCD, is **e
 <sup>*Create your ERP hierarchy following the example and instructions below.*</sup>
 
 - [False Memory Hierarchy Example]
-- [ERP Instructions]
+- <ins>[ERP Instructions](https://nader938.github.io/themes/erp-instructions/)</ins>
 
 - - - -
 
 ## What to Measure
-- [ERP Feedback Form]
+- <ins>[ERP Feedback Form](https://drive.google.com/file/d/1sV7AfEHtfEZfz-0nEUezAMLIThgSHe9u/view?usp=sharing)</ins>
