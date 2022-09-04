@@ -51,4 +51,4 @@ Treatment of “just right” symptoms: Cognitive-behavioral therapy (CBT), with
 - - - -
 
 ## What to Measure
-- <ins>[ERP Feedback Form]([https://drive.google.com/file/d/1sV7AfEHtfEZfz-0nEUezAMLIThgSHe9u/view?usp=sharing](https://drive.google.com/file/d/1sV7AfEHtfEZfz-0nEUezAMLIThgSHe9u/view?usp=sharing))</ins>
+- <ins>[ERP Feedback Form]([https://drive.google.com/file/d/1sV7AfEHtfEZfz-0nEUezAMLIThgSHe9u/view?usp=sharing)</ins>
