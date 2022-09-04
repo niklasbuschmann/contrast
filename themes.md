@@ -18,7 +18,7 @@ Here is a list of some common themes of OCD:
 | <ins>[Pedophile OCD](https://nader938.github.io/themes/pedophile-ocd/)</ins> | [Intrusive Violent Thoughts] | <ins>[Relationship OCD](https://nader938.github.io/themes/relationship-ocd/)</ins> | <ins>[Suicidal OCD](https://nader938.github.io/themes/suicidal-ocd/)</ins> |
 | <ins>[Scrupulosity](https://nader938.github.io/themes/scrupulosity/)</ins> | [Racial OCD] | <ins>[False Memory OCD](https://nader938.github.io/themes/false-memory-ocd/)</ins> | [Existential OCD] |
 | <ins>[Real Event OCD](https://nader938.github.io/themes/real-event-ocd/)</ins> | [Postpartum OCD] | <ins>[Just Right OCD](https://nader938.github.io/themes/just-right-ocd/)</ins> | [Lucky & Unlucky Numbers] |
-| [Sensorimotor OCD] | [Meta OCD] | [Losing Things] |
+| <ins>[Sensorimotor OCD](https://nader938.github.io/themes/sensorimotor-ocd/)</ins> | [Meta OCD] | [Losing Things] |
 
 - - - -
 
