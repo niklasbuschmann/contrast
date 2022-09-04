@@ -13,7 +13,7 @@ layout: page
 
 ### How Much Do “Just Right” Symptoms Interfere with Life?
 How much “just right” symptoms impact a person’s life can vary from person to person. The following are some common ways that “just right” OCD can cause problems:
-- <ins>Daily Life</ins>: Those with very specific triggers might find interference with daily life to be minimal. However, people with more severe “just right” OCD can become ‘stuck’ in every step of their day – from turning the alarm off in the morning (... ‘I didn’t turn it off right; I need to do it again…and again…and again’) to getting out of bed (…‘that felt ‘wrong’…I’ll have to do it another time’); walking out the door; picking up objects, etc., etc., etc.
+- <ins>Daily Life</ins>: Those with very specific triggers might find interference with daily life to be minimal. However, people with more severe “just right” OCD can become ‘stuck’ in every step of their day – from turning the alarm off in the morning (... ‘I didn’t turn it off right; I need to do it again…and again…and again’) to getting out of bed (…‘that felt ‘wrong’…I’ll have to do it another time’); walking out the door; picking up objects, etc.
 - <ins>Academic/Work Life</ins>: Again, those with more severe “just right” OCD may become stuck in many activities – for instance, writing messages (may need to reword – or rewrite, if individual letters seem ‘off’); organizing tasks (i.e., unable to begin, because required objects are not in quite the right place); etc. Productivity can be greatly affected – as can attention (e.g., if the individual is more focused on the sound quality of a speaker’s voice, or the rhythm of the words being spoken, than the content of a presentation).
 - <ins>Social Life</ins>: The compulsions needed for a sense of ‘completeness’ can take up a lot of time – leaving little for social interaction in more severe cases. As well, the oddity of one’s compulsions (e.g., picking up an object and putting it back down, over and over again) may make friendships difficult. Or, as with academic/work life, divided attention can greatly impact performance. 
 
@@ -29,7 +29,8 @@ Over 50% of those with OCD experience “just right” obsessions or compulsions
 - general inflexibility
 - reassurance-seeking (i.e., comparing notes with others, to determine whether their sense of something being ‘off’ is valid)
 
-Treatment of “just right” symptoms: Cognitive-behavioral therapy (CBT), with exposure and response prevention (ERP), is a first-line treatment for OCD.
+### Treatment of “Just Right” Symptoms
+Cognitive-behavioral therapy (CBT) with exposure and response prevention (ERP) is the first-line treatment for OCD.
 
 <sup>*Adapted from <ins>[Jeannette Reid, M.S., Eric Storch, Ph.D., and Adam Lewin, Ph.D., University of South Florida OCD Program](https://iocdf.org/wp-content/uploads/2014/10/Just-right-OCD-Fact-Sheet.pdf)</ins>.*</sup>
 
