@@ -20,7 +20,7 @@ layout: page
 <sup>*Create your ERP hierarchy following the example and instructions below.*</sup>
 
 - [Existential OCD Hierarchy Example]
-- [ERP Instructions]
+- <ins>[ERP Instructions](https://nader938.github.io/themes/erp-instructions/)</ins>
 
 - - - -
 
