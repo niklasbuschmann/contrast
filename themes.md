@@ -18,7 +18,7 @@ Here is a list of some common themes of OCD:
 | <ins>[Pedophile OCD](https://nader938.github.io/themes/pedophile-ocd/)</ins> | <ins>[Intrusive Violent Thoughts](https://nader938.github.io/themes/intrusive-violent-thoughts/)</ins> | <ins>[Relationship OCD](https://nader938.github.io/themes/relationship-ocd/)</ins> | <ins>[Suicidal OCD](https://nader938.github.io/themes/suicidal-ocd/)</ins> |
 | <ins>[Scrupulosity](https://nader938.github.io/themes/scrupulosity/)</ins> | <ins>[Racial OCD](https://nader938.github.io/themes/racial-ocd/)</ins> | <ins>[False Memory OCD](https://nader938.github.io/themes/false-memory-ocd/)</ins> | <ins>[Existential OCD](https://nader938.github.io/themes/existential-ocd/)</ins> |
 | <ins>[Real Event OCD](https://nader938.github.io/themes/real-event-ocd/)</ins> | <ins>[Postpartum OCD](https://nader938.github.io/themes/postpartum-ocd/)</ins> | <ins>[Just Right OCD](https://nader938.github.io/themes/just-right-ocd/)</ins> | <ins>[Lucky & Unlucky Numbers](https://nader938.github.io/themes/lucky-unlucky-numbers/)</ins> |
-| <ins>[Sensorimotor OCD](https://nader938.github.io/themes/sensorimotor-ocd/)</ins> | [Meta OCD] | <ins>[Losing Things](https://nader938.github.io/themes/losing-things/)</ins> |
+| <ins>[Sensorimotor OCD](https://nader938.github.io/themes/sensorimotor-ocd/)</ins> | <ins>[Meta OCD](https://nader938.github.io/themes/meta-ocd/)</ins> | <ins>[Losing Things](https://nader938.github.io/themes/losing-things/)</ins> |
 
 - - - -
 
