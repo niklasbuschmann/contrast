@@ -20,7 +20,7 @@ layout: page
 <sup>*Create your own exposure hierarchy. Follow the link below to access instructions.*</sup>
 
 - [Blank Hierarchy Template]
-- [ERP Instructions]
+- <ins>[ERP Instructions](https://nader938.github.io/themes/erp-instructions/)</ins>
 
 - - - -
 
