@@ -82,7 +82,7 @@ Resistance might feel better in the immediate but will absolutely exacerbate suf
 
 ## What to Do
 For the exposure exercise, you will approach a feared situation from your exposure hierarchy. During the exposure, you are to:
-1. acknowledge your fear 
-2. commit to refraining from any compulsions/rituals that you typically do to alleviate that fear
+1. Acknowledge your fear.
+2. Commit to refraining from any compulsions/rituals that you typically do to alleviate that fear.
 
 All the while, your goal is to accept the discomfort of not having 100% certainty that your fear won't come true. Acknowledge that you cannot know how long intrusive thoughts, fears, and uncomfortable physical sensations of anxiety will last.
