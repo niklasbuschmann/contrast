@@ -56,7 +56,7 @@ The goal of these challenging exposure exercises is to let unwanted thoughts be 
 
 - - - -
 
-## What tp Do
+## What to Do
 <sup>*Create your ERP hierarchy following the example and instructions below.*</sup>
 
 - [Pedophile OCD Hierarchy example]
