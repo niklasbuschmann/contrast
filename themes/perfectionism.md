@@ -68,9 +68,9 @@ We don’t need to think of our perfectionism as something fixed in our personal
 <sup>*Create your ERP hierarchy following the example and instructions below.*</sup>
 
 - [Perfectionism Hierarchy Example]
-- [ERP Instructions]
+- <ins>[ERP Instructions](https://nader938.github.io/themes/erp-instructions/)</ins>
 
 - - - -
 
 ## What to Measure
-- [ERP Feedback Form]
+- <ins>[ERP Feedback Form](https://drive.google.com/file/d/1sV7AfEHtfEZfz-0nEUezAMLIThgSHe9u/view?usp=sharing)</ins>
