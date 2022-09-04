@@ -32,11 +32,11 @@ It is important for sufferers to understand that the thoughts are just **thought
 ## What to Do
 <sup>*Create your ERP hierarchy following the example and instructions below.*</sup>
 
-[ERP Instructions]
+- <ins>[ERP Instructions](https://nader938.github.io/themes/erp-instructions/)</ins>
 
 /assets/images/fear-anxiety-hierarchy.jpg
 
 - - - -
 
 ## What to Measure
-- [ERP Feedback Form]
+- <ins>[ERP Feedback Form](https://drive.google.com/file/d/1sV7AfEHtfEZfz-0nEUezAMLIThgSHe9u/view?usp=sharing)</ins>
