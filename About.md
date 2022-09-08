@@ -1,6 +1,6 @@
 ---
-title: "Sobre"
-permalink: "/sobre/"
+title: "About"
+permalink: "/About/"
 layout: page
 ---
 
