@@ -19,9 +19,127 @@ Em 2001, George Akerlof, no discurso de recebimento do Prêmio Nobel, afirmou qu
 
 ### Construindo o Banco de Dados
 
+Utilize os seguintes pacotes:
 ```r 
 # Libraries
 library(GetBCBData)
 library(tidyverse)
 ```
+
+Para estimar a Curva de Phillips, precisamos das séries históricas da taxa de inflação e da taxa de desemprego. O seguinte código importa e edita estas séries
+```r
+INF <- gbcbd_get_series(id = c(433), 
+                        first.date= '2012-03-01', 
+                        last.date = '2022-06-01',  
+                        format.data = "long", be.quiet = FALSE)[ ,1:2] %>%
+    rename( . , 
+            mes = ref.date, 
+            inf = value)
+
+DES <- gbcbd_get_series(id = c(24369), 
+                        first.date= '2012-03-01', 
+                        last.date = '2022-06-01',  
+                        format.data = "long", be.quiet = FALSE)[ ,1:2] %>%
+    rename( . , 
+            mes = ref.date, 
+            des = value)
+```
+Em seguida, organize o banco de dados
+```r
+Phillips <- full_join(INF, DES, 
+                      by = "mes") %>%
+    transform( . , 
+               inf = inf/100, 
+               des = des/100)
+```
+
+É sempre interessante observar os dados diretamente
+```r 
+head(Phillips)
+tail(Phillips)
+```
+
+
+
+
+
+### Visualização Gráfica
+
+Uma ferramenta importante na análise de dados (e em economia, particularmente) é a visualização gráfica. O gráfico de uma série histórica, por exemplo, pode oferecer bons insights para análise econômica.
+
+Portanto, é sempre conveniente (e recomendado) que se apresente ilustrações gráficas adequadas.
+```r 
+ggplot(data = Phillips, 
+       aes(x = mes, y = inf)) +
+    geom_line( color = "deepskyblue4", size = 1 ) +
+    theme_classic() +
+    scale_y_continuous(breaks = seq(-0.0040, 0.0170, by = .003), limits = c(-0.004, 0.0170)) +
+    xlab("Período") + ylab("Taxa de Inflação") +
+    theme(axis.title.x = element_text(colour = "grey20"),
+          axis.title.y = element_text(colour = "grey20")) +
+    theme( text = element_text( size = 15), 
+           axis.title.x = element_text(margin = margin(t = 2, r = 2, b = 2, l = 5))) +
+    theme(legend.position = "none", legend.title = element_blank())
+
+ggplot(data = Phillips, 
+       aes(x = mes, y = des)) +
+    geom_line( color = "darkred", size = 1 ) +
+    theme_classic() +
+    scale_y_continuous(breaks = seq(0.06, 0.15, by = 0.02), limits = c(0.06, 0.15)) +
+    xlab("Período") + ylab("Taxa de Desemprego") +
+    theme(axis.title.x = element_text(colour = "grey20"),
+          axis.title.y = element_text(colour = "grey20")) +
+    theme( text = element_text( size = 15), 
+           axis.title.x = element_text(margin = margin(t = 2, r = 2, b = 2, l = 5))) +
+    theme(legend.position = "none", legend.title = element_blank())
+
+```
+
+
+### Estimando a Curva de Phillips
+
+Finalmente, o exercício empírico de estimar a relação entre inflação e desemprego. A rigor, a Curva de Phillips é dada pela seguinte especificação
+$$\pi_{t} - \pi_{t-1} = \pi_{t}^{e} + (\mu + z) - \alpha u_{t}$$
+em que $\pi_{t}$, $\pi_{t}^{e}$ e $u_{t}$ denotam inflação, inflação esperada, e taxa de desemprego no período $t$, respectivamente. Os termos $\mu$ e $z$ referem-se a parâmetros constantes da curva de oferta agregada.
+
+Por simplificação, neste exercício, assuma que a expectativa de inflação é nula, ou seja, $\pi_{t}^{e} = 0$. Então, temos 
+$$\pi_{t} - \pi_{t-1} = (\mu + z) - \alpha u_{t}$$
+a relação negativa entre inflação e desemprego encontrada por Phillips. Considere esta versão simples. 
+
+Especificamente, vamos estimar uma relação linear entre inflação e desemprego, em que a inflação é a variável dependente. O modelo empírico é dado por
+$$ \text{inf}_{t} = \beta_{0} + \beta_{1} \times \text{des}_{t} + \varepsilon_{t}$$
+```{r echo = T, message = FALSE, warning = FALSE, paged.print = FALSE}
+phillips.curve <- lm(inf ~ des, data = Phillips)
+
+summary(phillips.curve)
+```
+
+
+Com base nos resultados estimados, temos que
+$$ \text{inf}_{t} = 0.7467 - 0.0223 \times \text{des}_{t}$$
+Ainda, como o objetivo é analise a relação entre as duas variáveis, é interessante visualizar a reta de regressão. 
+
+```{r echo = T, message = FALSE, warning = FALSE, paged.print = FALSE}
+ggplot(data = Phillips, 
+       aes(x = des, y = inf)) +
+    geom_point( color = "darkslategray", shape = 16, size = 2) +
+    theme_classic() +
+    geom_smooth(method = 'lm',formula = y ~ x, color = 'black') +
+    scale_y_continuous(breaks = seq(-0.0040, 0.0170, by = .003), limits = c(-0.004, 0.0170)) +
+    scale_x_continuous(breaks = seq(0.06, 0.15, by = 0.02), limits = c(0.06, 0.15)) +
+    xlab("Desemprego") + ylab("Inflação") +
+    theme(axis.title.x = element_text(colour = "grey20"),
+          axis.title.y = element_text(colour = "grey20")) +
+    theme( text = element_text( size = 15), 
+           axis.title.x = element_text(margin = margin(t = 2, r = 2, b = 2, l = 5))) +
+    theme(legend.position = "none", legend.title = element_blank())
+
+```
+
+
+### Importante
+
+Este é um exercício simples, com uma especificação para a Curva de Phillips bastante simplificada. Há muita coisa interessante acerca desta relação que requer a atenção. Divirtam-se. 
+
+
 
