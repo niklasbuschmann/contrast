@@ -1,5 +1,6 @@
 ---
 title: "Curva de Phillips"
+mathjax: true
 layout: post
 ---
 
