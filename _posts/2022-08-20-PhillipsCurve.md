@@ -100,15 +100,23 @@ ggplot(data = Phillips,
 ### Estimando a Curva de Phillips
 
 Finalmente, o exercício empírico de estimar a relação entre inflação e desemprego. A rigor, a Curva de Phillips é dada pela seguinte especificação
-$$\pi_{t} - \pi_{t-1} = \pi_{t}^{e} + (\mu + z) - \alpha u_{t}$$
-em que $\pi_{t}$, $\pi_{t}^{e}$ e $u_{t}$ denotam inflação, inflação esperada, e taxa de desemprego no período $t$, respectivamente. Os termos $\mu$ e $z$ referem-se a parâmetros constantes da curva de oferta agregada.
 
-Por simplificação, neste exercício, assuma que a expectativa de inflação é nula, ou seja, $\pi_{t}^{e} = 0$. Então, temos 
+$$ \pi_{t} - \pi_{t-1} = \pi_{t}^{e} + (\mu + z) - \alpha u_{t} $$
+
+em que $$\pi_{t}$, $\pi_{t}^{e}$$ e $$u_{t}$$ denotam inflação, inflação esperada, e taxa de desemprego no período $$t$$, respectivamente. Os termos $$\mu$$ e $$z$$ referem-se a parâmetros constantes da curva de oferta agregada.
+
+Por simplificação, neste exercício, assuma que a expectativa de inflação é nula, ou seja, $$\pi_{t}^{e} = 0$$. Então, temos
+
 $$\pi_{t} - \pi_{t-1} = (\mu + z) - \alpha u_{t}$$
+
 a relação negativa entre inflação e desemprego encontrada por Phillips. Considere esta versão simples. 
 
 Especificamente, vamos estimar uma relação linear entre inflação e desemprego, em que a inflação é a variável dependente. O modelo empírico é dado por
-$$ \text{inf}_{t} = \beta_{0} + \beta_{1} \times \text{des}_{t} + \varepsilon_{t}$$
+
+$$ \text{inf}_{t} = \beta_{0} + \beta_{1} \times \text{des}_{t} + \varepsilon_{t} $$
+
+
+
 ```{r echo = T, message = FALSE, warning = FALSE, paged.print = FALSE}
 phillips.curve <- lm(inf ~ des, data = Phillips)
 
