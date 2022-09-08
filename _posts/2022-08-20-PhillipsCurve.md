@@ -2,12 +2,7 @@
 title: "Curva de Phillips"
 output:
   html_document: default
-  pdf_document: default
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 
 
