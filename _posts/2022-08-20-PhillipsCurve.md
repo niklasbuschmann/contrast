@@ -19,39 +19,9 @@ Em 2001, George Akerlof, no discurso de recebimento do Prêmio Nobel, afirmou qu
 
 ### Construindo o Banco de Dados
 
-```{r echo = T, message = FALSE, warning = FALSE, paged.print = FALSE}
+```r 
 # Libraries
 library(GetBCBData)
 library(tidyverse)
 ```
-
-Em primeiro lugar, é necessário construir o banco de dados. Note que precisamos das séries históricas da taxa de inflação e da taxa de desemprego.
-```{r echo = T, message = FALSE, warning = FALSE, paged.print = FALSE}
-
-INF <- gbcbd_get_series(id = c(433), 
-                        first.date= '2012-03-01', 
-                        last.date = '2022-06-01',  
-                        format.data = "long", be.quiet = FALSE)[ ,1:2] %>%
-    rename( . , 
-            mes = ref.date, 
-            inf = value)
-
-DES <- gbcbd_get_series(id = c(24369), 
-                        first.date= '2012-03-01', 
-                        last.date = '2022-06-01',  
-                        format.data = "long", be.quiet = FALSE)[ ,1:2] %>%
-    rename( . , 
-            mes = ref.date, 
-            des = value)
-
-
-## Banco de Dados
-Phillips <- full_join(INF, DES, 
-                      by = "mes") %>%
-    transform( . , 
-               inf = inf/100, 
-               des = des/100)
-```
-
-
 
