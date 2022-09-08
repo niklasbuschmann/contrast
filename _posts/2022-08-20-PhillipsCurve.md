@@ -1,6 +1,6 @@
 ---
 title: "Curva de Phillips"
-output:
+output: 
   html_document: default
 ---
 
