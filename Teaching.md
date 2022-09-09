@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: "Teaching"
 permalink: "/papers/"
 layout: page
 ---
