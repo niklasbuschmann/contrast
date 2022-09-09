@@ -27,6 +27,5 @@ layout: page
       </a>
      <li>
   {% endfor %}
-<ul>
 
 ### Economia Aplicada II
