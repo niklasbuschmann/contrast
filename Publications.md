@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: "Research"
 permalink: "/papers/"
 layout: page
 ---
@@ -15,3 +15,9 @@ Uma Investigação de Autorregressão Quantílica. Estudos Econômicos, 49(2), 3
 
 
 ### Working Papers
+
+
+
+
+
+### Empirical Notes
