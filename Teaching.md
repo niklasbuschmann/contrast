@@ -19,11 +19,12 @@ layout: page
 
 ### Teoria Macroeconômica III
 
-{% for post in site.categories[Micro II] %}
-    <a href="{{ post.url | absolute_url }}">
-      {{ post.title }}
-    </a>
-{% endfor %}
-
+<ul>
+  {% for post in site.categories[Micro II] %}
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+  {% endfor %}
+<ul>
 
 ### Economia Aplicada II
