@@ -18,7 +18,7 @@ layout: page
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ Test }}</a>
+      <a href="{{ post.url }}">{{ Test.md }}</a>
     </li>
   {% endfor %}
 </ul>
