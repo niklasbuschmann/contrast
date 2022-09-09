@@ -22,7 +22,7 @@ layout: page
 <ul>
   {% for post in site.categories[micro] %}
     <li>
-      <a href="{{ post.url | {baseurl}/category/micro.html }}">
+      <a href="{{ {baseurl}/category/micro.html }}">
         {{ post.title }} </a>
      <li>
   {% endfor %}
