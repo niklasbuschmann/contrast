@@ -1,6 +1,6 @@
 ---
 title: "Teaching"
-permalink: "/papers/"
+permalink: "/classes/"
 layout: page
 ---
 
