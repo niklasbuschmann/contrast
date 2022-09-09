@@ -20,7 +20,7 @@ layout: page
 ### Teoria Macroeconômica III
 
 <ul>
-  {% for post in site.categories[Micro II] %}
+  {% for post in site.categories[Micro] %}
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }}
       </a>
