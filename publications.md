@@ -5,6 +5,7 @@ title:"Publications"
  
  
 ## 2022:
+
 __*Inproceedings (3):*__
 1. <p style='text-align: justify;'> M. Issa, R. Nassif, E. Rizk, and A. H. Sayed, "Decentralized semi-supervised learning over multitask graphs," <i>Proc. Asilomar Conference on Signals, Systems, and Computers</i>, Pacific Grove, CA, Oct. 2022. </p>
 2. <p style='text-align: justify;'> R. Nassif, S. Vlaski, M. Antonini, M. Carpentiero, V. Matta, and A. H. Sayed, "Finite bit quantization for decentralized learning under subspace constraints,"  <i>Proc. European Signal Processing Conference (EUSIPCO)</i>, Belgrade, Sep. 2022.</p>
