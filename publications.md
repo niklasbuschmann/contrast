@@ -4,7 +4,7 @@ title:"Publications"
 ---
 
 
-<h1> Articles (): </h1>
+<h1> Articles (11): </h1>
 
 1. <p style='text-align: justify;'> F. Hua, R. Nassif, C. Richard, H. Wang, and A. H. Sayed, "Diffusion LMS with Communication Delays: Stability and Performance Analysis," <i>IEEE Signal Processing Letters</i>, vol. 27, pp. 730-734, Apr. 2020. <a href="https://arxiv.org/pdf/2004.08881.pdf">[arXiv]</a></p>
 2. <p style='text-align: justify;'> R. Nassif, S. Vlaski, C. Richard, and A. H. Sayed, "Learning over Multitask Graphs-Part I: Stability Analysis,"  <i>IEEE Open Journal of Signal Processing</i>, vol. 1, pp. 28-45, Apr. 2020.<a href="https://arxiv.org/abs/1805.08535">[arXiv]</a></p>
@@ -19,17 +19,13 @@ title:"Publications"
 11. <p style='text-align: justify;'> R. Nassif, C. Richard, A. Ferrari, and A. H. Sayed, "Multitask diffusion adaptation over asynchronous networks," <i>IEEE Transactions on Signal Processing</i>, vol. 64, no. 11, pp. 2835-2850, Jun. 2016.<a href="https://arxiv.org/pdf/1412.1798.pdf">[arXiv]</a> </p>
 
  
-<h1> 2022:</h1>
+<h1> Inproceedings (30): </h1>
 
-__*Inproceedings (3):*__
 1. <p style='text-align: justify;'> M. Issa, R. Nassif, E. Rizk, and A. H. Sayed, "Decentralized semi-supervised learning over multitask graphs," <i>Proc. Asilomar Conference on Signals, Systems, and Computers</i>, Pacific Grove, CA, Oct. 2022. </p>
 2. <p style='text-align: justify;'> R. Nassif, S. Vlaski, M. Antonini, M. Carpentiero, V. Matta, and A. H. Sayed, "Finite bit quantization for decentralized learning under subspace constraints,"  <i>Proc. European Signal Processing Conference (EUSIPCO)</i>, Belgrade, Sep. 2022.</p>
 3. <p style='text-align: justify;'> R. Nassif, V. Bordignon, S. Vlaski, and A. H.  Sayed, "Decentralized learning in the presence of low-rank noise," <i>Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, Singapore, May 2022. <a href="https://arxiv.org/abs/2203.09810">[arXiv]</a></p>
+4. <p style='text-align: justify;'> R. Nassif, S. Vlaski, C. Richard, and A. H. Sayed, "A Regularization Framework for Learning over Multitask Graphs," <i>Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, May 2020. <a href="https://ieeexplore.ieee.org/ielaam/97/8584151/8586885-aam.pdf">[pdf]</a> </p>
+5. <p style='text-align: justify;'> R. Nassif, S. Vlaski, and A. H. Sayed, "Distributed Learning over Networks under Subspace Constraints," <i>Proc. Asilomar Conference on Signals, Systems, and Computers,</i>, Pacific Grove, CA, Nov. 2019. <a href="https://www.researchgate.net/publication/340303664_Distributed_Learning_over_Networks_under_Subspace_Constraints">[pdf]</a> </p>
+6. 
 
-<h1> 2020:</h1>
 
-
-__*Inproceedings (1):*__
-1. <p style='text-align: justify;'> R. Nassif, S. Vlaski, C. Richard, and A. H. Sayed, "A Regularization Framework for Learning over Multitask Graphs," <i>Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, May 2020. </p>
-
-<h1> 2019:</h1>
