@@ -20,10 +20,10 @@ __*Duration:*__ 42 months
 __*Future opportunities*:__ To complete the project, the following research positions will be available: 
   
 * PhD position (starting date between April 1, 2023 and September 1, 2023, duration: 3 years, fully funded)
-* Postdoc position (duration 1 to 2 years)
 * Many internship positions for master students will also be available
+* Postdoc position (duration 1 to 2 years)
 
-If you have a strong analytical background, you are interested in topics related to machine learning, signal processing, stochastic optimization, decentralized processing, and data sciences, and you are keen to join our group at the I3S Laboratory in Nice, please contact me! 
+If you have a strong analytical background, you are interested in topics related to machine learning, signal processing, stochastic optimization, decentralized processing, and data sciences, and you are keen to join our group at the I3S Laboratory in Nice, please contact me by sending me your resumes with copies of your academic transcripts.
 
 To see what we are doing, you can check out the list of publications on my website.  
 
