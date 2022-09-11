@@ -14,3 +14,6 @@
     {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
   </footer>
 {% endif %}
+
+paginate:    4
+paginate_path: "page:num"
