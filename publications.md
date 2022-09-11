@@ -4,7 +4,7 @@ title:"Publications"
 ---
  
  
-## 2022:
+<h1> 2022:</h1>
 
 __*Inproceedings (3):*__
 1. <p style='text-align: justify;'> M. Issa, R. Nassif, E. Rizk, and A. H. Sayed, "Decentralized semi-supervised learning over multitask graphs," <i>Proc. Asilomar Conference on Signals, Systems, and Computers</i>, Pacific Grove, CA, Oct. 2022. </p>
