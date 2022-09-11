@@ -17,3 +17,8 @@
 
 paginate:    4
 paginate_path: "page:num"
+
+{% for post in paginator.posts %} 
+{{ post.title }}
+{{ post.content | strip_html | truncatewords:40 }}
+{% endfor %}
