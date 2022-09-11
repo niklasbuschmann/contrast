@@ -19,7 +19,7 @@ title:"Publications"
 11. <p style='text-align: justify;'> R. Nassif, C. Richard, A. Ferrari, and A. H. Sayed, "Multitask diffusion adaptation over asynchronous networks," <i>IEEE Transactions on Signal Processing</i>, vol. 64, no. 11, pp. 2835-2850, Jun. 2016.<a href="https://arxiv.org/pdf/1412.1798.pdf">[arXiv]</a> </p>
 
  
-<h1> Inproceedings (30): </h1>
+<h1> Inproceedings (20): </h1>
 
 1. <p style='text-align: justify;'> M. Issa, R. Nassif, E. Rizk, and A. H. Sayed, "Decentralized semi-supervised learning over multitask graphs," <i>Proc. Asilomar Conference on Signals, Systems, and Computers</i>, Pacific Grove, CA, Oct. 2022. </p>
 2. <p style='text-align: justify;'> R. Nassif, S. Vlaski, M. Antonini, M. Carpentiero, V. Matta, and A. H. Sayed, "Finite bit quantization for decentralized learning under subspace constraints,"  <i>Proc. European Signal Processing Conference (EUSIPCO)</i>, Belgrade, Sep. 2022.</p>
@@ -29,6 +29,9 @@ title:"Publications"
 6. <p style='text-align: justify;'> M. Moscu, R. Nassif, F. Hua, and C. Richard, "Apprentissage distribué de la topologie d'un graphe à partir de signaux temporels sur graphe," <i>Actes du 27e Colloque GRETSI sur le Traitement du Signal et des Images</i>, Lille, France, Aug. 2019. <a href="https://hal.archives-ouvertes.fr/hal-03634482/document">[pdf]</a> </p>
 7. <p style='text-align: justify;'> M. Moscu, R. Nassif, F. Hua, and C. Richard, "Learning Causal Networks Topology from Streaming Graph Signals," <i>Proc. IEEE 27th European Signal Processing Conference (EUSIPCO)</i>, Coruña, Spain, 2019. <a href="https://hal.archives-ouvertes.fr/hal-03634139/document">[pdf]</a> </p>
 8. <p style='text-align: justify;'> R. Nassif, S. Vlaski, and A. H. Sayed, "Distributed inference over networks under subspace constraints," <i>Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, Brighton, UK, May 2019. <a href="https://www.researchgate.net/publication/332791324_Distributed_Inference_over_Networks_under_Subspace_Constraints">[pdf]</a> </p>
-9. 
+9. <p style='text-align: justify;'> F. Hua, R. Nassif, C. Richard, H. Wang, and A. H. Sayed, "Decentralized clustering for node-variant graph filtering with graph diffusion LMS," <i>Proc. Asilomar Conference on Signals, Systems, and Computers</i>, Pacific Grove, CA, Oct. 2018. <a href="https://hal.archives-ouvertes.fr/hal-03634022/document">[pdf]</a> </p>
+10. <p style='text-align: justify;'> F. Hua, R. Nassif, C. Richard, H. Wang, and A. H. Sayed, "A Preconditioned Graph Diffusion LMS for Adaptive Graph Signal Processing," <i>Proc. IEEE 26th European Signal Processing Conference (EUSIPCO)</i>, Rome, Italy, Sep. 2018. <a href="https://asl.epfl.ch/wp-content/uploads/2018/07/eusipco2018c.pdf">[pdf]</a> </p>
+11. <p style='text-align: justify;'> R. Nassif, S. Vlaski, and A. H. Sayed, "Distributed Inference over Multitask Graphs under Smoothness," <i>Proc. IEEE International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)</i>, Kalamata, Greece, Jun. 2018. <a href="https://asl.epfl.ch/wp-content/uploads/2018/10/SPAWC_2018A.pdf">[pdf]</a> </p>
+12. 
 
 
