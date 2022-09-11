@@ -7,7 +7,7 @@
   </article>
 {% endfor %}
 
-{% if paginator.total_pages > 1 %}
+{% if paginator.total_pages > 3 %}
   <footer>
     {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
     <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
