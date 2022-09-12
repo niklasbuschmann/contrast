@@ -2,7 +2,6 @@
 title: "Teaching"
 permalink: "/classes/"
 layout: page
-excerpt_separator: <!--more-->
 ---
 
 
