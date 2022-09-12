@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 ### Teoria Microeconomia II
 
 <ul>
-  {% for post in MicroII/site.posts %}
+  {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
