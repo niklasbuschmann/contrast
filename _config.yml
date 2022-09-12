@@ -35,6 +35,3 @@ plugins:
  - jekyll-feed
  - jekyll-pdf-embed
  
- 
-paginate:    4
-paginate_path: "page:1"
