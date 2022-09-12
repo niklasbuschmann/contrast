@@ -9,9 +9,10 @@ layout: page
 
 <ul>
   {% for post in site.posts %}
-    <li>
+    {% if post in MicroII %} <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
+  {% endif %}
   {% endfor %}
 </ul>
 
