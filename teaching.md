@@ -10,11 +10,11 @@ TEACHING ASSISTANT:
 - Prof. Jan Stuhler and Prof. Jesús Carro
 
 
-2. Applied Economics (In English and Spanish), Fall 2020*, Fall 2021*
+2. Applied Economics (In English and Spanish), Fall 2020* and Fall 2021*
 - Prof. Raquel Carrasco and Prof. Julio Caceres
 
 
-3. Labor Economics (In Spanish and English), Autumn 2019*, Autumn 2020* and Autumn 2021*
+3. Labor Economics (In Spanish and English), Autumn 2019* , Autumn 2020* and Autumn 2021*
 - Prof. Juanjo Dolado and Prof. Luigi Minale
 
 
