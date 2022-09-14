@@ -25,4 +25,8 @@ layout: page
 
 
 
-### Courses
+### Mini-Cursos
+
+#### Monografia: Aspectos Práticos
+
+you can [get the PDF](/assets/LatexSymbols.pdf) directly.
