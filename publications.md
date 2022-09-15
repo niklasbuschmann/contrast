@@ -32,6 +32,5 @@ title:"Publications"
 9. <p style='text-align: justify;'> F. Hua, R. Nassif, C. Richard, H. Wang, and A. H. Sayed, "Decentralized clustering for node-variant graph filtering with graph diffusion LMS," <i>Proc. Asilomar Conference on Signals, Systems, and Computers</i>, Pacific Grove, CA, Oct. 2018. <a href="https://hal.archives-ouvertes.fr/hal-03634022/document">[pdf]</a> </p>
 10. <p style='text-align: justify;'> F. Hua, R. Nassif, C. Richard, H. Wang, and A. H. Sayed, "A Preconditioned Graph Diffusion LMS for Adaptive Graph Signal Processing," <i>Proc. IEEE 26th European Signal Processing Conference (EUSIPCO)</i>, Rome, Italy, Sep. 2018. <a href="https://asl.epfl.ch/wp-content/uploads/2018/07/eusipco2018c.pdf">[pdf]</a> </p>
 11. <p style='text-align: justify;'> R. Nassif, S. Vlaski, and A. H. Sayed, "Distributed Inference over Multitask Graphs under Smoothness," <i>Proc. IEEE International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)</i>, Kalamata, Greece, Jun. 2018. <a href="https://asl.epfl.ch/wp-content/uploads/2018/10/SPAWC_2018A.pdf">[pdf]</a> </p>
-12. 
-
-
+12. <p style='text-align: justify;'> S. Vlaski, H. Maretic, R. Nassif, P. Frossard, and A. H. Sayed, "Online Graph Learning from Sequential Data," <i>Proc. IEEE Data Science Workshop</i>, Lausanne, Switzerland, Jun. 2018.<a href="https://asl.epfl.ch/wp-content/uploads/2018/10/SPAWC_2018A.pdf">[pdf]</a> </p>
+13. <p style='text-align: justify;'> R. Nassif, C. Richard, J. Chen, and A.H. Sayed, "Distributed diffusion adaptation over graph signals," <i>Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, Calgary, Alberta, Canada, Apr. 2018.<a href="https://hal.archives-ouvertes.fr/hal-03634032/document">[pdf]</a> </p>
