@@ -7,15 +7,6 @@ layout: page
 
 ### Teoria Microeconomia II
 
-{% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
-
 
 ### Teoria Macroeconômica III
 
@@ -28,5 +19,6 @@ layout: page
 ### Mini-Cursos
 
 #### Monografia: Aspectos Práticos
+Uma breve introdução à elaboração de monografia em economia - [Apresentação](/archive/Mono-Economia-Aspectos-Práticos.pdf)
 
-you can [get the PDF](/assets/LatexSymbols.pdf) directly.
+
