@@ -1,8 +1,8 @@
 ---
 layout: page
+geometry: left=38mm, right=25mm, top=25mm, bottom=25mm
 title:"About me"
 ---
-geometry: left=38mm, right=25mm, top=25mm, bottom=25mm
 
 <p>
 <img align="left" src="/photo2.png" width="100" height="100">
