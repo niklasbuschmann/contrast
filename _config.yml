@@ -22,7 +22,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:roula.nassif@univ-cotedazur.fr"}
-  - {title: Google scholar, icon: google-scholar, url: "https://scholar.google.com/citations?user=blXWkccAAAAJ&hl=en"}
+  - {title: Google scholar, icon: google, url: "https://scholar.google.com/citations?user=blXWkccAAAAJ&hl=en"}
 #  - {title: Github, icon: github, url: "https://github.com/Roulanassif"}
 #  - {title: Subscribe, icon: rss, url: "https://twitter.com/NassifRoula"}
 
