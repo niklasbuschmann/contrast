@@ -2,7 +2,9 @@
 layout: page
 title:"Publications"
 ---
-
+<p>
+<img src="/Screenshot 2022-09-18 at 12.40.55.png" >
+ </p>
 
 <h1> Articles (11): </h1>
 
