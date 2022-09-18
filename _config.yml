@@ -16,10 +16,10 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "about.md", title: "About me"}
+  # - {file: "about.md", title: "About me"}
   - {file: "projects.md", title: "Research projects and positions"}
   - {file: "publications.md", title: "Publications"}
-  # - {file: "README.md", title: "Teaching"}
+  - {file: "teaching.md", title: "Teaching"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:roula.nassif@univ-cotedazur.fr"}
