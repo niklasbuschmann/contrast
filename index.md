@@ -24,6 +24,7 @@ Since September 2021, I have been an Associate Professor (Maîtresse de Confé
 * Graph signal processing
 * Adaptive filtering
 
+# *Website content:*
 On this website, you can find:
 * A list of research projects
 * A list of available research positions (PhD, Postdoc, Internships)
