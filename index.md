@@ -2,6 +2,7 @@
 layout: page
 title:"About me"
 ---
+
 <p>
 <img align="left" src="/photo2.png" width="100" height="100">
 
