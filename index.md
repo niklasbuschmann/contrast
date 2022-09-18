@@ -24,4 +24,8 @@ Since September 2021, I have been an Associate Professor (Maîtresse de Confé
 * Graph signal processing
 * Adaptive filtering
 
-On this website, you can find a full list of my publications and information about courses I taught at AUB.
+On this website, you can find:
+* A list of research projects
+* A list of available research positions (PhD, Postdoc, Internships)
+* A full list of my publications
+* Information about courses I taught at AUB.
