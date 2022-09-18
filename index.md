@@ -1,6 +1,6 @@
 ---
 layout: page
-geometry: left=38mm, right=25mm, top=25mm, bottom=25mm
+geometry: left=100mm, right=100mm, top=25mm, bottom=25mm
 title:"About me"
 ---
 
