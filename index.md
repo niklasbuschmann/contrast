@@ -29,4 +29,4 @@ On this website, you can find:
 * A list of research projects
 * A list of available research positions (PhD, Postdoc, Internships)
 * A full list of my publications
-* Information about courses I taught at AUB.
+* Information about courses I taught
