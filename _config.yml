@@ -22,8 +22,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:roula.nassif@univ-cotedazur.fr"}
-  - {title: Google, icon: <img src="google.svg">, url: "https://scholar.google.com/citations?user=blXWkccAAAAJ&hl=en"}
-  - {title: Github, icon: github, url: "https://github.com/Roulanassif"}
+#  - {title: Google, icon: <img src="google.svg">, url: "https://scholar.google.com/citations?user=blXWkccAAAAJ&hl=en"}
+#  - {title: Github, icon: github, url: "https://github.com/Roulanassif"}
 #  - {title: Subscribe, icon: rss, url: "https://twitter.com/NassifRoula"}
 
 comments:
