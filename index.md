@@ -32,7 +32,7 @@ On this website, you can find:
 * Information about courses I taught
 
 # *Google scholar data:*
-* Google scholar profile: [link](https://scholar.google.com/citations?user={{ site.data.scholar.id }})
+* Google scholar profile: [[link]](https://scholar.google.com/citations?user={{ site.data.scholar.id }})
 * Citations: {{ site.data.scholar.citations }}
 * h-index: {{ site.data.scholar.h_index }}
 * i10-index: {{ site.data.scholar.i10_index }}
