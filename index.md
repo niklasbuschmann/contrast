@@ -5,7 +5,7 @@ title: ""
 <p>
 <img align="left" src="/photo2.png" width="100" height="100">
 
-&nbsp; &nbsp; Roula Nassif (roula.nassif@i3s.unice.fr)<br>
+&nbsp; &nbsp; Roula Nassif (roula.nassif@unice.fr)<br>
 &nbsp; &nbsp; Maître de Conférences, Université Côte d’Azur<br>
 &nbsp; &nbsp; Laboratoire d’Informatique, Signaux et Systèmes (I3S)<br>
 &nbsp; &nbsp; I3S – UMR7271 – UNS CNRS<br>
