@@ -4,7 +4,7 @@ require 'nokogiri'
 module Jekyll
   class ScholarStats < Generator
     # Replace `SCHOLAR_ID` with your own Google Scholar ID
-    SCHOLAR_ID = 'XXXXXXXXXX'.freeze
+    SCHOLAR_ID = 'blXWkccAAAAJ'.freeze
     SCHOLAR_URL = 'https://scholar.google.com/citations?user=blXWkccAAAAJ&hl=en'.freeze
     def generate(site)
       doc = Nokogiri::HTML(URI.parse(SCHOLAR_URL + SCHOLAR_ID).open)
