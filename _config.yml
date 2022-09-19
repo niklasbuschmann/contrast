@@ -32,3 +32,4 @@ comments:
 
 plugins:
  - jekyll-feed
+ - scholar_stats.rb
