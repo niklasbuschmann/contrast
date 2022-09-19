@@ -30,5 +30,3 @@ On this website, you can find:
 * A list of available research positions (PhD, Postdoc, Internships)
 * A full list of my publications
 * Information about courses I taught
-
-# *Google scholar profile:* [[link]](https://scholar.google.com/citations?user={{ site.data.scholar.id }})
