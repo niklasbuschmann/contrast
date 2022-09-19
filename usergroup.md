@@ -23,3 +23,12 @@ Following topics were discussed:
 - Automated cell counting in fluorescence and color (RGB) images
 - Described a pipeline for the quantification of nuclear and cytoplasmic localization of IF signal
 - Tips on figure generation such as savings files as PNG, using Overlay option to annotate images and described some plugins such as QuickFigures,  OMERO.figure and FigureJ
+
+### 9/8/2022 meeting minutes
+Title: "Image segmentation"  
+Presenter: Ved Sharma, BIRC, The Rockefeller University  
+Location/Time: 506 Greenberg Building (CRC), 2-3 pm
+
+In this meeting, I discussed user data and demonstrated the limits of classical segmentation techniques and suitability of deep learning method, such as Cellpose for chanllenging problems. But most of the time, processing raw images with classical filters (gaussian etc.) before feeding them into deep learning processing procudes better restults, than using the raw images in deep learning.
+
+Also discussed how to train a custom model in Cellpose using user data, if the built-in models do not produce accurate results.
