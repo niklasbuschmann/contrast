@@ -31,10 +31,10 @@ Location/Time: 506 Greenberg Building (CRC), 2-3 pm
 
 Following topics were discussed:
 - discussed phase contrast microspoy images from one of our users and demonstrated the limits of classical segmentation techniques and suitability of deep learning method, such as [Cellpose](https://www.cellpose.org/), for chanllenging segmentation problems.
-- showed how sometimes processing raw images with classical filters (gaussian etc.) before feeding them into deep learning processing procudes better restults, than using the raw images in deep learning.
+- showed how sometimes processing raw images with classical filters (gaussian etc.) before feeding them into deep learning pipeline procudes better restults, than using the raw images in deep learning.
 - discussed how to train a custom model in Cellpose using user data, if the built-in models do not produce accurate results.
 - demonstrated the use to Cellpose on another user's fluorescence microcopy images, where cells were clustering together.
-- demonstrated how to do 3D segmentation in Cellpose and then export the label image into Imaris for vidualization and further analysis (e.g. cell/nuclei counting) 
+- demonstrated how to do 3D segmentation in Cellpose and then export the label image into Imaris for visualization and further analysis (e.g. filtering, cell/nuclei counting and other cellular measurements) 
 
 
 
