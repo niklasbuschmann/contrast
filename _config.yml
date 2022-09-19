@@ -26,7 +26,6 @@ external:                  # shows a footer with social links - for available ic
 #  - {title: Github, icon: github, url: "https://github.com/Roulanassif"}
 #  - {title: Subscribe, icon: rss, url: "https://twitter.com/NassifRoula"}
 
-https://scholar.google.com/citations?user=blXWkccAAAAJ&hl=en
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
