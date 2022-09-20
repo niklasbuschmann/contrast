@@ -30,8 +30,8 @@ Presenter: Ved Sharma, BIRC, The Rockefeller University
 Location/Time: 506 Greenberg Building (CRC), 2-3 pm
 
 Following topics were discussed:
-- discussed phase contrast microspoy images from one of our users and demonstrated the limits of classical segmentation techniques and the suitability of deep learning methods, such as [Cellpose](https://www.cellpose.org/), for chanllenging segmentation problems.
-- showed how sometimes processing raw images with classical filters (gaussian, edge detection etc.) before feeding them into deep learning pipeline procudes better restults, than using the raw images.
-- discussed how to train a custom model in Cellpose on user's data, for the case where the built-in models did not produce accurate results.
+- went over the phase contrast microspoy images from one of our users and discussed the limits of classical segmentation techniques and the suitability of deep learning methods, such as [Cellpose](https://www.cellpose.org/), for chanllenging segmentation problems.
+- discussed how sometimes processing raw images with classical filters (gaussian, edge detection etc.) before feeding them into deep learning pipeline produces better restults, than using the raw images.
+- discussed how to train a custom model in Cellpose on user's data, for the case where the built-in Cellpose models were not good enough.
 - demonstrated the use to Cellpose on another user's fluorescence microcopy images, where cells were clustering together. Cellpose did an excellnet job identifing cells in not only areas where there were few cells, but also in areas where cells were clustering together.
 - demonstrated how to do 3D segmentation in Cellpose and then export the label image into Imaris for visualization and further analysis (e.g. filtering, cell/nuclei counting and other cellular measurements) 
