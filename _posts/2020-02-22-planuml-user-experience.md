@@ -54,9 +54,9 @@ Here an example of a diagram created during a troubleshooting session where we h
 
 ![tshoot](/assets/images/tshoot.png)
 
-Code snippet
-
-```bash
+<details>
+<summary>Code snipped</summary>
+{% highlight plantuml %}
 @startuml
 skinparam node {
  borderColor Blue
@@ -118,16 +118,17 @@ user ..> [machine_3_domain_dev]
 [machine_3_domain_dev] ..> service_1
 machine_2_domain ==> service_1: issues
 @enduml
-```
+{% endhighlight %}
+</details>
 
 ## Connectivity check
 
 > *Providing proper convention for the way*
 > we decribe object in the plantuml file are important as we can make use of these convention for further changes.
 
-![tshoot](/assets/images/puml_base.png)
-
-```bash
+<details>
+<summary>Code snippet</summary> 
+{% highlight plantuml %}
 @startuml
 left to right direction
 rectangle DC_1 <<dc>> {
@@ -151,8 +152,10 @@ rectangle DC_2 <<dc>> {
   }
 }
 @enduml
-```
+{% endhighlight %}
+</details>
 
+![tshoot](/assets/images/puml_base.png)
 We would like to check that all the ip related to the API can access the DB ip
 
 ```bash
@@ -168,11 +171,9 @@ Now based on the result we will have new connection created
 
 Adding this to the the original puml will provide the below result
 
-Code snippet
-
-![tshoot](/assets/images/puml_base_conn.png)
-
-```bash
+<details>
+<summary>Code snippet</summary>
+{% highlight plantuml %}
 @startuml
 left to right direction
 rectangle DC_1 <<dc>> {
@@ -198,7 +199,10 @@ rectangle DC_2 <<dc>> {
 10.0.0.1 =[#Green]=> 10.0.2.1
 10.0.0.3 ==> 10.0.2.1
 @enduml
-```
+{% endhighlight %}
+</details>
+
+![tshoot](/assets/images/puml_base_conn.png)
 
 ## Result
 
