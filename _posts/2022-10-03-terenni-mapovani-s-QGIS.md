@@ -6,8 +6,7 @@ categories: misc
 
 ## Práce s mobilním GIS - principy
 
-Práce s mobilním GIS předpokládá propojení s cloudem. Zjednodušeně řečeno, prostřednictvím cloudu synchronizujete údaje z počítače do mobilu nebo tabletu a obráceně. Pokud chcete zpracovávat data v mobilní aplikaci, je nutné na stolním počítači nebo laptopu připravit GIS projekt. Tento projekt synchronizujete na cloud, odsud do aplikace na mobilu nebo tabletu. V terénu pak mapujete vegetaci a po skončení znovu synchronizujete s cloudem a následně s počítačem. 
-"\n\n\n"
+Práce s mobilním GIS předpokládá propojení s cloudem. Zjednodušeně řečeno, prostřednictvím cloudu synchronizujete údaje z počítače do mobilu nebo tabletu a obráceně. Pokud chcete zpracovávat data v mobilní aplikaci, je nutné na stolním počítači nebo laptopu připravit GIS projekt. Tento projekt synchronizujete na cloud, odsud do aplikace na mobilu nebo tabletu. V terénu pak mapujete vegetaci a po skončení znovu synchronizujete s cloudem a následně s počítačem. "\n\n\n"
 
 Postup je v bodech následovný: 
 
