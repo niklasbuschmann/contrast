@@ -3,7 +3,6 @@ layout: post
 title: "Terénní mapování vegetace pomocí QGIS a INPUT"
 categories: misc
 ---
-
 ## Práce s mobilním GIS - principy
 
 Práce s mobilním GIS předpokládá propojení s cloudem. Zjednodušeně řečeno, prostřednictvím cloudu synchronizujete údaje z počítače do mobilu nebo tabletu a obráceně. Pokud chcete zpracovávat data v mobilní aplikaci, je nutné na stolním počítači nebo laptopu připravit GIS projekt. Tento projekt synchronizujete na cloud, odsud do aplikace na mobilu nebo tabletu. V terénu pak mapujete vegetaci a po skončení znovu synchronizujete s cloudem a následně s počítačem.
@@ -24,7 +23,6 @@ Na cvičení vám doporučujme řešení QGIS v kombinaci s cloudem Mergin a Inp
 ## Postup pro práci s QGIS 
 
 Program QGIS je plnohodnotým GIS softwarem, který slouží pro výtváření a editaci dat, analýzu i grafické výstupy v podobě map a výkresů. Je k dispozici zdarma i ke komečním účelům. Program si stáhnete zde: [https://www.qgis.org/en/site/]. Program si stáhněte a nainstalujte. K základní orientaci v programu využijte návody na youtube nebo [https://www.qgistutorials.com/en/]. Dále se budeme věnovat instalaci pluginu Mergin, který je nutný pro zprovoznění mobilního GIS. 
-
 
 ## Vytvoření účtu na Mergin maps 
 
@@ -133,23 +131,7 @@ Data zaznamenaná v terénu dostanete zpátky do počítače synchronizací s cl
 
 Na počítači proveďte refresh, aby se data z cloudu synchronizovala do Vašeho projektu. 
 
-Důrazně postup vyzkoušet nanečisto, aby jste v případě problémů nepřišli o svá data. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Důrazně doporučuji vyzkoušet postup nanečisto, aby jste v případě problémů nepřišli o svá data. 
 
 [https://www.qgis.org/en/site/]: https://www.qgis.org/en/site/
 [https://www.qgistutorials.com/en/]: https://www.qgistutorials.com/en/
