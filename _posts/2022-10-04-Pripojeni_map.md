@@ -6,7 +6,7 @@ categories: misc
 
 ## Připojení podkladových map Základních map ČR, ortofotomapy a SM5V 
 
-Otevřete si nový mapový projekt. Nastavíte si souřadnicový systém používaný v České republice 5515 – S-JTSK Krovak EastNorth, kliknutím na tlačítko v pravém dolním rohu např. EPSG:4218. 
+Otevřete si nový mapový projekt. Nastavíte si souřadnicový systém používaný v České republice 5515 – S-JTSK Krovak EastNorth, kliknutím na tlačítko v pravém dolním rohu např. EPSG:4218. \n\n\n
 
 
 
