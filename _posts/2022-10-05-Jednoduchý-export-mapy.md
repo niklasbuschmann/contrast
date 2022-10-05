@@ -5,6 +5,8 @@ Návod se skládá ze tří částí:
 
 Celý postup je na videou níže. Video neobsahuje zvuk.
 
+<iframe width="914" height="571" src="https://www.youtube.com/embed/aqX8tw2yVMc" title="Jednoduchý export mapy v QGIS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Nastavení layoutu
 
 1. Přizpůsobím nastavení kresby dvojklikem na název vrstvy a kliknutím Symbology a zvolím vhodnou barvu a šířku čáry (viz video)
