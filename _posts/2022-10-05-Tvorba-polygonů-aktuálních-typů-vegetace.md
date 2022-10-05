@@ -12,9 +12,11 @@ Pokud máte otveřený projekt, nastavený souřadnicový systém a přidané po
 8. Po skončení editace se zobrazí v polygonu číslo plochy. 
 9. Atributy jsou uloženy v atributové tabulce, ke které se dostanete kliknutím pravým tlačítkem na název vrstvy a vybráním Open Attribute Table. Všechny atributy lze zpětně změnit. 
 
+
 <iframe width="914" height="571" src="https://www.youtube.com/embed/kUb4U-yCCLA" title="Přidání a editace polygonů ATV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Více o úpravach hotového polygonu můžete najít zde [How to create a polygon, cut it and merge].
+
+Více o úpravach polygonů, spojování a ořezávání, můžete najít například zde [How to create a polygon, cut it and merge].
 
 [vrstva ATV.zip]:http://user.mendelu.cz/xsedla50/Studijni%20podpory/ATB%20-%20P2/ATV_vrstva.zip
 [Připojení map]:https://josedlacek.github.io/Pripojeni_map/
