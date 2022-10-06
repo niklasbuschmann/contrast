@@ -16,6 +16,6 @@ Vložte si do projektu podkladovou mapu. Doporučuji službu Základní mapy ČR
 
 ### Připojení ortofotomapy a státní mapy
 
-Dále si připojte Ortofotomapu a službu SM5V. Adresa služby ortofoto je {% highlight python %} https://geoportal.cuzk.cz/WMS_ORTOFOTO_PUB/WMService.asp {% endhighlight %} adresa mapové služby SM5V – státní mapa 1:5000 vektorová je {% highlight python %} https://geoportal.cuzk.cz/WMS_SM5V_PUB/WMService.aspx {% endhighlight %}
+Dále si připojte Ortofotomapu a službu SM5V. Adresa služby ortofoto je {% highlight python %} https://geoportal.cuzk.cz/WMS_ORTOFOTO_PUB/WMService.aspx {% endhighlight %} adresa mapové služby SM5V – státní mapa 1:5000 vektorová je {% highlight python %} https://geoportal.cuzk.cz/WMS_SM5V_PUB/WMService.aspx {% endhighlight %}
 
 Obě služby připojíte opět přes tlačítko Open Data Source Manager. **Pozor, nyní vyberete záložku WMS/WMTS**. Opět vytvoříte nové připojení kliknutím na tlačítko New a připojení pojmenujete. Do mapového okna přidáte tlačítkem Connect a tlačítkem Add v spodní části stránky. 
