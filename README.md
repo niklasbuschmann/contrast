@@ -10,5 +10,5 @@ Last six months I'm strongly focused on the study of information technology beca
 
 Below you the materials which I have already learned:
 
-[![TechWorldWithNana on DevOps:](https://www.img.youtube.com/vi/0yWAtQ6wYNM/0.jpg)](https://www.youtube.com/watch?v=0yWAtQ6wYNM)
+[![TechWorldWithNana on DevOps:](https://img.youtube.com/vi/0yWAtQ6wYNM/0.jpg)](https://www.youtube.com/watch?v=0yWAtQ6wYNM)
 
