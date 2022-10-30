@@ -4,7 +4,7 @@ permalink: "/about/"
 layout: page
 ---
 
-Olá, I'm Bernardo ⚡ I'm Senior Machine Learning engineer based in Porto, Portugal 🇵🇹.
+Olá, I'm Bernardo ⚡ I'm a Senior Machine Learning engineer based in Porto, Portugal 🇵🇹.
 
 I build growth and pricing ML tools for B2B at **[McKinsey & Company](https://mckinsey.com)**. 
 
