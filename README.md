@@ -10,7 +10,7 @@ Last six months I'm strongly focused on the study of information technology beca
 
 Below examples of the materials which I have already learned:
 
-[![TechWorldWithNana on DevOps:](https://img.youtube.com/vi/0yWAtQ6wYNM/0.jpg)](https://www.youtube.com/watch?v=0yWAtQ6wYNM)
+[![TechWorldWithNana on DevOps:](https://img.youtube.com/vi/0yWAtQ6wYNM/0.jpg "What is DevOps? REALLY understand it | DevOps vs SRE")](https://www.youtube.com/watch?v=0yWAtQ6wYNM)
 
-[![Ultimate AWS Certified Cloud Practitioner](/assets/picture1.png)](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
+[![Ultimate AWS Certified Cloud Practitioner](/assets/picture1.png "NEW Ultimate AWS Certified Cloud Practitioner - 2022")](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
 
