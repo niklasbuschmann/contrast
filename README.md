@@ -61,58 +61,67 @@ I like developing core modules and tools for machine learning that businesses an
 
 <details>
 <summary>Programming Languages</summary>
-
-- Python 🐍
-- Rust 🦀
-- Scala
+<ul>
+<li> Python 🐍</li>
+<li> Rust 🦀</li>
+<li> Scala</li>
+</ul>
 </details>
 
 <details>
 <summary> Machine Learning/Advanced Analytics</summary>
+<ul>
 
-- `tensorflow` (🐍 & 🦀)
-- `sklearn` (🐍)
-- `XGBoost` (🐍)
-- `LightGBM` (🐍)
-- `transformers` (🐍)
-- `numpy` (🐍)
-- `pandas` (🐍)
-- `polars` (🦀)
-- `ndarray` (🦀)
+<li><code>tensorflow</code> 🐍 & 🦀</li>
+<li><code>sklearn</code> 🐍</li>
+<li><code>XGBoost</code> 🐍</li>
+<li><code>LightGBM</code> 🐍</li>
+<li><code>transformers</code> 🐍</li>
+<li><code>numpy</code> 🐍</li>
+<li><code>pandas</code> 🐍</li>
+<li><code>polars</code> 🦀</li>
+<li><code>ndarray</code> 🦀</li>
+</ul>
 </details>
 
 <details>
 <summary>Cloud</summary>
 
-#### Databricks
+<h4> Databricks </h4>
 
-#### AWS
-- SageMaker
-- EC2
-- S3
-- RDS
-- ECR
+<h4> AWS </h4>
+
+<ul>
+<li>SageMaker</li>
+<li>EC2</li>
+<li>S3</li>
+<li>RDS</li>
+<li>ECR</li>
+</ul>
 </details>
 
 <details>
 <summary>Data Engineering</summary>
+<ul>
 
-- Spark
-- Kafka
-- Airflow
-- MongoDB
-- PostgreSQL
-- Avro
-- Parquet
-- Arrow
+<li>Spark</li>
+<li>Kafka</li>
+<li>Airflow</li>
+<li>MongoDB</li>
+<li>PostgreSQL</li>
+<li>Avro</li>
+<li>Parquet</li>
+<li>Arrow</li>
+</ul>
 </details>
 
 <details>
 <summary>DevOps</summary>
-
-- Docker & Docker Compose
-- CircleCI
-- Jenkins
-- GitHub Actions
-- GitLab CI/CD
+<ul>
+<li>Docker & Docker Compose</li>
+<li>CircleCI</li>
+<li>Jenkins</li>
+<li>GitHub Actions</li>
+<li>GitLab CI/CD</li>
+</ul>
 </details>
