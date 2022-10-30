@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Bernardo de Lemos"
+author: "Bernardo de Lemos"
+description: "Bernardo de Lemos"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -20,9 +20,10 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:bernardo@shippedbrain.com"}
+  - {title: Github, icon: github, url: "https://github.com/bernardo-sb"}
+  - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/bernardo-lemos-costa/"}
+  - {title: Shipped Brain, icon: brain, url: "http://shippedbrain.com"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/

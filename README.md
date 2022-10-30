@@ -1,99 +1,118 @@
 ---
 title: "About"
-permalink: "/about/"
+permalink: "/CV/"
 layout: page
 ---
 
-## Installation
+Olá, I'm Bernardo ⚡ I'm Senior Machine Learning engineer based in Porto, Portugal 🇵🇹.
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+I build growth and pricing ML tools for B2B at **[McKinsey & Company](https://mckinsey.com)**. 
 
-## Features
+I'm the co-creator of **[Shipped Brain](http://shippedbrain.com)**, an E2E ML platform for easy model deployment, discovery and serving. I also like to code in **[Rust](https://www.rust-lang.org/)** 🦀 and build fast advanced analytic (AA) tools.
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+I like developing core modules and tools for machine learning that businesses and practitioners can leverage, solving business problems with AI and employ MLOps. I lean towards streaming/real time systems and applied ML in quantitative finance and B2B.
 
-## Based on
 
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
+## Experience
 
-## Installation (jekyll-remote-theme method)
+### McKinsey & Company | 2022 - Present
+#### Senior Machine Learning Engineer
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+- Architecture and development of ML tools for growth and pricing in the B2B space.
 
-```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
+### Farfetch | 2021 - 2022
+#### Machine Learning Engineer
 
-plugins:
-  - jekyll-remote-theme
-```
+- Architecture and development a real time product recommendations system.
 
-Note: to enable icons you also need to copy over the `_data` folder.
+### Consulting | 2020
+- Provided AA and ML services.
 
-## Config
+### QOMPLX | 2019 - 2021
+#### Quant Analyst
+- Provided professional services - E2E AA and ML solutions.
 
-Your `_config.yml` could for example look like this:
+- Designed and developed a _No   Code_ ML platform for model training, hosting, selection and serving with datasets submission capabilities.
 
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+- Developed machine learning pipelines and statistical models for quantitative finance (regime switch models, forecasting, allocation, risk analysis, multi-strategy, portfolio management, etc), search, recommender systems and computer vision.
 
-# Layout
+- Developed several ETL/ELT pipelines for big data using Kafka, Spark, Avro, Parquet in Scala.
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
+- Designed and developed real time APIs in Scala and akka.
 
-# Menu
+### Banco de Portugal | 2017 - 2018
+#### Data Scientist
+- Developed multiple ML and data mining models for datasets cleansing and standardization.
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+- Developed a mini-compiler for the [Stata progmming languge](https://www.stata.com/) to analyze scripts inputs and outputs.
 
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+- Built an incremental backup system.
 
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
+### JUMIA | 2016
+#### Software Developer
 
-plugins:
- - jekyll-feed
+- Developed a data manipulation web app in [Ruby on Rails](https://rubyonrails.org/) 💎.
 
-```
+- Developed SQL queries and analysis for business intelligence.
 
-## MathJax
+---
 
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
+## Tools 🔧
 
-## License
+<details>
+<summary>Programming Languages</summary>
 
-[public domain](http://unlicense.org/)
+- Python 🐍
+- Rust 🦀
+- Scala
+</details>
 
-## Screenshots
+<details>
+<summary> Machine Learning/Advanced Analytics</summary>
 
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
+- `tensorflow` (🐍 & 🦀)
+- `sklearn` (🐍)
+- `XGBoost` (🐍)
+- `LightGBM` (🐍)
+- `transformers` (🐍)
+- `numpy` (🐍)
+- `pandas` (🐍)
+- `polars` (🦀)
+- `ndarray` (🦀)
+</details>
 
-![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
+<details>
+<summary>Cloud</summary>
 
-![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
+#### Databricks
+
+#### AWS
+- SageMaker
+- EC2
+- S3
+- RDS
+- ECR
+</details>
+
+<details>
+<summary>Data Engineering</summary>
+
+- Spark
+- Kafka
+- Airflow
+- MongoDB
+- PostgreSQL
+- Avro
+- Parquet
+- Arrow
+</details>
+
+<details>
+<summary>DevOps</summary>
+
+- Docker & Docker Compose
+- CircleCI
+- Jenkins
+- GitHub Actions
+- GitLab CI/CD
+</details>

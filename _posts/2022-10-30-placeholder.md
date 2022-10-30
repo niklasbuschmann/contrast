@@ -1,5 +1,5 @@
 ---
-title:  "Advanced examples"
+title:  "Placeholder"
 mathjax: true
 layout: post
 categories: media
