@@ -12,5 +12,5 @@ Below examples of the materials which I have already learned:
 
 [![TechWorldWithNana on DevOps:](https://img.youtube.com/vi/0yWAtQ6wYNM/0.jpg)](https://www.youtube.com/watch?v=0yWAtQ6wYNM)
 
-![Ultimate AWS Certified Cloud Practitioner:](/assets/picture1.png)(https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
+[![Ultimate AWS Certified Cloud Practitioner](/assets/picture1.png)](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
 
