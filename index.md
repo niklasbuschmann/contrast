@@ -10,7 +10,8 @@ layout: page
    - Working for a [National Congregation Study](https://wp.unil.ch/ncs2/le-ncs-2-en-bref/)
       - Completed tasks
          -  Supervision of the census of Swiss religious communities (N ≈ 6000)
-         -  Creation of 2500 personalized invitation letters (via Julia) and organization of the physical mailing to contact and survey the leaders of these communities
+         -  Design of the WordPress website [congregation.ch](https://wp.unil.ch/ncs2/)
+         -  Creation of 2500 personalized invitation letters (Julia script) and organization of the physical mailing to contact and survey the communities leaders
 
 ## Publications
 
