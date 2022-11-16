@@ -24,8 +24,8 @@ layout: page
 
 ### Newspapers
 
-- Stolz, J., & Senn, J. (2021, November 11). La foi décroissante, une question de générations. _Le Temps_.
-- Stolz, J., & Senn, J. (2021, December 30). Warum sich die Kirchen leeren. _Neue Zürcher Zeitung_. [Link](https://www.nzz.ch/meinung/die-saekularisierung-nimmt-von-generation-zu-generation-zu-ld.1653066?reduced=true)
+- Stolz, J., & Senn, J. (2021, November 11). [La foi décroissante, une question de générations.](https://github.com/jsenn2/jsenn2.github.io/blob/master/Article%20Le%20Temps%20'Opinion'.pdf) _Le Temps_.
+- Stolz, J., & Senn, J. (2021, December 30). [Warum sich die Kirchen leeren](https://www.nzz.ch/meinung/die-saekularisierung-nimmt-von-generation-zu-generation-zu-ld.1653066?reduced=true). _Neue Zürcher Zeitung_.
 
 ## Conferences / talks
 
