@@ -18,20 +18,22 @@ layout: page
 
 ## Conferences / talks
 
-### <span style="color:darkblue">2022</span>
+### 2022
 
 - **SSSR+RRA 2022 Annual Meeting** 
 `Baltimore, USA` 
+   - *Is religious diversity really growing ? Results from the 2nd National Congregation Study Switzerland*
+- **Consortium for International Surveys of Congregations (CISC) Research Symposium
+- `University of Copenhagen, Denmark`
    - *Diversity dynamics. How local religious groups are born, stay, and die over time*
-   - *Measuring Congregational Diversity*
 - **Pluralité religieuse et enjeux de reconnaissance social (seminary)** 
-`University of Strasbourg` 
+`University of Strasbourg, France` 
    - *L'évolution du paysage religieux suisse (2008-2020). Diversité, mortalité et fusions des groupes religieux locaux*
 - **Atelier de terrain en sciences sociales des religions contemporaines (seminary)** 
-`University of Lausanne`
+`University of Lausanne, Switzerland`
    - *Le champ des groupes religieux locaux en Suisse. Structure institutionnelle et diversité*
 
-### <span style="color:darkblue">2021</span>
+### 2021
 
 - **35th SISR/ISSR Conference**
    - *Mergers And Innovations. Changes In Religious Diversity In Switzerland In The Light Of Two National Congregations Censuses (2009 - 2021)*
