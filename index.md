@@ -23,8 +23,8 @@ layout: page
 - **SSSR+RRA 2022 Annual Meeting** 
 `Baltimore, USA` 
    - *Is religious diversity really growing ? Results from the 2nd National Congregation Study Switzerland*
-- **Consortium for International Surveys of Congregations (CISC) Research Symposium
-- `University of Copenhagen, Denmark`
+- **Consortium for International Surveys of Congregations (CISC) Research Symposium**
+`University of Copenhagen, Denmark`
    - *Diversity dynamics. How local religious groups are born, stay, and die over time*
 - **Pluralité religieuse et enjeux de reconnaissance social (seminary)** 
 `University of Strasbourg, France` 
