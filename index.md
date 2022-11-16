@@ -15,10 +15,17 @@ layout: page
 
 ## Publications
 
+### Academia
+
 - Stolz, J., & Senn, J. (2022). Generationen abnehmenden Glaubens. In J. Stolz, A. Bünker, A. Liedhegener, E. Baumann-Neuhaus, I. Becci, Z. Dandarova Robert, J. Senn, P. Tanner, O. Wäckerlig, & U. Winter-Pfändler (Eds.), Religionstrends in der Schweiz : Religion, Spiritualität und Säkularität im gesellschaftlichen Wandel (pp. 7-31). Springer Fachmedien Wiesbaden. https://doi.org/10.1007/978-3-658-36568-4_2 
    - [Full text](https://link.springer.com/content/pdf/10.1007/978-3-658-36568-4_2.pdf)
    - [English short version published in *Social change in Switzerland*](https://forscenter.ch/wp-content/uploads/2022/02/stolz_final_en.pdf)
    - [French short version published in *Social change in Switzerland*](https://www.socialchangeswitzerland.ch/wp-content/uploads/2021/11/20211030_Stolz_Senn_FR-final_2.pdf)  
+
+### Newspapers
+
+- Stolz, J., & Senn, J. (2021, November 11). La foi décroissante, une question de générations. _Le Temps_.
+- Stolz, J., & Senn, J. (2021, December 30). Warum sich die Kirchen leeren. _Neue Zürcher Zeitung_. [Link](https://www.nzz.ch/meinung/die-saekularisierung-nimmt-von-generation-zu-generation-zu-ld.1653066?reduced=true)
 
 ## Conferences / talks
 
