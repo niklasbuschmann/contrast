@@ -35,3 +35,15 @@ Following topics were discussed:
 - discussed how to train a custom model in Cellpose on user's data, for the case where the built-in Cellpose models were not good enough.
 - demonstrated the use to Cellpose on another user's fluorescence microcopy images, where cells were clustering together. Cellpose did an excellent job of identifing cells in not only areas where there were fewer cells, but also in areas where cells were clustering together.
 - demonstrated how to do 3D segmentation in Cellpose and then export the label image into Imaris for visualization and further analysis (e.g. filtering, cell/nuclei counting and other cellular measurements) 
+
+### 11/17/2022 meeting minutes
+Presenter: Ved Sharma, BIRC, The Rockefeller University  
+Location/Time: A Level training room, Welch Hall, 2-3 pm
+
+Following topics were discussed:
+- Cellpose pipeline for nuclei segmentation > ConDet
+- Batch processing for running Cellpose on a folder full of images using a Python script in Jupyter notebook
+- Batch processing in ImageJ/Fiji 
+- CellProfiler pipeline for batch processing
+- discussed literrature on Cell painting and how CellProfiler could be used to analyze HCS data
+- 
