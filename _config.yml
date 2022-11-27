@@ -17,7 +17,7 @@ show_sidebar: true        # show a sidebar instead of the usual header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", icon: home}
   - {title: CV, icon: book, url: "https://www.dropbox.com/s/nmmv9aorxe74vcs/CV_SB%20Upadhyay_Acad0722.pdf?dl=0"}
-  - {title: Outputs, icon: pen, file: "Outputs.md"}
+  - {title: Outputs, icon: pencil, file: "Outputs.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:sbupadhyay@pm.me"}
