@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
+title: "Setu Bandh Upadhyay"
+author: "Setu"
+description: "Personal Website"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
