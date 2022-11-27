@@ -10,7 +10,7 @@ date_format: "%B %d, %Y"
 
 show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
-show_sidebar: true        # show a sidebar instead of the usual header
+show_sidebar: false        # show a sidebar instead of the usual header
 
 # Menu
 
@@ -22,6 +22,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:sbupadhyay@pm.me"}
   - {title: Github, icon: github, url: "https://github.com/setupadhyay/"}
   - {title: Twitter, icon: twitter, url: "https://twitter.com/setupadhyay"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/setuu/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
