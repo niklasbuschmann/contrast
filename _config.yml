@@ -1,6 +1,6 @@
 title: "Setu Bandh Upadhyay"
 author: "Setu"
-description: "Personal Website"
+description: "Setu Bandh Upadhyay"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -22,6 +22,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:sbupadhyay@pm.me"}
   - {title: Github, icon: github, url: "https://github.com/setupadhyay/"}
   - {title: Twitter, icon: twitter, url: "https://twitter.com/setupadhyay"}
+  - {title: Mastodon, icon: mastodon, url: "https://mastodon.social/@setuu"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/setuu/"}
 
 comments:
