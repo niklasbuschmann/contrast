@@ -1,6 +1,6 @@
 title: "Setu Bandh Upadhyay"
 author: "Setu"
-description: "Setu Bandh Upadhyay"color: #f45;\">&lt;3</b>"
+description: "Setu Bandh Upadhyay" color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -22,7 +22,6 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:sbupadhyay@pm.me"}
   - {title: Github, icon: github, url: "https://github.com/setupadhyay/"}
-  - {title: Twitter, icon: twitter, url: "https://twitter.com/setupadhyay"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
