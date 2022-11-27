@@ -27,7 +27,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/setuu/"}
 
 comments:
-© 2022 Setu Bandh Upadhyay. Made with Jekyll. Forked from niklasbuschmann/contrast.
+# © 2022 Setu Bandh Upadhyay. Made with Jekyll. Forked from niklasbuschmann/contrast.
 
 plugins:
  - jekyll-feed
