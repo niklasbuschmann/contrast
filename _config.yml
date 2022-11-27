@@ -29,5 +29,7 @@ external:                  # shows a footer with social links - for available ic
 comments:
 # © 2022 Setu Bandh Upadhyay. Made with Jekyll. Forked from niklasbuschmann/contrast.
 
+<footer> © 2022 Setu Bandh Upadhyay. Made with Jekyll. Forked from niklasbuschmann/contrast. </footer>
+
 plugins:
  - jekyll-feed
