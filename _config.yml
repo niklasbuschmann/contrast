@@ -27,8 +27,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/setuu/"}
 
 comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
+#© 2022 Setu Bandh Uoadhyay. Made with Jekyll. Forked from niklasbuschmann/contrast.
 
 plugins:
  - jekyll-feed
