@@ -63,5 +63,7 @@ layout: page
 - Statistical analysis 
    -  
 - Team management 
-   - Led a team of student assistants (up to 5 people simultaneously) for the NCS (including: comprehensive census of religious communities (n = 5885)) 
+   - Led a team of student assistants (up to 5 people simultaneously) 
+- Research prtactical skills
+   -  Mass mailings,
 
