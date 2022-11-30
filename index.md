@@ -59,7 +59,7 @@ layout: page
 - French (native), English (C1), German (B2)
 - _Computing:_ R (proficient)
 
-## Skills 
+## Skills
 - Statistical analysis 
    -  
 - Team management 
