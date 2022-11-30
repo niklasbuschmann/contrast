@@ -7,7 +7,7 @@ layout: page
 
 - PhD candidate in sociology of religon
    - University of Lausanne (Switzerland)
-   - Working for a [National Congregation Study](https://wp.unil.ch/ncs2/le-ncs-2-en-bref/)
+   - Working for the second wave of the [National Congregation Study Switzerland (NCSS 2)](https://wp.unil.ch/ncs2/le-ncs-2-en-bref/)
       - Completed tasks
          -  Supervision of the census of Swiss religious communities (N ≈ 6000)
          -  Design of the WordPress website [congregation.ch](https://wp.unil.ch/ncs2/)
@@ -62,6 +62,8 @@ layout: page
 ## Skills
 - Statistical analysis 
    -  
+- Coordination
+   - Organization of the coordination with the scientific partners ([ZRWP](https://theologie.unibas.ch/de/fakultaet/zentrum-religion-wirtschaft-politik/) of the University of Basel and the [CIC](https://cic-info.ch/))
 - Team management 
    - Led a team of student assistants (up to 5 people simultaneously) 
 - Research prtactical skills
