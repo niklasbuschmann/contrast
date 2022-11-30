@@ -10,7 +10,7 @@ layout: page
    - Working for the second wave of the [National Congregation Study Switzerland (NCSS 2)](https://wp.unil.ch/ncs2/le-ncs-2-en-bref/)
       - Completed tasks
          -  Supervision of the census of Swiss religious communities (N ≈ 6000)
-         -  Design of the WordPress website [congregation.ch](https://wp.unil.ch/ncs2/)
+         -  
          -  Creation of 2500 personalized invitation letters (Julia script) and organization of the physical mailing to contact and survey the communities leaders
 
 ## Publications
@@ -56,16 +56,19 @@ layout: page
 - Prize for the best Master of Arts thesis in sociology at the University of Neuchâtel ($1,000), "The hegemony of genes? Kinship as thought and practiced by people born of sperm donation".
 
 ## Languages
-- French (native), English (C1), German (B2)
-- _Computing:_ R (proficient)
+- French (native) 
+- English (C1) 
+- German (B2)
 
 ## Skills
 - Statistical analysis 
-   -  
+   - Mostly with the R software
 - Coordination
-   - Organization of the coordination with the scientific partners ([ZRWP](https://theologie.unibas.ch/de/fakultaet/zentrum-religion-wirtschaft-politik/) of the University of Basel and the [CIC](https://cic-info.ch/))
+   - Organized he coordination with the scientific partners ([ZRWP](https://theologie.unibas.ch/de/fakultaet/zentrum-religion-wirtschaft-politik/) of the University of Basel and the [CIC](https://cic-info.ch/))
 - Team management 
-   - Led a team of student assistants (up to 5 people simultaneously) 
-- Research prtactical skills
-   -  Mass mailings,
+   - Led a team of student assistants (up to 5 people simultaneously)
+   - Supervised the census of Swiss religious communities (N ≈ 6000)
+- Practical skills
+   -  Mass mailing (Created 2500 personalized invitation letters (Julia script) and organized the physical mailing to contact and survey the communities leaders)
+   -  Rudimentary web content creation (design of the NCSS 2 WordPress [website](congregation.ch)
 
