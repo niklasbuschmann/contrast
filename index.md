@@ -59,4 +59,9 @@ layout: page
 - French (native), English (C1), German (B2)
 - _Computing:_ R (proficient)
 
+## Skills 
+- Statistical analysis 
+   -  
+- Team management 
+   - Led a team of student assistants (up to 5 people simultaneously) for the NCS (including: comprehensive census of religious communities (n = 5885)) 
 
