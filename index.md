@@ -8,11 +8,7 @@ layout: page
 - PhD candidate in sociology of religon
    - University of Lausanne (Switzerland)
    - Working for the second wave of the [National Congregation Study Switzerland (NCSS 2)](https://wp.unil.ch/ncs2/le-ncs-2-en-bref/)
-      - Completed tasks
-         -  Supervision of the census of Swiss religious communities (N ≈ 6000)
-         -  
-         -  Creation of 2500 personalized invitation letters (Julia script) and organization of the physical mailing to contact and survey the communities leaders
-
+  
 ## Publications
 
 ### Academia
