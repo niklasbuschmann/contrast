@@ -18,10 +18,11 @@ layout: page
    - [English short version published in *Social change in Switzerland*](https://forscenter.ch/wp-content/uploads/2022/02/stolz_final_en.pdf)
    - [French short version published in *Social change in Switzerland*](https://www.socialchangeswitzerland.ch/wp-content/uploads/2021/11/20211030_Stolz_Senn_FR-final_2.pdf)  
 
-### Newspapers
+### Newspapers / online articles
 
 - Stolz, J., & Senn, J. (2021, November 11). [La foi décroissante, une question de générations.](https://github.com/jsenn2/jsenn2.github.io/blob/master/Article%20Le%20Temps%20'Opinion'.pdf) _Le Temps_.
 - Stolz, J., & Senn, J. (2021, December 30). [Warum sich die Kirchen leeren](https://www.nzz.ch/meinung/die-saekularisierung-nimmt-von-generation-zu-generation-zu-ld.1653066?reduced=true). _Neue Zürcher Zeitung_.
+- Senn, J. (2022). Les communautés locales musulmanes en Suisse : évolution entre 2008 et 2020. Islam & Society.
 
 ## Conferences / talks
 
