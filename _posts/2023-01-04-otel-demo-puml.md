@@ -6,10 +6,13 @@ categories: [blogging]
 
 # blog plantuml otel architecture
 
-- [ ] what is plantuml
-- [ ] [how to render using online tool](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
-- [ ] why otel-demo diagram
-- [ ] how to build
+* [categories: [blogging]](#categories:-[blogging])
+* [intro](#intro)
+  * [[What is Plantuml](https://en.wikipedia.org/wiki/PlantUML)](#[what-is-plantuml](https://en.wikipedia.org/wiki/plantuml))
+  * [How to render](#how-to-render)
+  * [why opentelemetry-demo](#why-opentelemetry-demo)
+* [Build the diagram](#build-the-diagram)
+  * [121 mapping with no layout change](#121-mapping-with-no-layout-change)
 
 ## intro
 
@@ -21,17 +24,17 @@ There are other tools as plantuml:
 
 ### How to render
 
-To be able to render *plantuml* file a server needs to be selected.
+To render *plantuml* we need to select a server
 
-- [spin up plantuml docker server](https://hub.docker.com/r/plantuml/plantuml-server)
-- [use the online server](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
+* [spin up plantuml docker server](https://hub.docker.com/r/plantuml/plantuml-server)
+* [use the online server](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
 
 ### why opentelemetry-demo
 
 I read and follow **otel** and the repo is public available.
 
 [The architecture](https://github.com/open-telemetry/opentelemetry-demo/blob/main/docs/current_architecture.md)
-of the demo shows multiple services that made up a **simple** online shop.
+of the demo shows services that made up a **simple** online shop.
 This is a perfect example to show the capability of plantuml and the simplicity on how a diagram can be build
 by using *diagram as code*
 
@@ -46,6 +49,7 @@ diagram and colorin
 <summary>Code snipped</summary>
 
 ```plantuml
+
 @startuml
 rectangle "\nInternet" as internet
 
@@ -110,7 +114,6 @@ checkout_service =[#black]=> product_catalog_service
 shipping_service -[#black]-> quote_service
 recommendation_service =[#black]=> product_catalog_service
 
-
 ' layer 4
 database "\nCache" as cache_redis
 
@@ -126,7 +129,6 @@ database "\nFeature Flag Store\nPostgresSQL DB" as feature_flag_store
 
 feature_flag_service =[#black]=> feature_flag_store
 
-
 legend
     |connection | protocol |
     | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5JGjLFGIDBaSaZDIm4A0G00>| HTTP |
@@ -134,6 +136,7 @@ legend
     | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5ImjLFGIDBaSaZDIm4A0G00>| gRPC |
 endlegend
 @enduml
+```
 
 </details>
 
@@ -142,10 +145,12 @@ endlegend
 > **together** statements allows to group objects without the need to have them within a bigger container
 
 ```bash
-    together {
+
+together {
         rectangle "<$rust>\nShipping Service" as shipping_service #D49471
         rectangle "<$python>\nRecommendation Service" as recommendation_service #3572A5;text:white
-    }
+}
+
 ```
 
 ![together](togetherpng.png)
@@ -169,7 +174,11 @@ Ortho linetype render straight linnes instead of curved once
 
 <details>
 <summary>Code snipped</summary>
-    {% highlight plantuml %}
+
+    ```plantuml
+
+    @startuml
+    skinparam linetype ortho
     rectangle "\nInternet" as internet
 
     rectangle "\nLoad Generator" as load_generator #3572A5;text:white
@@ -233,7 +242,6 @@ Ortho linetype render straight linnes instead of curved once
     shipping_service -[#black]-> quote_service
     recommendation_service =[#black]=> product_catalog_service
 
-
     ' layer 4
     database "\nCache" as cache_redis
 
@@ -249,7 +257,6 @@ Ortho linetype render straight linnes instead of curved once
 
     feature_flag_service =[#black]=> feature_flag_store
 
-
     legend
         |connection | protocol |
         | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5JGjLFGIDBaSaZDIm4A0G00>| HTTP |
@@ -257,14 +264,14 @@ Ortho linetype render straight linnes instead of curved once
         | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5ImjLFGIDBaSaZDIm4A0G00>| gRPC |
     endlegend
     @enduml
-    {% endhighlight %}
+    ```
 
 </details>
 ![ortho](http://www.plantuml.com/plantuml/png/ZLPTR-8w47tthx3AbNhlGoi-e9Js5hKDS7MrVMYNnzrLP9m1iZXnwZXjezN-zxK30KyTgY8XalauddDcFE8srqpf8X64v9iupPXY2HLn2hhCW4gbrv8G1LopT2M0dlpxrqh81OHnga6PgF7tzF_TumbbEQtjxvAoqW2b9lX1ieZ-1oaefgMgKeGnXQlQH5kzmR1xDxZMyAQlNjUn1Wnb2ykvYZDxzap9L5D8emffQT_C2srDsyDEfuyJUIQAt7v3oozybIfAcDfOb3hlKSctaluzJLza-G-233FhCi2JxkpYtYsEd1hIN2Pnkg9QiUKovkHTrjctra8mllbnDju3abefvCM914lJZ4EqN85UWwA_23KVnFadUs66u5r4Sr0lCOUAb07TlTBMQ3QOTGP-vaPg8rCb3YiYEW5jlB5CwTm1MbfV6DM-0sg_sswFsgvCtW4hQGlZN1QfjjhDfqw1U_C1ijCRJOBP4PnW3NmZ2usgupkZX_6Rx3j4RsfDRyQEBer-3z3sNh0I5EqHybn0iLMEBJTMz2_sjogaij1M9SIr7Rwh2fAGO_gTruUUZxV9n5EaASWZx8LyF2sgoEsbcg_ZB3Cd8J5pQqGDcVH7_M47ew2x_XMuJ18Z8lC6Ho7N0TE_-yszkXbx1JM7UISTEhTGm3Ra52-9IEhjLWkOUZTDJBcJDBoyQBi3xfQ92d3p_0uviLwmrwlFRREWK0fINkBgTyOQlDvaJKEmA0tAD66nG11WBOVyGT0EEXr7WURjir_LZwmqRS2QPbkRKrGm2VgZBMWbY-d_XwADFMP--9cxDn4BFnQr3fVdjVXe1GJVXtLcw3yLKWCY_smjpkXF-wFBdgkdl-OUbOmAhaFED1FIZBwh9VBvY_CZhkDZsSIxzgwMY07nRzgdJpaiqZunwMp1ykqiGXJdrMNaw_eMcgUmiXj6J3MoGL5OHb32F1l86J1TAA0pmV2YMsuTuL8mHyIxORTzUU5snvC6LT24GZpwdqt4VmkS-6C9ICLCvdgb87yM7cyj5PYnsWNCdnxevBv11Hj62BOrr-ubaLjJTv68Fm00)
 
 ### Adding Icons 👍
 
-Plantuml has a standard library containig icons for all the devices.
+Plantuml has a standard library containing icons for all the devices.
 
 [Library](https://github.com/plantuml/plantuml-stdlib)
 
@@ -275,7 +282,7 @@ To add an icon:
 - use on the diagram
     `rectangle "<$nginx>" as nginx_app`
 
-```bash
+```plantuml
 !include <logo/nginx>
 rectangle "<$nginx>" as nginx_app
 ```
@@ -295,6 +302,5 @@ separated by `;`
 ```bash
 rectangle "<$kotlin>\nFraud Detection Service" as fraud_detection_service #420090;text:white
 ```
-
 
 ## Conclusion
