@@ -4,7 +4,7 @@ title: plantuml otel architecture
 categories: [blogging]
 ---
 
-# blog plantuml otel architecture
+# blog Plantuml otel architecture
 
 * [categories: [blogging]](#categories:-[blogging])
 * [intro](#intro)
@@ -16,11 +16,33 @@ categories: [blogging]
 
 ## intro
 
-### [What is Plantuml](https://en.wikipedia.org/wiki/PlantUML)
+Building diagrams is a day to day task for me.
+This is to:
 
-There are other tools as plantuml:
+- describe and environment
+- show application flows
+- explaining ideas
 
-- [mermaid](https://mermaid.js.org/#/)
+I want to be able to create diagram based on plane text file. This allows me to revision the diagram within codebases or 
+other specific git repositories.
+
+### What is Plantuml
+
+> PlantUML is an open-source tool allowing users to create diagrams from a plain text language.
+> Besides various UML diagrams, PlantUML has support for various other software development related formats
+> (such as Archimate, Block diagram, BPMN, C4, Computer network diagram, ERD, Gantt chart, Mind map, and WBD), as well as visualisation of JSON and YAML files.
+> 
+> The language of PlantUML is an example of a domain-specific language.[5] Besides its own DSL,
+> PlantUML also understands AsciiMath, Creole, DOT, and LaTeX. It uses Graphviz software to lay out its diagrams and Tikz for LaTeX support. Images can be output as PNG, SVG, LaTeX and even ASCII art. PlantUML has also been used to allow blind people to design and read UML diagrams.[6][7]
+
+> *[From wikipedia](https://en.wikipedia.org/wiki/PlantUML)*
+
+
+[mermaid](https://mermaid.js.org/#/) has the same approach to diagram creation but is using a different DSL.
+
+### Why Plantuml
+
+[I go more in detail on my previous post](https://pax80.github.io/planuml-user-experience/)
 
 ### How to render
 
@@ -42,8 +64,8 @@ by using *diagram as code*
 
 ### 121 mapping with no layout change
 
-The first step is to create the same ammount of boxes we have for the orginal
-diagram and colorin
+The first step is to create the same amount of boxes we have for the original
+diagram and coloring
 
 <details>
 <summary>Code snipped</summary>
@@ -170,7 +192,7 @@ A ==> B: Bold line
 
 ### User ortho lines
 
-Ortho linetype render straight linnes instead of curved once
+Ortho linetype render straight lines instead of curved once
 
 <details>
 <summary>Code snipped</summary>
@@ -305,3 +327,19 @@ rectangle "<$kotlin>\nFraud Detection Service" as fraud_detection_service #42009
 ```
 
 ## Conclusion
+
+### Why i like it
+
+- there are now plenty of logos to choose to make the diagram looking even more professional
+- **ortho linetype** gives a clean layout look
+- using the include statement allows to create modular design reusing specific components without the need to rewrite the same code overtime
+- lots of documentation online
+
+### What could be improved
+
+- allow and easier layout positioning. at this moment there is no coordinate enforchment and the layout will depend on the way box and line are ordered
+
+### References
+
+- [Plantuml site](https://plantuml.com/)
+- [Docs](https://crashedmind.github.io/PlantUMLHitchhikersGuide/index.html)
