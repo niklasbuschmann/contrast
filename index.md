@@ -67,5 +67,5 @@ layout: page
    - Supervised the census of Swiss religious communities (N ≈ 6000)
 - Practical skills
    -  Mass mailing (Created 2500 personalized invitation letters (Julia script) and organized the physical mailing to contact and survey the communities leaders)
-   -  Rudimentary web content creation (design of the NCSS 2 WordPress [website](congregation.ch))
+
 
