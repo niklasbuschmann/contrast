@@ -66,6 +66,7 @@ layout: page
    - Led a team of student assistants (up to 5 people simultaneously)
    - Supervised the census of Swiss religious communities (N ≈ 6000)
 - Practical skills
-   -  Mass mailing (Created 2500 personalized invitation letters (Julia script) and organized the physical mailing to contact and survey the communities leaders)
+   -  Mass mailing (created 2500 personalized invitation letters (Julia script) and organized the physical mailing to contact and survey the communities leaders)
+   -  Rudimentary web content creation (https://wp.unil.ch/ncs2/)
 
 
