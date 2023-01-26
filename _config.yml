@@ -20,9 +20,9 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", title: "About", icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:ritchbuilders.com"}
-  - {title: Facebook, icon: facebook, url: "https://www.facebook.com/Ritchbuilders"}
-  - {title: Need more info?, icon: star, url: "https://www.contractorconnection.com/6-reasons-to-choose-a-professional-home-improvement-contractor-2/"}
+  - {title: "Mail", icon: envelope, url: "mailto:ritchbuilders.com"}
+  - {title: "Facebook", icon: facebook, url: "https://www.facebook.com/Ritchbuilders"}
+  - {title: "Need more info?", icon: star, url: "https://www.contractorconnection.com/6-reasons-to-choose-a-professional-home-improvement-contractor-2/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
