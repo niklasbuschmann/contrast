@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: ""
 ---
 
 Hi! My name is Ritch Navarro. I have worked as an [Independent Contractor](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined) for 28 years with the sole purpose of establishing a comfortable home for my
