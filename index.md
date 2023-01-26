@@ -8,3 +8,4 @@ home for my clients and developing the best ways of incorporating customers' dre
 home, from their bathroom to their backyard, into a reality. 
 
 ![Ritch Navarro](/assets/prof_pic.jpg)
+![Portfolio](/assets/portfolio.jpg)
