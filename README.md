@@ -10,7 +10,7 @@ I build growth and pricing ML tools for B2B at **[McKinsey & Company](https://mc
 
 I'm the co-creator of **[Shipped Brain](http://shippedbrain.com)**, an E2E ML platform for easy model deployment, discovery and serving. I also like to code in **[Rust](https://www.rust-lang.org/)** 🦀 and build fast advanced analytic (AA) tools.
 
-I like developing core modules and tools for machine learning that businesses and practitioners can leverage, solving business problems with AI and employ MLOps. I lean towards streaming/real time systems and applied ML in quantitative finance and B2B.
+I like developing core modules and tools for machine learning that businesses and practitioners can leverage, solving business problems with AI and employ MLOps. I lean towards streaming/real time systems, deep learning and applied ML.
 
 
 ## Experience
@@ -73,6 +73,7 @@ I like developing core modules and tools for machine learning that businesses an
 <ul>
 
 <li><code>tensorflow</code> 🐍 & 🦀</li>
+<li><code>pytorch</code> 🐍 & 🦀</li>
 <li><code>sklearn</code> 🐍</li>
 <li><code>XGBoost</code> 🐍</li>
 <li><code>LightGBM</code> 🐍</li>
