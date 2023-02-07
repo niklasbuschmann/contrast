@@ -1,0 +1,3 @@
+[submodule "_labs/AZ-104-MicrosoftAzureAdministrator"]
+	path = _labs/AZ-104-MicrosoftAzureAdministrator
+	url = https://github.com/servcomtt/AZ-104-MicrosoftAzureAdministrator.git
