@@ -25,8 +25,10 @@ layout: page
 - Senn, J. (2022). Les communautés locales musulmanes en Suisse : évolution entre 2008 et 2020. Islam & Society.
 
 ### Media mentions
-- Fernandez, L. (2023, February 6). [Plus d'un Neuchâtelois sur deux se dit «sans religion»](https://www.arcinfo.ch/neuchatel-canton/pres-de-52-des-neuchatelois-se-disent-sans-religion-1256614) _Arc Info_
-- Hartmann, D. (2022, November 18). [A chaque génération sa foi](https://lecourrier.ch/2021/11/18/a-chaque-generation-sa-foi/) _Le Courrier_
+- Fernandez, L. (2023, February 6). [Plus d'un Neuchâtelois sur deux se dit «sans religion»](https://www.arcinfo.ch/neuchatel-canton/pres-de-52-des-neuchatelois-se-disent-sans-religion-1256614) _Arc Info_.
+- Hartmann, D. (2022, November 18). [A chaque génération sa foi](https://lecourrier.ch/2021/11/18/a-chaque-generation-sa-foi/) _Le Courrier_.
+- ATS (2022, November 13). [Un certain déclin de la foi chrétienne en Suisse](https://www.laliberte.ch/news/un-certain-declin-de-la-foi-chretienne-en-suisse-625558) _La Liberté_.
+- Agathe Seppey (2022, April 15). [Où va la foi? «Chaque génération est moins religieuse que la précédente»](https://www.letemps.ch/societe/va-foi-generation-religieuse-precedente) _Le Temps_.
 
 ## Conferences / talks
 
