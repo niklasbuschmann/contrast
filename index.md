@@ -26,6 +26,7 @@ layout: page
 
 ### Media mentions
 - Fernandez, L. (2023, February 6). [Plus d'un Neuchâtelois sur deux se dit «sans religion»](https://www.arcinfo.ch/neuchatel-canton/pres-de-52-des-neuchatelois-se-disent-sans-religion-1256614) _Arc Info_
+- Hartmann, D. (2022, November 18). [A chaque génération sa foi](https://lecourrier.ch/2021/11/18/a-chaque-generation-sa-foi/) _Le Courrier_
 
 ## Conferences / talks
 
