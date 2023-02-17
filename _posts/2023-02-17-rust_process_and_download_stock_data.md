@@ -9,14 +9,15 @@ This is the first blog post of a series that will focus on time series analysis 
 
 ---
 
-# Introduction
+
+## Introduction
 
 Yahoo Finance is a popular platform that provides financial data, news, and insights about stocks, bonds, and other financial instruments. The platform also provides a RESTful API that allows developers to programmatically access its data and build custom applications. In this blog post, we will show you how to download data from the Yahoo Finance API and parse it using the rust programming language.
 
-# Prerequisites
+## Prerequisites
 Before we get started, you will need to have rust and Cargo installed on your machine. You can download rust from the official website, rust-lang.org, and Cargo, which is rust's package manager, comes with the rust installation.
 
-## Downloading Data from the Yahoo Finance API
+## Downloading data from the Yahoo Finance API
 To download data from the Yahoo Finance API, we will use the `reqwest` crate, which is a rust HTTP client that allows us to easily send HTTP requests and receive responses. To get started, we first need to add `reqwest` as a dependency to our `Cargo.toml` file:
 
 ```toml
@@ -24,6 +25,7 @@ To download data from the Yahoo Finance API, we will use the `reqwest` crate, wh
 reqwest = { version = "0.11", features = ["json"] }
 tokio = { version = "1", features = ["full"] }
 ```
+
 Once we have added the dependency, we can use the following Rust code to download data from the Yahoo Finance API:
 
 ```rust
@@ -171,7 +173,7 @@ QuotesTs: YahooFinanceQuoteTs { timestamps: [1676385000, 1676471400, 1676581205]
 3 - Date: 2023-02-16 | Price: $153.7100067138672
 ```
 
-# Conclusion
+## Conclusion
 The blog post describes how to download data from the Yahoo Finance API and parse it using rust. I've provided a step-by-step guide on how to make HTTP requests using the `reqwest` crate and parse the JSON response using the `serde_json` crate. I also show how to use rust's `chrono` crate to work with dates and timestamps.
 
 The key takeaways from the post are:
@@ -182,7 +184,7 @@ The key takeaways from the post are:
 
 By combining these tools, it is possible to download historical stock price data from the Yahoo Finance API and process it using rust.
 
-# References
+## References
 1. [serde_json](ttps://docs.rs/serde_json/latest/serde_json/)
 2. [Clone](raint)[https://doc.rust-lang.org/std/clone/trait.Clone.html)
 3. [Yahoo](PI reference)[https://cryptocointracker.com/yahoo-finance/yahoo-finance-api)
