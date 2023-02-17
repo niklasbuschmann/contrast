@@ -186,8 +186,8 @@ By combining these tools, it is possible to download historical stock price data
 
 ## References
 1. [serde_json](ttps://docs.rs/serde_json/latest/serde_json/)
-2. [Clone](raint)[https://doc.rust-lang.org/std/clone/trait.Clone.html)
-3. [Yahoo](PI reference)[https://cryptocointracker.com/yahoo-finance/yahoo-finance-api)
-4. [Yahoo](inance)[https://finance.yahoo.com/)
+2. [Clone trait](https://doc.rust-lang.org/std/clone/trait.Clone.html)
+3. [Yahoo API reference](https://cryptocointracker.com/yahoo-finance/yahoo-finance-api)
+4. [Yahoo finance](https://finance.yahoo.com/)
 5. [reqwests](https://docs.rs/reqwest/latest/reqwest/)
 6. [chrono](https://docs.rs/chrono/latest/chrono/)
