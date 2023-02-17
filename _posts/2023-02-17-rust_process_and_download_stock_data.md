@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-This is the first blog post of a series that will focus on time series analysis and forecasting of stock prices. This post show how to get data from yahoo finance and parse json responses in rust. 
+This is the first blog post of a series that will focus on time series analysis and forecasting of stock prices. This post shows how to get data from yahoo finance and parse json responses in rust. 
 
 ---
 
