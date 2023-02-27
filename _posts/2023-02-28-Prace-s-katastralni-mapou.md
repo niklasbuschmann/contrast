@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Práce-s-katastrální-mapou"
+categories: misc
+---
+
 Práce s katastrální mapou 
 V této ukázce si vysvětlíme, jak využívat katastrální mapy k určení druhu pozemku a využití pozemku v programu QGIS. Dále si ukážeme, jak propojit data z více katastrů a ořezat podle zájmového území. 
 Návod je pro program QGIS, data nalzenete v sekci data.  
