@@ -11,7 +11,7 @@ Návod je pro program QGIS, data naleznete v sekci data.
 Katastrální data obsahují parcelní kresbu ve formě polygonů (ploch) a definiční body. Polygony vymezují hranice parcel v prostoru, definiční body obsahují atributy, jako je druh pozemku, číslo parcely, typ využití pozemku apod.  Pro naše potřeby je potřebujeme propojit. Propojení probíhá ve dvou krocích. 
 1.	Nejdřív propojíme parcelní kresbu s definičními body parcel. Propojení propojíme na základě atributu ID_2. 
 
-2.	V druhém kroku propojíme atributovou tabulku s číselníky [druh pozemku CZ],[využití pozemku CZ] . Číselník je uspořádaný seznam entit (nejčastěji ve formě tabulky nebo katalogu), kde je pro konkrétní entitu přidělen jednoznačný kód. Používá se v databázích. 
+2.	V druhém kroku propojíme atributovou tabulku s číselníky [druh pozemku CZ], [využití pozemku CZ] . Číselník je uspořádaný seznam entit (nejčastěji ve formě tabulky nebo katalogu), kde je pro konkrétní entitu přidělen jednoznačný kód. Používá se v databázích. 
 
 V případě že chceme propojovat více katastrálních území je potřeba soubory definičních bodů a parcel před propojením sloučit prostřednictvím nástroje Merge. Ke stažení více katastrálních území můžete využít nástroje pro hromadné stahování katastrálních map: [https://services.cuzk.cz/shp/ku/QGIS-plugin/QGIS_verze-3.x/]
 Po stažení dat postupujeme ve dvou krocích. 
@@ -22,7 +22,7 @@ Dále pokračujeme k propojení definičním bodům s parcelní kresbou a spojen
 Příprava katastrálních dat Slovensko
 
 Katastrální data pro Slovenskou republiku stáhnete ze stránek [https://ako.vugk.sk/], vybereme katastrální území, zadáme email, a data přijdou na email. Data stáhneme ve formátu gpkg a připojíme přes Open data source a vector. 
-Dále stáhneme číselníky z odkazu [druh pozemku SK],[využití pozemku SK] a přidáme jako tabulku s oddělovací (Delimited text). Když se tabulka načte do mapového projektu, otevřeme vlastnosti vrstvy katastrální mapy a pomocí Joins připojíme číselník k tabulce. Pole kód propojíme s NatureOfLanduseCode. Ted máme vrstvu propojenou a můžeme klasifikovat symptologii podle druhu pozemků. 
+Dále stáhneme číselníky z odkazu [druh pozemku SK], [využití pozemku SK] a přidáme jako tabulku s oddělovací (Delimited text). Když se tabulka načte do mapového projektu, otevřeme vlastnosti vrstvy katastrální mapy a pomocí Joins připojíme číselník k tabulce. Pole kód propojíme s NatureOfLanduseCode. Ted máme vrstvu propojenou a můžeme klasifikovat symptologii podle druhu pozemků. 
 
 Data 
 Parcelní kresba ČR: [https://services.cuzk.cz/shp/ku/epsg-5514/]
