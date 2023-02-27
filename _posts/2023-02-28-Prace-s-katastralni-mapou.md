@@ -6,7 +6,9 @@ categories: misc
 
 Práce s katastrální mapou 
 V této ukázce si vysvětlíme, jak využívat katastrální mapy k určení druhu pozemku a využití pozemku v programu QGIS. Dále si ukážeme, jak propojit data z více katastrů a ořezat podle zájmového území. 
-Návod je pro program QGIS, data naleznete v sekci data.  
+Návod je pro program QGIS, data naleznete v sekci data.
+
+## Příprava katastrálních dat Česko
 
 Katastrální data obsahují parcelní kresbu ve formě polygonů (ploch) a definiční body. Polygony vymezují hranice parcel v prostoru, definiční body obsahují atributy, jako je druh pozemku, číslo parcely, typ využití pozemku apod.  Pro naše potřeby je potřebujeme propojit. Propojení probíhá ve dvou krocích. 
 1.	Nejdřív propojíme parcelní kresbu s definičními body parcel. Propojení propojíme na základě atributu ID_2. 
@@ -19,7 +21,7 @@ Po stažení dat postupujeme ve dvou krocích.
 2.	Pomocí nástroje Merge spojíme všechny soubory všechny definiční body a vytvoříme nový soubor KN_Def_merge.  
 Dále pokračujeme k propojení definičním bodům s parcelní kresbou a spojení s číselníky. Postup je totožný.  
 
-Příprava katastrálních dat Slovensko
+## Příprava katastrálních dat Slovensko
 
 Katastrální data pro Slovenskou republiku stáhnete ze stránek [https://ako.vugk.sk/], vybereme katastrální území, zadáme email, a data přijdou na email. Data stáhneme ve formátu gpkg a připojíme přes Open data source a vector. 
 Dále stáhneme číselníky z odkazu [druh pozemku SK], [využití pozemku SK] a přidáme jako tabulku s oddělovací (Delimited text). Když se tabulka načte do mapového projektu, otevřeme vlastnosti vrstvy katastrální mapy a pomocí Joins připojíme číselník k tabulce. Pole kód propojíme s NatureOfLanduseCode. Ted máme vrstvu propojenou a můžeme klasifikovat symptologii podle druhu pozemků. 
