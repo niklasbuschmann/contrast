@@ -5,7 +5,7 @@ Návod je pro program QGIS, data nalzenete v sekci data.
 
 Data 
 Parcelní kresba ČR: https://services.cuzk.cz/shp/ku/epsg-5514/
-Parcelní kreba SK
+Parcelní kreba SK: https://ako.vugk.sk/
 Číselníky:  druh pozemku https://drive.google.com/file/d/1eGtCg2Q7FsS-N53yGb-T4afyXklpaKdQ/view?usp=share_link
             využití pozemku: https://drive.google.com/file/d/1W7rBbFG6f4Hyi4LQruPWNo-L9Dh8FmFF/view?usp=sharing
             druh pozemku Slovensko: https://docs.google.com/spreadsheets/d/1kKBp2r7vEgpWe1M4BubtJPpu5w0U58BkLHtDiBBe2gs/edit?usp=share_link
