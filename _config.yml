@@ -17,7 +17,7 @@ minimal: true             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", title: "About me", icon: address-card} # this is the front page
-  - {file: "blog.md", title: "Blog", icon: block-quote}
+  - {file: "blog.md", title: "Blog", icon: blog} #Here I'll have my posts
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:rkooiker18@gmail.com"}
@@ -32,6 +32,7 @@ plugins:
  - jekyll-feed
  - jekyll-titles-from-headings
 
+# makes sure titles don't get replicated from headings
 titles_from_headings:
   enabled:     true
   strip_title: true
