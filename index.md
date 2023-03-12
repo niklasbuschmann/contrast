@@ -15,7 +15,7 @@ To make my work more accessible, I'm creating a website called Carifesta Stories
 
 I'm busy building relationships with librarians, archivists, community storytellers, and other researchers to make Carifesta Stories a reality.
 
-On this page you'll find my updates about the project. If I'm going to help steward the history of these stories, accountability and transparency are indispensable.
+On this page you'll find my updates about the project. If I'm going to help steward these stories, accountability and transparency are indispensable.
 
 My [Linktree](https://linktr.ee/renekooiker) has all my publications. Check out my traditional cv and resume here.
 
