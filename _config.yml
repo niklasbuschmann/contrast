@@ -1,6 +1,6 @@
 title: "Blog Title"
 author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "Made with Jekyll"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -8,7 +8,6 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_social: true
 show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: true        # show a sidebar instead of the usual header
@@ -17,8 +16,8 @@ minimal: true             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html", title: "Home" | icon: home}
-  - {file: "README.md", title: "About Me" | icon: address-card}
+  - {file: "index.html", title: "Home", icon: home}
+  - {file: "README.md", title: "About Me", icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:rkooiker18@gmail.com"}
