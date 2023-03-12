@@ -31,3 +31,8 @@ comments:
 plugins:
  - jekyll-feed
  - jekyll-titles-from-headings
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
