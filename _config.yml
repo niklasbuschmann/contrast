@@ -19,10 +19,11 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", title: "About me", icon: address-card} # this is the front page
   - {file: "blog.md", title: "Blog", icon: blog} #Here I'll have my posts
 
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+external:                  # shows social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:rkooiker18@gmail.com"}
   - {title: GitHub, icon: github, url: "https://github.com/rjkooiker"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/rene-kooiker/"}
+  - {title: Mastodon, icon: mastodon, url: "https://hcommons.social/@renekooiker"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/

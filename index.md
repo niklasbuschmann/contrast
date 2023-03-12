@@ -19,4 +19,4 @@ On this page you'll find my updates about the project. If I'm going to help stew
 
 My [Linktree](https://linktr.ee/renekooiker) has all my publications. Check out my traditional cv and resume here.
 
-Let's chat! Find my email, LinkedIn, and GitHub in the sidebar.
+Let's chat! Find my email, LinkedIn, Mastodon, and GitHub in the sidebar.
