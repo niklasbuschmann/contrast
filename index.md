@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About me"
+title: ""
 ---
 
 # Hi! Good to meet you.
