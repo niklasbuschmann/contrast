@@ -30,10 +30,4 @@ comments:
 
 plugins:
  - jekyll-feed
-
-# Titles from headings
-
-titles_from_headings:
-  enabled:     false
-  strip_title: false
-  collections: false
+ - jekyll-titles-from-headings
