@@ -174,12 +174,15 @@ a{
     filter:grayscale(1);
     transition:all 1s;
     animation: scaleImage 5s linear infinite;
-    width:20px;
-    height:20px;
   }
 
   .user-image img{
     z-index:-9;
+     width:100%;
+    height:100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
   }
 
   @keyframes scaleImage {
