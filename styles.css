@@ -82,7 +82,6 @@ a{
     padding: 0 1rem;
     padding-bottom: 8rem;
     /* height: 210px; */
-    overflow-x: hidden;
     width: 100%; 
 }
 
@@ -725,8 +724,7 @@ footer{
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100vw;
-  height: 100vh;
+
 
   /* display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
