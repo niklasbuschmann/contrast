@@ -15,7 +15,8 @@
     height:100vh;
     overflow-y:auto;
     overflow-x: auto;
-    max-width:100;
+    min-width:0;
+    overflow-wrap:break-word;
 }
 
 .container{
