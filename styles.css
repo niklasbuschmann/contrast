@@ -18,10 +18,9 @@
 }
 
 .container{
-    /* width:1200px; */
+    width:1200px; 
     margin:0 auto;
-    width: 100vw;
-    height: 100vh;
+    
 }
 
 .navbar{
