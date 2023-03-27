@@ -14,7 +14,9 @@
 #wrapper{
     height:100vh;
     overflow-y:auto;
-    overflow-x: auto;
+    overflow-x: hidden;
+    width: 100vw;
+
 }
 
 .container{
@@ -677,6 +679,8 @@ footer{
   margin-top:-1px;
   background-color: #343d68;
   padding:5rem;
+  height: 40px;
+  
 }
 
 .footer-wrapper{
