@@ -264,14 +264,7 @@ a{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 } 
- /* @keyframes shakeEffect {
-  
-    50%{
-        left:5%;
-        bottom:10%;
-    }
- 
-  } */
+
 
   .icon-zigzag{
     z-index:9;
@@ -812,7 +805,7 @@ footer{
 }
 
 @media screen and (min-width:768px){
-  .projects-article{
+  .hero-section .projects-article{
     max-width: 608px;
   }
   .article-card{
@@ -822,7 +815,7 @@ footer{
 }
 
 @media screen and (min-width:1280px){
-  .projects-article{
+  hero-section .projects-article{
     max-width: 1156px;
   }
   .article-card{
