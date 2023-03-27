@@ -10,12 +10,15 @@
 :root {
   --bgOrange: #e84949;
 }
+html{
+  height: -webkit-fill-available;
+}
   
 #wrapper{
     height:100vh;
-    overflow-y:auto;
+    overflow-y:auto; 
     overflow-x: auto;
-    width: 100vw;
+  
 
 }
 
@@ -85,6 +88,7 @@ a{
     padding-bottom: 8rem;
     /* height: 210px; */
     width: 100%; 
+    overflow: hidden;
 }
 
 .faded-text{
@@ -105,6 +109,7 @@ a{
     justify-content:center;
     gap: 2rem;
     width: 100%;
+    overflow: hidden;
 }
 
 .hero-section-heading{
