@@ -15,16 +15,13 @@
     height:100vh;
     overflow-y:auto;
     overflow-x: hidden;
-    display: flex;
-   flex-wrap: wrap; 
+    
 }
 
 .container{
     width:1200px;
     margin:0 auto;
     overflow-x: hidden;
-    display: flex;
-    flex-wrap: wrap; 
 }
 
 .navbar{
@@ -32,6 +29,7 @@
     justify-content:space-between;
     align-items:center;
     padding-top:1rem;
+    overflow-x: hidden;
 }
 
 .logo{
@@ -682,6 +680,7 @@ footer{
   margin-top:-1px;
   background-color: #343d68;
   padding:5rem;
+  overflow-x: hidden;
 }
 
 .footer-wrapper{
