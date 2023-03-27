@@ -78,11 +78,13 @@ a{
     display:flex;
     justify-content: center;
     align-items: center;
-
     gap: 5rem;
     margin: 4rem auto;
     padding: 0 1rem;
     padding-bottom: 8rem;
+    height: 210px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .faded-text{
