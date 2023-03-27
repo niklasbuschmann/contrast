@@ -14,8 +14,8 @@
 #wrapper{
     height:100vh;
     overflow-y:auto;
-    overflow-x: hidden!important;
-    max-width:100!important%
+    overflow-x: auto;
+    max-width:100;
 }
 
 .container{
