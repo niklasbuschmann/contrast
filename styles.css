@@ -15,12 +15,16 @@
     height:100vh;
     overflow-y:auto;
     overflow-x: hidden;
+    display: flex;
+   flex-wrap: wrap; 
 }
 
 .container{
     width:1200px;
     margin:0 auto;
     overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap; 
 }
 
 .navbar{
