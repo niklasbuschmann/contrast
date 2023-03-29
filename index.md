@@ -23,7 +23,6 @@ layout: page
 - Senn, J (2023). [les communautés locales musulmanes en suisse : évolution entre 2008 et 2020](https://islamandsociety.ch/fr/home-2/swiss/organisations/local/#section2) _Islam and Soceity_
 - Stolz, J., & Senn, J. (2021, November 11). [La foi décroissante, une question de générations.](https://github.com/jsenn2/jsenn2.github.io/blob/master/Article%20Le%20Temps%20'Opinion'.pdf) _Le Temps_.
 - Stolz, J., & Senn, J. (2021, December 30). [Warum sich die Kirchen leeren](https://www.nzz.ch/meinung/die-saekularisierung-nimmt-von-generation-zu-generation-zu-ld.1653066?reduced=true) _Neue Zürcher Zeitung_.
-- Senn, J. (2022). Les communautés locales musulmanes en Suisse : évolution entre 2008 et 2020. Islam & Society.
 
 ### Media mentions
 - Fernandez, L. (2023, February 6). [Plus d'un Neuchâtelois sur deux se dit «sans religion»](https://www.arcinfo.ch/neuchatel-canton/pres-de-52-des-neuchatelois-se-disent-sans-religion-1256614) _Arc Info_.
