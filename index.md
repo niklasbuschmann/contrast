@@ -55,6 +55,10 @@ layout: page
 `University of Lausanne`
    - *L'évolution du paysage religieux suisse (2008-2020). Diversité, mortalité et fusions des groupes religieux locaux*
 
+## Peer Review Experience:
+
+- Social Compass, 2023 - Present (Reviewed 1 article)
+
 ## Awards
 - Prize for the best Master of Arts thesis in sociology at the University of Neuchâtel ($1,000), "The hegemony of genes? Kinship as thought and practiced by people born of sperm donation".
 
