@@ -71,7 +71,7 @@ layout: page
 - Statistical analysis 
    - Mostly with the R software
    - Training
-      - Web Scraping with R (USI Summer School, prof. M. Steenbergen)
+      - Machine learning (USI Summer School, prof. M. Steenbergen)
 - Coordination
    - Organized he coordination with the scientific partners ([ZRWP](https://theologie.unibas.ch/de/fakultaet/zentrum-religion-wirtschaft-politik/) of the University of Basel and the [CIC](https://cic-info.ch/))
 - Team management 
