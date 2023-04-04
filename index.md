@@ -25,6 +25,8 @@ layout: page
 - Stolz, J., & Senn, J. (2021, December 30). [Warum sich die Kirchen leeren](https://www.nzz.ch/meinung/die-saekularisierung-nimmt-von-generation-zu-generation-zu-ld.1653066?reduced=true) _Neue Zürcher Zeitung_.
 
 ### Media mentions
+
+- Burri, J. (2023, March 28). [Les causes du mouvement de sécularisation restent inexpliquées](https://www.reformes.ch/societe/2023/03/les-causes-du-mouvement-de-secularisation-restent-inexpliquees-journal-reformes) _Réformés_.
 - Fernandez, L. (2023, February 6). [Plus d'un Neuchâtelois sur deux se dit «sans religion»](https://www.arcinfo.ch/neuchatel-canton/pres-de-52-des-neuchatelois-se-disent-sans-religion-1256614) _Arc Info_.
 - Hartmann, D. (2022, November 18). [A chaque génération sa foi](https://lecourrier.ch/2021/11/18/a-chaque-generation-sa-foi/) _Le Courrier_.
 - ATS (2022, November 13). [Un certain déclin de la foi chrétienne en Suisse](https://www.laliberte.ch/news/un-certain-declin-de-la-foi-chretienne-en-suisse-625558) _La Liberté_.
