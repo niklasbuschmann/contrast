@@ -1,6 +1,6 @@
 ---
 title: "Mini Cursos"
-permalink: "/classes/"
+permalink: "/courses/"
 layout: page
 ---
 
