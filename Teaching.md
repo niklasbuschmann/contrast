@@ -13,8 +13,8 @@ Lista de Exercícios
 ### Teoria Macroeconômica III
 
 
-### Economia Aplicada II
-
+### Economia Matemática II
+Lista de Exercícios - [Lista 1]
 
 
 
