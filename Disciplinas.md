@@ -18,10 +18,3 @@ Lista de Exercícios - [Lista 1](\archive/MathEco_WorkingList_01.pdf) [Lista 2](
 
 
 
-
-## Mini-Cursos
-
-### Introdução à Pesquisa em Economia
-Fundamentos e Aspectos Práticos - [Apresentação](/archive/Mono-Economia-Aspectos-Práticos.pdf)
-
-
