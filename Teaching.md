@@ -6,6 +6,8 @@ layout: page
 
 
 ### Teoria Microeconomia II
+Lista de Exercícios 
+
 
 
 ### Teoria Macroeconômica III
@@ -18,7 +20,7 @@ layout: page
 
 ## Mini-Cursos
 
-#### Monografia: Aspectos Práticos
-Uma breve introdução à elaboração de monografia em economia - [Apresentação](/archive/Mono-Economia-Aspectos-Práticos.pdf)
+### Introdução à Pesquisa em Economia
+Fundamentos e Aspectos Práticos - [Apresentação](/archive/Mono-Economia-Aspectos-Práticos.pdf)
 
 
