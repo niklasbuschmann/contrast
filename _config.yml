@@ -6,6 +6,10 @@ lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
+#globally
+mathjax: true
+layout: post
+categories: media
 # Layout
 
 show_excerpts: false        # show article excerpts on the home page
