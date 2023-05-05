@@ -1,61 +1,17 @@
 # 1d_dirichlet
 
-Graph TD
-
-Start --> stop
-
-```flow
-st=>start: 开始框
-op=>operation: 处理框
-cond=>condition: 判断框(是或否?)
-sub1=>subroutine: 子流程
-io=>inputoutput: 输入输出框
-e=>end: 结束框
-st->op->cond
-cond(yes)->io->e
-cond(no)->sub1(right)->op
-```
-
-
-```mermaid
-graph LR
-A[方形] -->B(圆角)
-    B --> C{条件a}
-    C -->|a=1| D[结果1]
-    C -->|a=2| E[结果2]
-    F[横向流程图]
-```
-
-```mermaid
-graph TD
-A[方形] --> B(圆角)
-    B --> C{条件a}
-    C --> |a=1| D[结果1]
-    C --> |a=2| E[结果2]
-    F[竖向流程图]
-```
-
-```mermaid
-graph LR
-start --> stop
-```
-
-
-
-
-
 ## 1d_dirichlet.i
 
 ```C++
 [Mesh]
-	type = GeneratedMesh
+  type = GeneratedMesh
   dim = 1
   nx = 10
   xmax = 2
 []
 
 [Variables]
-	[v]
+  [v]
     initial_condition = 1.1
   []
 []
@@ -63,11 +19,11 @@ start --> stop
 [Kernels]
   inactive = 'ad_diff'
   [diff]
-    tyep = MatDiffusion
+    type = MatDiffusion
     variable = v
     diffusivity = 'coef'
   []
-	[ad_diff]
+  [ad_diff]
     type = ADMatDiffusion
     variable = v
     diffusivity = 'ad_coef_2'
@@ -80,48 +36,48 @@ start --> stop
 []
 
 [BCs]
-	[bounds]
-		type = DirichletBC
-		variable = v
-		boundary = 'left right'
-		value = 0
-	[]
+  [bounds]
+    type = DirichletBC
+    variable = v
+    boundary = 'left right'
+    value = 0
+  []
 []
 
 [Functions]
-	[sink]
-		type = ParaseFunction
-		value = '3*x^3'
-	[]
+  [sink]
+    type = ParaseFunction
+    value = '3*x^3'
+  []
 []
 
 [Materials]
-	[ad_coef]
-		type = ADParsedMaterial
-		f_name = 'ad_coef'
-		function = '0.01*max(v,1)'
-		args = 'v'
-	[]
-	[converter_to_regular]
-		type = MaterialADConverter
-		ad_props_in = 'ad_coef'
-		reg_props_out = 'coef'
-	[]
+  [ad_coef]
+    type = ADParsedMaterial
+    f_name = 'ad_coef'
+    function = '0.01*max(v,1)'
+    args = 'v'
+  []
+  [converter_to_regular]
+    type = MaterialADConverter
+    ad_props_in = 'ad_coef'
+    reg_props_out = 'coef'
+  []
 # at this poin we should have lost the derivatives
-	[converter_to_ad]
-		type = MaterialADConverter
-		reg_prop_in = 'coef'
-		ad_props_out = 'ad_coef_2'
-	[]
+  [converter_to_ad]
+    type = MaterialADConverter
+    reg_prop_in = 'coef'
+    ad_props_out = 'ad_coef_2'
+  []
 []
 
 [Executioner]
-	type = Steady
-	solve_type = 'NEWTON'
+  type = Steady
+  solve_type = 'NEWTON'
 []
 
 [Outputs]
-	exodus = true
+  exodus = true
 []
 ```
 
