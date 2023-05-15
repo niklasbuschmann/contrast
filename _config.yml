@@ -18,10 +18,10 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "Home", file: "/home.md"}
-  - {title: "Publications", file: "/publication.md"}
-  - {title: "Projects", file: "/projects.md"}
-  - {title: "Teaching", file: "/teaching.md"}
-  - {title: "Contact", file: "/contact.md"}
+  - {title: "Publications", file: "publication.md"}
+  - {title: "Projects", file: "projects.md"}
+  - {title: "Teaching", file: "teaching.md"}
+  - {title: "Contact", file: "contact.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:winsonpeng@gmail.com"}
