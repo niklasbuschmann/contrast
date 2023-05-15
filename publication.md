@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Publications"
 ---
 
@@ -12,3 +12,6 @@ Hilbert, M., Barnett, G., Blumenstock, J., Contractor, N., Diesner, J., Frey, S.
 Van Atteveldt, W., & Peng, T. Q. (Eds.) (2018). Special Issue on Computational Methods for Communication Science. Communication Methods and Measures, 12(2-3).
 Van Atteveldt, W., & Peng, T. Q. (2018). When communication meets computation: Opportunities, challenges, and pitfalls in computational communication science. Communication Methods and Measures, 12(2-3), 81-92.
 Zhu, J. J. H., Peng, T. Q., Liang, H., Wang, C. J., Qin, J., & Chen, H. X. (2014). Computational social science in communication research. e-Science Technology & Application, 5(2), 3-13. [in Chinese]
+
+
+
