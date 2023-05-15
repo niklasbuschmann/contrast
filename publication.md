@@ -1,6 +1,7 @@
-----
-Publications
-----
+---
+layout: default
+title: "Publications"
+---
 
 Computational Communication as an Emerging Research Paradigm
 Zhang, L, Peng, T. Q., Wang, C. J., Liang, H., & Zhu, J. J. H. (2021). A Natural Course from Marginality to Centrality: What we learned from the development of computational communication research in China (從邊陲到主流的一條自然路徑：華人計算傳播學者的參與和體驗). In Francis L. F. Lee, Yu Huang (Eds), Inherit and Inspire: The Past, Present and Future of Chinese Communication Studies (pp. 399-419). Hong Kong: Chinese University of Hong Kong Press. [in Chinese]
