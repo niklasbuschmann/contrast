@@ -22,7 +22,6 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Projects", file: "/projects.md"}
   - {title: "Teaching", file: "/teaching.md"}
   - {title: "Contact", file: "/contact.md"}
-  - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:winsonpeng@gmail.com"}
