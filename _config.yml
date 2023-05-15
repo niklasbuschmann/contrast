@@ -5,7 +5,6 @@ permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
-theme: bulma-clean-theme
 
 # Layout
 
@@ -14,6 +13,7 @@ show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
+theme: bulma-clean-theme
 
 # Menu
 
