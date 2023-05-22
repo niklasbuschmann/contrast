@@ -20,8 +20,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "victorma20th@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/victormaaaaaa/}
+  - {title: Mail, icon: envelope, url: "afailedchief@gmial.com"}
+  - {title: Github, icon: github, url: "https://github.com/victormaaaaaa"}
   - {title: Subscribe, icon: rss, url: "https://www.youtube.com/channel/UCsFKkpGgO_acRbZ9CoyxzRg"}
 
 comments:
