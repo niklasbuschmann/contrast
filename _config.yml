@@ -8,7 +8,6 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show socials: false
 show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
@@ -21,9 +20,9 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "victorma20th@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/victormaaaaaa/}
+  - {title: Subscribe, icon: rss, url: "https://www.youtube.com/channel/UCsFKkpGgO_acRbZ9CoyxzRg"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
