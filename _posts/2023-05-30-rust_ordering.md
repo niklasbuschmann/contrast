@@ -9,6 +9,7 @@ Rust provides several traits that are fundamental for comparing and ordering val
 
 ---
 
+
 # Understanding Ord, Eq, PartialOrd, and PartialEq Traits in Rust
 
 Rust provides several traits that are fundamental for comparing and ordering values. These traits include `Ord`, `Eq`, `PartialOrd`, and `PartialEq`. In this blog post, we'll explore what these traits are, when they can and can't be derived, and how they can be used to sort a vector.
