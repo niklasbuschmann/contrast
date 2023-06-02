@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Portfolio"
+title: ""
 ---
 
-Test Test Test
+Hi, I am Nivya, blah blah blah
