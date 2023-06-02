@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Portfolio"
+title: ""
 ---
 
 {% if site.show_excerpts %}
