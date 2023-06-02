@@ -16,9 +16,9 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "/nivyaCV.pdf", title: "CV", icon: home}
+  - {file: "/nivyaCV.pdf", title: "CV"}
   - {title: "Portfolio", file: "/portfolio.md"}
-  - {file: "README.md", title: "About me", icon: address-card}
+  - {file: "README.md", title: "About me"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:nkuzhiv1@jhu.edu"}
