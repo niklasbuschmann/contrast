@@ -33,8 +33,7 @@ Ignition world               |  World rendered in Rviz
 ![](/assets/sim_gazebo.png) |  ![](/assets/sim_rviz.png)
 
 ## Result
-{% include embed.html url="https://youtu.be/smgqKGkIvUg" %}
-{% include embed.html url="https://youtu.be/p8ss_OPU6lk" %}
+<iframe width="420" height="315" src="https://youtu.be/smgqKGkIvUg" frameborder="0" allowfullscreen></iframe>
 
 ## Challenges
 - Reammping topics for multirobot environment
