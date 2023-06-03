@@ -7,8 +7,6 @@ categories: media
 
 ![Real-time map](/assets/MapRealTime.png)
 
-Motivation
-
 ## Overview and Motivation
 
 To facilitate a successful teaming operation between two mobile robots, several subtasks must be accomplished, including mapping, navigation, sensor calibration, and real-time communication. In this project, we implemented and integrated these submodules to achieve a collaborative teaming task involving two Turtlebots
