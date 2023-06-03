@@ -18,54 +18,23 @@ This project utilizes ROS2 actions and the navigation stack to enable cooperativ
 
 ## Approach
 
-Burger uses camera and ArUco markers to know its location in the world whereas Waffle uses a lidar to map the world and get to Burger. SLAM tooolbox was 
+Burger uses camera and ArUco markers to know its location in the world whereas Waffle uses a lidar to map the world and get to Burger. Waffles drives around the world using teleop and uses SLAM toolbox to create the map. 
 
-[Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
+ROS2 Nav2 was used to calibrate the camera. Burger and Waffle use ROS2 action operations to communicate. These actions have a goal, result and feedback. Actions were chosen instead of services since actions give the ability to cancel requests. Burger is the action client in this project and gives out a 2D goal pose to Waffle as soon as it reaches the gap on the platform. Waffle is the action server and can return feedback while it is perfomring the task of going from it's current pose to the target pose and a result regarding the status of the task. 
 
-$$ e^{i\theta}=\cos(\theta)+i\sin(\theta) $$
+Picture calibration 
 
-The [Euler-Lagrange](https://en.wikipedia.org/wiki/Lagrangian_mechanics) differential equation is the fundamental equation of calculus of variations.
+An inbuilt Adaptive Monte-Carlo Lozalizer was used to estimate the current 2D pose of Waffle. The laser model used was of likelihood field type. A good estimate for the initial pose, $$[x, y, \theta]^{T}$$ where $$\theta$$ is the orientation, was fed to the localizer. Parameters such as process and sensor noise covariances were tuned to have the particle filter converge eventually. 
 
-$$ \frac{\mathrm{d}}{\mathrm{d}t} \left ( \frac{\partial L}{\partial \dot{q}} \right ) = \frac{\partial L}{\partial q} $$
+Existing turlebot3 robot descriptions were used to visualize the task in simulation. Ignition Gazebo was used to render the bots in simulation environment.  
 
-The [Schrödinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation) describes how the quantum state of a quantum system changes with time.
+Ignition pictures
 
-$$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t) $$
+## Result
+{% include embed.html url="https://youtu.be/smgqKGkIvUg" %}
+{% include embed.html url="https://youtu.be/p8ss_OPU6lk" %}
 
-## Code
+## Challenges
+- Reammping topics for multirobot environment
+- Camera calibration and communication between ArUco marker node and Burger's camera node
 
-Embed code by putting `{{ "{% highlight language " }}%}` `{{ "{% endhighlight " }}%}` blocks around it. Adding the parameter `linenos` will show source lines besides the code.
-
-{% highlight c %}
-
-static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocator* requestAlloc)
-{
-    struct Admin* admin = Identity_check((struct Admin*) vAdmin);
-    int64_t enabled = admin->asyncEnabled;
-    Dict d = Dict_CONST(String_CONST("asyncEnabled"), Int_OBJ(enabled), NULL);
-    Admin_sendMessage(&d, txid, admin);
-}
-
-{% endhighlight %}
-
-## Gists
-
-With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can embed gists simply by using the `gist` command:
-
-<script src="https://gist.github.com/5555251.js?file=gist.md"></script>
-
-## Images
-
-Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
-
-A wrapper `div` with the class `large` can be used to increase the width of an image or iframe.
-
-![Flower](https://user-images.githubusercontent.com/4943215/55412447-bcdb6c80-5567-11e9-8d12-b1e35fd5e50c.jpg)
-
-[Flower](https://unsplash.com/photos/iGrsa9rL11o) by Tj Holowaychuk
-
-## Embedded content
-
-You can also embed a lot of stuff, for example from YouTube, using the `embed.html` include.
-
-{% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
