@@ -7,10 +7,17 @@ categories: media
 
 ![Real-time map](/assets/MapRealTime.png)
 
+Motivation
 
-## MathJax
+## Overview and Motivation
 
-You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
+To facilitate a successful teaming operation between two mobile robots, several subtasks must be accomplished, including mapping, navigation, sensor calibration, and real-time communication. In this project, we implemented and integrated these submodules to achieve a collaborative teaming task involving two Turtlebots
+
+This project utilizes ROS2 actions and the navigation stack to enable cooperative teamwork between two Turtlebots. The task involves Turtlebot3 Burger moving from one end of a platform to the other. However, the platform consists of moving blocks, and one of the blocks is strategically positioned, creating a gap. When Burger reaches this specific spot on the platform, it sends a request to Waffle. Subsequently, Waffle responds by pushing the platform to close the gap, allowing Burger to pass through smoothly.
+
+## Approach
+
+Burger uses camera and ArUco markers to know its location in the world whereas Waffle uses a lidar to map the world and get to Burger. SLAM tooolbox was 
 
 [Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
 
