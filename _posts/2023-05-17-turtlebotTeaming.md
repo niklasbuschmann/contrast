@@ -5,7 +5,10 @@ layout: post
 categories: media
 ---
 
-![Real-time map](/assets/MapRealTime.png)
+Map in Rviz                  |  Bots in Real Setting
+:---------------------------:|:-------------------------:
+![](/assets/MapRealTime.png) |  ![](/assets/CroppedRealTime.png)
+
 
 ## Overview and Motivation
 
