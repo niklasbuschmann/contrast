@@ -5,9 +5,9 @@ layout: post
 categories: media
 ---
 
-Map in Rviz                  |  Bots in Real Setting
+Map in Rviz                  |  Real world setting
 :---------------------------:|:-------------------------:
-![](/assets/MapRealTime.png) |  ![](/assets/CroppedRealTime.png)
+![](/assets/MapRealTime.png) |  ![](/assets/Maze_Setup.jpg)
 
 
 ## Overview and Motivation
@@ -28,7 +28,9 @@ An inbuilt Adaptive Monte-Carlo Lozalizer was used to estimate the current 2D po
 
 Existing turlebot3 robot descriptions were used to visualize the task in simulation. Ignition Gazebo was used to render the bots in simulation environment.  
 
-Ignition pictures
+Ignition world               |  World rendered in Rviz
+:---------------------------:|:-------------------------:
+![](/assets/sim_gazebo.png) |  ![](/assets/sim_rviz.png)
 
 ## Result
 {% include embed.html url="https://youtu.be/smgqKGkIvUg" %}
