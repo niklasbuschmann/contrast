@@ -32,7 +32,7 @@ $$y_{h_{new}} = y_h + \Delta y$$
 
 Frame translation                     |  Frame rotation
 :------------------------------------:|:-------------------------:
-![](/assets/ribbonFin/NewTrans.png) |  ![](/assets/ribbonFin/NewTrans.png)
+![](/assets/ribbonFin/NewTrans.png)   |  ![](/assets/ribbonFin/NewTrans.png)
 
 Another important aspect is to orient the body center on the same line as the head. This implies that the
 x-coordinates of the body center and head might be different but the y-coordinates have to be very similar. This
@@ -43,7 +43,7 @@ $$\Delta \theta = tan^{-1}(\frac{y_h - y_b}{x_h - x_b})$$
 $$l= \sqrt{(x_{h_{new}} - x_{b_{new}})^{2}+(y_{h_{new}} - y_{b_{new}})^{2}}$$
 $$(x_{b_{new}}, y_{b_{new}}) = (x_{b_{new}},y_{b_{new}} \pm l \Delta \theta)$$
 
- Check the math by overlapping a random frame with reference frame                                     
+                                           |                                   
 :-----------------------------------------:|:-------------------------:
 ![](/assets/ribbonFin/AfterRotation.png)   |  ![](/assets/ribbonFin/TransVsRot.png)
 
