@@ -47,7 +47,7 @@ $$(x_{b_{new}}, y_{b_{new}}) = (x_{b_{new}},y_{b_{new}} \pm l \Delta \theta)$$
 
 Overlap check after rotating the initial frame  | Overlap check after the transformation                                   
 :----------------------------------------------:|:-------------------------:
-![](/assets/ribbonFin/AfterRotation.png)        |  ![](/assets/ribbonFin/TransVsRot.png)
+![](/assets/ribbonFin/AfterRotation.png)        |  ![](/assets/ribbonFin/TRansVsRot.png)
 
 ### Line generation for tracking
 Starting from a fixed distance from the head position, 56 lines were drawn perpendicular to the line joining
