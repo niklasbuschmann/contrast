@@ -5,8 +5,10 @@ mathjax: true
 layout: post
 categories: media
 ---
-![Doris, a glassknife fish](./assets/ribbonFin/VideoMoreClear.png)
+![](./assets/ribbonFin/VideoMoreClear.png) 
 {% include youtubePlayer.html id=page.youtubeId1 %}
+Doris, a glassknife fish
+
 ## Overview and Motivation
 
 My interest in studying unique locomotion motivated me to join the [Locmotion in Mechanical and Biological Systems Lab](https://limbs.lcsr.jhu.edu/) where I studied methods to track the ribbon-fin of a glassknife fish using Deep Lab Cut.
@@ -43,9 +45,9 @@ $$\Delta \theta = tan^{-1}(\frac{y_h - y_b}{x_h - x_b})$$
 $$l= \sqrt{(x_{h_{new}} - x_{b_{new}})^{2}+(y_{h_{new}} - y_{b_{new}})^{2}}$$
 $$(x_{b_{new}}, y_{b_{new}}) = (x_{b_{new}},y_{b_{new}} \pm l \Delta \theta)$$
 
-                                           |                                   
-:-----------------------------------------:|:-------------------------:
-![](/assets/ribbonFin/AfterRotation.png)   |  ![](/assets/ribbonFin/TransVsRot.png)
+Overlap check after rotating the initial frame  | Overlap check after the transformation                                   
+:----------------------------------------------:|:-------------------------:
+![](/assets/ribbonFin/AfterRotation.png)        |  ![](/assets/ribbonFin/TransVsRot.png)
 
 ### Line generation for tracking
 Starting from a fixed distance from the head position, 56 lines were drawn perpendicular to the line joining
