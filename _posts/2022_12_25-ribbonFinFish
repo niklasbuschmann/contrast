@@ -4,14 +4,11 @@ mathjax: true
 layout: post
 categories: media
 ---
-
-Map in Rviz                  |  Real world setting
-:---------------------------:|:-------------------------:
-![](/assets/MapRealTime.png) |  ![](/assets/Maze_Setup.jpg)
-
+![Doris, a glassknife fish](./assets/ribbonFin/VideoMoreClear.png)
 
 ## Overview and Motivation
 
+My interest in studying unique locomotion motivated me to join the [Locmotion in Mechanical and Biological Systems Lab](https://limbs.lcsr.jhu.edu/) where I studied methods to track the ribbon-fin of a glassknife fish using Deep Lab Cut.
 The objective of the project is to study the motion of the undulatory ribbon-fin of a glassknife fish, Eigenmannia virescens and track the motion efficiently. Quality data is significant in understanding the complex mechanics of the two counter propagating waves produced by the fish, one starting from the head and the other starting from the tail. Tracking of the fin is a challenging problem because the number of waves produced at each time step might vary and tracking a point on the wave is not equivalent to tracking a point on the fin. This idea and co-ordinate frame transformations were used to track the fin efficiently.
 
 ## Approach
