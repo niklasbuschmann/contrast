@@ -1,15 +1,17 @@
 ---
 title:  "Turtlebot teaming"
-youtubeId: smgqKGkIvUg
+youtubeId1: smgqKGkIvUg
+youtubeId2: p8ss_OPU6lk
 mathjax: true
 layout: post
 categories: media
 ---
-
+<div style="width:60px ; height:60px">
 | Map in Rviz                   | Real world setting           |
 | ----------------------------- | ---------------------------- |
 | ![](/assets/MapRealTime.png)  | ![](/assets/Maze_Setup.jpg)  |
-
+<div>
+  
 ## Overview and Motivation
 
 To facilitate a successful teaming operation between two mobile robots, several subtasks must be accomplished, including mapping, navigation, sensor calibration, and real-time communication. In this project, we implemented and integrated these submodules to achieve a collaborative teaming task involving two Turtlebots
@@ -33,7 +35,11 @@ Ignition world               |  World rendered in Rviz
 ![](/assets/sim_gazebo.png) |  ![](/assets/sim_rviz.png)
 
 ## Result
-{% include youtubePlayer.html id=page.youtubeId %}
+  
+Real time simulation                               |  Turtlebot teaming 
+:-------------------------------------------------:|:-------------------------:
+{% include youtubePlayer.html id=page.youtubeId1 %} | {% include youtubePlayer.html id=page.youtubeId2 %}  
+
 
 ## Challenges
 - Reammping topics for multirobot environment
