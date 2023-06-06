@@ -30,9 +30,9 @@ $$\Delta y = y_{ref} - y$$
 $$x_{h_{new}} = x_h + \Delta x$$
 $$y_{h_{new}} = y_h + \Delta y$$
 
-Ignition world               |  World rendered in Rviz
-:---------------------------:|:-------------------------:
-![](/assets/sim_gazebo.png) |  ![](/assets/sim_rviz.png)
+Frame translation                     |  Frame rotation
+:------------------------------------:|:-------------------------:
+![](/assets/ribbonFin/NewTrans.png) |  ![](/assets/ribbonFin/NewTrans.png)
 
 ## Result
 
