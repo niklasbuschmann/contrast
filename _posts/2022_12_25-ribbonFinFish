@@ -1,0 +1,26 @@
+---
+title:  "A Robust Strategy to Track the Fin a Weakly Electric Knifefish"
+mathjax: true
+layout: post
+categories: media
+---
+
+Map in Rviz                  |  Real world setting
+:---------------------------:|:-------------------------:
+![](/assets/MapRealTime.png) |  ![](/assets/Maze_Setup.jpg)
+
+
+## Overview and Motivation
+
+The objective of the project is to study the motion of the undulatory ribbon-fin of a glassknife fish, Eigenmannia virescens and track the motion efficiently. Quality data is significant in understanding the complex mechanics of the two counter propagating waves produced by the fish, one starting from the head and the other starting from the tail. Tracking of the fin is a challenging problem because the number of waves produced at each time step might vary and tracking a point on the wave is not equivalent to tracking a point on the fin. This idea and co-ordinate frame transformations were used to track the fin efficiently.
+
+## Approach
+
+
+Ignition world               |  World rendered in Rviz
+:---------------------------:|:-------------------------:
+![](/assets/sim_gazebo.png) |  ![](/assets/sim_rviz.png)
+
+## Result
+
+## Challenges
