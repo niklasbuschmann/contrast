@@ -1,14 +1,14 @@
 ---
 title:  "Turtlebot teaming"
+youtubeId: smgqKGkIvUg
 mathjax: true
 layout: post
 categories: media
 ---
 
-Map in Rviz                  |  Real world setting
-:---------------------------:|:-------------------------:
-![](/assets/MapRealTime.png) |  ![](/assets/Maze_Setup.jpg)
-
+| Map in Rviz                   | Real world setting           |
+| ----------------------------- | ---------------------------- |
+| ![](/assets/MapRealTime.png)  | ![](/assets/Maze_Setup.jpg)  |
 
 ## Overview and Motivation
 
@@ -33,7 +33,7 @@ Ignition world               |  World rendered in Rviz
 ![](/assets/sim_gazebo.png) |  ![](/assets/sim_rviz.png)
 
 ## Result
-<iframe width="420" height="315" src="https://youtu.be/smgqKGkIvUg" frameborder="0" allowfullscreen></iframe>
+{% include youtubePlayer.html id=page.youtubeId %}
 
 ## Challenges
 - Reammping topics for multirobot environment
