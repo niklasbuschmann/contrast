@@ -34,6 +34,27 @@ Frame translation                     |  Frame rotation
 :------------------------------------:|:-------------------------:
 ![](/assets/ribbonFin/NewTrans.png) |  ![](/assets/ribbonFin/NewTrans.png)
 
+Another important aspect is to orient the body center on the same line as the head. This implies that the
+x-coordinates of the body center and head might be different but the y-coordinates have to be very similar. This
+translation and rotation can be done using co-ordinate frame transformations. The frame is translated to move
+the head position to the reference point and then frame is rotated in clockwise direction if the angle between the
+head and the body center is positive and in anticlockwise direction if this angle is negative.
+$$\Delta \theta = tan^{-1}(\frac{y_h - y_b}{x_h - x_b})$$
+$$l= \sqrt{(x_{h_{new}} - x_{b_{new}})^{2}+(y_{h_{new}} - y_{b_{new}})^{2}}$$
+$$(x_{b_{new}}, y_{b_{new}}) = (x_{b_{new}},y_{b_{new}} \pm l \Delta \theta)$$
+
+ Check the math by overlapping a random frame with reference frame                                     
+:-----------------------------------------:|:-------------------------:
+![](/assets/ribbonFin/AfterRotation.png)   |  ![](/assets/ribbonFin/TransVsRot.png)
+
+### Line generation for tracking
+Starting from a fixed distance from the head position, 56 lines were drawn perpendicular to the line joining
+the head and the body center. This was to avoid errors in labelling and to make sure that points are being tracked accurately.
+For the videos chosen, 56 lines covered all of the fin and the body of the fish. It is
+important to note that fixing the head at the reference position will help in drawing the lines at fixed distances
+from this position. The fin line of the fish was also tracked to interpolate the data correctly for data analysis.
+The same strategy for labeling and training was also used to track almost 56 points on the body-line.
+
 ## Result
 
 ## Challenges
