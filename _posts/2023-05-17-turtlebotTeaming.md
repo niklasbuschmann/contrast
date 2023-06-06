@@ -6,11 +6,11 @@ mathjax: true
 layout: post
 categories: media
 ---
-<div style="width:60px ; height:60px">
+
 | Map in Rviz                   | Real world setting           |
 | ----------------------------- | ---------------------------- |
 | ![](/assets/MapRealTime.png)  | ![](/assets/Maze_Setup.jpg)  |
-<div>
+
   
 ## Overview and Motivation
 
