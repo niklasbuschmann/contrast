@@ -19,8 +19,8 @@ These waves help the fish swim forward and backwards without moving it's body to
 
 Tracking of the fin is a challenging problem because the number of waves produced at each time step might vary and tracking a point on the wave is not equivalent to tracking a point on the fin. This idea, a lot of trial and test, and co-ordinate frame transformations were used to track the fin efficiently.
 
-Languages: MATLAB
-Framework: Deep Lab Cut (DLC)
+- Languages: MATLAB
+- Framework: Deep Lab Cut (DLC)
 
 ## Approach
 
