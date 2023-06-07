@@ -31,7 +31,15 @@ shuttle. But even for stationary shuttle experiments, the position of the head c
 the same coordinates for the head position in all frames is useful in efficient tracking. Frames were extracted from
 the analysed DLC video. The head position of the first frame was used as the reference position. Head positions
 from all other frames were moved to this point as described in the following equations:
-$$\Delta x = x_{ref} - x,\ \Delta y = y_{ref} - y,\ x_{h_{new}} = x_h + \Delta x,\  y_{h_{new}} = y_h + \Delta y$$
+
+$$
+\begin{matrix}
+\Delta x & = & x_{ref} - x \\
+\Delta y & = & y_{ref} - y \\
+x_{h_{new}} & = & x_h + \Delta x \\
+y_{h_{new}} & = & y_h + \Delta y \\
+\end{matrix}
+$$
 
 Frame translation                     |  Frame rotation
 :------------------------------------:|:-------------------------:
@@ -42,17 +50,14 @@ x-coordinates of the body center and head might be different but the y-coordinat
 translation and rotation can be done using co-ordinate frame transformations. The frame is translated to move
 the head position to the reference point and then frame is rotated in clockwise direction if the angle between the
 head and the body center is positive and in anticlockwise direction if this angle is negative.
+
 $$
 \begin{matrix}
-1 & x & x^2 \\
-1 & y & y^2 \\
-1 & z & z^2 \\
+\Delta \theta & = & tan^{-1}(\frac{y_h - y_b}{x_h - x_b}) \\
+l & = & \sqrt{(x_{h_{new}} - x_{b_{new}})^{2}+(y_{h_{new}} - y_{b_{new}})^{2}} \\
+(x_{b_{new}}, y_{b_{new}}) & = & (x_{b_{new}},y_{b_{new}} \pm l \Delta \theta) \\
 \end{matrix}
 $$
-
-$$\Delta \theta = tan^{-1}(\frac{y_h - y_b}{x_h - x_b})$$
-$$l= \sqrt{(x_{h_{new}} - x_{b_{new}})^{2}+(y_{h_{new}} - y_{b_{new}})^{2}}$$
-$$(x_{b_{new}}, y_{b_{new}}) = (x_{b_{new}},y_{b_{new}} \pm l \Delta \theta)$$
 
 Overlap check after rotating the initial frame  | Overlap check after the transformation                                   
 :----------------------------------------------:|:-------------------------:
