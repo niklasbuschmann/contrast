@@ -23,7 +23,7 @@ Once the convergence was met, this was extended to a 3-DOF system. Since the pro
 
 Rocket velocities                          |  Convergence for the 3-DOF problem
 :-----------------------------------------:|:-------------------------:
-![](/assets/rocketLanding/Velocities.png)  |  ![](/assets/rocketLanding/ConvergenceWindow.png)
+![](/assets/rocketLanding/Velocities.jpg)  |  ![](/assets/rocketLanding/ConvergenceWindow.png)
 
 ## Challenges
 - The intial position, integration tolerance and tight constraints played a significant role in the convergence of the NLP problem. This was particularly challenging because of the control constraints on thurst, AOA, mass and velocities. 
