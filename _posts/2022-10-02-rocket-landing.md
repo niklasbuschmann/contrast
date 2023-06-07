@@ -7,7 +7,7 @@ categories: media
 
 ## Overview and Motivation
 
-Resuable rockets pose an incredibly complex landing sequence problem. This porject focuses really on the final stage of landing and the objective here is to use applied optimal control strategies for this application is to minimize the fuel consumed.
+Resuable rockets pose an incredibly complex landing sequence problem. For this project I worked with another graduate student and this porject really focuses on the final stage of landing and the objective here is to use applied optimal control strategies for this application is to minimize the fuel consumed.
 
 - Languages: MATLAB, Python
 - Framework: ACADO Toolkit
