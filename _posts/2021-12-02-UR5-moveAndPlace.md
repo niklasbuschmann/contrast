@@ -1,5 +1,5 @@
 ---
-title:  "Inverse Kinematics for UR5 Move and Place task"
+title:  "Inverse Kinematics for UR5 Pick and Place task"
 mathjax: true
 layout: post
 categories: media
