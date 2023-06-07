@@ -1,10 +1,8 @@
 ---
-layout: default
-title: "Posts"
+layout: page
+title: ""
 ---
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+Hi! I am Nivya. I am a roboticist specialized in Automation and Control. I love solving challenging control problems in robotics. Check out my portfolio!
+
+![](/assets/home-feature.jpg)
