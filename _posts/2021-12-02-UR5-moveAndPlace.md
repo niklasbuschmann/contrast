@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-![](/assests/UR5moveAndPlace/homeConfig.png)
+![](/assets/UR5moveAndPlace/homeConfig.png)
 
 ## Overview and Motivation
 
@@ -36,6 +36,8 @@ The inverse kinematics problem deals with solving the equation $g_{st}\ =\ g_{d}
   - These configurations were also checked for singularities at $\theta_{3}$ and $\theta_{5}$.
   - Any configurations resulting in a homogeneous transformation that needs the gripper pick to collide with the table are changed to a cut off transformation in order to avoid collisions. 
   - The set of joint space coordinates that clears all these checks were used to move the robot in every iteration. 
+
+Rviz was used to visualize the control algorithm. 
 
 ## Result
 
