@@ -25,13 +25,17 @@ The inverse kinematics problem deals with solving the equation $$g_{st}\ =\ g_{d
 - The initial and the final homogeneous transformations are decoupled into their respective rotation and translation part.
    $$g_{initial}\ =\ (R_{initial},\ p_{initial}) \text{and}\ g_{final}\ =\ (R_{final},\ p_{final})$$
 - A straight line path in the cartesian space is used to find the translation and rotation at any instant of time. Here the time interval considered is t[0,1], the increments are done in 0.1.
-  $$p(t)$ = $p_{initial}\ +\ t(p_{final}\ -\ p_{initial})$$
-  $$R(t)\ =\ R_{initial}e^{(log(R_{initial} T R_{final})t)}$$
-- So at t = 0, $p(t)\ =\ p_{initial}$ , $R(t)\ =\ R_{initial}$  and at t = 1, $p(t)\ =\ p_{final}$ , $R(t)\ =\ R_{final}$ 
+$$
+\begin{matrix}
+p(t) & = & p_{initial}\ +\ t(p_{final}\ -\ p_{initial}) \\
+R(t) & = & R_{initial}e^{(log(R_{initial} T R_{final})t)} \\
+\end{matrix}
+$$
+- So at t = 0, $$p(t)\ =\ p_{initial}$$ , $$R(t)\ =\ R_{initial}$$  and at t = 1, $$p(t)\ =\ p_{final}$$ , $$R(t)\ =\ R_{final}$$ 
 - The initial and final change as per the move and place function requirement. 
-- The  $g_{final}$ thus computed is used to find the possible solution to the inverse kinematics problem where $\theta\ =\ f^{-1}(x)$ where $f(x)$ is $g_{final}g_{t}$. Here $g_{t}$ is the transformation used to compensate the offset between the tool frame and the gripper frame. 
-- The solutions of the inverse kinematics are sent as an input to a function which checks for the best possible solution by considering each set of solutions as $\theta\ =\ [theta_{1},\ theta_{2},\ theta_{3},\ theta_{4},\ theta_{5},\ theta_{6}]^T 
-  - Based on the UR5 configuration, the observation that was made was that huge values of $\theta_{1}$ and $\theta_{2}$ increase the chances of collision with the table.   - So any $\theta_{1}$, $\theta_{2}$ values that varied from the previous values of $\theta_{1}$ and $\theta_{2}$ by 30° were eliminated. 
+- The  $$g_{final}$$ thus computed is used to find the possible solution to the inverse kinematics problem where $\theta\ =\ f^{-1}(x)$ where $f(x)$ is $g_{final}g_{t}$. Here $$g_{t}$$ is the transformation used to compensate the offset between the tool frame and the gripper frame. 
+- The solutions of the inverse kinematics are sent as an input to a function which checks for the best possible solution by considering each set of solutions as $$\theta\ =\ [theta_{1},\ theta_{2},\ theta_{3},\ theta_{4},\ theta_{5},\ theta_{6}]^T$$ 
+  - Based on the UR5 configuration, the observation that was made was that huge values of $$\theta_{1}$$ and $$\theta_{2}$$ increase the chances of collision with the table.   - So any $\theta_{1}$, $\theta_{2}$ values that varied from the previous values of $\theta_{1}$ and $\theta_{2}$ by 30° were eliminated. 
   - Then the other values of the generalized coordinates were checked in a similar manner.
   - These configurations were also checked for singularities at $\theta_{3}$ and $\theta_{5}$.
   - Any configurations resulting in a homogeneous transformation that needs the gripper pick to collide with the table are changed to a cut off transformation in order to avoid collisions. 
