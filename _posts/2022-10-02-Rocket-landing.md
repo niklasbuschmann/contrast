@@ -1,11 +1,11 @@
 ---
-title:  "A New Post"
+title:  "Optimal Control for Rocket Landing Problem"
 mathjax: true
 layout: post
 categories: media
 ---
 
-## Header goes here
+## Hea
 
 other text.
 
