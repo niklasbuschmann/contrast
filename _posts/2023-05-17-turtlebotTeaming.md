@@ -30,7 +30,7 @@ ROS2 Nav2 was used to calibrate the camera. Burger and Waffle use ROS2 action op
 
 Picture calibration 
 
-An inbuilt Adaptive Monte-Carlo Lozalizer was used to estimate the current 2D pose of Waffle. The laser model used was of likelihood field type. A good estimate for the initial pose, $[x, y, \theta]^{T}$ where $\theta$ is the orientation, was fed to the localizer. Parameters such as process and sensor noise covariances were tuned to have the particle filter converge eventually. 
+An inbuilt Adaptive Monte-Carlo Lozalizer was used to estimate the current 2D pose of Waffle. The laser model used was of likelihood field type. A good estimate for the initial pose, $$[x, y, \theta]^{T}$$ where $$\theta$$ is the orientation, was fed to the localizer. Parameters such as process and sensor noise covariances were tuned to have the particle filter converge eventually. 
 
 Existing turlebot3 robot descriptions were used to visualize the task in simulation. Ignition Gazebo was used to render the bots in simulation environment.  
 
