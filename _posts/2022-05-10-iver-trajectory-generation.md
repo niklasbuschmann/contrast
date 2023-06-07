@@ -1,21 +1,33 @@
 ---
-title:  "Markdown examples"
+title:  "Trajectory Generation and Tracking of an Iver3 AUV"
+mathjax: true
 layout: post
+categories: media
 ---
+
+
 
 ## Overview and Motivation
 
-Resuable rockets pose an incredibly complex landing sequence problem. This porject focuses really on the final stage of landing and the objective here is to use applied optimal control strategies for this application is to minimize the fuel consumed.
+Various nonlinear control strategies are beneficial to deal with dynamic uncertainities of highly nonlinear, complex systems. One such system is the Iver3 Autonomous Underwater Vehicle(AUV).
 
-- Languages: MATLAB, Python
-- Framework: ACADO Toolkit
+The objective of the project is to generate a smooth trajectory to a desired goal position and to track the generated
+trajectory using feedback control for an Iver3 AUV model. Seabed exploration is the practical scenario considered
+to simulate the environment. Efforts were made to design a path planner that finds a smooth path in the presence
+of obstacles and to design a controller that tracks the path found. The two different parts of the problem are
+trajectory generation and trajectory tracking.
+
+- Languages: MATLAB
 
 ## Approach
 
-Since an elaborate dynamical model of the rocket is extremely complex, we start with a basic 2 DOF dynamic model. In this system, we have for states the position, $[x,\ y]$, velocity, $(v)$, mass, $(m)$ and the control input, $[u_{T},\ u_{\theta}]$ is the thrust and the angle of attack.
-Constraints were put on the control inputs, velocity, mass and the angle of attack. Boundary conditions were specified for the final positions and angle of attack, initial velovity and angle of attack(AOA). Optimization problem was solved by using final mass as the Mayer Term in ACADO through MATLAB interface.
+The model is an underactuated, nonlinear system. For the purpose of the project, a simplified 5-DOF model has been
+considered. The AUV has three translational degrees of freedom in $(x,\ y,\ z)$ and two rotational degrees of freedom
+in pitch $(\theta)$ and yaw $(\psi)$. The independent fins of the Iver3 model generate rotational motion whereas the thruster
+produces surge velocity in the x-direction. The control inputs to the system are the normalized driving input $\delta q$ ,
+normalized rudder input $\delta r$ , and the thruster rate $\delta u$.
 
-Once the convergence was met, this was extended to a 3-DOF system. Since the problem has both path and control constraints, Sequential Quadractic Programming(SQP) was used to solve this Nonlinear Programming(NLP) problem. 
+
 
 ## Result
 
