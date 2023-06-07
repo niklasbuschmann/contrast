@@ -18,9 +18,9 @@ To facilitate a successful teaming operation between two mobile robots, several 
 
 This project utilizes ROS2 actions and the navigation stack to enable cooperative teamwork between two Turtlebots. The task involves Turtlebot3 Burger moving from one end of a platform to the other. However, the platform consists of moving blocks, and one of the blocks is strategically positioned, creating a gap. When Burger reaches this specific spot on the platform, it sends a request to Waffle. Subsequently, Waffle responds by pushing the platform to close the gap, allowing Burger to pass through smoothly.
 
-Languages: C++, Python
-Framework: ROS2
-Library : Aruco marker library, Nav2
+- Languages: C++, Python
+- Framework: ROS2
+- Library : Aruco marker library, Nav2
 
 ## Approach
 
