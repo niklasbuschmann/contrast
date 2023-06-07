@@ -17,7 +17,6 @@ mathjax: true          # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "Resume_Nivya_09MAY2023.pdf", title: "CV"}
   - {title: "Portfolio", file: "portfolio.md"}
   - {file: "aboutMe.md", title: "About me"}
 
