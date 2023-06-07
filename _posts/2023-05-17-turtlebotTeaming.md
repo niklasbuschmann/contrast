@@ -39,11 +39,11 @@ Ignition world               |  World rendered in Rviz
 ![](/assets/sim_gazebo.png) |  ![](/assets/sim_rviz.png)
 
 ## Result
-  
-Real time simulation                               |  Turtlebot teaming 
-:-------------------------------------------------:|:-------------------------:
-{% include youtubePlayer.html id=page.youtubeId1 %} | {% include youtubePlayer.html id=page.youtubeId2 %}  
-
+ 
+{% include youtubePlayer.html id=page.youtubeId1 %} 
+Real time simulation   
+{% include youtubePlayer.html id=page.youtubeId2 %}  
+Mutlibot teaming
 
 ## Challenges
 - Reammping topics for multirobot environment
