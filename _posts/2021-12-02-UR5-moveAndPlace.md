@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-![](.assests/UR5moveAndPlace/homeConfig.png)
+![](/assests/UR5moveAndPlace/homeConfig.png)
 
 ## Overview and Motivation
 
