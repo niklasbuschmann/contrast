@@ -33,8 +33,8 @@ the analysed DLC video. The head position of the first frame was used as the ref
 from all other frames were moved to this point as described in the following equations:
 $$\Delta x = x_{ref} - x, $$ and for y position
 $$\Delta y = y_{ref} - y,$$
-$$x_{h_{new}} = x_h + \Delta x, the new 2-D positions would then be 
-y_{h_{new}} = y_h + \Delta y }$$.
+$$x_{h_{new}} = x_h + \Delta x$$ the new 2-D positions would then be 
+$$y_{h_{new}} = y_h + \Delta y }$$.
 
 Frame translation                     |  Frame rotation
 :------------------------------------:|:-------------------------:
