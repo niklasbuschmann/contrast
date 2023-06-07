@@ -16,7 +16,7 @@ The goal here was to create dynamically reconfigurable parameters that sets the 
 
 ## Approach
 
-Used the urdf description from Universal Robotics to solve the inverse kinmeatics problem. The ROS parameters were exposed to RQT to enable them to be adjusted by a GUI. The parameters that were dynamically reconfired were desired cartesian position, $[x, y, z, roll, pitch, yaw]$ desired joint angles, $[\theta_{1}, \theta_{2}, \theta_{3}, \theta_{4}, \theta_{5}, \theta_{6}]$, and velocity sclaing parameter to adjust the velocity of the robot from 0-100%.    
+Used the urdf description from Universal Robotics to solve the inverse kinmeatics problem. The ROS parameters were exposed to RQT to enable them to be adjusted by a GUI. The parameters that were dynamically reconfired were desired cartesian position, $[x,\ y,\ z,\ roll,\ pitch,\ yaw]$ desired joint angles, $[\theta_{1},\ \theta_{2},\ \theta_{3},\ \theta_{4},\ \theta_{5},\ \theta_{6}]$, and velocity sclaing parameter to adjust the velocity of the robot from 0-100%.    
 
 A RTT component was implemented. This RTT component has two operations; one to trigger a new joint
 trajectory that moves the robot, from wherever the robot is, to the desired position.
