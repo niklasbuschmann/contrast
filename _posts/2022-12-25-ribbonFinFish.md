@@ -19,6 +19,9 @@ These waves help the fish swim forward and backwards without moving it's body to
 
 Tracking of the fin is a challenging problem because the number of waves produced at each time step might vary and tracking a point on the wave is not equivalent to tracking a point on the fin. This idea, a lot of trial and test, and co-ordinate frame transformations were used to track the fin efficiently.
 
+Languages: MATLAB
+Framework: Deep Lab Cut (DLC)
+
 ## Approach
 
 ### Head and Body Center Orientation
@@ -75,8 +78,7 @@ waves cancel out. DLC could not track this point accurately since it was not pre
 
 The datasets from the tracking algorithms were used to find wave parameters such as wavelength, frequency,
 time period and amplitude. A conversion factor was found based on the length of the actual fish in cm and the
-length in pixels from the data. This conversion factor was used to plot and analyse the data in cm. The fin and
-the bodyline from frames were plotted. PCA raw data was obtained by considering x-coordinates of the fin data
+length in pixels from the data. This conversion factor was used to plot and analyse the data in cm. Used curve fitting tools in MATLAB to fit the bodyline and fin data. PCA raw data was obtained by considering x-coordinates of the fin data
 as the rows and each column as a complete fin. Each columns represent the fin at a given frame.
 
 Testing the fin and bodyline data for selected frames  | Checking the visibility of nodal point                                    
