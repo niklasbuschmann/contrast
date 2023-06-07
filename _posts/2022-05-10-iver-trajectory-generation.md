@@ -10,7 +10,7 @@ categories: media
 
 ## Overview and Motivation
 
-Various nonlinear control strategies are beneficial to deal with dynamic uncertainities of highly nonlinear, complex systems. One such system is the Iver3 Autonomous Underwater Vehicle(AUV).
+Various nonlinear control strategies are beneficial to deal with dynamic uncertainities of highly nonlinear, complex systems. One such system is the Iver3 Autonomous Underwater Vehicle(AUV). So during the second semester of my master's I picked up this project along with another graduate student to test nonlinear control strategies for Iver3 AUV
 
 The objective of the project is to generate a smooth trajectory to a desired goal position and to track the generated
 trajectory using feedback control for an Iver3 AUV model. Seabed exploration is the practical scenario considered
