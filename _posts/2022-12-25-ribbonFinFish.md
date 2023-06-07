@@ -31,9 +31,9 @@ shuttle. But even for stationary shuttle experiments, the position of the head c
 the same coordinates for the head position in all frames is useful in efficient tracking. Frames were extracted from
 the analysed DLC video. The head position of the first frame was used as the reference position. Head positions
 from all other frames were moved to this point as described in the following equations:
-$$\Delta x = x_{ref} - x, \\ 
-\Delta y = y_{ref} - y, \\
-x_{h_{new}} = x_h + \Delta x, \\
+$$\Delta x = x_{ref} - x, \newline
+\Delta y = y_{ref} - y, \newline
+x_{h_{new}} = x_h + \Delta x, \newline
 y_{h_{new}} = y_h + \Delta y$$
 
 Frame translation                     |  Frame rotation
