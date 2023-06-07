@@ -17,7 +17,7 @@ The objective of the project is to to track the motion of the undulatory ribbon-
 This fish's swimming motions are unique and interesting from a locomotion perspective because of the complex mechanics of the two counter propagating waves produced by the fish, one starting from the head and the other starting from the tail. 
 These waves help the fish swim forward and backwards without moving it's body too much.
 
-Tracking of the fin is a challenging problem because the number of waves produced at each time step might vary and tracking a point on the wave is not equivalent to tracking a point on the fin. This idea, a lot of trial and test, and co-ordinate frame transformations were used to track the fin efficiently.
+Tracking of the fin is a challenging problem because the number of waves produced at each time step might vary and tracking a point on the wave is not equivalent to tracking a point on the fin. This idea, a lot of trial and test, and co-ordinate frame transformations were used to track the fin efficiently. 
 
 - Languages: MATLAB
 - Framework: Deep Lab Cut (DLC)
