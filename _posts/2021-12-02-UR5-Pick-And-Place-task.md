@@ -7,6 +7,10 @@ categories: media
 
 ![](/assets/UR5moveAndPlace/homeConfig.png)
 
+Move and Place is a very common industrial application of robotic arms. In my first semester in Robotics at JHU, I worked with two other graduate students to implement inverse kinematics solution for move and place application of UR5 arm. 
+
+<!--more-->
+
 ## Overview and Motivation
 
 Move and Place is a very common industrial application of robotic arms. In my first semester in Robotics at JHU, I worked with two other graduate students to implement inverse kinematics solution for move and place application of UR5 arm. 
