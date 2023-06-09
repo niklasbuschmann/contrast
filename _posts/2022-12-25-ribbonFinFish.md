@@ -5,6 +5,7 @@ youtubeId2: 3LgBlrvGDVA
 mathjax: true
 layout: post
 categories: media
+excerpt_img_url: ../assets/ribbonFin/FinPoints.png
 ---
 ![](./assets/ribbonFin/VideoMoreClear.png) 
 {% include youtubePlayer.html id=page.youtubeId1 %}
