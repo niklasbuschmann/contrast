@@ -13,7 +13,7 @@
   <article>
     {% include meta.html post=post preview=true %}
     {% if post.excerpt_img_url %}  <!--check if an image has been assigned to show, otherwise display regular excerpt-->
-      <img src="{{ post.excerpt_img_url }}" alt="Excerpt Image">
+      <img src="{{ post.excerpt_img_url }}" alt="Excerpt Image" width="500" height="500">>
     {% else %}      
       {{ post.excerpt }}
     {% endif %}
