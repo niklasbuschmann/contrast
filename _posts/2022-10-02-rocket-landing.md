@@ -3,6 +3,7 @@ title:  "Optimal Control for Rocket Landing Problem"
 mathjax: true
 layout: post
 categories: media
+excerpt_img_url: ../assets/rocketLanding/ConvergenceWindow.png
 ---
 
 ## Overview and Motivation
