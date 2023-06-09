@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article>
+  <h2><em>Tag: {{ page.tag }}</em></h2>
+  <div class="more"><a href="https://orion-miller.github.io/">« Back</a></div>
+  
+</article>
+
+
+{% for post in site.tags[page.tag] %}
+<article>
+  {% include meta.html post=post preview=true %}
+  {% if post.excerpt_img_url %}  <!--check if an image has been assigned to show, otherwise display regular excerpt-->
+    <img src="{{ post.excerpt_img_url }}" alt="Excerpt Image">
+  {% else %}      
+    {{ post.excerpt }}
+  {% endif %}
+  <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
+</article>  
+{% endfor %}  
+
+{% if paginator.total_pages > 1 %}
+  <footer>
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« Newer Posts</a>{% else %}<span></span>{% endif %}
+    <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">Older Posts »</a>{% else %}<span></span>{% endif %}
+  </footer>
+{% endif %}
