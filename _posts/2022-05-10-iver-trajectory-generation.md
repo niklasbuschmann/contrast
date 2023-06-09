@@ -4,6 +4,7 @@ youtubeId1: jUiR1kPK5To
 mathjax: true
 layout: post
 categories: media
+excerpt_img_url: ../assets/iverNonlinearControl/Iver3HydroLab.png
 ---
 
 ![](./assets/iverNonlinearControl/Iver3HydroLab.png)
