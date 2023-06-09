@@ -5,7 +5,7 @@ youtubeId2: p8ss_OPU6lk
 mathjax: true
 layout: post
 categories: media
-excerpt_img_url: ../assets/MapRealTime.png
+excerpt_img_url: ../assets/MapRealTime.png{:height="300px" width="300px"}
 ---
 
 | Map in Rviz                   | Real world setting           |
