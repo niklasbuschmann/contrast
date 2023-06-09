@@ -4,6 +4,7 @@ youtubeId1: feqXhstn2l8
 mathjax: true
 layout: post
 categories: media
+excerpt_img_url: ../assets/ur5.png
 ---
 
 ## Overview and Motivation
