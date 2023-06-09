@@ -3,6 +3,7 @@ title:  "Inverse Kinematics for UR5 Pick and Place task"
 mathjax: true
 layout: post
 categories: media
+excerpt_img_url: ../assets/UR5moveAndPlace/homeConfig.png
 ---
 
 ![](/assets/UR5moveAndPlace/homeConfig.png)
