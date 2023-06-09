@@ -1,21 +1,22 @@
 title: "Kuzhivila Pannickottu Nivya"
 author: "Kuzhivila Pannickottu Nivya"
-description: "KPNivya"
+description: "Copyright© 2023 Kuzhivila Pannickottu Nivya"
 permalink: /:title/
 lang: "en"
-excerpt_separator: "\n\n\n"
+excerpt_separator: <!-- excerpt-end -->
 date_format: "%B %d, %Y"
 
 # Layout
-excerpt_separator: <!--more-->  # you can specify your own separator, of course.
-show_excerpts: false        # show article excerpts on the home page
+show_excerpts: true        # show article excerpts on the home page
 show_frame: true          # adds a gray frame to the site
 show_sidebar: false       # show a sidebar instead of the usual header
-minimal: true            # use a dark header
+minimal: false            # use a dark header
 mathjax: true       
 
-# Menu
+paginate: 10 # number of items per page in Posts section
+highlighter: rouge #code syntax highlighter
 
+# Menu
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Portfolio", file: "portfolio.md"}
   - {file: "aboutMe.md", title: "About me"}
@@ -28,6 +29,20 @@ external:                  # shows a footer with social links - for available ic
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
+
+# Personalize the colours in your website. Colour values can be any valid CSS colour
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
 
 plugins:
  - jekyll-feed
