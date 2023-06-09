@@ -19,6 +19,7 @@ highlighter: rouge #code syntax highlighter
 # Menu
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Portfolio", file: "portfolio.md"}
+  - {file: "index.html"}
   - {file: "aboutMe.md", title: "About me"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
