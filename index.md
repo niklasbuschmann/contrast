@@ -9,7 +9,7 @@ home, from their bathroom to their backyard, into a reality. If you would like t
 
 ---
 
-My services include Front Yard & Backyard Remodeling, and House Rennovations. We give [Free Estimated](https://www.angi.com/articles/do-contractors-charge-estimate-job.htm) with No Obligation and No Extra Work!!
+My services include Front Yard & Backyard Remodeling, and House Rennovations. We give [Free Estimates](https://www.angi.com/articles/do-contractors-charge-estimate-job.htm) with No Obligation and No Extra Work!!
 
 ![Ritch Navarro](/assets/prof_pic.jpg)
 ![Portfolio](/assets/portfolio.jpg)
