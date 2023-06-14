@@ -12,7 +12,7 @@ title:"Publications"
 
 <h1> Journal publications (12): </h1>
 
-1. <p style='text-align: justify;'> R. Nassif, S. Vlaski, M. Carpentiero, V. Matta, M. Antonini, and A. H. Sayed, "Quantization for decentralized learning under subspace constraints," <i>Submitted for publication</i>, Sep. 2022. <a href="https://arxiv.org/abs/2209.07821">[arXiv]</a></p>
+1. <p style='text-align: justify;'> R. Nassif, S. Vlaski, M. Carpentiero, V. Matta, M. Antonini, and A. H. Sayed, "Quantization for decentralized learning under subspace constraints," <i>To appear in IEEE Transactions on Signal Processing</i>, Jun. 2023. <a href="https://arxiv.org/abs/2209.07821">[arXiv]</a></p>
 2. <p style='text-align: justify;'> F. Hua, R. Nassif, C. Richard, H. Wang, and A. H. Sayed, "Diffusion LMS with Communication Delays: Stability and Performance Analysis," <i>IEEE Signal Processing Letters</i>, vol. 27, pp. 730-734, Apr. 2020. <a href="https://arxiv.org/pdf/2004.08881.pdf">[arXiv]</a></p>
 3. <p style='text-align: justify;'> R. Nassif, S. Vlaski, C. Richard, and A. H. Sayed, "Learning over Multitask Graphs-Part I: Stability Analysis,"  <i>IEEE Open Journal of Signal Processing</i>, vol. 1, pp. 28-45, Apr. 2020.<a href="https://arxiv.org/abs/1805.08535">[arXiv]</a></p>
 4. <p style='text-align: justify;'> R. Nassif, S. Vlaski, C. Richard, and A. H. Sayed, "Learning over Multitask Graphs-Part II: Performance Analysis,"  <i>IEEE Open Journal of Signal Processing</i>, vol. 1, pp. 46-63, Apr. 2020.<a href="https://arxiv.org/abs/1805.08547">[arXiv]</a></p>
