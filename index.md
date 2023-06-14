@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About the Contracter"
+title: "About The Contracter"
 ---
 
 Are you interested in having any part of your home remodeled or improved to your taste? My name is Ritch Navarro and I am just the person to call! I have over a decade of experience in working at homes within my community to match the interets of my clients. 
