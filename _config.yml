@@ -16,12 +16,14 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {title: Home, file: "index.html"}
+  - {title: Home, file: "README.md"}
+  - {title: Research, file: "/research/index.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:mikeriess@users.noreply.github.com"}
   - {title: Github, icon: github, url: "https://github.com/mikeriess"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/mike-riess-8ba5796b/"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
