@@ -1,6 +1,5 @@
 ---
 title: "Research"
-permalink: "/research/"
 layout: page
 mathjax: true
 ---
