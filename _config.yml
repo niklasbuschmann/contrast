@@ -16,7 +16,7 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {title: Home, file: "index.html"}
+  - {title: Blog, file: "blog.md"}
   - {title: CV, url: "https://www.linkedin.com/in/mike-riess-8ba5796b/"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
