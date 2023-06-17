@@ -9,6 +9,7 @@ In my research on predictive process monitoring, I focus on timeliness and (in)c
 If you are interested in collaboration within these areas, feel free to reach out.
 
 Best,
+
 Mike
 
 ![Mike](Mike.png)
