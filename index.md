@@ -1,7 +1,6 @@
 ---
-title:  "Front page"
-mathjax: true
-layout: post
+layout: page
+title:  "Mike Riess"
 ---
 
 # Home page of Mike Riess
