@@ -2,7 +2,7 @@
 title:  "Overview of papers"
 mathjax: true
 layout: post
-mathjax: true
+categories: media
 ---
 
 Here is an equation:
