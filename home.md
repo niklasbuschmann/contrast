@@ -1,2 +1,3 @@
-<h1>Home page of Mike Riess </h1>
+# Home page of Mike Riess
 - Doctor of philosophy in business administration (Predictive and prescriptive process monitoring)
+<img src = "Mike.png">
