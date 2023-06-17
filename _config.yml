@@ -17,7 +17,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: Home, file: "index.html"}
-  - {title: Home, file: "README.md"}
+  - {title: CV, url: "https://www.linkedin.com/in/mike-riess-8ba5796b/"}
   - {title: Research, file: "/research/index.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
