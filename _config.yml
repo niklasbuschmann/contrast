@@ -1,5 +1,5 @@
-title: "Blog Title"
-author: "Blog Author"
+title: "Academic CV"
+author: "Dr. Mike Riess"
 description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
@@ -20,8 +20,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Mail, icon: envelope, url: "mailto:mikeriess@users.noreply.github.com"}
+  - {title: Github, icon: github, url: "https://github.com/mikeriess"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
