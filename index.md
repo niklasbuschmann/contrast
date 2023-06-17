@@ -2,9 +2,8 @@
 layout: page
 title:  "Mike Riess"
 ---
+I'm a Doctor of Philosophy in predictive and prescriptive process monitoring. I work as a data scientist in the telecommunications sector, focusing on problems at the intersection of customer value management and business process optimization. 
 
-# Home page of Mike Riess
-- Doctor of philosophy in business administration (Predictive and prescriptive process monitoring)
 ![Mike](Mike.png)
 
 
