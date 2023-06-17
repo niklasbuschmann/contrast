@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About"
+title: "Past Projects"
 ---
 
 {% if site.show_excerpts %}
