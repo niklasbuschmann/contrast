@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: "Transloc Blog"
 ---
 
 {% if site.show_excerpts %}
