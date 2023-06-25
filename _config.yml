@@ -16,7 +16,8 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html" , title: "Transloc Blog", icon : home}
+  - {file: "index.html" , title: "Transloc Home Page", icon : home}
+  - {file: "/blog.md" , title: "Blog", icon : blog}
   - {file: "README.md" , title: "About the Project", icon : address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
