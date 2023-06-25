@@ -17,12 +17,13 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html" , title: "Transloc Home Page", icon : home}
-  - {file: "blog.md" , title: "Blog"}
-  - {file: "README.md" , title: "About the Project", icon : address-card}
+  - {file: "blog.md" , title: "BLOG"}
+  
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:linda.angulo-lopez@mnhn.fr"}
   - {title: Github, icon: github, url: "https://github.com/ConservationTranslocation"}
+  - {file: "README.md" , title: "About the Project", icon : address-card}
   
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
