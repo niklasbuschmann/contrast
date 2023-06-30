@@ -42,3 +42,4 @@ The QUEUE variable denotes the various queues that were active in the sampling p
 
 ## What is source of the satisfaction and loyalty scores per call?
 - The NPS originates from a separate survey, and is thereby not measured directly after the call. Instead, tSAT has been used (score from 1-10) until the beginning of 2023 where cSAT (score from 1-5) was adopted.
+- The cSAT and tSAT scores are collected via SMS after a case is closed.
