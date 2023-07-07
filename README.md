@@ -4,6 +4,6 @@ permalink: "/about/"
 layout: page
 ---
 
-# Just somt personal thoughts
+# Just some personal thoughts
 
 
