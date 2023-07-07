@@ -1,7 +1,4 @@
---
-title:  "The first post"
-layout: post
----
+
 
 # So, this the beginning
 
