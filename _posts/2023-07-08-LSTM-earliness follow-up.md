@@ -30,3 +30,9 @@ categories: media
 - https://arxiv.org/abs/2307.03172
 - https://arxiv.org/abs/2307.02486
 - https://www.linkedin .com/feed/update/urn:li:activity:7083427280605089792?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7083427280605089792%29
+
+# An afterthought
+- Scaling laws of LSTMs to event-log data is also an interesting thing that could be useful to know more about. What size of model is appropriate for what size and type of process?
+- Similar thoughts as with Chinchilla scaling "laws".
+- This could be studied with the simulation engine.
+- Best type of optimizer and settings, given
