@@ -1,4 +1,4 @@
-title: "Blog Title"
+title: "Lojique' Blog"
 author: "Blog Author"
 description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
@@ -20,9 +20,10 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:m.adam9@pm.me"}
+  - {title: Github, icon: github, url: "https://github.com/lojique"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/adamkalu/"}
+  - {title: HackTheBox, icon: "https://avatars.githubusercontent.com/u/31746234?s=280&v=4", url: "https://app.hackthebox.com/profile/68453}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
