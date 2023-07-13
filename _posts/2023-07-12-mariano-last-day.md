@@ -3,7 +3,7 @@ title: "Mariano's Last Day"
 layout: post
 ---
 
-![Mariano](/connectingdots/assets/IMG_2631 (1).jpg)
+![Mariano](/connectingdots/assets/IMG_2631.jpg)
 
 ### 09-22-2013
 
