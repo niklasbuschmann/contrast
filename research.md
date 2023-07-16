@@ -10,16 +10,16 @@ The following is a list of research projects that I am currently working on. If 
     - <b>Motivation:</b> Providing a simulation engine for robustness assessment of prediction models for predictive process monitoring. 
     - <b>Status:</b> Paper under review in 'Simulation'
     - <b>Github repo:</b> https://github.com/Mikeriess/SBPS_framework
-
-- <b>Danish music producer expert questions and answers</b>
-    - <b>Motivation:</b> To compile a dataset for fine-tuning of LLMs using questions and answers from experienced musicians and producers.
-    - <b>Status:</b> Work in progress
-    - <b>Github repo:</b> https://github.com/Mikeriess/nlp_lydmaskinen 
     
 - <b>Loyalty-based queue prioritization</b>
     - <b>Motivation:</b> Improving customer loyalty through prescriptive process monitoring (queue management)
     - <b>Status:</b> Paper written, looking for a suitable journal
     - <b>Github repo:</b> https://github.com/Mikeriess/P3_queue_prioritization
+
+- <b>Danish music producer expert questions and answers</b>
+    - <b>Motivation:</b> To compile a dataset for fine-tuning of LLMs using questions and answers from experienced musicians and producers.
+    - <b>Status:</b> Work in progress
+    - <b>Github repo:</b> https://github.com/Mikeriess/nlp_lydmaskinen 
 
 # Research ideas
 
