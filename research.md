@@ -6,6 +6,11 @@ The following is a list of research projects that I am currently working on. If 
 
 # Current research projects
 
+- <b>Remaining cycle time prediction: Temporal loss functions and prediction consistency</b>
+    - <b>Motivation:</b> Improving the performance of remaining time prediction in predictive process monitoring through temporal weighting of the loss functions.
+    - <b>Status:</b> Paper accepted for publication in 'Nordic Machine Intelligence'
+    - <b>Github repo:</b> https://github.com/Mikeriess/Temporal_loss
+
 - <b>Synthetic Business Process Simulation (SBPS) framework</b>
     - <b>Motivation:</b> Providing a simulation engine for robustness assessment of prediction models for predictive process monitoring. 
     - <b>Status:</b> Paper under review in 'Simulation'
