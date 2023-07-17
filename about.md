@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-## About TransLoc 
+## Welcome 
 
 With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can embed gists simply by using the `gist` command:
 
