@@ -162,10 +162,11 @@ Sarra Ferjani took care of all computational issues, including the computing arc
 
 [Top](#welcome-to-the-transloc-blog)
 
-##### Precisions about how to contact us, participate, and get access to data and documents.
+##### Precisions about how to contact us, participate, and get access to data and documents:
 Visitors have access to taxonomical data, locations to the municipal level and year of first release/sowing/transplantation. Much more data are available to participants, including, e.g., the numbers of translocated individuals and population sizes.
 
 To participate, you can simply ask us [here](http://translocations.in2p3.fr/form_new_request.php), as well as to contact us for any information, to obtain a database extraction on particular taxa, or to inform us about a given translocated population. 
 
 [Top](#welcome-to-the-transloc-blog)
+
 
