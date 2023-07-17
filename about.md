@@ -27,4 +27,3 @@ You can also embed a lot of stuff, for example from YouTube, using the `embed.ht
 
 {% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
 
-{% include partners.html %}
