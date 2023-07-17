@@ -17,7 +17,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
     - {file: "aboutTL.md" , title: "About the Project"}
-    - {file: "blog.md" , title: "Blog"}
+    - {file: "blog.md" , title: "BLOG"}
   
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
