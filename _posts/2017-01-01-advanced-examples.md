@@ -10,6 +10,8 @@ categories: media
 
 ## MathJax
 
+[edit this post here](https://github.com/ConservationTranslocation/conservationtranslocation.github.io/blob/linda/_posts/2017-01-01-advanced-examples.md)
+
 You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
 
 [Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
