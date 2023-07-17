@@ -3,6 +3,8 @@ title:  "Markdown examples"
 layout: post
 ---
 
+[![TransLoc Database](../assets/images/transloc.png)](http://translocations.in2p3.fr/index.php)
+
 [edit this post here](https://github.com/ConservationTranslocation/conservationtranslocation.github.io/blob/linda/_posts/2017-02-01-markdown-examples.md)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
