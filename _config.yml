@@ -23,7 +23,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:linda.angulo-lopez@mnhn.fr"}
   - {title: Github, icon: github, url: "https://github.com/ConservationTranslocation"}
-  - {file: "about.md" , title: "About the Project", icon : about}
+  - {file: "about.md" , title: "About the Project", icon : info-circle}
   
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
