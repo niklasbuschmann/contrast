@@ -1,9 +1,11 @@
 ---
-title:  "Infomation DUPLICATED !!!"
+title:  ""
 mathjax: true
 layout: post
 categories: media
 ---
+
+[DUPLICATION of CONTENT !!! please rewrite](https://github.com/ConservationTranslocation/conservationtranslocation.github.io/blob/linda/aboutTL.md)
 
 ## Who are we?  
 
