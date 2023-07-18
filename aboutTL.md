@@ -50,4 +50,4 @@ Sarra Ferjani took care of all computational issues, including the computing arc
 * **Michel Perret**, from the Ministère de l’Ecologie et du Développement Durable.
 * **Carole Piazza**, from the Conservatoire Botanique National de Corse.
 
-{% include footer.html %}
+{% include partners.html %}

@@ -169,5 +169,7 @@ To participate, you can simply ask us [here](http://translocations.in2p3.fr/form
 
 [Top](#welcome-to-the-transloc-blog)
 
+Write an awesome description for your project partners here. You can edit this line in [here !](https://github.com/ConservationTranslocation/conservationtranslocation.github.io/blob/linda/_includes/footer.html) 
+
 
 {% include partners.html %}
