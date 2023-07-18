@@ -170,3 +170,4 @@ To participate, you can simply ask us [here](http://translocations.in2p3.fr/form
 [Top](#welcome-to-the-transloc-blog)
 
 
+{% include partners.html %}
