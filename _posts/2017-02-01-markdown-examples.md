@@ -88,4 +88,4 @@ function foo () {
     1. First nested item
     2. Second nested item
 
-{% include footer.html %}
+{% include partners.html %}
