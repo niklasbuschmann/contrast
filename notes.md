@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Research notes"
-permalink: "/research-notes/"
+permalink: "/notes/"
 ---
 
 {% if site.show_excerpts %}
