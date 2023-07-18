@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Research projects"
+permalink: "/research/"
 ---
 The following is a list of research projects that I am currently working on. If you wish to collaborate, feel free to reach out on Linkedin or consider making a pull request in the associated github repo.
 
