@@ -1,5 +1,5 @@
 
-[![GA3-240202501-AA1-EV02 Audio Poscast Spreaker](https://d3wo5wojvuv7l.cloudfront.net/t_square_limited_720/images.spreaker.com/original/92a3372ea644341734089fba6ede8fcd.jpg)](https://www.spreaker.com/user/12635481/ga3-240202501-aa1-ev02-audio-jhames-meji)
+[![GA3-240202501-AA1-EV02 Audio Poscast Spreaker](https://widget.spreaker.com/player?episode_id=54162955&theme=light&playlist=false)](https://www.spreaker.com/user/12635481/ga3-240202501-aa1-ev02-audio-jhames-meji)
 
 Podcasts have emerged as a popular medium for language learners to immerse themselves in authentic, real-life English conversations. However, taking it a step further and recording audio for your own podcast can offer unique benefits for language improvement. In this article, we will explore how creating podcast audio content can significantly enhance English language learning.
 
