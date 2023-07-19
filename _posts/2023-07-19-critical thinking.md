@@ -1,5 +1,6 @@
 
-![title](https://https://www.eschoolnews.com/files/2017/06/criticalthinking2.jpg)
+![title](https://www.eschoolnews.com/files/2017/06/criticalthinking2-600x360.jpg)
+
 
 
 Actually in the ever-changing landscape of information and ideas, honing critical thinking skills is a gateway to personal empowerment and growth. Embracing the art of critical thinking equips us with the ability to analyze, evaluate, and make well-informed decisions, enriching every aspect of our lives. In this blog post, we will delve into the significance of critical thinking, its multitude of benefits, and practical steps to nurture this invaluable skill in our daily lives.
