@@ -1,6 +1,8 @@
 
 # Linus Torvalds Chronicle
 
+![title](https://i0.wp.com/www.itsfoss.net/wp-content/uploads/2021/08/lt-1.jpg?w=700&ssl=1)linus Torvalds
+
 
 As software Developers we have some heroes or people who we admire, so the chronicle about Linus Torvalds, the renowned developer of the Linux operating system, presents an exciting opportunity for language learners to embark on a captivating linguistic journey. By exploring his life, accomplishments, and contributions to the world of technology, we can enrich our English language skills while gaining insights into the world of software development. In this article, i explored into the benefits of studying Linus Torvalds' story and how it can aid in improving our English language learning.
 
