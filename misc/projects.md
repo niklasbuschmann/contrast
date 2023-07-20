@@ -25,6 +25,8 @@ The following is a list of research projects that I am currently working on. If 
 - <b>Danish music producer expert questions and answers</b>
     - <b>Motivation:</b> To compile a dataset for fine-tuning of LLMs using questions and answers from experienced musicians and producers.
     - <b>Status:</b> Work in progress
+        - <b>Todos:</b>
+            - Use a LLM for summarization of the questions (Step1: anonymize, Step2: ask agent to summarize)
     - <b>Github repo:</b> https://github.com/Mikeriess/nlp_lydmaskinen 
 
 # Research ideas
