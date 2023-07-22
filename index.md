@@ -3,7 +3,6 @@ layout: post
 categories: media
 title: 
 ---
-![my profile image](assets/pink.jpg){:width="50%"}
 
 I am a Senior Lecturer in the School of Computer Science at the University of Glasgow, UK. Before I came to Glasgow, I was an Associate Professor at Fudan University, Shanghai, China. I earned my Ph.D.  at University of California, Irvine, USA. in 2010.
  
@@ -13,8 +12,4 @@ My current research focuses on healthcare technologies, particularly on issues o
 
 My research is generally in the areas of Human Computer Interaction (HCI),  Computer Supported Cooperative Work (CSCW), and Ubiquitous Computing (Ubicomp). Specifically, I am working at the intersection of computer science and social science.  As computing technologies are increasingly woven into the fabric of everyday lives, we cannot easily separate technical problems from its social context anymore. By combining social and technical approaches, I hope to better understand the roles computing technologies play and design technologies to fit into social practices.
  
-  {% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+ ![my profile image](assets/pink.jpg)
