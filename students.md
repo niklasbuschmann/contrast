@@ -4,7 +4,7 @@ permalink: "/students/"
 layout: page
 categories: media
 ---
-![pebble students](assets/pebbles.jpg)
+![pebble](assets/pebbles.jpg)
 I am looking for motivated students who are passionate about people, interactive and collaborative technologies, healthcare, and mental wellbeing to join our research team.
 
 ## Current Students
