@@ -1,10 +1,10 @@
 ---
-title: 
+title: Research is Fun!
 permalink: "/students/"
 layout: page
 ---
 
-I am looking for motivated students who are interested in interactive technology design and development, healthcare, and mental wellbeing to join our research team.
+I am looking for motivated students who are passionate about people, interactive and collaborative technologies, healthcare, and mental wellbeing to join our research team.
 
 ## Current Students
 
