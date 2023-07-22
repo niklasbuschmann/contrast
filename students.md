@@ -1,7 +1,7 @@
 ---
 title: 
 permalink: "/students/"
-layout: page
+layout: post
 categories: media
 ---
 ![pebble](assets/pebbles.jpg)
