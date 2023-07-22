@@ -3,7 +3,7 @@ layout: post
 categories: media
 title: 
 ---
-![title](assets/pink.jpg))
+![my profile image](assets/pink.jpg)
 
 I am a Senior Lecturer in the School of Computer Science at the University of Glasgow, UK. Before I came to Glasgow, I was an Associate Professor at Fudan University, Shanghai, China. I earned my Ph.D.  at University of California, Irvine, USA. in 2010.
  
