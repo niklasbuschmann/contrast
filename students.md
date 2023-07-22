@@ -1,5 +1,5 @@
 ---
-title: Research is Fun!
+title: 
 permalink: "/students/"
 layout: page
 ---
