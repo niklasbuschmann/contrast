@@ -1,5 +1,5 @@
 ---
-title: "Current Students"
+title: 
 permalink: "/students/"
 layout: page
 ---
