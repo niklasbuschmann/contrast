@@ -4,7 +4,7 @@ layout: page
 categories: media
 ---
 
-To give a sense of what kinds of research I am doing, here is some of my recent work mainly on healthcare and peer interactions for personal growth and wellbeing, involving design, ethnographic studies, and technology development.
+To give a sense of the kinds of research I am doing, here is some of my recent work, mainly on healthcare and peer interactions for personal growth and wellbeing, involving design, ethnographic studies, and technology development.
 
 ## Selected Publications
 
