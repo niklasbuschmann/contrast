@@ -3,9 +3,9 @@ layout: post
 categories: media
 title: 
 ---
- ![my profile image](assets/pink.jpg){: width="45%"}{: style="float: left; margin-right: 5em;"} 
+ ![my profile image](assets/pink.jpg){: width="45%"}{: style="float: left; margin-right: 3em;"} 
 
-I am a Senior Lecturer (Associate Professor) in the School of Computer Science at the University of Glasgow, UK. Before I moved to Glasgow, I was an Associate Professor at Fudan University, Shanghai, China. I earned my Ph.D. at the University of California, Irvine, USA. in 2010.
+I am a Senior Lecturer (Associate Professor) in the School of Computer Science at the University of Glasgow, UK. Before I moved to Glasgow, I was an Associate Professor at Fudan University, Shanghai, China. I received my Ph.D. at the University of California, Irvine, USA. in 2010.
 
 My research involves understanding and designing technologies to promote individual and social well-being. I have looked into social-technical approaches to empowering people for effective health data engagement and health management, with a particular interest in everyday healthy living, mental well-being, and self-management of chronic diseases. Besides healthcare, I have also been studying aging, disability, and sustainability, and exploring approaches including social transparency, crowdsourcing, self-tracking, online community, and mobile sharing to facilitate related social processes. My goal is that computing technologies can be designed to unlock the potential of individuals, support collaborations, and create a positive societal impact. 
 
