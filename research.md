@@ -3,7 +3,7 @@ title:
 layout: page
 categories: media
 ---
-![tangible](assets/tangible display.jpg) {: width="20%"}{: style="float: left; margin-right: 3em;"} 
+![tangible](assets/tangible display.jpg){: width="20%"}{: style="float: left; margin-right: 3em;"} 
 
 To give a sense of the kinds of research I am doing, here is some of my recent work, mainly on healthcare and peer interactions for personal growth and wellbeing, involving design, ethnographic studies, and technology development.
 
