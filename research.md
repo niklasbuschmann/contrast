@@ -3,8 +3,8 @@ title:
 layout: page
 categories: media
 ---
-
-To give a sense of the kinds of research I am doing, here is some of my recent work, mainly on healthcare and peer interactions for personal growth and wellbeing, involving design, ethnographic studies, and technology development.![tangible](assets/tangible display.jpg){: width="20%"}{: style="float: right; margin-left: 3em;"} 
+![tangible](assets/tangible display.jpg){: width="20%"}{: style="float: right; margin-left: 3em;"} 
+To give a sense of the kinds of research I am doing, here is some of my recent work, mainly on healthcare and peer interactions for personal growth and wellbeing, involving design, ethnographic studies, and technology development.
 
 
 ## Selected Publications
@@ -15,7 +15,8 @@ To give a sense of the kinds of research I am doing, here is some of my recent w
    
  - **Ding, X.** , Kou, Y. , Xu, Y. and Zhang, P., "As Uploaders, We Have the Responsibility”: Individualized Professionalization of Bilibili Uploaders. In: 2022 ACM Conference on Human Factors in Computing Systems (CHI'22), New Orleans, LA, USA, 30 Apr - 05 May 2022, p. 509. ISBN 9781450391573
 
- - Jiang, Y. , **Ding, X.**, Ma, X. , Sun, Z. and Gu, N., IntimaSea: Exploring Shared Stress Display in Close Relationships. In: 2023 CHI Conference on Human Factors in Computing Systems (CHI '23), Hamburg, Germany, 23-28 Apr 2023, p. 428. ISBN 9781450394215
+ ![tangible](assets/intimasea.jpg){: width="20%"}{: style="float: left; margin-right: 2em;"} 
+- Jiang, Y. , **Ding, X.**, Ma, X. , Sun, Z. and Gu, N., IntimaSea: Exploring Shared Stress Display in Close Relationships. In: 2023 CHI Conference on Human Factors in Computing Systems (CHI '23), Hamburg, Germany, 23-28 Apr 2023, p. 428. ISBN 9781450394215
 
  - Jiang, Y. , **Ding, X.**, Liu, D. , Gui, X. , Zhang, W. and Zhang, W., Designing intelligent self-checkup based technologies for everyday healthy living. International Journal of Human-Computer Studies , 166, 	 102866.
  
