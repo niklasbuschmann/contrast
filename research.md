@@ -3,7 +3,7 @@ title:
 layout: page
 categories: media
 ---
-![researchwork](assets/researchwork.jpg) 
+![researchwork](assets/researchwork.jpg) {: height="60%"}
 To give a sense of the kinds of research I am doing, here is some of my recent work, mainly on healthcare and peer interactions for personal growth and wellbeing, involving design, ethnographic studies, and technology development.
 
 
