@@ -17,4 +17,5 @@ Learn more about <a href= "https://www.gla.ac.uk/explore/abouttheuniversity/"> t
  - Jinling Huang (Ph.D.)
  - Zhennai Yi (Intern)
 
+![uog](assets/uog.jpg) 
 
