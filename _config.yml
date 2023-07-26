@@ -16,12 +16,14 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html",title: "Home", icon:" Home"}
-  - {file: "README.md",title: "faculty"}
+  - {file: "index.html",title: "Home", icon: "Home"}
+  - {title: "Faculty", sidebaricon: "Faculty",icon: "Faculty"}
+  - {title: "Student", sidebar: "student"}
+  
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "julvancesonwa64@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/Easylearningmade/Easylearningmade"}
+  - {title: Github, icon: github, url: "https://github.com/Easylearningmade"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
