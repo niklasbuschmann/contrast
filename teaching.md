@@ -4,7 +4,7 @@ layout: page
 categories: media
 ---
 
- - Web Application Systems (GA) OMPSCI1023
- - Interactive Systems (H) COMPSCI4014
- - Human-Computer Interaction Design and Evaluation (M) COMPSCI5057
+ - <a href="https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI1023">Web Application Systems </a> COMPSCI1023
+ - <a href="https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI4014">Interactive Systems </a> (H) COMPSCI4014
+ - <a href="https://www.gla.ac.uk/coursecatalogue/course/?code=COMPSCI5057">Human-Computer Interaction Design and Evaluation </a>  (M) COMPSCI5057
 ![teaching](assets/teaching.jpg) 
