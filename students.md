@@ -3,7 +3,6 @@ title:
 layout: page
 categories: media
 ---
-![pebbles](assets/pebbles.jpg) 
 
 I am looking for motivated students who are passionate about human-centered design, interactive and collaborative technologies, healthcare, and wellbeing to join our research team. Please drop me an email if you are interested.
 
