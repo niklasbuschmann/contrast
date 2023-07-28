@@ -28,7 +28,7 @@ title:"Publications"
  
 <h1> Inproceedings (24): </h1>
 
-1. <p style='text-align: justify;'> S Wadehra, R Nassif, S Vlaski, "Exact Subspace Diffusion for Decentralized Multitask Learning," <i>IEEE Conference on Decision and Control (CDC)</i>, Singapore, Dec. 2023. </p>
+1. <p style='text-align: justify;'> S Wadehra, R Nassif, S Vlaski, "Exact Subspace Diffusion for Decentralized Multitask Learning," <i>IEEE Conference on Decision and Control (CDC)</i>, Singapore, Dec. 2023. <a href="https://arxiv.org/pdf/2304.07358.pdf">[pdf]</a></p>
 2. <p style='text-align: justify;'> M. Issa, R. Nassif, E. Rizk, and A. H. Sayed, "Decentralized semi-supervised learning over multitask graphs," <i>Proc. Asilomar Conference on Signals, Systems, and Computers</i>, Pacific Grove, CA, Oct. 2022. </p>
 3. <p style='text-align: justify;'> R. Nassif, S. Vlaski, M. Antonini, M. Carpentiero, V. Matta, and A. H. Sayed, "Finite bit quantization for decentralized learning under subspace constraints,"  <i>Proc. European Signal Processing Conference (EUSIPCO)</i>, Belgrade, Sep. 2022.<a href="https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0001851.pdf">[pdf]</a></p>
 4. <p style='text-align: justify;'> R. Nassif, V. Bordignon, S. Vlaski, and A. H.  Sayed, "Decentralized learning in the presence of low-rank noise," <i>Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>, Singapore, May 2022. <a href="https://arxiv.org/abs/2203.09810">[arXiv]</a></p>
