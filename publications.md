@@ -26,7 +26,7 @@ title:"Publications"
 12. <p style='text-align: justify;'> R. Nassif, C. Richard, A. Ferrari, and A. H. Sayed, "Multitask diffusion adaptation over asynchronous networks," <i>IEEE Transactions on Signal Processing</i>, vol. 64, no. 11, pp. 2835-2850, Jun. 2016.<a href="https://arxiv.org/pdf/1412.1798.pdf">[arXiv]</a> </p>
 
  
-<h1> Inproceedings (23): </h1>
+<h1> Inproceedings (24): </h1>
 
 1. <p style='text-align: justify;'> S Wadehra, R Nassif, S Vlaski, "Exact Subspace Diffusion for Decentralized Multitask Learning," <i>IEEE Conference on Decision and Control (CDC)</i>, Singapore, Dec. 2023. </p>
 2. <p style='text-align: justify;'> M. Issa, R. Nassif, E. Rizk, and A. H. Sayed, "Decentralized semi-supervised learning over multitask graphs," <i>Proc. Asilomar Conference on Signals, Systems, and Computers</i>, Pacific Grove, CA, Oct. 2022. </p>
