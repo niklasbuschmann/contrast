@@ -5,13 +5,10 @@ layout: post
 categories: media
 ---
 
-Here is an equation:
-$MAE = \sum \abs{y - yhat}$
-
 # Papers
 
 ## Submitted
-1. Paper 1 - Temporal loss
+1. Paper 1 - Temporal loss (accepted)
 2. Paper 2 - Simulation engine
 
 ## Work in progress
