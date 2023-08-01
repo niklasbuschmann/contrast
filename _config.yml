@@ -16,9 +16,9 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "melissaresume.pdf", title: "Resume"}
   - {file: "index.html"}
   - {file: "README.md"}
+  - {file: "melissaresume.pdf", title: "Resume"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:melhayashida@users.noreply.github.com"}
