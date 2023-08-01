@@ -30,7 +30,7 @@ I've included a few examples of my GIS work below. Feedback, comments, and ques
 I created this app for park staff so they could explore park amenities and infrastructure (fences, gates, baseball fields, picnic tables, trails, etc.).
 
 <p align="center">
-<img width="80%" height="80%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/3d5b275f-793c-426a-9bdf-27f43940333c">
+<img width="80%" height="80%" src=/assets/DistrictAssets_WebApp_Crop.PNG>
 </p>
 
 ### Park Watch Reporting App
