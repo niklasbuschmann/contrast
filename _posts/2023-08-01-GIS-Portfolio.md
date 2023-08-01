@@ -16,7 +16,7 @@ I enjoy creating print maps, web maps, and dashboards, but I also find GIS data 
 
 I've included a few examples of my GIS work below. Feedback, comments, and questions are more than welcome. (Since I've spent a large portion of my career working with sensitive health and utility data, much of my work can't be displayed here. For more information about my past work, please see my resume below.)
 
-[My Resume](https://github.com/melhayashida/GIS_Portfolio/files/12223008/HayashidaResume_2023.pdf)
+[My Resume](assets/HayashidaResume_2023.pdf)
 
 #### Jump to Section
 - [Mapping Applications](#mapping-applications)
