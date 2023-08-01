@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-##About Me
+## About Me
 
 <img align="left" width="15%" height="15%" src="/assets/myphoto.PNG">
 
