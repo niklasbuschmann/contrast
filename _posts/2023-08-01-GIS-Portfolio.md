@@ -5,6 +5,8 @@ layout: post
 categories: media
 ---
 
+##About Me
+
 <img align="left" width="15%" height="15%" src="/assets/myphoto.PNG">
 
 Hello! I'm Melissa. I'm a Geographic Information Systems (GIS) professional from San Jose, CA.
