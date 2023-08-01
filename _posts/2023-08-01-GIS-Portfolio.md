@@ -37,63 +37,63 @@ I created this app for park staff so they could explore park amenities and infra
 I used Esri's Survey123 to allow park volunteers to submit information about park concerns (e.g. broken benches, downed trees). When volunteers submit this form, supervisors receive email notifications (thanks, Microsoft Flow!) and can track the concerns on a dashboard.
 
 <p align = "center">
-<img width="20%" height="20%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/b2de90e3-b4b7-4591-b10b-030b1cf83e78">
+<img width="20%" height="20%" src="/assets/park watch.PNG">
 </p>
 
 ### Tree Inventory App
 This app provided urban forestry staff with an easy way to batch edit tree information.
 
 <p align="center">
-<img width="80%" height="80%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/34cd0261-2815-4161-b5a0-7b35d8d3873e">
+<img width="80%" height="80%" src="/assets/TreeInventory_DesktopApp_Crop.PNG">
 </p>
 
 ### Mobile Tree Data Collection
 Building off my colleague's work, I maintained tools that allowed an urban forester to track trees, inspections, and simple work orders.
 
 <p align="center">
-<img width="50%" height="50%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/eb1a6925-e38a-421e-82ab-34df6ee3c31e">
+<img width="50%" height="50%" src="/assets/TreeInventory_MobileApp.PNG">
 </p>
 
 ### Safe Walking Routes Map
 I designed this web map to show suggested walking routes for students. SAMI is a Science and Math Institute located within a large park.
 
 <p align="center">
-<img width="50%" height="50%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/cfd839cf-83a1-44f5-9812-eacceb5aed4a">
+<img width="50%" height="50%" src="/assets/SAMI_walkingroutes_crop.PNG">
 </p>
 
 ### Waterfront Mileage
 This web map just shows mileage along a trail system.
 
 <p align="center">
-<img width="80%" height="80%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/f5e02e06-c856-4e96-a52b-9aadf9020685">
+<img width="80%" height="80%" src="/assets/tacoma_waterfront_mileage.PNG">
 </p>
 
 ### Public Notification Address Finder
 This app uses an ESRI widget. Users were able to export a list of addresses within a certain distance of parks or buildings. The address lists were then used to create mailers for public meetings.
 
 <p align="center">
-<img width="80%" height="80%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/cfbaa2e4-299d-4218-a7a1-89faa3fd70a3">
+<img width="80%" height="80%" src="/assets/AddressFinder_crop.PNG">
 </p>
 
 ### Coyote/Raccoon Spotter
 I used ArcGIS Online to allow community members to capture carnivore sightings. This tool used both Survey123 for ArcGIS and ArcGIS Hub. (Note: I can't take credit for the cool coyote logo.)
 
 <p align="center">
-<img width="30%" height="30%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/6959d811-7d02-4aee-917f-755c78fd9c12">
+<img width="30%" height="30%" src="/assets/GritCityCarnivore_crop.PNG">
 </p>
 
 ### Park Utility Viewer
 I created this app for park operations and maintenance staff. It was the result of years of work collecting, scanning, and georeferencing as-builts, importing CAD data, digitizing utilities, and conducting utility field checks.
 
 <p align="center">
-<img width="80%" height="80%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/168b217d-f95f-4686-a77f-921cb10a6fdc">
+<img width="80%" height="80%" src="/assets/UtilityFinder_crop.PNG">
 </p>
 
 ### Park Walk Time Explorer
 I made this Esri Story Map to visualize areas within 10 and 15 minute walks from Tacoma parks. (This was created prior to the City of Tacoma's involvement in the Trust for Public Land's cool Park Score analysis.) 
 
 <p align="center">
-<img width="80%" height="80%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/18812515-7897-4e4c-b140-f8575d2fdeed">
+<img width="80%" height="80%" src="/assets/">
 </p>
 
 ### Simple Mapbox Webmap
@@ -109,14 +109,14 @@ To view the map, click [here](https://melhayashida.github.io/GIS_Portfolio/webma
 With my GIS and epidemiologist coworkers, I maintained and built dashboards, web maps, and web apps that fed into this COVID case and contact management system. At the peak of COVID response, more than 150 staff members used this system.
 
 <p align="center">
-<img width="80%" height="80%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/afa179e3-0ce8-4d6d-9520-9afa0e4548d5">
+<img width="80%" height="80%" src="/assets/COVIDDashboardEntryPage.png">
 </p>
 
 ### Parks Department GIS Portal
 Working alongside my GIS colleagues, IT staff, and an ESRI advisor, I implemented Portal for ArcGIS on Microsoft Azure. After Portal was stood up, we created various tools for park staff and made them accessible via ArcGIS Enterprise Sites.
 
 <p align="center">
-<img width="80%" height="80%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/82c046aa-f744-4519-a58f-ff6cf9668a9e">
+<img width="80%" height="80%" src="/assets/MPT_Portal_Gallery.PNG">
 </p>
 
 [Return to top](#jump-to-section)
@@ -127,21 +127,21 @@ Working alongside my GIS colleagues, IT staff, and an ESRI advisor, I implemente
 This map shows veteran/active duty adaptive recreation program participants.
 
 <p align="center">
-<img width="60%" height="60%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/5949fc49-035b-4b50-bd24-af30cc96cf08">
+<img width="60%" height="60%" src="/assets/AdaptiveRec_crop.PNG">
 </p>
 
 ### Anacapa Island Vegetation Transects Map
 I made this map many years ago as an intern with Channel Islands National Park. 
 
 <p align="center">
-<img width="60%" height="60%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/ec7fe25e-a5e6-4434-9cff-e9d489aa4b9a">
+<img width="60%" height="60%" src="/assets/anacapa_vts.jpg">
 </p>
 
 ### Orchard Map
 As an intern with Channel Islands National Park, I collected tree data at Smuggler's Cove and used it to create the following map.
 
 <p align="center">
-<img width="50%" height="50%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/91f67cbe-5aba-4e06-bef9-914ccb0dd78d">
+<img width="50%" height="50%" src="/assets/OliveOrchard_crop.PNG">
 </p>
 
 [Return to top](#jump-to-section)
