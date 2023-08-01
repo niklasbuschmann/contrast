@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-<img align="left" width="15%" height="15%" src="/assets/myphoto.png">
+<img align="left" width="15%" height="15%" src="/assets/myphoto.PNG">
 Hello! I'm Melissa. I'm a Geographic Information Systems (GIS) professional from San Jose, CA.
 
 I've been working in the GIS field since 2008. I started my GIS career working for Channel Islands National Park. Since then, I've grown my GIS knowledge through approximately 12 years of experience in the public health, parks & recreation, utility, and public safety fields.
