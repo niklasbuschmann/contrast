@@ -3,36 +3,20 @@ title: "About"
 permalink: "/about/"
 layout: page
 ---
+##About Me
 
-## Installation
+<img align="left" width="15%" height="15%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/7c6a0c2c-c5a4-4814-a4ae-f8c6f39e9d36">
+Hello! I'm Melissa. I'm a Geographic Information Systems (GIS) professional from San Jose, CA.
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+I've been working in the GIS field since 2008. I started my GIS career working for Channel Islands National Park. Since then, I've grown my GIS knowledge through approximately 12 years of experience in the public health, parks & recreation, utility, and public safety fields.
 
-## Features
+I love working on GIS projects that help improve community health. My favorite GIS projects were those that helped improve park access, increased drinking water and stormwater quality, and decreased 911 call response times.
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+I enjoy creating print maps, web maps, and dashboards, but I also find GIS data management, geoprocessing automation, and process improvement equally exciting.
 
-## Based on
+I've included a few examples of my GIS work below. Feedback, comments, and questions are more than welcome. (Since I've spent a large portion of my career working with sensitive health and utility data, much of my work can't be displayed here. For more information about my past work, please see my resume below.)
 
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
-
-## Installation (jekyll-remote-theme method)
-
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+[My Resume](https://github.com/melhayashida/GIS_Portfolio/files/12223008/HayashidaResume_2023.pdf)
 
 ```yaml
 remote_theme: niklasbuschmann/contrast@v2.11
