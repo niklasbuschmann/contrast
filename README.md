@@ -3,7 +3,6 @@ title: "About"
 permalink: "/about/"
 layout: page
 ---
-##About Me
 
 <img align="left" width="15%" height="15%" src="https://github.com/melhayashida/GIS_Portfolio/assets/140747457/7c6a0c2c-c5a4-4814-a4ae-f8c6f39e9d36">
 Hello! I'm Melissa. I'm a Geographic Information Systems (GIS) professional from San Jose, CA.
