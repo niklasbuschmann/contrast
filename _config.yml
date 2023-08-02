@@ -19,7 +19,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
   - {title: "Research", file: "Research.md"}
   - {title: "Teaching", file: "Teaching.md"}
-  - {title: "CV", file: "README.md"}
+  - {title: "CV", file: "ccardehu_CV_May2023.pdf"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:c.a.cardenas-hurtado@lse.ac.uk"}
