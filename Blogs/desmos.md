@@ -19,14 +19,14 @@ Linear functions are the simplest functions to both design and bound. In theory,
 Example:
 $$ y = mx + b\cdot \{ |x - a_1| < a_2 \} $$
 
-Patrick Star: Organic curves
+Patrick Star is curvy. 
 
-![heart](../assets/images/desmos_patrick.png){:width="300px" height="300px"}
+![heart](../assets/images/desmos_patrick.png){:width="200px" height="200px"}
 
 
-Cubes without perspective distortion
+Cubes aren't curvy without perspective distortion.
 
-![heart](../assets/images/desmos_cubes.png){:width="300px" height="300px"}
+![heart](../assets/images/desmos_cubes.png){:width="200px" height="200px"}
 
 Fun fact: that linear function bounds can be entirely described with a single variable.
 
@@ -40,7 +40,7 @@ $$y = a \cosh\left(\frac{x}{a}\right)$$
 vs 
 
 Quadratics
-$$ y = ax^2 + bx + c $$
+$$ (y-y_1) = a(x-x_1)^2 $$
 
 ### <span style="color: #6495ED;">Parametric Equations</span>
 
