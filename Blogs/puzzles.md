@@ -14,12 +14,14 @@ layout: page
 
 ## Anime Quiz
 
+Test your anime knowledge with this quiz:
+
 <div id="anime-quiz"></div>
 
 <script>
   const quizContainer = document.getElementById('anime-quiz');
 
-  fetch('https://opentdb.com/api.php?amount=3&category=31')
+  fetch('https://opentdb.com/api.php?amount=5&category=17')
     .then(response => response.json())
     .then(data => {
       const questions = data.results;
@@ -27,16 +29,16 @@ layout: page
 
       questions.forEach((question, index) => {
         const options = [...question.incorrect_answers, question.correct_answer];
-        options.sort(() => Math.random() - 0.5); 
+        options.sort(() => Math.random() - 0.5); // Shuffle the options
 
         quizHTML += `
           <li>
             <p>${question.question}</p>
-            <ol type="A">
+            <ul>
               ${options.map((option, optionIndex) => `
-                <li>${String.fromCharCode(65 + optionIndex)}) ${option}</li>
+                <li>${option}</li>
               `).join('')}
-            </ol>
+            </ul>
           </li>
         `;
       });
