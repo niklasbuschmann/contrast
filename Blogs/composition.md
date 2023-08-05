@@ -3,7 +3,10 @@ title: "Composition"
 permalink: "/blog/composition"
 layout: page
 ---
+
+<html>
 <head>
+  <title>{{ page.title }}</title>
 </head>
 <body>
   <h1>{{ page.title }}</h1>
