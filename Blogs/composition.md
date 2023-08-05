@@ -23,7 +23,6 @@ This piece originally written for solo piano has been switched over to a synthes
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/8_bit_nostalgia.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
