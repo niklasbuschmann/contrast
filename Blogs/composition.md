@@ -16,7 +16,7 @@ layout: page
   <ul>
     <li>
       <audio controls>
-        <source src="/assets/audio/dodoman_theme.wav" type="audio/mpeg">
+        <source src="/assets/audio/dodoman_theme.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
       <p>Description: An upbeat and catchy theme for the game "Dodoman."</p>
