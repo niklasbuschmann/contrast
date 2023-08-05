@@ -11,7 +11,7 @@ layout: page
 </head>
 <body>
   <h1>{{ page.title }}</h1>
-  <p>Enjoy the upbeat and catchy theme for the game "Dodoman":</p>
+  <p>If I were a villain...</p>
 
   <audio controls>
     <source src="/assets/audio/dodoman_theme.mp3" type="audio/mpeg">
