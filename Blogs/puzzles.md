@@ -4,22 +4,6 @@ permalink: "/blog/puzzle"
 layout: page
 ---
 
-## <span style="color: #89CFF0;">Logic Puzzles</span>
-
-WIP
-
-## <span style="color: #89CFF0;">Visual Puzzles</span>
-
-WIP
-
-## <span style="color: #89CFF0;">Tetris Puzzles</span>
-
-WIP
-
-## <span style="color: #89CFF0;">Chess Puzzles</span>
-
-WIP
-
 ## <span style="color: #89CFF0;">Make Bill Nye Proud: General Science Knowledge</span>
 
 <button id="quiz-toggle-button" onclick="toggleQuizPopup()">Show Quiz</button>
@@ -106,3 +90,23 @@ WIP
     cursor: pointer;
   }
 </style>
+
+## <span style="color: #89CFF0;">Logic Puzzles</span>
+
+WIP
+
+## <span style="color: #89CFF0;">Visual Puzzles</span>
+
+WIP
+
+## <span style="color: #89CFF0;">Tetris Puzzles</span>
+
+WIP
+
+## <span style="color: #89CFF0;">Chess Puzzles</span>
+
+WIP
+
+## <span style="color: #89CFF0;">Naruto Puzzles</span>
+
+WIP
