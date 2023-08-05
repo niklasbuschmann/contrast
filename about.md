@@ -15,7 +15,7 @@ permalink: /about/
   </div>
 </div>
 
-## What I Do
+## Hobbies
 
 Despite being deeply immersed in STEM, I'd like to believe I"m a very creative person. You might find me playing or creating music when I'm not doodling or designing. 
 

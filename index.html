@@ -3,12 +3,15 @@ layout: page
 title: "Home"
 ---
 
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Welcome to My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is the main page of my website. Explore and enjoy!</p>
+  <div id="welcomeContainer"></div>
 
   <script>
     var currentDate = new Date();
@@ -29,7 +32,8 @@ title: "Home"
     var welcomeElement = document.createElement('p');
     welcomeElement.textContent = welcomeMessage;
 
-    document.body.appendChild(welcomeElement);
+    var welcomeContainer = document.getElementById('welcomeContainer');
+    welcomeContainer.appendChild(welcomeElement);
   </script>
 </body>
 </html>
