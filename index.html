@@ -54,7 +54,7 @@ title: "Home"
       var circleContainer = document.getElementById('circleContainer');
       var containerRect = circleContainer.getBoundingClientRect(); // Get the container's position
 
-      document.addEventListener('mousemove', function(event) {
+      circleContainer.addEventListener('mousemove', function(event) {
         var mouseX = event.clientX - containerRect.left;
         var mouseY = event.clientY - containerRect.top;
 
