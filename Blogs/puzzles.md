@@ -6,13 +6,17 @@ layout: page
 
 ## Logic Puzzles
 
-<!-- Add your logic puzzles here -->
+WIP
 
 ## Visual Puzzles
 
-<!-- Add your visual puzzles here -->
+WIP
 
 ## Anime Quiz
+
+WIP
+
+## Make Bill Nye Proud: General Science Knowledge
 
 <button onclick="openQuizPopup()">General Science Knowledge Quiz</button>
 
