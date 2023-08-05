@@ -18,17 +18,33 @@ WIP
 
 ## Make Bill Nye Proud: General Science Knowledge
 
-<button onclick="openQuizPopup()">General Science Knowledge Quiz</button>
+<button id="quiz-toggle-button" onclick="toggleQuizPopup()">Show Quiz</button>
 
 <div id="quiz-popup" style="display: none;">
   <h2>General Science Knowledge Quiz</h2>
   <div id="science-quiz">
     <!-- The quiz questions will be dynamically added here -->
   </div>
-  <button onclick="closeQuizPopup()">Close Quiz</button>
+  <button onclick="toggleQuizPopup()">Close Quiz</button>
 </div>
 
 <script>
+  let quizPopupVisible = false;
+
+  function toggleQuizPopup() {
+    const quizPopup = document.getElementById("quiz-popup");
+    const quizToggleButton = document.getElementById("quiz-toggle-button");
+
+    quizPopupVisible = !quizPopupVisible;
+    if (quizPopupVisible) {
+      quizPopup.style.display = "block";
+      quizToggleButton.textContent = "Close Quiz";
+    } else {
+      quizPopup.style.display = "none";
+      quizToggleButton.textContent = "Show Quiz";
+    }
+  }
+
   // Fetch the quiz data and create the questions
   fetch('https://opentdb.com/api.php?amount=5&category=17&difficulty=hard')
     .then(response => response.json())
@@ -78,17 +94,6 @@ WIP
     .catch(error => {
       console.error('Error fetching quiz:', error);
     });
-
-  // Functions to open and close the quiz pop-up
-  function openQuizPopup() {
-    const quizPopup = document.getElementById("quiz-popup");
-    quizPopup.style.display = "block";
-  }
-
-  function closeQuizPopup() {
-    const quizPopup = document.getElementById("quiz-popup");
-    quizPopup.style.display = "none";
-  }
 </script>
 
 <style>
