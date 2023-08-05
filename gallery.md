@@ -4,38 +4,24 @@ title: Gallery
 permalink: /gallery/
 ---
 
-Meet Pudding. She is a 2 year old rabbit who is afraid of vacuums and spiders.
+# Rabbit Gallery
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+Here are some adorable pictures of my pet rabbit, Pudding:
 
-<div style="flex: 1; max-width: calc(50% - 10px);">
-  ![Pudding 1](../assets/images/pudding1.png)
-  *Caption 1: Pudding smells the food but does not see the food*
-</div>
+![Pudding 1](../assets/images/pudding1.png)  
+*Caption 1: Pudding smells the food but does not see the food*
 
-<div style="flex: 1; max-width: calc(50% - 10px);">
-  ![Pudding 2](../assets/images/pudding2.png)
-  *Caption 2: Pudding in loaf of bread mode*
-</div>
+![Pudding 2](../assets/images/pudding2.png)  
+*Caption 2: Pudding in loaf of bread mode*
 
-<div style="flex: 1; max-width: calc(50% - 10px);">
-  ![Pudding 3](../assets/images/pudding3.png)
-  *Caption 3: Pudding dreaming about bananas*
-</div>
+![Pudding 3](../assets/images/pudding3.png)  
+*Caption 3: Pudding dreaming about bananas*
 
-<div style="flex: 1; max-width: calc(50% - 10px);">
-  ![Pudding 4](../assets/images/pudding4.png)
-  *Caption 4: She has woken from her slumber*
-</div>
+![Pudding 4](../assets/images/pudding4.png)  
+*Caption 4: She has woken from her slumber*
 
-<div style="flex: 1; max-width: calc(50% - 10px);">
-  ![Pudding 5](../assets/images/pudding5.png)
-  *Caption 5: Pudding is not playing around this time*
-</div>
+![Pudding 5](../assets/images/pudding5.png)  
+*Caption 5: Pudding is not playing around this time*
 
-<div style="flex: 1; max-width: calc(50% - 10px);">
-  ![Pudding 6](../assets/images/pudding6.png)
-  *Caption 6: Pudding stretching before the big game*
-</div>
-
-</div>
+![Pudding 6](../assets/images/pudding6.png)  
+*Caption 6: Pudding stretching before the big game*
