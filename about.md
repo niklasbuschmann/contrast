@@ -19,10 +19,15 @@ permalink: /about/
 
 Despite being deeply immersed in STEM, I feel as though I'm an inherently creative person. You might find me playing or creating music when I'm not doodling or designing. 
 
-In an effort to avoid withering away into dust, I also spend time bouldering and playing all kinds of racquet sports.
+In an effort to avoid withering away, I also spend time bouldering and playing all kinds of racquet sports. I don't want to lose a pushup contest with my future grandkids. 
 
 ## Recreation
 
-I believe that video games are one of the best ways to stay connected with friends who can't meet in person. If I'm gaming, I usually spend my time on Riot Games, Tetris, chess, and other strategy or co-op games. Feel free to add me on Discord: dodoman767
+I believe that video games are one of the best ways to stay connected with friends who can't meet in person. If I'm gaming, I usually spend my time on TFT, League, Tetris or chess. Feel free to add me on Discord: dodoman767
 
 I'm also currently in the middle of watching Vinland Saga and it's amazing! 
+
+
+
+
+
