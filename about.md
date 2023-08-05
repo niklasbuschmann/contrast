@@ -11,13 +11,13 @@ Hello there! I'm Timothy, a software developer based in Toronto. Welcome to my c
 
 ## Background
 
-I come from a STEM background, with a major in Computer Science (co-op) at the University of Waterloo. Growing up in the age of the internet has provided me with endless resources to learn about math, science, and technology. Currently, I work as a full-time technical lead for a startup. 
+I come from a STEM background, with a major in Computer Science at the University of Waterloo. Growing up in the age of the internet has provided me with endless resources to learn about math, science, and technology. Currently, I work as a full-time technical lead for a startup. 
 
 ## What I Do
 
-Despite being deeply immersed in STEM, I also love to engage my right hemisphere! You might find me playing or creating music when I'm not painting or drawing. 
+Despite being deeply immersed in STEM, I also love to engage my right hemisphere. You might find me playing or creating music when I'm not doodling or designing. 
 
-In an effort to avoid withering away into dust, I also enjoy bouldering and playing all kinds of racquet sports!
+In an effort to avoid withering away into dust, I also spend time bouldering and playing all kinds of racquet sports.
 
 ## Recreation
 
