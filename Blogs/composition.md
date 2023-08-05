@@ -5,8 +5,6 @@ layout: page
 ---
 
 
-### Dodoman's Theme
-
 <body>
   <p>Insert Description:</p>
   <audio controls>
@@ -14,4 +12,3 @@ layout: page
     Your browser does not support the audio element.
   </audio>
 </body>
-</html>

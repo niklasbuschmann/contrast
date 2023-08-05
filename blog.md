@@ -14,7 +14,7 @@ layout: page
 [Interested in turning math into art?](https://timothy-cao.github.io/personal/blog/desmos)<br>
 ![alt text](/assets/images/desmos.png){:width="200px" height="200px"}
 
-## Tim's Puzzles and Quizzes
+## Puzzles and Quizzes
 
 [If your brain is itching for a challenge](https://timothy-cao.github.io/personal/blog/puzzle)<br>
 ![alt text](/assets/images/puzzle.png){:width="200px" height="200px"}
