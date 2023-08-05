@@ -76,7 +76,6 @@ Even more experimental, I'm looking into ways to create tension and stress. Whet
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/spooky_noise.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -84,11 +83,12 @@ Even more experimental, I'm looking into ways to create tension and stress. Whet
 </body>
 </html>
 
-## Game_OST_3.mp3
+## Game OST 2
+
+This is one of the first orchestral pieces I've attempted. It draws inspiration from Vellum's OST as the primary chord progression and Temple of Time OST for certain rhythms. 
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/Game_OST_3.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -96,11 +96,12 @@ Even more experimental, I'm looking into ways to create tension and stress. Whet
 </body>
 </html>
 
-## March_of_the_clowns.mp3
+## March of the clowns
+
+My first multi-instrument piece made when I was 13. It was themed with clownery and tom foolery. I tried to use shorter notes and chromatic scales that resemble Entry of the Gladiators's chromatic descent, one of the most iconic pieces for circus music. 
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/March_of_the_clowns.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -108,11 +109,12 @@ Even more experimental, I'm looking into ways to create tension and stress. Whet
 </body>
 </html>
 
-## shrekesque.mp3
+## Shrekesque
+
+I love the theme used in shrek here. I don't rememebr exactly where it was played, but I believe this version is similar to the original. I have yet to elaborate and evolve it past it's starting point, but I'm leaving it here anyways. 
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/shrekesque.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -120,11 +122,12 @@ Even more experimental, I'm looking into ways to create tension and stress. Whet
 </body>
 </html>
 
-## Kanada.mp3
+## Kanada
+
+I wanted to see if I could transcribe O canada like I heard it in elementary school. This was an attempt to try to imitate this unknown O canada version that was stuck in my head although I've definetely went off the script and added parts of my own too. 
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/Kanada.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -132,11 +135,12 @@ Even more experimental, I'm looking into ways to create tension and stress. Whet
 </body>
 </html>
 
-## violin_nostalgia.mp3
+## violin nostalgia
+
+I don't know why this sounds so nostalgic to me. It draws inspiration from Joe Hisashi's descending piano chords. 
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/violin_nostalgia.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -144,11 +148,12 @@ Even more experimental, I'm looking into ways to create tension and stress. Whet
 </body>
 </html>
 
-## sadgeC.mp3
+## Sadge in C
+
+Another Synth piece that emphasizes the uses of sustain to give the piece a blurry, longing feel. It's incomplete and currently ends in the middle of a spicy transition
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/sadgeC.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
