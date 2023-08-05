@@ -17,7 +17,7 @@ Linear functions are the simplest functions to both design and bound. In theory,
 
 
 Example:
-$$ y = x + 2 \cdot \{ |x + 1| < 2 \} $$
+$$ y = mx + b\cdot \{ |x - a_1| < a_2 \} $$
 
 Fun fact: that linear function bounds can be entirely described with a single variable.
 
@@ -26,7 +26,10 @@ Fun fact: that linear function bounds can be entirely described with a single va
 Polynomials show up often in math classes, but it's function in art is less pronounced. Most degrees of polynomials simply don't have an important shape in art aside from possibly the quadratic. And even so most shapes you see in real life that look like a quadratic aren't. For example Catenary functions better describe hanging chains than quadratics. Polynomials functions in Desmos art truly only shines in motion. 
 
 Catenary
-$$y = a \cosh\left(\frac{x}{a}\right)$$ vs 
+$$y = a \cosh\left(\frac{x}{a}\right)$$ 
+
+vs 
+
 Quadratics
 $$ y = ax^2 + bx + c $$
 
