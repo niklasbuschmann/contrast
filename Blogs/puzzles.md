@@ -107,6 +107,12 @@ WIP
 
 WIP
 
-## <span style="color: #89CFF0;">Naruto Puzzles</span>
+## <span style="color: #89CFF0;">Naruto Quiz</span>
 
 WIP
+
+## <span style="color: #89CFF0;">2 Truths 1 Lie</span>
+
+I am currently trying to come up with lies
+
+
