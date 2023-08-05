@@ -4,9 +4,7 @@ title: Gallery
 permalink: /gallery/
 ---
 
-# Rabbit Gallery
-
-Here are some adorable pictures of my pet rabbit, Pudding:
+Meet Pudding. She is a 2 year old rabbit who is afraid of vacuums and spiders.
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
