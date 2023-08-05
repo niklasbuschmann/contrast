@@ -6,25 +6,26 @@ layout: page
 
 ## Logic Puzzles
 
-WIP
+<!-- Add your logic puzzles here -->
 
 ## Visual Puzzles
 
-WIP
+<!-- Add your visual puzzles here -->
 
 ## Anime Quiz
 
-WIP
+<button onclick="openQuizPopup()">General Science Knowledge Quiz</button>
 
-## Make Bill Nye Proud: General Science Knowledge
-
-<div id="science-quiz">
-  <!-- The quiz questions will be dynamically added here -->
+<div id="quiz-popup" style="display: none;">
+  <h2>General Science Knowledge Quiz</h2>
+  <div id="science-quiz">
+    <!-- The quiz questions will be dynamically added here -->
+  </div>
+  <button onclick="closeQuizPopup()">Close Quiz</button>
 </div>
 
 <script>
-  const quizContainer = document.getElementById('science-quiz');
-
+  // Fetch the quiz data and create the questions
   fetch('https://opentdb.com/api.php?amount=5&category=17')
     .then(response => response.json())
     .then(data => {
@@ -65,16 +66,31 @@ WIP
           });
         });
 
-        // Append the question container to the main quiz container
+        // Append the question container to the quiz pop-up container
+        const quizContainer = document.getElementById('science-quiz');
         quizContainer.appendChild(questionContainer);
       });
     })
     .catch(error => {
       console.error('Error fetching quiz:', error);
     });
+
+  // Functions to open and close the quiz pop-up
+  function openQuizPopup() {
+    const quizPopup = document.getElementById("quiz-popup");
+    quizPopup.style.display = "block";
+  }
+
+  function closeQuizPopup() {
+    const quizPopup = document.getElementById("quiz-popup");
+    quizPopup.style.display = "none";
+  }
 </script>
 
 <style>
+  button {
+    margin-bottom: 10px;
+  }
   .quiz-options li {
     cursor: pointer;
   }
