@@ -6,9 +6,8 @@ layout: page
 
 ## Music Composition Journey
 
-[Join me as I attempt to vibrate the air pleasantly](https://timothy-cao.github.io/personal/blog/composition)
-:D
-![alt text](/images/composition.jpg)
+[Join me as I attempt to vibrate the air pleasantly](https://timothy-cao.github.io/personal/blog/composition)<br>
+![alt text](/images/composition.jpg){:width="50%"}
 
 ## Animation Journey
 
