@@ -25,8 +25,4 @@ In an effort to avoid withering away into dust, I also spend time bouldering and
 
 I believe that video games are one of the best ways to stay connected with friends who can't meet in person. If I'm gaming, I usually spend my time on Riot Games, Tetris, chess, and other strategy or co-op games. Feel free to add me on Discord: dodoman767
 
-I'm currently in the middle of watching Vinland Saga and it's amazing! 
-
-## Blog
-
-I believe passions can be greatly honed with discussion, critque and collaboration. I hope to leave some of my work and interests on display in hopes to inspire conversation and passion in topics I'm invested in. 
+I'm also currently in the middle of watching Vinland Saga and it's amazing! 
