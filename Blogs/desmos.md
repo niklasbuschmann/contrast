@@ -20,10 +20,12 @@ Example:
 $$ y = mx + b\cdot \{ |x - a_1| < a_2 \} $$
 
 Patrick Star: Organic curves
+
 ![heart](../assets/images/desmos_patrick.png){:width="300px" height="300px"}
 
 
 Cubes without perspective distortion
+
 ![heart](../assets/images/desmos_cubes.png){:width="300px" height="300px"}
 
 Fun fact: that linear function bounds can be entirely described with a single variable.
