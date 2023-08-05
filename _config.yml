@@ -17,14 +17,15 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", title: "Home", icon: home}
-  - {file: "cv.md", title: "CV"}
   - {file: "blog.md", title: "Blog"}
+  - {file: "gallery.md", title: "Gallery"}
   - {file: "about.md", title: "About me"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:tctctc888@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/Timothy-Cao"}
-  - {title: Portfolio, icon: rss, url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"}
+  - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/timothyc767/"}
+  - {title: Youtube, icon: youtube, url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
