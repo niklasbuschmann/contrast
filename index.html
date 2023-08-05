@@ -17,7 +17,16 @@ title: "Home"
       background-color: #aaf; /* Light blue color */
       border-radius: 50%;
       position: absolute;
-      transition: transform 0.3s ease;
+      animation: repel 0.3s ease infinite;
+    }
+
+    @keyframes repel {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(10px, 10px);
+      }
     }
   </style>
 </head>
@@ -46,36 +55,6 @@ title: "Home"
 
     var welcomeContainer = document.getElementById('welcomeContainer');
     welcomeContainer.appendChild(welcomeElement);
-
-    // Interactive Animation JavaScript
-    document.addEventListener('DOMContentLoaded', function() {
-      var circles = document.querySelectorAll('.circle');
-
-      var circleContainer = document.getElementById('circleContainer');
-      var containerRect = circleContainer.getBoundingClientRect(); // Get the container's position
-
-      circleContainer.addEventListener('mousemove', function(event) {
-        var mouseX = event.clientX - containerRect.left;
-        var mouseY = event.clientY - containerRect.top;
-
-        circles.forEach(function(circle) {
-          var circleX = circle.getBoundingClientRect().left + circle.offsetWidth / 2 - containerRect.left;
-          var circleY = circle.getBoundingClientRect().top + circle.offsetHeight / 2 - containerRect.top;
-
-          var deltaX = circleX - mouseX;
-          var deltaY = circleY - mouseY;
-
-          var distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-          var repelStrength = Math.min(3000 / (distance * distance), 1);
-
-          if (distance < 100) {
-            circle.style.transform = `translate(${deltaX * repelStrength}px, ${deltaY * repelStrength}px)`;
-          } else {
-            circle.style.transform = `translate(0, 0)`;
-          }
-        });
-      });
-    });
 
     // Create a grid of circles
     document.addEventListener('DOMContentLoaded', function() {
