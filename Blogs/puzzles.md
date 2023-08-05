@@ -6,19 +6,17 @@ layout: page
 
 ## Logic Puzzles
 
-<!-- Add your logic puzzles here -->
+WIP
 
 ## Visual Puzzles
 
-<!-- Add your visual puzzles here -->
+WIP
 
 ## Anime Quiz
 
-.
+WIP
 
-## Randomly Generated General Science Knowledge Quiz
-
-Make Bill Nye proud.
+## Make Bill Nye Proud: General Science Knowledge
 
 <div id="science-quiz">
   <!-- The quiz questions will be dynamically added here -->
