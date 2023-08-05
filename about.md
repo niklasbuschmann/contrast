@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div style="display: flex; align-items: center;">
-  <img src="../assets/images/head_shot.png" alt="me" style="width: 500px; height: 500px;">
+  <img src="../assets/images/head_shot.png" alt="me" style="width: 400px; height: 400px;">
   <div style="margin-left: 20px;">
   <h1>About Me</h1>
     <p>Hello there! I'm Timothy, a software developer based in Toronto. Welcome to my corner of the internet where I share my thoughts, experiences, and journeys.</p>
