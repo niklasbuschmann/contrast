@@ -17,7 +17,7 @@ permalink: /about/
 
 ## What I Do
 
-Despite being deeply immersed in STEM, I'd to believe I"m a very creative person. You might find me playing or creating music when I'm not doodling or designing. 
+Despite being deeply immersed in STEM, I'd like to believe I"m a very creative person. You might find me playing or creating music when I'm not doodling or designing. 
 
 In an effort to avoid withering away, I also spend time bouldering and playing all kinds of racquet sports. I don't want to lose a pushup contest with my future grandkids. 
 
