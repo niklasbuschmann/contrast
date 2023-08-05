@@ -11,7 +11,7 @@ layout: page
 
 ## Animation Journey
 
-[Watch as I try to make scribbles come to move](https://timothy-cao.github.io/personal/blog/animation)<br>
+[Watch as I try to make scribbles move around](https://timothy-cao.github.io/personal/blog/animation)<br>
 ![alt text](/images/animation.jpg){:width="200px" height="200px"}
 
 ## Desmos Art Journey
