@@ -8,10 +8,23 @@ title: "Home"
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <title>Welcome to My Website</title>
+  <style>
+    /* Add your CSS styles here */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div id="welcomeContainer"></div>
+
+  <!-- Interactive Animation -->
+  <div class="box" id="interactiveBox"></div>
 
   <script>
     var currentDate = new Date();
@@ -34,6 +47,17 @@ title: "Home"
 
     var welcomeContainer = document.getElementById('welcomeContainer');
     welcomeContainer.appendChild(welcomeElement);
+
+    // Interactive Animation JavaScript
+    var interactiveBox = document.getElementById('interactiveBox');
+
+    interactiveBox.addEventListener('click', function() {
+      if (interactiveBox.style.backgroundColor === 'blue') {
+        interactiveBox.style.backgroundColor = 'red';
+      } else {
+        interactiveBox.style.backgroundColor = 'blue';
+      }
+    });
   </script>
 </body>
 </html>
