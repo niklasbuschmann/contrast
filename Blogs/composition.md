@@ -4,7 +4,7 @@ permalink: "/blog/composition"
 layout: page
 ---
 
-As one of my earlier interests, composing unfolded quite naturally for me. I had the privilege of learning music theory, honing my piano skills, and gaining experience in playing with bands. I've also met some friends who were exceptionally talented in music performance and production to give me tips. Although I'm definetely not their best students, I've entertained myself for quite a few hours working on pieces of my own. I work with usually orchestral instrumentation or piano. 
+As one of my earlier interests, composing unfolded quite naturally for me. I had the privilege of learning music theory, honing my piano skills, and gaining experience in playing with bands. I've also met some friends who were exceptionally talented in music performance and production to give me tips. Although I'm definetely not their best students, I've entertained myself for quite a few hours working on pieces of my own. I work with usually orchestral instrumentation or piano. I use Musescore for writing and rendering, however the audio and performance quality of muescore pales in comparison to the newer and paid softwares. 
 
 ## <span style="color: #89CFF0;">Dodoman's Theme</span>
 
