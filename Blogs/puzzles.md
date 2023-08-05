@@ -25,7 +25,6 @@ WIP
 <button id="quiz-toggle-button" onclick="toggleQuizPopup()">Show Quiz</button>
 
 <div id="quiz-popup" style="display: none;">
-  <h2>General Science Knowledge Quiz</h2>
   <div id="science-quiz">
     <!-- The quiz questions will be dynamically added here -->
   </div>
@@ -107,8 +106,3 @@ WIP
     cursor: pointer;
   }
 </style>
-
-
-## <span style="color: #89CFF0;">Naruto Quiz</span>
-
-WIP
