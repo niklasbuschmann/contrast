@@ -1,5 +1,5 @@
 ---
-title: "Puzzles"
+title: ""
 permalink: "/blog/puzzle"
 layout: page
 ---
