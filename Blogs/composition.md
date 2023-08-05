@@ -33,7 +33,7 @@ This piece originally written for solo piano has been switched over to a synthes
 
 ## 3 Hands Unknown
 
-This 3 handed piece's motif is inspired by an unknown piece. The chord progresion is also inspired by another unknown piece. I had transcribed this without reference, but I had a clear idea in my head on what I wanted the chords to sound like as if I heard it before. If you know any reference material that sounds similar, let me know- I'm curious!
+This 3 handed piece's motif is built off an unknown piece in past memories. The chord progresion is also inspired by another unknown piece. I had transcribed this without reference, but I had a clear idea in my head on what I wanted the chords to sound like as if I heard it before. If you know any reference material that sounds similar, let me know- I'm curious!
 
 <html>
 <body>
@@ -44,11 +44,12 @@ This 3 handed piece's motif is inspired by an unknown piece. The chord progresio
 </body>
 </html>
 
-## Game_OST_4.mp3
+## Game OST 4
+
+This is orchestral piece was inspired by Sonny 2 music with new instrumentation, counter melody and progression. The full piece is still in the works. 
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/Game_OST_4.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
