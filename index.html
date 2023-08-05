@@ -11,12 +11,13 @@ title: "Home"
   <title>Welcome to My Website</title>
   <style>
     /* Add your CSS styles here */
-    .box {
-      width: 100px;
-      height: 100px;
+    .circle {
+      width: 50px;
+      height: 50px;
       background-color: blue;
-      transition: background-color 0.3s ease;
-      cursor: pointer;
+      border-radius: 50%;
+      position: absolute;
+      transition: transform 0.3s ease;
     }
   </style>
 </head>
@@ -24,8 +25,6 @@ title: "Home"
   <div id="welcomeContainer"></div>
 
   <!-- Interactive Animation -->
-  <div class="box" id="interactiveBox"></div>
-
   <script>
     var currentDate = new Date();
     var hours = currentDate.getHours();
@@ -49,15 +48,44 @@ title: "Home"
     welcomeContainer.appendChild(welcomeElement);
 
     // Interactive Animation JavaScript
-    var interactiveBox = document.getElementById('interactiveBox');
+    document.addEventListener('DOMContentLoaded', function() {
+      var circles = document.querySelectorAll('.circle');
 
-    interactiveBox.addEventListener('click', function() {
-      if (interactiveBox.style.backgroundColor === 'blue') {
-        interactiveBox.style.backgroundColor = 'red';
-      } else {
-        interactiveBox.style.backgroundColor = 'blue';
-      }
+      document.addEventListener('mousemove', function(event) {
+        var mouseX = event.clientX;
+        var mouseY = event.clientY;
+
+        circles.forEach(function(circle) {
+          var circleX = circle.getBoundingClientRect().left + circle.offsetWidth / 2;
+          var circleY = circle.getBoundingClientRect().top + circle.offsetHeight / 2;
+
+          var deltaX = circleX - mouseX;
+          var deltaY = circleY - mouseY;
+
+          var distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+          var repelStrength = 1000 / distance;
+
+          circle.style.transform = `translate(${deltaX * repelStrength}px, ${deltaY * repelStrength}px)`;
+        });
+      });
     });
+  </script>
+
+  <!-- Create a grid of circles -->
+  <script>
+    var numRows = 5;
+    var numCols = 5;
+
+    for (var row = 0; row < numRows; row++) {
+      for (var col = 0; col < numCols; col++) {
+        var circle = document.createElement('div');
+        circle.className = 'circle';
+        circle.style.left = col * 60 + 'px';
+        circle.style.top = row * 60 + 'px';
+
+        document.body.appendChild(circle);
+      }
+    }
   </script>
 </body>
 </html>
