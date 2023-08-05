@@ -25,28 +25,52 @@ Test your anime knowledge with this quiz:
     .then(response => response.json())
     .then(data => {
       const questions = data.results;
-      let quizHTML = '<ol>';
+      let quizHTML = '';
 
       questions.forEach((question, index) => {
         const options = [...question.incorrect_answers, question.correct_answer];
         options.sort(() => Math.random() - 0.5); // Shuffle the options
 
         quizHTML += `
-          <li>
+          <div class="quiz-question">
             <p>${question.question}</p>
-            <ul>
+            <ul class="quiz-options">
               ${options.map((option, optionIndex) => `
-                <li>${option}</li>
+                <li data-correct="${option === question.correct_answer ? 'true' : 'false'}">${option}</li>
               `).join('')}
             </ul>
-          </li>
+            <p class="quiz-feedback"></p>
+          </div>
         `;
       });
 
-      quizHTML += '</ol>';
       quizContainer.innerHTML = quizHTML;
+
+      // Attach click event to options
+      const optionElements = document.querySelectorAll('.quiz-options li');
+      optionElements.forEach(option => {
+        option.addEventListener('click', function() {
+          const correct = this.getAttribute('data-correct') === 'true';
+          const feedback = this.parentElement.nextElementSibling;
+          feedback.textContent = correct ? 'Correct!' : 'Incorrect!';
+          feedback.style.color = correct ? 'green' : 'red';
+
+          optionElements.forEach(elem => {
+            elem.style.pointerEvents = 'none'; // Disable further clicks
+            if (elem.getAttribute('data-correct') === 'true') {
+              elem.style.color = 'green';
+            }
+          });
+        });
+      });
     })
     .catch(error => {
       console.error('Error fetching anime quiz:', error);
     });
 </script>
+
+<style>
+  .quiz-options li {
+    cursor: pointer;
+  }
+</style>
