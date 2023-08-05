@@ -3,3 +3,44 @@ layout: default
 title: "Home"
 ---
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to My Website</title>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is the main page of my website. Explore and enjoy!</p>
+
+  <script>
+    // JavaScript code to display a welcome message
+    var currentDate = new Date();
+    var hours = currentDate.getHours();
+
+    var greeting;
+
+    if (hours < 12) {
+      greeting = 'Good morning';
+    } else if (hours < 18) {
+      greeting = 'Good afternoon';
+    } else {
+      greeting = 'Good evening';
+    }
+
+    var welcomeMessage = greeting + ', visitor!';
+
+    var welcomeElement = document.createElement('p');
+    welcomeElement.textContent = welcomeMessage;
+
+    document.body.appendChild(welcomeElement);
+  </script>
+</body>
+</html>
+In this example, the JavaScript code calculates the current time and displays a personalized welcome message based on the time of day. The message changes depending on whether it's morning, afternoon, or evening.
+
+You can copy and paste this code into your index.html file. When you open the page in a web browser, it will show the welcome message along with the static content in the HTML.
+
+
+
+
+
