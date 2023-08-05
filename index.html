@@ -55,20 +55,20 @@ title: "Home"
   <script>
     var numRows = 5;
     var numCols = 5;
-    var textStart = document.getElementById('textStart'); // Assuming you have an element with this ID
+    var textStart = document.querySelector('p');
 
     for (var row = 0; row < numRows; row++) {
       for (var col = 0; col < numCols; col++) {
         var circle = document.createElement('div');
         circle.className = 'circle';
-        circle.style.left = textStart.getBoundingClientRect().left + col * 60 + 'px'; // Adjusted position
-        circle.style.top = textStart.getBoundingClientRect().top + row * 60 + 'px'; // Adjusted position
+        circle.style.left = textStart.getBoundingClientRect().left + col * 60 + 'px';
+        circle.style.top = textStart.getBoundingClientRect().bottom + row * 60 + 'px'; // Use bottom position of text element
 
         document.body.appendChild(circle);
       }
     }
   </script>
 
-  <p id="textStart" style="visibility: hidden;">Text start position</p> <!-- Hidden element to mark text start -->
+  <p>Text start position</p> <!-- Mark the text start position -->
 </body>
 </html>
