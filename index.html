@@ -31,31 +31,8 @@ title: "Home"
   </style>
 </head>
 <body>
-  <div id="welcomeContainer"></div>
-
   <!-- Interactive Animation JavaScript -->
   <script>
-    var currentDate = new Date();
-    var hours = currentDate.getHours();
-
-    var greeting;
-
-    if (hours < 12) {
-      greeting = 'Good morning';
-    } else if (hours < 18) {
-      greeting = 'Good afternoon';
-    } else {
-      greeting = 'Good evening';
-    }
-
-    var welcomeMessage = greeting + ', visitor!';
-
-    var welcomeElement = document.createElement('p');
-    welcomeElement.textContent = welcomeMessage;
-
-    var welcomeContainer = document.getElementById('welcomeContainer');
-    welcomeContainer.appendChild(welcomeElement);
-
     // Create a grid of circles
     document.addEventListener('DOMContentLoaded', function() {
       var numRows = 5;
@@ -67,9 +44,16 @@ title: "Home"
           var circle = document.createElement('div');
           circle.className = 'circle';
           circle.style.left = col * 40 + 'px'; /* Adjusted spacing for smaller circles */
-          circle.style.top = row * 40 + welcomeContainer.clientHeight + 20 + 'px'; // Adjust the top position
+          circle.style.top = row * 40 + 20 + 'px'; // Adjust the top position
 
           circleContainer.appendChild(circle);
+
+          circle.addEventListener('mouseover', function() {
+            // Play collision sound
+            var collisionSound = document.getElementById('collisionSound');
+            collisionSound.currentTime = 0; // Reset sound to start
+            collisionSound.play();
+          });
         }
       }
     });
