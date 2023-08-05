@@ -4,7 +4,7 @@ permalink: "/blog/composition"
 layout: page
 ---
 
-## Dodoman's Theme
+## <span style="color: #89CFF0;">Dodoman's Theme</span>
 
 This peice took me around 40 hours to compose over 4 months and I consider it to be my magnum opus thus far. It takes inspiration from Schubert Ständchen, Luigi's mansion and Kisame's Theme. It's not quite completely refined as I'm still seeking better alternatives to the 2nd movements and the ending. The transitions between the movements could also use work as well as further instrument volume balancing. 
 
@@ -17,7 +17,7 @@ This peice took me around 40 hours to compose over 4 months and I consider it to
 </body>
 </html>
 
-## 8 bit nostalgia
+## <span style="color: #89CFF0;">8 bit nostalgia</span>
 
 This piece originally written for solo piano has been switched over to a synthesizer. For some reason the melody, chord progression and synthesizer work well together in making it feel nostalgic. The easter egg ending uses a motif from guilty crown. 
 
@@ -30,7 +30,7 @@ This piece originally written for solo piano has been switched over to a synthes
 </body>
 </html>
 
-## 3 Hands Unknown
+## <span style="color: #89CFF0;">3 Hands Unknown</span>
 
 This 3 handed piece's motif is built off an unknown piece in past memories. The chord progresion is also inspired by another unknown piece. I had transcribed this without reference, but I had a clear idea in my head on what I wanted the chords to sound like as if I heard it before. If you know any reference material that sounds similar, let me know- I'm curious!
 
@@ -43,7 +43,7 @@ This 3 handed piece's motif is built off an unknown piece in past memories. The 
 </body>
 </html>
 
-## Game OST 4
+## <span style="color: #89CFF0;">Game OST 4</span>
 
 This is orchestral piece was inspired by Sonny 2 music with new instrumentation, counter melody and progression. The full piece is still in the works. 
 
@@ -56,7 +56,7 @@ This is orchestral piece was inspired by Sonny 2 music with new instrumentation,
 </body>
 </html>
 
-## Puddings day off
+## <span style="color: #89CFF0;">Puddings day off</span>
 
 This is a bit of an experimental piece. It follows the day of the life of Pudding, my rabbit. It starts off tense as Pudding as today is vacuum day. Things suddenly calm down when the cleaning finishes. Immediately Pudding is no longer afraid. She flips over and takes a nap in the sun as her enemies are taken away to the basement (the vacuum).
 
@@ -69,7 +69,7 @@ This is a bit of an experimental piece. It follows the day of the life of Puddin
 </body>
 </html>
 
-## Spooky Noises
+## <span style="color: #89CFF0;">Spooky Noises</span>
 
 Even more experimental, I'm looking into ways to create tension and stress. Whether it would be for my animation or for a horror video game, this is a field I haven't studied much in. I'm looking into the words of Danny Elfman, Bernard Herrman and Krzystof Penderecki. This particular snippet is inspired also from Attack on Titan. 
 
@@ -82,7 +82,7 @@ Even more experimental, I'm looking into ways to create tension and stress. Whet
 </body>
 </html>
 
-## Game OST 2
+## <span style="color: #89CFF0;">Game OST 2</span>
 
 This is one of the first orchestral pieces I've attempted. It draws inspiration from Vellum's OST as the primary chord progression and Temple of Time OST for certain rhythms. 
 
@@ -95,7 +95,7 @@ This is one of the first orchestral pieces I've attempted. It draws inspiration 
 </body>
 </html>
 
-## March of the clowns
+## <span style="color: #89CFF0;">March of the clowns</span>
 
 My first multi-instrument piece made when I was 13. It was themed with clownery and tom foolery. I tried to use shorter notes and chromatic scales that resemble Entry of the Gladiators's chromatic descent, one of the most iconic pieces for circus music. 
 
@@ -108,7 +108,7 @@ My first multi-instrument piece made when I was 13. It was themed with clownery 
 </body>
 </html>
 
-## Shrekesque
+## <span style="color: #89CFF0;">Shrekesque</span>
 
 I love the theme used in shrek here. I don't rememebr exactly where it was played, but I believe this version is similar to the original. I have yet to elaborate and evolve it past it's starting point, but I'm leaving it here anyways. 
 
@@ -121,7 +121,7 @@ I love the theme used in shrek here. I don't rememebr exactly where it was playe
 </body>
 </html>
 
-## Kanada
+## <span style="color: #89CFF0;">Kanada</span>
 
 I wanted to see if I could transcribe O canada like I heard it in elementary school. This was an attempt to try to imitate this unknown O canada version that was stuck in my head although I've definetely went off the script and added parts of my own too. 
 
@@ -134,7 +134,7 @@ I wanted to see if I could transcribe O canada like I heard it in elementary sch
 </body>
 </html>
 
-## violin nostalgia
+## <span style="color: #89CFF0;">Violin nostalgia</span>
 
 I don't know why this sounds so nostalgic to me. It draws inspiration from Joe Hisashi's descending piano chords. 
 
@@ -147,7 +147,7 @@ I don't know why this sounds so nostalgic to me. It draws inspiration from Joe H
 </body>
 </html>
 
-## Sadge in C
+## <span style="color: #89CFF0;">Sadge in C</span>
 
 Another Synth piece that emphasizes the uses of sustain to give the piece a blurry, longing feel. It's incomplete and currently ends in the middle of a spicy transition
 
