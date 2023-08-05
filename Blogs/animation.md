@@ -1,4 +1,3 @@
-
 ---
 title: "Animation"
 permalink: "/blog/animation"

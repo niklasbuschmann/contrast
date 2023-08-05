@@ -1,4 +1,3 @@
-
 ---
 title: "Composition"
 permalink: "/blog/composition"

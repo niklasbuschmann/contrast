@@ -1,4 +1,3 @@
-
 ---
 title: "Puzzles"
 permalink: "/blog/puzzle"
