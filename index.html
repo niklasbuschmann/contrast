@@ -73,23 +73,26 @@ title: "Home"
         });
       });
     });
-  </script>
 
-  <!-- Create a grid of circles -->
-  <script>
-    var numRows = 5;
-    var numCols = 5;
+    // Create a grid of circles
+    document.addEventListener('DOMContentLoaded', function() {
+      var numRows = 5;
+      var numCols = 5;
+      var circleContainer = document.getElementById('circleContainer');
 
-    for (var row = 0; row < numRows; row++) {
-      for (var col = 0; col < numCols; col++) {
-        var circle = document.createElement('div');
-        circle.className = 'circle';
-        circle.style.left = col * 60 + 'px';
-        circle.style.top = row * 60 + 'px';
+      for (var row = 0; row < numRows; row++) {
+        for (var col = 0; col < numCols; col++) {
+          var circle = document.createElement('div');
+          circle.className = 'circle';
+          circle.style.left = col * 60 + 'px';
+          circle.style.top = row * 60 + welcomeContainer.clientHeight + 20 + 'px'; // Adjust the top position
 
-        document.body.appendChild(circle);
+          circleContainer.appendChild(circle);
+        }
       }
-    }
+    });
   </script>
+
+  <div id="circleContainer"></div>
 </body>
 </html>
