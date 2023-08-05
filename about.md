@@ -23,7 +23,7 @@ In an effort to avoid withering away, I also spend time bouldering and playing a
 
 ## Recreation
 
-I believe that video games are one of the best ways to stay connected with friends who can't meet in person. If I'm gaming, I usually spend my time on TFT, League, Tetris or chess. Feel free to add me on Discord: dodoman767
+I believe that video games are one of the best ways to stay connected with friends who can't meet in person. If I'm gaming, I usually spend my time on TFT, League, Tetris, chess or co-op games. Feel free to add me on Discord: dodoman767
 
 I'm also currently in the middle of watching Vinland Saga and it's amazing! 
 
