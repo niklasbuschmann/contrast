@@ -6,7 +6,7 @@ layout: page
 
 ## Dodoman's Theme
 
-This peice took me around 40 hours to compose over 4 months. It takes inspiration from Schubert Ständchen, Luigi's mansion and Kisame's Theme. It's not quite completely refined as I'm still seeking better alternatives to the 2nd movements and the ending. The transitions between the movements could also use work as well as further instrument volume balancing. 
+This peice took me around 40 hours to compose over 4 months and I consider it to be my magnum opus thus far. It takes inspiration from Schubert Ständchen, Luigi's mansion and Kisame's Theme. It's not quite completely refined as I'm still seeking better alternatives to the 2nd movements and the ending. The transitions between the movements could also use work as well as further instrument volume balancing. 
 
 <html>
 <body>
