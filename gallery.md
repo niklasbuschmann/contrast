@@ -10,32 +10,32 @@ Meet Pudding. She is a 2 year old rabbit who is afraid of vacuums and spiders.
 
 <div style="flex: 1; max-width: calc(50% - 10px);">
   ![Pudding 1](../assets/images/pudding1.png)
-  *Caption 1: Pudding exploring the garden.*
+  *Caption 1: Pudding smells the food but does not see the food*
 </div>
 
 <div style="flex: 1; max-width: calc(50% - 10px);">
   ![Pudding 2](../assets/images/pudding2.png)
-  *Caption 2: Pudding being mischievous.*
+  *Caption 2: Pudding in loaf of bread mode*
 </div>
 
 <div style="flex: 1; max-width: calc(50% - 10px);">
   ![Pudding 3](../assets/images/pudding3.png)
-  *Caption 3: Pudding enjoying some playtime.*
+  *Caption 3: Pudding dreaming about bananas*
 </div>
 
 <div style="flex: 1; max-width: calc(50% - 10px);">
   ![Pudding 4](../assets/images/pudding4.png)
-  *Caption 4: Another cute moment.*
+  *Caption 4: She has woken from her slumber*
 </div>
 
 <div style="flex: 1; max-width: calc(50% - 10px);">
   ![Pudding 5](../assets/images/pudding5.png)
-  *Caption 5: Pudding being adorable.*
+  *Caption 5: Pudding is not playing around this time*
 </div>
 
 <div style="flex: 1; max-width: calc(50% - 10px);">
   ![Pudding 6](../assets/images/pudding6.png)
-  *Caption 6: Pudding's playful antics.*
+  *Caption 6: Pudding stretching before the big game*
 </div>
 
 </div>
