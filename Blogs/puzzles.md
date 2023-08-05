@@ -16,7 +16,7 @@ layout: page
 
 .
 
-## General Science Knowledge Quiz
+## Randomly Generated General Science Knowledge Quiz
 
 Make Bill Nye proud.
 
