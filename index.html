@@ -11,11 +11,6 @@ title: "Home"
   <title>Welcome to My Website</title>
   <style>
     /* Add your CSS styles here */
-    .quote {
-      font-size: 18px;
-      font-style: italic;
-    }
-
     .apod-container {
       max-width: 800px;
       margin: 0 auto;
@@ -40,14 +35,6 @@ title: "Home"
   </style>
 </head>
 <body>
-  <!-- Random Quote Generator -->
-  <div class="quote">
-    <blockquote>
-      "The only limit to our realization of tomorrow will be our doubts of today."
-      <cite>— Franklin D. Roosevelt</cite>
-    </blockquote>
-  </div>
-
   <!-- NASA Astronomy Picture of the Day -->
   <div class="apod-container">
     <h2 class="apod-title">NASA Astronomy Picture of the Day</h2>
@@ -57,21 +44,9 @@ title: "Home"
     <p class="apod-description"></p>
   </div>
 
-  <!-- JavaScript for Quotable API -->
+  <!-- JavaScript for NASA Astronomy Picture of the Day -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      fetch('https://api.quotable.io/random')
-        .then(response => response.json())
-        .then(data => {
-          const quoteElement = document.querySelector('.quote blockquote');
-          quoteElement.textContent = `"${data.content}"`;
-          const authorElement = document.querySelector('.quote cite');
-          authorElement.textContent = `— ${data.author}`;
-        })
-        .catch(error => {
-          console.error('Error fetching random quote:', error);
-        });
-
       fetch('https://api.nasa.gov/planetary/apod?api_key=JELkWxHjp7EmBUP9qCRfEOycHBZtmpf5k5qWlhsT')
         .then(response => response.json())
         .then(data => {
