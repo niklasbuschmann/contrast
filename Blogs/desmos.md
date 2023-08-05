@@ -42,6 +42,6 @@ Here's an example of a parametric equation that generates a heart shape:
 $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\right)-\cos\left(4t\right)\right)$$<br>
 
 
-![heart](/assets/images/desmos_heart.png){:width="300px" height="300px"}
+![heart](personal/assets/images/desmos_heart.png){:width="300px" height="300px"}
 
 to be continued
