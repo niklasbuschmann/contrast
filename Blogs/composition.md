@@ -7,11 +7,11 @@ layout: page
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{ page.title }}</title>
+  <title>title</title>
 </head>
 <body>
-  <h1>{{ page.title }}</h1>
-  <p>Enjoy the upbeat and catchy theme for the game "Dodoman":</p>
+  <h1>title2</h1>
+  <p>If I were a villain...</p>
 
   <audio controls>
     <source src="/assets/audio/dodoman_theme.mp3" type="audio/mpeg">
