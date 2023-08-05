@@ -31,11 +31,12 @@ This piece originally written for solo piano has been switched over to a synthes
 </body>
 </html>
 
-## 4hand_remix.mp3
+## 3 Hands Unknown
+
+This 3 handed piece's motif is inspired by an unknown piece. The chord progresion is also inspired by another unknown piece. I had transcribed this without reference, but I had a clear idea in my head on what I wanted the chords to sound like as if I heard it before. If you know any reference material that sounds similar, let me know- I'm curious!
 
 <html>
 <body>
-  <p>Replace me with your description.</p>
   <audio controls>
     <source src="../assets/audio/4hand_remix.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
