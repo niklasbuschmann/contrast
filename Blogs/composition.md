@@ -76,7 +76,7 @@ This is a bit of an experimental piece. It follows the day of the life of Puddin
 <body>
   <p>Replace me with your description.</p>
   <audio controls>
-    <source src="../assets/audio/Spooky_noise.mp3" type="audio/mpeg">
+    <source src="../assets/audio/spooky_noise.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </body>
