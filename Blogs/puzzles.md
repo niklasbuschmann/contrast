@@ -25,7 +25,6 @@ WIP
   <div id="science-quiz">
     <!-- The quiz questions will be dynamically added here -->
   </div>
-  <button onclick="toggleQuizPopup()">Close Quiz</button>
 </div>
 
 <script>
