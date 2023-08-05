@@ -1,18 +1,17 @@
 ---
 layout: page
-title: About Me
+title: 
 permalink: /about/
 ---
 
 <div style="display: flex; align-items: center;">
-  <img src="../assets/images/head_shot.png" alt="me" style="width: 300px; height: 300px;">
+  <img src="../assets/images/head_shot.png" alt="me" style="width: 500px; height: 500px;">
   <div style="margin-left: 20px;">
+  <h1>About Me</h1>
     <p>Hello there! I'm Timothy, a software developer based in Toronto. Welcome to my corner of the internet where I share my thoughts, experiences, and journeys.</p>
     
     <h2>Background</h2>
     <p>I come from a STEM background, with a major in Computer Science at the University of Waterloo. Growing up in the age of the internet has provided me with endless resources to learn about math, science, and technology. Currently, I work as a full-time technical lead for a startup.</p>
-
-
   </div>
 </div>
 
