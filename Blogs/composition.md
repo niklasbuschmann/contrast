@@ -1,5 +1,5 @@
 ---
-title: "Compositions"
+title: "Composition Samples"
 permalink: "/blog/composition"
 layout: page
 ---
@@ -17,7 +17,9 @@ This peice took me around 40 hours to compose over 4 months. It takes inspiratio
 </body>
 </html>
 
-## 8_bit_nostalgia.mp3
+## 8 bit nostalgia
+
+This piece originally written for solo piano has been switched over to a synthesizer. For some reason the melody, chord progression and synthesizer work well together in making it feel nostalgic. The easter egg ending uses a motif from guilty crown. 
 
 <html>
 <body>
