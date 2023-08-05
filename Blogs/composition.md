@@ -4,8 +4,6 @@ permalink: "/blog/composition"
 layout: page
 ---
 
-<!DOCTYPE html>
-<html>
 <head>
   <title>{{ page.title }}</title>
 </head>
@@ -18,4 +16,4 @@ layout: page
     Your browser does not support the audio element.
   </audio>
 </body>
-</html>
+ 
