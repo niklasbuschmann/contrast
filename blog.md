@@ -7,7 +7,7 @@ layout: page
 ## Music Composition Journey
 
 [Join me as I attempt to vibrate the air pleasantly](https://timothy-cao.github.io/personal/blog/composition)
-![screenshot](https://www.sandiegosymphony.org/media/uploads/blog/.thumbnails/cool-mozart.jpg/cool-mozart-640x0.jpg)
+![alt text](/images/composition.jpg)
 
 ## Animation Journey
 
