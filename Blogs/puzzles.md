@@ -14,12 +14,16 @@ layout: page
 
 ## Anime Quiz
 
-Test your anime knowledge with this quiz:
+.
 
-<div id="anime-quiz"></div>
+## General Science Knowledge Quiz
+
+.
+
+<div id="science-quiz"></div>
 
 <script>
-  const quizContainer = document.getElementById('anime-quiz');
+  const quizContainer = document.getElementById('science-quiz');
 
   fetch('https://opentdb.com/api.php?amount=5&category=17')
     .then(response => response.json())
