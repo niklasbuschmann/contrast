@@ -18,7 +18,7 @@ layout: page
 
 ## General Science Knowledge Quiz
 
-.
+Make Bill nye proud.
 
 <div id="science-quiz"></div>
 
