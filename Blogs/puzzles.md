@@ -65,7 +65,7 @@ Test your anime knowledge with this quiz:
       });
     })
     .catch(error => {
-      console.error('Error fetching anime quiz:', error);
+      console.error('Error fetching quiz:', error);
     });
 </script>
 
