@@ -5,27 +5,31 @@ permalink: "/blog/desmos"
 layout: page
 ---
 
-# Exploring Graphing Art with Desmos
+# What's Desmos?
 
-Desmos is a powerful online graphing calculator that allows you to visualize mathematical functions and create stunning visual art using equations and inequalities. Whether you're a math enthusiast, a teacher, or simply someone who enjoys exploring mathematical concepts in a visual way, Desmos offers an engaging platform to create interactive graphs and art.
+[Desmos](https://www.desmos.com/calculator) is an online graphing calculator whos appeal is owed to its abundant array of features, empowering users to craft splendid creations solely through the foundation of mathematics.
 
 ## Basic Graphing Functions
 
 ### Linear Functions
 
-Linear functions are among the simplest functions to graph in Desmos. They are represented by equations of the form \(y = mx + b\), where \(m\) is the slope and \(b\) is the y-intercept. Here's an example:
+Linear functions are the simplest functions to both design and bound. In theory, a masterpiece could be indistinguishably approximated with sufficient linear functions given an infinitely powerful computer to render it on Desmos. However, due to computational restraints of the website and the amount of time it would to write (or generate) all linear functions, it's an infeasible method. Instead, we will use linear functions only for straight lines. This may be a promiment feature in the art depending on the theme. For example, a 2-point perspective city art will contain primarily straight lines, while organic drawings will contain almost none. 
 
-\[y = 2x + 3\]
 
-This equation describes a line with a slope of 2 and a y-intercept of 3.
+Example:
+$$\[ y = x + 2 \cdot \{ |x + 1| < 2 \} \]$$
 
-### Quadratic Functions
+Fun fact: that linear function bounds can be entirely described with a single variable.
 
-Quadratic functions have equations of the form \(y = ax^2 + bx + c\). They often form parabolic shapes on the graph. Consider the following example:
+### Polynomial Functions
 
-\[y = x^2 - 4\]
+Polynomials show up often in math classes, but it's function in art is less pronounced. Most degrees of polynomials simply don't have an important shape in art aside from possibly the quadratic. And even so most shapes you see in real life that look like a quadratic aren't. For example Catenary functions better describe hanging chains than quadratics. Polynomials functions in Desmos art truly only shines in motion. 
 
-This equation produces a parabola that opens upwards, with its vertex at the origin.
+Catenary
+$$\[ y = a \cosh\left(\frac{x}{a}\right) \]$$ vs 
+Quadratics
+$$\[ y = ax^2 + bx + c \]$$
+
 
 ## Creating Art with Desmos
 
@@ -33,10 +37,10 @@ Desmos offers a creative playground for artists and math enthusiasts to generate
 
 ### Parametric Equations
 
-Parametric equations introduce a pair of variables, usually denoted as \(x(t)\) and \(y(t)\), to define a curve. Here's an example of a parametric equation that generates a heart shape:
+Parametric equations introduce a pair of variables, usually denoted as $$x(t)$$ and $$y(t)$$, to define a curve. Here's an example of a parametric equation that generates a heart shape:
 
-\[x(t) = 16 \sin^3(t)\]
-\[y(t) = 13 \cos(t) - 5 \cos(2t) - 2 \cos(3t) - \cos(4t)\]
+$$x(t) = 16 \sin^3(t)$$
+$$y(t) = 13 \cos(t) - 5 \cos(2t) - 2 \cos(3t) - \cos(4t)$$
 
 This equation set produces a beautiful heart curve.
 
