@@ -6,6 +6,7 @@ permalink: /about/
 
 # About Me
 
+![me](/assets/images/head_shot.png)
 Hello there! I'm Timothy, a software developer based in Toronto. Welcome to my corner of the internet where I share my thoughts, experiences, and journeys.
 
 ## Background
