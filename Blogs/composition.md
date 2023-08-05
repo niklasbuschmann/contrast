@@ -72,7 +72,7 @@ This is a bit of an experimental piece. It follows the day of the life of Puddin
 
 ## Spooky Noises
 
-Even more experimental, I'm looking into ways to create tension and stress. Whether it would be for my animation or for a horror video game, this is a field I haven't studied much in. I'm looking into the words of Danny Elfman, bernard herrman and Krzystof Penderecki. This particular snippet is inspired also from Attack on Titan. 
+Even more experimental, I'm looking into ways to create tension and stress. Whether it would be for my animation or for a horror video game, this is a field I haven't studied much in. I'm looking into the words of Danny Elfman, Bernard Herrman and Krzystof Penderecki. This particular snippet is inspired also from Attack on Titan. 
 
 <html>
 <body>
