@@ -4,133 +4,110 @@ permalink: "/blog/composition"
 layout: page
 ---
 
-## Dodoman's Theme
+# Dodoman's Theme
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/dodoman_theme.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
+<audio controls>
+  <source src="/assets/audio/dodoman_theme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-## 8 Bit Nostalgia
+# 8 Bit Nostalgia
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/8_bit_nostalgia.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
+<audio controls>
+  <source src="/assets/audio/8_bit_nostalgia.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-## 4 Hand Remix
+# 4 Hand Remix
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/4hand_remix.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
+<audio controls>
+  <source src="/assets/audio/4hand_remix.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-## Game OST 4
+# Game OST 4
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/Game_OST_4.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
+<audio controls>
+  <source src="/assets/audio/Game_OST_4.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-## Pudding's Day Off
+# Pudding's Day Off
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/Puddings_day_off.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
+<audio controls>
+  <source src="/assets/audio/Puddings_day_off.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-## Spooky Noise
+# Spooky Noise
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/Spooky_noise.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
+<audio controls>
+  <source src="/assets/audio/Spooky_noise.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-## Game OST 3
+# Game OST 3
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/Game_OST_3.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
+<audio controls>
+  <source src="/assets/audio/Game_OST_3.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-## March of the Clowns
+# March of the Clowns
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/March_of_the_clowns.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
+<audio controls>
+  <source src="/assets/audio/March_of_the_clowns.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-## Shrekesque
+# Shrekesque
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/shrekesque.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+Insert Description:
 
-## Kanada
+<audio controls>
+  <source src="/assets/audio/shrekesque.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/Kanada.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+# Kanada
 
+Insert Description:
 
-## Violin Nostalgia
+<audio controls>
+  <source src="/assets/audio/Kanada.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/violin_nostalgia.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+# Violin Nostalgia
 
+Insert Description:
 
-## SadgeC
+<audio controls>
+  <source src="/assets/audio/violin_nostalgia.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-<body>
-  <p>Insert Description:</p>
-  <audio controls>
-    <source src="/assets/audio/sadgeC.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
+# SadgeC
 
+Insert Description:
+
+<audio controls>
+  <source src="/assets/audio/sadgeC.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
