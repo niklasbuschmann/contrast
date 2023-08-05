@@ -24,7 +24,7 @@ title: "Home"
 <body>
   <div id="welcomeContainer"></div>
 
-  <!-- Interactive Animation -->
+  <!-- Interactive Animation JavaScript -->
   <script>
     var currentDate = new Date();
     var hours = currentDate.getHours();
@@ -63,9 +63,13 @@ title: "Home"
           var deltaY = circleY - mouseY;
 
           var distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-          var repelStrength = 1000 / distance;
+          var repelStrength = Math.min(3000 / (distance * distance), 1);
 
-          circle.style.transform = `translate(${deltaX * repelStrength}px, ${deltaY * repelStrength}px)`;
+          if (distance < 100) {
+            circle.style.transform = `translate(${deltaX * repelStrength}px, ${deltaY * repelStrength}px)`;
+          } else {
+            circle.style.transform = `translate(0, 0)`;
+          }
         });
       });
     });
