@@ -17,16 +17,7 @@ title: "Home"
       background-color: #aaf; /* Light blue color */
       border-radius: 50%;
       position: absolute;
-      animation: repel 0.3s ease infinite;
-    }
-
-    @keyframes repel {
-      0%, 100% {
-        transform: translate(0, 0);
-      }
-      50% {
-        transform: translate(10px, 10px);
-      }
+      animation: none; /* Disable the default animation */
     }
   </style>
 </head>
@@ -48,11 +39,22 @@ title: "Home"
 
           circleContainer.appendChild(circle);
 
-          circle.addEventListener('mouseover', function() {
+          circle.addEventListener('mouseenter', function(event) {
             // Play collision sound
             var collisionSound = document.getElementById('collisionSound');
             collisionSound.currentTime = 0; // Reset sound to start
             collisionSound.play();
+
+            // Apply interaction animation
+            event.target.style.animation = 'repel 0.3s ease infinite';
+          });
+
+          circle.addEventListener('animationend', function(event) {
+            // Reset animation after it ends
+            event.target.style.animation = 'none';
+            setTimeout(function() {
+              event.target.style.animation = 'repel 0.3s ease infinite';
+            }, 10);
           });
         }
       }
