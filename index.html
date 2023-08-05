@@ -86,7 +86,7 @@ title: "Home"
         for (var col = 0; col < numCols; col++) {
           var circle = document.createElement('div');
           circle.className = 'circle';
-          circle.style.left = col * 40 + 'px'; /* Adjusted spacing for smaller circles */
+          circle.style.left = col * 40 + containerRect.left + 'px'; /* Adjusted spacing for smaller circles */
           circle.style.top = row * 40 + containerRect.top + welcomeContainer.clientHeight + 20 + 'px'; // Adjust the top position
 
           circleContainer.appendChild(circle);
@@ -99,3 +99,8 @@ title: "Home"
 
   <!-- Audio Element for Collision Sound -->
   <audio id="collisionSound" preload="auto">
+    <source src="collision.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
