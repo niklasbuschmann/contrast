@@ -4,7 +4,6 @@ permalink: "/blog/composition"
 layout: page
 ---
 
-<!DOCTYPE html>
 <html>
 <head>
   <title>{{ page.title }}</title>
@@ -37,7 +36,6 @@ layout: page
       <p>Description: Placeholder description for 4hand_remix.mp3</p>
     </li>
 
-    <!-- Repeat this pattern for other audio files -->
     <li>
       <audio controls>
         <source src="../assets/audio/Game_OST_4.mp3" type="audio/mpeg">
