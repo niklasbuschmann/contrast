@@ -27,4 +27,4 @@ layout: page
 ## Random
 
 [There is no method to the madness](https://timothy-cao.github.io/personal/blog/random)<br>
-![alt text](/assets/images/random.png){:width="200px" height="200px"}
+![alt text](/assets/images/spongebob.png){:width="200px" height="200px"}
