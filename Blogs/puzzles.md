@@ -30,7 +30,7 @@ WIP
 
 <script>
   // Fetch the quiz data and create the questions
-  fetch('https://opentdb.com/api.php?amount=5&category=17')
+  fetch('https://opentdb.com/api.php?amount=5&category=17&difficulty=hard')
     .then(response => response.json())
     .then(data => {
       const questions = data.results;
