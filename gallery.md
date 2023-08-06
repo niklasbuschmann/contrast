@@ -121,15 +121,15 @@ permalink: /gallery/
   <div class="gallery-table">
     <div>
       <img src="../assets/images/ai1.jpg" alt="AI 1" class="gallery-image">
-      <p class="gallery-caption">AI picture 1</p>
+      <p class="gallery-caption">Generated with Remini</p>
     </div>
     <div>
       <img src="../assets/images/ai2.jpg" alt="AI 2" class="gallery-image">
-      <p class="gallery-caption">AI picture 2</p>
+      <p class="gallery-caption">Generated with Remini</p>
     </div>
     <div>
       <img src="../assets/images/ai3.jpg" alt="AI 3" class="gallery-image">
-      <p class="gallery-caption">AI picture 3</p>
+      <p class="gallery-caption">Generated with Remini</p>
     </div>
   </div> 
 </div>
