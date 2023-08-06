@@ -101,7 +101,7 @@ This is one of the first orchestral pieces I've attempted. It draws inspiration 
 
 ## <span style="color: #89CFF0;">March of the clowns</span>
 
-My first multi-instrument piece made when I was 13. It was themed with clownery and tom foolery. I tried to use shorter notes and chromatic scales that resemble Entry of the Gladiators's chromatic descent, one of the most iconic pieces for circus music. 
+My first multi-instrument piece made when I was 13. It was themed with clownery and tom foolery. I tried to use shorter notes and chromatic scales that resemble Entry of the Gladiators' chromatic melody, one of the most iconic pieces for circus music. 
 
 <html>
 <body>
