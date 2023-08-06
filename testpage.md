@@ -4,6 +4,8 @@ title: TestPage
 permalink: /testpage/
 ---
 
+<p>Not many cats were harmed in the testing of this page.</p>
+
 <style>
 
   #gallery-container {
