@@ -69,6 +69,14 @@ permalink: /testpage/
     { src: 'https://placekitten.com/200/301', description: 'Cute Kitten 2' },
     { src: 'https://placekitten.com/200/302', description: 'Cute Kitten 3' },
     { src: 'https://placekitten.com/200/303', description: 'Cute Kitten 4' },
+    { src: 'https://placekitten.com/200/304', description: 'Cute Kitten 5' },
+    { src: 'https://placekitten.com/200/305', description: 'Cute Kitten 6' },
+    { src: 'https://placekitten.com/200/306', description: 'Cute Kitten 7' },
+    { src: 'https://placekitten.com/200/307', description: 'Cute Kitten 8' },
+    { src: 'https://placekitten.com/200/308', description: 'Cute Kitten 9' },
+    { src: 'https://placekitten.com/200/309', description: 'Cute Kitten 10' },
+    { src: 'https://placekitten.com/200/310', description: 'Cute Kitten 11' },
+    { src: 'https://placekitten.com/200/311', description: 'Cute Kitten 12' },
     // Add more items here
   ];
 
