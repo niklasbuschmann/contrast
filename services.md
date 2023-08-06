@@ -67,6 +67,6 @@ layout: page
   </div>
 </div>
 
-<div class="contact-info">
-  Contact: <a href="mailto:tctctc888@gmail.com">tctctc888@gmail.com</a>
+<div class="contact-box">
+  <a href="mailto:tctctc888@gmail.com" class="contact-text">Any questions? Send me an email.</a>
 </div>
