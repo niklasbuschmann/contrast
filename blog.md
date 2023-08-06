@@ -1,3 +1,9 @@
+---
+title: "Blogs"
+permalink: "/blog/"
+layout: page
+---
+<hr>
 <!DOCTYPE html>
 <html>
 <head>
