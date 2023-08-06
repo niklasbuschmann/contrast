@@ -13,6 +13,8 @@ layout: page
 
 ## <span style="color: #6495ED;">Basic Graphing Functions</span>
 
+If you're reading this, it's likely that you've gone through high school math, and perhaps even university-level math. Moving forward, I'll assume you have a grasp of first-year university mathematics. While I won't extensively delve into pure math, I will focus on how mathematical concepts intersect with art in this context.
+
 ### <span style="color: #6495ED;"> Linear Functions</span>
 
 Linear functions are the simplest functions to both design and bound. In theory, a masterpiece could be indistinguishably approximated with sufficient linear functions given an infinitely powerful computer to render it on Desmos. However, due to computational restraints of the website and the amount of time it would to write (or generate) all linear functions, it's an infeasible method. Instead, we will use linear functions only for straight lines. This may be a promiment feature in the art depending on the theme. For example, a 2-point perspective city art will contain primarily straight lines, while organic drawings will contain almost none. 
