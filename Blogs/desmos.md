@@ -9,6 +9,8 @@ layout: page
 
 [Desmos](https://www.desmos.com/calculator) is an online graphing calculator whos appeal is owed to its abundant array of features, empowering users to craft splendid creations solely through the foundation of mathematics.
 
+<hr>
+
 ## <span style="color: #6495ED;">Basic Graphing Functions</span>
 
 ### <span style="color: #6495ED;"> Linear Functions</span>
@@ -56,6 +58,8 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 ### <span style="color: #6495ED;">Rotational wrapper functions</span>
 
 ### <span style="color: #6495ED;">Splines are OP!</span>
+
+<hr>
 
 ## <span style="color: #6495ED;">Advanced Techniques</span>
 
