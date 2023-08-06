@@ -15,41 +15,32 @@ layout: page
 <div style="display: flex; align-items: center;">
   <img src="/assets/images/desmos.png" alt="Desmos Art" style="width: 200px; height: 200px;">
   <div style="margin-left: 20px;">
-    <h1></h1>
+    <h1>Desmos Art Journey</h1>
     <a href="https://timothy-cao.github.io/personal/blog/desmos">Interested in turning math into art?</a>
   </div>
 </div>
 
 <div style="display: flex; align-items: center;">
-  <img src="" alt="Composition" style="width: 200px; height: 200px;">
+  <img src="/assets/images/puzzle.png" alt="Puzzle" style="width: 200px; height: 200px;">
   <div style="margin-left: 20px;">
-    <h1></h1>
-    <a href="https://timothy-cao.github.io/personal/blog/"></a>
+    <h1>Puzzles and Quizzes</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/puzzle">If your brain is itching for a challenge</a>
   </div>
 </div>
 
-
-
-<div class="blog-section">
-  <img src="/assets/images/puzzle.png" alt="Puzzles and Quizzes" class="blog-image">
-  <div>
-    ## Puzzles and Quizzes
-    [If your brain is itching for a challenge](https://timothy-cao.github.io/personal/blog/puzzle)
+<div style="display: flex; align-items: center;">
+  <img src="/assets/images/animation.jpg" alt="animiation" style="width: 200px; height: 200px;">
+  <div style="margin-left: 20px;">
+    <h1>Animation Journey</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/animiation">Watch as I try to make scribbles move around</a>
   </div>
 </div>
 
-<div class="blog-section">
-  <img src="/assets/images/animation.jpg" alt="Animation" class="blog-image">
-  <div>
-    ## Animation Journey
-    [Watch as I try to make scribbles move around](https://timothy-cao.github.io/personal/blog/animation)
+<div style="display: flex; align-items: center;">
+  <img src="/assets/images/spongebob.png" alt="Random" style="width: 200px; height: 200px;">
+  <div style="margin-left: 20px;">
+    <h1>Random</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/random">There is no method to the madness</a>
   </div>
 </div>
 
-<div class="blog-section">
-  <img src="/assets/images/spongebob.png" alt="Random" class="blog-image">
-  <div>
-    ## Random
-    [There is no method to the madness](https://timothy-cao.github.io/personal/blog/random)
-  </div>
-</div>
