@@ -103,7 +103,6 @@ permalink: /gallery/
       <img src="../assets/images/gallery_photography1.jpg" alt="photography1" class="gallery-image">
       <p class="gallery-caption">Stock image</p>
     </div>
-    <!-- Your photography gallery content here -->
   </div>
 </div>
 
@@ -114,11 +113,10 @@ permalink: /gallery/
       <img src="../assets/images/gallery_food1.jpg" alt="food1" class="gallery-image">
       <p class="gallery-caption">Stock image</p>
     </div>
-    <!-- Your food gallery content here -->
   </div>
 </div>
 
-<div class="gallery-container" id="ai-gallery">
+<div class="gallery-container" id="AI-gallery">
   <h1 class="gallery-title">AI Gallery</h1>
   <div class="gallery-table">
     <div>
@@ -133,7 +131,6 @@ permalink: /gallery/
       <img src="../assets/images/ai3.jpg" alt="AI 3" class="gallery-image">
       <p class="gallery-caption">AI picture 3</p>
     </div>
-    <!-- Your AI gallery content here -->
   </div> 
 </div>
 
