@@ -1,8 +1,3 @@
----
-layout: page
-title: ""
----
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,10 +34,11 @@ title: ""
     }
 
     .navigation-button {
+      position: relative;
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      background-color: #00080e;
+      background-color: #3498db;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -50,17 +46,35 @@ title: ""
       text-decoration: none;
       font-size: 14px;
       text-align: center;
+      overflow: hidden;
+    }
+
+    .navigation-button img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5; /* Adjust the opacity as needed */
     }
   </style>
 </head>
 <body>
   <div class="apod-container">
-    <p>Welcome! Please have a look around - there have been new blog posts added!</p>
     <div class="navigation-buttons">
-      <a class="navigation-button" href="https://timothy-cao.github.io/personal/blog/">Blogs</a>
-      <a class="navigation-button" href="https://timothy-cao.github.io/personal/about/">About Me</a>
-      <a class="navigation-button" href="https://timothy-cao.github.io/personal/gallery/">Gallery</a>
+      <a class="navigation-button" href="https://timothy-cao.github.io/personal/blog/">
+        <img src="../assets/images/404error.jpg" alt="Overlay Image">
+        Blogs
+      </a>
+      <a class="navigation-button" href="https://timothy-cao.github.io/personal/about/">
+        <img src="../assets/images/404error.jpg" alt="Overlay Image">
+        About Me
+      </a>
+      <a class="navigation-button" href="https://timothy-cao.github.io/personal/gallery/">
+        <img src="../assets/images/404error.jpg" alt="Overlay Image">
+        Gallery
+      </a>
     </div>
+    <p>Welcome! Please have a look around - there have been new blog posts added!</p>
     <hr>
     <h2 class="apod-title">Astronomy Picture of the Day</h2>
     <p>Photo for <span id="current-day"></span></p>
