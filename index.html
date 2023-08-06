@@ -36,12 +36,18 @@ title: ""
 <body>
   <div class="apod-container">
     <h2 class="apod-title">Astronomy Picture of the Day</h2>
+    <p>Today:<span id="current-day"></span></p>
     <div class="apod-image">
       <img src="" alt="Picture of the Day">
     </div>
     <p class="apod-description"></p>
   </div>
   <script>
+    const currentDaySpan = document.getElementById('current-day');
+    const today = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    currentDaySpan.textContent = today.toLocaleDateString(undefined, options);
+
     document.addEventListener('DOMContentLoaded', function() {
       fetch('https://api.nasa.gov/planetary/apod?api_key=JELkWxHjp7EmBUP9qCRfEOycHBZtmpf5k5qWlhsT')
         .then(response => response.json())
