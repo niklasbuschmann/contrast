@@ -63,7 +63,7 @@ permalink: /gallery/
   <div class="tab active" onclick="showGallery('rabbit')">Rabbit Gallery</div>
   <div class="tab" onclick="showGallery('photography')">Photography Gallery</div>
   <div class="tab" onclick="showGallery('food')">Food Gallery</div>
-  <div class="tab" onclick="showGallery('AI')">Generative AI</div>
+  <div class="tab" onclick="showGallery('AI')">AI Gallery</div>
 </div>
 
 <div class="gallery-container active" id="rabbit-gallery">
@@ -118,13 +118,22 @@ permalink: /gallery/
   </div>
 </div>
 
-<div class="gallery-container" id="generative-ai">
-  <h1 class="gallery-title">Food Gallery</h1>
+<div class="gallery-container" id="ai-gallery">
+  <h1 class="gallery-title">AI Gallery</h1>
   <div class="gallery-table">
-      <div>
-      <img src="../assets/images/gallery_food1.jpg" alt="food1" class="gallery-image">
-      <p class="gallery-caption">Stock image</p>
+    <div>
+      <img src="../assets/images/ai1.jpg" alt="AI 1" class="gallery-image">
+      <p class="gallery-caption">AI picture 1</p>
     </div>
+    <div>
+      <img src="../assets/images/ai2.jpg" alt="AI 2" class="gallery-image">
+      <p class="gallery-caption">AI picture 2</p>
+    </div>
+    <div>
+      <img src="../assets/images/ai3.jpg" alt="AI 3" class="gallery-image">
+      <p class="gallery-caption">AI picture 3</p>
+    </div>
+    <div>
     <!-- Your food gallery content here -->
   </div>
 </div>
