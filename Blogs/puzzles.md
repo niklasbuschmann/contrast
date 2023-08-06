@@ -98,7 +98,7 @@ layout: page
     margin: 5px 0;
   }
   #quiz-popup {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay
     position: fixed;
     top: 0;
     left: 0;
