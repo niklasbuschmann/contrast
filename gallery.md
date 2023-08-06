@@ -42,6 +42,7 @@ permalink: /gallery/
     border: 1px solid #444;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 10px;
   }
 
   .tab.active {
@@ -64,21 +65,21 @@ permalink: /gallery/
   <div class="tab" onclick="showGallery('food')">Food Gallery</div>
 </div>
 
-<div id="rabbit-gallery-container" class="gallery-container active">
+<div id="rabbit-gallery" class="gallery-container active">
   <h1 class="gallery-title">Rabbit Gallery</h1>
   <div class="gallery-table">
     <!-- Your rabbit gallery content here -->
   </div>
 </div>
 
-<div id="photography-gallery-container" class="gallery-container">
+<div id="photography-gallery" class="gallery-container">
   <h1 class="gallery-title">Photography Gallery</h1>
   <div class="gallery-table">
     <!-- Your photography gallery content here -->
   </div>
 </div>
 
-<div id="food-gallery-container" class="gallery-container">
+<div id="food-gallery" class="gallery-container">
   <h1 class="gallery-title">Food Gallery</h1>
   <div class="gallery-table">
     <!-- Your food gallery content here -->
@@ -94,7 +95,7 @@ permalink: /gallery/
     galleries.forEach(gallery => gallery.classList.remove('active'));
 
     const selectedTab = document.querySelector(`.tab.${galleryName}`);
-    const selectedGallery = document.querySelector(`#${galleryName}-gallery-container`);
+    const selectedGallery = document.querySelector(`#${galleryName}-gallery`);
 
     selectedTab.classList.add('active');
     selectedGallery.classList.add('active');
