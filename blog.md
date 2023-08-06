@@ -4,35 +4,31 @@ permalink: "/blog/"
 layout: page
 ---
 
-<style>
-.blog-section {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.blog-image {
-  width: 250px;
-  height: 250px;
-  margin-right: 20px;
-}
-</style>
-
-<div class="blog-section">
-  <img src="/assets/images/composition.jpg" alt="Composition" class="blog-image">
-  <div>
-    ## Music Composition Journey
-    [Join me as I attempt to vibrate the air pleasantly](https://timothy-cao.github.io/personal/blog/composition)
+<div style="display: flex; align-items: center;">
+  <img src="/assets/images/composition.jpg" alt="Composition" style="width: 200px; height: 200px;">
+  <div style="margin-left: 20px;">
+    <h1>Music Composition Journey</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/composition">Join me as I attempt to vibrate the air pleasantly</a>
   </div>
 </div>
 
-<div class="blog-section">
-  <img src="/assets/images/desmos.png" alt="Desmos Art" class="blog-image">
-  <div>
-    ## Desmos Art Journey
-    [Interested in turning math into art?](https://timothy-cao.github.io/personal/blog/desmos)
+<div style="display: flex; align-items: center;">
+  <img src="/assets/images/desmos.png" alt="Desmos Art" style="width: 200px; height: 200px;">
+  <div style="margin-left: 20px;">
+    <h1></h1>
+    <a href="https://timothy-cao.github.io/personal/blog/desmos">Interested in turning math into art?</a>
   </div>
 </div>
+
+<div style="display: flex; align-items: center;">
+  <img src="" alt="Composition" style="width: 200px; height: 200px;">
+  <div style="margin-left: 20px;">
+    <h1></h1>
+    <a href="https://timothy-cao.github.io/personal/blog/"></a>
+  </div>
+</div>
+
+
 
 <div class="blog-section">
   <img src="/assets/images/puzzle.png" alt="Puzzles and Quizzes" class="blog-image">
