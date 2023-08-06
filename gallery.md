@@ -51,7 +51,7 @@ permalink: /gallery/
   </div>
   <div>
     <img src="../assets/images/pudding5.png" alt="Pudding 5" class="gallery-image">
-    <p class="gallery-caption">Pudding is not playing around this time</p>
+    <p class="gallery-caption">Pudding picking the worst spot to lounge</p>
   </div>
   <div>
     <img src="../assets/images/pudding6.png" alt="Pudding 6" class="gallery-image">
