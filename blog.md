@@ -5,7 +5,7 @@ layout: page
 ---
 
 <div style="display: flex; align-items: center;">
-  <img src="../assets/images/composition.jpg" alt="Composition" style="width: 200px; height: 200px;">
+  <img src="../assets/images/composition.jpg" alt="Composition" style="width: 150px; height: 150px;">
   <div style="margin-left: 20px;">
     <h1>Music Composition Journey</h1>
     <a href="https://timothy-cao.github.io/personal/blog/composition">Join me as I attempt to vibrate the air pleasantly</a>
@@ -13,7 +13,7 @@ layout: page
 </div>
 
 <div style="display: flex; align-items: center;">
-  <img src="../assets/images/desmos.png" alt="Desmos Art" style="width: 200px; height: 200px;">
+  <img src="../assets/images/desmos.png" alt="Desmos Art" style="width: 150px; height: 150px;">
   <div style="margin-left: 20px;">
     <h1>Desmos Art Journey</h1>
     <a href="https://timothy-cao.github.io/personal/blog/desmos">Interested in turning math into art?</a>
@@ -21,7 +21,7 @@ layout: page
 </div>
 
 <div style="display: flex; align-items: center;">
-  <img src="../assets/images/puzzle.png" alt="Puzzle" style="width: 200px; height: 200px;">
+  <img src="../assets/images/puzzle.png" alt="Puzzle" style="width: 150px; height: 150px;">
   <div style="margin-left: 20px;">
     <h1>Puzzles and Quizzes</h1>
     <a href="https://timothy-cao.github.io/personal/blog/puzzle">If your brain is itching for a challenge</a>
@@ -29,7 +29,7 @@ layout: page
 </div>
 
 <div style="display: flex; align-items: center;">
-  <img src="../assets/images/animation.jpg" alt="animiation" style="width: 200px; height: 200px;">
+  <img src="../assets/images/animation.jpg" alt="animiation" style="width: 150px; height: 150px;">
   <div style="margin-left: 20px;">
     <h1>Animation Journey</h1>
     <a href="https://timothy-cao.github.io/personal/blog/animiation">Watch as I try to make scribbles move around</a>
@@ -37,7 +37,7 @@ layout: page
 </div>
 
 <div style="display: flex; align-items: center;">
-  <img src="../assets/images/spongebob.png" alt="Random" style="width: 200px; height: 200px;">
+  <img src="../assets/images/spongebob.png" alt="Random" style="width: 150px; height: 150px;">
   <div style="margin-left: 20px;">
     <h1>Random</h1>
     <a href="https://timothy-cao.github.io/personal/blog/random">There is no method to the madness</a>
