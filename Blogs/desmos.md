@@ -53,4 +53,6 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 
 ![heart](../assets/images/desmos_heart.png){:width="300px" height="300px"}
 
-to be continued
+
+
+work in progress to be continued
