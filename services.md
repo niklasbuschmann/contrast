@@ -6,31 +6,34 @@ layout: page
 
 <style>
   .service-container {
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     padding: 20px;
     margin: 20px 0;
-    background-color: #f9f9f9;
+    background-color: #333;
     border-radius: 5px;
   }
 
   .service-title {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #fff;
   }
 
   .service-price {
     font-size: 18px;
-    color: #007bff;
+    color: #00c7ff;
   }
 
   .service-description {
     font-size: 16px;
     margin-top: 5px;
+    color: #ccc;
   }
 
   .contact-info {
     margin-top: 20px;
     font-size: 16px;
+    color: #ccc;
   }
 </style>
 
