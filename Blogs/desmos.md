@@ -59,7 +59,9 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 
 ### <span style="color: #6495ED;">Rotational wrapper functions</span>
 
-### <span style="color: #6495ED;">Splines are OP!</span>
+### <span style="color: #6495ED;">Splines</span>
+
+### <span style="color: #6495ED;">Ellipses and circles</span>
 
 <hr>
 
@@ -77,6 +79,8 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 
 ### <span style="color: #6495ED;">Physics engines</span>
 
+### <span style="color: #6495ED;">Adding texture with Fourier and brownian noise</span>
+
 ### <span style="color: #6495ED;">Free style parametrics</span>
 
 
@@ -87,6 +91,10 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 ### <span style="color: #6495ED;">Knowing the limitations</span>
 
 ### <span style="color: #6495ED;">High density lossy rendering </span>
+
+
+
+
 
 
 work in progress to be continued
