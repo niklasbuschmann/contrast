@@ -70,8 +70,8 @@ layout: page
 <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
   <img src="../assets/images/comingsoon.png" alt="Coming Soon" style="width: 150px; height: 150px;">
   <div style="margin-left: 20px; flex-grow: 1;">
-    <h1 style="margin: 0; text-align: right;">Current Events</h1>
-    <a href="https://timothy-cao.github.io/personal/blog/comingsoon" style="text-align: right; display: block;">Current Events</a>
+    <h1 style="margin: 0; text-align: right;">Photography</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/comingsoon" style="text-align: right; display: block;">Photography</a>
   </div>
 </div>
 <hr>
