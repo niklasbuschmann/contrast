@@ -98,6 +98,10 @@ permalink: /gallery/
 <div class="gallery-container" id="photography-gallery">
   <h1 class="gallery-title">Photography Gallery</h1>
   <div class="gallery-table">
+      <div>
+      <img src="../assets/images/gallery_photography1.png" alt="Pudding 1" class="gallery-image">
+      <p class="gallery-caption">Stock image</p>
+    </div>
     <!-- Your photography gallery content here -->
   </div>
 </div>
@@ -105,6 +109,10 @@ permalink: /gallery/
 <div class="gallery-container" id="food-gallery">
   <h1 class="gallery-title">Food Gallery</h1>
   <div class="gallery-table">
+      <div>
+      <img src="../assets/images/gallery_food.png" alt="Pudding 1" class="gallery-image">
+      <p class="gallery-caption">Stock image</p>
+    </div>
     <!-- Your food gallery content here -->
   </div>
 </div>
