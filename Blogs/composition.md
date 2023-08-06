@@ -62,7 +62,7 @@ This is orchestral piece was inspired by Sonny 2 music with new instrumentation,
 
 ## <span style="color: #89CFF0;">Puddings day off</span>
 
-This is a bit of an experimental piece. It follows the day of the life of Pudding, my rabbit. It starts off tense as Pudding as today is vacuum day. Things suddenly calm down when the cleaning finishes. Immediately Pudding is no longer afraid. She flips over and takes a nap in the sun as her enemies are taken away to the basement (the vacuum).
+This is a bit of an experimental piece. It follows the day of the life of Pudding, my rabbit. It starts off tense for Pudding as today is vacuum day. Things suddenly calm down when the cleaning finishes. Immediately Pudding is no longer afraid. She flips over and takes a nap in the sun as her enemies are taken away to the basement (the vacuum).
 
 <html>
 <body>
