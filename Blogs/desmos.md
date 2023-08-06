@@ -63,18 +63,18 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 
 ## <span style="color: #6495ED;">Advanced Techniques</span>
 
-## <span style="color: #6495ED;">Domain coloring</span>
+### <span style="color: #6495ED;">Domain coloring</span>
 
-## <span style="color: #6495ED;">Lag management</span>
+### <span style="color: #6495ED;">Lag management</span>
 
-## <span style="color: #6495ED;"></span>
+### <span style="color: #6495ED;"></span>
 
-## <span style="color: #6495ED;">Animating with sliders</span>
+### <span style="color: #6495ED;">Animating with sliders</span>
 
-## <span style="color: #6495ED;">3-D rendering</span>
+### <span style="color: #6495ED;">3-D rendering</span>
 
-## <span style="color: #6495ED;">Physics engines</span>
+### <span style="color: #6495ED;">Physics engines</span>
 
-## <span style="color: #6495ED;">Free style parametrics</span>
+### <span style="color: #6495ED;">Free style parametrics</span>
 
 work in progress to be continued
