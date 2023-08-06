@@ -35,7 +35,7 @@ layout: page
   <img src="../assets/images/animation.jpg" alt="animiation" style="width: 150px; height: 150px;">
   <div style="margin-left: 20px; flex-grow: 1;">
     <h1 style="margin: 0; text-align: right;">Animation Journey</h1>
-    <a href="https://timothy-cao.github.io/personal/blog/animiation" style="text-align: right; display: block;">Watch as I try to make scribbles move around</a>
+    <a href="https://timothy-cao.github.io/personal/blog/animation" style="text-align: right; display: block;">Watch as I try to make scribbles move around</a>
   </div>
 </div>
 <hr>
@@ -48,4 +48,32 @@ layout: page
   </div>
 </div>
 <hr>
+
+<div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
+  <img src="../assets/images/comingsoon.png" alt="Coming Soon" style="width: 150px; height: 150px;">
+  <div style="margin-left: 20px; flex-grow: 1;">
+    <h1 style="margin: 0; text-align: right;">Reviews</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/comingsoon" style="text-align: right; display: block;">Reviews</a>
+  </div>
+</div>
+<hr>
+
+<div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
+  <img src="../assets/images/comingsoon.png" alt="Coming Soon" style="width: 150px; height: 150px;">
+  <div style="margin-left: 20px; flex-grow: 1;">
+    <h1 style="margin: 0; text-align: right;">Games</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/comingsoon" style="text-align: right; display: block;">Games</a>
+  </div>
+</div>
+<hr>
+
+<div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
+  <img src="../assets/images/comingsoon.png" alt="Coming Soon" style="width: 150px; height: 150px;">
+  <div style="margin-left: 20px; flex-grow: 1;">
+    <h1 style="margin: 0; text-align: right;">Current Events</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/comingsoon" style="text-align: right; display: block;">Current Events</a>
+  </div>
+</div>
+<hr>
+
 
