@@ -41,7 +41,7 @@ layout: page
 <hr>
 
 <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
-  <img src="../assets/images/spongebob.png" alt="Random" style="width: 150px; height: 150px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+  <img src="../assets/images/monkey.png" alt="Random" style="width: 150px; height: 150px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
   <div style="margin-left: 20px; flex-grow: 1;">
     <h1 style="margin: 0; text-align: right;">Random</h1>
     <a href="https://timothy-cao.github.io/personal/blog/random" style="text-align: right; display: block;">There is no method to the madness</a>
