@@ -110,7 +110,7 @@ permalink: /gallery/
   <h1 class="gallery-title">Food Gallery</h1>
   <div class="gallery-table">
       <div>
-      <img src="../assets/images/gallery_food.jpg" alt="Pudding 1" class="gallery-image">
+      <img src="../assets/images/gallery_food1.jpg" alt="Pudding 1" class="gallery-image">
       <p class="gallery-caption">Stock image</p>
     </div>
     <!-- Your food gallery content here -->
