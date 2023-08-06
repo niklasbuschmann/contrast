@@ -71,7 +71,7 @@ permalink: /gallery/
   <div class="gallery-table">
     <div>
       <img src="../assets/images/pudding1.png" alt="Pudding 1" class="gallery-image">
-      <p class="gallery-caption">Pudding smells the food but does not see the food</p>
+      <p class="gallery-caption">She smells but not sees</p>
     </div>
     <div>
       <img src="../assets/images/pudding2.png" alt="Pudding 2" class="gallery-image">
