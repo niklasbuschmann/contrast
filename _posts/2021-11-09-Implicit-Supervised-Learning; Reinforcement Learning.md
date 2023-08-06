@@ -1,6 +1,6 @@
 ---
 layout : post
-title:  "(Machine) Learning Methods Big Picture"
+title:  "Implicit Supervised Learning; Reinforcement Learning"
 mathjax: true
 author: Mehrdad Mohammadi
 category: Learning Theory
