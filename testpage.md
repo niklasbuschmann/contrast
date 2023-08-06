@@ -5,88 +5,93 @@ permalink: /testpage/
 ---
 
 <style>
-  #wordle-container {
+  body {
     font-family: Arial, sans-serif;
-    max-width: 300px;
-    margin: auto;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
   }
-  #guesses div {
-    display: grid;
-    grid-template-columns: repeat(5, 30px);
-    gap: 5px;
-  }
-  .guess-cell {
-    width: 30px;
-    height: 30px;
+
+  #gallery-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #000;
-    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  .correct {
-    background-color: green;
+
+  .gallery-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
-  .present {
-    background-color: yellow;
+
+  .gallery-item:hover {
+    transform: scale(1.1);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.2);
+  }
+
+  .gallery-item .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover .description {
+    transform: translateY(0);
   }
 </style>
 
-<div id="wordle-container">
-  <div id="guesses"></div>
-  <input type="text" id="guess-input" placeholder="Enter your guess" maxlength="5" />
-  <button onclick="makeGuess()">Guess</button>
+<div id="gallery-container">
+  <!-- Gallery items go here -->
 </div>
 
 <script>
-  // Randomly pick a word from the list for the player to guess
-  const wordsToGuess = ["apple", "grape", "water", "tiger", "plant"];
-  const wordToGuess = wordsToGuess[Math.floor(Math.random() * wordsToGuess.length)];
-  const maxGuesses = 6;
-  let guesses = 0;
+  const galleryData = [
+    { src: 'https://placekitten.com/200/300', description: 'Cute Kitten 1' },
+    { src: 'https://placekitten.com/200/301', description: 'Cute Kitten 2' },
+    { src: 'https://placekitten.com/200/302', description: 'Cute Kitten 3' },
+    { src: 'https://placekitten.com/200/303', description: 'Cute Kitten 4' },
+    // Add more items here
+  ];
 
-  function makeGuess() {
-    const guessInput = document.getElementById("guess-input");
-    const guess = guessInput.value.toLowerCase();
-    guessInput.value = "";
+  const galleryContainer = document.getElementById('gallery-container');
+  galleryData.forEach(item => {
+    const galleryItem = document.createElement('div');
+    galleryItem.className = 'gallery-item';
     
-    if (guess.length !== 5) {
-      alert('Please enter a 5-letter word.');
-      return;
-    }
-    
-    const result = evaluateGuess(guess, wordToGuess);
-    const guessesDiv = document.getElementById("guesses");
-    
-    const guessRow = document.createElement("div");
-    for (const letter of result) {
-      const cell = document.createElement("div");
-      cell.className = `guess-cell ${letter.status}`;
-      cell.textContent = letter.char;
-      guessRow.appendChild(cell);
-    }
-    guessesDiv.appendChild(guessRow);
+    const img = document.createElement('img');
+    img.src = item.src;
+    galleryItem.appendChild(img);
 
-    guesses++;
-    if (guess === wordToGuess || guesses >= maxGuesses) {
-      setTimeout(() => {
-        alert(guess === wordToGuess ? "You won!" : `You lost! The word was ${wordToGuess}`);
-        location.reload(); // Reload to restart the game
-      }, 100);
-    }
-  }
+    const description = document.createElement('div');
+    description.className = 'description';
+    description.textContent = item.description;
+    galleryItem.appendChild(description);
 
-  function evaluateGuess(guess, word) {
-    const result = [];
-    for (let i = 0; i < guess.length; i++) {
-      if (guess[i] === word[i]) {
-        result.push({ char: guess[i], status: "correct" });
-      } else if (word.includes(guess[i])) {
-        result.push({ char: guess[i], status: "present" });
-      } else {
-        result.push({ char: guess[i], status: "" });
-      }
-    }
-    return result;
-  }
+    galleryContainer.appendChild(galleryItem);
+  });
 </script>
