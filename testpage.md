@@ -70,7 +70,7 @@ permalink: /testpage/
 
 for (let i = 300; i < 330; i++) {
   galleryData.push({
-    src: `https://placekitten.com/200/${i}`,
+    src: `https://placekitten.com/200/300`,
     description: `Cute Kitten ${i - 299}`
   });
 }
