@@ -8,6 +8,9 @@ layout: page
 
 Content coming next month!
 
-Here's a preview of what's to come:
+
+## My first animation
+
+My first animation was intended to be a fruit hitting the ground and exploding, but my I had let me creativity gone a little too wild and made this abomination.
 
 ![Krita Animation](../assets/images/first_animation.gif)
