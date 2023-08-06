@@ -87,17 +87,17 @@ permalink: /testpage/
 </div>
 
 <script>
-  function showGallery(galleryName) {
+    function showGallery(galleryName) {
     const tabs = document.querySelectorAll('.tab');
     tabs.forEach(tab => tab.classList.remove('active'));
 
     const galleries = document.querySelectorAll('.gallery-container');
     galleries.forEach(gallery => gallery.classList.remove('active'));
 
-    const selectedTab = document.querySelector(`.tab.${galleryName}`);
+    const selectedTab = document.querySelector(`[onclick="showGallery('${galleryName}')"]`);
     const selectedGallery = document.querySelector(`#${galleryName}-gallery`);
 
     selectedTab.classList.add('active');
     selectedGallery.classList.add('active');
-  }
+    }
 </script>
