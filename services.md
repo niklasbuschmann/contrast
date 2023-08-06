@@ -58,7 +58,7 @@ layout: page
 </div>
 
 <div class="service-container">
-  <div class="service-title">Free services for friends (waitlist)</div>
+  <div class="service-title">Other Services</div>
   <div class="service-description">
     <ul>
       <li>TFT Coaching under Masters</li>
