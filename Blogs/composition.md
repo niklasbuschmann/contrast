@@ -114,7 +114,7 @@ My first multi-instrument piece made when I was 13. It was themed with clownery 
 
 ## <span style="color: #89CFF0;">Shrekesque</span>
 
-I love the theme used in shrek here. I don't rememebr exactly where it was played, but I believe this version is similar to the original. I have yet to elaborate and evolve it past it's starting point, but I'm leaving it here anyways. 
+I love the theme used in shrek here. I don't rememebr exactly where it was played, but I believe this version is similar to the original as this is a more of a transcription than a composition. I have yet to elaborate and evolve it past it's starting point, but I'm leaving it here anyways. 
 
 <html>
 <body>
