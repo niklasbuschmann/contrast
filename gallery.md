@@ -75,7 +75,7 @@ permalink: /gallery/
     </div>
     <div>
       <img src="../assets/images/pudding2.png" alt="Pudding 2" class="gallery-image">
-      <p class="gallery-caption">Pudding in loaf of bread mode</p>
+      <p class="gallery-caption">Tranformed into bread loaf</p>
     </div>
     <div>
       <img src="../assets/images/pudding3.png" alt="Pudding 3" class="gallery-image">
