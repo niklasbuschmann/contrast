@@ -133,9 +133,8 @@ permalink: /gallery/
       <img src="../assets/images/ai3.jpg" alt="AI 3" class="gallery-image">
       <p class="gallery-caption">AI picture 3</p>
     </div>
-    <div>
-    <!-- Your food gallery content here -->
-  </div>
+    <!-- Your AI gallery content here -->
+  </div> 
 </div>
 
 <script>
