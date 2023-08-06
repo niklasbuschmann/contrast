@@ -31,11 +31,36 @@ title: ""
     .apod-description {
       font-size: 16px;
     }
+
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .navigation-button {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #3498db;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="apod-container">
-    <p>Welcome! Please have a look around -there have been new blog posts added!</p>
+    <div class="navigation-buttons">
+      <a class="navigation-button" href="https://timothy-cao.github.io/personal/blog/">Blogs</a>
+      <a class="navigation-button" href="https://timothy-cao.github.io/personal/about/">About Me</a>
+      <a class="navigation-button" href="https://timothy-cao.github.io/personal/gallery/">Gallery</a>
+    </div>
+    <p>Welcome! Please have a look around - there have been new blog posts added!</p>
     <hr>
     <h2 class="apod-title">Astronomy Picture of the Day</h2>
     <p>Photo for <span id="current-day"></span></p>
