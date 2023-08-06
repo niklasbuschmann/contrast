@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Gallery
-permalink: /gallery/
+title: TestPage
+permalink: /testpage/
 ---
 
 Testing...
