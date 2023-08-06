@@ -9,8 +9,12 @@ layout: page
 <button id="quiz-toggle-button" onclick="toggleQuizPopup()">Show Quiz</button>
 
 <div id="quiz-popup" style="display: none;">
-  <div id="science-quiz">
-    <!-- The quiz questions will be dynamically added here -->
+  <div class="quiz-container">
+    <h2>General Science Knowledge Quiz</h2>
+    <p>Select the correct answers by clicking on the options. You can start the quiz by pressing "Show Quiz"!</p>
+    <div id="science-quiz">
+      <!-- The quiz questions will be dynamically added here -->
+    </div>
   </div>
 </div>
 
@@ -23,7 +27,7 @@ layout: page
 
     quizPopupVisible = !quizPopupVisible;
     if (quizPopupVisible) {
-      quizPopup.style.display = "block";
+      quizPopup.style.display = "flex";
       quizToggleButton.textContent = "Close Quiz";
     } else {
       quizPopup.style.display = "none";
@@ -88,6 +92,36 @@ layout: page
   }
   .quiz-options li {
     cursor: pointer;
+    list-style-type: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+  }
+  #quiz-popup {
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  .quiz-container {
+    background-color: #fff; /* White background for the quiz box */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow around the box */
+    max-width: 80%;
+    overflow: auto;
+  }
+  .quiz-question {
+    margin: 20px 0;
+  }
+  .quiz-feedback {
+    margin-top: 10px;
   }
 </style>
 
@@ -114,5 +148,3 @@ WIP
 ## <span style="color: #89CFF0;">2 Truths 1 Lie</span>
 
 I am currently trying to come up with lies
-
-
