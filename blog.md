@@ -3,7 +3,7 @@ title: "Blogs"
 permalink: "/blog/"
 layout: page
 ---
-
+<hr>
 <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
   <img src="../assets/images/composition.jpg" alt="Composition" style="width: 150px; height: 150px;">
   <div style="margin-left: 20px; flex-grow: 1;">
