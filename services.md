@@ -62,7 +62,7 @@ layout: page
   <div class="service-description">
     <ul>
       <li>TFT Coaching under Masters</li>
-      <li>Beginner Piano</li>
+      <li>Beginner Piano Lessons</li>
     </ul>
   </div>
 </div>
