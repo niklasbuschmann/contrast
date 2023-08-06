@@ -20,4 +20,26 @@ layout: page
   </div>
 </div>
 
-<!-- Repeat the same pattern for other sections -->
+<div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
+  <img src="../assets/images/puzzle.png" alt="Puzzle" style="width: 150px; height: 150px;">
+  <div style="margin-left: 20px; flex-grow: 1;">
+    <h1 style="margin: 0; text-align: right;">Puzzles and Quizzes</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/puzzle" style="text-align: right; display: block;">If your brain is itching for a challenge</a>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
+  <img src="../assets/images/animation.jpg" alt="animiation" style="width: 150px; height: 150px;">
+  <div style="margin-left: 20px; flex-grow: 1;">
+    <h1 style="margin: 0; text-align: right;">Animation Journey</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/animiation" style="text-align: right; display: block;">Watch as I try to make scribbles move around</a>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
+  <img src="../assets/images/spongebob.png" alt="Random" style="width: 150px; height: 150px;">
+  <div style="margin-left: 20px; flex-grow: 1;">
+    <h1 style="margin: 0; text-align: right;">Random</h1>
+    <a href="https://timothy-cao.github.io/personal/blog/random" style="text-align: right; display: block;">There is no method to the madness</a>
+  </div>
+</div>
