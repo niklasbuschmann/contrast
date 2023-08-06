@@ -8,6 +8,7 @@ layout: page
 
 Content coming next month!
 
+<hr>
 
 ## My first animation
 
