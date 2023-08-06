@@ -98,22 +98,10 @@ layout: page
     margin: 5px 0;
   }
   #quiz-popup {
-    background-color: rgba(0, 0, 0, 0.5); /* Background overlay
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-  }
-  .quiz-container {
-    background-color: #fff; /* White background for the quiz box */
+    background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow around the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     max-width: 80%;
     overflow: auto;
   }
