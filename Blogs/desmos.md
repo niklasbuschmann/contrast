@@ -75,7 +75,14 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 
 ### <span style="color: #6495ED;">Animating with sliders</span>
 
+<iframe src="https://www.desmos.com/calculator/83xtqaav0s" width="100%" style="min-height:400px"></iframe>
+
 ### <span style="color: #6495ED;">3-D rendering</span>
+
+
+### <span style="color: #6495ED;">Animating 3-D Graphing</span>
+
+<iframe src="https://www.desmos.com/calculator/yl7ftbic4g" width="100%" style="min-height:400px"></iframe>
 
 ### <span style="color: #6495ED;">Physics engines</span>
 
