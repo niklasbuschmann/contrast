@@ -124,7 +124,7 @@ Which one is the lie?
 
 
 
-## Two Truths and a Lie
+## Your turn
 
 Enter three statements below and I'll try to guess which one is a lie.
 
