@@ -116,6 +116,8 @@ layout: page
   }
 </style>
 
+
+
 ## <span style="color: #89CFF0;">Tetris Puzzles</span>
 
 A surprisingly hard puzzle that may arise from PCO
@@ -156,18 +158,25 @@ Difficulty: 2100
 </script>
 
 
+
+
 ## <span style="color: #89CFF0;">Logic Puzzles</span>
 
 WIP
+
+
 
 ## <span style="color: #89CFF0;">Visual Puzzles</span>
 
 WIP
 
+
+
 ## <span style="color: #89CFF0;">Naruto Quiz</span>
 
-WIP
+Difficult Naruto quiz
 
-## <span style="color: #89CFF0;">2 Truths 1 Lie</span>
+<iframe src="https://take.quiz-maker.com/QSQLDBXP8" width="800" height="600"></iframe>
 
-I am currently trying to come up with lies
+
+
