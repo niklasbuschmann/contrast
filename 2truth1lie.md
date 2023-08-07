@@ -85,19 +85,29 @@ Which one is the lie?
     document.getElementById("restart-button").style.display = "none";
   }
 
+<script type="text/javascript">
   function checkAnswer(index) {
     var buttons = document.getElementsByClassName("statement-button");
 
     for (var i = 0; i < buttons.length; i++) {
       var statement = window.chosenStatements[i];
-      buttons[i].disabled = true;
+      buttons[i].disabled = true; // Disable all buttons after an answer is clicked
 
-      buttons[i].classList.add(statement.isLie ? "incorrect-answer" : "correct-answer");
+      // If this statement is a lie and it's the one clicked, mark as correct
+      // Otherwise, if it's not a lie or it's a lie but not the one clicked, mark as incorrect
+      if (statement.isLie && i === index) {
+        buttons[i].classList.add("correct-answer");
+      } else {
+        buttons[i].classList.add("incorrect-answer");
+      }
     }
 
-    document.getElementById("restart-button").style.display = "inline-block";
+    document.getElementById("restart-button").style.display = "inline-block"; // Show restart button
     setTimeout(startGame, 2000);
   }
+</script>
+
+  
 
   window.onload = startGame;
 </script>
