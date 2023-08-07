@@ -164,7 +164,7 @@ Enter three statements below and I'll try to guess which one is a lie.
     });
 
     try {
-      const response = await fetch(`http://localhost:3000/api/guess-lie?${queryParams}`, {
+      const response = await fetch(`https://guess-lie.vercel.app/api/guess-lie?${queryParams}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -176,7 +176,7 @@ Enter three statements below and I'll try to guess which one is a lie.
     } catch (error) {
       console.error("There was an error:", error);
       document.getElementById("result").innerHTML =
-        "I cba";
+        "Sorry, something went wrong. Please try again later.";
     }
   }
 </script>
