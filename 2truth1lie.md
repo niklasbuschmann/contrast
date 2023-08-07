@@ -128,7 +128,7 @@ Which one is the lie?
 
 
 
-## Your turn
+## My turn to guess!
 
 Enter three statements and I'll try to guess which one is a lie.
 
