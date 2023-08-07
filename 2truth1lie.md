@@ -149,7 +149,15 @@ Enter three statements and I'll try to guess which one is a lie.
     label, input, button {
         margin-bottom: 10px;
     }
+    
+    #loading {
+        display: none;
+        font-size: 16px;
+        margin-top: 10px;
+    }
 </style>
+
+<div id="loading">Loading...</div>
 
 <script>
   async function guessLie() {
@@ -163,6 +171,10 @@ Enter three statements and I'll try to guess which one is a lie.
       statement3: statement3,
     });
 
+    // Show the loading indicator while fetching the response
+    const loadingIndicator = document.getElementById("loading");
+    loadingIndicator.style.display = "block";
+
     try {
       const response = await fetch(`https://guess-lie.vercel.app/api/guess-lie?${queryParams}`, {
         method: "GET",
@@ -170,6 +182,9 @@ Enter three statements and I'll try to guess which one is a lie.
           "Content-Type": "application/json",
         },
       });
+
+      // Hide the loading indicator after fetching the response
+      loadingIndicator.style.display = "none";
 
       const result = await response.json();
       document.getElementById("result").innerHTML = result.lieGuess;
