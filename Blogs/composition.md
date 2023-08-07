@@ -4,7 +4,7 @@ permalink: "/blog/composition"
 layout: page
 ---
 
-[← Back to Blogs](/personal/blog)
+<a href="/personal/blog" style="position: fixed; bottom: 20px; right: 20px; background-color: #6495ED; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">← Back</a>
 
 As one of my earlier interests, composing unfolded quite naturally for me as I learned music theory, piano repertoire, and performance in a band. I've also met some friends who were exceptionally talented in music performance and production to give me tips. Although I'm definetely not their best students, I've entertained myself for quite a few hours working on pieces of my own. I work with usually orchestral instrumentation or piano. I use Musescore for writing and rendering, however the audio and performance quality of muescore pales in comparison to the newer and paid softwares. 
 

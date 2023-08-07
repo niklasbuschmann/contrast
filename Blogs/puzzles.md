@@ -4,7 +4,8 @@ permalink: "/blog/puzzle"
 layout: page
 ---
 
-[← Back to Blogs](/personal/blog)
+<a href="/personal/blog" style="position: fixed; bottom: 20px; right: 20px; background-color: #6495ED; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">← Back</a>
+
 
 ## <span style="color: #89CFF0;">Make Bill Nye Proud: General Science Knowledge</span>
 
