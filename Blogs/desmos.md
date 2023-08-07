@@ -98,3 +98,39 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 
 
 work in progress to be continued
+
+## <span style="color: #6495ED;">Interactive Graphing Calculator</span>
+
+<p>Input your own mathematical expression (in terms of x) and see the graph below:</p>
+<label for="expression">Expression:</label>
+<input type="text" id="expression" value="sin(x)" size="30">
+<button onclick="drawGraph()">Graph</button>
+<div id="plot"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+  function drawGraph() {
+    var expression = document.getElementById('expression').value;
+
+    var xValues = [];
+    var yValues = [];
+    for (var x = -10; x <= 10; x += 0.1) {
+      try {
+        xValues.push(x);
+        yValues.push(eval(expression.replace('x', x)));
+      } catch (e) {
+        alert('Error in expression: ' + e.message);
+        return;
+      }
+    }
+
+    var trace = {
+      x: xValues,
+      y: yValues,
+      type: 'scatter'
+    };
+
+    var data = [trace];
+    Plotly.newPlot('plot', data);
+  }
+</script>
