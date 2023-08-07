@@ -4,6 +4,8 @@ permalink: "/blog/animation"
 layout: page
 ---
 
+[← Back to Blogs](/blog)
+
 ## Krita Animation
 
 Content coming next month!
