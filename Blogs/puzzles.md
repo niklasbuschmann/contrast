@@ -4,6 +4,8 @@ permalink: "/blog/puzzle"
 layout: page
 ---
 
+[← Back to Blogs](/blog)
+
 ## <span style="color: #89CFF0;">Make Bill Nye Proud: General Science Knowledge</span>
 
 <button id="quiz-toggle-button" onclick="toggleQuizPopup()">Show Quiz</button>

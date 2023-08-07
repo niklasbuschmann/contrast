@@ -5,6 +5,8 @@ permalink: "/blog/desmos"
 layout: page
 ---
 
+[← Back to Blogs](/blog)
+
 ## <span style="color: #6495ED;">What's Desmos?</span>
 
 [Desmos](https://www.desmos.com/calculator) is an online graphing calculator whos appeal is owed to its abundant array of features, empowering users to craft splendid creations solely through the foundation of mathematics.
