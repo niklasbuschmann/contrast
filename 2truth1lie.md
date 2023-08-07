@@ -23,35 +23,26 @@ layout: page
     background-color: #0056b3;
   }
 
-  #result-modal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  .correct-selection {
+    background-color: #28a745; /* Green */
   }
 
-  .modal-content {
-    background-color: #222;
-    color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 30%;
-    text-align: center;
+  .incorrect-selection {
+    background-color: #dc3545; /* Red */
+  }
+
+  #restart-button {
+    display: none;
+    margin-top: 10px;
   }
 </style>
-
-<div id="loading">Loading...</div>
 
 Which one is the lie?
 
 <script type="text/javascript">
   // Define your truths and lies here
   var truths = [
-    "My favourite KDrama is Business Proposal", 
+    "My favourite KDrama is Business Proposal",
     "I learned how to juggle accidentally",
     "I almost fell off a roller coaster",
     "I once tuned my piano with chopsticks",
@@ -76,53 +67,50 @@ Which one is the lie?
     "I've been saved a lifeguard before"
   ];
 
-  // Function to start the game
-// Function to start the game
-function startGame() {
-  var chosenStatements = [];
+  function startGame() {
+    var chosenStatements = [];
 
-  // Select 2 random truths
-  while (chosenStatements.length < 2) {
-    var randomTruth = truths[Math.floor(Math.random() * truths.length)];
-    if (!chosenStatements.some(s => s.statement === randomTruth)) {
-      chosenStatements.push({ statement: randomTruth, isLie: false });
+    // Select 2 random truths
+    while (chosenStatements.length < 2) {
+      var randomTruth = truths[Math.floor(Math.random() * truths.length)];
+      if (!chosenStatements.some(s => s.statement === randomTruth)) {
+        chosenStatements.push({ statement: randomTruth, isLie: false });
+      }
     }
+
+    // Select 1 random lie
+    chosenStatements.push({ statement: lies[Math.floor(Math.random() * lies.length)], isLie: true });
+
+    // Shuffle the statements
+    chosenStatements.sort(() => Math.random() - 0.5);
+
+    // Display the statements
+    var html = chosenStatements.map((s, index) => `<button class="statement-button" onclick="checkAnswer(${index})">${s.statement}</button>`).join('<br>');
+    document.getElementById("statements").innerHTML = html;
+
+    // Save the shuffled statements
+    window.chosenStatements = chosenStatements;
+
+    // Hide restart button
+    document.getElementById("restart-button").style.display = "none";
   }
 
-  // Select 1 random lie
-  chosenStatements.push({ statement: lies[Math.floor(Math.random() * lies.length)], isLie: true });
+  function checkAnswer(index) {
+    var statementButtons = document.getElementsByClassName("statement-button");
+    var statement = window.chosenStatements[index];
+    if (statement.isLie) {
+      statementButtons[index].classList.add("correct-selection");
+    } else {
+      statementButtons[index].classList.add("incorrect-selection");
+    }
 
-  // Shuffle the statements
-  chosenStatements.sort(() => Math.random() - 0.5);
+    // Disable other buttons
+    for (var i = 0; i < statementButtons.length; i++) {
+      statementButtons[i].disabled = true;
+    }
 
-  // Display the statements
-  var html = chosenStatements.map((s, index) => `<button class="statement-button" onclick="checkAnswer(${index})">${s.statement}</button>`).join('<br>');
-  document.getElementById("statements").innerHTML = html;
-
-  // Save the shuffled statements
-  window.chosenStatements = chosenStatements;
-}
-
-// Function to check the answer
-function checkAnswer(index) {
-  var statement = window.chosenStatements[index];
-  var message = statement.isLie ? "Correct! That's the lie" : "Incorrect - That is true!";
-  document.getElementById("result-message").innerText = message;
-  document.getElementById("result-modal").style.display = "block";
-
-  // Show loading indicator
-  var loadingIndicator = document.getElementById("statements");
-  loadingIndicator.innerHTML = '<button class="statement-button">...</button><br><button class="statement-button">...</button><br><button class="statement-button">...</button>';
-
-  setTimeout(function() {
-    startGame();
-    loadingIndicator.style.display = "block"; // If you want to hide it, you can use "none"
-  }, 2000);
-}
-
-  // Close the result modal
-  function closeModal() {
-    document.getElementById("result-modal").style.display = "none";
+    // Show the restart button
+    document.getElementById("restart-button").style.display = "block";
   }
 
   // Start the game when the page loads
@@ -130,15 +118,7 @@ function checkAnswer(index) {
 </script>
 
 <div id="statements"></div>
-
-<!-- Result modal -->
-<div id="result-modal">
-  <div class="modal-content">
-    <p id="result-message"></p>
-    <button class="statement-button" onclick="closeModal()">Close</button>
-  </div>
-</div>
-
+<button id="restart-button" class="statement-button" onclick="startGame()">Restart Game</button>
 
 
 ## Your turn! I will Guess
