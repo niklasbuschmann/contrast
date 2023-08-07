@@ -173,7 +173,8 @@ Enter three statements below and I'll try to guess which one is a lie.
             });
 
             const result = await response.json();
-            console.log(result); // Add this line
+            console.log("Structure:"); 
+            console.log(result); 
             document.getElementById('result').innerHTML = `${result.choices[0].text.trim()}`;
         } catch (error) {
             console.error("There was an error:", error);
