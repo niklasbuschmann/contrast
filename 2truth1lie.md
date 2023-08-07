@@ -104,6 +104,7 @@ Which one is the lie?
     var message = index < 2 ? "Correct! That's the lie" : "Incorrect - That is true!";
     document.getElementById("result-message").innerText = message;
     document.getElementById("result-modal").style.display = "block";
+    setTimeout(startGame, 2000);
   }
 
   // Close the result modal
