@@ -110,7 +110,7 @@ function checkAnswer(index) {
   document.getElementById("result-message").innerText = message;
   document.getElementById("result-modal").style.display = "block";
   
-  const loadingIndicator = document.getElementById("loading");
+  var loadingIndicator = document.getElementById("loading");
   loadingIndicator.style.display = "block";
   setTimeout(startGame, 2000);
   loadingIndicator.style.display = "none";
@@ -181,7 +181,7 @@ Enter three statements and I'll try to guess which one is a lie.
     });
 
     // Show the loading indicator while fetching the response
-    const loadingIndicator = document.getElementById("loading");
+    var loadingIndicator = document.getElementById("loading");
     loadingIndicator.style.display = "block";
 
     try {
