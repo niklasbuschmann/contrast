@@ -176,7 +176,7 @@ Enter three statements below and I'll try to guess which one is a lie.
     } catch (error) {
       console.error("There was an error:", error);
       document.getElementById("result").innerHTML =
-        "Sorry, something went wrong. Please try again later.";
+        "I cba";
     }
   }
 </script>
