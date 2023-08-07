@@ -164,7 +164,7 @@ Enter three statements below and I'll try to guess which one is a lie.
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": `Bearer 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`
+                    "Authorization": `Bearer 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`
                 },
                 body: JSON.stringify({
                     prompt: prompt,
