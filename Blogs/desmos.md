@@ -101,7 +101,7 @@ work in progress to be continued
 
 ## <span style="color: #6495ED;">Interactive Graphing Calculator</span>
 
-<p>Input your own mathematical expression (in terms of x) and see the graph below:</p>
+<p>Input your own mathematical expression (in terms of x) and see the graph below: (Parametric and Implicit functions coming soon)</p>
 <label for="expression">Expression:</label>
 <input type="text" id="expression" value="sin(x)" size="30">
 <button onclick="drawGraph()">Graph</button>
