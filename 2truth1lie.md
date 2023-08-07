@@ -44,16 +44,16 @@ Which one is the lie?
   }
 
   function checkAnswer(index) {
-    var statement = window.chosenStatements[index];
     var buttons = document.getElementsByClassName("statement-button");
 
     // Disable all buttons to prevent further clicking
     for (var i = 0; i < buttons.length; i++) {
+      var statement = window.chosenStatements[i];
       buttons[i].disabled = true;
-    }
 
-    // Mark the chosen button as correct or incorrect
-    buttons[index].classList.add(statement.isLie ? "correct-answer" : "incorrect-answer");
+      // Mark all buttons with correct or incorrect colors
+      buttons[i].classList.add(statement.isLie ? "incorrect-answer" : "correct-answer");
+    }
 
     // Show restart button
     document.getElementById("restart-button").style.display = "inline-block";
@@ -65,6 +65,7 @@ Which one is the lie?
 
 <div id="statements"></div>
 <button class="statement-button" id="restart-button" onclick="startGame()" style="display:none;">Restart Game</button>
+
 
 
 
