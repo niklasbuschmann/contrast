@@ -97,7 +97,7 @@ Which one is the lie?
 
     document.getElementById("restart-button").style.display = "inline-block";
     setTimeout(startGame, 2000);
-  
+  }
 
   window.onload = startGame;
 </script>
