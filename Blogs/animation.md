@@ -4,7 +4,7 @@ permalink: "/blog/animation"
 layout: page
 ---
 
-[← Back to Blogs](/blog)
+[← Back to Blogs](/personal/blog)
 
 ## Krita Animation
 

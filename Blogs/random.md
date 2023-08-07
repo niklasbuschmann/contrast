@@ -4,6 +4,6 @@ permalink: "/blog/random"
 layout: page
 ---
 
-[← Back to Blogs](/blog)
+[← Back to Blogs](/personal/blog)
 
 # Trampoline Pineapple Yeti
