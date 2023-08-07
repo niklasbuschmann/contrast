@@ -152,34 +152,30 @@ Enter three statements below and I'll try to guess which one is a lie.
 </style>
 
 <script>
-    async function guessLie() {
-        const statement1 = document.getElementById('statement1').value;
-        const statement2 = document.getElementById('statement2').value;
-        const statement3 = document.getElementById('statement3').value;
-        
-        const prompt = `Given the following statements in a game of 2 Truths 1 Lie identify which one is a lie:\n1. ${statement1}\n2. ${statement2}\n3. ${statement3}`;
+  async function guessLie() {
+    const statement1 = document.getElementById("statement1").value;
+    const statement2 = document.getElementById("statement2").value;
+    const statement3 = document.getElementById("statement3").value;
 
-        try {
-            const response = await fetch("https://api.openai.com/v1/engines/davinci-codex/completions", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer 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`
-                },
-                body: JSON.stringify({
-                    prompt: prompt,
-                    max_tokens: 50
-                })
-            });
+    const data = {
+      statements: [statement1, statement2, statement3],
+    };
 
-            const result = await response.json();
-            console.log("Structure:"); 
-            console.log(result); 
-            document.getElementById('result').innerHTML = `${result.choices[0].text.trim()}`;
-        } catch (error) {
-            console.error("There was an error:", error);
+    try {
+      const response = await fetch("https://guess-lie.vercel.app/api/guess-lie", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-            document.getElementById('result').innerHTML = "Sorry, something went wrong. Please try again later.";
-        }
+      const result = await response.json();
+      document.getElementById("result").innerHTML = result.message;
+    } catch (error) {
+      console.error("There was an error:", error);
+      document.getElementById("result").innerHTML =
+        "Sorry, something went wrong. Please try again later.";
     }
+  }
 </script>
