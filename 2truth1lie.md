@@ -121,3 +121,59 @@ Which one is the lie?
     <button class="statement-button" onclick="closeModal()">Close</button>
   </div>
 </div>
+
+
+
+## Two Truths and a Lie
+
+Enter three statements below and I'll try to guess which one is a lie.
+
+<div class="input-form">
+    <label for="statement1">Statement 1:</label>
+    <input type="text" id="statement1" required><br>
+    <label for="statement2">Statement 2:</label>
+    <input type="text" id="statement2" required><br>
+    <label for="statement3">Statement 3:</label>
+    <input type="text" id="statement3" required><br><br>
+    <button onclick="guessLie()">Guess the Lie</button>
+</div>
+<p id="result"></p>
+
+<style>
+    .input-form {
+        margin: 20px 0;
+    }
+    label, input, button {
+        margin-bottom: 10px;
+    }
+</style>
+
+<script>
+    async function guessLie() {
+        const statement1 = document.getElementById('statement1').value;
+        const statement2 = document.getElementById('statement2').value;
+        const statement3 = document.getElementById('statement3').value;
+        
+        const prompt = `Given the following statements in a game of 2 Truths 1 Lie identify which one is a lie:\n1. ${statement1}\n2. ${statement2}\n3. ${statement3}`;
+
+        try {
+            const response = await fetch("https://api.openai.com/v1/engines/davinci-codex/completions", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer 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`
+                },
+                body: JSON.stringify({
+                    prompt: prompt,
+                    max_tokens: 50
+                })
+            });
+
+            const result = await response.json();
+            document.getElementById('result').innerHTML = `I guess that the lie is: ${result.choices[0].text.trim()}`;
+        } catch (error) {
+            console.error("There was an error:", error);
+            document.getElementById('result').innerHTML = "Sorry, something went wrong. Please try again later.";
+        }
+    }
+</script>
