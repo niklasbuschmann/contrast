@@ -127,12 +127,15 @@ WIP
 ## <span style="color: #89CFF0;">Tetris Puzzles</span>
 
 A surprisingly hard puzzle that may arise from PCO
-![link to puzzle](https://jstris.jezevec10.com/?play=6&map=51132)
+
+[link to puzzle](https://jstris.jezevec10.com/?play=6&map=51132)
+
 ![tetris puzzle 1](../assets/images/tetris_puzzle1.png){:width="300px" height="400px"}
 
 ## <span style="color: #89CFF0;">Chess Puzzles</span>
 
 Difficulty: 2100
+
 ![chess puzzle 1](../assets/images/chess_puzzle1.png){:width="400px" height="400px"}
 
 <div>
