@@ -126,7 +126,9 @@ WIP
 
 ## <span style="color: #89CFF0;">Tetris Puzzles</span>
 
-WIP
+A surprisingly hard puzzle that may arise from PCO
+https://jstris.jezevec10.com/?play=6&map=51132
+![heart](../assets/images/tetris_puzzle1.png){:width="300px" height="400px"}
 
 ## <span style="color: #89CFF0;">Chess Puzzles</span>
 
