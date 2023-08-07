@@ -116,8 +116,20 @@ work in progress to be continued
     var yValues = [];
     for (var x = -10; x <= 10; x += 0.1) {
       try {
+        var scope = {
+          x: x,
+          sin: Math.sin,
+          cos: Math.cos,
+          tan: Math.tan,
+          exp: Math.exp,
+          log: Math.log,
+          sqrt: Math.sqrt,
+          pow: Math.pow,
+          abs: Math.abs,
+        };
+        var expr = expression.replace(/(\w+)/g, (match, p1) => scope[p1] ? `scope.${p1}` : p1);
         xValues.push(x);
-        yValues.push(eval(expression.replace('x', x)));
+        yValues.push(eval(expr));
       } catch (e) {
         alert('Error in expression: ' + e.message);
         return;
@@ -133,4 +145,8 @@ work in progress to be continued
     var data = [trace];
     Plotly.newPlot('plot', data);
   }
+
+  // Draw the default sine graph when the page loads
+  drawGraph();
 </script>
+
