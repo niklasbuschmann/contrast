@@ -173,9 +173,11 @@ Enter three statements below and I'll try to guess which one is a lie.
             });
 
             const result = await response.json();
-            document.getElementById('result').innerHTML = `I guess that the lie is: ${result.choices[0].text.trim()}`;
+            console.log(result); // Add this line
+            document.getElementById('result').innerHTML = `${result.choices[0].text.trim()}`;
         } catch (error) {
             console.error("There was an error:", error);
+
             document.getElementById('result').innerHTML = "Sorry, something went wrong. Please try again later.";
         }
     }
