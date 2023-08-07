@@ -157,21 +157,22 @@ Enter three statements below and I'll try to guess which one is a lie.
     const statement2 = document.getElementById("statement2").value;
     const statement3 = document.getElementById("statement3").value;
 
-    const data = {
-      statements: [statement1, statement2, statement3],
-    };
+    const queryParams = new URLSearchParams({
+      statement1: statement1,
+      statement2: statement2,
+      statement3: statement3,
+    });
 
     try {
-      const response = await fetch("https://guess-lie.vercel.app/api/guess-lie", {
-        method: "POST",
+      const response = await fetch(`http://localhost:3000/api/guess-lie?${queryParams}`, {
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
       });
 
       const result = await response.json();
-      document.getElementById("result").innerHTML = result.message;
+      document.getElementById("result").innerHTML = result.lieGuess;
     } catch (error) {
       console.error("There was an error:", error);
       document.getElementById("result").innerHTML =
