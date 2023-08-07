@@ -77,34 +77,28 @@ Which one is the lie?
     // Shuffle the statements
     chosenStatements.sort(() => Math.random() - 0.5);
 
-    // Display the statements
     var html = chosenStatements.map((s, index) => `<button class="statement-button" onclick="checkAnswer(${index})">${s.statement}</button>`).join('<br>');
     document.getElementById("statements").innerHTML = html;
 
-    // Save the shuffled statements
     window.chosenStatements = chosenStatements;
 
-    // Hide restart button
     document.getElementById("restart-button").style.display = "none";
   }
 
   function checkAnswer(index) {
     var buttons = document.getElementsByClassName("statement-button");
 
-    // Disable all buttons to prevent further clicking
     for (var i = 0; i < buttons.length; i++) {
       var statement = window.chosenStatements[i];
       buttons[i].disabled = true;
 
-      // Mark all buttons with correct or incorrect colors
       buttons[i].classList.add(statement.isLie ? "incorrect-answer" : "correct-answer");
     }
 
-    // Show restart button
     document.getElementById("restart-button").style.display = "inline-block";
+    setTimeout(startGame, 2000);
   }
 
-  // Start the game when the page loads
   window.onload = startGame;
 </script>
 
