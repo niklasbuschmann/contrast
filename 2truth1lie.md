@@ -60,6 +60,7 @@ Which one is the lie?
     "I've held a snake in my hands",
     "I can circular breathe",
     "My favourite video game is It Takes Two",
+    "I've never dyed my hair, got a tattoo or a piercing"
   ];
   var lies = [
     "I let my plant die despite being fake",
@@ -69,6 +70,8 @@ Which one is the lie?
     "I rode llama when I was 6",
     "I'm a clarinet player in my band",
     "My favourite movie is The Godfather",
+    "I used to have long hair",
+    "I've been saved a lifeguard before"
   ];
 
   // Function to start the game
