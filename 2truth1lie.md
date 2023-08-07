@@ -109,11 +109,15 @@ function checkAnswer(index) {
   var message = statement.isLie ? "Correct! That's the lie" : "Incorrect - That is true!";
   document.getElementById("result-message").innerText = message;
   document.getElementById("result-modal").style.display = "block";
-  
-  var loadingIndicator = document.getElementById("loading");
-  loadingIndicator.style.display = "block";
-  setTimeout(startGame, 2000);
-  loadingIndicator.style.display = "none";
+
+  // Show loading indicator
+  var loadingIndicator = document.getElementById("statements");
+  loadingIndicator.innerHTML = '<button class="statement-button">...</button><br><button class="statement-button">...</button><br><button class="statement-button">...</button>';
+
+  setTimeout(function() {
+    startGame();
+    loadingIndicator.style.display = "block"; // If you want to hide it, you can use "none"
+  }, 2000);
 }
 
   // Close the result modal
