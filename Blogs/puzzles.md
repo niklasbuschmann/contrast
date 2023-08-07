@@ -128,11 +128,31 @@ WIP
 
 A surprisingly hard puzzle that may arise from PCO
 ![link to puzzle](https://jstris.jezevec10.com/?play=6&map=51132)
-![heart](../assets/images/tetris_puzzle1.png){:width="300px" height="400px"}
+![tetris puzzle 1](../assets/images/tetris_puzzle1.png){:width="300px" height="400px"}
 
 ## <span style="color: #89CFF0;">Chess Puzzles</span>
 
-WIP
+Difficulty: 2100
+![chess puzzle 1](../assets/images/chess_puzzle1.png){:width="400px" height="400px"}
+
+<div>
+  <button onclick="toggleSpoiler('chessSpoiler')">Show/Hide Solution</button>
+  <div id="chessSpoiler" style="display:none;">
+    1... Bg4 2. Rxe8+ Rxe8 3. h3 Bxh5 4. Bd6 Nf8 5. Bxc5 Rb8 6. Bd5 Rb5 7. d4 Nd7 8. c4 Rb1+ 9. Kh2
+  </div>
+</div>
+
+<script>
+  function toggleSpoiler(id) {
+    var spoilerElement = document.getElementById(id);
+    if (spoilerElement.style.display === "none") {
+      spoilerElement.style.display = "block";
+    } else {
+      spoilerElement.style.display = "none";
+    }
+  }
+</script>
+
 
 ## <span style="color: #89CFF0;">Naruto Quiz</span>
 
