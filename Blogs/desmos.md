@@ -5,7 +5,7 @@ permalink: "/blog/desmos"
 layout: page
 ---
 
-[← Back to Blogs](/blog)
+[← Back to Blogs](/personal/blog)
 
 ## <span style="color: #6495ED;">What's Desmos?</span>
 
