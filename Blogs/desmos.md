@@ -99,11 +99,11 @@ $$\left(16\left(\sin t\right)^{3},13\cos t-5\cos\left(2t\right)-2\cos\left(3t\ri
 
 work in progress to be continued
 
-## <span style="color: #6495ED;">Interactive Graphing Calculator</span>
+## <span style="color: #6495ED;">Implicit Function Graphing Calculator</span>
 
-<p>Input your own mathematical expression (in terms of x) and see the graph below: (Parametric and Implicit functions coming soon)</p>
-<label for="expression">Expression:</label>
-<input type="text" id="expression" value="sin(x)" size="30">
+<p>Input your own implicit mathematical expression (in terms of x and y) and see the graph below:</p>
+<label for="expression">Expression (e.g., x^2 + y^2 - 1):</label>
+<input type="text" id="expression" value="x^2 + y^2 - 1" size="40">
 <button onclick="drawGraph()">Graph</button>
 <div id="plot"></div>
 
@@ -111,42 +111,53 @@ work in progress to be continued
 <script>
   function drawGraph() {
     var expression = document.getElementById('expression').value;
-
     var xValues = [];
     var yValues = [];
-    for (var x = -10; x <= 10; x += 0.1) {
-      try {
-        var scope = {
-          x: x,
-          sin: Math.sin,
-          cos: Math.cos,
-          tan: Math.tan,
-          exp: Math.exp,
-          log: Math.log,
-          sqrt: Math.sqrt,
-          pow: Math.pow,
-          abs: Math.abs,
-        };
-        var expr = expression.replace(/(\w+)/g, (match, p1) => scope[p1] ? `scope.${p1}` : p1);
-        xValues.push(x);
-        yValues.push(eval(expr));
-      } catch (e) {
-        alert('Error in expression: ' + e.message);
-        return;
+    var zValues = [];
+
+    for (var x = -2; x <= 2; x += 0.1) {
+      var xRow = [];
+      var yRow = [];
+      var zRow = [];
+      for (var y = -2; y <= 2; y += 0.1) {
+        try {
+          var scope = {
+            x: x,
+            y: y,
+            sin: Math.sin,
+            cos: Math.cos,
+            tan: Math.tan,
+            exp: Math.exp,
+            log: Math.log,
+            sqrt: Math.sqrt,
+            pow: Math.pow,
+            abs: Math.abs,
+          };
+          var expr = expression.replace(/(\w+)/g, (match, p1) => scope[p1] ? `scope.${p1}` : p1);
+          xRow.push(x);
+          yRow.push(y);
+          zRow.push(eval(expr));
+        } catch (e) {
+          alert('Error in expression: ' + e.message);
+          return;
+        }
       }
+      xValues.push(xRow);
+      yValues.push(yRow);
+      zValues.push(zRow);
     }
 
     var trace = {
       x: xValues,
       y: yValues,
-      type: 'scatter'
+      z: zValues,
+      type: 'contour',
     };
 
     var data = [trace];
     Plotly.newPlot('plot', data);
   }
 
-  // Draw the default sine graph when the page loads
+  // Draw the default implicit function graph when the page loads
   drawGraph();
 </script>
-
