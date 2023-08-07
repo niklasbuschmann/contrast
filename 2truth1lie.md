@@ -82,7 +82,6 @@ Which one is the lie?
 
     window.chosenStatements = chosenStatements;
 
-    document.getElementById("restart-button").style.display = "none";
   }
 
   function checkAnswer(index) {
