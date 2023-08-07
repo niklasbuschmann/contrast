@@ -176,7 +176,7 @@ WIP
 
 Difficult Naruto quiz
 
-<iframe src="https://take.quiz-maker.com/QSQLDBXP8" width="800" height="600"></iframe>
+<iframe src="https://take.quiz-maker.com/QSQLDBXP8" width="500" height="500"></iframe>
 
 
 
