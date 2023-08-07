@@ -101,7 +101,7 @@ Which one is the lie?
 
   // Function to check the answer
   function checkAnswer(index) {
-    var message = index < 2 ? "Incorrect - That is true!" : "Correct! That's the lie";
+    var message = index < 2 ? "Correct! That's the lie" : "Incorrect - That is true!";
     document.getElementById("result-message").innerText = message;
     document.getElementById("result-modal").style.display = "block";
     setTimeout(startGame, 2000);
@@ -128,7 +128,7 @@ Which one is the lie?
 
 
 
-## My turn to guess!
+## Your turn! I will Guess
 
 Enter three statements and I'll try to guess which one is a lie.
 
