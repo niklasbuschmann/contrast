@@ -65,13 +65,13 @@ permalink: /about/
 </div>
 
 <div class="hobbies-section">
-  <h2 class="hobbies-title">Hobbies</h2>
+  <h1 class="hobbies-title">Hobbies</h1>
   <p class="hobbies-text">Despite being deeply immersed in STEM, I'd like to believe I'm a very creative person. You might find me playing or creating music when I'm not doodling or designing.</p>
   <p class="hobbies-text">In an effort to avoid withering away, I also spend time bouldering and playing all kinds of racquet sports. I don't want to lose a pushup contest with my future grandkids.</p>
 </div>
 
 <div class="recreation-section">
-  <h2 class="recreation-title">Recreation</h2>
-  <p class="recreation-text">I believe that video games are one of the best ways to stay connected with friends who can't meet in person. If I'm gaming, I usually spend my time on TFT, League, Tetris, chess or co-op games. Feel free to add me on Discord: dodoman767</p>
-  <p class="recreation-text">I'm also currently in the middle of watching Vinland Saga and it's amazing!</p>
+  <h1 class="recreation-title">Recreation</h1>
+  <p class="recreation-text">I believe that video games are one of the best ways to stay connected with friends who can't meet in person. If I'm gaming, I usually spend my time on TFT, League, Tetris, chess or co-op games.</p>
+  <p class="recreation-text">I'm also currently in the middle of watching Vinland Saga and it's amazing -highly recommend!</p>
 </div>
