@@ -166,7 +166,7 @@ WIP
 
 
 
-## <span style="color: #89CFF0;">Visual Puzzles</span>
+## <span style="color: #89CFF0;">Fermi Estimations</span>
 
 WIP
 

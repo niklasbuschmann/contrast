@@ -4,7 +4,46 @@ permalink: "/2truth1lie/"
 layout: page
 ---
 
-Here are my statements. Pick which one you think is the truth.
+<style>
+  .statement-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .statement-button:hover {
+    background-color: #0056b3;
+  }
+
+  #result-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: #f4f4f4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+  }
+</style>
+
+Which one is the lie?
 
 <script type="text/javascript">
   // Define your truths and lies here
@@ -20,7 +59,7 @@ Here are my statements. Pick which one you think is the truth.
     "I've held a snake in my hands",
     "I can circular breathe",
     "My favourite video game is It Takes Two",
-    ];
+  ];
   var lies = [
     "I let my plant die despite being fake",
     "I've solved a puzzle consisting of only white pieces",
@@ -35,7 +74,7 @@ Here are my statements. Pick which one you think is the truth.
   function startGame() {
     var chosenTruths = [];
     var chosenLies = [];
-    
+
     // Select 2 random truths
     while (chosenTruths.length < 2) {
       var randomTruth = truths[Math.floor(Math.random() * truths.length)];
@@ -52,17 +91,20 @@ Here are my statements. Pick which one you think is the truth.
     statements.sort(() => Math.random() - 0.5);
 
     // Display the statements
-    var html = statements.map((s, index) => `<button onclick="checkAnswer(${index})">${s}</button>`).join('<br>');
+    var html = statements.map((s, index) => `<button class="statement-button" onclick="checkAnswer(${index})">${s}</button>`).join('<br>');
     document.getElementById("statements").innerHTML = html;
   }
 
   // Function to check the answer
   function checkAnswer(index) {
-    if (index < 2) {
-      alert("Correct! That's a truth.");
-    } else {
-      alert("Sorry, that's a lie.");
-    }
+    var message = index < 2 ? "Correct! That's the lie" : "Incorrect - That is true!";
+    document.getElementById("result-message").innerText = message;
+    document.getElementById("result-modal").style.display = "block";
+  }
+
+  // Close the result modal
+  function closeModal() {
+    document.getElementById("result-modal").style.display = "none";
   }
 
   // Start the game when the page loads
@@ -70,3 +112,11 @@ Here are my statements. Pick which one you think is the truth.
 </script>
 
 <div id="statements"></div>
+
+<!-- Result modal -->
+<div id="result-modal">
+  <div class="modal-content">
+    <p id="result-message"></p>
+    <button class="statement-button" onclick="closeModal()">Close</button>
+  </div>
+</div>
