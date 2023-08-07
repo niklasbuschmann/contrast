@@ -75,37 +75,40 @@ Which one is the lie?
   ];
 
   // Function to start the game
-  function startGame() {
-    var chosenTruths = [];
-    var chosenLies = [];
+// Function to start the game
+function startGame() {
+  var chosenStatements = [];
 
-    // Select 2 random truths
-    while (chosenTruths.length < 2) {
-      var randomTruth = truths[Math.floor(Math.random() * truths.length)];
-      if (!chosenTruths.includes(randomTruth)) {
-        chosenTruths.push(randomTruth);
-      }
+  // Select 2 random truths
+  while (chosenStatements.length < 2) {
+    var randomTruth = truths[Math.floor(Math.random() * truths.length)];
+    if (!chosenStatements.some(s => s.statement === randomTruth)) {
+      chosenStatements.push({ statement: randomTruth, isLie: false });
     }
-
-    // Select 1 random lie
-    chosenLies.push(lies[Math.floor(Math.random() * lies.length)]);
-
-    // Combine and shuffle the statements
-    var statements = chosenTruths.concat(chosenLies);
-    statements.sort(() => Math.random() - 0.5);
-
-    // Display the statements
-    var html = statements.map((s, index) => `<button class="statement-button" onclick="checkAnswer(${index})">${s}</button>`).join('<br>');
-    document.getElementById("statements").innerHTML = html;
   }
 
-  // Function to check the answer
-  function checkAnswer(index) {
-    var message = index < 2 ? "Correct! That's the lie" : "Incorrect - That is true!";
-    document.getElementById("result-message").innerText = message;
-    document.getElementById("result-modal").style.display = "block";
-    setTimeout(startGame, 2000);
-  }
+  // Select 1 random lie
+  chosenStatements.push({ statement: lies[Math.floor(Math.random() * lies.length)], isLie: true });
+
+  // Shuffle the statements
+  chosenStatements.sort(() => Math.random() - 0.5);
+
+  // Display the statements
+  var html = chosenStatements.map((s, index) => `<button class="statement-button" onclick="checkAnswer(${index})">${s.statement}</button>`).join('<br>');
+  document.getElementById("statements").innerHTML = html;
+
+  // Save the shuffled statements
+  window.chosenStatements = chosenStatements;
+}
+
+// Function to check the answer
+function checkAnswer(index) {
+  var statement = window.chosenStatements[index];
+  var message = statement.isLie ? "Correct! That's the lie" : "Incorrect - That is true!";
+  document.getElementById("result-message").innerText = message;
+  document.getElementById("result-modal").style.display = "block";
+  setTimeout(startGame, 2000);
+}
 
   // Close the result modal
   function closeModal() {
