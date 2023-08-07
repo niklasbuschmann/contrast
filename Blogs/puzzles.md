@@ -128,7 +128,7 @@ WIP
 
 A surprisingly hard puzzle that may arise from PCO
 
-[link to puzzle](https://jstris.jezevec10.com/?play=6&map=51132)
+[Play it yourself!](https://jstris.jezevec10.com/?play=6&map=51132)
 
 ![tetris puzzle 1](../assets/images/tetris_puzzle1.png){:width="300px" height="400px"}
 
