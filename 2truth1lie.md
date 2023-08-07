@@ -44,6 +44,8 @@ layout: page
   }
 </style>
 
+<div id="loading">Loading...</div>
+
 Which one is the lie?
 
 <script type="text/javascript">
@@ -107,7 +109,11 @@ function checkAnswer(index) {
   var message = statement.isLie ? "Correct! That's the lie" : "Incorrect - That is true!";
   document.getElementById("result-message").innerText = message;
   document.getElementById("result-modal").style.display = "block";
+  
+  const loadingIndicator = document.getElementById("loading");
+  loadingIndicator.style.display = "block";
   setTimeout(startGame, 2000);
+  loadingIndicator.style.display = "none";
 }
 
   // Close the result modal
@@ -161,7 +167,6 @@ Enter three statements and I'll try to guess which one is a lie.
     }
 </style>
 
-<div id="loading">Loading...</div>
 
 <script>
   async function guessLie() {
