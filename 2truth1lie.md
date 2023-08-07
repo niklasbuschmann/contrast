@@ -129,7 +129,7 @@ Which one is the lie?
 
 ## Your turn
 
-Enter three statements below and I'll try to guess which one is a lie.
+Enter three statements and I'll try to guess which one is a lie.
 
 <div class="input-form">
     <label for="statement1">Statement 1:</label>
