@@ -8,8 +8,28 @@ Here are my statements. Pick which one you think is the truth.
 
 <script type="text/javascript">
   // Define your truths and lies here
-  var truths = ["I have been to Mars.", "I can speak five languages.", /* Add more truths here */];
-  var lies = ["I am a robot.", "I can fly.", /* Add more lies here */];
+  var truths = [
+    "My favourite KDrama is Business Proposal", 
+    "I learned how to juggle accidentally",
+    "I almost fell off a roller coaster",
+    "I once tuned my piano with chopsticks",
+    "I have a family of amongus plushies",
+    "I've never eaten pasta while visiting Italy",
+    "I've experienced sleep paralysis",
+    "I had a positive experience with chef's plate",
+    "I've held a snake in my hands",
+    "I can circular breathe",
+    "My favourite video game is It Takes Two",
+    ];
+  var lies = [
+    "I let my plant die despite being fake",
+    "I've solved a puzzle consisting of only white pieces",
+    "My bike was stolen on christmas eve",
+    "I've grown an 80 kg pumpkin in my backyard",
+    "I rode llama when I was 6",
+    "I'm a clarinet player in my band",
+    "My favourite movie is The Godfather",
+  ];
 
   // Function to start the game
   function startGame() {
