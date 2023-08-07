@@ -132,6 +132,13 @@ A surprisingly hard puzzle that may arise from PCO
 
 ![tetris puzzle 1](../assets/images/tetris_puzzle1.png){:width="300px" height="400px"}
 
+<div>
+  <button onclick="toggleSpoiler('tetrisSpoiler1')">Show/Hide Hint</button>
+  <div id="tetrisSpoiler1" style="display:none;">
+    Piece order: O L I Z S. Three of the pieces need to be spun in.
+  </div>
+</div>
+
 ## <span style="color: #89CFF0;">Chess Puzzles</span>
 
 Difficulty: 2100
@@ -139,8 +146,8 @@ Difficulty: 2100
 ![chess puzzle 1](../assets/images/chess_puzzle1.png){:width="400px" height="400px"}
 
 <div>
-  <button onclick="toggleSpoiler('chessSpoiler')">Show/Hide Solution</button>
-  <div id="chessSpoiler" style="display:none;">
+  <button onclick="toggleSpoiler('chessSpoiler1')">Show/Hide Solution</button>
+  <div id="chessSpoiler1" style="display:none;">
     1... Bg4 2. Rxe8+ Rxe8 3. h3 Bxh5 4. Bd6 Nf8 5. Bxc5 Rb8 6. Bd5 Rb5 7. d4 Nd7 8. c4 Rb1+ 9. Kh2
   </div>
 </div>
