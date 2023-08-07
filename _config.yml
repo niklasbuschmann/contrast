@@ -21,7 +21,6 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "gallery.md", title: "Gallery"}
   - {file: "services.md", title: "Services"}
   - {file: "about.md", title: "About me"}
-  - {file: "testpage.md", title: "Test Page"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:tctctc888@gmail.com"}
