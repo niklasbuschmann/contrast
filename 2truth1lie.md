@@ -84,18 +84,18 @@ Which one is the lie?
 
   }
 
-  function checkAnswer(index) {
-    var buttons = document.getElementsByClassName("statement-button");
+function checkAnswer(index) {
+  var buttons = document.querySelectorAll(".statement-button:not(#restart-button)");
 
-    for (var i = 0; i < buttons.length; i++) {
-      var statement = window.chosenStatements[i];
-      buttons[i].disabled = true;
-
-      buttons[i].classList.add(statement.isLie ? "incorrect-answer" : "correct-answer");
-    }
-
-    document.getElementById("restart-button").style.display = "inline-block";
+  for (var i = 0; i < buttons.length; i++) {
+    var statement = window.chosenStatements[i];
+    buttons[i].disabled = true;
+    buttons[i].classList.add(statement.isLie ? "incorrect-answer" : "correct-answer");
   }
+
+  document.getElementById("restart-button").style.display = "inline-block";
+}
+
 
   window.onload = startGame;
 </script>
