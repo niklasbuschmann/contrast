@@ -68,10 +68,10 @@ permalink: /testpage/
 <script>
   const galleryData = [];
 
-for (let i = 10; i < 100; i++) {
+for (let i = 400; i < 415; i++) {
   galleryData.push({
     src: `https://placekitten.com/200/${i}`,
-    description: `Cute Kitten ${i - 299}`
+    description: `Cute Kitten ${i - 399}`
   });
 }
 
