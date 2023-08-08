@@ -62,6 +62,20 @@ This is orchestral piece was inspired by Sonny 2 music with new instrumentation,
 </body>
 </html>
 
+## <span style="color: #89CFF0;">Sadge in C</span>
+
+Another Synth piece that emphasizes the uses of sustain to give the piece a blurry, longing feel. It's incomplete and currently ends in the middle of a spicy transition
+
+<html>
+<body>
+  <audio controls>
+    <source src="../assets/audio/sadgeC.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
+
+
 ## <span style="color: #89CFF0;">Puddings day off</span>
 
 This is a bit of an experimental piece. It follows the day of the life of Pudding, my rabbit. It starts off tense for Pudding as today is vacuum day. Things suddenly calm down when the cleaning finishes. Immediately Pudding is no longer afraid. She flips over and takes a nap in the sun as her enemies are taken away to the basement (the vacuum).
@@ -153,15 +167,3 @@ I don't know why this sounds so nostalgic to me. It draws inspiration from Joe H
 </body>
 </html>
 
-## <span style="color: #89CFF0;">Sadge in C</span>
-
-Another Synth piece that emphasizes the uses of sustain to give the piece a blurry, longing feel. It's incomplete and currently ends in the middle of a spicy transition
-
-<html>
-<body>
-  <audio controls>
-    <source src="../assets/audio/sadgeC.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
-</html>
