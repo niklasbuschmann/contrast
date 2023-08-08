@@ -117,7 +117,7 @@ Enter three statements and the AI try to guess which one is a lie.
     <input type="text" id="statement3" required><br><br>
     <button class="statement-button" id="guess-button" onclick="guessLie()" style="display:inline-block;">Guess your lie</button>
 </div>
-<p id="loading">Loading...</p> <!-- Add this line -->
+<p id="loading">Loading...</p> 
 <p id="result"></p>
 
 <style>
