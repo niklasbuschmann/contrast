@@ -117,6 +117,7 @@ Enter three statements and I'll try to guess which one is a lie.
     <input type="text" id="statement3" required><br><br>
     <button onclick="guessLie()">Guess the Lie</button>
 </div>
+<p id="loading">Loading...</p> <!-- Add this line -->
 <p id="result"></p>
 
 <style>
@@ -133,7 +134,6 @@ Enter three statements and I'll try to guess which one is a lie.
         margin-top: 10px;
     }
 </style>
-
 
 <script>
   async function guessLie() {
@@ -168,6 +168,7 @@ Enter three statements and I'll try to guess which one is a lie.
       console.error("There was an error:", error);
       document.getElementById("result").innerHTML =
         "Sorry, something went wrong. Please try again later.";
+      loadingIndicator.style.display = "none"; // Hide the loading indicator if an error occurs
     }
   }
 </script>
