@@ -42,7 +42,7 @@ layout: page
   <div class="service-price">$60 / hour</div>
   <div class="service-description">
     <ul>
-      <li>Gr. 1 - 12 Math (includes AP)</li>
+      <li>Gr. 9 - 12 Math (includes AP)</li>
       <li>Competition Math</li>
       <li>Computer Science</li>
     </ul>
