@@ -8,7 +8,13 @@ layout: page
 
 ## Krita Animation
 
-Content coming next month!
+work in progress
+
+<hr>
+
+## Sketches and Drawings
+
+work in progress
 
 <hr>
 
