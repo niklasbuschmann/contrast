@@ -106,7 +106,7 @@ function checkAnswer(index) {
 
 ## Your turn! I will Guess
 
-Enter three statements and I'll try to guess which one is a lie.
+Enter three statements and the AI try to guess which one is a lie.
 
 <div class="input-form">
     <label for="statement1">Statement 1:</label>
