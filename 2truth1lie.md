@@ -119,6 +119,7 @@ Enter three statements and the AI try to guess which one is a lie.
 </div>
 <p id="loading">Loading...</p> 
 <div id="result-container">
+  <p>Guess: </p>
   <p id="result"></p>
 </div>
 
