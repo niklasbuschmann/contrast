@@ -1,5 +1,5 @@
 ---
-title:  "The Start of the West Highland Way and Mugdock"
+title:  "Group Hiking at Mugdock"
 mathjax: true
 layout: post
 categories: media
