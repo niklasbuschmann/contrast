@@ -1,5 +1,5 @@
 ---
-title:  "Markdown examples"
+title:  "Group Hiking at Overtoun"
 layout: post
 ---
 
