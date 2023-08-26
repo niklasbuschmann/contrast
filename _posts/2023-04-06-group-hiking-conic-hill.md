@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Jekyll"
+title: "Group Hiking at Conic Hill"
 layout: post
 ---
 
