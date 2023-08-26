@@ -20,6 +20,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
    - {file: "research.md", title: Research}
    - {file: "teaching.md", title: Teaching}
    - {file: "students.md", title: Students}
+    - {file: "fun.md", title: Fun}
+
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:xianghua.ding@glasgow.ac.uk"}
