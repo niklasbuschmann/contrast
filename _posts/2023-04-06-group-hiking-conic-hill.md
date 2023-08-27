@@ -5,7 +5,7 @@ layout: post
 
 Conic hill simply offers the most spectacular views over Loch Lomond. It is also where you can experience how powerful winds in Scotland can be. 
 
-![windyme](../assets/empty_folder/2023-4-6-hiking/IMG_6524.JPG)
+![windyme](../assets/empty_folder/2023-4-6-hiking/IMG_6524.jpg)
 
 ## Quite a steep walk
 
