@@ -18,7 +18,7 @@ While feeling not ready yet to have 5-10 days of long term walking along the fam
 ## A World War II gun site
 ![gunsite](../assets/empty_folder/2023-8-26-hiking/WechatIMG127.jpg)
 
-![gunsite2](../assets/empty_folder/2023-8-26-hiking/WechatIMG180.jpg)
+![gunsite2](../assets/empty_folder/2023-8-26-hiking/WechatIMG230.jpg)
 
 ## Enjoying the beautiful tree and sunlight
 ![tree](../assets/empty_folder/2023-8-26-hiking/WechatIMG279.jpg)
