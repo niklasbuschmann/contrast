@@ -3,12 +3,27 @@ title:  "Group Hiking at Overtoun (April 2023)"
 layout: post
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+We set out to appreciate Spring blossoms but it turned out that early April was still cold here in Scotland and there were not many blossoms yet especially in the mountain, but we were very much amazed at the stunning view overlooking the River Cylde and thick moss, quite dominant and beautiful covering many stone surfaces and tree trunks.
 
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit.
+![Overtone](../assets/empty_folder/2023-4-1-hiking/IMG_8363.jpg)
 
+## It is still quite cold in early April 
 
-## Heading Two (h2)
+![cold](../assets/empty_folder/2023-4-1-hiking/IMG_8360.jpg)
+
+![cold2](../assets/empty_folder/2023-4-1-hiking/IMG_8367.jpg)
+
+## The view is still amazing
+![view](../assets/empty_folder/2023-4-1-hiking/IMG_8368.jpg)
+
+## Many interesting chairs along the way
+![chair](../assets/empty_folder/2023-4-1-hiking/IMG_8364.jpg)
+
+## We ended up having a lot of fun with mosses
+![moss1](../assets/empty_folder/2023-4-1-hiking/IMG_8365.jpg)
+
+![moss1](../assets/empty_folder/2023-4-1-hiking/IMG_8366.jpg)
+
 
 ### Heading Three (h3)
 
