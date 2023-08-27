@@ -1,5 +1,5 @@
 ---
-title: "Group Hiking at Conic Hill (2023-04-06)"
+title: "Group Hiking at Conic Hill (April, 2023)"
 layout: post
 ---
 
