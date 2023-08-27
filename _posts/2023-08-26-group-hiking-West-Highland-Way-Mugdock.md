@@ -7,7 +7,6 @@ categories: media
 
 ![Jumping](assets/empty_folder/2023-8-26-hiking/WechatIMG231.jpg)
 
-
 While feeling not ready yet to have 5-10 days of long term walking along the famous West Highland Way, all the way from Glasgow to Highland, we simply enjoyed the start of the route and the Mugdock country park nearby.
 
 ## A purple world of wild flowers
