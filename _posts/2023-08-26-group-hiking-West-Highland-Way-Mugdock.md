@@ -5,61 +5,28 @@ layout: post
 categories: media
 ---
 
-![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
+![Jumping](assets/empty_folder/2023-8-26-hiking/WechatIMG231.jpg)
 
 
-While feeling not ready yet to have 5-10 days of long term walking along the famous West Highland Way, all the way from Glasgow to Highland, we simply just enjoyed the start of the route and the Mugdock country park nearby.
+While feeling not ready yet to have 5-10 days of long term walking along the famous West Highland Way, all the way from Glasgow to Highland, we simply enjoyed the start of the route and the Mugdock country park nearby.
 
-## MathJax
+## A purple world of wild flowers
+![Sea Flower](assets/empty_folder/2023-8-26-hiking/WechatIMG180.jpg)
+![Sea Flower2](assets/empty_folder/2023-8-26-hiking/WechatIMG291.jpg)
 
-You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
+## A World War II gun site
+![gunsite](assets/empty_folder/2023-8-26-hiking/WechatIMG127.jpg)
+![gunsite2](assets/empty_folder/2023-8-26-hiking/WechatIMG180.jpg)
 
-[Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
+## Enjoying the beautiful tree and sunlight
+![tree](assets/empty_folder/2023-8-26-hiking/WechatIMG279.jpg)
 
-$$ e^{i\theta}=\cos(\theta)+i\sin(\theta) $$
+## Resting by a stream
+![stream](assets/empty_folder/2023-8-26-hiking/WechatIMG279.jpg)
 
-The [Euler-Lagrange](https://en.wikipedia.org/wiki/Lagrangian_mechanics) differential equation is the fundamental equation of calculus of variations.
+## Simply just relax and enjoy the soft grass
+![grass 1](assets/empty_folder/2023-8-26-hiking/WechatIMG120.jpg)
+![grass 2](assets/empty_folder/2023-8-26-hiking/WechatIMG119.jpg)
 
-$$ \frac{\mathrm{d}}{\mathrm{d}t} \left ( \frac{\partial L}{\partial \dot{q}} \right ) = \frac{\partial L}{\partial q} $$
 
-The [Schrödinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation) describes how the quantum state of a quantum system changes with time.
 
-$$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t) $$
-
-## Code
-
-Embed code by putting `{{ "{% highlight language " }}%}` `{{ "{% endhighlight " }}%}` blocks around it. Adding the parameter `linenos` will show source lines besides the code.
-
-{% highlight c %}
-
-static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocator* requestAlloc)
-{
-    struct Admin* admin = Identity_check((struct Admin*) vAdmin);
-    int64_t enabled = admin->asyncEnabled;
-    Dict d = Dict_CONST(String_CONST("asyncEnabled"), Int_OBJ(enabled), NULL);
-    Admin_sendMessage(&d, txid, admin);
-}
-
-{% endhighlight %}
-
-## Gists
-
-With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can embed gists simply by using the `gist` command:
-
-<script src="https://gist.github.com/5555251.js?file=gist.md"></script>
-
-## Images
-
-Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
-
-A wrapper `div` with the class `large` can be used to increase the width of an image or iframe.
-
-![Flower](https://user-images.githubusercontent.com/4943215/55412447-bcdb6c80-5567-11e9-8d12-b1e35fd5e50c.jpg)
-
-[Flower](https://unsplash.com/photos/iGrsa9rL11o) by Tj Holowaychuk
-
-## Embedded content
-
-You can also embed a lot of stuff, for example from YouTube, using the `embed.html` include.
-
-{% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
