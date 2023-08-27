@@ -1,5 +1,5 @@
 ---
-title:  "Group Hiking at Mugdock"
+title:  "Group Hiking at Mugdock (August 2023)"
 mathjax: true
 layout: post
 categories: media
@@ -7,6 +7,8 @@ categories: media
 
 ![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
 
+
+While feeling not ready yet to have 5-10 days of long term walking along the famous West Highland Way, all the way from Glasgow to Highland, we simply just enjoyed the start of the route and the Mugdock country park nearby.
 
 ## MathJax
 
