@@ -11,25 +11,25 @@ While feeling not ready yet to have 5-10 days of long term walking along the fam
 
 ## A purple world of wild flowers
 
-![Sea Flower](../assets/empty_folder/2023-8-26-hiking/WechatIMG180.jpg){: width="80%"}
+![Sea Flower](../assets/empty_folder/2023-8-26-hiking/WechatIMG180.jpg){: width="90%"}
 
-![Sea Flower2](../assets/empty_folder/2023-8-26-hiking/WechatIMG291.jpg){: width="80%"}
+![Sea Flower2](../assets/empty_folder/2023-8-26-hiking/WechatIMG291.jpg){: width="90%"}
 
 ## A World War II gun site
-![gunsite](../assets/empty_folder/2023-8-26-hiking/WechatIMG127.jpg){: width="80%"}
+![gunsite](../assets/empty_folder/2023-8-26-hiking/WechatIMG127.jpg){: width="90%"}
 
-![gunsite2](../assets/empty_folder/2023-8-26-hiking/WechatIMG228.jpg){: width="80%"}
+![gunsite2](../assets/empty_folder/2023-8-26-hiking/WechatIMG228.jpg){: width="90%"}
 
 ## Enjoying the beautiful tree and sunlight
-![tree](../assets/empty_folder/2023-8-26-hiking/WechatIMG279.jpg){: width="80%"}
+![tree](../assets/empty_folder/2023-8-26-hiking/WechatIMG279.jpg){: width="90%"}
 
 ## Resting by a stream
-![stream](../assets/empty_folder/2023-8-26-hiking/WechatIMG219.jpg){: width="80%"}
+![stream](../assets/empty_folder/2023-8-26-hiking/WechatIMG219.jpg){: width="90%"}
 
 ## Simply just relax and enjoy the soft grass
-![grass 1](../assets/empty_folder/2023-8-26-hiking/WechatIMG120.jpg){: width="80%"}
+![grass 1](../assets/empty_folder/2023-8-26-hiking/WechatIMG120.jpg){: width="90%"}
 
-![grass 2](../assets/empty_folder/2023-8-26-hiking/WechatIMG119.jpg){: width="80%"}
+![grass 2](../assets/empty_folder/2023-8-26-hiking/WechatIMG119.jpg){: width="90%"}
 
 
 
