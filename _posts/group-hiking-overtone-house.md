@@ -9,20 +9,19 @@ We set out to appreciate Spring blossoms but it turned out that early April was 
 
 ## It is still quite cold in early April 
 
-![cold](../assets/empty_folder/2023-4-1-hiking/IMG_8360.JPG)
+![cold](../assets/empty_folder/2023-4-1-hiking/IMG_8360.JPG){: width="90%"}
 
-![cold2](../assets/empty_folder/2023-4-1-hiking/IMG_8367.JPG)
+![cold2](../assets/empty_folder/2023-4-1-hiking/IMG_8367.JPG){: width="90%"}
 
 ## The view is still amazing
-![view](../assets/empty_folder/2023-4-1-hiking/IMG_8368.JPG)
-
-## Many interesting chairs along the way
-![chair](../assets/empty_folder/2023-4-1-hiking/IMG_8364.JPG)
+![view](../assets/empty_folder/2023-4-1-hiking/IMG_8368.JPG){: width="90%"}
 
 ## We ended up having a lot of fun with mosses
-![moss1](../assets/empty_folder/2023-4-1-hiking/IMG_8365.JPG)
+![moss1](../assets/empty_folder/2023-4-1-hiking/IMG_8365.JPG){: width="90%"}
 
-![moss1](../assets/empty_folder/2023-4-1-hiking/IMG_8366.JPG)
+![moss1](../assets/empty_folder/2023-4-1-hiking/IMG_8366.JPG){: width="90%"}
+
+![moss1](../assets/empty_folder/2023-4-1-hiking/IMG_6313.JPG){: width="90%"}
 
 
 ### Heading Three (h3)
