@@ -15,6 +15,9 @@ While feeling not ready yet to have 5-10 days of long term walking along the fam
 
 ![Sea Flower2](../assets/empty_folder/2023-8-26-hiking/WechatIMG291.jpg){: width="90%"}
 
+![Sea Flower3](../assets/empty_folder/2023-8-26-hiking/WechatIMG215.jpg){: width="90%"}
+
+
 ## A World War II gun site
 ![gunsite](../assets/empty_folder/2023-8-26-hiking/WechatIMG127.jpg){: width="90%"}
 
