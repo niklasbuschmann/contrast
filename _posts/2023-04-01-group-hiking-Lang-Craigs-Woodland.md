@@ -1,5 +1,5 @@
 ---
-title:  "Group Hiking at Overtoun (April 2023)"
+title:  "Group Hiking at Lang Craigs Woodland (April 2023)"
 layout: post
 ---
 
