@@ -1,14 +1,14 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "..."
+author: "Jeon Hansol"
+description: ""
 permalink: /:title/
-lang: "en"
+lang: "ko"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
+show_excerpts: false       # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
@@ -20,8 +20,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Mail, icon: envelope, url: "mailto:hansoljeon95@gmail.com"}
+  - {title: Twitter, icon: twitter, url: "https://twitter.com/JeonHansol95"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
