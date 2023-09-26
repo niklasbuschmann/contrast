@@ -6,4 +6,4 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
 # gem "rails"
-gem "github-pages", "~> 215", group: :jekyll_plugins
+# gem "github-pages", "~> 215", group: :jekyll_plugins
