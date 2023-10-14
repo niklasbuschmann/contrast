@@ -231,7 +231,8 @@ async fn exit() -> HttpResponse {
 
 This `POST` endpoint initiates a graceful shutdown of the server. It prints a message and schedules the server to shut down after a 2-second delay using Tokio. Finally, it responds with a message indicating that the server is shutting down.
 
-##### Example
+**Example**
+
 Gracefully shutdown server.
 
 **Input:**
