@@ -25,7 +25,7 @@ The goal of this program is to expose a command-line tool through a REST API. Th
 
 Let's break down the code and understand how each part works.
 
-### The command line tool
+### The command line tool
 
 We create a simple python script - `in_n_out.py` - that reads the standard input and write the same string back to the standard out.
 
