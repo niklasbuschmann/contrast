@@ -17,43 +17,36 @@ I like developing core modules and tools for machine learning that businesses an
 
 ### McKinsey & Company | 2022 - Present
 #### Senior Machine Learning Engineer
-
-- Architecture and development of ML tools for growth and pricing in the B2B space.
+- Lead the development and architecture of machine learning tools to drive growth and pricing strategies in the B2B sector, resulting in a significant improvement in performance and asset code quality.
+- Pioneered the integration of a memory profiler and created a time-based profiler from scratch, enhancing code optimization efforts and facilitating a culture of continuous improvement.
+- Implemented significant enhancements to machine learning models and methodolgies.
+- Spearheaded the GenAI initiative, driving innovative AI approaches and fostering a culture of innovation within the organization.
 
 ### Farfetch | 2021 - 2022
 #### Machine Learning Engineer
-
-- Architecture and development a real time product recommendations system.
+- Architected and developed a real-time product recommendation system, significantly improving recommendations and client impact.
+- Collaborated with cross-functional teams to drive the development of machine learning models, delivering impactful recommendations to millions of users.
 
 ### Consulting | 2020
-- Provided AA and ML services.
+- Provided Advanced Analytics and Machine Learning services, leveraging a deep understanding of AI and data science to assist clients in solving complex business problems.
 
 ### QOMPLX | 2019 - 2021
 #### Quant Analyst
-- Provided professional services - E2E AA and ML solutions.
+- Designed and developed a cutting-edge No Code ML platform for model training, selection, and serving with dataset submission capabilities, streamlining the data science workflow.
+- Developed machine learning pipelines for quantitative finance, resulting in enhanced forecasting, allocation, and risk analysis.
+- Created ETL/ELT pipelines for big data using Kafka, Spark, Avro, and Parquet in Scala, ensuring data accessibility and quality.
+- Engineered real-time APIs in Scala and Akka for efficient data processing.
 
-- Designed and developed a _No   Code_ ML platform for model training, hosting, selection and serving with datasets submission capabilities.
-
-- Developed machine learning pipelines and statistical models for quantitative finance (regime switch models, forecasting, allocation, risk analysis, multi-strategy, portfolio management, etc), search, recommender systems and computer vision.
-
-- Developed several ETL/ELT pipelines for big data using Kafka, Spark, Avro, Parquet in Scala.
-
-- Designed and developed real time APIs in Scala and akka.
-
-### Banco de Portugal | 2017 - 2018
-#### Data Scientist
-- Developed multiple ML and data mining models for datasets cleansing and standardization.
-
-- Developed a mini-compiler for the [Stata progmming languge](https://www.stata.com/) to analyze scripts inputs and outputs.
-
-- Built an incremental backup system.
+Banco de Portugal | 2017 - 2018
+Data Scientist
+- Developed multiple ML and data mining models for datasets cleansing and standardization, leading to improved data quality.
+- Built an incremental backup system to ensure data integrity and security.
+- Designed and implemented a mini-compiler for the Stata programming language, enhancing script analysis and automation.
 
 ### JUMIA | 2016
 #### Software Developer
-
-- Developed a data manipulation web app in [Ruby on Rails](https://rubyonrails.org/) 💎.
-
-- Developed SQL queries and analysis for business intelligence.
+- Developed a data manipulation web application in Ruby on Rails to streamline data processing and analysis.
+- Created SQL queries and conducted business intelligence analysis to provide valuable insights for decision-making.
 
 ---
 
@@ -64,24 +57,28 @@ I like developing core modules and tools for machine learning that businesses an
 <ul>
 <li> Python 🐍</li>
 <li> Rust 🦀</li>
-<li> Scala</li>
 </ul>
 </details>
 
 <details>
-<summary> Machine Learning/Advanced Analytics</summary>
+<summary> Libraries</summary>
 <ul>
 
-<li><code>tensorflow</code> 🐍 & 🦀</li>
-<li><code>pytorch</code> 🐍 & 🦀</li>
-<li><code>sklearn</code> 🐍</li>
+<li><code>tensorflow</code> 🐍 </li>
+<li><code>pytorch</code> 🐍 </li>
+<li><code>sklearn</code> 🐍 </li>
 <li><code>XGBoost</code> 🐍</li>
 <li><code>LightGBM</code> 🐍</li>
 <li><code>transformers</code> 🐍</li>
+<li><code>mlflow</code> 🐍</li>
 <li><code>numpy</code> 🐍</li>
 <li><code>pandas</code> 🐍</li>
+<li><code>FastAPI</code> 🐍</li>
+<li><code>PyDantic</code> 🐍</li>
+<li><code>pandera</code> 🐍</li>
 <li><code>polars</code> 🦀</li>
 <li><code>ndarray</code> 🦀</li>
+<li><code>actix</code> 🦀</li>
 </ul>
 </details>
 
@@ -107,12 +104,12 @@ I like developing core modules and tools for machine learning that businesses an
 
 <li>Spark</li>
 <li>Kafka</li>
-<li>Airflow</li>
 <li>MongoDB</li>
 <li>PostgreSQL</li>
 <li>Avro</li>
 <li>Parquet</li>
 <li>Arrow</li>
+<li>Airflow</li>
 </ul>
 </details>
 
