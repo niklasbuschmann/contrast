@@ -6,7 +6,9 @@ categories: media
 ---
 
 A first look at Mojo. In this post I scratch the surface of Mojo's syntax and compare how its borrow semantics compare to rust's.
+
 ---
+
 
 # Mojo - An Introduction
 
