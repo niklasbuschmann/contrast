@@ -140,10 +140,8 @@ let name_with_surname = add_surname(name)"""
 
 ### Error 3: Ownership and Transfer Operator
 
-```python
-"""Transfering `name` to the function will destroy `name` it in the current scope
-making it unusable from this point forward
-"""
+Transfering `name` to the function will destroy `name` it in the current scope
+making it unusable from this point forward.
 
 Running:
 ```python
