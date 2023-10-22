@@ -1,5 +1,5 @@
 ---
-title:  "mojo - An Introduction"
+title:  "Mojo - An Introduction"
 mathjax: true
 layout: post
 categories: media
