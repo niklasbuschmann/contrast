@@ -4,23 +4,25 @@ permalink: "/about/"
 layout: page
 ---
 
-Olá, I'm Bernardo ⚡ I'm a Senior Machine Learning engineer based in Porto, Portugal 🇵🇹.
+Olá, I'm Bernardo ⚡ I'm a Senior Machine Learning Engineer and Tech Lead based in Porto, Portugal 🇵🇹.
 
-I build growth and pricing ML tools for B2B at **[McKinsey & Company](https://mckinsey.com)**. 
+I currently build Growth 📈 and Pricing $ ML solutions for B2B and developer tools 🛠️ at **[McKinsey & Company](https://mckinsey.com)**. 
 
-I'm the co-creator of **[Shipped Brain](http://shippedbrain.com)**, an E2E ML platform for easy model deployment, discovery and serving. I also like to code in **[Rust](https://www.rust-lang.org/)** 🦀 and build fast advanced analytic (AA) tools.
+My background is in designing and implementing ML systems and tools. My expertise focuses on serving real-time predicitons and features and managing the ML lifecycle.
 
-I like developing core modules and tools for machine learning that businesses and practitioners can leverage, solving business problems with AI and employ MLOps. I lean towards streaming/real time systems, deep learning and applied ML.
+I have also lead several initiatives, such as the GenAI for B2B growth and pricing strategies and the development of new ML models, pipelines and methodologies to enhance data-driven insights and model performance.
 
 
 ## Experience
 
 ### McKinsey & Company | 2022 - Present
-#### Senior Machine Learning Engineer
+#### Senior Machine Learning Engineer | Tech Lead
 - Lead the development and architecture of machine learning tools to drive growth and pricing strategies in the B2B sector, resulting in a significant improvement in performance and asset code quality.
-- Pioneered the integration of a memory profiler and created a time-based profiler from scratch, enhancing code optimization efforts and facilitating a culture of continuous improvement.
+- Created a time-based profiler from scratch and pioneered the integration of a memory profiler, enhancing code optimization efforts and facilitating a culture of continuous improvement.
+- Deployed a benchmarking framework and methodology to track and report different ML pipelines' CPU and memory performance.
 - Implemented significant enhancements to machine learning models and methodolgies.
-- Spearheaded the GenAI initiative, driving innovative AI approaches and fostering a culture of innovation within the organization.
+- Spearheaded the GenAI initiative, driving innovative AI approaches for B2B growth and pricing.
+- Created a data prepartion tool to validate, map columns and coerce types of datasets by introspecting ML pipelines data requirements. The tool was capable of generating data pipelines automatically and provided a CLI interface and a programtic API.
 
 ### Farfetch | 2021 - 2022
 #### Machine Learning Engineer
@@ -37,8 +39,8 @@ I like developing core modules and tools for machine learning that businesses an
 - Created ETL/ELT pipelines for big data using Kafka, Spark, Avro, and Parquet in Scala, ensuring data accessibility and quality.
 - Engineered real-time APIs in Scala and Akka for efficient data processing.
 
-Banco de Portugal | 2017 - 2018
-Data Scientist
+### Banco de Portugal | 2017 - 2018
+#### Data Scientist
 - Developed multiple ML and data mining models for datasets cleansing and standardization, leading to improved data quality.
 - Built an incremental backup system to ensure data integrity and security.
 - Designed and implemented a mini-compiler for the Stata programming language, enhancing script analysis and automation.
@@ -56,6 +58,7 @@ Data Scientist
 <summary>Programming Languages</summary>
 <ul>
 <li> Python 🐍</li>
+<li> Go 💨</li>
 <li> Rust 🦀</li>
 </ul>
 </details>
@@ -76,6 +79,11 @@ Data Scientist
 <li><code>FastAPI</code> 🐍</li>
 <li><code>PyDantic</code> 🐍</li>
 <li><code>pandera</code> 🐍</li>
+<li><code>standard library</code> 💨</li>
+<li><code>fiber</code> 💨</li>
+<li><code>sqlx</code> 💨</li>
+<li><code>cobra</code> 💨</li>
+<li><code>viper</code> 💨</li>
 <li><code>polars</code> 🦀</li>
 <li><code>ndarray</code> 🦀</li>
 <li><code>actix</code> 🦀</li>
