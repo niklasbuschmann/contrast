@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-This blog post provides insights into Golang's concurrent programming features. It delves into the implementation of actors, independent entities communicating through messages. We do a walthorugh over a simple actor system implementation in go, which  showcases actor creation, message sending, and concurrent message processing, highlighting the principles of the actor model.
+This blog post provides insights into Golang's concurrent programming features. It delves into the implementation of actors, independent entities communicating through messages. We do a walkthrough over a simple actor system implementation in go, which  showcases actor creation, message sending, and concurrent message processing, highlighting the principles of the actor model.
 
 ---
 
@@ -25,7 +25,7 @@ Let's dive into the provided Golang program to understand how actors are impleme
 ### The Program
 **Sharing Data**
 
-Lets first demontrate a `struct` to share data across actors:
+Lets first demonstrate a `struct` to share data across actors:
 
 ```go
 type ShareState struct {
