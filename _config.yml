@@ -23,7 +23,6 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:bernardo@shippedbrain.com"}
   - {title: Github, icon: github, url: "https://github.com/bernardo-sb"}
   - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/bernardo-lemos/"}
-  - {title: Shipped Brain, icon: brain, url: "http://shippedbrain.com"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
