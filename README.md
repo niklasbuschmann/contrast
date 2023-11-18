@@ -20,9 +20,9 @@ I have also lead several initiatives, such as the GenAI for B2B growth and prici
 - Lead the development and architecture of machine learning tools to drive growth and pricing strategies in the B2B sector, resulting in a significant improvement in performance and asset code quality.
 - Created a time-based profiler from scratch and pioneered the integration of a memory profiler, enhancing code optimization efforts and facilitating a culture of continuous improvement.
 - Deployed a benchmarking framework and methodology to track and report different ML pipelines' CPU and memory performance.
-- Implemented significant enhancements to machine learning models and methodolgies.
+- Implemented significant enhancements to machine learning models and methodologies.
 - Spearheaded the GenAI initiative, driving innovative AI approaches for B2B growth and pricing.
-- Created a data prepartion tool to validate, map columns and coerce types of datasets by introspecting ML pipelines data requirements. The tool was capable of generating data pipelines automatically and provided a CLI interface and a programtic API.
+- Created a data preparation tool to validate, map columns and coerce types of datasets by introspecting ML pipelines data requirements. The tool was capable of generating data pipelines automatically and provided a CLI interface and a programatic API.
 
 ### Farfetch | 2021 - 2022
 #### Machine Learning Engineer
