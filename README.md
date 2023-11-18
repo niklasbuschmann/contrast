@@ -8,7 +8,7 @@ Olá, I'm Bernardo ⚡ I'm a Senior Machine Learning Engineer and Tech Lead base
 
 I currently build Growth 📈 and Pricing $ ML solutions for B2B and developer tools 🛠️ at **[McKinsey & Company](https://mckinsey.com)**. 
 
-My background is in designing and implementing ML systems and tools. My expertise focuses on serving real-time predicitons and features and managing the ML lifecycle.
+My background is in designing and implementing ML systems and tools. My expertise focuses on serving real-time predictions and features and managing the ML lifecycle.
 
 I have also lead several initiatives, such as the GenAI for B2B growth and pricing strategies and the development of new ML models, pipelines and methodologies to enhance data-driven insights and model performance.
 
