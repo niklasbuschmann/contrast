@@ -52,10 +52,10 @@ To render *plantuml* we need to select a server
 * [use the online server](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
 
 ### why opentelemetry-demo
-
 I read and follow **otel** and the repo is public available.
 
-[The architecture](https://github.com/open-telemetry/opentelemetry-demo/blob/main/docs/current_architecture.md)
+
+[The architecture](https://opentelemetry.io/docs/demo/architecture/)
 of the demo shows services that made up a **simple** online shop.
 This is a perfect example to show the capability of plantuml and the simplicity on how a diagram can be build
 by using *diagram as code*
@@ -67,100 +67,98 @@ by using *diagram as code*
 The first step is to create the same amount of boxes we have for the original
 diagram and coloring
 
-<details>
-<summary>Code snipped</summary>
 
-```plantuml
 
-@startuml
-rectangle "\nInternet" as internet
+        ```plantuml
 
-rectangle "\nLoad Generator" as load_generator #3572A5;text:white
-rectangle "\nFront end" as frontend #E07114
-rectangle "\nFrontend Proxy (Envoy)" as frontend_proxy #ED2F6B;text:white
+        @startuml
+        rectangle "\nInternet" as internet
 
-' incoming traffic
-frontend_proxy -[#black]-> frontend
-internet -[#black]-> frontend_proxy
-load_generator -[#black]-> frontend
+        rectangle "\nLoad Generator" as load_generator #3572A5;text:white
+        rectangle "\nFront end" as frontend #E07114
+        rectangle "\nFrontend Proxy (Envoy)" as frontend_proxy #ED2F6B;text:white
 
-together {
-    rectangle "\nAd service" as ad_service #9F5F15
-    rectangle "\nFraud Detection Service" as fraud_detection_service #420090;text:white
-    rectangle "\nAccounting SErvice" as accounting_service #139DCF
-    rectangle "\nCheckout Service" as checkout_service #139DCF
-}
+        ' incoming traffic
+        frontend_proxy -[#black]-> frontend
+        internet -[#black]-> frontend_proxy
+        load_generator -[#black]-> frontend
 
-frontend =[#black]=> ad_service
-frontend =[#black]=> checkout_service
+        together {
+            rectangle "\nAd service" as ad_service #9F5F15
+            rectangle "\nFraud Detection Service" as fraud_detection_service #420090;text:white
+            rectangle "\nAccounting SErvice" as accounting_service #139DCF
+            rectangle "\nCheckout Service" as checkout_service #139DCF
+        }
 
-' layer 3
+        frontend =[#black]=> ad_service
+        frontend =[#black]=> checkout_service
 
-queue "\nKafka" as kafka #white;line:black
+        ' layer 3
 
-fraud_detection_service .[#black].> kafka
-accounting_service .[#black].> kafka
-checkout_service .[#black].> kafka
+        queue "\nKafka" as kafka #white;line:black
 
-together {
-    rectangle "\nShipping Service" as shipping_service #D49471
-    rectangle "\nRecommendation Service" as recommendation_service #3572A5;text:white
-}
+        fraud_detection_service .[#black].> kafka
+        accounting_service .[#black].> kafka
+        checkout_service .[#black].> kafka
 
-frontend =[#black]==> shipping_service
-frontend =[#black]==> recommendation_service
+        together {
+            rectangle "\nShipping Service" as shipping_service #D49471
+            rectangle "\nRecommendation Service" as recommendation_service #3572A5;text:white
+        }
 
-' break
-'
-rectangle "\nCart Service" as cart_service #178600;text:white
+        frontend =[#black]==> shipping_service
+        frontend =[#black]==> recommendation_service
 
-frontend ==[#black]==> cart_service
-checkout_service ==[#black]===> cart_service
+        ' break
+        '
+        rectangle "\nCart Service" as cart_service #178600;text:white
 
-together {
-    rectangle "\nCurrency Service" as currency_service #ED2F6B
-    rectangle "\nEmail Service" as email_service #5C0C11;text:white
-    rectangle "\nPayment Service" as payment_service #ECDC49;text:black
-}
+        frontend ==[#black]==> cart_service
+        checkout_service ==[#black]===> cart_service
 
-checkout_service ==[#black]=> currency_service
-checkout_service --[#black]-> email_service
-checkout_service =[#black]==> payment_service
+        together {
+            rectangle "\nCurrency Service" as currency_service #ED2F6B
+            rectangle "\nEmail Service" as email_service #5C0C11;text:white
+            rectangle "\nPayment Service" as payment_service #ECDC49;text:black
+        }
 
-frontend ==[#black]=> currency_service
+        checkout_service ==[#black]=> currency_service
+        checkout_service --[#black]-> email_service
+        checkout_service =[#black]==> payment_service
 
-rectangle "\nQuote Service" as quote_service #3E4983;text:white
-rectangle "\nProduct_catalog_service" as product_catalog_service #139DCF
+        frontend ==[#black]=> currency_service
 
-checkout_service =[#black]=> product_catalog_service
-shipping_service -[#black]-> quote_service
-recommendation_service =[#black]=> product_catalog_service
+        rectangle "\nQuote Service" as quote_service #3E4983;text:white
+        rectangle "\nProduct_catalog_service" as product_catalog_service #139DCF
 
-' layer 4
-database "\nCache" as cache_redis
+        checkout_service =[#black]=> product_catalog_service
+        shipping_service -[#black]-> quote_service
+        recommendation_service =[#black]=> product_catalog_service
 
-cart_service =[#black]=> cache_redis
+        ' layer 4
+        database "\nCache" as cache_redis
 
-rectangle "\nFeature Flag Service" as feature_flag_service #A72086;text:white
+        cart_service =[#black]=> cache_redis
 
-shipping_service =[#black]=> feature_flag_service
-product_catalog_service =[#black]=> feature_flag_service
-frontend_proxy =[#black]==> feature_flag_service
+        rectangle "\nFeature Flag Service" as feature_flag_service #A72086;text:white
 
-database "\nFeature Flag Store\nPostgresSQL DB" as feature_flag_store
+        shipping_service =[#black]=> feature_flag_service
+        product_catalog_service =[#black]=> feature_flag_service
+        frontend_proxy =[#black]==> feature_flag_service
 
-feature_flag_service =[#black]=> feature_flag_store
+        database "\nFeature Flag Store\nPostgresSQL DB" as feature_flag_store
 
-legend
-    |connection | protocol |
-    | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5JGjLFGIDBaSaZDIm4A0G00>| HTTP |
-    | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5JGYrPEoYbDZRLJq4ZIv798pKi1oW00>| TCP |
-    | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5ImjLFGIDBaSaZDIm4A0G00>| gRPC |
-endlegend
-@enduml
-```
+        feature_flag_service =[#black]=> feature_flag_store
 
-</details>
+        legend
+            |connection | protocol |
+            | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5JGjLFGIDBaSaZDIm4A0G00>| HTTP |
+            | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5JGYrPEoYbDZRLJq4ZIv798pKi1oW00>| TCP |
+            | <img:http://www.plantuml.com/plantuml/png/SoWkIImgAStDuT98r5ImjLFGIDBaSaZDIm4A0G00>| gRPC |
+        endlegend
+        @enduml
+
+        ```
 
 ![image](http://www.plantuml.com/plantuml/png/bLPTR-8w47tthx3AbNhlGoi-e9Js5hKDi5fj7zhbSNSL6MU0B2PE7QTjjDh_ldOWuAa3sY8XalauddDcFE8sqqpfV2q88GguPib203tv_v-5a3C8uqI3Ia0FloUVjuydb6MqihzBIWkzb8a9Vf0iefyW0SMqL6MACAPmKPbeezFhj-zwrnhUzDNhCjQ0eNIHGiPLdDgp9qecca8IbKXp-sPUQ6FSxBTQNPp8Kv5dzXkAE87mLQfepTJAebHvZqg-5VJVSV8YY_yGP9XQbm4UjISNzsvnvDIGvd8T9mkg5PlFOqxUPPrzQym4uwiVPyCT8AcKmbwKIB0qzJX4omNe9IZwYr3pGPn_iXTc2Dv5D0Fr4dCeIHdGxIjj32QzIQldPwwaDZALuh0yeYFGnXlBX4uTeBdrXL7bswDssytceEdAv1smaBOmpcMUQAlTTEmKk3Fl8LkTmIYO7C09bi1NCjUeEhurUXY_oQv3zARIz6Rew5Bhzm1jxmKhGD4E8Syvv1lbs7nbHVzYVyj2IWjjb49Ss-6xAY49EQJVUNNe-N2JJ6eKyOCymdx8qMbHUMOlrNGPfwav2OcPMIDgoAWxwFPR60NTzQ_0vNfjH6JUu2ZascFwTx--LpT3hw3wCE-aVUTc2jYAdE8b4KczsMe1K--cYIbtalgN5qqquCxvg00tp-kG6-i5-xtwgsqMv4f1mWjS_TPOWLURh6u8PeL16QzPB104MCi-lnSqWrRBLQ1s--nMzIChJ1kmfkd6vXGLZ8BkO0DQocBwVrIqeSVC3pzpzoPYuSUYrk7oS8kFLK3mVLYcXlvJBZKWyi_Muep-k3kuxBXw-clkKSaevphaJ3CXpUYxMYAVlpYFSHqUoYRUjNUrH0m8lcaVEcM_IBl4fBCPopQp256SbPUHBwjRQ9x2qcuOCLNF1aKX6K49ysmW9y1qhe1E1CEBRhvnX7F1717l-ktcvONR7KyQL44T2i7qFv28_nOuyOSIa8gfpFH2GVOiFDvQAZ1ZjGsOFZtGqNsD2ZQC46ohhzrB8hUcxdmj_W00)
 
@@ -312,7 +310,7 @@ rectangle "<$nginx>" as nginx_app
 
 ![nginx example](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUBYKipCIyufJKbLiCd9JyylrizBpyohiEDAJ2x9Br8eBKujuYfAJIv9p4lFILLGib61I2if91OhW9bSN20r2hgwTZ2-GsfU2j1e0000)
 
-![with Icons](http://www.plantuml.com/plantuml/png/hLPjJ-Cu4FxkN-5RJjgx3z0NMafPY1RwmdMN3rsAj5hkJfMRk6csYHqS1wYE--ytJXlgmKrN9oqIqCpBCyyyCtRpCTDCwJo92Vab4dwS1voUnpAKMKs4aNZs77EwqWifF4BUqq1gmRKLeVEK1Ugu5l37o9SYQzOWP0enHocKyEYUK1Df1UwERDRyDCupypkD8y6dJr852LFB8itbglBPgiBrdJsop5THYhbP4KkfeKQLDvHL7fLdbPXwbV8VL6Np9QjofelKTSdvFF9vhIU5prCDp68vuzD8QAu4hwp3LSn4MDa33w8CEv5qrGnbfaF5iuVuTP8aMqOYPOebrCpCI42bWYKYH75V0ukOqtVdlsBUtbzYjFduZhACblOtIUjjXE0RoG9wpGLNJ4jLfCHWceQbYHuSjplDo_O7pP_rsTCYqXn3RMS3S4CbXQPS10NIt3p10pqOr3kDHWidLknaYMBonae-h-Xl0_4eLxyZo6bgN03SRmvFhcnoSC10N9b48gHQCJDbyYRhyC-3MSpyvT-7tYiWAPL2Nfn8i3IxSOYM8TSBhkW_XC8Fwjdi03Hu6T2CApZ1l6WAG3UFzA0xR0yRRJTpVQmASLWUq3xNu8sae1CBQ6vyqw3qRL5RpNgzMxTbSWg4qX3pVPaBRRIR32o2h-OjPEEus-yDAt1w2-ulPQuHEtzZT33-9QyJeXUbfXUUfSjElmDePX-p5KX_JCX3plE2K74r0AVFvdz1fB3GWqA83sRvpWf8GghqEogB7ddhP88LgGXo6dP2zc-BkHA1-6GHfIbKGc9cneW6qczrMvq6Gi5d_PRxCab0HEOiZaAkBQPpzYjcTU4vX2h2S2LxSZF5sPAynvV4-klDR1HJRxQ9ANkJEgSdTRJWLdsR0Cfp9sJ5Ei5xPrLzc_LofRZmLvZznbY2bpVPhYMOhG1baB0eHX3SMBRvxLwzrsZiFUBRBsy07BCLZ05hcgvj5gbUlzVgha4BMM3-UqNpdCxSy4FhtiHTkB5eT9YUC-9A1dYbqaKAxN_9fUQe-GTZiLP_qEgU7jjwkjVSMCaWz_NKPvh54bRVrjBreKjlNwzULJPnZhsb9Uw0u9FslwfiBz8MWNGsOrdHTF5-Knn6Vr6UGlWqBUpG4LCxkq5HMCRr-nH03ZdJkU9q63DyqStNZkayPfQ8bvrc_VJ4dWwInc6m2uLKjF_ZHFnQOCLN9I0LjozxJjzQAWvhjGcOVBcX_QiTAfWmGh2jcZjA8Z4FWNbnERpuKeZDQyIBMGOjVHdJbxMJdaT9UBRGEZshrPwUdevI69NEa_W8zgfMFjHI4TOcykjoD4h2oudkvtVTKzN-TFtzPdWzwb-n2RllZvBMPVswNlTUw1ztT-EVLE6R6W_ajrd__lRcqqFhVlJOwPwcdwE6_5fKkklzd4AZfAALy7RSWmgWvaRJZ_07SFu3)
+![with Icons](otel.svg)
 
 ### layout tips
 
