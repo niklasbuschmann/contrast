@@ -81,9 +81,10 @@ I have also lead several initiatives, such as the GenAI for B2B growth and prici
 <li><code>pandera</code> 🐍</li>
 <li><code>standard library</code> 💨</li>
 <li><code>fiber</code> 💨</li>
-<li><code>sqlx</code> 💨</li>
+<li><code>database/sql</code> 💨</li>
 <li><code>cobra</code> 💨</li>
 <li><code>viper</code> 💨</li>
+<li><code>swago/swag</code> 💨</li>
 <li><code>polars</code> 🦀</li>
 <li><code>ndarray</code> 🦀</li>
 <li><code>actix</code> 🦀</li>
