@@ -1,10 +1,51 @@
 ---
-layout: default
-title: "Home"
+layout: page
+title: ""
 ---
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+
+<div class="progress-note">
+  This site is a canvas of my professional journey, evolving and growing every day. I'm excited to share more features and insights with you soon. Got suggestions or ideas? Feel free to <a href="mailto:samedbayer1997@gmail.com">drop me a line</a>!
+</div>
+
+
+<div class="introduction">
+  <div class="bio">
+    <h1>Nice to meet you!</h1>
+    <p>I am Samed Bayer, welcome to my page.</p>
+    <!-- Add a short bio or interesting facts about yourself -->
+    <p>Here's a little about me: [TODO]</p>
+  </div>
+  <img src="/assets/samed_pp.jpeg" alt="Samed Bayer" class="profile-pic">
+</div>
+
+
+
+
+<!-- 
+<div class="latest-blog-posts">
+  <h2>Latest Blog Posts</h2>
+  <ul>
+    {% for post in site.posts limit:2 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div> -->
+
+
+
+
+<div class="social-media">
+  <h2>Connect with Me</h2>
+  <a href="https://github.com/SamedBayer">GitHub</a>
+  <a href="https://www.linkedin.com/in/samed-bayer-094140158/">LinkedIn</a>
+  <a href="mailto:samedbayer1997@gmail.com">Email</a>
+  <!-- Add other social media links here -->
+</div>
+
+

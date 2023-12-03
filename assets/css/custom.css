@@ -1,0 +1,24 @@
+.introduction {
+    display: flex;
+    align-items: flex; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Puts space between the bio and the image */
+  }
+  
+  .bio {
+    flex: 1; /* Allows bio to grow and take up available space */
+    padding-right: 20px; /* Adds some space between the bio and the image */
+  }
+  
+  .profile-pic {
+    max-width: 300px; /* Adjust the size of your image as needed */
+    height: auto; /* Keeps the aspect ratio of the image */
+    flex: none; /* Prevents the image from growing and only takes as much space as needed */
+  }
+
+
+  .progress-note {
+    font-style: italic; /* Example styling */
+    color: #555; /* Subtle text color */
+    margin-top: 20px; /* Spacing from the above content */
+    /* Additional styles as needed */
+  }
