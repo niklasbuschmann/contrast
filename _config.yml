@@ -1,6 +1,7 @@
 title: "Samed Bayer"
 author: "Samed Bayer"
 description: "Technical University of Munich"
+last_updated: "03-12-2023"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -16,13 +17,15 @@ minimal: true             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "index.html", title: "Home", icon: home}
+  # - {file: "README.md", title: "About me"}
+  - {file: "Bayer_Samed_CV.pdf", title: "CV"}
+  # - {file: "blog.md", title: "Blog"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:samedbayer1997@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/SamedBayer"}
-  - {title: LinkedIn, icon: LinkedIn, url: "https://www.linkedin.com/in/samed-bayer-094140158/"}
+  - {title: LinkedIn,  url: "https://www.linkedin.com/in/samed-bayer-094140158/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/

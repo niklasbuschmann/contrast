@@ -2,6 +2,7 @@
 .bundle
 .jekyll-cache
 .sass-cache
+notes.txt
 Gemfile.lock
 _site
 *.gem
