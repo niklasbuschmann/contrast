@@ -1,3 +1,4 @@
 ---
 layout: default
-title: "Blog"
+title: "CV"
+---
