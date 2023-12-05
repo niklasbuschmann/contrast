@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About me"
+title: ""
 ---
 
 I am a lawyer and social scientist passionate about criminal justice research. I have a BA LLB (Hons.) from the
