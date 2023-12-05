@@ -31,7 +31,7 @@ external:                  # shows a footer with social links - for available ic
     icon: github
     url: "https://github.com/ashnadev/ashnadev.github.io"
   - title: "LinkedIn"
-    icon: LinkedIn
+    icon: linkedin
     url: "https://www.linkedin.com/in/ashnadev"
 
 comments:
@@ -40,4 +40,3 @@ comments:
 
 plugins:
  - jekyll-feed
-
