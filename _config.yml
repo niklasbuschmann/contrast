@@ -15,13 +15,24 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "/ashna.pdf", title: "CV", icon: home}
-  - {title: "About me", icon: home}
+  - title: "Home"
+    icon: home
+  - title: "About me"
+    icon: home
+  - file: "/ashna.pdf"
+    title: "CV"
+    icon: home
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:ashnadevaprasad@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/ashnadev.github.io"}
-  - {title: LinkedIn, icon: LinkedIn, url: "www.linkedin.com/in/ashnadev"}
+  - title: "Mail"
+    icon: envelope
+    url: "mailto:ashnadevaprasad@gmail.com"
+  - title: "Github"
+    icon: github
+    url: "https://github.com/ashnadev/ashnadev.github.io"
+  - title: "LinkedIn"
+    icon: LinkedIn
+    url: "https://www.linkedin.com/in/ashnadev"
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
@@ -29,3 +40,4 @@ comments:
 
 plugins:
  - jekyll-feed
+
