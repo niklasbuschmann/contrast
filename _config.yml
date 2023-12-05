@@ -15,13 +15,13 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html", title: "Home", icon: home}
-  - {file: "README.md", title: "About me"}
+  - {file: "/ashna.pdf", title: "CV"}
+  - {title: "About me"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:ashnadevaprasad@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/ashnadev.github.io"}
-  - {title: LinkedIn, icon: Twitter, url: "www.linkedin.com/in/ashnadev"}
+  - {title: LinkedIn, icon: LinkedIn, url: "www.linkedin.com/in/ashnadev"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
