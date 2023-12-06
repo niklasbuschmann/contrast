@@ -27,7 +27,11 @@ external: # shows a footer with social links - for available icons see fontaweso
       url: "mailto:jesselangford472@gmail.com.com",
     }
   - { title: Github, icon: github, url: "https://github.com/JWLangford" }
-  - { title: Subscribe, icon: rss, url: "/feed.xml" }
+  - {
+      title: StackOverflow,
+      icon: stack-overflow,
+      url: "https://stackoverflow.com/users/8101284/jesse-langford",
+    }
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
