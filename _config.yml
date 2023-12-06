@@ -1,6 +1,6 @@
 title: "Jesse Langford"
 author: "Blog Author"
-description: 'Made with <b style="color: #f45;">&lt;3</b>'
+description: "Made with Github Pages"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -17,19 +17,16 @@ minimal: false # use a dark header
 
 navigation: # accepts {file, title, url, icon, sidebaricon}
   - { file: "index.html" }
-  - { file: "README.md" }
+  - { file: "About.md" }
+  - { file: "archive.html" }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
   - {
       title: Mail,
       icon: envelope,
-      url: "mailto:niklasbuschmann@users.noreply.github.com",
+      url: "mailto:jesselangford472@gmail.com.com",
     }
-  - {
-      title: Github,
-      icon: github,
-      url: "https://github.com/niklasbuschmann/contrast",
-    }
+  - { title: Github, icon: github, url: "https://github.com/JWLangford" }
   - { title: Subscribe, icon: rss, url: "/feed.xml" }
 
 comments:
