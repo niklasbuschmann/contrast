@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+{% if site.theme_mode %}
+{% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %} {%
+endif %}
+
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7P3787JG4"></script>
 <script>
@@ -35,18 +40,11 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
-<header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }} </a>
-  {% include menu.html menu=pages %}
+<header style="padding-bottom: 100px;">
+  <!-- <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }} </a>
+  {% include menu.html menu=pages %} -->
 </header>
 
 {{ content }}
-
-{% if site.external %}
-<footer>
-  <div>{{ site.description | default: site.title }}</div>
-  {% include menu.html menu=site.external %}
-</footer>
-{% endif %}
 
 </html>

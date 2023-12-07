@@ -3,23 +3,49 @@
 
 @import index, font, basic, layout, classes
 
-html
-  background: lighten($dark, 70%)
+html > body
   padding: 0 calc(38% - 22em)
 
-body
-  box-shadow: 0 0 .3em lighten($dark, 65%)
+@media (max-width: 33em)
+  #profile-img
+    width: 60%
+    border-radius: 50%
+    box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008
 
-body > header, body > footer
-  background: lighten($dark, 5%)
-  color: $light
+  #home-intro
+    display: flex
+    flex-direction: column-reverse
+    padding-bottom: 100px
+    align-items: center
 
-@media (min-width: 32em)
-  body > header, body > article, body > footer
-    padding: 1.75em calc(22% - 6em)
+  #home-details
+    flex-grow: 1
+    text-align: center
 
+  #home-posts
+    padding: 0 20px
+    display: flex
+    flex-direction: column
+
+@media (min-width: 33em)
+  body > header, body > footer
+    padding: 1.75em calc(22% - 6em) 0 1.75em calc(22% - 6em) 0
+  #home-intro
+    display: flex
+    padding-bottom: 100px
+  #home-details
+    flex-grow: 1
+  #profile-img
+    width: 32%
+    border-radius: 12px
+    box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008
+  #home-posts
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  .home-post
+    border-radius: 12px
+    width: 32%
 @media (prefers-color-scheme: dark)
-  body, body > header, body > footer
-    box-shadow: 0 0 0 1px lighten($dark, 8%)
   html, body > header, body > footer
     background: $dark
