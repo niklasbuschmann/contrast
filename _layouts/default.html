@@ -13,7 +13,7 @@ endif %}
 
   gtag('config', 'G-V7P3787JG4');
 </script>
-<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+<title>{% if page.title %}{{ page.path | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
@@ -40,10 +40,16 @@ endif %}
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
-<header style="padding-bottom: 100px;">
-  <!-- <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }} </a>
-  {% include menu.html menu=pages %} -->
-</header>
+{% if page.path != "index.html" %}
+  <header>
+    <a href="{{ '/' | relative_url }}" class="title">
+      {{ site.title | escape }}
+    </a>
+    {% include menu.html menu=pages %}
+  </header>
+{% endif %}
+
+
 
 {{ content }}
 
