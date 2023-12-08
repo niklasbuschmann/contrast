@@ -1,9 +1,7 @@
 <div id="home-intro">
   <div id="home-details">
     <a href="/about">
-      <h1 style="font-size: 56px; font-weight: 600; color: black">
-        Jesse Langford
-      </h1>
+      <h1 style="font-size: 56px; font-weight: 600">Jesse Langford</h1>
     </a>
     <h2>Software Developer</h2>
     <footer>{% include menu.html menu=site.external %}</footer>
@@ -18,16 +16,18 @@
   {%- assign posts = paginator.posts | default: site.posts -%} {% for post in
   posts %}
   <article class="home-post">
-    <img
-      src="{{ post.thumbnail }}"
-      height="180px"
-      alt=""
-      style="
-        border-radius: 12px;
-        box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d,
-          0 -6px 16px -6px #00000008;
-      "
-    />
+    <a href="{{ post.url | relative_url }}">
+      <img
+        src="{{ post.thumbnail }}"
+        height="180px"
+        alt=""
+        style="
+          border-radius: 12px;
+          box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d,
+            0 -6px 16px -6px #00000008;
+        "
+      />
+    </a>
     <div style="padding: 0px 20px 0px 20px">
       {% include meta.html post=post preview=true %}
     </div>
