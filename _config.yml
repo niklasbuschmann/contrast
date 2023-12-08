@@ -1,6 +1,6 @@
-title: "Blog Title"
+title: "Jesse Langford"
 author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "Made with Github Pages"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -8,25 +8,48 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
-minimal: false             # use a dark header
+show_excerpts: true # show article excerpts on the home page
+show_frame: true # adds a gray frame to the site
+show_sidebar: false # show a sidebar instead of the usual header
+minimal: false # use a dark header
+theme_mode: "light"
 
 # Menu
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+navigation: # accepts {file, title, url, icon, sidebaricon}
+  - { file: "index.html" }
+  - { file: "About.md" }
+  - { file: "archive.html" }
 
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+external: # shows a footer with social links - for available icons see fontawesome.com/icons
+  - { title: Information, icon: "info", url: "/about/" }
+  - {
+      title: Mail,
+      icon: envelope,
+      url: "mailto:jesselangford472@gmail.com.com",
+    }
+  - { title: Github, icon: github, url: "https://github.com/JWLangford" }
+  - {
+      title: StackOverflow,
+      icon: stack-overflow,
+      url: "https://stackoverflow.com/users/8101284/jesse-langford",
+    }
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
 
 plugins:
- - jekyll-feed
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/

@@ -1,5 +1,18 @@
 <!DOCTYPE html>
+
+{% if site.theme_mode %}
+{% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %} {%
+endif %}
+
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V7P3787JG4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V7P3787JG4');
+</script>
 <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,18 +40,17 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
-<header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
-  {% include menu.html menu=pages %}
-</header>
+{% if page.path != "index.html" %}
+  <header>
+    <a href="{{ '/' | relative_url }}" class="title">
+      {{ site.title | escape }}
+    </a>
+    {% include menu.html menu=pages %}
+  </header>
+{% endif %}
+
+
 
 {{ content }}
-
-{% if site.external %}
-<footer>
-  <div>{{ site.description | default: site.title }}</div>
-  {% include menu.html menu=site.external %}
-</footer>
-{% endif %}
 
 </html>

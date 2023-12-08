@@ -1,18 +1,19 @@
 ---
-title:  "Advanced examples"
+title: "Advanced examples"
 mathjax: true
 layout: post
 categories: media
+thumbnail: "https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg"
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 ---
 
 ![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
-
 
 ## MathJax
 
 You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
 
-[Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
+[Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the complex exponential function to the trigonometric functions.
 
 $$ e^{i\theta}=\cos(\theta)+i\sin(\theta) $$
 
@@ -32,10 +33,10 @@ Embed code by putting `{{ "{% highlight language " }}%}` `{{ "{% endhighlight " 
 
 static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocator* requestAlloc)
 {
-    struct Admin* admin = Identity_check((struct Admin*) vAdmin);
-    int64_t enabled = admin->asyncEnabled;
-    Dict d = Dict_CONST(String_CONST("asyncEnabled"), Int_OBJ(enabled), NULL);
-    Admin_sendMessage(&d, txid, admin);
+struct Admin* admin = Identity_check((struct Admin*) vAdmin);
+int64_t enabled = admin->asyncEnabled;
+Dict d = Dict_CONST(String_CONST("asyncEnabled"), Int_OBJ(enabled), NULL);
+Admin_sendMessage(&d, txid, admin);
 }
 
 {% endhighlight %}
@@ -48,7 +49,7 @@ With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can em
 
 ## Images
 
-Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
+Upload an image to the _assets_ folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
 
 A wrapper `div` with the class `large` can be used to increase the width of an image or iframe.
 

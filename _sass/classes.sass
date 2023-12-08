@@ -6,13 +6,11 @@
 
 .more a
   border-radius: 2px
-  border: 1.5px solid $link-color
+  border: 1.5px solid
   padding: .4em .8em
   transition: .2s background, .2s color
 
 .more a:hover
-  color: #fff
-  background: $link-color
   text-decoration: inherit
 
 .archive
@@ -138,3 +136,14 @@ a:hover .icon
     color: #f92672
   .gi
     color: #a6e22e
+
+.excerpt 
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 2 
+  overflow: hidden
+  text-overflow: ellipsis
+  font-size: 12px
+  line-height: 1.5
+  color: reduce(100)
+        

@@ -1,16 +1,49 @@
-{%- assign posts = paginator.posts | default: site.posts -%}
-{% for post in posts %}
-  <article>
-    {% include meta.html post=post preview=true %}
-    {{ post.excerpt }}
-    <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
-  </article>
-{% endfor %}
+<div id="home-intro">
+  <div id="home-details">
+    <a href="/about">
+      <h1 style="font-size: 56px; font-weight: 600">Jesse Langford</h1>
+    </a>
+    <h2>Software Developer</h2>
+    <footer>{% include menu.html menu=site.external %}</footer>
+  </div>
+  <img
+    id="profile-img"
+    src="https://s3.amazonaws.com/jesselangford.dev/images/profile.jpeg"
+  />
+</div>
 
+<div id="home-posts">
+  {%- assign posts = paginator.posts | default: site.posts -%} {% for post in
+  posts %}
+  <article class="home-post">
+    <a href="{{ post.url | relative_url }}">
+      <img
+        src="{{ post.thumbnail }}"
+        height="180px"
+        alt=""
+        style="
+          border-radius: 12px;
+          box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d,
+            0 -6px 16px -6px #00000008;
+        "
+      />
+    </a>
+    <div style="padding: 0px 20px 0px 20px">
+      {% include meta.html post=post preview=true %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
 {% if paginator.total_pages > 1 %}
-  <footer>
-    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
-    <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
-  </footer>
+<footer>
+  {% if paginator.previous_page %}<a
+    href="{{ paginator.previous_page_path | relative_url }}"
+    >« newer posts</a
+  >{% else %}<span></span>{% endif %}
+  <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}<a
+    href="{{ paginator.next_page_path | relative_url }}"
+    >older posts »</a
+  >{% else %}<span></span>{% endif %}
+</footer>
 {% endif %}
