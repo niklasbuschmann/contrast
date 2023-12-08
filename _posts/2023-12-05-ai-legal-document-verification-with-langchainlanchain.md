@@ -2,10 +2,10 @@
 title: "AI Legal Document Verification With Langchain.js"
 layout: post
 excerpt: "My company has an Acceptable Use Policy all customers must follow. Despite our best efforts, we continue to have signups who violate the AUP. I wanted to build a solution to ensure no company could slip by us. It saves our customer service team an uncomfortable conversation and gives my superiors a sense of calm, knowing nobody is getting by."
-thumbnail: "https://jesselangford-cdn.s3.amazonaws.com/images/legal.jpg"
+thumbnail: "https://s3.amazonaws.com/jesselangford.dev/images/ai-legal.jpg"
 ---
 
-![legal](https://jesselangford-cdn.s3.amazonaws.com/images/legal.jpg)
+![legal](https://s3.amazonaws.com/jesselangford.dev/images/ai-legal.jpg)
 
 My company has an Acceptable Use Policy all customers must follow. Despite our best efforts, we continue to have signups who violate the AUP. I wanted to build a solution to ensure no company could slip by us. It saves our customer service team an uncomfortable conversation and gives my superiors a sense of calm, knowing nobody is getting by.
 
