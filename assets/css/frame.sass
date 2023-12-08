@@ -27,6 +27,13 @@ html > body
     display: flex
     flex-direction: column
 
+  .post
+    padding: 20px
+  
+  .post-title
+    font-size: 24px 
+    font-weight: 600
+
 @media (min-width: 33em)
   body > header, body > footer
     padding: 1.75em calc(22% - 6em) 0 1.75em calc(22% - 6em) 0
@@ -46,6 +53,9 @@ html > body
   .home-post
     border-radius: 12px
     width: 32%
+  .post-title
+    font-size: 48px 
+    font-weight: 600
 @media (prefers-color-scheme: dark)
   html, body > header, body > footer
     background: $dark
