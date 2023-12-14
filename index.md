@@ -66,7 +66,7 @@ layout: page
 
 ## Invited addresses
 
-2024   Invited scholar for 6 months at Duke University (USA) with Mark Chaves (forthcoming) |
+- 2024 : Invited scholar for 6 months at Duke University (USA) with Mark Chaves (forthcoming) 
 
 ## Peer Review Experience:
 
