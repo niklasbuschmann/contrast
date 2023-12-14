@@ -87,18 +87,18 @@ layout: page
    - Training
       - Machine learning (USI Summer School, prof. M. Steenbergen)
 - Coordination
-   - Organized he coordination with the scientific partners ([ZRWP](https://theologie.unibas.ch/de/fakultaet/zentrum-religion-wirtschaft-politik/) of the University of Basel and the [CIC](https://cic-info.ch/))
+   - Organized the coordination with the scientific partners ([ZRWP](https://theologie.unibas.ch/de/fakultaet/zentrum-religion-wirtschaft-politik/) of the University of Basel and the [CIC](https://cic-info.ch/))
 - Team management 
    - Led a team of student assistants (up to 5 people simultaneously)
    - Supervised the census of Swiss religious communities (N ≈ 6000)
 - Practical skills
-   -  Mass mailing (created 2500 personalized invitation letters (Julia script) and organized the physical mailing to contact and survey the communities leaders)
-   -  Rudimentary web content creation [(NCSS 2 website)](https://wp.unil.ch/ncs2/) 
+   -  Mass mailing (2500 personalized invitation letters and physical mailing to contact and survey the communities leaders)
+   -  (very) Rudimentary web content creation [(NCSS 2 website)](https://wp.unil.ch/ncs2/) 
 
 ## Links
-|-----------------|---------------------------------------------------------------------|
-| E-Mail          | jeremy.senn@unil.ch                                                 |
-| ORCID           | https://orcid.org/0000-0002-0291-9163                               |
-| Google scholar  | https://scholar.google.com/citations?user=bHbRaKkAAAAJ&hl=fr&oi=sra |
+
+[E-Mail](mailto:jeremy.senn@unil.ch)
+[ORCID](https://orcid.org/0000-0002-0291-9163)
+[Google Scholar](https://scholar.google.com/citations?user=bHbRaKkAAAAJ&hl=fr&oi=sra)
 
 
