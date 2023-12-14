@@ -13,7 +13,7 @@ layout: page
 
 ### Academia
 
-- Senn, J., Stolz, J. and Monnot, C. (2023). Diversity dynamics. How local religious groups are born, stay, and die over time. (Revise and resubmit, Journal for the Scientific Study of Religion)
+- Senn, J., Stolz, J. and Monnot, C. (2023). Diversity dynamics. How local religious groups are born, stay, and die over time. (Accept with minor revision, Journal for the Scientific Study of Religion)
 - Stolz, J. and Senn, J. (2023). Religious markets, religious marketing, and individual religious choice in Europe. In Fokas, E. and Georgie, A. (eds.) _Routledge Handbook on Politics and Religion in Europe_. London: Routledge. (in print)
 - Stolz, J. and Senn, J. (2023). Säkularisierung und der Anstieg der Konfessionslosen in der Schweiz. Eine soziologische Perspektive. In Schulthess (Ed.). In _Zeiten der Säkularisierung. Herausforderungen für das Verhältnis von Staat und Religion_.
 - Stolz, J., & Senn, J. (2022). Generationen abnehmenden Glaubens. In J. Stolz, A. Bünker, A. Liedhegener, E. Baumann-Neuhaus, I. Becci, Z. Dandarova Robert, J. Senn, P. Tanner, O. Wäckerlig, & U. Winter-Pfändler (Eds.), _Religionstrends in der Schweiz : Religion, Spiritualität und Säkularität im gesellschaftlichen Wandel_ (pp. 7-31). Springer Fachmedien Wiesbaden. https://doi.org/10.1007/978-3-658-36568-4_2 
@@ -64,11 +64,18 @@ layout: page
 `University of Lausanne`
    - *L'évolution du paysage religieux suisse (2008-2020). Diversité, mortalité et fusions des groupes religieux locaux*
 
+## Invited addresses
+
+| 2024 | Invited scholar for 6 months at Duke University (USA) with Mark Chaves (forthcoming) |
+|------|--------------------------------------------------------------------------------------|
+
+
 ## Peer Review Experience:
 
 - Social Compass, 2023 - Present (Reviewed 1 article)
 
 ## Awards
+
 - Prize for the best Master of Arts thesis in sociology at the University of Neuchâtel ($1,000), "The hegemony of genes? Kinship as thought and practiced by people born of sperm donation".
 
 ## Languages
@@ -89,5 +96,12 @@ layout: page
 - Practical skills
    -  Mass mailing (created 2500 personalized invitation letters (Julia script) and organized the physical mailing to contact and survey the communities leaders)
    -  Rudimentary web content creation [(NCSS 2 website)](https://wp.unil.ch/ncs2/) 
+
+## Links
+
+| E-Mail          | jeremy.senn@unil.ch                                                 |
+|-----------------|---------------------------------------------------------------------|
+| ORCID           | https://orcid.org/0000-0002-0291-9163                               |
+| Google scholar  | https://scholar.google.com/citations?user=bHbRaKkAAAAJ&hl=fr&oi=sra |
 
 
