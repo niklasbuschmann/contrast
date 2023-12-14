@@ -66,9 +66,7 @@ layout: page
 
 ## Invited addresses
 
-| 2024 | Invited scholar for 6 months at Duke University (USA) with Mark Chaves (forthcoming) |
-|------|--------------------------------------------------------------------------------------|
-
+2024   Invited scholar for 6 months at Duke University (USA) with Mark Chaves (forthcoming) |
 
 ## Peer Review Experience:
 
@@ -98,9 +96,8 @@ layout: page
    -  Rudimentary web content creation [(NCSS 2 website)](https://wp.unil.ch/ncs2/) 
 
 ## Links
-
-| E-Mail          | jeremy.senn@unil.ch                                                 |
 |-----------------|---------------------------------------------------------------------|
+| E-Mail          | jeremy.senn@unil.ch                                                 |
 | ORCID           | https://orcid.org/0000-0002-0291-9163                               |
 | Google scholar  | https://scholar.google.com/citations?user=bHbRaKkAAAAJ&hl=fr&oi=sra |
 
