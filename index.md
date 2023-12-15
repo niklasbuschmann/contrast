@@ -13,19 +13,23 @@ layout: page
 
 ### Academia
 
+#### Research articles 
 - Senn, J., Stolz, J. and Monnot, C. (2023). Diversity dynamics. How local religious groups are born, stay, and die over time. (Accept with minor revision, Journal for the Scientific Study of Religion)
-- Stolz, J. and Senn, J. (2023). Religious markets, religious marketing, and individual religious choice in Europe. In Fokas, E. and Georgie, A. (eds.) _Routledge Handbook on Politics and Religion in Europe_. London: Routledge. (in print)
-- Stolz, J. and Senn, J. (2023). Säkularisierung und der Anstieg der Konfessionslosen in der Schweiz. Eine soziologische Perspektive. In Schulthess (Ed.). In _Zeiten der Säkularisierung. Herausforderungen für das Verhältnis von Staat und Religion_.
-- Stolz, J., & Senn, J. (2022). Generationen abnehmenden Glaubens. In J. Stolz, A. Bünker, A. Liedhegener, E. Baumann-Neuhaus, I. Becci, Z. Dandarova Robert, J. Senn, P. Tanner, O. Wäckerlig, & U. Winter-Pfändler (Eds.), _Religionstrends in der Schweiz : Religion, Spiritualität und Säkularität im gesellschaftlichen Wandel_ (pp. 7-31). Springer Fachmedien Wiesbaden. https://doi.org/10.1007/978-3-658-36568-4_2 
+- Stolz, J., Senn, J. (2023). Religious markets, religious marketing, and individual religious choice in Europe. In Fokas, E. and Georgie, A. (eds.) _Routledge Handbook on Politics and Religion in Europe_. London: Routledge. (in print)
+- Stolz, J., Senn, J. (2023). Säkularisierung und der Anstieg der Konfessionslosen in der Schweiz. Eine soziologische Perspektive. In Schulthess (Ed.). In _Zeiten der Säkularisierung. Herausforderungen für das Verhältnis von Staat und Religion_.
+- Stolz, J., and Senn, J. (2022). Generationen abnehmenden Glaubens. In J. Stolz, A. Bünker, A. Liedhegener, E. Baumann-Neuhaus, I. Becci, Z. Dandarova Robert, J. Senn, P. Tanner, O. Wäckerlig, & U. Winter-Pfändler (Eds.), _Religionstrends in der Schweiz : Religion, Spiritualität und Säkularität im gesellschaftlichen Wandel_ (pp. 7-31). Springer Fachmedien Wiesbaden. https://doi.org/10.1007/978-3-658-36568-4_2 
    - [Full text](https://link.springer.com/content/pdf/10.1007/978-3-658-36568-4_2.pdf)
    - [English short version published in *Social change in Switzerland*](https://forscenter.ch/wp-content/uploads/2022/02/stolz_final_en.pdf)
-   - [French short version published in *Social change in Switzerland*](https://www.socialchangeswitzerland.ch/wp-content/uploads/2021/11/20211030_Stolz_Senn_FR-final_2.pdf)  
+   - [French short version published in *Social change in Switzerland*](https://www.socialchangeswitzerland.ch/wp-content/uploads/2021/11/20211030_Stolz_Senn_FR-final_2.pdf)
+
+#### Dataset
+- Senn, J., Stolz, J. (2023), NCSS II Dataset \[csv & sav formats, 2417 cases, 207 variables, including weights\]
 
 ### Newspapers and online articles
 
 - Senn, J (2023). [Les communautés locales musulmanes en suisse : évolution entre 2008 et 2020](https://islamandsociety.ch/fr/home-2/swiss/organisations/local/#section2) _Islam and Society_
-- Stolz, J., & Senn, J. (2021, November 11). [La foi décroissante, une question de générations.](https://github.com/jsenn2/jsenn2.github.io/blob/master/Article%20Le%20Temps%20'Opinion'.pdf) _Le Temps_.
-- Stolz, J., & Senn, J. (2021, December 30). [Warum sich die Kirchen leeren](https://www.nzz.ch/meinung/die-saekularisierung-nimmt-von-generation-zu-generation-zu-ld.1653066?reduced=true) _Neue Zürcher Zeitung_.
+- Stolz, J., Senn, J. (2021, November 11). [La foi décroissante, une question de générations.](https://github.com/jsenn2/jsenn2.github.io/blob/master/Article%20Le%20Temps%20'Opinion'.pdf) _Le Temps_.
+- Stolz, J., Senn, J. (2021, December 30). [Warum sich die Kirchen leeren](https://www.nzz.ch/meinung/die-saekularisierung-nimmt-von-generation-zu-generation-zu-ld.1653066?reduced=true) _Neue Zürcher Zeitung_.
 
 ### Media interviews/mentions
 #### Radio
