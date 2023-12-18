@@ -24,7 +24,7 @@ layout: page
   - [English short version published in *Social change in Switzerland*](https://forscenter.ch/wp-content/uploads/2022/02/stolz_final_en.pdf)
   - [French short version published in *Social change in Switzerland*](https://www.socialchangeswitzerland.ch/wp-content/uploads/2021/11/20211030_Stolz_Senn_FR-final_2.pdf)
 
-#### Dataset
+#### Datasets
 
 - Senn, J., Stolz, J. (2023), NCSS II Dataset \[csv & sav formats, 2417 cases, 207 variables, including weights\]
 
