@@ -2,7 +2,7 @@
 title: "CV"
 layout: page
 ---
-![Alt text](photos/circle_2.png "Optional title")
+![Alt text](photos/circle_2_hd.png "Optional title")
 
 ## Occupation
 
