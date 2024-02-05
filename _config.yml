@@ -18,9 +18,7 @@ minimal: false             # use a dark header
 
 # Menu
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html", title: "Home"}
-  - {file: "Publications.html", title: "Publications"}
-  - {file: "Projects.html", title: "Projects"}
-  - {file: "Teaching.html", title: "Teaching"}
-  - {file: "Supervising.html", title: "Supervising"}
+navigation: # accepts {file, title, url, icon, sidebaricon}
+  - { file: "index.html", title: "Home" }
+  - { file: "Publications.html", title: "Publications" }
+  - { file: "Projects.html", title: "Projects" }
