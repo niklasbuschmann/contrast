@@ -1,16 +1,30 @@
+<article>
+  <span class="more"><a href="https://kpnivya.github.io/posts-adaptive-control/">adaptive-control</a></span>
+  <span class="more"><a href="https://kpnivya.github.io/posts-optimal-control/">optimal-control</a></span>
+  <span class="more"><a href="https://kpnivya.github.io/posts-state-estimation/">state-estimation</a></span>
+  <span class="more"><a href="https://kpnivya.github.io/posts-trajectory-generation/">trajectory-generation</a></span>
+  <span class="more"><a href="https://kpnivya.github.io/posts-nonlinear-control/">nonlinear-control</a></span>
+  <span class="more"><a href="https://kpnivya.github.io/posts-battery-management-system/">battery-management-system</a></span>
+  <span class="more"><a href="https://kpnivya.github.io/posts-wiring-harness/">hands-on</a></span>  
+</article>
+
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in posts %}
   <article>
     {% include meta.html post=post preview=true %}
-    {{ post.excerpt }}
+    {% if post.excerpt_img_url %}  <!--check if an image has been assigned to show, otherwise display regular excerpt-->
+      <img src="{{ post.excerpt_img_url }}" alt="Excerpt Image" width="500" height="500">>
+    {% else %}      
+      {{ post.excerpt }}
+    {% endif %}
     <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
   </article>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
   <footer>
-    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
-    <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« Newer Posts</a>{% else %}<span></span>{% endif %}
+    <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">Older Posts »</a>{% else %}<span></span>{% endif %}
   </footer>
 {% endif %}
