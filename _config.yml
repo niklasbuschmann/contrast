@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Roula Nassif"
+author: "Roula Nassif"
+description: "Université Côte d'Azur"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -8,21 +8,24 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
+show_excerpts: true       # show article excerpts on the home page
+show_frame: true          # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "projects.md", title: "Research projects and open positions"}
+  - {file: "publications.md", title: "Publications"}
+  - {file: "teaching.md", title: "Teaching"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+- {title: Mail, icon: envelope, url: "mailto:roula.nassif@unice.fr"}
+- {title: Google Logo, icon: google, url: "https://scholar.google.com/citations?user=blXWkccAAAAJ&hl=en"}
+- {title: Researchgate, icon: researchgate, url: "https://www.researchgate.net/profile/Roula-Nassif"}
+#  - {title: Github, icon: github, url: "https://github.com/Roulanassif"}
+#  - {title: Subscribe, icon: rss, url: "https://twitter.com/NassifRoula"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
