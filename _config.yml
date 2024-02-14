@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Artificial Intelligence Blog"
+author: "Viet Le Hoang"
+description: "Ho Chi Minh University of Technology"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
