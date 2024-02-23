@@ -12,7 +12,7 @@ Trong lĩnh vực AI/ML, data chiếm 80% công việc của các kĩ sư nên v
 
 Chúng ta bắt tay vào thực hành luôn nhé!
 
-Bước 1: Install thư viện scrapetube, youtube-dl với pip
+**Bước 1**: Install thư viện scrapetube, youtube-dl với pip
     
 Cho bạn nào chưa biết, pip là một package manager của Python, nó giúp cho việc cài cắm đơn giản hơn rất nhiều so với việc ta tự download và install thủ công.
 
@@ -24,7 +24,7 @@ Ta dùng đoạn lệnh sau để có thể cài 2 thư viện này nhé
 ```
 pip install scrapetube youtube_dl
 ```
-Bước 2: Code Python thôii
+**Bước 2**: Code Python thôii
 
 ```python
 # Step 1: Import những thư viện cần thiết
