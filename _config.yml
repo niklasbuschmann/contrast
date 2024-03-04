@@ -1,7 +1,7 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
-permalink: /:title/
+title: "Capturing Long-Range Interactions VIA GNNS"
+author: "Ricky Muira, Gita Anand, Sheena Patel"
+description: "Capstone B12 - Group 1"
+permalink: https://sites.google.com/ucsd.edu/capstone-section-b12-au23/home?authuser=0
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
