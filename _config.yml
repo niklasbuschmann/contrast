@@ -20,7 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "huxi2006@outlook.com"}
+  - {title: Mail, icon: envelope, url: "mailto:huxi2006@outlook.com"}
  
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
