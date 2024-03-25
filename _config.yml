@@ -22,3 +22,4 @@ navigation: # accepts {file, title, url, icon, sidebaricon}
   - { file: "index.html", title: "Home" }
   - { file: "Publications.html", title: "Publications" }
   - { file: "Projects.html", title: "Projects" }
+  - { file: "Experience.html", title: "Professional Experience" }
