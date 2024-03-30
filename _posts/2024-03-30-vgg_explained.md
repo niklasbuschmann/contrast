@@ -149,7 +149,7 @@ Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là 
 
   <tr>
     <td style="text-align: center">Conv3-64</td>
-    <td style="text-align: center">Conv3-64<br><b>LRN</td>
+    <td style="text-align: center">Conv3-64<br>LRN</td>
     <td style="text-align: center">Conv3-64<br><b>Conv3-64</td>
     <td style="text-align: center">Conv3-64<br>Conv3-64</td>
     <td style="text-align: center">Conv3-64<br>Conv3-64</td>
