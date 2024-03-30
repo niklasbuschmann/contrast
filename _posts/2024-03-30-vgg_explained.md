@@ -6,7 +6,7 @@ layout: post
 
 Xin chào các bạn!
 
-Trong bài post này mình sẽ giới thiệu về kiến trúc VGG, một trong những kiến trúc lâu đời nhất của mạng tích chập. Thật tình cờ, vào thời điểm viết bài blog này cũng là tròn 10 năm ngày ra mắt của mô hình này. Vậy, mô hình này có gì đặc biệt và có ảnh hưởng đến cách xây dựng các mô hình CNNs sau này như thế nào, chúng ta cùng khám phá nhé.
+Trong bài post này mình sẽ giới thiệu về kiến trúc VGG, một trong những kiến trúc lâu đời nhất của mạng tích chập. Thật tình cờ, vào thời điểm viết bài blog này cũng là tròn 10 năm ngày ra mắt của mô hình này. Vậy, VGG có gì đặc biệt và có ảnh hưởng đến cách xây dựng các mô hình CNNs sau này như thế nào, chúng ta cùng khám phá nhé.
 
 
 ### 1. Một chút background về các tiền bối của VGG  
@@ -14,7 +14,13 @@ Vào thời điểm 10 năm trước, có 2 mô hình CNNs rất nổi trước 
 
 Tuy nhiên, nếu nhìn qua về kiến trúc của cả 2 mạng này, ta sẽ thấy nó khá là nông với chỉ từ 5 đến 6 layers. Một điều nữa là cách sử dụng convolutional layers ở các mạng này là dùng kernel size và stride có kích cỡ lớn ở những layers đầu để thu nhỏ receptive field. 
 
-![Image](https://pabloinsente.github.io/assets/post-8/alexnet.png)
+
+<figure style="text-align: center">
+<img src="https://pabloinsente.github.io/assets/post-8/alexnet.png" alt="Kiến trúc của LeNet-5 và AlexNet">
+<figcaption><b>Hình 1.1.</b> Kiến trúc của LeNet-5 và AlexNet</figcaption>
+</figure>
+
+
 
 Như có thể thấy ở trên, mạng AlexNet có nhiều convolutional layers hơn so với LeNet tuy nhiên, AlexNet chỉ dừng lại ở 5 convolution layers và 3 fully connected layers. 
 
@@ -24,13 +30,103 @@ Mạng VGG khác với các mô hình đi trước ở 2 điểm chính đó là
 Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là A, A-LRN, B, C, D, và E. Với từng options sẽ có thông số cụ thể như sau:
 
 * A: 11 layers với với toàn bộ kernel size là 3x3.  
-* A-LRN: Tương tự như A nhưng sử dụng Local Response Normalisation sau mỗi conv layer như AlexNet.  
+* A-LRN: Tương tự như A nhưng sử dụng Local Response Normalisation sau conv layer đầu tiên.  
 * B: 13 layers với toàn bộ kernel size là 3x3.  
-* C: 16 layers với toàn bộ kernel-size là 3x3 và 1x1.
+* C: 16 layers với toàn bộ kernel-size là 3x3 và 1x1 ở 3 khối cuối cùng.
 * D: 16 layers với  toàn bộ kernel-size là 3x3.  
 * E: 19 layers với toàn bộ kernel-size là 3x3. 
 
-![Image](https://www.researchgate.net/profile/Siti-Nurulain-Mohd-Rum/publication/350550608/figure/fig3/AS:1007769725452289@1617282434523/The-Difference-Architecture-between-AlexNet-and-VGG16-Models.png)
+<table>
+
+<th colspan="6" style="text-align: center"> ConvNet Configuration </th>
+
+<tr>
+    <td style="text-align: center">A</td>
+    <td style="text-align: center">A-LRN</td>
+    <td style="text-align: center">B</td>
+    <td style="text-align: center">C</td>
+    <td style="text-align: center">D</td>
+    <td style="text-align: center">E</td>
+</tr>
+
+<tr>
+    <td style="text-align: center">11 weight layers</td>
+    <td style="text-align: center">11 weight layers</td>
+    <td style="text-align: center">13 weight layers</td>
+    <td style="text-align: center">16 weight layers</td>
+    <td style="text-align: center">16 weight layers</td>
+    <td style="text-align: center">19 weight layers</td>
+</tr>
+
+<td colspan="6" style="text-align: center"> input (224x224 RGB image) </td>
+
+<tr>
+    <td style="text-align: center">Conv3-64</td>
+    <td style="text-align: center">Conv3-64<br><b>LRN</td>
+    <td style="text-align: center">Conv3-64<br><b>Conv3-64</td>
+    <td style="text-align: center">Conv3-64<br>Conv3-64</td>
+    <td style="text-align: center">Conv3-64<br>Conv3-64</td>
+    <td style="text-align: center">Conv3-64<br>Conv3-64</td>
+</tr>
+
+<td colspan="6" style="text-align: center"> Max Pooling  </td>
+
+<tr>
+    <td style="text-align: center">Conv3-128</td>
+    <td style="text-align: center">Conv3-128</td>
+    <td style="text-align: center">Conv3-128<br><b>Conv3-128</td>
+    <td style="text-align: center">Conv3-128<br>Conv3-128</td>
+    <td style="text-align: center">Conv3-128<br>Conv3-128</td>
+    <td style="text-align: center">Conv3-128<br>Conv3-128</td>
+</tr>
+
+<td colspan="6" style="text-align: center"> Max Pooling  </td>
+
+<tr>
+    <td style="text-align: center">Conv3-256<br>Conv3-256</td>
+    <td style="text-align: center">Conv3-256<br>Conv3-256</td>
+    <td style="text-align: center">Conv3-256<br>Conv3-256</td>
+    <td style="text-align: center">Conv3-256<br>Conv3-256<br><b>Conv1-256</td>
+    <td style="text-align: center">Conv3-256<br>Conv3-256<br><b>Conv3-256</td>
+    <td style="text-align: center">Conv3-256<br>Conv3-256<br>Conv3-256<br><b>Conv3-256</td>
+</tr>
+
+<td colspan="6" style="text-align: center"> Max Pooling  </td>
+
+<tr>
+    <td style="text-align: center">Conv3-512<br>Conv3-512</td>
+    <td style="text-align: center">Conv3-512<br>Conv3-512</td>
+    <td style="text-align: center">Conv3-512<br>Conv3-512</td>
+    <td style="text-align: center">Conv3-512<br>Conv3-512<br><b>Conv1-512</td>
+    <td style="text-align: center">Conv3-512<br>Conv3-512<br><b>Conv3-512</td>
+    <td style="text-align: center">Conv3-512<br>Conv3-512<br>Conv3-512<br><b>Conv3-512</td>
+</tr>
+
+<tr>
+<td colspan="6" style="text-align: center"> Max Pooling  </td>
+</tr>
+<tr>
+<td colspan="6" style="text-align: center"> FC-4096  </td>
+</tr>
+<tr>
+<td colspan="6" style="text-align: center"> FC-4096  </td>
+</tr>
+<tr>
+<td colspan="6" style="text-align: center"> FC-1000  </td>
+</tr>
+
+<td colspan="6" style="text-align: center"> Softmax</td>
+
+</table>
+
+
+
+
+
+<figure style="text-align: center">
+  <img src="https://www.researchgate.net/profile/Siti-Nurulain-Mohd-Rum/publication/350550608/figure/fig3/AS:1007769725452289@1617282434523/The_Difference_Architecture_between_AlexNet_and_VGG16_Models.png" alt="The Difference Architecture between AlexNet and VGG16 Models">
+  <figcaption style = "text-align: center" ><b>Hình 2.1.</b> Kiến trúc của AlexNet và VGG-16 (một option trong kiến trúc VGG)</figcaption>
+</figure>
 
 
 So sánh giữa 2 kiến trúc như trên hình thì có thể thấy được rằng kiến trúc VGG sâu hơn hẳn so với AlexNet. 
@@ -122,7 +218,7 @@ Output của mô hình
 ```
 
 ### 4. Thảo luận (Optional)
-Trong các kiến trúc của AlexNet hay LeNet, tại sao họ không làm kiến trúc sâu hơn? Lý do chính bởi vì họ dùng kernel size lớn và đến khoảng layer 5 và 6 thì số lượng features đã rất nhỏ nên họ đã không thể cho thêm nhiều layers để extract features hơn nữa. 
+Trong các kiến trúc của AlexNet hay LeNet, tại sao họ không làm kiến trúc sâu hơn? Lý do chính bởi vì họ dùng kernel size và stride lớn nên đến khoảng layer 5 và 6 thì số lượng features đã rất nhỏ nên họ đã không thể cho thêm nhiều layers để extract features hơn nữa. 
 
 Tại sao tác giả của VGG dùng 3x3 mà không phải là 5x5, 2x2, 4x4? Lý do chính họ sử dụng kernel size 3x3 là vì đây là kernel size nhỏ nhất có thể bắt được toàn bộ vùng xung quanh của một pixels (trái/phải, trên/dưới, và chính giữa). Hơn nữa việc dùng 2 kernel 3x3 tương tự với việc dùng conv 5x5 với ít số lượng parameters hơn, nhưng **khối lượng tính toán sẽ nhiều hơn** (tác giả không nhắc đến điều này trong paper).
 
@@ -132,8 +228,8 @@ Mô hình VGG đã làm thay đổi cách các AI researchers/scientists thiết
 Cảm ơn bạn đã đọc đến cuối bài, hãy ủng hộ mình bằng cách tiếp tục theo dõi và feedback nếu thấy chỗ nào chưa hợp lý nhé. 
 
 ### References
-1. [Very Deep Convolutional Networks for Large-Scale Image][Very Deep Convolutional Networks for Large-Scale Image]
-2. [The Convolutional Neural Network - Theory and Implementation of LeNet-5 and AlexNet][The Convolutional Neural Network - Theory and Implementation of LeNet-5 and AlexNet]
+1\. [Very Deep Convolutional Networks for Large-Scale Image][Very Deep Convolutional Networks for Large-Scale Image]  
+2\. [The Convolutional Neural Network - Theory and Implementation of LeNet-5 and AlexNet][The Convolutional Neural Network - Theory and Implementation of LeNet-5 and AlexNet]
 
 
 
