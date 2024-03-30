@@ -36,8 +36,8 @@ Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là 
 * D: 16 layers với  toàn bộ kernel-size là 3x3.  
 * E: 19 layers với toàn bộ kernel-size là 3x3. 
 
-<div>
-<table>
+
+<!-- <table>
 
 <th colspan="6" style="text-align: center"> ConvNet Configuration </th>
 
@@ -118,8 +118,36 @@ Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là 
 
 <td colspan="6" style="text-align: center"> Softmax</td>
 
+</table> -->
+
+<table style="width: 800px; margin: 0 auto;">  <thead>
+  <tr>
+    <th colspan="6" style="text-align: center">ConvNet Configuration</th>
+  </tr>
+</thead>
+
+<tbody>  <tr>
+    <td style="text-align: center">A</td>
+    <td style="text-align: center">A-LRN</td>
+    <td style="text-align: center">B</td>
+    <td style="text-align: center">C</td>
+    <td style="text-align: center">D</td>
+    <td style="text-align: center">E</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">11 weight layers</td>
+    <td style="text-align: center">11 weight layers</td>
+    <td style="text-align: center">13 weight layers</td>
+    <td style="text-align: center">16 weight layers</td>
+    <td style="text-align: center">16 weight layers</td>
+    <td style="align: center">19 weight layers</td>
+  </tr>
+  <tr>
+    <td colspan="6" style="text-align: center">Softmax</td>
+  </tr>
+</tbody>
+
 </table>
-</div>
 
 
 
