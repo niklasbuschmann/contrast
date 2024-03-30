@@ -147,20 +147,118 @@ Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là 
     <td colspan="6" style="text-align: center"> input (224x224 RGB image) </td>
   </tr>
 
-<tr>
-  <td style="text-align: center">Conv3-64<br>
-    <span style="font-weight: bold;">Conv3-64</span>  
-  </td>
-  <td style="text-align: center">Conv3-64</td>
-  <td style="text-align: center">Conv3-64</td>
-  <td style="text-align: center">Conv3-64</td>
-  <td style="text-align: center">Conv3-64</td>
-</tr>
+  <tr>
+    <td style="text-align: center">Conv3-64</td>
+    <td style="text-align: center">Conv3-64<br>
+        <span style="font-weight: bold;">LRN</span>  </td>
+    <td style="text-align: center">Conv3-64<br>
+    <span style="font-weight: bold">Conv3-64</span></td>
+    <td style="text-align: center">Conv3-64<br>
+    <span>Conv3-64</span></td>
+    <td style="text-align: center">Conv3-64<br>
+    <span>Conv3-64</span></td>
+    <td style="text-align: center">Conv3-64<br>
+    <span>Conv3-64</span></td>
+  </tr>
 
+  <tr>
+    <td colspan="6" style="text-align: center">MaxPool</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center">Conv3-128</td>
+    <td style="text-align: center">Conv3-128</td>
+    <td style="text-align: center">Conv3-128<br>
+    <span style="font-weight: bold">Conv3-128</span></td>
+    <td style="text-align: center">Conv3-128<br>
+    <span>Conv3-128</span></td>
+    <td style="text-align: center">Conv3-128<br>
+    <span>Conv3-128</span></td>
+    <td style="text-align: center">Conv3-128<br>
+    <span>Conv3-128</span></td>
+  </tr>
+
+  <tr>
+    <td colspan="6" style="text-align: center">MaxPool</td>
+  </tr>
+
+
+  <tr>
+    <td style="text-align: center">Conv3-256<br>
+    <span>Conv3-256</span></td>
+    <td style="text-align: center">Conv3-256<br>
+    <span>Conv3-256</span></td>
+    <td style="text-align: center">Conv3-256<br>
+    <span>Conv3-256</span></td>
+    <td style="text-align: center">Conv3-256<br>
+    <span>Conv3-256</span><br><span style="font-weight: bold">Conv1-256</span></td>
+    <td style="text-align: center">Conv3-256<br>
+    <span>Conv3-256</span><br><span style="font-weight: bold">Conv3-256</span></td>
+    <td style="text-align: center">Conv3-256<br>
+    <span>Conv3-256</span><br><span>Conv3-256</span><br>
+    <span  style="font-weight: bold">Conv3-256</span></td>
+  </tr>
+
+  <tr>
+    <td colspan="6" style="text-align: center">MaxPool</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span><br><span style="font-weight: bold">Conv1-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span><br><span style="font-weight: bold">Conv3-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span><br><span>Conv3-512</span><br>
+    <span  style="font-weight: bold">Conv3-512</span></td>
+  </tr> 
+
+  <tr>
+    <td colspan="6" style="text-align: center">MaxPool</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span><br><span style="font-weight: bold">Conv1-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span><br><span style="font-weight: bold">Conv3-512</span></td>
+    <td style="text-align: center">Conv3-512<br>
+    <span>Conv3-512</span><br><span>Conv3-512</span><br>
+    <span  style="font-weight: bold">Conv3-512</span></td>
+  </tr> 
+
+  <tr>
+    <td colspan="6" style="text-align: center">MaxPool</td>
+  </tr>
+
+  <tr>
+    <td colspan="6" style="text-align: center">FC-4096</td>
+  </tr>
+
+  <tr>
+    <td colspan="6" style="text-align: center">FC-4096</td>
+  </tr>
+
+  <tr>
+    <td colspan="6" style="text-align: center">FC-1000</td>
+  </tr>
 
   <tr>
     <td colspan="6" style="text-align: center">Softmax</td>
   </tr>
+
 </tbody>
 
 </table>
