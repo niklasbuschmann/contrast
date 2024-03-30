@@ -36,6 +36,7 @@ Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là 
 * D: 16 layers với  toàn bộ kernel-size là 3x3.  
 * E: 19 layers với toàn bộ kernel-size là 3x3. 
 
+<div>
 <table>
 
 <th colspan="6" style="text-align: center"> ConvNet Configuration </th>
@@ -118,6 +119,7 @@ Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là 
 <td colspan="6" style="text-align: center"> Softmax</td>
 
 </table>
+</div>
 
 
 
