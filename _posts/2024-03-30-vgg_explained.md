@@ -147,14 +147,16 @@ Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là 
     <td colspan="6" style="text-align: center"> input (224x224 RGB image) </td>
   </tr>
 
-  <tr>
-    <td style="text-align: center">Conv3-64</td>
-    <td style="text-align: center">Conv3-64<br>LRN</td>
-    <td style="text-align: center">Conv3-64<br><b>Conv3-64</td>
-    <td style="text-align: center">Conv3-64<br>Conv3-64</td>
-    <td style="text-align: center">Conv3-64<br>Conv3-64</td>
-    <td style="text-align: center">Conv3-64<br>Conv3-64</td>
-  </tr>
+<tr>
+  <td style="text-align: center">Conv3-64<br>
+    <span style="font-weight: bold;">Conv3-64</span>  
+  </td>
+  <td style="text-align: center">Conv3-64</td>
+  <td style="text-align: center">Conv3-64</td>
+  <td style="text-align: center">Conv3-64</td>
+  <td style="text-align: center">Conv3-64</td>
+</tr>
+
 
   <tr>
     <td colspan="6" style="text-align: center">Softmax</td>
@@ -162,7 +164,6 @@ Trong paper của mình, tác giả VGG đề xuất 6 options cho VGG đó là 
 </tbody>
 
 </table>
-
 
 
 
