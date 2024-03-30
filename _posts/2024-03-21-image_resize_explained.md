@@ -41,7 +41,7 @@ Phương pháp này khắc phục nhược điểm ảnh bị vỡ nặng khi sc
 ![Image](https://archive.ph/vH6jf/728845363a44a7bfc73e8926e8c451b70dceefe5.webp)
 
 Ta có công thức để suy ra giá trị của điểm ảnh trên hình được resize như trên.  
-Ví dụ minh họa, ta lấy ma trận A là ma trận ban đầu và ma trận B là ma trận được resized và $x'$ và $y'$ là điểm trên ma trận B mà ta muốn tìm ra giá trị, và $x, y$ là điểm ta suy ra từ vị trí $x', y'$ của ma trận B. Với điểm $Pixel(x, y)$ nằm trong 4 giá trị $Pixel(i, j), Pixel(i, j+1), Pixel(i+1, j), Pixel(i+1, j+1)$ và $a$ là khoảng cách từ $x$ đến $i$, và $b$ là khoảng cách từ $y$ đến $j$. Từ đó, ta có công thức để suy ra $Pixel(x', y')$ như sau:  
+Ví dụ minh họa, ta lấy ma trận A là ma trận ban đầu và ma trận B là ma trận được resized và x' và y' là điểm trên ma trận B mà ta muốn tìm ra giá trị, và x, y là điểm ta suy ra từ vị trí $x', y'$ của ma trận B. Với điểm $Pixel(x, y)$ nằm trong 4 giá trị $Pixel(i, j), Pixel(i, j+1), Pixel(i+1, j), Pixel(i+1, j+1)$ và $a$ là khoảng cách từ $x$ đến $i$, và $b$ là khoảng cách từ $y$ đến $j$. Từ đó, ta có công thức để suy ra $Pixel(x', y')$ như sau:  
 $F(x', y')$ = $(1-a)(1-b)A(i, j)$ + $a(1-b)A(i+1, j)$ + $(1-a)bA(i, j+1)$ + $abA(i+1, j+1)$
 
 Chúng ta lấy ví dụ trên để minh họa phương pháp này. Với
@@ -57,6 +57,24 @@ Một ví dụ khác với $x'=2, y'=2$, ta có điểm $x = y =$ $2/3$ $*$ $2$ 
 $B(1, 1) = (1-a)*(1-b)*A(1, 1) + (1-a) * b * A(1, 1) + a*(1-b)*A(1, 1) + a*b*A(1, 1)$
 
 $B(1, 1) = (1-0.333)*(1-0.333)*4 + (1-0.333) * 0.333 * 4 + 0.333*(1-0.333)*4 + 0.333*0.333*4 = 4$
+
+<!-- Ta có công thức để suy ra giá trị của điểm ảnh trên hình được resize như trên.  
+Ví dụ minh họa, ta lấy ma trận A là ma trận ban đầu và ma trận B là ma trận được resized và $x'$ và $y'$ là điểm trên ma trận B mà ta muốn tìm ra giá trị, và $x, y$ là điểm ta suy ra từ vị trí $x', y'$ của ma trận B. Với điểm $Pixel(x, y)$ nằm trong 4 giá trị $Pixel(i, j), Pixel(i, j+1), Pixel(i+1, j), Pixel(i+1, j+1)$ và $a$ là khoảng cách từ $x$ đến $i$, và $b$ là khoảng cách từ $y$ đến $j$. Từ đó, ta có công thức để suy ra $Pixel(x', y')$ như sau:  
+$F(x', y')$ = $(1-a)(1-b)A(i, j)$ + $a(1-b)A(i+1, j)$ + $(1-a)bA(i, j+1)$ + $abA(i+1, j+1)$
+
+Chúng ta lấy ví dụ trên để minh họa phương pháp này. Với
+
+$x'=1, y'=1$ ta có điểm $x = y =$ $2/3$ $*$ $1$ $= 0.667$. Vì vậy, ta suy ra được điểm này là điểm được bao bởi 4 điểm trong ma trận $A$ có vị trí lần lượt như sau $(0, 0), (0, 1), (1, 0), (1, 1)$. Và $a = b = 0.667$. Ta tính theo công thức để suy ra giá trị của điểm B(x, y) như sau:  
+
+$B(1, 1) = (1-a)*(1-b)*A(0, 0) + (1-a) * b * A(1, 0) + a*(1-b)*A(0, 1) + a*b*A(1, 1)$
+
+$B(1, 1) = (1-0.667)*(1-0.667)*1 + (1-0.667) * 0.667 * 3 + 0.667*(1-0.667)*2 + 0.667*0.667*4 = 2.989$
+
+Một ví dụ khác với $x'=2, y'=2$, ta có điểm $x = y =$ $2/3$ $*$ $2$ $= 1.333$. Vì vậy, ta suy ra được điểm này là điểm được bao bởi 4 điểm trong ma trận $A$ có vị trí lần lượt như sau $(1, 1), (2, 1), (1, 2), (2, 2)$. Với điểm nào nằm ngoài điểm biên thì ta thay giá trị điểm đó trùng với điểm biên luôn nha .Và $a = b = 0.333$. Ta tính theo công thức để suy ra giá trị của điểm B(x, y) như sau:
+
+$B(1, 1) = (1-a)*(1-b)*A(1, 1) + (1-a) * b * A(1, 1) + a*(1-b)*A(1, 1) + a*b*A(1, 1)$
+
+$B(1, 1) = (1-0.333)*(1-0.333)*4 + (1-0.333) * 0.333 * 4 + 0.333*(1-0.333)*4 + 0.333*0.333*4 = 4$ -->
 
 Và nếu ta tính tương tự như vậy, ta sẽ có kết quả ma trận B như sau:
 
