@@ -6,101 +6,66 @@ layout: post
 
 Xin chào các bạn!
 
-Trong bài viết trước mình đã đề cập crawl dữ liệu từ Youtube (các bạn nếu chưa xem có thể tham khảo ở [đây][đây] nhé). Trong bài này, mình sẽ hướng dẫn các bạn cách crawl Tiktok videos full hd - không che về  nha.
+Trong bài post này, mình sẽ giải thích về một vài phương pháp resize ảnh thông dụng nhất trong lĩnh vực computer vision. Chúng ta thường dùng các thư viện có sẵn trong cv2, pytorch, tensorflow, PIL, ... để resize ảnh nhưng phương pháp nào phù hợp nhất với nhu cầu cũng như phương pháp nào nhanh nhất, việc này chỉ có thể biết được khi chúng ta hiểu được thuật toán của nó và đó cũng chính là mục đích của bài post này.
 
-Chúng ta bắt tay vào thực hành luôn nhé!
+![Image](https://www.techsmith.com/blog/wp-content/uploads/2022/03/resize-image.png)
 
-**Bước 1**: Trích xuất các urls của các videos
-    
-Để có thể tải các videos từ Tiktok về, chúng ta phải có **urls**. Các bạn có thể dùng một vài phương pháp automation của Python để có thể trích xuất đường link của các video về. Một cách đơn giản nhất, thì các bạn có thể dùng script này để  lọc ra được các urls (Ngoài ra vẫn có các cách khác hiệu quả hơn nhé).
-
-(**Optional**) Các bạn có thể dùng đoạn lệnh sau để trích xuất các urls nhé
-
-```python
-import subprocess 
-import time
-import clipboard
-import pandas as pd
-
-
-last_url = None
-current_url = ""
-urls = []
-cnt = 0
-
-while cnt < 10:
-    # Move the mouse to the url bar in web brower (Customise to your settings)
-    subprocess.run(["xdotool", "mousemove", "200", "90"])
-    time.sleep(1)
-
-    # Click the right mouse to the url bar in web browser
-    subprocess.run(["xdotool", "click", '1'])
-    time.sleep(1)
-    
-    # Simulate Ctrl + a to select the whole url
-    subprocess.run(["xdotool", "keydown", "Control_L", "key", "a", "keyup", "Control_L"])
-
-    # Simulate Ctrl + c to copy the whole url
-    subprocess.run(["xdotool", "keydown", "Control_L", "key", "c", "keyup", "Control_L"]) # Ctrl + C
-    
-    # If the current url == last_url then we have reached the last video
-    # I intentionally add the cnt to hold it on for more tries before it finally stops
-    last_url = current_url
-    if last_url == clipboard.paste():
-        cnt += 1
-    else:
-        cnt = 0
-    current_url = clipboard.paste()
-    
-    urls.append(current_url)
-    
-    # Move the cursor to the down button in the Tiktok video
-    subprocess.run(["xdotool", "mousemove", "560", "675"])
-    time.sleep(1)
-
-    # Click the down button to move to the next video in Tiktok
-    subprocess.run(["xdotool", "click", "1"])
-    time.sleep(1)
-```
-
-Bước trên hoàn toàn là optional mà các bạn có thể tham khảo, trên mạng ở thời điểm các bạn đọc bài viết này có thể đã có những tools giúp extract tất cả urls của videos trên Tiktok một cách nhanh hơn và dễ hơn. 
-
-Vậy là chúng ta đã hoàn thành bước 1 và có được tất cả các urls của 1 channel Tiktok trong tay, bước tiếp theo là ta phải dùng tất cả các urls này để tải các videos trên ở định dạng finest nhất về máy
-
-**Bước 2**: Tải các videos về máy  
-Ở bước này, mình sẽ bày các bạn cách dùng một request để có thể tự động truy cập vào một trang web cho phép tải video tiktok (cách này còn được gọi là đứng trên vai người khổng lồ). Trang web mà chúng ta sử dụng là [Tik Downloader][Tik Downloader]. 
-
-Sau khi nhập vào link của video, bạn sẽ nhận được 4 options như sau
-
-![Tik Downloader Interface][Tik Downloader Interface]
-
-Và nếu ta mở Developer tool ở trong trình duyệt lên để quan sát thì các bạn sẽ thấy có một response có tên là "ajaxSearch" xuất hiện với nội dung như sau   
-{  
-    "status": "ok",  
-    "data": "...very long string"  
-}
-
-Trong response này, phần "data" chứa thông tin chúng ta tìm kiếm là đường link tải video full Hd không che của Tiktok. 
-
-Ok, chúng ta biết là sau khi nhập đường link video vào Tik Downloader thì sẽ có 1 response được gửi về trong đó có chứa đường link tải về video Full HD không che. Tuy nhiên, việc làm trên vẫn là thủ công và tốn khá nhiều thời gian, chưa kể họ còn có quảng cáo, captchas, ... Chúng ta sẽ dùng một công cụ có tên là [CurlConverter][CurlConverter]. CurlConverter là công cụ giúp chuyển cách chúng ta truy cập thủ công một trang web nào đó thành code của nhiều loại ngôn ngữ khác nhau
-
-```python
+### 1. Nearest Neighbour
+Đây là thuật toán đơn giản nhất trong tất cả các thuật toán resize ảnh và cũng là thuật toán cho tốc độ xử lý nhanh nhất. Về cơ bản, phương pháp Nearest Neighbour sao chép giá trị pixel gần nhất với ảnh cần được resize. Giả dụ, nếu bạn scale một đường thẳng có 4 điểm thành đường thẳng có 9 điểm, thì điểm thứ 3 ở điểm thứ 9 sẽ có giá trị điểm 1 ở đường thẳng mà ban đầu có 4 điểm. Nguyên do là vì nếu bạn scale đường thẳng có 9 điểm về đường thẳng 4 điểm thì ta phải chia cho 2.25 và 3÷2.25 =1.33 làm tròn = 1. Nếu điểm đó nằm ở điểm .5 thì tùy ý các bạn lấy giá trị làm tròn lên hay tròn xuống nhé.  
+Một ví dụ trực quan khác là mình muốn scale 1 ảnh có shape là 2x2 lên thành 3x3 bằng phương pháp nearest neighbour.
 
 ```
+A = [[1, 2],      B = [[?, ?, ?], 
+     [3, 4]]  ->       [?, ?, ?],
+                       [?, ?, ?]] 
+```
 
-**Kết luận**
-Và thế  là chỉ sau 2 bước đơn giản, các bạn có thể crawl hàng tấn videos để có thêm data cho model rồi. Đơn giản phải không nào 😄
+Ở đây, ma trận B ở trục x gấp $3/2$  A, và tương tự ở trục y. Vì vậy, nếu muốn tìm giá trị của B thì chỉ cần nhân giá trị vị trí của B với $2/3$.  
+B(0, 0) = A(round($0$ *$2/3$), round($0$ *$2/3$)) = A(0, 0) = 1  
+B(1, 1) = A(round($1$ *$2/3$), round($1$ *$2/3$)) = A(0, 0) = 1  
+B(2, 2) = A(round($2$ *$2/3$), round($2$ *$2/3$)) = A(1, 1) = 4  
+Vì vậy, ma trận B của chúng ta sẽ giống như vậy:
+```
+B = [[1, 1, 2], 
+     [1, 1, 2], 
+     [3, 3, 4]]
+```
 
-Phần tiếp theo, mình sẽ hướng dẫn các bạn crawl tiktok videos full HD, không watermarks nha, nhớ ghé blog tiếp hen !!
+Tuy đơn giản để implement và có tốc độ nhanh, tuy nhiên nó có những nhược điểm sau:
++ Ảnh bị vỡ, không mượt mà 
++ Chất lượng ảnh bị giảm sút, đặc biệt khi resize ảnh lên kích thước lớn.
 
 
-### Tải liệu tham khảo
-1. [Scrapetube-demasmid][Scrapetube-demasmid]
-2. [Youtube-dl][youtube-dl]
+### 2. Bilinear Interpolation
+Phương pháp này khắc phục nhược điểm ảnh bị vỡ nặng khi scale up ảnh của phương pháp nearest neighbours. Về cơ bản, phương pháp này cũng tìm vị trí x và y của ảnh cũ và tìm 4 điểm lân cận để tìm ra giá trị thay vì chỉ gán vào giá trị có vị trí gần nhất.  
+![Image](https://archive.ph/vH6jf/728845363a44a7bfc73e8926e8c451b70dceefe5.webp)
+
+Ta có công thức để suy ra giá trị của điểm ảnh trên hình được resize như trên.  
+Ví dụ minh họa, ta lấy ma trận A là ma trận ban đầu và ma trận B là ma trận được resized và $x'$ và $y'$ là điểm trên ma trận B mà ta muốn tìm ra giá trị, và $x, y$ là điểm ta suy ra từ vị trí $x', y'$ của ma trận B. Với điểm $Pixel(x, y)$ nằm trong 4 giá trị $Pixel(i, j), Pixel(i, j+1), Pixel(i+1, j), Pixel(i+1, j+1)$ và $a$ là khoảng cách từ $x$ đến $i$, và $b$ là khoảng cách từ $y$ đến $j$. Từ đó, ta có công thức để suy ra $Pixel(x', y')$ như sau:  
+$F(x', y')$ = $(1-a)(1-b)A(i, j)$ + $a(1-b)A(i+1, j)$ + $(1-a)bA(i, j+1)$ + $abA(i+1, j+1)$
+
+Chúng ta lấy ví dụ trên để minh họa phương pháp này. Với
+
+$x'=1, y'=1$ ta có điểm $x = y =$ $2/3$ $*$ $1$ $= 0.667$. Vì vậy, ta suy ra được điểm này là điểm được bao bởi 4 điểm trong ma trận $A$ có vị trí lần lượt như sau $(0, 0), (0, 1), (1, 0), (1, 1)$. Và $a = b = 0.667$. Ta tính theo công thức để suy ra giá trị của điểm B(x, y) như sau:  
+
+$B(1, 1) = (1-a)*(1-b)*A(0, 0) + (1-a) * b * A(1, 0) + a*(1-b)*A(0, 1) + a*b*A(1, 1)$
+
+$B(1, 1) = (1-0.667)*(1-0.667)*1 + (1-0.667) * 0.667 * 3 + 0.667*(1-0.667)*2 + 0.667*0.667*4 = 2.989$
+
+Một ví dụ khác với $x'=2, y'=2$, ta có điểm $x = y =$ $2/3$ $*$ $2$ $= 1.333$. Vì vậy, ta suy ra được điểm này là điểm được bao bởi 4 điểm trong ma trận $A$ có vị trí lần lượt như sau $(1, 1), (2, 1), (1, 2), (2, 2)$. Với điểm nào nằm ngoài điểm biên thì ta thay giá trị điểm đó trùng với điểm biên luôn nha .Và $a = b = 0.333$. Ta tính theo công thức để suy ra giá trị của điểm B(x, y) như sau:
+
+$B(1, 1) = (1-a)*(1-b)*A(1, 1) + (1-a) * b * A(1, 1) + a*(1-b)*A(1, 1) + a*b*A(1, 1)$
+
+$B(1, 1) = (1-0.333)*(1-0.333)*4 + (1-0.333) * 0.333 * 4 + 0.333*(1-0.333)*4 + 0.333*0.333*4 = 4$
+
+Và nếu ta tính tương tự như vậy, ta sẽ có kết quả ma trận B như sau:
+
+```
+B = [[1.   , 1.666, 2.], 
+     [2.333, 2.989, 3.33], 
+     [3.   , 3.667, 4.]]
+```
+Như có thể thấy thì ma trận B từ phương pháp Bilinear Interpolation cho kết quả nhìn mượt hơn phương pháp Nearest Neighbours. Tuy nhiên phương pháp cũng có nhược điểm là thời gian tính toán lâu hơn so với phương pháp trên.
 
 
-[đây]: https://github.com/dermasmid/scrapetube
-[youtube-dl]: https://github.com/ytdl-org/youtube-dl
-[Tik Downloader]: https://tikdownloader.io/en
-[Tik Downloader Interface]: https://docs.google.com/document/d/1bi6MVQWe9GDuQQ2uPd7LyMX5sK12rRK0dZTylJPIccs/edit#bookmark=id.812uy0co2sdr
-[CurlConverter]: https://curlconverter.com/
+### 3. Bicubic Interpolation
