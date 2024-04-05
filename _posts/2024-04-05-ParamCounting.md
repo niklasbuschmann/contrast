@@ -34,13 +34,19 @@ $$Z = Weight^T \cdot X + bias $$
 
 Với
 $$ X \in R^{D_1*N} $$
+
 $$ Weight \in R^{D_1*D_2}$$
+
 $$bias \in R^{D_2*1}$$
+
 $$N:\text{Batch Size}$$
+
 $$D_2: \text{Dimension của layer hiện tại (số lượng neurons trong layer đó)}$$
+
 $$D_1: \text{Dimension của layer trước (số lượng neurons trong layer trước)}$$
 
-Vì trong layer này có tổng cộng $ D_1*D_2$ weights và $D_2$ của bias, nên tổng cộng có số lượng weights là:
+Vì trong layer này có tổng cộng $$D_1*D_2$$ weights và $$D_2$$ của bias, nên tổng cộng có số lượng weights là:
+
 $$\text{Number of layer's parameters}= D_1*D_2 + D_2$$ 
 
 Trong mạng này, có tổng cộng là 2 layers: layer giữa và layer cuối. Layer đầu ta không tính vì đó là input và trong ví dụ này dimension của input là 2. Vì vậy, ta có cách tính số lượng parameters của mạng này như sau:
@@ -122,12 +128,12 @@ output = (kernel*input).sum() + bias
 
 Nếu bạn set output channels = 16 như đoạn code trên thì PyTorch/Tensorflow sẽ tạo ra 16 kernels cùng kích thước nhưng khác params và mỗi kernel sẽ quét qua input và output ra 1 layer.
 
-Như ví dụ minh họa trên, với mỗi một kernel ta sẽ có số parameters như sau $\text{kernel width} * \text{kernel height} * \text{input channels} + 1 (bias)$. Và nếu ta đặt số lượng kernel là $C_{out}$ thì ta sẽ có tổng số lượng parameters trong một convolution layer là:
+Như ví dụ minh họa trên, với mỗi một kernel ta sẽ có số parameters như sau $$\text{kernel width} * \text{kernel height} * \text{input channels} + 1 (bias)$$. Và nếu ta đặt số lượng kernel là $$C_{out}$$ thì ta sẽ có tổng số lượng parameters trong một convolution layer là:
 
 $$\text{Number of parameters of a convolution layer} = \text{kernel width}*\text{kernel height}*\text{input channels}* \text{output channels} + \text{output channels}$$
 
 
-Ví dụ, nếu ta có một tấm ảnh có kích thước $Width * Height * 3$ và ta set cho lớp conv có 16 channels out và kernel size = 3 thì ta sẽ có số lượng parameters như sau:
+Ví dụ, nếu ta có một tấm ảnh có kích thước $$Width * Height * 3$$ và ta set cho lớp conv có 16 channels out và kernel size = 3 thì ta sẽ có số lượng parameters như sau:
 
 
 $$\text{Number of parameters} = 3*3*3*16 + 16 = 448$$
