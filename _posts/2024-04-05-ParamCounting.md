@@ -33,6 +33,7 @@ Theo công thức, mạng linear được tính như sau:
 $$Z = Weight^T \cdot X + bias $$
 
 Với
+
 $$ X \in R^{D_1*N} $$
 
 $$ Weight \in R^{D_1*D_2}$$
@@ -50,7 +51,9 @@ Vì trong layer này có tổng cộng $$D_1*D_2$$ weights và $$D_2$$ của bia
 $$\text{Number of layer's parameters}= D_1*D_2 + D_2$$ 
 
 Trong mạng này, có tổng cộng là 2 layers: layer giữa và layer cuối. Layer đầu ta không tính vì đó là input và trong ví dụ này dimension của input là 2. Vì vậy, ta có cách tính số lượng parameters của mạng này như sau:
+
 $$\text{Total parameters} = \text{Number of layer 1's parameters} + \text{Number of layer 2's parameters}$$
+
 $$-> \text{Total parameters} = (5*2 + 5) + (1*5 + 1) = 15 + 6 = 21$$
 
 Ta hãy dùng Tensorflow xây dựng và kiểm tra thử liệu số lượng parameters chúng ta tính có đúng không nhé
@@ -91,20 +94,20 @@ Correctamundo!!
 #### 2.2. Cách tính số lượng params cho mạng convolution
 
 <figure style="text-align: center">
-     <img width=1200 height=400 src="https://w7.pngwing.com/pngs/847/762/png-transparent-convolutional-neural-network-kernel-filter-convolutional-neural-network-angle-text-rectangle.png">
-     <figcaption style = "text-align: left">Source: <a href="https://aldozaimi.wordpress.com/2020/02/13/determine-the-number-of-trainable-parameters-in-a-neural-network/">PngWing</a></figcaption>
+     <img width=1200 height=400 src="https://assets.8thlight.com/images/insights/posts/2022-03-25-what-is-a-convolution/multiple_3d_convolutions.png">
+     <figcaption style = "text-align: left">Source: <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2F8thlight.com%2Finsights%2Fwhat-is-a-convolution-how-to-teach-machines-to-see-images&psig=AOvVaw27em9Od3-kybZG_4DqucuD&ust=1712459381592000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCOiG3rrOrIUDFQAAAAAdAAAAABAJ">PngWing</a></figcaption>
 </figure>
 
 
 Với mạng convolution, chúng ta sẽ có cách tính hơi khác do cách hoạt động của mạng này khác với mạng linear ở trên. Tuy nhiên, về mặt bản chất, cách tính của chúng tương tự nhau. 
 
-Trong Pytorch, 3 thông số quan trọng bạn phải set cho model là **channel_in** và **channel_out**, và **kernel_size**. Đối với Tensorflow chỉ cần 2 thông số out_channels và kernel_size do in_channels sẽ được tự động tìm ra.
+Trong Pytorch, 3 thông số quan trọng bạn phải set cho một layer convolution là **channel_in** và **channel_out**, và **kernel_size**. Đối với Tensorflow chỉ cần 2 thông số out_channels và kernel_size do in_channels sẽ được tự động tìm ra.
 
 ```python
 conv_layer = nn.Conv2d(in_channels=3, out_channels=16, kernel_size = 3)
 ```
 
-Có lẽ bạn thắc mắc tại sao 3 thông số này quan trọng? Vì 3 thông số này sẽ quyết định số lượng parameters của lớp conv này.
+Có lẽ bạn thắc mắc tại sao 3 thông số này quan trọng? Vì nó sẽ quyết định số lượng parameters của lớp conv đó.
 
 Mối quan hệ giữa input và output của convolution layer có công thức như sau:
 
@@ -130,7 +133,7 @@ Nếu bạn set output channels = 16 như đoạn code trên thì PyTorch/Tensor
 
 Như ví dụ minh họa trên, với mỗi một kernel ta sẽ có số parameters như sau $$\text{kernel width} * \text{kernel height} * \text{input channels} + 1 (bias)$$. Và nếu ta đặt số lượng kernel là $$C_{out}$$ thì ta sẽ có tổng số lượng parameters trong một convolution layer là:
 
-$$\text{Number of parameters of a convolution layer} = \text{kernel width}*\text{kernel height}*\text{input channels}* \text{output channels} + \text{output channels}$$
+$$\text{Number  parameters of a convolution layer} = \text{kernel width}*\text{kernel height}*\text{input channels}* \text{output channels} + \text{output channels}$$
 
 
 Ví dụ, nếu ta có một tấm ảnh có kích thước $$Width * Height * 3$$ và ta set cho lớp conv có 16 channels out và kernel size = 3 thì ta sẽ có số lượng parameters như sau:
@@ -146,6 +149,7 @@ from tensorflow import keras
 from keras import layers
 
 model = keras.Sequential([
+     # Mình set tạm width=height=224 vì nó không ảnh hưởng tới số lượng params
     layers.Input(shape=(224, 224, 3)),
     layers.Conv2D(16, kernel_size=3), 
 ])
@@ -178,7 +182,7 @@ Tuy nhiên, trừ một trường hợp họ sử dụng Depth-wise conv (đây 
 
 
 ### 3. Kết luận
-Qua hai ví dụ trên, mình đã hướng dẫn các bạn tính số lượng parameters của hai mạng cơ bản nhất trong neural networks. Hai mạng này là hai mạng cơ bản nhất tạo nên những kiến trúc khổng lồ và hiện đại như ChatGPT, Diffusion, GANs, BERTs nên nếu biết các tính chính xác 2 kiến trúc trên thì bạn có thể tính hoặc nhẩm được 90% các mạng trên thị trường rùi nhé. Còn 10% kia mình sẽ cover ở phần sau nhe.
+Qua hai ví dụ trên, mình đã hướng dẫn các bạn tính số lượng parameters của hai mạng cơ bản nhất trong neural networks. Hai mạng này đã tạo nên những kiến trúc khổng lồ và hiện đại như ChatGPT, Diffusion, GANs, BERTs nên nếu biết các tính chính xác 2 mạng trên thì bạn có thể tính hoặc nhẩm được 90% các mạng trên thị trường rùi nhé. Còn 10% kia mình sẽ cover ở phần sau nhe.
 
 Nếu bạn thích bài viết thì hãy ủng hộ mình bằng cách tiếp tục theo dõi và phản hồi lại nếu có gì bạn thấy chưa hợp logic hay không hiểu nhé.
 
