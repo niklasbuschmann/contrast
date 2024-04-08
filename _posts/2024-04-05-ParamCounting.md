@@ -95,7 +95,7 @@ Correctamundo!!
 
 <figure style="text-align: center">
      <img width=1200 height=400 src="https://assets.8thlight.com/images/insights/posts/2022-03-25-what-is-a-convolution/multiple_3d_convolutions.png">
-     <figcaption style = "text-align: left">Source: <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2F8thlight.com%2Finsights%2Fwhat-is-a-convolution-how-to-teach-machines-to-see-images&psig=AOvVaw27em9Od3-kybZG_4DqucuD&ust=1712459381592000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCOiG3rrOrIUDFQAAAAAdAAAAABAJ">PngWing</a></figcaption>
+     <figcaption style = "text-align: left">Source: <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2F8thlight.com%2Finsights%2Fwhat-is-a-convolution-how-to-teach-machines-to-see-images&psig=AOvVaw27em9Od3-kybZG_4DqucuD&ust=1712459381592000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCOiG3rrOrIUDFQAAAAAdAAAAABAJ">Emmanuel Byrd</a></figcaption>
 </figure>
 
 
