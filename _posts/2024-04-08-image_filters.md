@@ -454,7 +454,5 @@ Mình đã hướng dẫn các bạn các bộ lọc cơ bản và thông dụng
 
 1. [Bilateral Filter - Wikipedia](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html)
 
-2. [Pytorch documentation - Conv2d](https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html)
-
 
 
