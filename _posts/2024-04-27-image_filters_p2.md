@@ -88,7 +88,7 @@ ax[3].set_title("Prewitt Filter")
 
 ```
 
-![Alt text](/_data/images/image_filters_p2/image-4.png)
+![Alt text](../_data/images/image_filters_p2/image-4.png)
 
 
 ### 3.2. Roberts filter
@@ -134,7 +134,7 @@ ax[3].imshow(roberts)
 ax[3].set_title("Roberts filter")
 ```
 
-![Alt text](/_data/images/image_filters_p2/image-2.png)
+![Alt text](../_data/images/image_filters_p2/image-2.png)
 
 
 ### 3.3. Sobel filter
@@ -184,7 +184,7 @@ ax[3].imshow(sobel)
 ax[3].set_title("Sobel")
 ```
 
-![Alt text](/_data/images/image_filters_p2/image-3.png)
+![Alt text](../_data/images/image_filters_p2/image-3.png)
 
 
 
@@ -263,7 +263,7 @@ ax[4].imshow(laplacianFiltered_)
 ax[4].set_title("Laplacian with 2 kernels")
 ```
 
-![Alt text](/_data/images/image_filters_p2/image-5.png)
+![Alt text](../_data/images/image_filters_p2/image-5.png)
 
 
 ### 3. Lời kết
@@ -271,9 +271,12 @@ Trong 4 bộ lọc trên, bộ lọc Laplacian tìm ra được nhiều cạnh n
 
 
 ### References
-1. [Roberts Cross - Wikipedia](https://en.wikipedia.org/wiki/Roberts_cross)
-2. [Prewitt Operator - Wikipedia](https://en.wikipedia.org/wiki/Prewitt_operator)
-3. [Sobel Operator - Wikipedia](https://en.wikipedia.org/wiki/Sobel_operator)
-4. [Discrete Laplace Operator - Wikipedia](https://en.wikipedia.org/wiki/Discrete_Laplace_operator)
+1\. [Roberts Cross - Wikipedia](https://en.wikipedia.org/wiki/Roberts_cross)
+
+2\. [Prewitt Operator - Wikipedia](https://en.wikipedia.org/wiki/Prewitt_operator)
+
+3\. [Sobel Operator - Wikipedia](https://en.wikipedia.org/wiki/Sobel_operator)
+
+4\. [Discrete Laplace Operator - Wikipedia](https://en.wikipedia.org/wiki/Discrete_Laplace_operator)
 
 
