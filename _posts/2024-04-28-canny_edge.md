@@ -7,7 +7,7 @@ categories: media
 
 Xin chào các bạn,
 
-Trong bài post về các [bộ lọc phần 2](google.com), mình đã giới thiệu về các bộ lọc cạnh và cũng như cách hoạt động của chúng. Ở phần này, mình sẽ giới thiệu một giải thuật cho kết quả vượt trội hơn các phương pháp trước có tên là Canny edge detection. Giải thuật này được phát triển bởi John F. Canny vào năm 1986. Nó bao gồm nhiều bước hậu xử lý để có thể cải thiện kết quả so với các phương pháp dựa vào đạo hàm.
+Trong bài post về các [bộ lọc phần 2][này], mình đã giới thiệu về các bộ lọc cạnh và cũng như cách hoạt động của chúng. Ở phần này, mình sẽ giới thiệu một giải thuật cho kết quả vượt trội hơn các phương pháp trước có tên là Canny edge detection. Giải thuật này được phát triển bởi John F. Canny vào năm 1986. Nó bao gồm nhiều bước hậu xử lý để có thể cải thiện kết quả so với các phương pháp dựa vào đạo hàm.
 
 ### 1. Điểm yếu của việc dùng đạo hàm để tìm cạnh
 Các bộ lọc như Sobel, Prewitt, Laplacian dựa vào **mỗi** giá trị gradient của pixel để  tìm ra cạnh. Tuy nhiên, trong ảnh thu được từ camera sẽ có rất nhiều nguồn nhiễu từ cả bên ngoài và bên trong, và điều này khiến cho các phương pháp này kém ổn đỉnh. 
@@ -77,8 +77,11 @@ Theta cho chúng ta biết hướng tăng nhanh nhất của gradient (tức là
 Với domain là ảnh, sẽ chỉ có 4 hướng cho một pixel: Hướng ngang, hướng chéo từ trái sang phải, hướng dọc từ trên xuống, hướng chéo từ phải sang trái. Và vì chỉ có 4 hướng nên ta sẽ chia thành các khoảng. Mình sẽ chia đều thành các khoảng như sau:
 
 $$0 <= \theta <= 22.5 \text{  or } 157.5 < \theta <= 180 : \text{phương ngang}$$
+
 $$22.5 < \theta <= 67.5: \text{phương chéo từ trái sang phải}$$
+
 $$67.5 < \theta <= 112.5: \text{phương dọc từ trên xuống}$$
+
 $$112.5 < \theta <= 157.5: \text{phương chéo từ phải sang trái}$$
 
 
@@ -178,8 +181,7 @@ Việc hiểu rõ về cách hoạt động của thuật toán Canny không ch�
 
 
 ### References
-1\. [Canny Edge Detection - OpenCV](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html)
-
+1\. [Canny Edge Detection - OpenCV](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html)  
 2\. [Canny Edge Detection Step by Step in Python - Computer Vision - Towards Data Science](https://towardsdatascience.com/canny-edge-detection-step-by-step-in-python-computer-vision-b49c3a2d8123)
 
 
