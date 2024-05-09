@@ -100,23 +100,23 @@ $$\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = \int_{-\pi}^{\pi}(\sum_{n=0}^{\infty
 
 Khai triển tiếp, ta được:
 
-$$\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = \int_{-\pi}^{\pi}(\sum_{n=0}^{\infty}a_ncos(\theta_n x) + \sum_{n=0}^{\infty}b_nsin(\theta_n x))cos(\theta_n x) dx  \text{ } (8)$$
+$$<=>\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = \int_{-\pi}^{\pi}(\sum_{n=0}^{\infty}a_ncos(\theta_n x) + \sum_{n=0}^{\infty}b_nsin(\theta_n x))cos(\theta_n x) dx  \text{ } (8)$$
 
 
-$$\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = \int_{-\pi}^{\pi}(\sum_{n=0}^{\infty}a_ncos(\theta_n x) + \sum_{n=0}^{\infty}b_nsin(\theta_n x))cos(\theta_n x) dx  \text{ } (9)$$
+$$<=>\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = \int_{-\pi}^{\pi}(\sum_{n=0}^{\infty}a_ncos(\theta_n x) + \sum_{n=0}^{\infty}b_nsin(\theta_n x))cos(\theta_n x) dx  \text{ } (9)$$
 
-$$\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = \int_{-\pi}^{\pi} a_ncos(\theta_k x)cos(\theta_n x) dx  \text{ } (10)$$
+$$<=>\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = \int_{-\pi}^{\pi} a_ncos(\theta_k x)cos(\theta_n x) dx  \text{ } (10)$$
 
-$$\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = a_n \pi \text{ } (11)$$
+$$<=>\int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx = a_n \pi \text{ } (11)$$
 
-$$ a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx \text{ } (12)$$
+$$ => a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)cos(\theta_n x)dx \text{ } (12)$$
 
-$$ a_0 = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x)dx \text{ = average of f(x) } (13)$$
+$$ => a_0 = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x)dx \text{ = average of f(x) } (13)$$
 
 
 Tương tự, ta có $$b_n$$ được tính như sau:
 
-$$ b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)sin(\theta_n x)dx \text{ } (14)$$
+$$ => b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)sin(\theta_n x)dx \text{ } (14)$$
 
 
 Và sau khi có giá trị $$a_n \text{ và }  b_n$$, ta có thể phân tích bất kì dạng sóng nào thành một chuỗi sin và cos.
@@ -146,7 +146,7 @@ $$\delta(x) = \frac{1}{2\pi} + \frac{1}{\pi}(cos(\frac{1}{2}x) + cos(x) + cos(\f
 
 Ta được kết quả như sau nếu hiển thị nó matplotlib để trực quan hóa
 
-![Alt text](image-5.png)
+![Alt text](/_data/images/fourier/fourier_dirac_example.png)
 
 
 
@@ -181,16 +181,28 @@ $$C_0 = a_0$$
 
 Ta thay (12) và (14) vào (13), được:
 
-$$ <=> a_n - jb_n = \frac{1}{2 \pi} \int_{-\pi}^{\pi} f(x)(cos(kx) - jsin(kx))dx$$
+$$ <=> a_n - jb_n = \frac{1}{2 \pi} \int_{-\pi}^{\pi} f(x)(cos(\theta_nx) - jsin(\theta_nx))dx$$
 
-Áp dụng định lý Euler, ta được dạng tổng quát sau:
-
-
-$$ <=> C_n =  a_n - jb_n = \frac{1}{2 \pi} \int_{-\pi}^{\pi} f(x)e^{-jkx}dx$$
+Áp dụng định lý Euler, ta được dạng tổng quát và quen thuộc sau:
 
 
+$$ <=> C_n =  a_n - jb_n = \frac{1}{2 \pi} \int_{-L}^{L} f(x)e^{-j \theta_nx}dx$$
 
 
 
+**Note**: Phần hệ số $$\frac{1}{2 \pi}$$ có thể được lược đi, và thông thường thì mình thấy người ta lược đi cho gọn.
+
+### 3. Phần kết
+
+Ở bài này, mình đã giới thiệu cho các bạn chuỗi Fourier, biến đổi Fourier và chứng minh chuỗi này bằng toán học. Thuật toán này làm được cực kì nhiều thứ hay ho, những ứng dụng của nó trong xử lý ảnh và deep learning sẽ được mình tổng hợp và trình bày trong các bài post tới. Giờ thì các bạn có thể phân tách bất kì hàm số nào thành chuỗi Fourier được rồi, chúc các bạn vui vẻ với nó nhé. 
 
 
+### References
+
+1\. [Deriving the Fourier Transform - BK Teach](https://www.youtube.com/watch?v=Q99ZPGnUBAQ&list=WL&index=71&t=533s)
+
+2\. [Fourier Series - MIT OpenCourseWare](https://www.youtube.com/watch?v=vA9dfINW4Rg&list=WL&index=76)
+
+3\. [Fourier Transform - Wikipedia](https://en.wikipedia.org/wiki/Fourier_transform)
+
+4\. [Difference between Fourier Series and Fourier Transform](https://www.tutorialspoint.com/difference-between-fourier-series-and-fourier-transform)
