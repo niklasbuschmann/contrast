@@ -124,12 +124,118 @@ Phương pháp Huffman Encoding dùng công thức thống kê (statistics) ph�
 
 * Ví dụ minh họa tính tay của Huffman encoding
 
-    **Bổ sung sau**
+Giả sử chúng ta có một chuỗi 15 kí tự như sau cần được nén lại:
 
+<figure style="text-align: center">
+  <img src="https://cdn.programiz.com/sites/tutorial2program/files/hf-string.png" alt="The Difference Architecture between AlexNet and VGG16 Models">
+  <figcaption style = "text-align: center" ><b>Hình 2.2.1.</b> Initial String</figcaption>
+</figure>
+
+Ban đầu, chuỗi này sẽ chiếm tổng cộng 15*8 = 120 bits cần được lưu trữ.
+
+Bước 1: Tính toán tần suất của các ký tự
+
+<figure style="text-align: center">
+  <img src="https://cdn.programiz.com/sites/tutorial2program/files/hf-character-frequency.png" alt="The Difference Architecture between AlexNet and VGG16 Models">
+  <figcaption style = "text-align: center" ><b>Hình 2.2.1.</b> Tần suất lần lượt của các ký tự B C A D </figcaption>
+</figure>
+
+Bước 2: Lọc chúng với giá trị từ thấp tới cao
+
+<figure style="text-align: center">
+  <img src="https://cdn.programiz.com/sites/tutorial2program/files/hf-character-frequency-sorted.png" alt="The Difference Architecture between AlexNet and VGG16 Models">
+  <figcaption style = "text-align: center" ><b>Hình 2.2.1.</b> Giá trị tần suất từ thấp tới cao</figcaption>
+</figure>
+
+Bước 3: Tạo leaf node và gán giá trị của character vào node đó với thứ tự trái nhỏ hơn phải. Ngoài ra, tạo node parent bằng tổng 2 node của nhánh đó.
+
+<figure style="text-align: center">
+  <img src="https://cdn.programiz.com/sites/tutorial2program/files/hf-encoding-4.png" alt="The Difference Architecture between AlexNet and VGG16 Models">
+  <figcaption style = "text-align: center" ><b>Hình 2.2.1.</b> Giá trị tần suất từ thấp tới cao</figcaption>
+</figure>
+
+Với cách encoding như vậy, ta có bảng so sánh sau
+
+|Character|Frequency|Code|Size|
+|-|-|-|-|
+|A|5|11|5*2 bits|
+|B|1|100|1 * 3 bits|
+|C|6|0|6 * 1 bits|
+|D|3|101|3 * 3 bits|
+||15*8=120 bits| |28 bits|
+
+Vì vậy ở trong bảng trên, cách mã hóa Huffman giúp ta tiết kiệm ~3 lần số bits cần lưu trữ.
 
 * Code Huffman Encoding
 
-    **Bổ sung sau**
+```python
+string = 'BCAADDDCCACACAC'
+
+# Creating tree nodes
+class NodeTree(object):
+
+    def __init__(self, left=None, right=None):
+        self.left = left
+        self.right = right
+
+    def children(self):
+        return (self.left, self.right)
+
+    def nodes(self):
+        return (self.left, self.right)
+
+    def __str__(self):
+        return '%s_%s' % (self.left, self.right)
+
+
+# Main function implementing huffman coding
+def huffman_code_tree(node, left=True, binString=''):
+    if type(node) is str:
+        return {node: binString}
+    (l, r) = node.children()
+    d = dict()
+    d.update(huffman_code_tree(l, True, binString + '0'))
+    d.update(huffman_code_tree(r, False, binString + '1'))
+    return d
+
+
+# Calculating frequency
+freq = {}
+for c in string:
+    if c in freq:
+        freq[c] += 1
+    else:
+        freq[c] = 1
+
+freq = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+
+nodes = freq
+
+while len(nodes) > 1:
+    (key1, c1) = nodes[-1]
+    (key2, c2) = nodes[-2]
+    nodes = nodes[:-2]
+    node = NodeTree(key1, key2)
+    nodes.append((node, c1 + c2))
+
+    nodes = sorted(nodes, key=lambda x: x[1], reverse=True)
+
+huffmanCode = huffman_code_tree(nodes[0][0])
+
+print(' Char | Huffman code ')
+print('----------------------')
+for (char, frequency) in freq:
+    print(' %-4r |%12s' % (char, huffmanCode[char]))
+```
+
+```bash
+ Char | Huffman code 
+----------------------
+ 'C'  |           0
+ 'A'  |          11
+ 'D'  |         101
+ 'B'  |         100
+```
 
 
 
