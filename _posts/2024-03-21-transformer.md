@@ -112,14 +112,197 @@ Kiến trúc tổng quan của transformers bao gồm 2 phần: **Encoder** và 
 <figcaption><b>Hình 3.1.1.</b> Kiến trúc tổng quan của mô hình Transformer - Paper </figcaption>
 </figure>
 
-### 3.1.1. Multi-Head Attention
 
-### 3.1.2. Add & Norm Layer
+### 3.1.1. Input Encoding
 
-### 3.1.3. Feed Forward Layer
+Với input embedding, ta cần xây dựng 2 khối chính là semantic embedding và positional embedding. 
+
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import math
+
+class SemanticEmbedding(nn.Module):
+    def __init__(self, vocab_size: int = 1000, 
+                embedding_dim: int = 256):
+        super().__init__()
+        self.embedder = nn.Parameter(torch.randn(vocab_size, embedding_dim))
+
+    def forward(self, input_sequence: torch.Tensor):
+        return self.embedder[input_sequence]
+
+
+class PositionalEncoding(nn.Module):
+    def __init__(self, d_model: int = 256, max_len: int = 1000):
+        super().__init__()
+        pe = torch.zeros(max_len, d_model)
+        position = torch.arange(0, max_len, dtype = torch.float).unsqueeze(1)
+
+        div_term = torch.exp(torch.arange(0, d_model, 2).float()*(-math.log(10000.0)/d_model))
+
+        pe[:, ::2] = torch.sin(position*div_term)
+        pe[:, 1::2] = torch.cos(position*div_term)
+
+        pe = pe.unsqueeze(0)
+
+        self.register_buffer("pe", pe)
+
+    def forward(self, x):
+        return self.pe[:, :x.size(1), :]
+```
+
+### 3.1.2. Multi-Head Attention
+
+Ở phần này, chúng ta sẽ code khối Multi-Head Attention. 
+
+```python
+# Trước tiên là khối self-attention
+
+class SelfAttention(nn.Module):
+
+    def forward(self, query: torch.Tensor, 
+                key: torch.Tensor, 
+                value: torch.Tensor, 
+                mask: torch.Tensor = None,
+                dropout: nn.Dropout = None):
+        
+        d_k = query.size(-1)
+        attention_score = F.softmax(torch.einsum("nqhd, nkhd -> nhqk", [query, key])/math.sqrt(d_k), -1)
+
+        if mask is not None:
+            attention_score = attention_score.masked_fill(mask==0, 1e-9)
+
+        if dropout is not None:
+            attention_score = dropout(attention_score)
+
+        output = torch.einsum("nhqk, nvhd -> nvhd", [attention_score, value])
+        return output
+
+# Tiếp theo là khối Multi-Head Attention
+
+class MultiHeadAttention(nn.Module):
+    def __init__(self, h, d_model, dropout_rate=0.1):
+        super().__init__()
+        assert d_model%h == 0
+
+        self.d_k = d_model//h
+        self.h = h
+
+        self.query_projector = nn.Linear(d_model, d_model)
+        self.key_projector = nn.Linear(d_model, d_model)
+        self.value_projector = nn.Linear(d_model, d_model)
+
+        self.output_linear = nn.Linear(d_model, d_model)
+
+        self.attention = SelfAttention()
+        self.dropout = nn.Dropout(dropout_rate)
+
+    def forward(self, 
+                query: torch.Tensor, 
+                key: torch.Tensor, 
+                value: torch.Tensor, 
+                mask: torch.Tensor=None):
+        
+        batch_size = query.size(0)
+        
+        projected_query = self.query_projector(query).view(batch_size, -1, self.h, self.d_k)
+        projected_key = self.key_projector(key).view(batch_size, -1, self.h, self.d_k)
+        projected_value = self.value_projector(value).view(batch_size, -1, self.h, self.d_k)
+
+        mha_output = self.attention(projected_query, projected_key, projected_value, mask, self.dropout).view(batch_size, -1, self.h*self.d_k)
+        output = self.output_linear(mha_output)
+        return mha_output
+```
+
+Sau khi code xong khối self-attention và self-attention, chúng ta sẽ test thử xem liệu output của các khối này có giống như chúng ta mong muốn không.
+
+```python
+query = torch.randn((1, 10, 256))
+
+key = torch.randn((1, 10, 256))
+
+value = torch.randn((1, 15, 256))
+
+multi_head_attention = MultiHeadAttention(4, 256)
+
+print(multi_head_attention(query, key, value).shape)
+```
+
+```bash
+torch.Size([1, 15, 256])
+```
+Qua hình dạng của output, với output có dimension giống với kích thước của value tức là về shape nó đã đúng. Vì vậy, chúng ta sẽ qua bước tiếp theo là xây dựng bộ encoder và decoder. 
+
+### 3.1.3. Encoder
+
+Khối encoder được xây dựng theo kiến trúc như bên trái hình 3.1.1. Khối này sẽ bao gồm 5 layers: Input Embedding, Multi-Head Attention, Add&Norm Layers, Feed Forward, Add&Norm Layer. 
+
+```python
+class TransformerEncoder(nn.Module):
+    def __init__(self, embedding_dim: int = 256, 
+                 num_heads: int = 4, 
+                 vocab_size: int = 10000, 
+                 max_seq_length: int = 100, 
+                 FF_dim: int = 1024):
+        super().__init__()
+        self.semantic_encoder = SemanticEmbedding(vocab_size, embedding_dim)
+        self.positional_encoder = PositionalEmbedding(d_model = embedding_dim, max_len=max_seq_length) 
+        self.layer_norm_1 = nn.LayerNorm(embedding_dim)
+
+        self.feed_forward = nn.Sequential(nn.Linear(embedding_dim, FF_dim), 
+                                          nn.ReLU(), 
+                                          nn.Linear(FF_dim, embedding_dim))
+        
+        self.layer_norm_2 = nn.LayerNorm(embedding_dim)
+
+        self.multi_head_attention = MultiHeadAttention(h = num_heads, d_model = embedding_dim)
+
+    def forward(self, x: torch.Tensor):
+        x = self.semantic_encoder(x)
+        x = x + self.positional_encoder(x)
+        x = self.layer_norm_1( x + self.multi_head_attention(x, x, x))
+        x = self.layer_norm_2(x + self.feed_forward(x))
+        return x
+```
+
+Sau khi build xong khối encoder, chúng ta sẽ thử xem output shape có giống như chúng ta mong đợi không nhé.
+
+```python
+EMBEDDING_DIM = 256
+NUM_HEADS = 4
+VOCAB_SIZE = 10000
+MAX_SEQ_LENGTH = 100
+FF_DIM = 1024
+
+encoder = TransformerEncoder(embedding_dim=EMBEDDING_DIM, num_heads=NUM_HEADS, vocab_size=VOCAB_SIZE,
+                             max_seq_length=MAX_SEQ_LENGTH, FF_dim=FF_DIM)
+
+sample = (torch.rand((10, MAX_SEQ_LENGTH))*(MAX_SEQ_LENGTH-1)).long()
+
+encoded_information = encoder(sample)
+
+print(f"Encoded information: {encoded_information}")
+print(f"Encoded information shape: {encoded_information.shape}")
+```
+
+
+### 3.1.4. Decoder
 
 
 ### 3.2. Huấn luyện và chạy mô hình transformer cho classification task
+
+Cho classification task, chúng ta chỉ cần mỗi khối encoder của transformer vì đây là task không cần sinh ra output mới. Với classification task, chúng ta chỉ cần lấy feature được trích ra từ transformer encoder và đưa qua một lớp fully connected nữa để làm output cho classification.
+
+Ở ví dụ này, mình sẽ dùng data từ tập Disaster Tweets từ Kaggle. 
+
+* **Step 1**: Chuẩn bị data
+
+* **Step 2**: Kết hợp transformer encoder và classification head 
+
+* **Step 3**: Training
+
+* **Step 4**: Inference
 
 ### 3.3. Huấn luyện và chạy mô hình transformer để dịch tiếng Anh sang Tây Ban Nha
 
