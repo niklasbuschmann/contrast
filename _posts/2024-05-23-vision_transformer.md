@@ -140,6 +140,7 @@ class ViT(nn.Module):
 ```
 
 * **Training (Optional)** 
+
 ```python
 import torch
 import torchvision
