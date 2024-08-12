@@ -440,6 +440,51 @@ eval_loader = DataLoader(eval_ds, batch_size = BATCH_SIZE, shuffle=False, pin_me
 * **Step 4**: Training
 
 ```python
+def train_1_epoch():
+    model.train()
+    loss_sum = 0
+    for x, y in tqdm(train_loader):
+        x = x.long().to(DEVICE)
+        y = y.long().to(DEVICE)
+        logits = model(x)
+        loss = loss_fn(logits, y)
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        loss_sum += loss.item()
+
+    return loss_sum
+
+
+@torch.inference_mode()
+def evaluate_1_epoch():
+    model.eval()
+    loss_sum = 0
+    correct_samples = 0
+    total_samples = 0
+    for x, y in tqdm(eval_loader):
+        x = x.long().to(DEVICE)
+        y = y.long().to(DEVICE)
+        logits = model(x)
+        loss = loss_fn(logits, y)
+        loss_sum += loss.item()
+        correct_samples += len(logits.max(-1)[-1][logits.max(-1)[-1] == y])
+        total_samples += logits.shape[0]
+
+    return loss_sum, correct_samples / total_samples
+
+
+def train(NUM_EPOCHS: int):
+    for epoch in range(1, NUM_EPOCHS + 1):
+        train_loss = train_1_epoch()
+        val_loss, val_acc = evaluate_1_epoch()
+
+        torch.save(model.state_dict(), "last.pt")
+
+        print(
+            f"Epoch: {epoch}, Train Loss: {train_loss}, Val Loss: {val_loss}, Val Acc: {val_acc}"
+        )
+
 train(NUM_EPOCHS=NUM_EPOCHS)
 ```
 
@@ -499,7 +544,7 @@ Epoch: 17, Train Loss: 14.930934912525117, Val Loss: 32.301914274692535, Val Acc
 
 Nhìn chung thì sau khoảng 17 epochs, model đạt 80% accuracy và có dấu hiệu bị overfit nhưng performance vẫn khá ổn.
 
-* **Step 4**: Inference
+* **Step 5**: Inference
 
 Bước tiếp theo, mình sẽ thực hiện pipeline inference để chạy trực tiếp trên từng sample. 
 ```python
