@@ -139,7 +139,7 @@ class PositionalEncoding(nn.Module):
         pe = torch.zeros(max_len, d_model)
         position = torch.arange(0, max_len, dtype = torch.float).unsqueeze(1)
 
-        div_term = torch.exp(torch.arange(0, d_model, 2).float()*(-math.log(10000.0)/d_model))
+        div_term = torch.exp(torch.arange(0, d_model, 2).float()*(-math.log(10000.0)*2./d_model))
 
         pe[:, ::2] = torch.sin(position*div_term)
         pe[:, 1::2] = torch.cos(position*div_term)
@@ -269,21 +269,30 @@ class TransformerEncoder(nn.Module):
 Sau khi build xong khối encoder, chúng ta sẽ thử xem output shape có giống như chúng ta mong đợi không nhé.
 
 ```python
-EMBEDDING_DIM = 256
-NUM_HEADS = 4
-VOCAB_SIZE = 10000
-MAX_SEQ_LENGTH = 100
-FF_DIM = 1024
+if __name__ == "__main__":
 
-encoder = TransformerEncoder(embedding_dim=EMBEDDING_DIM, num_heads=NUM_HEADS, vocab_size=VOCAB_SIZE,
-                             max_seq_length=MAX_SEQ_LENGTH, FF_dim=FF_DIM)
+    EMBEDDING_DIM = 256
+    NUM_HEADS = 4
+    VOCAB_SIZE = 10000
+    MAX_SEQ_LENGTH = 100
+    FF_DIM = 1024
 
-sample = (torch.rand((10, MAX_SEQ_LENGTH))*(MAX_SEQ_LENGTH-1)).long()
+    encoder = TransformerEncoder(
+        embedding_dim=EMBEDDING_DIM,
+        num_heads=NUM_HEADS,
+        vocab_size=VOCAB_SIZE,
+        max_seq_length=MAX_SEQ_LENGTH,
+        FF_dim=FF_DIM,
+    )
 
-encoded_information = encoder(sample)
+    sample = torch.arange(0, MAX_SEQ_LENGTH)
+    sample = (torch.rand((10, MAX_SEQ_LENGTH)) * (MAX_SEQ_LENGTH - 1)).long()
 
-print(f"Encoded information: {encoded_information}")
-print(f"Encoded information shape: {encoded_information.shape}")
+    encoded_information = encoder(sample)
+
+    print(f"Sample: {sample}")
+    print(f"Encoded information: {encoded_information}")
+    print(f"Encoded information shape: {encoded_information.shape}")
 ```
 
 
@@ -298,11 +307,216 @@ Cho classification task, chúng ta chỉ cần mỗi khối encoder của transf
 
 * **Step 1**: Chuẩn bị data
 
+```python
+class CreateTextClassificationDataset(Dataset):
+    def __init__(
+        self,
+        df: pd.DataFrame,
+        vocabulary_size: int = None,
+        oov_token: str = "<OOV>",
+        padding_type: str = "post",
+        truncating_type: str = "post",
+        max_len: int = None,
+    ):
+
+        self.sentences = df["text"].values.tolist()
+        self.labels = df["target"].values
+        self.vocabulary_size = vocabulary_size
+        self.oov_token = oov_token
+        self.padding_type = padding_type
+        self.truncating_type = truncating_type
+        self.max_len = max_len
+        
+        # Create vectorised tokens
+        self._init_tokenizer()
+        self.vectorised_tokens = self._create_vectorised_tokens(self.sentences)
+        
+
+    def _init_tokenizer(self) -> None:
+        self.tokenizer = Tokenizer(
+            num_words=self.vocabulary_size, oov_token=self.oov_token
+        )
+        self.tokenizer.fit_on_texts(self.sentences)
+
+    def _tokenize_texts(self, text: Union[str, List[str]]) -> List[int]:
+        tokens = self.tokenizer.texts_to_sequences(text)
+        return tokens
+
+    def _vectorise_tokens(self, tokens: Union[List, List[int]]):
+        if self.max_len is None:
+            self.max_len = max([len(token) for token in tokens])
+
+        padded = pad_sequences(
+            tokens,
+            padding=self.padding_type,
+            truncating=self.truncating_type,
+            maxlen=self.max_len,
+        )
+        return padded
+
+    def _create_vectorised_tokens(self, sentences: List[str]) -> np.array:
+        tokenised = self._tokenize_texts(sentences)
+        vectorised = self._vectorise_tokens(tokenised)
+        return vectorised
+
+
+    def __len__(self):
+        return len(self.sentences)
+    
+    def __getitem__(self, idx):
+        return self.vectorised_tokens[idx], self.labels[idx]
+        
+class CreateEvalDatasetForEvaluation(Dataset):
+    def __init__(self, eval_tokens: np.array, eval_targets: np.array):
+        self.eval_tokens = eval_tokens
+        self.eval_targets = eval_targets
+        
+    def __len__(self):
+        return self.eval_targets.shape[0]
+    
+    def __getitem__(self, idx):
+        return self.eval_tokens[idx], self.eval_targets[idx]
+```
+
 * **Step 2**: Kết hợp transformer encoder và classification head 
 
-* **Step 3**: Training
+```python
+encoder = TransformerEncoder(
+    embedding_dim=EMBEDDING_DIM,
+    num_heads=NUM_HEADS,
+    vocab_size=VOCAB_SIZE,
+    max_seq_length=MAX_LEN,
+    FF_dim=FF_DIM,
+)
+
+model = nn.Sequential(encoder,
+                      nn.Flatten(1), 
+                      nn.Linear(MAX_LEN*EMBEDDING_DIM, NUM_CLASSES))
+
+model = model.to(DEVICE)
+
+optimizer = optim.Adam(model.parameters(), lr = LR, amsgrad=True)
+loss_fn = nn.CrossEntropyLoss()
+```
+
+* **Step 3**: Pre-training (Configs and stuff)
+
+```python
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
+VOCAB_SIZE = 20000
+OOV_TOKEN = "<OOV>"
+PADDING_TYPE = "post"
+TRUNCATING_TYPE = "post"
+MAX_LEN = 33
+NUM_TRAINING_RATIO = 0.8
+EMBEDDING_DIM = 256
+NUM_HEADS = 4
+FF_DIM = 1024
+BATCH_SIZE = 32
+SHUFFLE = True
+PIN_MEMORY = True
+NUM_CLASSES = 2
+LR = 3e-4
+NUM_EPOCHS = 100
+
+df = pd.read_csv("./nlp-getting-started/train.csv")
+train_df = df.iloc[:int(NUM_TRAINING_RATIO*len(df))]
+val_df = df.iloc[int(NUM_TRAINING_RATIO*len(df)):]
+
+train_ds = CreateTextClassificationDataset(train_df, vocabulary_size=VOCAB_SIZE, oov_token=OOV_TOKEN, padding_type=PADDING_TYPE, truncating_type=TRUNCATING_TYPE, 
+                                     max_len=MAX_LEN)
+
+eval_tokens = train_ds._create_vectorised_tokens(val_df["text"].values.tolist())
+eval_targets = val_df["target"].values
+eval_ds = CreateEvalDatasetForEvaluation(eval_tokens, eval_targets)
+
+train_loader = DataLoader(train_ds, batch_size = BATCH_SIZE, shuffle = SHUFFLE, pin_memory = PIN_MEMORY)
+eval_loader = DataLoader(eval_ds, batch_size = BATCH_SIZE, shuffle=False, pin_memory=PIN_MEMORY)
+
+```
+
+* **Step 4**: Training
+
+```python
+train(NUM_EPOCHS=NUM_EPOCHS)
+```
+
+```bash
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:14<00:00, 13.57it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 86.56it/s]
+Epoch: 1, Train Loss: 142.10867008566856, Val Loss: 44.142126590013504, Val Acc: 0.5344714379514117
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:11<00:00, 16.63it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 86.23it/s]
+Epoch: 2, Train Loss: 125.55668744444847, Val Loss: 29.014512717723846, Val Acc: 0.6868023637557452
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:12<00:00, 14.98it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 65.35it/s]
+Epoch: 3, Train Loss: 112.70439422130585, Val Loss: 30.35796758532524, Val Acc: 0.6625082074852265
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:11<00:00, 16.17it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 83.36it/s]
+Epoch: 4, Train Loss: 98.53315824270248, Val Loss: 28.567470982670784, Val Acc: 0.7150361129349967
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:11<00:00, 16.05it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 67.37it/s]
+Epoch: 5, Train Loss: 87.58201515674591, Val Loss: 27.053630746901035, Val Acc: 0.7071569271175312
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:16<00:00, 11.38it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 52.34it/s]
+Epoch: 6, Train Loss: 79.27146698534489, Val Loss: 29.58349298685789, Val Acc: 0.7038739330269206
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:16<00:00, 11.73it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 52.66it/s]
+Epoch: 7, Train Loss: 71.90403440594673, Val Loss: 30.562148183584213, Val Acc: 0.7097833223900197
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:14<00:00, 13.26it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 87.81it/s]
+Epoch: 8, Train Loss: 60.30563969910145, Val Loss: 32.01201945543289, Val Acc: 0.6841759684832567
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:12<00:00, 14.70it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 86.71it/s]
+Epoch: 9, Train Loss: 56.01010598987341, Val Loss: 26.42184019088745, Val Acc: 0.7504924491135916
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:12<00:00, 15.25it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 52.39it/s]
+Epoch: 10, Train Loss: 45.02339556068182, Val Loss: 30.82352478429675, Val Acc: 0.7032173342087984
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:16<00:00, 11.55it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 49.44it/s]
+Epoch: 11, Train Loss: 37.822556521743536, Val Loss: 40.1178354145959, Val Acc: 0.7032173342087984
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:16<00:00, 11.56it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 52.37it/s]
+Epoch: 12, Train Loss: 28.31721487827599, Val Loss: 52.655704917619005, Val Acc: 0.6001313197636244
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:14<00:00, 13.00it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 84.85it/s]
+Epoch: 13, Train Loss: 28.7558862734586, Val Loss: 36.70165067911148, Val Acc: 0.7557452396585687
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:13<00:00, 14.66it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 52.40it/s]
+Epoch: 14, Train Loss: 20.431814706884325, Val Loss: 30.56316629052162, Val Acc: 0.7544320420223244
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:15<00:00, 12.38it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 52.52it/s]
+Epoch: 15, Train Loss: 16.69958796026185, Val Loss: 36.892881229519844, Val Acc: 0.7458962573867367
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:16<00:00, 11.93it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 86.53it/s]
+Epoch: 16, Train Loss: 16.344361373223364, Val Loss: 36.886749021708965, Val Acc: 0.7314510833880499
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 191/191 [00:11<00:00, 16.28it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [00:00<00:00, 85.07it/s]
+Epoch: 17, Train Loss: 14.930934912525117, Val Loss: 32.301914274692535, Val Acc: 0.7386736703873933
+```
+
+Nhìn chung thì sau khoảng 17 epochs, model đạt 80% accuracy và có dấu hiệu bị overfit nhưng performance vẫn khá ổn.
 
 * **Step 4**: Inference
+
+Bước tiếp theo, mình sẽ thực hiện pipeline inference để chạy trực tiếp trên từng sample. 
+```python
+sample = ["Heard about #earthquake is different cities, stay safe everyone."]
+
+vectorised_sample = train_ds._create_vectorised_tokens(sample)
+vectorised_sample_torch = torch.from_numpy(vectorised_sample).long()
+pred = model(vectorised_sample_torch).argmax(-1)
+pred = "True" if pred.item() == 1 else "False"
+
+print(f"Prediction of {sample[0]} is {pred}")
+```
+
+```bash
+Prediction of Heard about #earthquake is different cities, stay safe everyone. is True
+```
+
 
 ### 3.3. Huấn luyện và chạy mô hình transformer để dịch tiếng Anh sang Tây Ban Nha
 
