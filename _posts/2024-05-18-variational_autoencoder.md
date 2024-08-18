@@ -55,7 +55,11 @@ $$\text{Decoder: } p(x|z) = \frac{p(z|x)p(x)}{p(z)} \text{ (intractable)} => q_{
 
 Trong công thức tính của Encoder đã bao gồm Decoder và ngược lại, vì vậy chúng ta chỉ cần tối ưu một trong hai khối và khối còn lại sẽ tự động được tối ưu. Trong paper của tác giả, họ chọn tối ưu Decoder nên trong post này mình cũng sẽ sử dụng Encoder để align với tác giả.
 
-Vì chúng ta muốn hàm Encoder $$q_{\theta}(z|x)$$ xấp xỉ giống y hệt như hàm intractable $$p(z|x)$$ nên ta sẽ có hàm mục tiêu như sau:
+Vì chúng ta muốn hàm Encoder 
+$$q_{\theta}(z|x)$$ 
+ xấp xỉ giống y hệt như hàm intractable 
+$$p(z|x)$$
+ nên ta sẽ có hàm mục tiêu như sau:
 
 $$\underset{\theta, \phi}{\text{Minimise }} D_{KL}(q_{\theta}(z|x)||p(z|x)) \text{ (1)}$$
 
