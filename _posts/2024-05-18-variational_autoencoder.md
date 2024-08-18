@@ -13,7 +13,7 @@ Trong bài post này, mình sẽ giới thiệu về mô hình Variational AutoE
 
 Được chính thức published trong paper "_Auto-Encoding Variational Bayes_" vào năm 2014, Variational AutoEncoder đã tạo ra tiếng vang rất lớn và tạo ra một cú hích giúp ngày càng nhiều probabilistic models được nghiên cứu hơn. Trong paper của mình, tác giả đề cập tới kiến trúc tổng quan của mô hình, các công thức toán học chứng minh, và một vài tricks để  làm cho VAE có thể hoạt động được. Mình nói tricks để giúp cho model hoạt động được bởi nếu không có trick này thì chắc chắn VAE sẽ không work và các probabilistic models sau này cũng sẽ không phát triển mạnh như bây giờ. 
 
-Về cơ bản, VAE được dùng để tạo ra các dữ liệu mới từ tập data training. Ngoài ra, mô hình còn giải quyết điểm yếu cố hữu của mô hình Auto-Encoder truyền thống trong việc generate data. Một chút về nhược điểm về Auto-Encoder, mô hình này bị ván đề **không sinh ra được data đa dạng và không có tính liên tục trong latent space**. Với sự ra mắt của VAE, 2 nhược điểm này đã hoàn toàn được khắc phục. 
+Về cơ bản, VAE được dùng để tạo ra các dữ liệu mới từ tập data training. Ngoài ra, mô hình còn giải quyết điểm yếu cố hữu của mô hình Auto-Encoder truyền thống trong việc generate data. Một chút về nhược điểm về Auto-Encoder, mô hình này bị ván đề **không sinh ra được data đa dạng và không có tính liên tục trong latent space**. Với sự ra mắt của VAE, 2 nhược điểm này đã được khắc phục. 
 
 <figure style="text-align: center">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwM6HreoBP1eVWUHsE92aN4LHy0ZW9tgNnjw&s" alt="">
@@ -47,7 +47,7 @@ $$p(z) = \int p(z|x)p(x)dx$$
 
 Nhìn vào 2 công thức trên, chúng ta có quan sát như sau. Để tính đươc p(x), ta phải quét qua toàn bộ các giá trị của latent space và để tính được p(z) ta phải quét qua toàn bộ các giá trị của data x. Nếu latent space và dataset của chúng ta > 1-D, điều này có thể khả thi, tuy nhiên chúng ta thường encode nó trong không gian lớn hơn rất nhiều so với 1D, vậy cần phải có cách khác. 
 
-Cách mà tác giả đề xuất trong paper là dùng một hàm xấp xỉ (approximator) để tính các giá trị latent (z) và reconstructed data ($\hat{x}$). Cụ thể, chúng sẽ có biểu thức toán học như sau:
+Cách mà tác giả đề xuất trong paper là dùng một hàm xấp xỉ (approximator) để tính các giá trị latent (z) và reconstructed data ($$\hat{x}$$). Cụ thể, chúng sẽ có biểu thức toán học như sau:
 
 $$\text{Encoder: } p(z|x) = \frac{p(x|z)p(z)}{p(x)} \text{ (intractable)} => q_{\theta}(z|x)$$
 
@@ -63,7 +63,8 @@ $$\underset{\theta, \phi}{\text{Minimise }} \mathbb{E}_{q_{\theta}(z|x)}[log(\fr
 
 $$\underset{\theta, \phi}{\text{Minimise }} \mathbb{E}_{q_{\theta}(z|x)}[log(q_{\theta}(z|x)) - log(p(x, z))] + log(p(x)) \text{ (3)}$$
 
-$p(x)$ có thể bị lược ra khỏi hàm loss vì nó không có params tối ưu và không có công dụng nào. Tuy nhiên, ở phần dưới sẽ có một trường hợp không có params tối ưu nhưng vẫn được giữ lại. 
+$$p(x)$$
+có thể bị lược ra khỏi hàm loss vì nó không có params tối ưu và không có công dụng nào. Tuy nhiên, ở phần dưới sẽ có một trường hợp không có params tối ưu nhưng vẫn được giữ lại. 
 
 $$\underset{\theta, \phi}{\text{Minimise }} \mathbb{E}_{q_{\theta}(z|x)}[log(q_{\theta}(z|x)) - log(p_{\phi}(x|z)) - log(p(z))] \text{ (4)}$$
 
@@ -71,7 +72,7 @@ $$\underset{\theta, \phi}{\text{Minimise }}\mathbb{E}_{q_{\theta}(z|x)}[log(\fra
 
 $$\underset{\theta, \phi}{\text{Minimise }} \mathbb{E}_{q_{\theta}(z|x)}[-log(p_{\phi}(x|z))] + D_{KL}(q_{\theta}(z|x)||p(z)) \text{ (6)}$$
 
-Ta có gradient của phương trình trên với 2 biến $\phi$ và $\theta$ như sau: 
+Ta có gradient của phương trình trên với 2 biến $$\phi$$ và $$\theta$$ như sau: 
 
 $$\nabla_{\phi}\mathbb{E}_{q_{\theta}(z|x)}[-log(p_{\phi}(x|z))] + D_{KL}(q_{\theta}(z|x)||p(z)) = \nabla_{\phi}-log(p_{\phi}(x|z)) \text{ (7)}$$
 
@@ -102,7 +103,7 @@ $$\text{Với } \epsilon \sim N(\mathbf{0}, I)$$
 
 $$\nabla_{\theta}\mathbb{E}_{p(\epsilon)}[-log(p_{\phi}(x|z = g_{\theta}(x, \epsilon)))] + D_{KL}(q_{\theta}(z|x)||p(z)) ≠ \nabla_{\theta}D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon)|x)||p(z)) \text{ (9)}$$
 
-Với Expectation không còn $\theta$ trong (9), chúng ta có thể tính gradient một cách dễ dàng như sau:
+Với Expectation không còn $$\theta$$ trong (9), chúng ta có thể tính gradient một cách dễ dàng như sau:
 
 $$\nabla_{\theta}\mathbb{E}_{p(\epsilon)}[-log(p_{\phi}(x|z = g_{\theta}(x, \epsilon)))] + D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon))||p(z)) = \nabla_{\theta}D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon))||p(z)) \text{ (10)}$$
 
