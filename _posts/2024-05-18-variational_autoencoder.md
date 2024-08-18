@@ -121,7 +121,7 @@ $$\nabla_{\theta}\mathbb{E}_{p(\epsilon)}[-log(p_{\phi}(x|z = g_{\theta}(x, \eps
 
 Phương trình (7) chỉ đơn giản là tối ưu các tham số của decoder sao để cho reconstructed data giống với data gốc. Chúng ta có thể dùng L1, L2, Binary Cross Entropy, ... Tuy nhiên, đối với phương trình (10), chúng ta phải sample từ prior $$p(z)$$ và $$\epsilon \sim N(\mathbf{0}, \mathbf{I})$$, và việc sample mỗi iteration mỗi khác như vậy sẽ khiến **việc training khó hội tụ hơn**, vì thế cần một cách thức khác để có thể tối ưu nó mà không cần sample từ các distributions. 
 
-Chúng ta sẽ assume latent space z là một phân bối Gaussian và prior của nó là một phân bố Gauss tiêu chuẩn  $$p(z) =  N(0, I)$$ và posterior $$q_{\theta}(z = g_{\theta}(x, \epsilon)) = N(\mu_{\theta}(x), \sigma_{\theta}^2(x))$$.
+Chúng ta sẽ assume latent space z là một phân phối Gaussian và prior của nó là một phân bố Gauss tiêu chuẩn  $$p(z) =  N(0, I)$$ và posterior $$q_{\theta}(z = g_{\theta}(x, \epsilon)) = N(\mu_{\theta}(x), \sigma_{\theta}^2(x))$$.
 
 Vì vậy, chúng ta có thể biến đổi (10) thành:
 
