@@ -17,7 +17,7 @@ Về cơ bản, VAE được dùng để tạo ra các dữ liệu mới từ t�
 
 <figure style="text-align: center">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwM6HreoBP1eVWUHsE92aN4LHy0ZW9tgNnjw&s" alt="">
-<figcaption><b>Hình 1.1.</b> Ảnh được sinh ra từ VAE - Google</figcaption>
+<figcaption><b>Hình 1.1.</b> Ảnh được sinh ra từ VAE</figcaption>
 </figure>
 
 ### 2. Kiến trúc
@@ -53,7 +53,7 @@ $$\text{Encoder: } p(z|x) = \frac{p(x|z)p(z)}{p(x)} \text{ (intractable)} => q_{
 
 $$\text{Decoder: } p(x|z) = \frac{p(z|x)p(x)}{p(z)} \text{ (intractable)} => q_{\phi}(x|z)$$
 
-Trong công thức tính của Encoder đã bao gồm Decoder và ngược lại, vì vậy chúng ta chỉ cần tối ưu một trong hai khối và khối còn lại sẽ tự động được tối ưu. Trong paper của tác giả, họ chọn tối ưu Decoder nên trong post này mình cũng sẽ sử dụng Encoder để align với tác giả.
+Trong công thức tính của Encoder đã bao gồm Decoder và ngược lại, vì vậy chúng ta chỉ cần tối ưu một trong hai khối và khối còn lại sẽ tự động được tối ưu. Trong paper của tác giả, họ chọn tối ưu Encoder nên trong post này mình cũng sẽ sử dụng Encoder để align với tác giả.
 
 Vì chúng ta muốn hàm Encoder 
 $$q_{\theta}(z|x)$$ 
@@ -112,6 +112,48 @@ Với Expectation không còn $$\theta$$ trong (9), chúng ta có thể tính gr
 $$\nabla_{\theta}\mathbb{E}_{p(\epsilon)}[-log(p_{\phi}(x|z = g_{\theta}(x, \epsilon)))] + D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon))||p(z)) = \nabla_{\theta}D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon))||p(z)) \text{ (10)}$$
 
 Tới đây, chúng ta đã có được phương trình để tính gradient cập nhật trọng số cho model.
+
+Tóm lại, chúng ta sẽ cần phương trình (7) và (10) để cập nhật các parameters trong mạng. Mình sẽ viết lại 2 phương trình sau khi được áp dụng reparameterisation trick. 
+
+$$\nabla_{\phi}\mathbb{E}_{p(\epsilon)}[-log(p_{\phi}(x|z = g_{\theta}(x, \epsilon)))] + D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon))||p(z)) = \nabla_{\phi}-log(p_{\phi}(x|z = g_{\theta}(x, \epsilon))) \text{ (7)}$$
+
+$$\nabla_{\theta}\mathbb{E}_{p(\epsilon)}[-log(p_{\phi}(x|z = g_{\theta}(x, \epsilon)))] + D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon))||p(z)) = \nabla_{\theta}D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon))||p(z)) \text{ (10)}$$
+
+Phương trình (7) chỉ đơn giản là tối ưu các tham số của decoder sao để cho reconstructed data giống với data gốc. Chúng ta có thể dùng L1, L2, Binary Cross Entropy, ... Tuy nhiên, đối với phương trình (10), chúng ta phải sample từ prior $$p(z)$$ và $$\epsilon \sim N(\mathbf{0}, \mathbf{I})$$, và việc sample mỗi iteration mỗi khác như vậy sẽ khiến **việc training khó hội tụ hơn**, vì thế cần một cách thức khác để có thể tối ưu nó mà không cần sample từ các distributions. 
+
+Chúng ta sẽ assume latent space z là một phân bối Gaussian và prior của nó là một phân bố Gauss tiêu chuẩn  $$p(z) =  N(0, I)$$ và posterior $$q_{\theta}(z = g_{\theta}(x, \epsilon)) = N(\mu_{\theta}(x), \sigma_{\theta}^2(x))$$.
+
+Vì vậy, chúng ta có thể biến đổi (10) thành:
+
+$$\nabla_{\theta}D_{KL}(q_{\theta}(z = g_{\theta}(x, \epsilon))||p(z)) = D_{KL}(N(\mu_{\theta}(x), \sigma_{\theta}^2(x))|| N(0, I)) \text{ (11)}$$
+
+
+Theo công thức Gauss, ta có:
+
+$$q_{\theta}(z = g_{\theta}(x, \epsilon)) = \frac{1}{\sigma \sqrt {2\pi} } e^{-0.5(\frac{z - \mu_{\theta}(x)}{\sigma_{\theta}(x)})^2}$$
+
+$$p(z) = \frac{1}{\sqrt {2\pi}}e^{-0.5z^2}$$
+
+Từ 2 công thức Gauss trên, ta áp dụng vào để tính khoảng cách Kullback-Leibler một cách deterministic. 
+
+$$D_{KL}(N(\mu_{\theta}(x), \sigma_{\theta}^2(x))|| N(0, I)) = \mathbb{E}_{q_{\theta}}[log(q_{\theta}) - log(p(z))]$$
+
+$$\mathbb{E}_{q_{\theta}}[log(\frac{1}{\sigma_{\theta} \sqrt{2 \pi}}) - \frac{1}{2}(\frac{z - \mu_{\theta}}{\sigma_{\theta}})^2 - log(\frac{1}{\sqrt{2 \pi}}) + \frac{1}{2} z^2]$$
+
+$$\mathbb{E}_{q_{\theta}}[log(\frac{1}{\sigma_{\theta} \sqrt{2 \pi}}) - log(\frac{1}{\sqrt{2 \pi}})] + \mathbb{E}_{q_{\theta}}[- \frac{1}{2}(\frac{z - \mu_{\theta}}{\sigma_{\theta}})^2] + \mathbb{E}_{q_{\theta}}[\frac{1}{2} z^2]$$
+
+Trong đó:
+
+$$\mathbb{E}_{q_{\theta}}[log(\frac{1}{\sigma_{\theta} \sqrt{2 \pi}}) - log(\frac{1}{\sqrt{2 \pi}})] = - \frac{1}{2}log(\sigma_{\theta})$$
+
+$$\mathbb{E}_{q_{\theta}}[- \frac{1}{2}(\frac{z - \mu_{\theta}}{\sigma_{\theta}})^2] = - \frac{1}{2}$$
+
+$$\mathbb{E}_{q_{\theta}}[\frac{1}{2} z^2] = \frac{1}{2}(\sigma_{\theta}^2 + \mu_{\theta}^2)$$
+
+Vì vậy, tổng hợp lại ta có được là:
+
+$$D_{KL}(N(\mu_{\theta}(x), \sigma_{\theta}^2(x))|| N(0, I)) = \frac{1}{2}[-log(\sigma_{\theta}^2) - 1 + \sigma_{\theta}^2 + \mu_{\theta}^2]$$
+
 
 ### 4. Code VAE với Python và Keras
 
