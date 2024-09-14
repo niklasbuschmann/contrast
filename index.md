@@ -3,7 +3,7 @@ layout: post
 categories: media
 title: 
 ---
- ![my profile image](assets/blueme.jpg){: width="45%"}{: style="float: left; margin-right: 3em;"} 
+ ![my profile image](assets/IMG_1320.jpg){: width="45%"}{: style="float: left; margin-right: 3em;"} 
 
 I am a Senior Lecturer (Associate Professor) in the School of Computer Science at the University of Glasgow, UK. Before I moved to Glasgow, I was an Associate Professor at Fudan University, Shanghai, China. I received my Ph.D. at the University of California, Irvine, USA. in 2010.
 
