@@ -20,6 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
    - {file: "research.md", title: Research}
    - {file: "teaching.md", title: Teaching}
    - {file: "students.md", title: Students}
+   - {file: "https://xianghuading.github.io/Care-Computing-Group", title: Care Computing Group}
    - {file: "fun.md", title: Fun}
 
 
