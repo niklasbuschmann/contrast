@@ -4,6 +4,8 @@ layout: page
 categories: media
 ---
 ![researchwork](assets/researchwork.jpg) 
+"_If we could teach our students the value of science and technology simultaneously with the art and science of inter-human relationships, of human and total patient-care, it would be real progress. If science and technology are not to be misused to increase destructiveness, prolonging life rather than making it more human, if they could go hand in hand with freeing more time rather than less for individual person-to-person contacts, then we could really speak of a great society._"--Death and Dying: Kübler-Ross
+
 To give a sense of the kinds of research I am doing, here is some of my recent work, mainly on healthcare and peer interactions for personal growth and wellbeing, involving design, ethnographic studies, and technology development.
 
 
