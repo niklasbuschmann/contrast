@@ -1,5 +1,7 @@
-
-## About me 
+---
+title: "About me"
+layout: post
+---
 
 Hi! I am a PhD student in the [Department of Atmospheric & Environmental Sciences](https://www.albany.edu/daes) 
 at the [University at Albany, SUNY](https://www.albany.edu/), advised by [Dr. Brian Rose](https://brian-rose.github.io/).
