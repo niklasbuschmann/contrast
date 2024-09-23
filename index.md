@@ -1,6 +1,6 @@
 ---
 title: "About me"
-layout: post
+layout: page
 ---
 
 Hi! I am a PhD student in the [Department of Atmospheric & Environmental Sciences](https://www.albany.edu/daes) 
