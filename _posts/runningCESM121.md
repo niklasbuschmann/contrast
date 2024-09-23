@@ -1,9 +1,8 @@
 ---
+title: "Running CESM1.2.1 on SNOW at UAlbany"
+layout: post
 use_math: true
 ---
-
-
-# Running CESM1.2.1 on SNOW at UAlbany
 
 This is based on [Brian Rose's tutorial for ATM 623](http://www.atmos.albany.edu/facstaff/brose/classes/ATM623_Spring2017/2017/03/16/CESM-tutorial.html), as well as [Yuan-Jen Lin's notes](https://hackmd.io/@yuanjenlin/CESM_on_SNOW).
 ## Environment setup
