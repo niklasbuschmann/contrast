@@ -562,7 +562,6 @@ print(f"Prediction of {sample[0]} is {pred}")
 Prediction of Heard about #earthquake is different cities, stay safe everyone. is True
 ```
 
-
 ### 3.3. Huấn luyện và chạy mô hình transformer để dịch tiếng Anh sang Tây Ban Nha
 
 
