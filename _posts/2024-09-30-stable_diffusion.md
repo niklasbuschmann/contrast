@@ -46,7 +46,7 @@ Trong lúc training, diffusion được chia thành 2 quá trình:
 Trong lúc inference, ta **chỉ sử dụng reverse process** bằng việc đưa vào nhiễu Gauss và mô hình sẽ trả kết quả là một tấm ảnh bất kì được sinh ra. 
 
 
-### 2. Giải thích toán học 
+### 2. Giải thích toán học
 
 #### 2.1. Forward process 
 
