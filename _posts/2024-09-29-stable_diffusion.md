@@ -85,9 +85,9 @@ $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0) = \mathcal{N}(\mathbf{x}_
 
 Áp dụng định lý Bayes, ta được: 
 
-$$\begin{aligned}
+$$
 q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0) 
-\end{aligned}$$
+$$
 
 <!-- $$\begin{aligned}
 q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0) 
