@@ -21,7 +21,7 @@ Mô hình Diffusion được lấy cảm hứng từ nhiệt động học phi c
 <img src="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/generative-overview.png" alt="">
 </figure>
 
-
+<!-- 
 ### 1. Mô hình Diffusion là gì và nó hoạt động như thế nào ?
 
 
@@ -192,4 +192,4 @@ Trong bài viết này, mình đã giới thiệu về diffusion model, cách ho
 [lil_blog]: https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
 [Diffusion Models | Paper Explanation | Math Explained]: https://www.youtube.com/watch?v=HoKDTa5jHvg&t=1074s
 
-
+ -->
