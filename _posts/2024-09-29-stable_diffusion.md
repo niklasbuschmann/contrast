@@ -79,7 +79,9 @@ p_\theta(\mathbf{x}_{t-1} \vert \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \b
 <img src="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/diffusion-example.png" alt="">
 </figure>
 
-Điều đáng chú ý là $$q_(x_{t-1}|x_t)$$ có thể giải được khi được condition trên $$x_0$$:
+Điều đáng chú ý là 
+$$q_(x_{t-1}|x_t)$$
+ có thể giải được khi được condition trên $$x_0$$:
 
 $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0) = \mathcal{N}(\mathbf{x}_{t-1}; {\tilde{\boldsymbol{\mu}}}(\mathbf{x}_t, \mathbf{x}_0), {\tilde{\beta}_t} \mathbf{I})$$
 
@@ -87,7 +89,7 @@ $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0) = \mathcal{N}(\mathbf{x}_
 
 **Bổ sung sau**
 
-Trong đó $$C(\mathbf{x}_t, \mathbf{x}_0)$$ là một hàm không liên quan đến $$\mathbf{x}_{t-1}$$ và bị lược bỏ. Theo hàm mật độ của phân phối Gaussian chuẩn, giá trị trung bình và phương sai có thể được tham số hóa như sau (nhớ rằng $$\alpha_t = 1 - \beta_t$ và $\bar{\alpha}_t = \prod_{i=1}^T \alpha_i$$):
+Trong đó $$C(\mathbf{x}_t, \mathbf{x}_0)$$ là một hàm không liên quan đến $$\mathbf{x}_{t-1}$$ và bị lược bỏ. Theo hàm mật độ của phân phối Gaussian chuẩn, giá trị trung bình và phương sai có thể được tham số hóa như sau (nhớ rằng $$\alpha_t = 1 - \beta_t$$ và $$\bar{\alpha}_t = \prod_{i=1}^T \alpha_i$$):
 
 $$\begin{aligned}
 \tilde{\beta}_t 
@@ -140,16 +142,16 @@ L_t &= D_\text{KL}(q(\mathbf{x}_t \vert \mathbf{x}_{t+1}, \mathbf{x}_0) \paralle
 L_0 &= - \log p_\theta(\mathbf{x}_0 \vert \mathbf{x}_1)
 \end{aligned}$$
 
-Mỗi thành phần KL trong $L_\text{VLB}$ (ngoại trừ $L_0$) so sánh hai phân phối Gaussian và do đó chúng có thể được tính toán dưới dạng closed-form. $L_T$ là hằng số và có thể bị bỏ qua trong quá trình huấn luyện vì $q$ không có tham số có thể học được và là một nhiễu Gaussian.
+Mỗi thành phần KL trong $$L_\text{VLB}$$ (ngoại trừ $$L_0$$) so sánh hai phân phối Gaussian và do đó chúng có thể được tính toán dưới dạng closed-form. $$L_T$$ là hằng số và có thể bị bỏ qua trong quá trình huấn luyện vì $$q$$ không có tham số có thể học được và là một nhiễu Gaussian.
 
-Hãy nhớ rằng chúng ta cần học một mạng neural để xấp xỉ các phân phối xác suất có điều kiện trong reverse process, $p_\theta(\mathbf{x}_{t-1} \vert \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \boldsymbol{\mu}_\theta(\mathbf{x}_t, t), \boldsymbol{\Sigma}_\theta(\mathbf{x}_t, t))$. Chúng ta muốn huấn luyện $\boldsymbol{\mu}_\theta$ để dự đoán $\tilde{\boldsymbol{\mu}}_t = \frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_t \Big)$. Vì $\mathbf{x}_t$ có sẵn như đầu vào trong thời gian huấn luyện, chúng ta có thể tái tham số hóa thành phần nhiễu Gaussian thay vào đó để nó dự đoán $\boldsymbol{\epsilon}_t$ từ đầu vào $\mathbf{x}_t$ tại timestep $t$:
+Hãy nhớ rằng chúng ta cần học một mạng neural để xấp xỉ các phân phối xác suất có điều kiện trong reverse process, $$p_\theta(\mathbf{x}_{t-1} \vert \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \boldsymbol{\mu}_\theta(\mathbf{x}_t, t), \boldsymbol{\Sigma}_\theta(\mathbf{x}_t, t))$$. Chúng ta muốn huấn luyện $$\boldsymbol{\mu}_\theta$$ để dự đoán $$\tilde{\boldsymbol{\mu}}_t = \frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_t \Big)$$. Vì $$\mathbf{x}_t$$ có sẵn như đầu vào trong thời gian huấn luyện, chúng ta có thể tái tham số hóa thành phần nhiễu Gaussian thay vào đó để nó dự đoán $$\boldsymbol{\epsilon}_t$$ từ đầu vào $\mathbf{x}_t$ tại timestep $t$:
 
 $$\begin{aligned}
 \boldsymbol{\mu}_\theta(\mathbf{x}_t, t) &= {\frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_\theta(\mathbf{x}_t, t) \Big)} \\
 \text{Thus }\mathbf{x}_{t-1} &= \mathcal{N}(\mathbf{x}_{t-1}; \frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_\theta(\mathbf{x}_t, t) \Big), \boldsymbol{\Sigma}_\theta(\mathbf{x}_t, t))
 \end{aligned}$$
 
-Hàm loss $L_t$ được tham số hóa để tối thiểu hóa sự khác biệt từ $\tilde{\boldsymbol{\mu}}$:
+Hàm loss $L_t$ được tham số hóa để tối thiểu hóa sự khác biệt từ $$\tilde{\boldsymbol{\mu}}$$:
 
 $$\begin{aligned}
 L_t 
