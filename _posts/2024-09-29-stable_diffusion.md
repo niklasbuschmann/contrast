@@ -57,3 +57,11 @@ Mẫu dữ liệu $x_0$ dần mất đi các đặc điểm nhận dạng khi ti
 
 Một tính chất thú vị của quá trình trên là chúng ta có thể lấy mẫu $x_t$ tại bất kỳ bước time step $t$ nào bằng cách sử dụng **reparameterisation trick**. Đặt $\alpha_t = 1 - \beta_t$, và $\bar{\alpha}_t = \prod^t_{i=1} \alpha_i$.
 
+$$\begin{aligned}
+\mathbf{x}_t 
+&= \sqrt{\alpha_t}\mathbf{x}_{t-1} + \sqrt{1 - \alpha_t}\boldsymbol{\epsilon}_{t-1} & \text{ ;where } \boldsymbol{\epsilon}_{t-1}, \boldsymbol{\epsilon}_{t-2}, \dots \sim \mathcal{N}(\mathbf{0}, \mathbf{I}) \\
+&= \sqrt{\alpha_t \alpha_{t-1}} \mathbf{x}_{t-2} + \sqrt{1 - \alpha_t \alpha_{t-1}} \bar{\boldsymbol{\epsilon}}_{t-2} & \text{ ;where } \bar{\boldsymbol{\epsilon}}_{t-2} \text{ merges two Gaussians (*).} \\
+&= \dots \\
+&= \sqrt{\bar{\alpha}_t}\mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t}\boldsymbol{\epsilon} \\
+q(\mathbf{x}_t \vert \mathbf{x}_0) &= \mathcal{N}(\mathbf{x}_t; \sqrt{\bar{\alpha}_t} \mathbf{x}_0, (1 - \bar{\alpha}_t)\mathbf{I})
+\end{aligned}$$
