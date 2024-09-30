@@ -85,6 +85,700 @@ $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0) = \mathcal{N}(\mathbf{x}_
 
 Áp dụng định lý Bayes, ta được: 
 
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true" columnalign="right left" columnspacing="0em" rowspacing="3pt">
+    <mtr>
+      <mtd>
+        <mi>q</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mrow data-mjx-texclass="ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mrow data-mjx-texclass="ORD">
+            <mi>t</mi>
+            <mo>&#x2212;</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo data-mjx-texclass="ORD" fence="false" stretchy="false">|</mo>
+        <msub>
+          <mrow data-mjx-texclass="ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mi>t</mi>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mrow data-mjx-texclass="ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mn>0</mn>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mtd>
+      <mtd>
+        <mi></mi>
+        <mo>=</mo>
+        <mi>q</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mrow data-mjx-texclass="ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mi>t</mi>
+        </msub>
+        <mo data-mjx-texclass="ORD" fence="false" stretchy="false">|</mo>
+        <msub>
+          <mrow data-mjx-texclass="ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mrow data-mjx-texclass="ORD">
+            <mi>t</mi>
+            <mo>&#x2212;</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mrow data-mjx-texclass="ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mn>0</mn>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mfrac>
+          <mrow>
+            <mi>q</mi>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mrow data-mjx-texclass="ORD">
+                <mi>t</mi>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo data-mjx-texclass="ORD" fence="false" stretchy="false">|</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mn>0</mn>
+            </msub>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mrow>
+            <mi>q</mi>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mi>t</mi>
+            </msub>
+            <mo data-mjx-texclass="ORD" fence="false" stretchy="false">|</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mn>0</mn>
+            </msub>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </mfrac>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd></mtd>
+      <mtd>
+        <mi></mi>
+        <mo>&#x221D;</mo>
+        <mi>exp</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.623em" maxsize="1.623em">(</mo>
+        </mrow>
+        <mo>&#x2212;</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.2em" maxsize="1.2em">(</mo>
+        </mrow>
+        <mfrac>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mi>t</mi>
+            </msub>
+            <mo>&#x2212;</mo>
+            <msqrt>
+              <msub>
+                <mi>&#x3B1;</mi>
+                <mi>t</mi>
+              </msub>
+            </msqrt>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mrow data-mjx-texclass="ORD">
+                <mi>t</mi>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+          <msub>
+            <mi>&#x3B2;</mi>
+            <mi>t</mi>
+          </msub>
+        </mfrac>
+        <mo>+</mo>
+        <mfrac>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mrow data-mjx-texclass="ORD">
+                <mi>t</mi>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>&#x2212;</mo>
+            <msqrt>
+              <msub>
+                <mrow data-mjx-texclass="ORD">
+                  <mover>
+                    <mi>&#x3B1;</mi>
+                    <mo stretchy="false">&#xAF;</mo>
+                  </mover>
+                </mrow>
+                <mrow data-mjx-texclass="ORD">
+                  <mi>t</mi>
+                  <mo>&#x2212;</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+            </msqrt>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mn>0</mn>
+            </msub>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mover>
+                  <mi>&#x3B1;</mi>
+                  <mo stretchy="false">&#xAF;</mo>
+                </mover>
+              </mrow>
+              <mrow data-mjx-texclass="ORD">
+                <mi>t</mi>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </mfrac>
+        <mo>&#x2212;</mo>
+        <mfrac>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mi>t</mi>
+            </msub>
+            <mo>&#x2212;</mo>
+            <msqrt>
+              <msub>
+                <mrow data-mjx-texclass="ORD">
+                  <mover>
+                    <mi>&#x3B1;</mi>
+                    <mo stretchy="false">&#xAF;</mo>
+                  </mover>
+                </mrow>
+                <mi>t</mi>
+              </msub>
+            </msqrt>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mn>0</mn>
+            </msub>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mover>
+                  <mi>&#x3B1;</mi>
+                  <mo stretchy="false">&#xAF;</mo>
+                </mover>
+              </mrow>
+              <mi>t</mi>
+            </msub>
+          </mrow>
+        </mfrac>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.2em" maxsize="1.2em">)</mo>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.623em" maxsize="1.623em">)</mo>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd></mtd>
+      <mtd>
+        <mi></mi>
+        <mo>=</mo>
+        <mi>exp</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.623em" maxsize="1.623em">(</mo>
+        </mrow>
+        <mo>&#x2212;</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.2em" maxsize="1.2em">(</mo>
+        </mrow>
+        <mfrac>
+          <mrow>
+            <msubsup>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mi>t</mi>
+              <mn>2</mn>
+            </msubsup>
+            <mo>&#x2212;</mo>
+            <mn>2</mn>
+            <msqrt>
+              <msub>
+                <mi>&#x3B1;</mi>
+                <mi>t</mi>
+              </msub>
+            </msqrt>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mi>t</mi>
+            </msub>
+            <mstyle mathcolor="blue">
+              <mrow data-mjx-texclass="ORD">
+                <msub>
+                  <mrow data-mjx-texclass="ORD">
+                    <mi mathvariant="bold">x</mi>
+                  </mrow>
+                  <mrow data-mjx-texclass="ORD">
+                    <mi>t</mi>
+                    <mo>&#x2212;</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mstyle mathcolor="black">
+                <mrow data-mjx-texclass="ORD">
+                  <mo>+</mo>
+                  <msub>
+                    <mi>&#x3B1;</mi>
+                    <mi>t</mi>
+                  </msub>
+                </mrow>
+                <mstyle mathcolor="red">
+                  <mrow data-mjx-texclass="ORD">
+                    <msubsup>
+                      <mrow data-mjx-texclass="ORD">
+                        <mi mathvariant="bold">x</mi>
+                      </mrow>
+                      <mrow data-mjx-texclass="ORD">
+                        <mi>t</mi>
+                        <mo>&#x2212;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mn>2</mn>
+                    </msubsup>
+                  </mrow>
+                </mstyle>
+              </mstyle>
+            </mstyle>
+          </mrow>
+          <msub>
+            <mi>&#x3B2;</mi>
+            <mi>t</mi>
+          </msub>
+        </mfrac>
+        <mo>+</mo>
+        <mfrac>
+          <mstyle mathcolor="red">
+            <mrow data-mjx-texclass="ORD">
+              <msubsup>
+                <mrow data-mjx-texclass="ORD">
+                  <mi mathvariant="bold">x</mi>
+                </mrow>
+                <mrow data-mjx-texclass="ORD">
+                  <mi>t</mi>
+                  <mo>&#x2212;</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+            <mstyle mathcolor="black">
+              <mrow data-mjx-texclass="ORD">
+                <mo>&#x2212;</mo>
+                <mn>2</mn>
+                <msqrt>
+                  <msub>
+                    <mrow data-mjx-texclass="ORD">
+                      <mover>
+                        <mi>&#x3B1;</mi>
+                        <mo stretchy="false">&#xAF;</mo>
+                      </mover>
+                    </mrow>
+                    <mrow data-mjx-texclass="ORD">
+                      <mi>t</mi>
+                      <mo>&#x2212;</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </msqrt>
+                <msub>
+                  <mrow data-mjx-texclass="ORD">
+                    <mi mathvariant="bold">x</mi>
+                  </mrow>
+                  <mn>0</mn>
+                </msub>
+              </mrow>
+              <mstyle mathcolor="blue">
+                <mrow data-mjx-texclass="ORD">
+                  <msub>
+                    <mrow data-mjx-texclass="ORD">
+                      <mi mathvariant="bold">x</mi>
+                    </mrow>
+                    <mrow data-mjx-texclass="ORD">
+                      <mi>t</mi>
+                      <mo>&#x2212;</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mstyle mathcolor="black">
+                  <mrow data-mjx-texclass="ORD">
+                    <mo>+</mo>
+                    <msub>
+                      <mrow data-mjx-texclass="ORD">
+                        <mover>
+                          <mi>&#x3B1;</mi>
+                          <mo stretchy="false">&#xAF;</mo>
+                        </mover>
+                      </mrow>
+                      <mrow data-mjx-texclass="ORD">
+                        <mi>t</mi>
+                        <mo>&#x2212;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <msubsup>
+                      <mrow data-mjx-texclass="ORD">
+                        <mi mathvariant="bold">x</mi>
+                      </mrow>
+                      <mn>0</mn>
+                      <mn>2</mn>
+                    </msubsup>
+                  </mrow>
+                </mstyle>
+              </mstyle>
+            </mstyle>
+          </mstyle>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mover>
+                  <mi>&#x3B1;</mi>
+                  <mo stretchy="false">&#xAF;</mo>
+                </mover>
+              </mrow>
+              <mrow data-mjx-texclass="ORD">
+                <mi>t</mi>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </mfrac>
+        <mo>&#x2212;</mo>
+        <mfrac>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mi>t</mi>
+            </msub>
+            <mo>&#x2212;</mo>
+            <msqrt>
+              <msub>
+                <mrow data-mjx-texclass="ORD">
+                  <mover>
+                    <mi>&#x3B1;</mi>
+                    <mo stretchy="false">&#xAF;</mo>
+                  </mover>
+                </mrow>
+                <mi>t</mi>
+              </msub>
+            </msqrt>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mn>0</mn>
+            </msub>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;</mo>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mover>
+                  <mi>&#x3B1;</mi>
+                  <mo stretchy="false">&#xAF;</mo>
+                </mover>
+              </mrow>
+              <mi>t</mi>
+            </msub>
+          </mrow>
+        </mfrac>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.2em" maxsize="1.2em">)</mo>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.623em" maxsize="1.623em">)</mo>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd></mtd>
+      <mtd>
+        <mi></mi>
+        <mo>=</mo>
+        <mi>exp</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.623em" maxsize="1.623em">(</mo>
+        </mrow>
+        <mo>&#x2212;</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mrow data-mjx-texclass="ORD">
+          <mo minsize="1.2em" maxsize="1.2em">(</mo>
+        </mrow>
+        <mstyle mathcolor="red">
+          <mrow data-mjx-texclass="ORD">
+            <mo stretchy="false">(</mo>
+            <mfrac>
+              <msub>
+                <mi>&#x3B1;</mi>
+                <mi>t</mi>
+              </msub>
+              <msub>
+                <mi>&#x3B2;</mi>
+                <mi>t</mi>
+              </msub>
+            </mfrac>
+            <mo>+</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#x2212;</mo>
+                <msub>
+                  <mrow data-mjx-texclass="ORD">
+                    <mover>
+                      <mi>&#x3B1;</mi>
+                      <mo stretchy="false">&#xAF;</mo>
+                    </mover>
+                  </mrow>
+                  <mrow data-mjx-texclass="ORD">
+                    <mi>t</mi>
+                    <mo>&#x2212;</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+            </mfrac>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <msubsup>
+            <mrow data-mjx-texclass="ORD">
+              <mi mathvariant="bold">x</mi>
+            </mrow>
+            <mrow data-mjx-texclass="ORD">
+              <mi>t</mi>
+              <mo>&#x2212;</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>2</mn>
+          </msubsup>
+          <mo>&#x2212;</mo>
+          <mstyle mathcolor="blue">
+            <mrow data-mjx-texclass="ORD">
+              <mo stretchy="false">(</mo>
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <msqrt>
+                    <msub>
+                      <mi>&#x3B1;</mi>
+                      <mi>t</mi>
+                    </msub>
+                  </msqrt>
+                </mrow>
+                <msub>
+                  <mi>&#x3B2;</mi>
+                  <mi>t</mi>
+                </msub>
+              </mfrac>
+              <msub>
+                <mrow data-mjx-texclass="ORD">
+                  <mi mathvariant="bold">x</mi>
+                </mrow>
+                <mi>t</mi>
+              </msub>
+              <mo>+</mo>
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <msqrt>
+                    <msub>
+                      <mrow data-mjx-texclass="ORD">
+                        <mover>
+                          <mi>&#x3B1;</mi>
+                          <mo stretchy="false">&#xAF;</mo>
+                        </mover>
+                      </mrow>
+                      <mrow data-mjx-texclass="ORD">
+                        <mi>t</mi>
+                        <mo>&#x2212;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                  </msqrt>
+                </mrow>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>&#x2212;</mo>
+                  <msub>
+                    <mrow data-mjx-texclass="ORD">
+                      <mover>
+                        <mi>&#x3B1;</mi>
+                        <mo stretchy="false">&#xAF;</mo>
+                      </mover>
+                    </mrow>
+                    <mrow data-mjx-texclass="ORD">
+                      <mi>t</mi>
+                      <mo>&#x2212;</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+              </mfrac>
+              <msub>
+                <mrow data-mjx-texclass="ORD">
+                  <mi mathvariant="bold">x</mi>
+                </mrow>
+                <mn>0</mn>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <msub>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="bold">x</mi>
+              </mrow>
+              <mrow data-mjx-texclass="ORD">
+                <mi>t</mi>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mstyle mathcolor="black">
+              <mrow data-mjx-texclass="ORD">
+                <mo>+</mo>
+                <mi>C</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mrow data-mjx-texclass="ORD">
+                    <mi mathvariant="bold">x</mi>
+                  </mrow>
+                  <mi>t</mi>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mrow data-mjx-texclass="ORD">
+                    <mi mathvariant="bold">x</mi>
+                  </mrow>
+                  <mn>0</mn>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mrow data-mjx-texclass="ORD">
+                  <mo minsize="1.2em" maxsize="1.2em">)</mo>
+                </mrow>
+                <mrow data-mjx-texclass="ORD">
+                  <mo minsize="1.623em" maxsize="1.623em">)</mo>
+                </mrow>
+              </mrow>
+            </mstyle>
+          </mstyle>
+        </mstyle>
+      </mtd>
+    </mtr>
+  </mtable>
+</math>
 
 Trong đó $C(\mathbf{x}_t, \mathbf{x}_0)$ là một hàm không liên quan đến $\mathbf{x}_{t-1}$ và bị lược bỏ. Theo hàm mật độ của phân phối Gaussian chuẩn, giá trị trung bình và phương sai có thể được tham số hóa như sau (nhớ rằng $\alpha_t = 1 - \beta_t$ và $\bar{\alpha}_t = \prod_{i=1}^T \alpha_i$):
 
