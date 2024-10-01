@@ -5,11 +5,6 @@ layout: post
 categories: media
 ---
 
-
-<figure style="text-align: center">
-<img src="https://kodexolabs.com/wp-content/uploads/2024/07/How-does-Stable-Diffusion-work-Blog-Thumbnail_01.webp" alt="">
-</figure>
-
 Xin chào các bạn, 
 
 Cho đến nay, mình đã viết về hai loại mô hình sinh dữ liệu, gồm GANs và VAE. Chúng đã cho thấy thành công lớn trong việc tạo ra các hình ảnh có chất lượng rất tốt, nhưng mỗi loại đều có những hạn chế riêng. Mô hình GAN thường gặp phải vấn đề bất ổn trong quá trình training và thiếu đa dạng trong quá trình sinh dữ liệu do bản chất adversarial learning của nó. VAE dựa vào một hàm loss xấp xỉ (surrogate loss). 
@@ -53,7 +48,7 @@ Với một điểm dữ liệu được lấy mẫu từ phân phối dữ li�
 $$q(\mathbf{x}_t \vert \mathbf{x}_{t-1}) = \mathcal{N}(\mathbf{x}_t; \sqrt{1 - \beta_t} \mathbf{x}_{t-1}, \beta_t\mathbf{I}) \quad
 q(\mathbf{x}_{1:T} \vert \mathbf{x}_0) = \prod^T_{t=1} q(\mathbf{x}_t \vert \mathbf{x}_{t-1})$$
 
-Mẫu dữ liệu $$x_0$$ dần mất đi các đặc điểm nhận dạng khi timestep $t$ lớn dần. Cuối cùng, khi $$T \rightarrow \infty$$, $$x_T$$ tương đương với một phân phối Gaussian đẳng hướng (isotropic Gaussian).
+Mẫu dữ liệu $$x_0$$ dần mất đi các đặc điểm nhận dạng khi timestep $$t$$ lớn dần. Cuối cùng, khi $$T \rightarrow \infty$$, $$x_T$$ tương đương với một phân phối Gaussian đẳng hướng (isotropic Gaussian).
 
 Một tính chất thú vị của quá trình trên là chúng ta có thể lấy mẫu $x_t$ tại bất kỳ bước time step $$t$$ nào bằng cách sử dụng **reparameterisation trick**. Đặt $$\alpha_t = 1 - \beta_t$$, và $$\bar{\alpha}_t = \prod^t_{i=1} \alpha_i$$.
 
