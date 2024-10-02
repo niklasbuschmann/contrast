@@ -50,12 +50,12 @@ q(\mathbf{x}_{1:T} \vert \mathbf{x}_0) = \prod^T_{t=1} q(\mathbf{x}_t \vert \mat
 
 Mẫu dữ liệu $$x_0$$ dần mất đi các đặc điểm nhận dạng khi timestep $$t$$ lớn dần. Cuối cùng, khi $$T \rightarrow \infty$$, $$x_T$$ tương đương với một phân phối Gaussian đẳng hướng (isotropic Gaussian).
 
-Một tính chất thú vị của quá trình trên là chúng ta có thể lấy mẫu $x_t$ tại bất kỳ bước time step $$t$$ nào bằng cách sử dụng **reparameterisation trick**. Đặt $$\alpha_t = 1 - \beta_t$$, và $$\bar{\alpha}_t = \prod^t_{i=1} \alpha_i$$.
+Một tính chất thú vị của quá trình trên là chúng ta có thể lấy mẫu $$x_t$$ tại bất kỳ bước time step $$t$$ nào bằng cách sử dụng **reparameterisation trick**. Đặt $$\alpha_t = 1 - \beta_t$$, và $$\bar{\alpha}_t = \prod^t_{i=1} \alpha_i$$.
 
 $$\begin{aligned}
 \mathbf{x}_t 
-&= \sqrt{\alpha_t}\mathbf{x}_{t-1} + \sqrt{1 - \alpha_t}\boldsymbol{\epsilon}_{t-1} & \text{ ;where } \boldsymbol{\epsilon}_{t-1}, \boldsymbol{\epsilon}_{t-2}, \dots \sim \mathcal{N}(\mathbf{0}, \mathbf{I}) \\
-&= \sqrt{\alpha_t \alpha_{t-1}} \mathbf{x}_{t-2} + \sqrt{1 - \alpha_t \alpha_{t-1}} \bar{\boldsymbol{\epsilon}}_{t-2} & \text{ ;where } \bar{\boldsymbol{\epsilon}}_{t-2} \text{ merges two Gaussians (*).} \\
+&= \sqrt{\alpha_t}\mathbf{x}_{t-1} + \sqrt{1 - \alpha_t}\boldsymbol{\epsilon}_{t-1} & \text{ ;Với } \boldsymbol{\epsilon}_{t-1}, \boldsymbol{\epsilon}_{t-2}, \dots \sim \mathcal{N}(\mathbf{0}, \mathbf{I}) \\
+&= \sqrt{\alpha_t \alpha_{t-1}} \mathbf{x}_{t-2} + \sqrt{1 - \alpha_t \alpha_{t-1}} \bar{\boldsymbol{\epsilon}}_{t-2} & \text{ ;với } \bar{\boldsymbol{\epsilon}}_{t-2} \text{ là hợp của 2 phân phối Gauss (*).} \\
 &= \dots \\
 &= \sqrt{\bar{\alpha}_t}\mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t}\boldsymbol{\epsilon} \\
 q(\mathbf{x}_t \vert \mathbf{x}_0) &= \mathcal{N}(\mathbf{x}_t; \sqrt{\bar{\alpha}_t} \mathbf{x}_0, (1 - \bar{\alpha}_t)\mathbf{I})
@@ -65,7 +65,7 @@ q(\mathbf{x}_t \vert \mathbf{x}_0) &= \mathcal{N}(\mathbf{x}_t; \sqrt{\bar{\alph
 
 #### 2.2. Reverse process 
 
-Nếu chúng ta có thể đảo ngược quá trình trên và lấy mẫu từ $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$$, chúng ta sẽ có thể tái tạo mẫu thực từ đầu vào nhiễu Gaussian, $$\mathbf{x}_T \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$$. Lưu ý rằng nếu $$\beta_t$$ đủ nhỏ, $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$$ cũng sẽ là Gaussian. Tuy nhiên, chúng ta không thể dễ dàng ước lượng $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$$ vì nó cần tính prior $$q(x_t)$$ và việc này **intractable**, do đó chúng ta cần học một mô hình $$p_\theta$$ để xấp xỉ các xác suất có điều kiện này nhằm thực hiện quá trình khuếch tán ngược.
+Nếu chúng ta có thể đảo ngược quá trình trên và lấy mẫu từ $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$$, chúng ta sẽ có thể tái tạo mẫu thực từ đầu vào nhiễu Gaussian, $$\mathbf{x}_T \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$$. Lưu ý rằng nếu $$\beta_t$$ đủ nhỏ, $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$$ cũng sẽ là Gaussian. Tuy nhiên, chúng ta không thể dễ dàng ước lượng $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t)$$ vì nó cần tính prior $$q(x_t)$$ và việc này **intractable**, do đó chúng ta cần học một mô hình $$p_\theta$$ để xấp xỉ các xác suất có điều kiện này nhằm thực hiện quá trình reverse mà không cần phải tính prior.
 
 $$p_\theta(\mathbf{x}_{0:T}) = p(\mathbf{x}_T) \prod^T_{t=1} p_\theta(\mathbf{x}_{t-1} \vert \mathbf{x}_t) \quad
 p_\theta(\mathbf{x}_{t-1} \vert \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \boldsymbol{\mu}_\theta(\mathbf{x}_t, t), \boldsymbol{\Sigma}_\theta(\mathbf{x}_t, t))$$
@@ -153,7 +153,7 @@ $$\begin{aligned}
 \text{Thus }\mathbf{x}_{t-1} &= \mathcal{N}(\mathbf{x}_{t-1}; \frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_\theta(\mathbf{x}_t, t) \Big), \boldsymbol{\Sigma}_\theta(\mathbf{x}_t, t))
 \end{aligned}$$
 
-Hàm loss $L_t$ được tham số hóa để tối thiểu hóa sự khác biệt từ $$\tilde{\boldsymbol{\mu}}$$:
+Hàm loss $$L_t$$ được tham số hóa để tối thiểu hóa sự khác biệt từ $$\tilde{\boldsymbol{\mu}}$$:
 
 $$\begin{aligned}
 L_t 
