@@ -180,6 +180,8 @@ L_t^\text{simple}
 &= \mathbb{E}_{t \sim [1, T], \mathbf{x}_0, \boldsymbol{\epsilon}_t} \Big[\|\boldsymbol{\epsilon}_t - \boldsymbol{\epsilon}_\theta(\sqrt{\bar{\alpha}_t}\mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t}\boldsymbol{\epsilon}_t, t)\|^2 \Big]
 \end{aligned}$$
 
+Lưu ý rằng hàm loss cuối cùng này đã bao gồm cả $$L_0$$ ở trên. Do về mặt bản chất, $$L_0$$ cũng là đo khoảng cách KL giữa training data ban đầu và data được sinh với đầu vào là $$x_1$$. 
+
 
 ### 3. Kết luận 
 
