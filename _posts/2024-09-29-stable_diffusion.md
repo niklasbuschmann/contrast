@@ -162,7 +162,7 @@ $$\begin{aligned}
 \text{Thus }\mathbf{x}_{t-1} &= \mathcal{N}(\mathbf{x}_{t-1}; \frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_\theta(\mathbf{x}_t, t) \Big), \boldsymbol{\Sigma}_\theta(\mathbf{x}_t, t))
 \end{aligned}$$
 
-Hàm loss $$L_t$$ được tham số hóa để tối thiểu hóa sự khác biệt từ $$\tilde{\boldsymbol{\mu}}$$:
+Hàm loss $$L_t$$ được tham số hóa để minimise sự khác biệt từ $$\tilde{\boldsymbol{\mu}}$$ bằng cách sử dụng L2 loss và hệ số $$\frac{1}{2 \sigma ^2}$$ cho việc scaling. Các bạn cũng có thể sử dụng nhiều loại khác như L1 loss, Huber loss, Entropy loss, ... Phổ biến nhất vẫn dùng là L2 loss. 
 
 $$\begin{aligned}
 L_t 
@@ -172,7 +172,7 @@ L_t
 &= \mathbb{E}_{\mathbf{x}_0, \boldsymbol{\epsilon}} \Big[\frac{ (1 - \alpha_t)^2 }{2 \alpha_t (1 - \bar{\alpha}_t) \| \boldsymbol{\Sigma}_\theta \|^2_2} \|\boldsymbol{\epsilon}_t - \boldsymbol{\epsilon}_\theta(\sqrt{\bar{\alpha}_t}\mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t}\boldsymbol{\epsilon}_t, t)\|^2 \Big] 
 \end{aligned}$$
 
-Thực nghiệm, Ho và cộng sự (2020) phát hiện rằng việc huấn luyện mô hình diffusion hoạt động hiệu quả hơn với một mục tiêu đơn giản hóa mà bỏ qua hệ số trọng số:
+Thực nghiệm cho thấy việc huấn luyện mô hình diffusion hoạt động hiệu quả hơn với việc lược đi trọng số:
 
 $$\begin{aligned}
 L_t^\text{simple}
