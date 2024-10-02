@@ -114,9 +114,14 @@ $$\begin{aligned}
 
 Hàm loss của stable diffusion khá ngắn gọn, $$- \log p_\theta(\mathbf{x}_0) $$. Với hàm loss này, ta phải train một mô hình theo giải thuật như trên (forward-reverse process) và tạo ra được data mà có log-likelihood với lại tập training data cao. Nói cách khác, nếu ảnh được sinh ra có phân phối giống với training data thì hàm loss kia sẽ thấp và ngược lại. 
 
-Lý do hàm loss này intractable là vì nó chỉ tính toán loss ở final step trong khi kết quả của quá trình sinh ảnh dựa vào tất cả các timesteps $$x_0, x_1, x_2, x_3, ..., x_{T-2}, x_{T-1}, x_T/$$. 
+Biến đổi một chút, ta sẽ có được cách tính của hàm loss trên: 
 
-Lý do hàm loss này intractable bởi vì nó phải track tất cả các timesteps $$x_0, x_1, x_2, x_3, ..., x_{T-2}, x_{T-1}, x_T$$ và tính loss ở final steps. Với cách dùng Evidence Lower Bound và biến đổi, kết quả cuối của hàm loss sẽ là một hàm tính loss ở tất cả các timesteps và đương nhiên là tractable.  
+$$p_\theta(x_0) = \int p_\theta(x_{0:T}) dx_{1:T}$$
+
+Để tính được hàm loss, chúng ta phải tính tích phân trên tất cả các time step $$x_1, x_2, ..., x_{T-1}, x_{T-2}$$. Và việc tính này sẽ càng trở nên intractable nếu ảnh được gen ra có độ phân giải lớn và số lượng timesteps nhiều. 
+
+
+Với cách dùng Evidence Lower Bound và biến đổi, chúng ta sẽ không cần phải tính tích phân trên một miền rộng lớn như vậy và việc này biến bài toán trở nên tractable (thú vị không nào ^_^). Bài toán được biến đổi như sau:    
 
 $$\begin{aligned}
 - \log p_\theta(\mathbf{x}_0) 
