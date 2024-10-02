@@ -11,6 +11,10 @@ Xin chào các bạn,
 
 Trong bài post này, mình sẽ giới thiệu chi tiết và code from scratch kiến trúc Vision Transformer.
 
+<figure style="text-align: center">
+<img src="https://visionplatform.ai/wp-content/uploads/2024/02/vision-transformer-vit-analysing-whole-image.webp" alt="">
+</figure>
+
 
 ### 1. Giới thiệu 
 
