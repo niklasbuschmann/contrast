@@ -112,6 +112,12 @@ $$\begin{aligned}
 
 #### 2.3. Loss function 
 
+Hàm loss của stable diffusion khá ngắn gọn, $$- \log p_\theta(\mathbf{x}_0) $$. Với hàm loss này, ta phải train một mô hình theo giải thuật như trên (forward-reverse process) và tạo ra được data mà có log-likelihood với lại tập training data cao. Nói cách khác, nếu ảnh được sinh ra có phân phối giống với training data thì hàm loss kia sẽ thấp và ngược lại. 
+
+Lý do hàm loss này intractable là vì nó chỉ tính toán loss ở final step trong khi kết quả của quá trình sinh ảnh dựa vào tất cả các timesteps $$x_0, x_1, x_2, x_3, ..., x_{T-2}, x_{T-1}, x_T/$$. 
+
+Lý do hàm loss này intractable bởi vì nó phải track tất cả các timesteps $$x_0, x_1, x_2, x_3, ..., x_{T-2}, x_{T-1}, x_T$$ và tính loss ở final steps. Với cách dùng Evidence Lower Bound và biến đổi, kết quả cuối của hàm loss sẽ là một hàm tính loss ở tất cả các timesteps và đương nhiên là tractable.  
+
 $$\begin{aligned}
 - \log p_\theta(\mathbf{x}_0) 
 &\leq - \log p_\theta(\mathbf{x}_0) + D_\text{KL}(q(\mathbf{x}_{1:T}\vert\mathbf{x}_0) \| p_\theta(\mathbf{x}_{1:T}\vert\mathbf{x}_0) ) \\
