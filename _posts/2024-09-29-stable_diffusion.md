@@ -74,9 +74,7 @@ p_\theta(\mathbf{x}_{t-1} \vert \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \b
 <img src="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/diffusion-example.png" alt="">
 </figure>
 
-Điều đáng chú ý là 
-$$q_(x_{t-1}|x_t)$$
- có thể giải được khi được condition trên $$x_0$$:
+Tuy nhiên, khi chỉ condition trên timestep $$t-1$$ sẽ có thể có rất nhiều uncertainty vì từ một bưc ảnh đầy nhiễu hoặc mờ mờ nhiễu, chúng ta sẽ có thể có rất nhiều kết quả tạo sinh không mong muốn. Và nếu có thể condition trên cả $$x_0$$ thì điều này sẽ làm giảm đáng kể uncertainty. Tuy nhiên, khi condition với $$x_0$$ thì công thức toán sẽ phức tạp hơn nhưng trong trường hợp này thì bài toán của chúng ta vẫn có thể giải được. Cụ thể, tác giả diễn giải như sau: 
 
 $$q(\mathbf{x}_{t-1} \vert \mathbf{x}_t, \mathbf{x}_0) = \mathcal{N}(\mathbf{x}_{t-1}; {\tilde{\boldsymbol{\mu}}}(\mathbf{x}_t, \mathbf{x}_0), {\tilde{\beta}_t} \mathbf{I})$$
 
