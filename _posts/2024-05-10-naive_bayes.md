@@ -17,25 +17,25 @@ Naive Bayes được ưa chuộng nhờ vào sự đơn giản trong cài đặt
 
 Naive Bayes Classifier dựa trên định lý Bayes, công thức tổng quát như sau:
 
-$$P(C|X) = \frac{P(X|C) \cdot P(C)}{P(X)}$$
+$$P(C \mid X) = \frac{P(X \mid C) \cdot P(C)}{P(X)}$$
 
 Thuật toán Naive Bayes tính xác suất của từng class cho một mẫu dữ liệu mới, và chọn class có xác suất cao nhất làm kết quả phân loại. Điểm quan trọng là giả định Naive Bayes đưa ra: các đặc trưng $$X_i$$ là độc lập có điều kiện dựa trên class $$C$$. Điều này cho phép công thức được viết lại dưới dạng:
 
-$$P(C|X_1, X_2, ..., X_n) \propto P(C) \cdot \prod_{i=1}^{n} P(X_i|C)$$
+$$P(C \mid X_1, X_2, ..., X_n) \propto P(C) \cdot \prod_{i=1}^{n} P(X_i \mid C)$$
 
 #### 2.2. Gaussian Naive Bayes
 
-Gaussian Naive Bayes (GNB) được sử dụng khi các feature là số và giả định rằng các đặc trưng này tuân theo phân phối Gauss. Với GNB, xác suất $$P(X_i, C)$$ được tính bằng hàm mật độ xác suất của phân phối Gaussian:
+Gaussian Naive Bayes (GNB) được sử dụng khi các feature là số và giả định rằng các đặc trưng này tuân theo phân phối Gauss. Với GNB, xác suất $$P(X_i \mid C)$$ được tính bằng hàm mật độ xác suất của phân phối Gaussian:
 
-$$P(X_i| C) = \frac{1}{\sqrt{2\pi \sigma_{iC}^2}}exp(-\frac{(X_i - \mu_{iC})^2}{2\sigma_{iC}^2})$$
+$$P(X_i \mid C) = \frac{1}{\sqrt{2\pi \sigma_{iC}^2}}exp(-\frac{(X_i - \mu_{iC})^2}{2\sigma_{iC}^2})$$
 
 Trong đó, $$\mu_{iC}$$ và $$\sigma_{iC}^2$$ là trung bình và phương sai của phân phối Gauss của feature đó trong class $$C$$. 
 
 #### 2.3. Multinomial Naive Bayes
 
-Multinomial Naive Bayes (MNB) chủ yếu được sử dụng cho các bài toán phân loại văn bản, nơi dữ liệu được biểu diễn dưới dạng tần suất hoặc xác suất xuất hiện của các từ (hoặc đặc trưng) trong một tài liệu. Với MNB, xác suất $$P(X_i, C)$$ được tính dựa trên tần suất xuất hiện của từ $$X_i$$ trong các tài liệu thuộc class $$C$$: 
+Multinomial Naive Bayes (MNB) chủ yếu được sử dụng cho các bài toán phân loại văn bản, nơi dữ liệu được biểu diễn dưới dạng tần suất hoặc xác suất xuất hiện của các từ (hoặc đặc trưng) trong một tài liệu. Với MNB, xác suất $$P(X_i \mid C)$$ được tính dựa trên tần suất xuất hiện của từ $$X_i$$ trong các tài liệu thuộc class $$C$$: 
 
-$$P(X_i|C) = \frac{N_{iC} + \alpha}{N_C + \alpha|V|}$$
+$$P(X_i \mid C) = \frac{N_{iC} + \alpha}{N_C + \alpha \mid V \mid}$$
 
 Trong đó, 
 
@@ -43,7 +43,7 @@ Trong đó,
 
 \* $$N_C$$: tổng số từ trong các tài liệu ở class $$C$$
 
-\* \|$$V$$\|: kích thước từ vựng
+\* $$ \mid V \mid$$: kích thước từ vựng
 
 \* $$\alpha$$: giá trị làm mượt để tránh bị probability = 0, thường sử dụng Laplace smoothing với $$\alpha = 1.$$
 
@@ -51,11 +51,11 @@ Trong đó,
 
 #### 2.4. Complement multinomial Naive Bayes 
 
-Complement Naive Bayes (CNB) là một biến thể của MNB, đặc biệt hữu ích cho các tập dữ liệu mất cân bằng. Thay vì tính xác suất $P(X_i|C)$ trực tiếp cho một class, CNB tính xác suất của từ $X_i$ trong tất cả các class khác ngoài class $C$. Điều này giúp CNB hoạt động tốt hơn khi có sự chênh lệch lớn giữa các class.
+Complement Naive Bayes (CNB) là một biến thể của MNB, đặc biệt hữu ích cho các tập dữ liệu mất cân bằng. Thay vì tính xác suất $$P(X_i \mid C)$$ trực tiếp cho một class, CNB tính xác suất của từ $X_i$ trong tất cả các class khác ngoài class $$C$$. Điều này giúp CNB hoạt động tốt hơn khi có sự chênh lệch lớn giữa các class.
 
 Công thức của CNB: 
 
-$$P(X_i|C) = \frac{N_{i \overline{C}} + \alpha}{N_{\overline{C}} + \alpha|V|}$$
+$$P(X_i \mid C) = \frac{N_{i \overline{C}} + \alpha}{N_{\overline{C}} + \alpha|V|}$$
 
 Trong đó, 
 
