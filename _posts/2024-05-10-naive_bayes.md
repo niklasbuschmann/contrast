@@ -47,6 +47,8 @@ Trong đó,
 
 * $$\alpha: \text{ giá trị làm mượt để tránh bị probability = 0, thường sử dụng Laplace smoothing với } \alpha = 1.$$
 
+*  \( w_k \) 
+
 
 #### 2.4. Complement multinomial Naive Bayes 
 
