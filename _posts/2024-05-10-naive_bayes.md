@@ -39,15 +39,14 @@ $$P(X_i|C) = \frac{N_{iC} + \alpha}{N_C + \alpha|V|}$$
 
 Trong đó, 
 
-* $$N_{iC}: \text{tổng số lần xuất hiện của } X_i \text{ trong các tài liệu thuộc class } C$$ 
+\* $$N_{iC}$$ : tổng số lần xuất hiện của $$X_i$$ trong các tài liệu thuộc class $$C$$ 
 
-* $$N_C: \text{ tổng số từ trong các tài liệu ở class } C$$
+\* $$N_C$$: tổng số từ trong các tài liệu ở class $$C$$
 
-* $$|V|: \text{ kích thước từ vựng }$$
+\* $$|V|$$: kích thước từ vựng
 
-* $$\alpha: \text{ giá trị làm mượt để tránh bị probability = 0, thường sử dụng Laplace smoothing với } \alpha = 1.$$
+\* $$\alpha$$: giá trị làm mượt để tránh bị probability = 0, thường sử dụng Laplace smoothing với $$\alpha = 1.$$
 
-*  \( w_k \) 
 
 
 #### 2.4. Complement multinomial Naive Bayes 
