@@ -57,7 +57,7 @@ $$P(X_i \mid C) = \frac{N_{i \overline{C}} + \alpha}{N_{\overline{C}} + \alpha|V
 
 Trong đó, 
 
-> \* $$N_{i \overline{C}}$$: tổng số lần xuất hiện của $$X_i$$ trong các tài liệu **không** thuộc class $$C$$.
+<p style="margin-left: 20px;"> \* $$N_{i \overline{C}}$$: tổng số lần xuất hiện của $$X_i$$ trong các tài liệu **không** thuộc class $$C$$.
 
 > \* $$N_{\overline{C}}$$: tổng số từ trong các tài liệu **không thuộc** class $$C$$.
 
