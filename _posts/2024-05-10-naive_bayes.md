@@ -5,13 +5,13 @@ layout: post
 categories: media
 ---
 
-<figure style="text-align: center">
-<img src="https://machinelearningmastery.com/wp-content/uploads/2014/12/naive-bayes-classifier.jpg" alt="">
-</figure>
-
 ### 1. Giới thiệu 
 
 Naive Bayes Classifier là một thuật toán phân loại dựa trên định lý Bayes, với giả định quan trọng là các đặc trưng của dữ liệu đều độc lập có điều kiện với nhau. Dù giả định này có thể không hoàn toàn đúng trong nhiều trường hợp, Naive Bayes vẫn hoạt động hiệu quả trong nhiều ứng dụng thực tế, đặc biệt là các bài toán phân loại văn bản như phát hiện spam, phân tích cảm xúc, và phân loại tài liệu.
+
+<figure style="text-align: center">
+<img src="https://machinelearningmastery.com/wp-content/uploads/2014/12/naive-bayes-classifier.jpg" alt="">
+</figure>
 
 Naive Bayes được ưa chuộng nhờ vào sự đơn giản trong cài đặt, tốc độ nhanh chóng khi xử lý dữ liệu lớn, và khả năng mở rộng cho nhiều loại dữ liệu khác nhau. Trong bài viết này, chúng ta sẽ đi sâu vào phần toán học phía sau Naive Bayes, các biến thể phổ biến của nó, và phân tích ưu và nhược điểm của phương pháp này.
 
