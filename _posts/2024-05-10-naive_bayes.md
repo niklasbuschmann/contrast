@@ -57,13 +57,13 @@ $$P(X_i \mid C) = \frac{N_{i \overline{C}} + \alpha}{N_{\overline{C}} + \alpha|V
 
 Trong đó, 
 
-\* $$N_{i \overline{C}}$$: tổng số lần xuất hiện của $$X_i$$ trong các tài liệu **không** thuộc class $$C$$.
+&nbsp; \* $$N_{i \overline{C}}$$: tổng số lần xuất hiện của $$X_i$$ trong các tài liệu **không** thuộc class $$C$$.
 
-\* $$N_{\overline{C}}$$: tổng số từ trong các tài liệu **không thuộc** class $$C$$.
+&nbsp; \* $$N_{\overline{C}}$$: tổng số từ trong các tài liệu **không thuộc** class $$C$$.
 
-\* $$\vert  V \vert$$: kích thước từ vựng.
+&nbsp; \* $$\vert  V \vert$$: kích thước từ vựng.
 
-\* $$\alpha$$: giá trị làm mượt để tránh bị probability = 0, thường sử dụng Laplace smoothing với $$\alpha = 1.$$.
+&nbsp; \* $$\alpha$$: giá trị làm mượt để tránh bị probability = 0, thường sử dụng Laplace smoothing với $$\alpha = 1.$$.
 
 ### 3. Ưu và nhược 
 
