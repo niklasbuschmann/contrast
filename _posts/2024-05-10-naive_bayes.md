@@ -43,11 +43,9 @@ Trong đó,
 
 \* $$N_C$$: tổng số từ trong các tài liệu ở class $$C$$
 
-\* $$ \mid V \mid$$: kích thước từ vựng
+\* \|$$V$$\|: kích thước từ vựng
 
 \* $$\alpha$$: giá trị làm mượt để tránh bị probability = 0, thường sử dụng Laplace smoothing với $$\alpha = 1.$$
-
-
 
 #### 2.4. Complement multinomial Naive Bayes 
 
