@@ -35,7 +35,7 @@ Trong đó, $$\mu_{iC}$$ và $$\sigma_{iC}^2$$ là trung bình và phương sai 
 
 Multinomial Naive Bayes (MNB) chủ yếu được sử dụng cho các bài toán phân loại văn bản, nơi dữ liệu được biểu diễn dưới dạng tần suất hoặc xác suất xuất hiện của các từ (hoặc đặc trưng) trong một tài liệu. Với MNB, xác suất $$P(X_i \mid C)$$ được tính dựa trên tần suất xuất hiện của từ $$X_i$$ trong các tài liệu thuộc class $$C$$: 
 
-$$P(X_i \mid C) = \frac{N_{iC} + \alpha}{N_C + \alpha \mid V \mid}$$
+$$P(X_i \mid C) = \frac{N_{iC} + \alpha}{N_C + \alpha \vert V \vert}$$
 
 Trong đó, 
 
@@ -43,7 +43,7 @@ Trong đó,
 
 \* $$N_C$$: tổng số từ trong các tài liệu ở class $$C$$
 
-\* $$\|V\|$$: kích thước từ vựng
+\* $$\vert  V \vert$$: kích thước từ vựng
 
 \* $$\alpha$$: giá trị làm mượt để tránh bị probability = 0, thường sử dụng Laplace smoothing với $$\alpha = 1.$$
 
