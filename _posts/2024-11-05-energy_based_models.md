@@ -86,13 +86,34 @@ $$\begin{align}
 -\sum_{h' \in H}p(h'|v)\frac{\partial E(v,h')}{\partial \theta}+\sum_{v' \in V}\sum_{h' \in H}p(v',h')\frac{\partial E(v',h')}{\partial \theta}
 \end{align}$$
 
-After coming to equation (4), we still have a minor problem. Take a close look at (4), we see that the second term of the equation requires simultaneous sampling of $v'$ and $h'$. In this scenario, we will use Gibbs sampling to overcome this (Very intuitive explaination at this [Gibbs Sampling : Data Science Concepts][Gibss_sampling_video]). 
+After coming to equation (4), we still have a minor problem. Take a closer look at (4), we see that the second term of the equation requires simultaneous sampling of $v'$ and $h'$. In this scenario, we will use Gibbs sampling to overcome this (Check out a very intuitive explaination at [Gibbs Sampling : Data Science Concepts][Gibss_sampling_video]). 
+
+#### 3.4. Implementation in Python
+
 
 ### 4. Hopfield Network
 
 #### 4.1. Introduction to Hopfield network
 
+Hopfield network, similarly, is another physics-inspired invention in this field. It also uses energy as a loss function for optimisation but have some differences in uses and the ways it works. 
 
+Hopfield is sometimes associated with content-addressable memory of human brains as it closely resembles them. For example, we usually have a rather vague image popped inside our head before we can fully retrieve the information in the brain. This evidence indicates that we ask our brain "Do you remember this blurry information and can get me a better, higher-quality version of it ?". And Hopfield network does exactly that, you input a perturbed information and it will return more refined version of the input. 
+
+<figure style="text-align: center">
+<img src="https://raw.githubusercontent.com/takyamamoto/Hopfield-Network/master/imgs/result.png" alt="">
+</figure>
+
+#### 4.2. Inference phase 
+
+<figure style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Hopfield-network.svg" alt="">
+</figure>
+
+
+#### 4.3. Training phase 
+
+
+#### 4.4. Implementation
 
 ### 5. Modern extensions and relevance
 
