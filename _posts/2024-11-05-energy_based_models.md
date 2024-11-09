@@ -38,56 +38,46 @@ Energy-based models (EBMs) are a class of probabilistic models that assign an en
 
 ### 3. Restricted Boltzmann Machines (RBMs)
 
-* **Overview:**
-* * An RBM is a type of two-layer, generative stochastic neural network that can learn a probability distribution over its set of inputs. 
+#### 3.1. Brief introduction to Restricted Boltzmann Machine
 
-* * RBMs were popularised by Geoffrey Hinton and are particularly useful in unsupervised learning tasks like feature learning and collaborative filtering. 
+Restricted Boltzmann Machine (RBM) is a generative stochastic network that can learn a probability distribution over its training data. 
 
-* **Architecture:**
+
+#### 3.2. Inference phase 
 
 <figure style="text-align: center">
 <img src="https://scikit-learn.org/1.5/_images/rbm_graph.png" alt="">
 </figure>
 
+RBMs contain two layers: visible layer ($v$) and hidden ($h$). 
 
-* * **Bipartite Structure:** An RBM consists of two layers: a visible layer (representing observed data) and a hidden layer (capturing latent features). There are no intra-layer connections; nodes in the visible layer only connect to nodes in the hidden layer. 
+#### 3.3. Training phase
 
-* * **Weights and Biases:** Each connection between visible and hidden units has an associated weight, while each unit has an associated bias. These parameters define the energy landscape. 
+The ultimate goal of RBM is to learn feature of the data (representation learning). In order to accomplish that, it uses a loss function to check whether the reconstructed data is close to the training data. If you work with today's neural network long enough, you may ask "Why shouldn't we use L2, BCE, ...". However, at the time RBM was invented, these terminologies were not popular in the field. However, professor Hinton was inspired from energy in physics and decided to apply it, and that is how RBM was born. 
 
-* **Energy function for RBMs:**
+Basically, energy is a measure of the system's state that indicates how "stable" or "likely" that state is. In an RBM, the energy function assigns a lower energy to states that represent probable or stable configurations, and higher energy to unlikely or unstable configurations. For example, a cool water is stable and has low energy while boilingly hot water is unstable and has much higher energy (it can even power locomotives). In summary, we have to find the parameters that produce lowest energy in the training data and I will explain how it is done below. 
 
-* * The energy is measured as follows: 
-
-$$E(\mathbf{v}, \mathbf{h}) = -\sum_i \sum_j w_{ij}v_ih_j - \sum_i b_iv_i - \sum_j c_jh_j$$
-
-In the formula above, $b$ and $c$ are the intercept vectors for the visible and hidden layers, respectively. The joint probability of the model is defined in terms of the energy:
-
-* **Training & Inference phase**
-
-Given a specific configuration of $v$ and $h$, we map it the probability space.
+Given a specific configuration of $v$ and $h$, we map it to the probability space. 
 
 $$p(v,h) = \frac{e^{-E(v,h)}}{Z}$$
 
-The Z constant is a normalisation factor to ensure that we actually map to the probability space. Now, let's get to what we're looking for; the probability of a set of visible neurons, in other words, the probability of our data.
-
-$$Z = \sum_{v \in V}\sum_{h \in H}e^{-E(v,h)}$$
+The $Z$ constant is a normalisation factor to ensure that we actually map to the probability space. Now let's go to what we're looking for; the probability of a set of visible neurons, in other words, the probability of our data. 
 
 $$p(v)=\sum_{h \in H}p(v,h)=\frac{\sum_{h \in H}e^{-E(v,h)}}{\sum_{v \in V}\sum_{h \in H}e^{-E(v,h)}}$$
 
-Although there are a lot of terms in this equation, it simply comes down to writing the correct probability equations. Hopefully, so far, this has helped you realise why we need energy function to calculate the probability, or what is done more usually the unnormalised probability $p(v)*Z$. The unnormalised probability is used because the partition function $Z$ is very expensive to compute. 
 
-Now, let's get to the actual learning phase of RBMs. To maximise likelihood, for every data point, we have to take a graident step to make $p(v) = 1$. To get the gradient expressions it takes some mathematical acrobatics. The first thing is to take the log of $p(v)$. 
+To maximise likelihood, for every data point, we have to take a gradient step to make $p(v) = 1$. The first thing we do is taking the log of $p(v)$. We will be operating in the log probability space from now on in order to make the math feasible. 
 
 $$\log(p(v))=\log[\sum_{h \in H}e^{-E(v,h)}]-\log[\sum_{v \in V}\sum_{h \in H}e^{-E(v,h)}]$$
 
-Let's take the gradient with respect to the parameters in $p(v)$
+Let's take the gradient with respect to the parameters in $p(v)$. 
 
 $$\begin{align}
 \frac{\partial \log(p(v))}{\partial \theta}=& 
 -\frac{1}{\sum_{h' \in H}e^{-E(v,h')}}\sum_{h' \in H}e^{-E(v,h')}\frac{\partial E(v,h')}{\partial \theta}\\ & + \frac{1}{\sum_{v' \in V}\sum_{h' \in H}e^{-E(v',h')}}\sum_{v' \in V}\sum_{h' \in H}e^{-E(v',h')}\frac{\partial E(v,h)}{\partial \theta}
 \end{align}$$
 
-Now, I did this on paper and wrote the semi-final equation down as to not waste a lot of space on this site. I recommend you derive these equations yourself. Note that: $Zp(v,h)=e^{-E(v,h')}$, $p(v)=\sum_{h \in H}p(v,h)$, and that $p(h|v) = \frac{p(v,h)}{p(h)}$. 
+Now I did this on paper and wrote the semi-final equation down as to not waste a lot of space on this site. I recommend you derive these equations yourself. Now I'll write some equations down that will help out in continuing our derivation. Note that: $Zp(v,h)=e^{-E(v,h')}$, $p(v)=\sum_{h \in H}p(v,h)$, and that $p(h|v) = \frac{p(v,h)}{p(h)}$. 
 
 $$\begin{align}
 \frac{\partial log(p(v))}{\partial \theta}&=
@@ -96,33 +86,17 @@ $$\begin{align}
 -\sum_{h' \in H}p(h'|v)\frac{\partial E(v,h')}{\partial \theta}+\sum_{v' \in V}\sum_{h' \in H}p(v',h')\frac{\partial E(v',h')}{\partial \theta}
 \end{align}$$
 
-* Applications
+After coming to equation (4), we still have a minor problem. Take a close look at (4), we see that the second term of the equation requires simultaneous sampling of $v'$ and $h'$. In this scenario, we will use Gibbs sampling to overcome this (Very intuitive explaination at this [Gibbs Sampling : Data Science Concepts][Gibss_sampling_video]). 
 
-* * RBMs are useful in tasks like dimensionality reduction, feature learning, and collaborative filtering. 
+### 4. Hopfield Network
 
-### 4. Hopfield Networks
-
-* **Overview:**
-
-* * Hopfield networks are fully connected, recurrent networks used to store and retrieve patterns. They operate as associative memory models, meaning they can retrieve a stored pattern even when given a noisy or partial version. 
-
-* **Architecture**
-
-<figure style="text-align: center">
-<img src="https://www.researchgate.net/profile/Vincent-Gripon/publication/51200860/figure/fig1/AS:601636439355396@1520452713067/node-Hopfield-network-model-All-nodes-are-connected-to-each-other-through-28_Q320.jpg" alt="">
-</figure>
+#### 4.1. Introduction to Hopfield network
 
 
-* * Hopfield networks consists of binary units that are fully connected. Each neuron connects to every other neuron, with symmetric weights, meaning $w_{ij} = w_{ji}$.
-
-* **Training & Inference phase:**
-
-* **Applications of Hopfield Networks:**
-
-* * **Pattern recognition:** Recognising known patterns despite noise. 
-
-* * **Memory recall:** Acting as an associative memory system, recalling entire patterns from partial inputs. 
 
 ### 5. Modern extensions and relevance
 
 ### 6. Conclusion
+
+
+[Gibss_sampling_video]: https://www.youtube.com/watch?v=7LB1VHp4tLE
