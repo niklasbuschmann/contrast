@@ -53,7 +53,7 @@ RBMs contain two layers: visible layer ($v$) and hidden ($h$).
 
 #### 3.3. Training phase
 
-The ultimate goal of RBM is to learn feature of the data (representation learning). In order to accomplish that, it uses a loss function to check whether the reconstructed data is close to the training data. If you work with today's neural network long enough, you may ask "Why shouldn't we use L2, BCE, ...". However, at the time RBM was invented, these terminologies were not popular in the field. However, professor Hinton was inspired from energy in physics and decided to apply it, and that is how RBM was born. 
+The ultimate goal of RBM is to learn feature of the data (representation learning). In order to accomplish that, it uses a loss function to check whether the reconstructed data is close to the training data. If you work with today's neural networks long enough, you may ask "Why shouldn't we use L2, BCE, ...". However, at the time RBM was invented, these terminologies were not popular in the field. However, professor Hinton was inspired from energy in physics and decided to apply it, and that is how RBM was born. 
 
 Basically, energy is a measure of the system's state that indicates how "stable" or "likely" that state is. In an RBM, the energy function assigns a lower energy to states that represent probable or stable configurations, and higher energy to unlikely or unstable configurations. For example, a cool water is stable and has low energy while boilingly hot water is unstable and has much higher energy (it can even power locomotives). In summary, we have to find the parameters that produce lowest energy in the training data and I will explain how it is done below. 
 
@@ -61,7 +61,7 @@ Given a specific configuration of $v$ and $h$, we map it to the probability spac
 
 $$p(v,h) = \frac{e^{-E(v,h)}}{Z}$$
 
-The $Z$ constant is a normalisation factor to ensure that we actually map to the probability space. Now let's go to what we're looking for; the probability of a set of visible neurons, in other words, the probability of our data. 
+The $Z$ constant is a normalisation factor to ensure that we actually map to the **probability space** (based on Boltzmann distribution). Now let's go to what we're looking for; the probability of a set of visible neurons, in other words, the probability of our data. 
 
 $$p(v)=\sum_{h \in H}p(v,h)=\frac{\sum_{h \in H}e^{-E(v,h)}}{\sum_{v \in V}\sum_{h \in H}e^{-E(v,h)}}$$
 
@@ -109,9 +109,45 @@ Hopfield is sometimes associated with content-addressable memory of human brains
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Hopfield-network.svg" alt="">
 </figure>
 
+Updating one unit (node in the graph simulating the artificial neuron) in the Hopfield network is performed using the following rule: 
+
+$$
+s_i \leftarrow 
+\begin{cases} 
++1 & \text{if } \sum_j w_{ij} s_j \geq \theta_i, \\ 
+-1 & \text{otherwise}.
+\end{cases}
+$$
+
+where: 
+
+* $w_{ij}:$ is the strength of connection weight from unit j to unit i (the weight of the connection).
+
+* $s_i:$ is the state of unit i.
+
+* $\theta_i:$ is the threshold of unit i 
+
+Updates in the Hopfield network can be performed in two different ways:
+
+* **Asynchronous**: Only one unit is updated at a time. This unit can be picked at random, or a pre-defined order can be imposed from the beginning. 
+
+* **Synchronous**: All units are updated at the same time. This requires a central clock 
+to the system in order to maintain synchronisation.
+
 
 #### 4.3. Training phase 
 
+Like RBM, Hopfield network also uses energy for optimisation. 
+
+$$E = \sum_{i,j}w_{ij}s_is_j - \sum_{i}\theta_i s_i$$
+
+Usually, practitioners remove the $\theta$ for less computation by setting it to 0. And the energy becomes: 
+
+$$E = \sum_{i, j}w_{ij} s_i s_j$$
+
+We take the derivative of this energy function and get to the configuration which offers the lowest energy. This is done as followed: 
+
+$$\frac{\partial E}{\partial w_{ij}} = -\frac{1}{N} \sum_{k}^{N}\sum_{i, j} s^{k}_i s^{k}_j$$
 
 #### 4.4. Implementation
 
