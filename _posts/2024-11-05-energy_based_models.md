@@ -139,15 +139,19 @@ to the system in order to maintain synchronisation.
 
 Like RBM, Hopfield network also uses energy for optimisation. 
 
-$$E = \sum_{i,j}w_{ij}s_is_j - \sum_{i}\theta_i s_i$$
+$$E = -\frac{1}{2} \sum_{i,j}w_{ij}s_is_j - \sum_{i}\theta_i s_i$$
 
 Usually, practitioners remove the $\theta$ for less computation by setting it to 0. And the energy becomes: 
 
-$$E = \sum_{i, j}w_{ij} s_i s_j$$
+$$E = -\frac{1}{2} \sum_{i, j}w_{ij} s_i s_j$$
 
-We take the derivative of this energy function and get to the configuration which offers the lowest energy. This is done as followed: 
+The energy here is the first order function, so taking derivative according to $w_{ij}$ to find the optimal point is impractical. Therefore, we have to apply mathematical transformations to figure out. 
 
-$$\frac{\partial E}{\partial w_{ij}} = -\frac{1}{N} \sum_{k}^{N}\sum_{i, j} s^{k}_i s^{k}_j$$
+$$-\frac{1}{2} \sum_{i, j}w_{ij} s_i s_j \ge -\frac{1}{2} \sum_{i, j} s^2_i s^2_j$$
+
+$$<=> w^*_{ij} = \sum_{ij} s^2_i s^2_j \quad \text{(for 1 sample)}$$
+
+$$<=> w^*_{ij} = \frac{1}{N} \sum_{n}^{N} \sum_{ij} s^2_i s^2_j \quad \text{for N samples}$$
 
 #### 4.4. Implementation
 
