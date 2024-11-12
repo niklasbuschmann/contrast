@@ -61,23 +61,23 @@ Given a specific configuration of $v$ and $h$, we map it to the probability spac
 
 $$p(v,h) = \frac{e^{-E(v,h)}}{Z}$$
 
-The $Z$ constant is a normalisation factor to ensure that we actually map to the **probability space** (based on Boltzmann distribution). Now let's go to what we're looking for; the probability of a set of visible neurons, in other words, the probability of our data. 
+The $$Z$$ constant is a normalisation factor to ensure that we actually map to the **probability space** (based on Boltzmann distribution). Now let's go to what we're looking for; the probability of a set of visible neurons, in other words, the probability of our data. 
 
 $$p(v)=\sum_{h \in H}p(v,h)=\frac{\sum_{h \in H}e^{-E(v,h)}}{\sum_{v \in V}\sum_{h \in H}e^{-E(v,h)}}$$
 
 
-To maximise likelihood, for every data point, we have to take a gradient step to make $p(v) = 1$. The first thing we do is taking the log of $p(v)$. We will be operating in the log probability space from now on in order to make the math feasible. 
+To maximise likelihood, for every data point, we have to take a gradient step to make $$p(v) = 1$$. The first thing we do is taking the log of $$p(v)$$. We will be operating in the log probability space from now on in order to make the math feasible. 
 
 $$\log(p(v))=\log[\sum_{h \in H}e^{-E(v,h)}]-\log[\sum_{v \in V}\sum_{h \in H}e^{-E(v,h)}]$$
 
-Let's take the gradient with respect to the parameters in $p(v)$. 
+Let's take the gradient with respect to the parameters in $$p(v)$$. 
 
 $$\begin{align}
 \frac{\partial \log(p(v))}{\partial \theta}=& 
 -\frac{1}{\sum_{h' \in H}e^{-E(v,h')}}\sum_{h' \in H}e^{-E(v,h')}\frac{\partial E(v,h')}{\partial \theta}\\ & + \frac{1}{\sum_{v' \in V}\sum_{h' \in H}e^{-E(v',h')}}\sum_{v' \in V}\sum_{h' \in H}e^{-E(v',h')}\frac{\partial E(v,h)}{\partial \theta}
 \end{align}$$
 
-Now I did this on paper and wrote the semi-final equation down as to not waste a lot of space on this site. I recommend you derive these equations yourself. Now I'll write some equations down that will help out in continuing our derivation. Note that: $Zp(v,h)=e^{-E(v,h')}$, $p(v)=\sum_{h \in H}p(v,h)$, and that $p(h|v) = \frac{p(v,h)}{p(h)}$. 
+Now I did this on paper and wrote the semi-final equation down as to not waste a lot of space on this site. I recommend you derive these equations yourself. Now I'll write some equations down that will help out in continuing our derivation. Note that: $$Zp(v,h)=e^{-E(v,h')}$$, $$p(v)=\sum_{h \in H}p(v,h)$$, and that $$p(h \vert v) = \frac{p(v,h)}{p(h)}$$. 
 
 $$\begin{align}
 \frac{\partial log(p(v))}{\partial \theta}&=
@@ -86,10 +86,7 @@ $$\begin{align}
 -\sum_{h' \in H}p(h'|v)\frac{\partial E(v,h')}{\partial \theta}+\sum_{v' \in V}\sum_{h' \in H}p(v',h')\frac{\partial E(v',h')}{\partial \theta}
 \end{align}$$
 
-After coming to equation (4), we still have a minor problem. Take a closer look at (4), we see that the second term of the equation requires simultaneous sampling of $v'$ and $h'$. In this scenario, we will use Gibbs sampling to overcome this (Check out a very intuitive explaination at [Gibbs Sampling : Data Science Concepts][Gibss_sampling_video]). 
-
-#### 3.4. Implementation in Python
-
+After coming to equation (4), we still have a minor problem. Take a closer look at (4), we see that the second term of the equation requires simultaneous sampling of $$v'$$ and $$h'$$. In this scenario, we will use Gibbs sampling to overcome this (Check out a very intuitive explaination at [Gibbs Sampling : Data Science Concepts][Gibss_sampling_video]). 
 
 ### 4. Hopfield Network
 
@@ -121,11 +118,11 @@ $$
 
 where: 
 
-* $w_{ij}:$ is the strength of connection weight from unit j to unit i (the weight of the connection).
+* $$w_{ij}:$$ is the strength of connection weight from unit j to unit i (the weight of the connection).
 
-* $s_i:$ is the state of unit i.
+* $$s_i:$$ is the state of unit i.
 
-* $\theta_i:$ is the threshold of unit i 
+* $$\theta_i:$$ is the threshold of unit i 
 
 Updates in the Hopfield network can be performed in two different ways:
 
@@ -133,7 +130,6 @@ Updates in the Hopfield network can be performed in two different ways:
 
 * **Synchronous**: All units are updated at the same time. This requires a central clock 
 to the system in order to maintain synchronisation.
-
 
 #### 4.3. Training phase 
 
@@ -145,7 +141,7 @@ Usually, practitioners remove the $\theta$ for less computation by setting it to
 
 $$E = -\frac{1}{2} \sum_{i, j}w_{ij} s_i s_j$$
 
-The energy here is the first order function, so taking derivative according to $w_{ij}$ to find the optimal point is impractical. Therefore, we have to apply mathematical transformations to figure out. 
+The energy here is the first order function, so taking derivative according to $$w_{ij}$$ to find the optimal point is impractical. Therefore, we have to apply mathematical transformations to figure out. 
 
 $$-\frac{1}{2} \sum_{i, j}w_{ij} s_i s_j \ge -\frac{1}{2} \sum_{i, j} s^2_i s^2_j$$
 
@@ -153,11 +149,10 @@ $$<=> w^*_{ij} = \sum_{ij} s^2_i s^2_j \quad \text{(for 1 sample)}$$
 
 $$<=> w^*_{ij} = \frac{1}{N} \sum_{n}^{N} \sum_{ij} s^2_i s^2_j \quad \text{for N samples}$$
 
-#### 4.4. Implementation
+### 5. Conclusion
 
-### 5. Modern extensions and relevance
+In this post, I have walked you through the history and working of the two famous models that have laid the foundation for the rapid advancement of neural nets. As time progresses, better and more complicated models will be released, however, diving into how the basics work always help. 
 
-### 6. Conclusion
-
+This is the end to the blog and I wish it could be useful to you. Peace out!
 
 [Gibss_sampling_video]: https://www.youtube.com/watch?v=7LB1VHp4tLE
