@@ -51,7 +51,7 @@ Restricted Boltzmann Machine (RBM) is a generative stochastic network that can l
 
 RBMs contain two layers: visible layer ($$v$$) and hidden ($$h$$).
 
-In the BernoulliRBM, all units are binary stochastic units. This means that the input data should either be binary, or real-valued between 0 and 1 signifying the probability that the visible unit would turn on or off.
+In the scope of this blog, I will use Bernoulli RBM for better explanation. In the BernoulliRBM, all units are binary stochastic units. This means that the input data should either be binary, or real-valued between 0 and 1 signifying the probability that the visible unit would turn on or off.
 
 The conditional probability distribution of each unit is given by the logistic sigmoid activation function of the input it receives: 
 
