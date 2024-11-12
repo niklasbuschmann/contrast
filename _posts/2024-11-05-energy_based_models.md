@@ -49,7 +49,18 @@ Restricted Boltzmann Machine (RBM) is a generative stochastic network that can l
 <img src="https://scikit-learn.org/1.5/_images/rbm_graph.png" alt="">
 </figure>
 
-RBMs contain two layers: visible layer ($v$) and hidden ($h$). 
+RBMs contain two layers: visible layer ($$v$$) and hidden ($$h$$).
+
+In the BernoulliRBM, all units are binary stochastic units. This means that the input data should either be binary, or real-valued between 0 and 1 signifying the probability that the visible unit would turn on or off.
+
+The conditional probability distribution of each unit is given by the logistic sigmoid activation function of the input it receives: 
+
+$$\begin{split}P(v_i=1|\mathbf{h}) = \sigma(\sum_j w_{ij}h_j + b_i) \\
+P(h_i=1|\mathbf{v}) = \sigma(\sum_i w_{ij}v_i + c_j)\end{split}$$
+
+where $$\sigma$$ is the logistic sigmoid function: 
+
+$$\sigma(x) = \frac{1}{1 + e^{-x}}$$
 
 #### 3.3. Training phase
 
@@ -57,7 +68,7 @@ The ultimate goal of RBM is to learn feature of the data (representation learnin
 
 Basically, energy is a measure of the system's state that indicates how "stable" or "likely" that state is. In an RBM, the energy function assigns a lower energy to states that represent probable or stable configurations, and higher energy to unlikely or unstable configurations. For example, a cool water is stable and has low energy while boilingly hot water is unstable and has much higher energy (it can even power locomotives). In summary, we have to find the parameters that produce lowest energy in the training data and I will explain how it is done below. 
 
-Given a specific configuration of $v$ and $h$, we map it to the probability space. 
+Given a specific configuration of $$v$$ and $$h$$, we map it to the probability space. 
 
 $$p(v,h) = \frac{e^{-E(v,h)}}{Z}$$
 
