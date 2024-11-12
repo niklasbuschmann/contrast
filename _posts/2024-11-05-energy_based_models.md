@@ -155,4 +155,18 @@ In this post, I have walked you through the history and working of the two famou
 
 This is the end to the blog and I wish it could be useful to you. Peace out!
 
+
+
+
+### References
+1\. [A Brain-Inpsired Algorithm For Memory - Youtube][hopfield_video1]  
+2\. [Hopfield network - Wikipedia][hopfield_net_wiki]  
+3\. [Neural network models (unsupervised)][rbm_sklearn]  
+4\. [Intuition Behind Restricted Boltzmann Machine (RBM)][rbm_loss_explanation]
+
+
+[hopfield_video1]: https://www.youtube.com/watch?v=1WPJdAW-sFo&t=1293s
+[hopfield_net_wiki]: https://en.wikipedia.org/wiki/Hopfield_network
+[rbm_sklearn]: https://scikit-learn.org/1.5/modules/neural_networks_unsupervised.html
+[rbm_loss_explanation]: https://datascience.stackexchange.com/questions/15595/intuition-behind-restricted-boltzmann-machine-rbm?fbclid=IwY2xjawGff_RleHRuA2FlbQIxMAABHaGXC2cfR-8YZEermLX7nu5WYvC_T5WweccQJ8xOyRqSztoZ6kolk3gbJQ_aem_l5rKaKIW4qmnEA7wUEB4_A
 [Gibss_sampling_video]: https://www.youtube.com/watch?v=7LB1VHp4tLE
