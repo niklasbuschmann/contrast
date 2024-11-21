@@ -1,10 +1,10 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Ensemble Géométrique"
+author: "Project Ensemble Géométrique"
+description: "Website for Project Ensemble Géométrique"
 permalink: /:title/
-lang: "en"
+lang: "ja"
 excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+date_format: "%Y-%m-%d"
 
 # Layout
 
@@ -17,11 +17,11 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "about.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Mail, icon: envelope, url: "mailto:ensemble.geometrique.1001@gmail.com"}
+  - {title: GitHub, icon: github, url: "https://github.com/Ensemble-Geometrique"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
