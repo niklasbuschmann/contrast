@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: "About me"
 ---
 
 {% if site.show_excerpts %}
