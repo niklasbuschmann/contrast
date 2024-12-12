@@ -115,6 +115,22 @@ $$
 &= \frac{\alpha}{\vert \omega \vert} - \frac{\sum_{i \in w_k} I_i \sum_{i \in w_k} I_i}{\vert \omega \vert ^ 2} \quad = \text{vế trái (đpcm)}
 \end{aligned}$$
 
+$$
+\begin{aligned}
+\rightarrow a_k 
+&= \frac{\frac{\sum_{i \in w_k} I_i p_i}{\vert \omega \vert} + \frac{\sum_{i \in w_k} p_i \sum_{i \in w_k} I_i}{\vert \omega \vert ^ 2}}{\sigma_I^2  + \varepsilon} \\
+
+&= \frac{\frac{1}{|w|}\sum_{i \in w_k}{I_ip_i - \mu _k \overline{p_k}}}{\sigma _I ^2 + \epsilon} \\
+\end{aligned}$$
+
+$$
+\begin{aligned}
+b_k 
+&= \frac{\gamma - a_k \sum_{i \in w_k} I_i}{\vert \omega \vert} \\
+&= \frac{\sum_{i \in w_k} p_i - a_k \sum_{i \in w_k} I_i}{\vert \omega \vert} \\
+&= \overline{p_k} - a_k \mu _k
+\end{aligned}$$
+
 ### 3. Implementation
 
 ```python
