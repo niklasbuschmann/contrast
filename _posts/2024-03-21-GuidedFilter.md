@@ -65,7 +65,7 @@ $$E(a_k, b_k) = \sum_{i \in w_k}{(a_k^2 I_i^2 + b_k^2 + p_i^2 + 2a_k b_k I_i - 2
 
 $$E(a_k, b_k) = \sum_{i \in w_k}{(a_k^2 I_i^2 + b_k^2 + p_i^2 + 2a_k b_k I_i - 2 b_k p_i  - 2 a_k I_i p_i + \varepsilon a_k^2)}$$
 
-Đặt $\alpha = \sum_{i \in w_k}I_i^2$, $\beta = \sum_{i \in w_k} I_i p_i$, $\gamma = \sum_{i \in w_k} p_i$, ta có biến đổi như sau: 
+Đặt $$\alpha = \sum_{i \in w_k}I_i^2$$, $$\beta = \sum_{i \in w_k} I_i p_i$$, $$\gamma = \sum_{i \in w_k} p_i$$, ta có biến đổi như sau: 
 
 $$E(a_k, b_k) = a_k^2 \alpha + \vert \omega \vert b_k^2 + \sum_{i \in w_k} p_i^2 + 2 a_k b_k \sum_{i \in w_k}I_i - 2 a_k \beta - 2b_k \gamma + \varepsilon a_k^2$$
 
@@ -86,7 +86,7 @@ $$
 &=  b_k \vert \omega \vert + a_k  \sum_{i \in w_k} I_i = \gamma
 \end{aligned}$$
 
-Từ 2 phương trình trên, ta sẽ kết hợp giải phương trình để tìm ra $a_k^*$ và $b_k^*$.
+Từ 2 phương trình trên, ta sẽ kết hợp giải phương trình để tìm ra $$a_k^*$$ và $$b_k^*$$.
 
 $$b_k = \frac{\gamma - a_k \sum_{i \in w_k}I_i}{\vert \omega \vert}$$
 
@@ -96,7 +96,7 @@ $$a_k (\alpha + \varepsilon) - (\frac{\gamma - a_k \sum_{i \in w_k}I_i}{\vert \o
 
 $$a_k (\alpha + \varepsilon - \frac{\sum_{i \in w_k} I_i\sum_{i \in w_k} I_i}{\vert \omega \vert}) = \beta + \frac{\gamma \sum_{i \in w_k} I_i}{\vert \omega \vert}$$
 
-Ta chia 2 vế cho $\vert \omega \vert$ và bắt đầu biến đổi. Đầu tiên, ta sẽ biến đổi vế phải trước. 
+Ta chia 2 vế cho $$\vert \omega \vert$$ và bắt đầu biến đổi. Đầu tiên, ta sẽ biến đổi vế phải trước. 
 
 $$\frac{\beta}{\vert \omega \vert} + \frac{\gamma \sum_{i \in w_k} I_i}{\vert \omega \vert ^2} = \frac{\sum_{i \in w_k} I_i p_i}{\vert \omega \vert} + \frac{\sum_{i \in w_k} p_i \sum_{i \in w_k} I_i}{\vert \omega \vert ^ 2}$$
 
