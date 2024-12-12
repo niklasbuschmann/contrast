@@ -41,9 +41,9 @@ Với $$(a_k, b_k)$$ là trọng số tuyến tính (kiểu $$y = ax + b$$) tron
 
 $$E(a_k, b_k) = \sum_{i \in w_k}{((a_kI_i + b_k - p_i)^2 + \varepsilon a_k^2)}$$
 
-Hàm loss này có mục đích tổi thiểu hóa khoảng cách L2 của output với ảnh guidance. Hệ số $$\varepsilon$$ ở đây được tác giả thêm vào để tránh cho a_k trở nên quá lớn. 
+Hàm loss này có mục đích tổi thiểu hóa khoảng cách L2 của output với ảnh guidance. Hệ số $$\varepsilon$$ ở đây được tác giả thêm vào để tránh cho $$a_k$$ trở nên quá lớn. 
 
-Chúng ta có thể dùng nhiều phương pháp để có thể tìm ra 2 hệ số này bằng nhiều phương pháp như Gradient Descent, Newton, ... Tuy nhiên, tác giả cũng đã cung cấp công thức tổng quát để tìm ra $$a_k, b_k$$ trong paper của mình. Cụ thể, với mỗi kernel 2 thông số được tính như sau:
+Chúng ta có thể dùng nhiều phương pháp để có thể tìm ra 2 hệ số này bằng nhiều phương pháp như Gradient Descent, Newton, ... Tuy nhiên, tác giả cũng đã cung cấp công thức closed form để tìm ra $$a_k, b_k$$ trong paper của mình. Cụ thể, với mỗi kernel 2 thông số được tính như sau:
 
 $$a_k = \frac{\frac{1}{|w|}\sum_{i \in w_k}{I_ip_i - \mu _k \overline{p_k}}}{\sigma _k ^2 + \epsilon}$$
 
@@ -56,6 +56,64 @@ Tuy nhiên, có một vấn đề là một pixel bị overlapped bởi nhiều 
 Cuối cùng, ta có công thức tổng quát cho guided filter như sau:
 
 $$q_i = \frac{1}{|w|}\sum_{i \in w_k}{a_kI_i + b_k} = \overline{a_i}I_i + \overline{b_i}$$
+
+* Chứng minh kết quả tìm $$a_k$$ và $$b_k$$ của tác giả (Optional)
+
+$$E(a_k, b_k) = \sum_{i \in w_k}{((a_kI_i + b_k - p_i)^2 + \varepsilon a_k^2)}$$
+
+$$E(a_k, b_k) = \sum_{i \in w_k}{(a_k^2 I_i^2 + b_k^2 + p_i^2 + 2a_k b_k I_i - 2 b_k p_i  - 2 a_k I_i p_i + \varepsilon a_k^2)}$$
+
+$$E(a_k, b_k) = \sum_{i \in w_k}{(a_k^2 I_i^2 + b_k^2 + p_i^2 + 2a_k b_k I_i - 2 b_k p_i  - 2 a_k I_i p_i + \varepsilon a_k^2)}$$
+
+Đặt $\alpha = \sum_{i \in w_k}I_i^2$, $\beta = \sum_{i \in w_k} I_i p_i$, $\gamma = \sum_{i \in w_k} p_i$, ta có biến đổi như sau: 
+
+$$E(a_k, b_k) = a_k^2 \alpha + \vert \omega \vert b_k^2 + \sum_{i \in w_k} p_i^2 + 2 a_k b_k \sum_{i \in w_k}I_i - 2 a_k \beta - 2b_k \gamma + \varepsilon a_k^2$$
+
+Lấy đạo hàm từng phần để biết cực tiểu của hàm theo $$a_k$$ và $$b_k$$: 
+
+$$
+\begin{aligned}
+\frac{\partial E}{\partial a_k} 
+&= 2a_k \alpha + 2 b_k \sum_{i \in w_k} I_i - 2 \beta + 2 \varepsilon a_k = 0 \\
+&=  a_k(\alpha + \varepsilon) + b_k  \sum_{i \in w_k} I_i - \beta = 0 \\
+&= a_k(\alpha + \varepsilon) + b_k  \sum_{i \in w_k} I_i = \beta
+\end{aligned}$$
+
+$$
+\begin{aligned}
+\frac{\partial E}{\partial b_k} 
+&= 2 b_k \vert \omega \vert + 2a_k  \sum_{i \in w_k} I_i - 2 \gamma = 0\\
+&=  b_k \vert \omega \vert + a_k  \sum_{i \in w_k} I_i = \gamma
+\end{aligned}$$
+
+Từ 2 phương trình trên, ta sẽ kết hợp giải phương trình để tìm ra $a_k^*$ và $b_k^*$.
+
+$$b_k = \frac{\gamma - a_k \sum_{i \in w_k}I_i}{\vert \omega \vert}$$
+
+Thay vào, ta được 
+
+$$a_k (\alpha + \varepsilon) - (\frac{\gamma - a_k \sum_{i \in w_k}I_i}{\vert \omega \vert}) \sum_{i \in w_k} I_i = \beta$$
+
+$$a_k (\alpha + \varepsilon - \frac{\sum_{i \in w_k} I_i\sum_{i \in w_k} I_i}{\vert \omega \vert}) = \beta + \frac{\gamma \sum_{i \in w_k} I_i}{\vert \omega \vert}$$
+
+Ta chia 2 vế cho $\vert \omega \vert$ và bắt đầu biến đổi. Đầu tiên, ta sẽ biến đổi vế phải trước. 
+
+$$\frac{\beta}{\vert \omega \vert} + \frac{\gamma \sum_{i \in w_k} I_i}{\vert \omega \vert ^2} = \frac{\sum_{i \in w_k} I_i p_i}{\vert \omega \vert} + \frac{\sum_{i \in w_k} p_i \sum_{i \in w_k} I_i}{\vert \omega \vert ^ 2}$$
+
+Với vế trái, sẽ dễ dàng hơn nếu ta biến đổi ngược: 
+
+$$
+\begin{aligned}
+\sigma_I^2 
+&= \frac{\sum_{i \in w_k} (I_i - \overline{I})^2}{\vert \omega \vert} \\
+&= \frac{\sum_{i \in w_k} (I_i^2 + \overline{I}^2 - 2I_i\overline{I})}{\vert \omega \vert} \\
+&= \frac{\sum_{i \in w_k} I_i^2}{\vert \omega \vert} + \frac{\sum_{i \in w_k} (\overline{I}^2 - 2I_i \overline{I})}{\vert \omega \vert} \\
+&= \frac{\sum_{i \in w_k} I_i^2}{\vert \omega \vert} + \frac{\vert \omega \vert \overline{I}^2 - 2 \overline{I} \sum_{i \in w_k} I_i}{\vert \omega \vert} \\ 
+&= \frac{\sum_{i \in w_k} I_i^2}{\vert \omega \vert} + \overline{I}^2 - 2\overline{I}^2 \\
+&= \frac{\sum_{i \in w_k} I_i^2}{\vert \omega \vert} - \overline{I}^2 \\
+&= \frac{\sum_{i \in w_k} I_i^2}{\vert \omega \vert} - \frac{\sum_{i \in w_k} I_i \sum_{i \in w_k} I_i}{\vert \omega \vert ^ 2} \\ 
+&= \frac{\alpha}{\vert \omega \vert} - \frac{\sum_{i \in w_k} I_i \sum_{i \in w_k} I_i}{\vert \omega \vert ^ 2} \quad = \text{vế trái (đpcm)}
+\end{aligned}$$
 
 ### 3. Implementation
 
