@@ -170,12 +170,15 @@ def guided_filter(p, I, r, e):
     return output
 ```
 
-Prove: 
-
-$$$$
-
 ### 4. Kết luận
 
+Bộ lọc guided filter là một bộ lọc có độ phức tạp $$O(N)$$ nên có tốc độ gần như bằng các bộ lọc Gaussian, mean. Ngoài ra, bộ lọc guided filter là một bộ lọc đa năng và có thể dùng trong rất nhiều trường hợp khác nhau. Ví dụ, bộ lọc guided filter cũng sẽ rất hữu dụng trong việc làm mịn các tín hiệu 1D (có thể cạnh tranh với các bộ lọc 1 Euro, Kalman filter, ...). 
+
+Trong bài viết này, mình đã trình bày cách hoạt động, chứng minh bộ lọc guided filter và cũng như là code from scratch. Hy vong các bạn cảm thấy hữu ích. Peace. 
 
 ### References
+
+1\. [Guided Image filtering - Kaiming He, Jian Sun, Xiaoou Tang][paper]  
+
+[paper]: https://people.csail.mit.edu/kaiming/publications/eccv10guidedfilter.pdf
 
