@@ -201,10 +201,36 @@ from torch.optim import Adam
 from tqdm import tqdm
 ```
 
-* **Step 2**: Các thư viện nền cho stable diffusion 
+* **Step 1**: Download dataset và tạo dataloader
 
 ```python
-def linear_beta_schedule(timesteps, start=0.0001, end=0.02):
+IMG_SIZE = 28
+BATCH_SIZE = 128
+
+def load_transformed_dataset():
+    data_transforms = [
+        transforms.Resize((IMG_SIZE, IMG_SIZE)),
+        transforms.RandomHorizontalFlip(),
+        transforms.ToTensor(), # Scales data into [0,1]
+        transforms.Lambda(lambda t: (t * 2) - 1) # Scale between [-1, 1]
+    ]
+    data_transform = transforms.Compose(data_transforms)
+
+    train = torchvision.datasets.MNIST(root=".", download=True,
+                                         transform=data_transform, train=True)
+
+    test = torchvision.datasets.MNIST(root=".", download=True,
+                                         transform=data_transform, train=False)
+    return torch.utils.data.ConcatDataset([train, test])
+
+data = load_transformed_dataset()
+dataloader = DataLoader(data, batch_size=BATCH_SIZE, shuffle=True, drop_last=True)
+```
+
+* **Step 3**: Các functions hỗ trợ cho stable diffusion
+
+```python
+def linear_beta_schedule(timesteps: float, start: float = 0.0001, end: float = 0.02):
     return torch.linspace(start, end, timesteps)
 
 def get_index_from_list(vals, t, x_shape):
@@ -219,16 +245,12 @@ def get_index_from_list(vals, t, x_shape):
 
 Bước forward của stable diffusion sẽ được implement theo công thức: 
 
-$$\begin{aligned}
-\tilde{\boldsymbol{x}}_t
-&= {\frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_t \Big)}
-\end{aligned}$$
+$$\mathbf{x}_t = \sqrt{\bar{\alpha}_t}\mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t}\boldsymbol{\epsilon}$$
 
 ```python
-def forward_diffusion_sample(x_0, t, device="cpu"):
+def forward_diffusion_sample(x_0: torch.Tensor, t: torch.Tensor, device="cpu"):
     """
-    Takes an image and a timestep as input and
-    returns the noisy version of it
+    Closed-form forward diffusion step processed in batches.
     """
     noise = torch.randn_like(x_0)
     sqrt_alphas_cumprod_t = get_index_from_list(sqrt_alphas_cumprod, t, x_0.shape)
@@ -240,7 +262,256 @@ def forward_diffusion_sample(x_0, t, device="cpu"):
     + sqrt_one_minus_alphas_cumprod_t.to(device) * noise.to(device), noise.to(device)
 ```
 
+* **Step 4**: Build U-Net 
 
+```python
+class Block(nn.Module):
+    def __init__(self, in_ch, out_ch, time_emb_dim, up=False):
+        super().__init__()
+        self.time_mlp = nn.Linear(time_emb_dim, out_ch)
+        if up:
+            self.conv1 = nn.Conv2d(in_ch + out_ch, out_ch, 3, padding=1)  # Supports skip connection
+            self.transform = nn.ConvTranspose2d(out_ch, out_ch, 4, 2, 1)
+        else:
+            self.conv1 = nn.Conv2d(in_ch, out_ch, 3, padding=1)
+            self.transform = nn.Conv2d(out_ch, out_ch, 4, 2, 1)
+        self.conv2 = nn.Conv2d(out_ch, out_ch, 3, padding=1)
+        self.bnorm1 = nn.BatchNorm2d(out_ch)
+        self.bnorm2 = nn.BatchNorm2d(out_ch)
+        self.relu = nn.ReLU(inplace=True)
+
+    def forward(self, x, t, skip=None):
+        # First Conv + Time embedding
+        h = self.bnorm1(self.relu(self.conv1(x)))
+        time_emb = self.relu(self.time_mlp(t))
+        time_emb = time_emb[(...,) + (None,) * 2]
+        h = h + time_emb
+
+        # Skip connection if provided
+        if skip is not None:
+            h = torch.cat((h, skip), dim=1)
+
+        # Second Conv
+        h = self.bnorm2(self.relu(self.conv2(h)))
+
+        # Down or Upsample
+        return self.transform(h)
+
+class SinusoidalPositionEmbeddings(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.dim = dim
+
+    def forward(self, time):
+        device = time.device
+        half_dim = self.dim // 2
+        embeddings = math.log(1e4) / (half_dim - 1)
+        embeddings = torch.exp(torch.arange(half_dim, device=device) * -embeddings)
+        embeddings = time[:, None] * embeddings[None, :]
+        embeddings = torch.cat((embeddings.sin(), embeddings.cos()), dim=-1)
+        return embeddings
+
+class Block(nn.Module):
+    def __init__(self, in_ch, out_ch, time_emb_dim, up=False):
+        super().__init__()
+        self.time_mlp = nn.Linear(time_emb_dim, out_ch)
+        self.up = up
+        if up:
+            self.conv1 = nn.Conv2d(in_ch, out_ch, 3, padding=1)
+            self.transform = nn.ConvTranspose2d(out_ch, out_ch, 4, 2, 1)
+        else:
+            self.conv1 = nn.Conv2d(in_ch, out_ch, 3, padding=1)
+            self.transform = nn.Conv2d(out_ch, out_ch, 4, 2, 1)
+        self.conv2 = nn.Conv2d(out_ch, out_ch, 3, padding=1)
+        self.bnorm1 = nn.BatchNorm2d(out_ch)
+        self.bnorm2 = nn.BatchNorm2d(out_ch)
+        self.relu = nn.ReLU(inplace=True)
+
+    def forward(self, x, t):
+        # First Conv
+        h = self.bnorm1(self.relu(self.conv1(x)))
+        # Add time embedding
+        time_emb = self.relu(self.time_mlp(t))
+        time_emb = time_emb[(..., ) + (None, ) * 2]
+        h = h + time_emb
+        # Second Conv
+        h = self.bnorm2(self.relu(self.conv2(h)))
+        # Add skip connection
+        if h.shape == x.shape:
+            h = h + x
+        # Transform
+        return self.transform(h)
+
+class SimpleUnet(nn.Module):
+    """
+    A simplified variant of the U-Net architecture with ResNet-style skip connections.
+    """
+    def __init__(self):
+        super().__init__()
+        image_channels = 1
+        down_channels = (32, 64, 128)
+        up_channels = (128, 64, 32)
+        out_dim = 1
+        time_emb_dim = 32
+
+        # Time embedding
+        self.time_mlp = nn.Sequential(
+            SinusoidalPositionEmbeddings(time_emb_dim),
+            nn.Linear(time_emb_dim, time_emb_dim),
+            nn.ReLU(inplace=True)
+        )
+
+        # Initial projection
+        self.conv0 = nn.Conv2d(image_channels, down_channels[0], 3, padding=1)
+
+        # Downsample blocks
+        self.downs = nn.ModuleList([
+            Block(down_channels[i], down_channels[i+1], time_emb_dim) 
+            for i in range(len(down_channels) - 1)
+        ])
+
+        # Upsample blocks
+        self.ups = nn.ModuleList([
+            Block(up_channels[i], up_channels[i+1], time_emb_dim, up=True)
+            for i in range(len(up_channels) - 1)
+        ])
+
+        # Final output layer
+        self.output = nn.Conv2d(up_channels[-1], out_dim, 1)
+
+    def forward(self, x, timestep):
+        # Embed time
+        t = self.time_mlp(timestep)
+        
+        # Initial projection
+        x = self.conv0(x)
+        
+        # Downsampling with skip connections
+        skip_connections = []
+        for down in self.downs:
+            x = down(x, t)
+            skip_connections.append(x)
+
+        # Upsampling with ResNet-style skip connections
+        for up in self.ups:
+            skip_x = skip_connections.pop()
+            if x.shape == skip_x.shape:  # Ensure shapes match for addition
+                x = x + skip_x
+            x = up(x, t)
+
+        # Final output
+        return self.output(x)
+
+
+model = SimpleUnet()
+print("Num params: ", sum(p.numel() for p in model.parameters()))
+```
+
+```bash
+Num params:  837249
+```
+
+* **Step 5**: Loss function 
+
+Mình sẽ sử dụng Huber Loss, các bạn cũng có thể các hàm loss khác mình đề xuất ở trên. 
+
+```python
+def get_loss(model, x_0, t):
+  x_noisy, noise = forward_diffusion_sample(x_0, t, device)
+  noise_pred = model(x_noisy, t)
+  return F.huber_loss(noise, noise_pred)
+```
+
+* **Step 6**: Set up và train 
+
+```python
+# Define beta schedule
+T = 300
+betas = linear_beta_schedule(timesteps=T)
+
+# Pre-calculate different terms for closed form
+alphas = 1. - betas
+alphas_cumprod = torch.cumprod(alphas, axis=0)
+alphas_cumprod_prev = F.pad(alphas_cumprod[:-1], (1, 0), value=1.0)
+sqrt_recip_alphas = torch.sqrt(1.0 / alphas)
+sqrt_alphas_cumprod = torch.sqrt(alphas_cumprod)
+sqrt_one_minus_alphas_cumprod = torch.sqrt(1. - alphas_cumprod)
+posterior_variance = betas * (1. - alphas_cumprod_prev) / (1. - alphas_cumprod)
+```
+
+```python
+# Training
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model.to(device)
+optimizer = Adam(model.parameters(), lr=0.001)
+epochs = 100
+
+for epoch in range(epochs):
+  epoch_loss = 0
+  for step, batch in enumerate(tqdm(dataloader)):
+    optimizer.zero_grad()
+    t = torch.randint(0, T, (BATCH_SIZE,), device=device).long()
+    loss = get_loss(model, batch[0], t)
+    epoch_loss += loss.item()
+    loss.backward()
+    optimizer.step()
+  print(f"Epoch: {epoch}, Total loss: {epoch_loss}")
+```
+
+```bash
+100%|██████████| 546/546 [00:21<00:00, 25.97it/s]
+Epoch: 0, Total loss: 25.88470129109919
+100%|██████████| 546/546 [00:19<00:00, 28.07it/s]
+Epoch: 1, Total loss: 14.593471519649029
+100%|██████████| 546/546 [00:19<00:00, 27.87it/s]
+Epoch: 2, Total loss: 13.600953148677945
+100%|██████████| 546/546 [00:20<00:00, 27.10it/s]
+Epoch: 3, Total loss: 13.152173833921552
+100%|██████████| 546/546 [00:19<00:00, 27.36it/s]
+...
+```
+
+* **Step 7**: Inference and visualisation
+
+Bước inference sẽ được thực hiện theo công thức sau: 
+
+$$\begin{aligned}
+\hat{\boldsymbol{x}}_{t-1}
+&= {\frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_\theta(x_t, t) \Big)} + {\frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \cdot \beta_t} \cdot \epsilon
+\end{aligned}$$
+
+```python
+@torch.no_grad()
+def sample_timestep(x, t):
+    """
+    Calls the model to predict the noise in the image and returns
+    the denoised image.
+    Applies noise to this image, if we are not in the last step yet.
+    """
+    betas_t = get_index_from_list(betas, t, x.shape)
+    sqrt_one_minus_alphas_cumprod_t = get_index_from_list(
+        sqrt_one_minus_alphas_cumprod, t, x.shape
+    )
+    sqrt_recip_alphas_t = get_index_from_list(sqrt_recip_alphas, t, x.shape)
+
+    model_mean = sqrt_recip_alphas_t * (
+        x - betas_t * model(x, t) / sqrt_one_minus_alphas_cumprod_t
+    )
+    posterior_variance_t = get_index_from_list(posterior_variance, t, x.shape)
+
+    return model_mean if t==0 else model_mean + torch.sqrt(posterior_variance_t) * torch.randn_like(x)
+```
+
+```python
+model.eval()
+fully_noised_sample = torch.randn((1, 1, 28, 28)).cuda()
+generated_sample = fully_noised_sample.clone()
+for timestep in tqdm(range(T-1, -1, -1)):
+    timestep = torch.Tensor([timestep]).long().cuda()
+    generated_sample = sample_timestep(generated_sample, timestep)
+plt.imshow(generated_sample[0, 0].detach().cpu())
+```
 
 ### 4. Kết luận 
 
