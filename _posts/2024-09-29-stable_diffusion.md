@@ -183,7 +183,66 @@ L_t^\text{simple}
 Lưu ý rằng hàm loss cuối cùng này đã bao gồm cả $$L_0$$ ở trên. Do về mặt bản chất, $$L_0$$ cũng là đo khoảng cách KL giữa training data ban đầu và data được sinh với đầu vào là $$x_1$$. 
 
 
-### 3. Kết luận 
+### 3. Implementation
+
+* **Step 1**: Import các thư viện cần thiết
+
+```python
+import torch
+import torchvision
+import matplotlib.pyplot as plt
+import torch.nn.functional as F
+from torch import nn
+import math
+from torchvision import transforms
+from torch.utils.data import DataLoader
+import numpy as np
+from torch.optim import Adam
+from tqdm import tqdm
+```
+
+* **Step 2**: Các thư viện nền cho stable diffusion 
+
+```python
+def linear_beta_schedule(timesteps, start=0.0001, end=0.02):
+    return torch.linspace(start, end, timesteps)
+
+def get_index_from_list(vals, t, x_shape):
+    """
+    Returns a specific index t of a passed list of values vals
+    while considering the batch dimension.
+    """
+    batch_size = t.shape[0]
+    out = vals.gather(-1, t.cpu())
+    return out.reshape(batch_size, *((1,) * (len(x_shape) - 1))).to(t.device)
+```
+
+Bước forward của stable diffusion sẽ được implement theo công thức: 
+
+$$\begin{aligned}
+\tilde{\boldsymbol{x}}_t
+&= {\frac{1}{\sqrt{\alpha_t}} \Big( \mathbf{x}_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \boldsymbol{\epsilon}_t \Big)}
+\end{aligned}$$
+
+```python
+def forward_diffusion_sample(x_0, t, device="cpu"):
+    """
+    Takes an image and a timestep as input and
+    returns the noisy version of it
+    """
+    noise = torch.randn_like(x_0)
+    sqrt_alphas_cumprod_t = get_index_from_list(sqrt_alphas_cumprod, t, x_0.shape)
+    sqrt_one_minus_alphas_cumprod_t = get_index_from_list(
+        sqrt_one_minus_alphas_cumprod, t, x_0.shape
+    )
+    # mean + variance
+    return sqrt_alphas_cumprod_t.to(device) * x_0.to(device) \
+    + sqrt_one_minus_alphas_cumprod_t.to(device) * noise.to(device), noise.to(device)
+```
+
+
+
+### 4. Kết luận 
 
 Diffusion model là một mô hình sinh dữ liệu dựa trên 2 quá trình tuần tự là _forward process_ và _reverse process_. Khác với các mô hình sinh dùng adversarial training như GAN hay surrogate loss như VAE, diffusion model thực hiện quá trình thêm nhiễu dần dần vào dữ liệu, sau đó học cách đảo ngược quá trình để tái tạo lại mẫu gốc từ nhiễu. Điều này giúp mô hình có thể tuần tự và chậm rãi sinh ra kết quả, vì vậy sự ổn định cũng được cải thiện hơn nhiều so với các phương pháp trước đó. Với tiềm năng vượt trội và tính đơn giản trong kiến trúc, các mô hình diffusion đã chứng tỏ hiệu quả cao trong việc sinh data.
 
