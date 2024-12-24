@@ -500,7 +500,7 @@ def sample_timestep(x, t):
     )
     posterior_variance_t = get_index_from_list(posterior_variance, t, x.shape)
 
-    return model_mean if t==0 else model_mean + torch.sqrt(posterior_variance_t) * torch.randn_like(x)
+    return model_mean + torch.sqrt(posterior_variance_t) * torch.randn_like(x)
 ```
 
 ```python
