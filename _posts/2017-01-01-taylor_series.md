@@ -46,9 +46,37 @@ $$$$
 $$\begin{aligned}
 f(x) &= \int_{x_0}^{x} \int_{x_0}^{x_1} f''(x_2)dx_2 dx_1 + f(x_0) + \int_{x_0}^{x}f'(x_0)dx_1 \\ 
 &= \int_{x_0}^{x} \int_{x_0}^{x_1} \int_{x_0}^{x_2} f'''(x_3)dx_3 dx_2 dx_1 + f(x_0) + \int_{x_0}^{x}f'(x_0)dx_1 + \int_{x_0}^{x} \int_{x_0}^{x_1} f''(x_0)dx_2 dx_1 \\ 
+&= \int_{x_0}^{x} ... \int_{x_0}^{x_{n-1}} f^{(n)}(x_n)dx_n dx_{n-1}... dx_2 dx_1 + f(x_0) + ... + \frac{1}{n!} f^{(n)}(x - x_0)^n
 \end{aligned}$$
 
-Now, we temporarily forget the first term and focus on the rest of the equation.
+Coin $O_1(n) = \int_{x_0}^{x} ... \int_{x_0}^{x_{n-1}} f^{(n)}(x_n)dx_n dx_{n-1}... dx_2 dx_1$, $O_2(n) = f(x_0) + ... + \frac{1}{n!} f^{(n)}(x - x_0)^n$. We have: 
+
+$$f(x) = O_1(n) + O_2(n)$$
+
+The $O_1(n)$, which comprises of nested integrals, is a complete nightmare. In contrast, the rest of the equation is quite straightforward. 
+However, the more we expand the equation, the less important is the first term. Let me prove it. 
+
+Assume that: 
+
+$$\vert f^{(n)}(x_n) \vert \leq b$$
+
+Then, 
+
+$$\begin{aligned}
+\vert \int_{x_0}^{x} ... \int_{x_0}^{x_{n-1}} f^{(n)}(x_n)dx_n dx_{n-1}... dx_2 dx_1 \vert &\leq \vert f^{(n)}(x_n) \vert \times \vert \int_{x_0}^{x} ... \int_{x_0}^{x_{n-1}}dx_n dx_{n-1}... dx_2 dx_1 \vert \\
+& \leq b \times \frac{(x-x_0)^n}{n!}
+\end{aligned}$$
+
+If we expand it further, 
+
+$$\lim_{n \rightarrow \infty} b \times \frac{(x-x_0)^n}{n!} = 0$$
+
+However, in some cases where $\vert f^{(n)}(x_n) \vert \leq n^n$. Then we will have 
+
+$$\lim_{n \rightarrow \infty} n^n \times \frac{(x-x_0)^n}{n!} \approx (x-x_0)^n$$
+
+This will converge if $\vert x - x_0 \vert \leq 1$. So you better pick $x$ that is only around 1 value away from the $x_0$. 
+
 
 #### **Example: Exponential Function**
 Approximate $f(x) = e^x$ at $x = 0$:
@@ -62,6 +90,12 @@ $$
 e^{0.5} \approx 1 + 0.5 + \frac{0.5^2}{2} = 1.625
 $$
 (True value: 1.64872).
+
+For $x = 2$, this gives:
+$$
+e^{1} \approx 1 + 1 + \frac{1^2}{2} = 2.5
+$$
+(True value: 7.389)
 
 ---
 
@@ -81,7 +115,7 @@ where:
 
 The coefficients of $P_m(x)$ and $Q_n(x)$ are chosen such that the Taylor series of $R_{m,n}(x)$ matches $f(x)$ as closely as possible up to $x^{m+n}$.
 
-#### **Mathematical Proof**
+The [N/M] Padé approximant is constructed to agree with the first M + N terms of the Taylor series. 
 
 #### **Example: Exponential Function**
 
@@ -127,6 +161,9 @@ R_{1,1}(x) = \frac{P_1(x)}{Q_1(x)} = \frac{1 + \frac{x}{2}}{1 - \frac{x}{2}},
 $$
 
 $$R_{1, 1}(0.5) = \frac{1 + \frac{0.5}{2}}{1 - \frac{0.5}{2}} = 1.6667$$
+
+$$R_{1, 1}(1) = \frac{1 + \frac{1}{2}}{1 - \frac{1}{2}} = 3$$
+
 ---
 
 ### **Comparison of Taylor and Padé Approximations**
