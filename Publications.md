@@ -16,8 +16,10 @@ Uma Investigação de Autorregressão Quantílica. Estudos Econômicos, 49(2), 3
 
 ### Working Papers
 
+Do the rich save more? Evidence from Brazil (with Fábio A. R. Gomes).
 
+Consumption at retirement: Is there a puzzle in Brazil? (with Fábio A. R. Gomes).
 
-
+Inequality and conspicuous consumption in Brazil: Is debt linked to status-seeking behavior? (with Fábio A. R. Gomes).
 
 ### Empirical Notes
