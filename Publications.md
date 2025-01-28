@@ -22,4 +22,5 @@ Consumption at retirement: Is there a puzzle in Brazil? (with Fábio A. R. Gomes
 
 Inequality and conspicuous consumption in Brazil: Is debt linked to status-seeking behavior? (with Fábio A. R. Gomes).
 
+
 ### Empirical Notes
