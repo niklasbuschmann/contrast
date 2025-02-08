@@ -44,7 +44,7 @@ static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocato
 
 With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can embed gists simply by using the `gist` command:
 
-<script src="https://gist.github.com/5555251.js?file=gist.md"></script>
+{% gist 5555251 %}
 
 ## Images
 
