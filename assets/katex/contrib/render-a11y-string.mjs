@@ -402,6 +402,12 @@ var handleObject = (tree, a11yStrings, atomType) => {
         break;
       }
 
+    case "pmb":
+      {
+        a11yStrings.push("bold");
+        break;
+      }
+
     case "phantom":
       {
         a11yStrings.push("empty space");
@@ -720,7 +726,7 @@ var handleObject = (tree, a11yStrings, atomType) => {
 
     case "mathchoice":
       {
-        // TODO: track which which style we're using, e.g. dispaly, text, etc.
+        // TODO: track which style we're using, e.g. display, text, etc.
         // default to text style if even that may not be the correct style
         buildA11yStrings(tree.text, a11yStrings, atomType);
         break;
@@ -791,4 +797,4 @@ var renderA11yString = function renderA11yString(text, settings) {
   return flatten(a11yStrings).join(", ");
 };
 
-export default renderA11yString;
+export { renderA11yString as default };

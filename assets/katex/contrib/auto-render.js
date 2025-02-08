@@ -7,15 +7,15 @@
 		exports["renderMathInElement"] = factory(require("katex"));
 	else
 		root["renderMathInElement"] = factory(root["katex"]);
-})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__974__) {
+})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__757__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 974:
+/***/ 757:
 /***/ (function(module) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__974__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__757__;
 
 /***/ })
 
@@ -27,8 +27,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__974__;
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -76,8 +77,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__974__;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-!function() {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -85,19 +84,19 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "katex"
-var external_katex_ = __webpack_require__(974);
+var external_katex_ = __webpack_require__(757);
 var external_katex_default = /*#__PURE__*/__webpack_require__.n(external_katex_);
 ;// CONCATENATED MODULE: ./contrib/auto-render/splitAtDelimiters.js
 /* eslint no-constant-condition:0 */
-var findEndOfMath = function findEndOfMath(delimiter, text, startIndex) {
+const findEndOfMath = function (delimiter, text, startIndex) {
   // Adapted from
   // https://github.com/Khan/perseus/blob/master/src/perseus-markdown.jsx
-  var index = startIndex;
-  var braceLevel = 0;
-  var delimLength = delimiter.length;
+  let index = startIndex;
+  let braceLevel = 0;
+  const delimLength = delimiter.length;
 
   while (index < text.length) {
-    var character = text[index];
+    const character = text[index];
 
     if (braceLevel <= 0 && text.slice(index, index + delimLength) === delimiter) {
       return index;
@@ -115,18 +114,16 @@ var findEndOfMath = function findEndOfMath(delimiter, text, startIndex) {
   return -1;
 };
 
-var escapeRegex = function escapeRegex(string) {
+const escapeRegex = function (string) {
   return string.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&");
 };
 
-var amsRegex = /^\\begin{/;
+const amsRegex = /^\\begin{/;
 
-var splitAtDelimiters = function splitAtDelimiters(text, delimiters) {
-  var index;
-  var data = [];
-  var regexLeft = new RegExp("(" + delimiters.map(function (x) {
-    return escapeRegex(x.left);
-  }).join("|") + ")");
+const splitAtDelimiters = function (text, delimiters) {
+  let index;
+  const data = [];
+  const regexLeft = new RegExp("(" + delimiters.map(x => escapeRegex(x.left)).join("|") + ")");
 
   while (true) {
     index = text.search(regexLeft);
@@ -144,21 +141,19 @@ var splitAtDelimiters = function splitAtDelimiters(text, delimiters) {
     } // ... so this always succeeds:
 
 
-    var i = delimiters.findIndex(function (delim) {
-      return text.startsWith(delim.left);
-    });
+    const i = delimiters.findIndex(delim => text.startsWith(delim.left));
     index = findEndOfMath(delimiters[i].right, text, delimiters[i].left.length);
 
     if (index === -1) {
       break;
     }
 
-    var rawData = text.slice(0, index + delimiters[i].right.length);
-    var math = amsRegex.test(rawData) ? rawData : text.slice(delimiters[i].left.length, index);
+    const rawData = text.slice(0, index + delimiters[i].right.length);
+    const math = amsRegex.test(rawData) ? rawData : text.slice(delimiters[i].left.length, index);
     data.push({
       type: "math",
       data: math,
-      rawData: rawData,
+      rawData,
       display: delimiters[i].display
     });
     text = text.slice(index + delimiters[i].right.length);
@@ -183,8 +178,8 @@ var splitAtDelimiters = function splitAtDelimiters(text, delimiters) {
  * API, we should copy it before mutating.
  */
 
-var renderMathInText = function renderMathInText(text, optionsCopy) {
-  var data = auto_render_splitAtDelimiters(text, optionsCopy.delimiters);
+const renderMathInText = function (text, optionsCopy) {
+  const data = auto_render_splitAtDelimiters(text, optionsCopy.delimiters);
 
   if (data.length === 1 && data[0].type === 'text') {
     // There is no formula in the text.
@@ -193,14 +188,14 @@ var renderMathInText = function renderMathInText(text, optionsCopy) {
     return null;
   }
 
-  var fragment = document.createDocumentFragment();
+  const fragment = document.createDocumentFragment();
 
-  for (var i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (data[i].type === "text") {
       fragment.appendChild(document.createTextNode(data[i].data));
     } else {
-      var span = document.createElement("span");
-      var math = data[i].data; // Override any display mode defined in the settings with that
+      const span = document.createElement("span");
+      let math = data[i].data; // Override any display mode defined in the settings with that
       // defined by the text itself
 
       optionsCopy.displayMode = data[i].display;
@@ -228,43 +223,61 @@ var renderMathInText = function renderMathInText(text, optionsCopy) {
   return fragment;
 };
 
-var renderElem = function renderElem(elem, optionsCopy) {
-  for (var i = 0; i < elem.childNodes.length; i++) {
-    var childNode = elem.childNodes[i];
+const renderElem = function (elem, optionsCopy) {
+  for (let i = 0; i < elem.childNodes.length; i++) {
+    const childNode = elem.childNodes[i];
 
     if (childNode.nodeType === 3) {
       // Text node
-      var frag = renderMathInText(childNode.textContent, optionsCopy);
+      // Concatenate all sibling text nodes.
+      // Webkit browsers split very large text nodes into smaller ones,
+      // so the delimiters may be split across different nodes.
+      let textContentConcat = childNode.textContent;
+      let sibling = childNode.nextSibling;
+      let nSiblings = 0;
+
+      while (sibling && sibling.nodeType === Node.TEXT_NODE) {
+        textContentConcat += sibling.textContent;
+        sibling = sibling.nextSibling;
+        nSiblings++;
+      }
+
+      const frag = renderMathInText(textContentConcat, optionsCopy);
 
       if (frag) {
+        // Remove extra text nodes
+        for (let j = 0; j < nSiblings; j++) {
+          childNode.nextSibling.remove();
+        }
+
         i += frag.childNodes.length - 1;
         elem.replaceChild(frag, childNode);
+      } else {
+        // If the concatenated text does not contain math
+        // the siblings will not either
+        i += nSiblings;
       }
     } else if (childNode.nodeType === 1) {
-      (function () {
-        // Element node
-        var className = ' ' + childNode.className + ' ';
-        var shouldRender = optionsCopy.ignoredTags.indexOf(childNode.nodeName.toLowerCase()) === -1 && optionsCopy.ignoredClasses.every(function (x) {
-          return className.indexOf(' ' + x + ' ') === -1;
-        });
+      // Element node
+      const className = ' ' + childNode.className + ' ';
+      const shouldRender = optionsCopy.ignoredTags.indexOf(childNode.nodeName.toLowerCase()) === -1 && optionsCopy.ignoredClasses.every(x => className.indexOf(' ' + x + ' ') === -1);
 
-        if (shouldRender) {
-          renderElem(childNode, optionsCopy);
-        }
-      })();
+      if (shouldRender) {
+        renderElem(childNode, optionsCopy);
+      }
     } // Otherwise, it's something else, and ignore it.
 
   }
 };
 
-var renderMathInElement = function renderMathInElement(elem, options) {
+const renderMathInElement = function (elem, options) {
   if (!elem) {
     throw new Error("No element provided to render");
   }
 
-  var optionsCopy = {}; // Object.assign(optionsCopy, option)
+  const optionsCopy = {}; // Object.assign(optionsCopy, option)
 
-  for (var option in options) {
+  for (const option in options) {
     if (options.hasOwnProperty(option)) {
       optionsCopy[option] = options[option];
     }
@@ -318,8 +331,7 @@ var renderMathInElement = function renderMathInElement(elem, options) {
 };
 
 /* harmony default export */ var auto_render = (renderMathInElement);
-}();
-__webpack_exports__ = __webpack_exports__.default;
+__webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
