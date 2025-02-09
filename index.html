@@ -1,10 +1,180 @@
----
-layout: default
-title: "Home"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+<!--     <meta name="viewport" content="width=device-width, height=device-height"> -->
+    <meta name="description" content="Personal Webpage of Mala Mishra">
+    <title>Portfolio: Mala Mishra</title>
+    <link rel="icon" type="image/x-icon" href="./images/userAsset/mm.jpeg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="wrapper">
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+        <div class="container">
+            <div class="navbar">
+                
+                <div class="logo-container">
+                  <img src="./images/userAsset/mm.jpeg" class="logo">
+                    <div class="logo-text">ala Mishra</div>
+                </div>
+                
+                <div class="nav-items">
+                    <div><a href="#projects">Work Experience</a></div>
+      
+                </div>
+
+            </div>
+
+            <div class="hero-section">
+
+                <!-- <div class="faded-text">Mala Mishra</div> -->
+    
+                <div class="hero-section-left">
+                  
+                    <div class="hero-section-heading hero-section-sub-heading">
+                        I am  <span class="role"></span>
+                    </div>
+    
+                    <div class="hero-section-description">
+                      I am a graduate of <a href="https://kjsit.somaiya.edu.in/en">KJ Somaiya College of Engineering</a> with a major in Computer Science, currently working as a senior software engineer at Humana Inc creating high impact solutions for customers. 
+                      <br><br>
+                      .NET developer with 12+years of experience in developing Web and Client/Server Applications based on Microsoft .NET Technologies and expertise in implementing azure cloud based applications. 
+                      Sound knowledge of Object Oriented Language Principles (C#) and design practices. I have an immense passion for technology and software development.
+                    
+                      <br><br>
+                      For questions and additional information, please send me an email <a href="mailto:mishmala7@gmail.com">mishmala</a>
+                    </div>
+                    
+    
+                </div>
+    
+                <div class="hero-section-right">
+
+                      <div class="user-image">
+                        <img src="./images/userAsset/IMG_4091.jpg" alt="" />
+                      </div>
+                </div>
+    
+            </div>
+        </div>
+
+
+        <div class="project-section" id="projects">
+          <h2 class="page-header">Work Experience<br><br></h2>
+        </div>
+        <div class="projects-article">
+          
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="./images/projects/humana.jpg" alt="humana icon">
+              <figcaption>01</figcaption>
+            </figure>
+            <div class="article-content">
+              <h3 class="card-title">Humana Inc<br>
+                Sep 2021 - Present 
+              </h3>
+              <p class="excerpt">
+                <ul class="excerpt">
+                  <li class="excerpt">Product design and implementation for web applications, Windows Desktop Applications using C# and VB.NET, .NET Windows Services and XML Web Services.</li>
+                  <li class="excerpt">Database design with attention towards a balance between performance and normalization.</li>
+                </ul>
+              </p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="./images/projects/kforce.jpeg" alt="KForce Icon">
+              <figcaption>02</figcaption>
+            </figure>
+            <div class="article-content">
+              <h3 class="card-title">KForce
+                <br>
+                Jan 2018 - Sep 2021  
+              </h3>
+              <p class="excerpt">
+                <ul class="excerpt">
+                  <li class="excerpt">Product design and implementation for web applications, Windows Desktop Applications using C# and VB.NET, .NET Windows Services and XML Web Services.</li>
+                  <li class="excerpt">Database design with attention towards a balance between performance and normalization.</li>
+                </ul> </p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="./images/projects/atos.jpg" alt="Syntel icon">
+              <figcaption>03</figcaption>
+            </figure>
+            <div class="article-content">
+              <h3 class="card-title">Syntel
+                <br>
+                Jan 2015 - Jan 2018
+              </h3>
+              <p class="excerpt">
+                <ul class="excerpt">
+                  <li class="excerpt">Product design and implementation for web applications, Windows Desktop Applications using C# and VB.NET, .NET Windows Services and XML Web Services.</li>
+                  <li class="excerpt">Database design with attention towards a balance between performance and normalization.</li>
+                </ul> </p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="./images/projects/accenture.jpeg" alt="Accenture Icon">
+              <figcaption>04</figcaption>
+            </figure>
+            <div class="article-content">
+              <h3 class="card-title">Accenture
+                <br>
+                Aug 2010 - Jan 2015
+              </h3>
+              <p class="excerpt">
+                <ul class="excerpt">
+                  <li class="excerpt">Product design and implementation for web applications, Windows Desktop Applications using C# and VB.NET, .NET Windows Services and XML Web Services.</li>
+                  <li class="excerpt">Database design with attention towards a balance between performance and normalization.</li>
+                </ul></p>
+            </div>
+          </article>
+        </div>
+   <footer>
+          <div class="container">
+            <div class="footer-wrapper">
+
+              <div class="link-wrapper">
+             
+              </div>
+
+              <div class="icon-wrapper">
+            
+                <a href="https://www.linkedin.com/in/mishmala7"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="https://www.github.com/mishmala"<i class="fa-brands fa-github icon"></i></a>
+                <!-- <i class="fa-brands fa-twitter icon"></i> -->
+                <a href="mailto:mishmala7@gmail.com"><i class="fa-regular fa-envelope icon"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "a Web Developer",
+        "a Backend Developer",
+        "an Azure Developer"
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+</body>
+</html>
