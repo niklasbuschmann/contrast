@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Mohamed Hosni"
+author: "Mohamed Hosni"
+description: "ENSAM-Meknes, Moulay Ismail University"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -8,21 +8,29 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
+show_excerpts: false        # show article excerpts on the home page
+show_frame: false           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "index.md"}
+  #- {file: "README.md"}
+  - {file : "publications.md", title: Publications}
+  - {file : "research.md", title: Research}
+  - {file : "teaching.md", title: Teaching}
+  - {file : "student.md", title: Students}
+  #- {file : "index.md", title: About me}
+  
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:hosniteaching@gmail.com"}
+  #- {title: Github, icon: github, url: "https://github.com/hosnimohamed/"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/hosnimohamed/"}
+  - {title: ResearchGate, icon: researchgate, url: "https://www.researchgate.net/profile/Mohamed_Hosni9"}
+  #- {title: GoogleScholar, icon: "ai ai-google-scholar-square ai-3x", url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
@@ -30,3 +38,4 @@ comments:
 
 plugins:
  - jekyll-feed
+ - jekyll-seo-tag
