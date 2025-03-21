@@ -9,7 +9,8 @@ categories: dataset, retinal fundus,
 - Access a larger and more heterogeneous retinal fundus dataset
 - Integrates and harmonizes pixel-level and label data 
 - Current coverage is 10 public datasets 
-- <a href="https://arxiv.org/abs/2402.11488" target="_blank"> IRFundusSet </a> 
+- <a href="https://arxiv.org/abs/2402.11488" target="_blank"> IRFundusSet paper</a>
+- <a href="https://github.com/bilha-analytics/IRFundusSet" target="_blank">  IRFundusSet on Github </a> 
 
 
 Availability and quality of training data is a common challenge when developing AI models.  Obtaining comprehensive and sufficiently sized datasets of health-related datasets is non-trivial.
@@ -28,3 +29,7 @@ The Integrated Retinal Fundus Set (IRFundusSet) aims to consolidate, harmonize, 
     <img src='https://github.com/bilha-analytics/ncov_bot_app/blob/master/retinal_fundus/result-irfunduset.png?raw=true' width='450'> </a>
 </p> 
 
+
+**Accessing IRFundusSet** 
+- <a href="https://arxiv.org/abs/2402.11488" target="_blank"> IRFundusSet paper</a>
+- <a href="https://github.com/bilha-analytics/IRFundusSet" target="_blank">  IRFundusSet on Github </a> 
