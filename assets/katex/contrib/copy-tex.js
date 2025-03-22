@@ -14,7 +14,7 @@ var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./contrib/copy-tex/katex2tex.js
 // Set these to how you want inline and display math to be delimited.
-var defaultCopyDelimiters = {
+const defaultCopyDelimiters = {
   inline: ['$', '$'],
   // alternative: ['\(', '\)']
   display: ['$$', '$$'] // alternative: ['\[', '\]']
@@ -23,39 +23,38 @@ var defaultCopyDelimiters = {
 // Modifies fragment in-place.  Useful for writing your own 'copy' handler,
 // as in copy-tex.js.
 
-var katexReplaceWithTex = function katexReplaceWithTex(fragment, copyDelimiters) {
+function katexReplaceWithTex(fragment, copyDelimiters) {
   if (copyDelimiters === void 0) {
     copyDelimiters = defaultCopyDelimiters;
   }
 
   // Remove .katex-html blocks that are preceded by .katex-mathml blocks
   // (which will get replaced below).
-  var katexHtml = fragment.querySelectorAll('.katex-mathml + .katex-html');
+  const katexHtml = fragment.querySelectorAll('.katex-mathml + .katex-html');
 
-  for (var i = 0; i < katexHtml.length; i++) {
-    var element = katexHtml[i];
+  for (let i = 0; i < katexHtml.length; i++) {
+    const element = katexHtml[i];
 
     if (element.remove) {
-      element.remove(null);
-    } else {
+      element.remove();
+    } else if (element.parentNode) {
       element.parentNode.removeChild(element);
     }
   } // Replace .katex-mathml elements with their annotation (TeX source)
   // descendant, with inline delimiters.
 
 
-  var katexMathml = fragment.querySelectorAll('.katex-mathml');
+  const katexMathml = fragment.querySelectorAll('.katex-mathml');
 
-  for (var _i = 0; _i < katexMathml.length; _i++) {
-    var _element = katexMathml[_i];
-
-    var texSource = _element.querySelector('annotation');
+  for (let i = 0; i < katexMathml.length; i++) {
+    const element = katexMathml[i];
+    const texSource = element.querySelector('annotation');
 
     if (texSource) {
-      if (_element.replaceWith) {
-        _element.replaceWith(texSource);
-      } else {
-        _element.parentNode.replaceChild(texSource, _element);
+      if (element.replaceWith) {
+        element.replaceWith(texSource);
+      } else if (element.parentNode) {
+        element.parentNode.replaceChild(texSource, element);
       }
 
       texSource.innerHTML = copyDelimiters.inline[0] + texSource.innerHTML + copyDelimiters.inline[1];
@@ -63,53 +62,65 @@ var katexReplaceWithTex = function katexReplaceWithTex(fragment, copyDelimiters)
   } // Switch display math to display delimiters.
 
 
-  var displays = fragment.querySelectorAll('.katex-display annotation');
+  const displays = fragment.querySelectorAll('.katex-display annotation');
 
-  for (var _i2 = 0; _i2 < displays.length; _i2++) {
-    var _element2 = displays[_i2];
-    _element2.innerHTML = copyDelimiters.display[0] + _element2.innerHTML.substr(copyDelimiters.inline[0].length, _element2.innerHTML.length - copyDelimiters.inline[0].length - copyDelimiters.inline[1].length) + copyDelimiters.display[1];
+  for (let i = 0; i < displays.length; i++) {
+    const element = displays[i];
+    element.innerHTML = copyDelimiters.display[0] + element.innerHTML.substr(copyDelimiters.inline[0].length, element.innerHTML.length - copyDelimiters.inline[0].length - copyDelimiters.inline[1].length) + copyDelimiters.display[1];
   }
 
   return fragment;
-};
+}
 /* harmony default export */ var katex2tex = (katexReplaceWithTex);
 ;// CONCATENATED MODULE: ./contrib/copy-tex/copy-tex.js
- // Global copy handler to modify behavior on .katex elements.
+ // Return <div class="katex"> element containing node, or null if not found.
+
+function closestKatex(node) {
+  // If node is a Text Node, for example, go up to containing Element,
+  // where we can apply the `closest` method.
+  const element = node instanceof Element ? node : node.parentElement;
+  return element && element.closest('.katex');
+} // Global copy handler to modify behavior on/within .katex elements.
+
 
 document.addEventListener('copy', function (event) {
-  var selection = window.getSelection();
+  const selection = window.getSelection();
 
-  if (selection.isCollapsed) {
-    return; // default action OK if selection is empty
+  if (selection.isCollapsed || !event.clipboardData) {
+    return; // default action OK if selection is empty or unchangeable
   }
 
-  var fragment = selection.getRangeAt(0).cloneContents();
+  const clipboardData = event.clipboardData;
+  const range = selection.getRangeAt(0); // When start point is within a formula, expand to entire formula.
+
+  const startKatex = closestKatex(range.startContainer);
+
+  if (startKatex) {
+    range.setStartBefore(startKatex);
+  } // Similarly, when end point is within a formula, expand to entire formula.
+
+
+  const endKatex = closestKatex(range.endContainer);
+
+  if (endKatex) {
+    range.setEndAfter(endKatex);
+  }
+
+  const fragment = range.cloneContents();
 
   if (!fragment.querySelector('.katex-mathml')) {
     return; // default action OK if no .katex-mathml elements
-  } // Preserve usual HTML copy/paste behavior.
-
-
-  var html = [];
-
-  for (var i = 0; i < fragment.childNodes.length; i++) {
-    html.push(fragment.childNodes[i].outerHTML);
   }
 
-  event.clipboardData.setData('text/html', html.join('')); // Rewrite plain-text version.
+  const htmlContents = Array.prototype.map.call(fragment.childNodes, el => el instanceof Text ? el.textContent : el.outerHTML).join(''); // Preserve usual HTML copy/paste behavior.
 
-  event.clipboardData.setData('text/plain', katex2tex(fragment).textContent); // Prevent normal copy handling.
+  clipboardData.setData('text/html', htmlContents); // Rewrite plain-text version.
+
+  clipboardData.setData('text/plain', katex2tex(fragment).textContent); // Prevent normal copy handling.
 
   event.preventDefault();
 });
-;// CONCATENATED MODULE: ./contrib/copy-tex/copy-tex.webpack.js
-/**
- * This is the webpack entry point for KaTeX. As ECMAScript doesn't support
- * CSS modules natively, a separate entry point is used.
- */
-
-
-__webpack_exports__ = __webpack_exports__.default;
+__webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
