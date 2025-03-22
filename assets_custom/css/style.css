@@ -1,0 +1,394 @@
+/* =======================================================================
+Template Name: Dil Hospital
+Author:  SmartEye Adminpanel
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for web template
+======================================================================= */
+/* ===================================== Import Less ================================== */
+@font-face {
+  font-family: 'mouse-300';
+  src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'mouse-500';
+  src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype"); }
+/* ===================================== Basic CSS ================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444; }
+
+a:hover {
+  color: #444; }
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.cp {
+  cursor: pointer; }
+
+html, body {
+  height: 100%; }
+
+p {
+  margin-bottom: 0px;
+  width: 100%; }
+
+.no-padding {
+  padding: 0px; }
+
+.no-margin {
+  margin: 0px; }
+
+.hid {
+  display: none; }
+
+.top-mar {
+  margin-top: 15px; }
+
+.h-100 {
+  height: 100%; }
+
+::placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: .5 !important; }
+
+.container-fluid {
+  padding: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+strong {
+  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+body {
+  background-color: #f7f7ff !important;
+  font-family: "mouse-300", Arial, Helvetica, sans-serif;
+  color: #6A6A6A; }
+
+.session-title {
+  padding: 30px;
+  margin: 0px; }
+  .session-title h2 {
+    width: 100%;
+    text-align: center; }
+  .session-title p {
+    max-width: 850px;
+    text-align: center;
+    float: none;
+    margin: auto; }
+  .session-title span {
+    float: right;
+    font-style: italic; }
+
+.inner-title {
+  padding: 20px;
+  padding-left: 0px;
+  margin-bottom: 30px; }
+  .inner-title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "slab", Arial, Helvetica, sans-serif; }
+  .inner-title p {
+    width: 100%;
+    text-align: center; }
+
+.page-nav {
+  padding: 40px;
+  text-align: center;
+  padding-top: 160px; }
+  .page-nav ul {
+    float: none;
+    margin: auto; }
+  .page-nav h2 {
+    font-size: 36px;
+    width: 100%;
+    color: #444; }
+    @media screen and (max-width: 600px) {
+      .page-nav h2 {
+        font-size: 26px; } }
+  .page-nav ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px; }
+    .page-nav ul li i {
+      width: 30px;
+      text-align: center;
+      color: #444; }
+    .page-nav ul li a {
+      color: #444; }
+
+.btn-success {
+  background-color: #00ab9f;
+  border-color: #00ab9f; }
+  .btn-success:hover {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important; }
+  .btn-success:active {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important; }
+  .btn-success:focus {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important;
+    box-shadow: none !important; }
+
+.btn-info {
+  background-color: #4f6dcd;
+  border-color: #4f6dcd; }
+  .btn-info:hover {
+    background-color: #4f6dcd !important;
+    border-color: #4f6dcd !important; }
+  .btn-info:active {
+    background-color: #4f6dcd !important;
+    border-color: #4f6dcd !important; }
+  .btn-info:focus {
+    background-color: #4f6dcd !important;
+    border-color: #4f6dcd !important;
+    box-shadow: none !important; }
+
+.btn {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px; }
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 2px solid  #00a8df; }
+
+.btn-light {
+  background-color: #FFF;
+  color: #3F3F3F; }
+
+.collapse.show {
+  display: block !important; }
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #0d7a40 !important; }
+
+.form-control {
+  background-color: #F8F8F8;
+  margin-bottom: 20px; }
+  .form-control:focus {
+    background-color: #FFF;
+    border-color: #CCC; }
+
+.container {
+  max-width: 1100px; }
+
+/* ===================================== Header CSS ================================== */
+.profile-container {
+  max-width: 1050px;
+  margin-top: 30px; }
+  .profile-container .pro-s-cover {
+    background-color: #FFF;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54); }
+    .profile-container .pro-s-cover img {
+      border-radius: 50px; }
+    .profile-container .pro-s-cover h6 {
+      font-family: "mouse-300", Arial, Helvetica, sans-serif;
+      font-size: 1.3rem;
+      margin-top: 10px;
+      margin-bottom: 0px; }
+    .profile-container .pro-s-cover span {
+      font-size: .8rem; }
+    .profile-container .pro-s-cover p {
+      font-size: .9rem;
+      color: #009b7f;
+      font-weight: 600; }
+    .profile-container .pro-s-cover .num-box {
+      width: 100%;
+      border-top: 1px solid #CCC;
+      margin-top: 10px; }
+      .profile-container .pro-s-cover .num-box .hire {
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid #CCC;
+        padding: 10px 0px; }
+        .profile-container .pro-s-cover .num-box .hire span {
+          font-size: .9rem; }
+      .profile-container .pro-s-cover .num-box .msg {
+        flex: 1;
+        text-align: center;
+        padding: 10px 0px; }
+        .profile-container .pro-s-cover .num-box .msg span {
+          font-size: .9rem; }
+    .profile-container .pro-s-cover .msg-box {
+      width: 100%;
+      padding-top: 20px;
+      border-top: 1px solid #CCC; }
+      .profile-container .pro-s-cover .msg-box .btn {
+        width: 110px;
+        box-shadow: none; }
+        @media screen and (max-width: 865px) {
+          .profile-container .pro-s-cover .msg-box .btn {
+            width: auto; } }
+        @media screen and (max-width: 767px) {
+          .profile-container .pro-s-cover .msg-box .btn {
+            width: 130px; } }
+        @media screen and (max-width: 415px) {
+          .profile-container .pro-s-cover .msg-box .btn {
+            width: 100px; } }
+      .profile-container .pro-s-cover .msg-box .hire {
+        flex: 1;
+        text-align: center; }
+      .profile-container .pro-s-cover .msg-box .msg {
+        flex: 1;
+        text-align: center; }
+  .profile-container .con-cover {
+    background-color: #FFF;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54); }
+    .profile-container .con-cover h4 {
+      font-size: 1.1rem;
+      padding-left: 10px;
+      padding-top: 5px; }
+    .profile-container .con-cover ul li {
+      float: left;
+      padding: 10px; }
+    .profile-container .con-cover .cd-ro {
+      border-top: 1px solid #CCC;
+      padding: 10px; }
+      .profile-container .con-cover .cd-ro span {
+        font-size: .8rem;
+        font-style: italic; }
+      .profile-container .con-cover .cd-ro p {
+        font-size: 1rem;
+        margin-top: 6px; }
+        @media screen and (max-width: 865px) {
+          .profile-container .con-cover .cd-ro p {
+            font-size: .8rem; } }
+        .profile-container .con-cover .cd-ro p i {
+          font-size: 16px;
+          margin-right: 10px; }
+  .profile-container .data-box {
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+    margin-bottom: 20px; }
+    .profile-container .data-box h2 {
+      font-size: 1.2rem;
+      border-bottom: 1px solid #CCC;
+      padding-bottom: 10px;
+      margin-bottom: 10px; }
+    .profile-container .data-box p {
+      text-indent: 20px;
+      text-align: justify;
+      font-size: .9rem; }
+    .profile-container .data-box .btn-link li {
+      float: left;
+      margin-top: 15px;
+      padding: 5px 10px;
+      border-radius: 15px;
+      border: 1px solid #888;
+      margin-right: 10px;
+      color: #888; }
+      @media screen and (max-width: 483px) {
+        .profile-container .data-box .btn-link li {
+          margin-right: 5px !important;
+          width: 100%;
+          margin-bottom: 10px; } }
+      .profile-container .data-box .btn-link li i {
+        margin-top: 5px; }
+      .profile-container .data-box .btn-link li a {
+        color: #888; }
+    .profile-container .data-box .exp-row {
+      margin: 0px;
+      border-bottom: 1px solid #CCC;
+      padding-bottom: 10px;
+      margin-bottom: 10px; }
+      .profile-container .data-box .exp-row h6 {
+        width: 100%;
+        font-size: .9rem;
+        margin-bottom: 5px; }
+      .profile-container .data-box .exp-row i {
+        margin-left: 10px;
+        font-size: .8rem; }
+      .profile-container .data-box .exp-row span {
+        color: #009b7f;
+        font-size: .8rem;
+        font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+      .profile-container .data-box .exp-row p {
+        margin-top: 5px;
+        text-indent: 15px; }
+    .profile-container .data-box .last {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      border: 0px; }
+  .profile-container .education-detail .sec-title {
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 22px; }
+  .profile-container .education-detail .resume-dat {
+    text-align: center;
+    margin: auto; }
+    @media screen and (max-width: 575px) {
+      .profile-container .education-detail .resume-dat {
+        margin-bottom: 20px; } }
+    .profile-container .education-detail .resume-dat p {
+      width: 100%;
+      text-indent: 0px;
+      margin: auto;
+      text-align: center; }
+    .profile-container .education-detail .resume-dat h6 {
+      text-align: center; }
+  .profile-container .education-detail .service {
+    padding: 20px 0px; }
+    .profile-container .education-detail .service .resume-dat {
+      text-align: center; }
+  .profile-container .education-detail .rgbf {
+    border-left: 1px solid #CCC; }
+    .profile-container .education-detail .rgbf h5 {
+      font-size: 1.2rem; }
+  .profile-container .service-box .service {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #dadada21; }
+    .profile-container .service-box .service .serv-logo {
+      margin: auto;
+      text-align: center;
+      font-size: 44px; }
+      .profile-container .service-box .service .serv-logo i {
+        margin: auto; }
+    .profile-container .service-box .service .serv-det h5 {
+      font-size: 1rem; }
+
+.contact-tab {
+  padding: 20px; }
+  .contact-tab iframe {
+    width: 100%;
+    height: 400px; }
+
+/*# sourceMappingURL=style.css.map */

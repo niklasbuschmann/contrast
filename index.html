@@ -3,8 +3,100 @@ layout: default
 title: "Home"
 ---
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Alireza Belal's personal website showcasing academic background, research interests, and professional profiles.">
+    <meta name="google-site-verification" content="JPNsmDeuf2FnbrYZO3GD6O4-eI5Xh0Q0DhmQmArxtzQ"/>
+
+    <title>Alireza Belal | AI & Backend Development</title>
+
+    <link rel="shortcut icon" href="assets_custom/images/fav.jpg">
+    <link rel="stylesheet" href="assets_custom/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets_custom/css/fontawsom-all.min.css">
+    <link rel="stylesheet" href="assets_custom/css/style.css">
+
+    <style>
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .contact-icons a {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contact-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="container profile-container">
+        <div class="row">
+            <aside id="menu-jk" class="col-md-4 text-center">
+                <div class="pro-s-cover">
+                    <img src="assets_custom/images/profile.jpg" alt="Alireza Belal" class="profile-img" loading="lazy">
+                    <h5>Alireza Belal</h5>
+                    <p>AI Enthusiast & Backend Developer</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tehran, Iran</p>
+                    <div class="contact-icons">
+                        <a href="https://github.com/AlirezaBelal" aria-label="GitHub Profile"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?hl=fa&user=tCEI2JAAAAAJ"
+                           aria-label="Google Scholar"><i class="fa fa-graduation-cap"></i></a>
+                        <a href="https://www.linkedin.com/in/alirezabelal" aria-label="LinkedIn Profile"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="cd-ro">
+                        <span>Email: </span>
+                        <a href="mailto:belal.alireza@gmail.com">belal.alireza@gmail.com</a>
+                    </div>
+                </div>
+            </aside>
+            <main class="col-md-8">
+                <div class="data-box">
+                    <h2>About Me</h2>
+                    <p align="justify">I am a backend developer with a deep passion for artificial intelligence. I hold
+                        a bachelor's degree in computer engineering and a master's degree in bioinformatics. My academic
+                        journey has equipped me with a strong foundation in both software development and data-driven
+                        problem-solving, allowing me to build scalable and efficient AI-powered systems.</p>
+
+                    <p align="justify">My expertise spans backend development, artificial intelligence, and machine
+                        learning applications. I am particularly interested in natural language processing, computer
+                        vision, recommender systems, and generative AI. By leveraging my knowledge in these areas, I aim
+                        to develop intelligent and adaptive software solutions that can address real-world
+                        challenges.</p>
+
+                    <p align="justify">Throughout my career, I have worked on designing and optimizing backend
+                        infrastructures, integrating AI models into production environments, and enhancing system
+                        performance through data-driven approaches. I am passionate about the intersection of data,
+                        algorithms, and real-world applications, and I continuously seek opportunities to apply AI in
+                        innovative ways.</p>
+
+                    <p align="justify">Beyond my technical interests, I am committed to continuous learning and
+                        collaboration within the AI and software engineering communities. Whether through research,
+                        development, or mentorship, I strive to contribute to the advancement of AI-driven
+                        technologies.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="assets_custom/js/jquery-3.2.1.min.js"></script>
+<script src="assets_custom/js/popper.min.js"></script>
+<script src="assets_custom/js/bootstrap.min.js"></script>
+<script src="assets_custom/js/jquery-scrolltofixed-min.js"></script>
+<script src="assets_custom/js/script.js"></script>
+</body>
