@@ -7,15 +7,15 @@
 		var a = typeof exports === 'object' ? factory(require("katex")) : factory(root["katex"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__974__) {
+})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__757__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 974:
+/***/ 757:
 /***/ (function(module) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__974__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__757__;
 
 /***/ })
 
@@ -27,8 +27,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__974__;
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -76,20 +77,18 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__974__;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-!function() {
-/* harmony import */ var katex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(974);
+/* harmony import */ var katex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(757);
 /* harmony import */ var katex__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(katex__WEBPACK_IMPORTED_MODULE_0__);
 
-var scripts = document.body.getElementsByTagName("script");
+let scripts = document.body.getElementsByTagName("script");
 scripts = Array.prototype.slice.call(scripts);
 scripts.forEach(function (script) {
   if (!script.type || !script.type.match(/math\/tex/i)) {
     return -1;
   }
 
-  var display = script.type.match(/mode\s*=\s*display(;|\s|\n|$)/) != null;
-  var katexElement = document.createElement(display ? "div" : "span");
+  const display = script.type.match(/mode\s*=\s*display(;|\s|\n|$)/) != null;
+  const katexElement = document.createElement(display ? "div" : "span");
   katexElement.setAttribute("class", display ? "equation" : "inline-equation");
 
   try {
@@ -103,8 +102,7 @@ scripts.forEach(function (script) {
 
   script.parentNode.replaceChild(katexElement, script);
 });
-}();
-__webpack_exports__ = __webpack_exports__.default;
+__webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
