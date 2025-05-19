@@ -17,11 +17,8 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "Bettys cv updated.pdf", title: "CV", icon: home}
-  - {file: "Blog", file: "/blog.md"}
-  navigation:
-  - {title: "CV", url: "/Bettys%20cv%20updated.pdf", icon: home}
-  - {title: "Blog", url: "/blog/"}
+  - {file: "Bettys cv updated.pdf", title: "CV", url: "https://github.com/Betty-coded/betty-coded.github.io/blob/master/Pink%20Harlem%20light.jpg", icon: home}
+  - {title: "Blog", url: "/blog.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Gmail, icon: envelope, url: "mailto:onyango2betty@gmail.com"}
