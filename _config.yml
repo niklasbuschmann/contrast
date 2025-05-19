@@ -19,6 +19,9 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "Bettys cv updated.pdf", title: "CV", icon: home}
   - {file: "Blog", file: "/blog.md"}
+  navigation:
+  - {title: "CV", url: "/Bettys%20cv%20updated.pdf", icon: home}
+  - {title: "Blog", url: "/blog/"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Gmail, icon: envelope, url: "mailto:onyango2betty@gmail.com"}
