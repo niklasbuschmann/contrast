@@ -18,11 +18,11 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "Bettys cv updated.pdf"' title: "CV", icon: home}
-  - {file: "README.md"}
+  - {file: "README.md", title: About me, icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "onyango2betty@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/betty-coded"}
+  - {title: Mail, icon: envelope, url: "mailto:onyango2betty@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/Betty-coded"}
   - {title: Linkedin, icon: linkedin, url: "www.linkedin.com/in/betty-onyango-8765612a5"}
   - {title: Instagram, icon: instagram, url: "https://www.instagram.com/pinkharlem?igsh=bjBidGo1YTIxdDYy"
 
