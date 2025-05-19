@@ -17,13 +17,14 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
+  - {file: "Bettys cv updated.pdf"' title: "CV", icon: home}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "onyango2betty@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/betty-coded"}
+  - {title: Linkedin, icon: linkedin, url: "www.linkedin.com/in/betty-onyango-8765612a5"}
+  - {title: Instagram, icon: instagram, url: "https://www.instagram.com/pinkharlem?igsh=bjBidGo1YTIxdDYy"
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
