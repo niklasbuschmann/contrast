@@ -19,6 +19,10 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
   - {title: "Blog", url: "/blog/", icon: pencil-alt}
+navigation:
+  - {title: "About", url: "/about/", icon: user}
+  - {title: "Blog", url: "/blog/", icon: pencil-alt}
+  - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Gmail, icon: envelope, url: "mailto:onyango2betty@gmail.com"}
