@@ -5,8 +5,6 @@ mathjax: true
 date: 2025-05-18
 categories:
   - media
-  - github
-  - website
 ---
 
 ![Bio-Centre Facility](/assets/images/bio1.jpg)
