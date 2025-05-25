@@ -2,7 +2,7 @@
 title:  "Empowering Communities Through Sustainable Sanitation"
 mathjax: true
 layout: post
-date:2025-05-18
+date: 2025-05-18
 categories: 
  -media
  -github
