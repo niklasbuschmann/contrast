@@ -17,9 +17,6 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
-  - {title: "Blog", url: "/blog/", icon: pencil-alt}
-navigation:
   - {title: "About", url: "/about/", icon: user}
   - {title: "Blog", url: "/blog/", icon: pencil-alt}
   - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
