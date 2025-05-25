@@ -4,7 +4,7 @@ title: "About me"
 ---
 
 <div style="text-align: center; margin-top: 30px;">
-  <img src="https://github.com/Betty-coded/betty-coded.github.io/blob/master/Profile%25202.JPG?raw=true" 
+  <img src="https://github.com/user-attachments/assets/d7537599-9097-428a-912a-f1f6f5434838" 
        alt="Betty Onyango" 
        style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid #ccc;">
 </div>
