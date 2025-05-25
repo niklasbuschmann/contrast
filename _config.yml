@@ -1,5 +1,6 @@
 title: "Betty A. Onyango"
 author: "Bett A. Onyango"
+logo: https://github.com/Betty-coded/portfolio/blob/main/Profile.jpg?raw=true
 description: "University Canada West"
 permalink: /:title/
 lang: "en"
@@ -17,7 +18,7 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {title: "CV", url: "Bettys cv updated.pdf", icon: CV}
+  - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
   - {title: "Blog", url: "/blog.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
