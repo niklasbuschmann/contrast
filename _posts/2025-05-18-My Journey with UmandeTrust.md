@@ -3,8 +3,7 @@ title: "Empowering Communities Through Sustainable Sanitation"
 layout: post
 mathjax: true
 date: 2025-05-18
-categories:
-  - media
+categories: [media]
 ---
 
 ![Bio-Centre Facility](/assets/images/bio1.jpg)
