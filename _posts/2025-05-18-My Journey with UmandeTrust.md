@@ -1,12 +1,12 @@
 ---
-title:  "Empowering Communities Through Sustainable Sanitation"
-mathjax: true
+title: "Empowering Communities Through Sustainable Sanitation"
 layout: post
+mathjax: true
 date: 2025-05-18
-categories: 
- -media
- -github
- -webste
+categories:
+  - media
+  - github
+  - website
 ---
 
 ![Bio-Centre Facility](/assets/images/bio1.jpg)
@@ -33,10 +33,31 @@ These projects were more than infrastructure—they were about **restoring digni
 
 If you’d like to learn more about Umande Trust’s work, visit [Umande.org](https://umande.org/portfolio/handwashing-station/).
 
+---
+
+## Sample MathJax
+
+A sanitation adoption model can be illustrated by an exponential growth formula:
+
+$$ A(t) = A_0 e^{rt} $$
+
+Where:
+- \( A_0 \): Initial adoption
+- \( r \): Growth rate
+- \( t \): Time in months
+
+---
+
+## Sample Code Block
+
+Here’s an example of how community feedback data might be processed in Python:
+
+{% highlight python linenos %}
+def summarize_feedback(feedback):
+    scores = [entry['score'] for entry in feedback]
+    return sum(scores) / len(scores)
+{% endhighlight %}
+
+---
 
 
-##Header goes here
-
-other text.
-
-[link] (https://)
