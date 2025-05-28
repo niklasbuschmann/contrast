@@ -18,7 +18,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "About", url: "/about/", icon: user}
-  - {title: "Blog", url: "https://github.com/Betty-coded/betty-coded.github.io/tree/82b50dd11214fdc62d0bdae8fd513c7e3ec30bce/_posts", icon: pencil-alt}
+  - {title: "Blog", url: "/blog/", icon: pencil-alt}
   - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
