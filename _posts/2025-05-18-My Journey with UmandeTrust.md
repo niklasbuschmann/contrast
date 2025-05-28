@@ -14,7 +14,7 @@ While working with **Umande Trust**, I actively participated in a transformative
 
 The beauty of this innovation is that it tackled three major challenges at once: poor sanitation, limited access to clean energy, and unemployment. I contributed by helping train residents on how to manage and maintain the facilities, as well as collecting feedback to improve adoption and usability. It was empowering to see how the simple act of using a toilet could power a stove—and bring dignity to people’s daily lives.
 
-![Biogas Conversion Unit](/assets/images/bio2.jpg)
+![Biogas Conversion Unit](https://github.com/Betty-coded/betty-coded.github.io/blob/506b7e2b79352a864e52a881a0e296184c654c97/Umande%20Project1.jpg)
 
 ## Hygiene Access through Handwashing Stations
 
