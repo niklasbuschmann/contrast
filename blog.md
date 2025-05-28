@@ -1,4 +1,3 @@
-'''markdown
 ---
 layout: Home
 title: "Blog"
