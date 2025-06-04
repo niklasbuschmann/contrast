@@ -24,7 +24,7 @@ navigation:      # accepts {file, title, url, icon, sidebaricon}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Gmail, icon: envelope,url: "mailto:onyango2betty@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/Betty-coded"}
+  - {title: Github, icon: github,url: "https://github.com/Betty-coded"}
   - {title: Linkedin, icon: linkedin, url: "www.linkedin.com/in/betty-onyango-8765612a5"}
   - {title: Instagram, icon: instagram, url: "https://www.instagram.com/pinkharlem?igsh=bjBidGo1YTIxdDYy"}
 
