@@ -8,16 +8,6 @@ title: "About me"
        alt="Betty Onyango" 
        style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid #ccc;">
 </div>
----
----
-
-Welcome to My Home Page
-
-{% assign date = '2020-04-13T10:20:00Z' %}
-
-- Original date - {{ date }}
-- With timeago filter - {{ date | timeago }}
-
 
 Welcome to my professional portfolio. I am a recent MBA student set to graduate with a focus on business strategy and digital marketing. I have worked on strategic initiatives and I am passionate about leveraging data-driven insights to drive growth. This site highlights my resume, key projects and skills.
 
