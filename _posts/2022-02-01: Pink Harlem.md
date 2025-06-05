@@ -8,13 +8,6 @@ categories: [media]
 
 ![Pink Harlem Logo](https://github.com/Betty-coded/betty-coded.github.io/blob/bf6464d2e6b0a081cd09b8652d018a7442867a93/Pink%20Harlem%20light.jpg)
 
-<!-- Triangle banner running across the top -->
-<div style="width: 100%; height: 120px; overflow: hidden; margin-bottom: 20px;">
-  <img src="/assets/images/triangle-banner.png" 
-       alt="Pink Harlem Banner" 
-       style="width: 100%; height: auto; clip-path: polygon(0 100%, 50% 0, 100% 100%); display: block;">
-</div>
-
 ## Welcome to Pink Harlem
 
 At Pink Harlem, beauty isn’t just an accessory, it’s a lifestyle. Born from a passion for self-expression and style, our business is all about making women feel powerful, polished and unapologetically feminine.
