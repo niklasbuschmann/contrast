@@ -15,14 +15,6 @@ categories: [media]
        style="width: 100%; height: auto; clip-path: polygon(0 100%, 50% 0, 100% 100%); display: block;">
 </div>
 
-<!-- Pink Harlem Logo -->
-<div style="text-align: center; margin: 30px 0;">
-  <img src="https://github.com/Betty-coded/betty-coded.github.io/blob/bf6464d2e6b0a081cd09b8652d018a7442867a93/Pink%20Harlem%20light.jpg)
-" 
-       alt="Pink Harlem Logo"
-       style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid #ccc;">
-</div>
-
 ## Welcome to Pink Harlem
 
 At Pink Harlem, beauty isn’t just an accessory, it’s a lifestyle. Born from a passion for self-expression and style, our business is all about making women feel powerful, polished and unapologetically feminine.
