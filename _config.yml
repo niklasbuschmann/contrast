@@ -17,6 +17,15 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:      # accepts {file, title, url, icon, sidebaricon}
+navigation:      # accepts {file, title, url, icon, sidebaricon}
+  - {title: "About", url: "/about/", icon: user}
+  - {file: "index.html"}
+  - {file: "README.md"}
+  - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
+
+include:
+  - posts
+  - assets
   - {file: "index.html", title: "/about/", icon: home}
   - {title: "Blog", file: "blog.md", icon: user}
   - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
