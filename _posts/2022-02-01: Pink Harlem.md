@@ -6,7 +6,7 @@ date: 2022-02-01
 categories: [media]
 ---
 
-![Pink Harlem Logo](INSERT_LOGO_IMAGE_URL_HERE)
+![Pink Harlem Logo](https://github.com/Betty-coded/betty-coded.github.io/blob/bf6464d2e6b0a081cd09b8652d018a7442867a93/Pink%20Harlem%20light.jpg)
 
 ## Welcome to Pink Harlem
 
