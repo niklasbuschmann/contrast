@@ -6,7 +6,7 @@ date: 2025-05-18
 categories: [media]
 ---
 
-![Bio-Centre Facility](https://github.com/Betty-coded/betty-coded.github.io/blob/5f93bb4eee257222da24dd65e4f83b2eac4b5855/Umande%20Project%202.jpg)
+![Bio-Centre Facility](Umande Project 2.jpg)
 
 ## Community Sanitation with Biogas Toilets
 
