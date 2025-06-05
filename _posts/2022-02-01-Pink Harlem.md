@@ -14,7 +14,6 @@ At Pink Harlem, beauty isn’t just an accessory, it’s a lifestyle. Born from 
 
 We’re proud to offer two signature experiences under one chic roof: nail artistry and a trend-setting boutique collection. Whether you're here to pamper your nails or elevate your wardrobe, Pink Harlem is your ultimate destination for all things glam.
 
----
 
 ## The Nail Studio: Art at Your Fingertips
 
@@ -32,7 +31,6 @@ Client Favorites include:
 
 Whether you want a quick polish refresh or an Instagram-worthy full set, Pink Harlem delivers.
 
----
 
 ##  The Boutique: Fashion with an Edge
 
@@ -48,14 +46,12 @@ Think:
 
 Our pieces are handpicked with you in mind—the modern woman who dares to express themselves with style.
 
----
 
 ## Why Pink Harlem?
 
 Because we believe every woman and man deserves a space where they can be pampered. Our mission is to make beauty and fashion accessible, personal and unforgettable.
 
 Come experience the magic yourself. Walk in for nails, leave with an outfit—and a whole new vibe.
-
 ---
 
 <i class="fas fa-map-marker-alt"></i> Location: [Mirema Dr, Nairobi-Kenya]  
