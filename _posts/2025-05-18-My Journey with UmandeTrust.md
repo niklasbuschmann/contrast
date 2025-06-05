@@ -22,7 +22,7 @@ In response to increasing health risks, especially during the COVID-19 pandemic,
 
 These stations were placed near marketplaces, schools, and transit hubs, giving hundreds of residents daily access to soap and water. Our team collaborated with local health volunteers to teach correct handwashing techniques, and I helped document success stories from the field.
 
-![Handwashing Station](/assets/images/handwashing.jpg)
+![Handwashing Station](IMG_7273.png)
 
 ## Reflections
 
