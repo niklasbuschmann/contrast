@@ -6,7 +6,7 @@ date: 2025-05-18
 categories: [media]
 ---
 
-![Bio-Centre Facility](assets/Umande.jpg)
+![Bio-Centre Facility](assets/Umande1)
 
 
 
