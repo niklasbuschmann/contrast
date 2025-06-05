@@ -36,7 +36,7 @@ Whether you want a quick polish refresh or an Instagram-worthy full set, Pink Ha
 
 ## 👗 The Boutique: Fashion with an Edge
 
-![Pink Harlem Boutique](INSERT_CLOTHING_IMAGE_URL_HERE)
+![Pink Harlem Boutique](https://github.com/Betty-coded/betty-coded.github.io/blob/d0dbbd61b1f909c503c5c8ede8757b7b139b3d13/Clothing%20Line.jpg)
 
 Fashion is more than just clothes—it's how you show up in the world. And at Pink Harlem’s **boutique**, we curate each piece to empower and inspire.
 
