@@ -18,7 +18,7 @@ We’re proud to offer two signature experiences under one chic roof: nail artis
 
 ## 💅 The Nail Studio: Art at Your Fingertips
 
-![Pink Harlem Nails](INSERT_NAIL_IMAGE_URL_HERE)
+![Pink Harlem Nails](https://github.com/Betty-coded/betty-coded.github.io/blob/f002d972bf28edd38f05e48ab78dc1d49ac6e217/Nails.jpg)
 
 Step into our nail studio and you step into a world of creativity, precision and luxury.
 
