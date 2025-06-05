@@ -16,7 +16,7 @@ We’re proud to offer two signature experiences under one chic roof: nail artis
 
 ---
 
-## 💅 The Nail Studio: Art at Your Fingertips
+## The Nail Studio: Art at Your Fingertips
 
 ![Pink Harlem Nails](https://github.com/Betty-coded/betty-coded.github.io/blob/f002d972bf28edd38f05e48ab78dc1d49ac6e217/Nails.jpg)
 
@@ -34,7 +34,7 @@ Whether you want a quick polish refresh or an Instagram-worthy full set, Pink Ha
 
 ---
 
-## 👗 The Boutique: Fashion with an Edge
+##  The Boutique: Fashion with an Edge
 
 ![Pink Harlem Boutique](https://github.com/Betty-coded/betty-coded.github.io/blob/d0dbbd61b1f909c503c5c8ede8757b7b139b3d13/Clothing%20Line.jpg)
 
@@ -50,7 +50,7 @@ Our pieces are handpicked with you in mind—the modern woman who dares to expre
 
 ---
 
-## 💖 Why Pink Harlem?
+## Why Pink Harlem?
 
 Because we believe every woman and man deserves a space where they can be pampered. Our mission is to make beauty and fashion accessible, personal and unforgettable.
 
@@ -58,9 +58,9 @@ Come experience the magic yourself. Walk in for nails, leave with an outfit—an
 
 ---
 
-📍 Location: [Mirema Dr, Nairobi-Kenya]  
-📲 Book Your Appointment: [+254702284028 or Email: pinkharlem11@gmail.com]  
-📸 Follow us on Instagram: [@pinkharlem](https://www.instagram.com/pinkharlem?igsh=bnlpanFOdTg1Z3pv&utm_source=qr)
+<i class="fas fa-map-marker-alt"></i> Location: [Mirema Dr, Nairobi-Kenya]  
+<i class="fas fa-calender-chec"></i> Book Your Appointment: [+254702284028 or Email: pinkharlem11@gmail.com]  
+<i class="fas fa-instagram"></i>Follow us on Instagram: [@pinkharlem](https://www.instagram.com/pinkharlem?igsh=bnlpanFOdTg1Z3pv&utm_source=qr)
 
 ---
 
