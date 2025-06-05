@@ -6,7 +6,7 @@ date: 2025-05-18
 categories: [media]
 ---
 
-![Bio-Centre Facility](assets/Umande1)
+![Bio-Centre Facility](https://github.com/Betty-coded/betty-coded.github.io/blob/2b0c7ef5d88a185633e9c73ef3097e1c8efad079/Umande%20Project%202.jpg)
 
 
 
