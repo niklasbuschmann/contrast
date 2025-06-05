@@ -59,8 +59,8 @@ Come experience the magic yourself. Walk in for nails, leave with an outfit—an
 ---
 
 📍 Location: [Mirema Dr, Nairobi-Kenya]  
-📲 Book Your Appointment: [Insert Booking Link or Contact Info]  
-📸 Follow us on Instagram: [@pinkharlembeauty](https://instagram.com/pinkharlembeauty)
+📲 Book Your Appointment: [+254702284028 or Email: pinkharlem11@gmail.com]  
+📸 Follow us on Instagram: [@pinkharlem](https://www.instagram.com/pinkharlem?igsh=bnlpanFOdTg1Z3pv&utm_source=qr)
 
 ---
 
