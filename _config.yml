@@ -17,11 +17,11 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:      # accepts {file, title, url, icon, sidebaricon}
-  - {title: "About", url: "/about/", icon: user}
   - {file: "index.html", title: "Home Change", icon: home}
   - {file: "README.md", title: "About me", icon: address-card}
   - {title: "Blog", file: "blog.md", icon: pencil-alt}
   - {title: "CV", url: "Bettys cv updated.pdf", icon: file-alt}
+  - {title: "About", url: "/about/", icon: user}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Gmail, icon: envelope,url: "mailto:onyango2betty@gmail.com"}
