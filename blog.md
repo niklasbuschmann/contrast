@@ -7,4 +7,4 @@ title: "Blog"
   {% include home.html %}
 {% else %}
   {% include archive.html title= "Posts" %}
-{% rndif %}
+{% endif %}
