@@ -32,29 +32,4 @@ If you’d like to learn more about Umande Trust’s work, visit [Umande.org](ht
 
 ---
 
-## Sample MathJax
-
-A sanitation adoption model can be illustrated by an exponential growth formula:
-
-$$ A(t) = A_0 e^{rt} $$
-
-Where:
-- \( A_0 \): Initial adoption
-- \( r \): Growth rate
-- \( t \): Time in months
-
----
-
-## Sample Code Block
-
-Here’s an example of how community feedback data might be processed in Python:
-
-{% highlight python linenos %}
-def summarize_feedback(feedback):
-    scores = [entry['score'] for entry in feedback]
-    return sum(scores) / len(scores)
-{% endhighlight %}
-
----
-
 
