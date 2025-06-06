@@ -48,9 +48,9 @@ Note: to enable icons you also need to copy over the `_data` folder.
 Your `_config.yml` could for example look like this:
 
 ```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
+title: "Betty A. Onyango"
+author: "Bett A. Onyango"
+description: "University Canada West"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -58,20 +58,23 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
+show_social: true          # show site description and social links in the footer
+show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "Bettys cv updated.pdf"' title: "CV", icon: home}
+  - {file: "README.md", title: "About me", icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Gmail, icon: envelope, url: "mailto:onyango2betty@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/Betty-coded"}
+  - {title: Linkedin, icon: linkedin, url: "www.linkedin.com/in/betty-onyango-8765612a5"}
+  - {title: Instagram, icon: instagram, url: "https://www.instagram.com/pinkharlem?igsh=bjBidGo1YTIxdDYy"
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
@@ -79,7 +82,6 @@ comments:
 
 plugins:
  - jekyll-feed
-
 ```
 
 ## MathJax
