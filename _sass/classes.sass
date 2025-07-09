@@ -17,12 +17,28 @@
 
 .archive
   font-size: 1.1em
+  list-style-type: none
+  padding: 0
+
+.archive li
+  border-bottom: 1px solid reduce(20)
+  margin: 0
+  padding: 0 .4em
+
+.archive li:last-of-type
+  border-bottom: none
+
+.archive a
+  font-weight: 600
+  color: inherit
+  transition: .2s color
+
+.archive a:hover
+  color: #48f
+  text-decoration: none
 
 .archive time
-  display: inline-block
-  min-width: 10ch
-  min-height: 1.75em
-  margin: 0 .2em
+  margin-right: .6em
 
 .icon
   height: 1em
