@@ -44,7 +44,11 @@ static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocato
 
 With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can embed gists simply by using the `gist` command:
 
-{% gist 5555251 %}
+````
+{% gist fb5e60735c6617f83bc275b7ae86cff7 %}
+````
+
+{% gist fb5e60735c6617f83bc275b7ae86cff7 %}
 
 ## Images
 
