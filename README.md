@@ -35,7 +35,7 @@ Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adj
 You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
 
 ```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
+remote_theme: niklasbuschmann/contrast@v3.1
 
 plugins:
   - jekyll-remote-theme
