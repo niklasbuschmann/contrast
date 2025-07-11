@@ -17,12 +17,28 @@
 
 .archive
   font-size: 1.1em
+  list-style-type: none
+  padding: 0
+
+.archive li
+  border-bottom: 1px dashed reduce(80)
+  margin: 0
+  padding: .4em 0
+
+.archive li:last-of-type
+  border-bottom: none
+
+.archive a
+  font-weight: 600
+  color: inherit
+  transition: .2s color
+
+.archive a:hover
+  color: $link-color
+  text-decoration: none
 
 .archive time
-  display: inline-block
-  min-width: 10ch
-  min-height: 1.75em
-  margin: 0 .2em
+  margin-right: .6em
 
 .icon
   height: 1em
@@ -38,6 +54,9 @@ a:hover .icon
 .full table
   display: table
   width: 100%
+
+.gist th, .gist td
+  box-shadow: none
 
 .katex
   overflow-x: auto

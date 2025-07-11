@@ -30,18 +30,16 @@ Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adj
 - [KaTeX](https://katex.org/)
 - [Pygments](https://github.com/richleland/pygments-css)
 
-## Installation (jekyll-remote-theme method)
+## Installation
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+You can clone this repo to use with github-pages or install manually with jekyll:
 
-```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
-
-plugins:
-  - jekyll-remote-theme
+```bash
+git clone https://github.com/niklasbuschmann/contrast.git
+cd contrast
+gem install bundler jekyll jekyll-feed
+bundle exec jekyll serve
 ```
-
-Note: to enable icons you also need to copy over the `_data` folder.
 
 ## Config
 
