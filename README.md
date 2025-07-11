@@ -32,7 +32,7 @@ Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adj
 
 ## Installation
 
-You can clone this repo to use with github-pages or install manually with jekyll:
+You can clone this repo to `username.github.io` to use with github-pages or run locally with jekyll:
 
 ```bash
 git clone https://github.com/niklasbuschmann/contrast.git
@@ -82,7 +82,7 @@ plugins:
 
 ## MathJax
 
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
+Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter. [Jektex](https://github.com/yagarea/jektex) can be used to pre-render math on the server side.
 
 ## License
 
