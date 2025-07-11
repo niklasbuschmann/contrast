@@ -6,7 +6,7 @@ layout: page
 
 ## Installation
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+Just fork this [repository](https://github.com/niklasbuschmann/contrast) to `your_username.github.io` and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
 
 ## Features
 
@@ -32,7 +32,7 @@ Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adj
 
 ## Installation
 
-You can clone this repo to `username.github.io` to use with github-pages or run locally with jekyll:
+To run locally [install Ruby](https://www.ruby-lang.org/en/documentation/installation/) and then run:
 
 ```bash
 git clone https://github.com/niklasbuschmann/contrast.git
