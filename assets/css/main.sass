@@ -10,17 +10,19 @@
 {% if site.minimal %}
 
 body > header
-  background: $dark
-  color: $light
-  border-bottom: 1px solid reduce(14)
+  box-shadow: 0 0 .6em rgba($dark, 0.04)
 
 {% else %}
 
-body > header
-  box-shadow: 0 0 .6em rgba($dark, 0.04)
-  border-bottom: 1px solid reduce(14)
+@media (prefers-color-scheme: light)
+  body > header
+    background: lighten($dark, 10%)
+    color: $light
 
 {% endif %}
+
+body > header
+  border-bottom: 1px solid reduce(14)
 
 body > footer
   box-shadow: 0 0 .6em rgba($dark, 0.04) inset

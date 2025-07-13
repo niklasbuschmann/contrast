@@ -4,14 +4,14 @@
 @import index, font, basic, layout, classes, molokai
 
 html
-  background: #e3e3ee
+  background: lighten($dark, 86%)
   padding: 0 calc(38% - 22em)
 
 body
-  box-shadow: 0 0 .3em lighten($dark, 65%)
+  box-shadow: 0 0 1em lighten($dark, 80%)
 
 body > header, body > footer
-  background: lighten($dark, 5%)
+  background: lighten($dark, 12%)
   color: $light
 
 @media (min-width: 32em)
@@ -20,8 +20,8 @@ body > header, body > footer
 
 @media (prefers-color-scheme: dark)
   html
-    background: darken($dark, 4%)
+    background: darken($dark, 3%)
   body > header, body > footer
     background: $dark
   body, body > header, body > footer
-    box-shadow: 0 0 0 1px lighten($dark, 8%)
+    box-shadow: 0 0 0 2px lighten($dark, 8%)
