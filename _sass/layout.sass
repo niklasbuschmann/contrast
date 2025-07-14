@@ -1,18 +1,19 @@
 body
-  display: grid
-  grid-template-rows: max-content 1fr
+  display: flex
+  flex-direction: column
   margin: 0
   min-height: 100vh
+
+body > header, body > article, body > footer
+  flex-grow: 1
+  padding: 1.5em
 
 body > header, body > footer
   display: flex
   flex-wrap: wrap
   align-items: center
   justify-content: space-between
-
-body > header, body > article, body > footer
-  padding: 1.5em
-  overflow-y: auto
+  flex-grow: 0
 
 article header
   margin-bottom: 1.5em
