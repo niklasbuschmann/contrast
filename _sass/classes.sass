@@ -21,12 +21,11 @@
   padding: 0
 
 .archive li
-  border-bottom: 2px dashed reduce(50)
   margin: 0
   padding: .4em 0
 
-.archive li:last-of-type
-  border-bottom: none
+.archive li:not(:last-of-type)
+  border-bottom: 1.5px dashed reduce(25)
 
 .archive a
   font-weight: 600
@@ -47,10 +46,6 @@
 
 a:hover .icon
   color: reduce(100)
-
-.full table
-  display: table
-  width: 100%
 
 .gist th, .gist td
   border: none
