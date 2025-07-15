@@ -7,22 +7,18 @@
   body > header, body > article, body > footer
     padding: 1.75em calc(40% - 17em)
 
-{% if site.minimal %}
-
-body > header
-  box-shadow: 0 0 .6em rgba($dark, 0.06)
-
-{% else %}
+{% unless site.minimal %}
 
 @media (prefers-color-scheme: light)
   body > header
     background: lighten($dark, 10%)
     color: $light
 
-{% endif %}
+{% endunless %}
 
 body > header
   border-bottom: 1px solid reduce(18)
+  box-shadow: 0 0 .6em rgba($dark, 0.06)
 
 body > footer
   background: rgba($dark, 0.03)
