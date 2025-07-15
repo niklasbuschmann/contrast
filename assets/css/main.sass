@@ -10,7 +10,7 @@
 {% if site.minimal %}
 
 body > header
-  box-shadow: 0 0 .6em rgba($dark, 0.04)
+  box-shadow: 0 0 .6em rgba($dark, 0.06)
 
 {% else %}
 
@@ -22,9 +22,10 @@ body > header
 {% endif %}
 
 body > header
-  border-bottom: 1px solid reduce(14)
+  border-bottom: 1px solid reduce(18)
 
 body > footer
-  box-shadow: 0 0 .6em rgba($dark, 0.04) inset
-  border-top: 1px solid reduce(14)
+  background: rgba($dark, 0.03)
+  border-top: 1px solid reduce(18)
+  box-shadow: 0 0 .6em rgba($dark, 0.06) inset
   opacity: .9
