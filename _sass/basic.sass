@@ -4,8 +4,6 @@ body
   font-family: $font-family
   font-size: $font-size
   line-height: $line-height
-  -webkit-text-size-adjust: 100%
-  -webkit-font-smoothing: antialiased
 
 @media (prefers-color-scheme: dark)
   body
@@ -21,11 +19,9 @@ a
   &:hover
     text-decoration: underline
 
-header a, footer a, aside a
-  color: inherit
-
-time
-  color: reduce(100)
+header, footer, aside
+  a
+    color: inherit
 
 hr
   border: 1px dashed

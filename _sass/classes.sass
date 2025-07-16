@@ -1,41 +1,51 @@
 .title
   font-size: 1.25em
 
+.meta h1
+  font-size: 1.7em
+  margin: 0 0 .1em
+
+.meta, .archive
+  -webkit-font-smoothing: antialiased
+
+  time
+    color: reduce(100)
+
 .more
   margin: 2em 0 1em
 
-.more a
-  border-radius: 2px
-  border: 1.5px solid $link-color
-  padding: .4em .8em
-  transition: .2s background, .2s color
+  a
+    border-radius: 2px
+    border: 1.5px solid $link-color
+    padding: .4em .8em
+    transition: .2s background, .2s color
 
-.more a:hover
-  color: #fff
-  background: $link-color
-  text-decoration: inherit
+    &:hover
+      color: #fff
+      background: $link-color
+      text-decoration: inherit
 
 .archive
   font-size: 1.1em
   list-style-type: none
   padding: 0
 
-.archive li
-  margin: 0
-  padding: .4em 0
+  li
+    margin: 0
+    padding: .4em 0
 
-.archive li:not(:last-of-type)
-  border-bottom: 1.5px dashed reduce(25)
+    &:not(:last-of-type)
+      border-bottom: 1.5px dashed reduce(25)
 
-.archive a
-  font-weight: 600
-  color: inherit
-  transition: .2s color
-  margin-left: .75em
+  a
+    font-weight: 600
+    color: inherit
+    transition: .2s color
+    margin-left: .75em
 
-.archive a:hover
-  color: $link-color
-  text-decoration: none
+    &:hover
+      color: $link-color
+      text-decoration: none
 
 .icon
   height: 1.05em
@@ -44,8 +54,8 @@
   transition: .2s color
   vertical-align: middle
 
-a:hover .icon
-  color: reduce(100)
+  a:hover &
+    color: reduce(100)
 
 .katex
   overflow-x: auto
