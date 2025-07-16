@@ -7,3 +7,6 @@ $light: #ffffff !default
 
 @function reduce ($percent)
   @return rgba(mix($dark, $light), $percent / 100)
+
+@function dark ($percent)
+  @return lighten($dark, $percent / 100)
