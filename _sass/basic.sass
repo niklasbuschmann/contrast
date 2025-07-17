@@ -7,7 +7,12 @@ body
 
 @media (prefers-color-scheme: dark)
   body
-    background: $dark
+    background: dark(6)
+    color: $light
+
+@media (prefers-color-scheme: light)
+  body > header, body > footer
+    background: dark(12)
     color: $light
 
 p

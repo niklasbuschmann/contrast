@@ -7,21 +7,5 @@
   body > *
     padding: 1.75em calc(40% - 17em)
 
-body > header
-  border-bottom: 1px solid reduce(18)
-  box-shadow: 0 0 .6em rgba($dark, 0.06)
-
-body > footer
-  background: rgba($dark, 0.03)
-  border-top: 1px solid reduce(18)
-  box-shadow: 0 0 .6em rgba($dark, 0.06) inset
-  opacity: .9
-
-{% unless site.minimal %}
-
-@media (prefers-color-scheme: light)
-  body > header
-    background: dark(10)
-    color: $light
-
-{% endunless %}
+body, body > header, body > footer
+  box-shadow: 0 0 0 1px dark(18)
