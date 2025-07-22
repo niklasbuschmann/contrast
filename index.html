@@ -4,7 +4,13 @@ title: "Home"
 ---
 
 {% if site.show_excerpts %}
-  {% include home.html %}
+  {% for post in site.posts %}
+    <article>
+      {% include meta.html post=post preview=true %}
+      {{ post.excerpt }}
+      <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
+    </article>
+  {% endfor %}
 {% else %}
-  {% include archive.html title="Posts" %}
+  {% include_relative archive.html title="Posts" %}
 {% endif %}

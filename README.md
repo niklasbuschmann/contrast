@@ -39,7 +39,7 @@ Your `_config.yml` could for example look like this:
 ```yaml
 title: "Blog Title"
 author: "Blog Author"
-description: "My personal blog"
+description: "My blog"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -55,7 +55,7 @@ show_sidebar: false             # show a sidebar instead of the usual header
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "archive.html", sidebaricon: home}
-  - {file: "README.md", sidebaricon: archive}
+  - {file: "README.md", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
@@ -70,7 +70,6 @@ comments:
 
 plugins:
  - jekyll-feed
-
 ```
 
 ## MathJax

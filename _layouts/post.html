@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article>
-  {% include meta.html post=page %}
+  {% include meta.html %}
   {{ content }}
   {% if page.comments != false and site.comments.isso or site.comments.disqus %}
     <hr>
@@ -13,11 +13,9 @@ layout: default
   {% endif %}
 </article>
 
-{% unless site.footer %}
-{% if page.previous.url or page.next.url %}
+{% if site.show_siblings %}
 <footer class="gray">
   {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a>{% else %}<span></span>{% endif %}
   {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% else %}<span></span>{% endif %}
 </footer>
 {% endif %}
-{% endunless %}
