@@ -4,18 +4,17 @@ permalink: "/about/"
 layout: page
 ---
 
-## Installation
+## Github Pages
 
 Just fork this [repository](https://github.com/niklasbuschmann/contrast) to `your_username.github.io` and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
 
 ## Features
 
- - supports dark mode on macOS Mojave
+ - supports dark mode
  - optional sidebar
  - MathJax support
  - no external ressources
  - included archive page
- - supports pagination
  - feed generation
  - responsive
  - syntax highlighting
@@ -58,8 +57,8 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
+  - {title: Github, icon: github, url: "https://github.com/"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 footer: "Made with <b style='color: red'><3</b>"
