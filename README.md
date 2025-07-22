@@ -51,7 +51,7 @@ show_excerpts: true             # show article excerpts instead of archive list 
 show_frame: true                # display a grey frame on large screens
 show_sidebar: false             # show a sidebar instead of the usual header
 
-# Menu                          # for available icons see https://fontawesome.com/v4/icons/
+# Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "archive.html", sidebaricon: home}
