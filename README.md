@@ -48,7 +48,7 @@ Your `_config.yml` could for example look like this:
 ```yaml
 title: "Blog Title"
 author: "Blog Author"
-description: "My personal blog about ... something"
+description: "My personal blog" # shown in the footer
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -56,24 +56,26 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
+show_excerpts: true             # show article excerpts instead of archive list on the home page
+show_frame: true                # display a grey frame on large screens
+show_sidebar: false             # show a sidebar instead of the usual header
 
-# Menu
+# Menu                          # for available icons see https://fontawesome.com/v4/icons/
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
+navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "archive.html"}
   - {file: "README.md"}
 
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
   - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
+# external: false               # disables footer
+
 comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
+#  disqus_shortname: ""         # see https://disqus.com
+#  isso_domain: ""              # see https://isso-comments.de
 
 plugins:
  - jekyll-feed
