@@ -32,9 +32,13 @@
     color: $light
     background: $link-color
 
-.gray a:hover
-  background: $light
-  color: $dark
+.gray
+  flex-wrap: nowrap
+  a
+    background: reduce(20)
+    &:hover
+      background: $light
+      color: $dark
 
 .archive
   font-size: 1.1em
