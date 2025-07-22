@@ -1,6 +1,6 @@
 title: "Blog Title"
 author: "Blog Author"
-description: "My personal blog" # shown in the footer
+description: "My personal blog"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -23,7 +23,7 @@ external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
-# external: false               # disables footer
+footer: "Made with <b style='color: red'><3</b>"
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com

@@ -39,7 +39,7 @@ Your `_config.yml` could for example look like this:
 ```yaml
 title: "Blog Title"
 author: "Blog Author"
-description: "My personal blog" # shown in the footer
+description: "My personal blog"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -54,15 +54,15 @@ show_sidebar: false             # show a sidebar instead of the usual header
 # Menu                          # for available icons see https://fontawesome.com/v4/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "archive.html"}
-  - {file: "README.md"}
+  - {file: "archive.html", sidebaricon: home}
+  - {file: "README.md", sidebaricon: archive}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
   - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
-# external: false               # disables footer
+footer: "Made with <b style='color: red'><3</b>"
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
