@@ -6,7 +6,7 @@ title: "Home"
 {% if site.show_excerpts %}
   {% for post in site.posts %}
     <article>
-      {% include meta.html post=post preview=true %}
+      {% include meta.html post=post %}
       {{ post.excerpt }}
       <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
     </article>
