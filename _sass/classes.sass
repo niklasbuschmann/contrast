@@ -18,15 +18,25 @@
 
 .more
   margin: 2em 0 1em
-  a
-    border-radius: 2px
-    border: 1.5px solid $link-color
-    padding: .4em .8em
-    transition: .2s background, .2s color
-    &:hover
-      color: #fff
-      background: $link-color
-      text-decoration: inherit
+
+.more a, .gray a
+  border-radius: 2px
+  padding: .4em .8em
+  transition: .2s background, .2s color
+  &:hover
+    text-decoration: inherit
+
+.more a
+  border: 1.5px solid $link-color
+  &:hover
+    color: $light
+    background: $link-color
+
+.gray a
+  background: reduce(35)
+  &:hover
+    background: $light
+    color: $dark
 
 .archive
   font-size: 1.1em
