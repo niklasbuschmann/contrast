@@ -12,7 +12,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 {% assign keys = 'navigation,external' | split: ',' %}
 {% for key in keys %}
 {% for link in site[key] %}
-  {% assign icon = link.icon %}
+  {% assign icon = link.icon | default: link.sidebaricon %}
   {% assign svg = site.data.font-awesome.icons[icon].svg | first %}
   <symbol id="{{ icon }}" viewBox="0 0 {{ svg[1].width }} {{ svg[1].height }}"><path d="{{ svg[1].path }}" /></symbol>
 {% endfor %}

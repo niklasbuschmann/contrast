@@ -21,15 +21,6 @@ Just fork this [repository](https://github.com/niklasbuschmann/contrast) to `you
  - syntax highlighting
  - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
 
-## Based on
-
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
-
 ## Installation
 
 To run locally [install Ruby](https://www.ruby-lang.org/en/documentation/installation/) and then run:
@@ -92,8 +83,8 @@ Contrast comes preinstalled with a leightweight alternative to MathJax called [K
 
 ## Screenshots
 
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
+![screenshot](https://github.com/user-attachments/assets/3422eea6-c6ae-4bbe-ba2c-0ae2da348658)
 
-![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
+![screenshot](https://github.com/user-attachments/assets/42d21de5-62d5-4aa1-b662-d113adc0ed96)
 
-![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
+![screenshot](https://github.com/user-attachments/assets/d31879ae-7113-42be-b580-1e96a2aedd29)
