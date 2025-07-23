@@ -5,16 +5,17 @@
 
 {% if site.show_frame %}
 
-html
+body
   background: dark(86)
-  padding: 0 calc(38% - 22em)
+  padding: 0 calc(38% - 22rem)
+  > *
+    background: $light
+    color: $dark
+    box-shadow: 0 0 1em reduce(10)
 
 @media (min-width: 32em)
   body > *
     padding: 1.75em calc(22% - 6em)
-
-body
-  box-shadow: 0 0 1em reduce(15)
 
 {% else %}
 
@@ -29,7 +30,7 @@ body > header, body > footer
   color: $light
 
 @media (prefers-color-scheme: dark)
-  html, body, body > header, body > footer, body > article
+  html, body, body > header, body > footer, body > article, .gray a
     background: dark(6)
     color: $light
     box-shadow: 0 0 0 1px dark(22)
