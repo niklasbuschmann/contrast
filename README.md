@@ -50,6 +50,8 @@ show_excerpts: true             # show article excerpts instead of archive list 
 show_frame: true                # display a grey frame on large screens
 show_sidebar: false             # show a sidebar instead of the usual header
 
+#show_frame: "/assets/background.svg"
+
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}

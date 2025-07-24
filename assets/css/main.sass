@@ -29,6 +29,21 @@ body > header, body > footer
   background: dark(12)
   color: $light
 
+{% if site.show_frame contains "." %}
+
+@media (min-width: 60em)
+  body
+    background: 0 0/cover url({{ site.show_frame | relative_url }})
+    background-attachment: fixed
+    padding: 1em calc(38% - 22rem)
+  body > header
+    border-radius: 4px 4px 0 0
+    background: rgba($dark, .8)
+  body > :last-child
+    border-radius: 0 0 4px 4px
+
+{% endif %}
+
 @media (prefers-color-scheme: dark)
   body, body > header, body > footer, body > article
     background: dark(6)
