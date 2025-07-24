@@ -5,15 +5,15 @@
 
 {% if site.show_frame %}
 
-body
-  background: dark(86)
-  padding: 0 calc(38% - 22rem)
-  > *
-    background: $light
-    color: $dark
-    box-shadow: 0 0 1em reduce(10)
+body > *
+  background: $light
+  color: $dark
+  box-shadow: 0 0 1em reduce(10)
 
-@media (min-width: 32em)
+@media (min-width: 40em)
+  body
+    background: dark(86)
+    padding: 0 calc(38% - 22rem)
   body > *
     padding: 1.75em calc(22% - 6em)
 
