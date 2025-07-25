@@ -5,16 +5,19 @@
 
 body
   font-size: calc(0.8rem + 0.3vw)
+  padding: 0 0 0 16.5em
   background: inherit
-  margin-left: 16.5em
-  padding: 0
+
+@media (prefers-color-scheme: dark)
+  body
+    background: dark(6)
 
 body > header, body > footer
   display: none
 
 body > article
-  margin: 0 5em
-  padding: 2em 0
+  margin: 0
+  padding: 2em 5em
   max-width: 50em
   box-shadow: none
 
@@ -24,7 +27,7 @@ aside
   position: fixed
   overflow: auto
   background: dark(8)
-  box-shadow: 0 0 0 1px dark(16)
+  box-shadow: 0 0 0 1px dark(14)
   color: $light
   margin: 0
   padding: 2.25em
