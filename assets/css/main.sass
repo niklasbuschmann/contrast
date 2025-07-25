@@ -3,34 +3,28 @@
 
 @import index, font, basic, layout, classes, molokai
 
-{% if site.show_frame %}
-
 body > *
   background: $light
   color: $dark
   box-shadow: 0 0 1em reduce(10), 0 0 0 1px reduce(10)
 
-@media (min-width: 40em)
-  body
-    background: dark(85)
-    padding: 0 calc(38% - 22rem)
-  body > *
-    padding: 1.75em calc(22% - 6em)
-
-{% else %}
-
-@media (min-width: 40em)
-  body > *
-    padding: 1.75em calc(40% - 15em)
-
-{% endif %}
-
 body > header, body > footer
   background: dark(12)
   color: $light
 
-{% if site.show_frame contains "." %}
+@media (min-width: 40em)
+{% if site.show_frame %}
+  body
+    background: dark(85)
+    padding: 0 calc(38% - 22rem)
+  body > *
+    padding: 1.75em calc(22% - 6rem)
+{% else %}
+  body > *
+    padding: 1.75em calc(42% - 16rem)
+{% endif %}
 
+{% if site.show_frame contains "." %}
 @media (min-width: 60em)
   body
     background: 0 0/cover url({{ site.show_frame | relative_url }})
@@ -41,7 +35,6 @@ body > header, body > footer
     background: rgba($dark, .8)
   body > :last-child
     border-radius: 0 0 4px 4px
-
 {% endif %}
 
 @media (prefers-color-scheme: dark)
