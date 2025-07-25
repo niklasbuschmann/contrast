@@ -6,7 +6,11 @@
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+{% if site.show_minimal %}
+<link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
+{% else %}
 <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+{% endif %}
 {% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
 {% if page.mathjax or site.mathjax %}
 <link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">

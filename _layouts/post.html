@@ -13,7 +13,7 @@ layout: default
   {% endif %}
 </article>
 
-{% unless site.footer %}
+{% unless site.footer or site.show_minimal %}
 {% if page.next.url or page.previous.url %}
 <footer class="gray">
   {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">«&numsp;{{ page.next.title }}</a>&numsp;{% else %}<span></span>{% endif %}

@@ -1,0 +1,19 @@
+---
+---
+
+@import index, font, basic, layout, classes, molokai
+
+body
+  display: block
+  padding: 0 calc(40% - 16rem)
+
+body > *
+  margin: 2em 1.5em
+
+body > header, body > footer
+  font-weight: bold
+
+@media (prefers-color-scheme: dark)
+  body
+    background: dark(6)
+    color: $light

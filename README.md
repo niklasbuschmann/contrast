@@ -49,8 +49,7 @@ date_format: "%B %d, %Y"
 show_excerpts: true             # show article excerpts instead of archive list on the home page
 show_frame: true                # display a grey frame on large screens
 show_sidebar: false             # show a sidebar instead of the usual header
-
-#show_frame: "/assets/background.svg"
+show_minimal: false             # remove all clutter
 
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
