@@ -62,8 +62,6 @@ external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Github, icon: github, url: "https://github.com/"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
-footer: "Made with <b style='color: red'><3</b>"
-
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
 #  isso_domain: ""              # see https://isso-comments.de
