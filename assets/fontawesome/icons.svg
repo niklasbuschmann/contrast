@@ -10,7 +10,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-{% assign keys = 'navigation,external' | split: ',' %}
+{% assign keys = 'navigation,external,footer' | split: ',' %}
 {% for key in keys %}
 {% for link in site[key] %}
   {% assign icon = link.icon | default: link.sidebaricon %}

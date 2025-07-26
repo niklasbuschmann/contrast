@@ -21,20 +21,20 @@
 {% endif %}
 {% if site.comments.disqus_shortname and page.layout == "post" %}<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>{% endif %}
 {% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
-{% if site.show_sidebar or site.sidebar %}{% include sidebar.html %}{% endif %}
+{% if site.show_sidebar %}{% include sidebar.html %}{% endif %}
 
 <header>
   <a href="{{ "/" | relative_url }}" class="title{% if site.navigation and site.external %}{% unless site.footer %} full {% endunless %}{% endif %}">{{ site.title | escape }}</a>
   {% include menu.html menu=site.navigation %}
-  {% unless site.footer %}{% include menu.html menu=site.external %}{% endunless %}
+  {% include menu.html menu=site.external %}
 </header>
 
 {{ content }}
 
 {% if site.footer %}
 <footer>
-  <div>{{ site.footer }}</div>
-  {% include menu.html menu=site.external %}
+  <div>{{ site.description }}</div>
+  {% include menu.html menu=site.footer %}
 </footer>
 {% endif %}
 
