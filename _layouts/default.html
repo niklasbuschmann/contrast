@@ -24,7 +24,7 @@
 {% if site.show_sidebar %}{% include sidebar.html %}{% endif %}
 
 <header>
-  <a href="{{ "/" | relative_url }}" class="title{% if site.navigation and site.external %}{% unless site.footer %} full {% endunless %}{% endif %}">{{ site.title | escape }}</a>
+  <a href="{{ "/" | relative_url }}" {% if site.navigation and site.external %}class="full"{% endif %}>{{ site.title | escape }}</a>
   {% include menu.html menu=site.navigation %}
   {% include menu.html menu=site.external %}
 </header>

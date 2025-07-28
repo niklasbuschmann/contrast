@@ -5,15 +5,24 @@ body
   min-height: 100vh
   margin: 0
   -webkit-text-size-adjust: 100%
-  > article
-    flex-grow: 1
-  > header, > footer
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    justify-content: space-between
-    nav
-      margin: .5em -1.3em
-      a
-        display: inline-block
-        margin: 0 1.3em
+
+body > header, body > footer
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-between
+
+body > header > a
+  font-size: 1.25em
+
+nav
+  margin: .5em -1.3em
+  > a
+    display: inline-block
+    margin: 0 1.3em
+
+article
+  flex-grow: 1
+  > header h1
+    font-size: 1.8em
+    margin: 0
