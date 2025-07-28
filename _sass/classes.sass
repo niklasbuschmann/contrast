@@ -15,9 +15,6 @@
 .more a, .gray a
   border-radius: 4px
   padding: .4em .8em
-  transition: .2s background, .2s color
-  &:hover
-    text-decoration: inherit
 
 .more a
   border: 1.5px solid $link-color
@@ -42,17 +39,19 @@
   a
     font-weight: 600
     color: inherit
-    transition: .2s color
     &:hover
       color: $link-color
-      text-decoration: none
 
 .icon
-  font-size: 1.1em
-  transition: .2s color
-  vertical-align: text-bottom
-  a:hover &
+  svg
+    font-size: 1.1em
+    vertical-align: text-bottom
+  a:hover
     color: reduce(100)
+
+.icon, .more, .gray, .archive
+  a:hover
+    text-decoration: inherit
 
 .katex-display
   overflow: auto hidden
