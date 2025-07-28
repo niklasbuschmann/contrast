@@ -1,6 +1,9 @@
 ---
 ---
 
+$font-size: calc(0.85rem + 0.2vw)
+$link-color: #f08
+
 @import index, font, basic, layout, github-dark
 
 body
@@ -12,11 +15,11 @@ body > *
 
 body > header, body > footer
   font-weight: bold
+  a:hover
+    color: $link-color
+    text-decoration: none
 
 @media (prefers-color-scheme: dark)
   body
-    background: dark(6)
+    background: dark(4)
     color: $light
-
-.full
-  display: none

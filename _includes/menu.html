@@ -5,7 +5,7 @@
   {%- assign url = item.url | default: node.url -%}
   {%- assign title = item.title | default: node.title -%}
   <a href="{{ url | relative_url }}">
-    {%- if item.icon -%}<svg aria-label="{{ title }}" width="1em" height="1em" fill="currentColor"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}
+    {%- if item.icon -%}<svg aria-label="{{ title }}"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}
   </a>
 {%- endfor -%}
 </nav>

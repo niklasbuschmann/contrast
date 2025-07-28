@@ -8,14 +8,13 @@ Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
 -->
 
-
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 {% assign keys = 'navigation,external,footer' | split: ',' %}
 {% for key in keys %}
-{% for link in site[key] %}
-  {% assign icon = link.icon | default: link.sidebaricon %}
+{% for item in site[key] %}
+  {% assign icon = item.icon | default: item.sidebaricon %}
   {% assign svg = page.icons[icon].svg | first %}
-  <symbol id="{{ icon }}" viewBox="0 0 {{ svg[1].width }} {{ svg[1].height }}"><path d="{{ svg[1].path }}" /></symbol>
+  <symbol id="{{ icon }}" viewBox="0 0 {{ svg[1].width }} {{ svg[1].height }}"><path d="{{ svg[1].path }}" fill="currentColor" /></symbol>
 {% endfor %}
 {% endfor %}
 </svg>
