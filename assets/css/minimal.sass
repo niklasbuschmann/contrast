@@ -2,7 +2,7 @@
 ---
 
 $font-size: calc(0.85rem + 0.2vw)
-$link-color: #f08
+$link-color: #27f
 
 @import index, font, basic, layout, github-dark
 
@@ -13,7 +13,7 @@ body
 body > *
   margin: 2em 1.5em
 
-body > header a, body > footer a
+header a, footer a
   font-weight: bold
   &:hover
     color: $link-color
@@ -21,5 +21,5 @@ body > header a, body > footer a
 
 @media (prefers-color-scheme: dark)
   body
-    background: dark(4)
+    background: dark(6)
     color: $light
