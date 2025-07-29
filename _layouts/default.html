@@ -25,7 +25,7 @@
 
 <header>
   {% unless site.show_minimal and site.navigation and site.external %}
-    <a href="{{ "/" | relative_url }}" class="{% if site.navigation and site.external %}full{% endif %}">{{ site.title | escape }}</a>
+    <h1 class="{% if site.navigation and site.external %}full{% endif %}"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
   {% endunless %}
   {% include menu.html menu=site.navigation %}
   {% include menu.html menu=site.external %}

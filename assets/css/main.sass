@@ -12,6 +12,9 @@ body > *
 body > header, body > footer
   background: dark(12)
   color: $light
+  &:has(svg) a:hover
+    color: reduce(100)
+    text-decoration: inherit
 
 @media (min-width: 40em)
 {% if site.show_frame %}
