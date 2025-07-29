@@ -13,9 +13,11 @@ body > header, body > footer
   background: dark(12)
   color: $light
 
-body > header a:hover
-  box-shadow: 0 2px
-  text-decoration: none
+body > header a
+  box-shadow: 0 2px transparent
+  &:hover
+    box-shadow: 0 2px
+    text-decoration: none
 
 @media (min-width: 40em)
 {% if site.show_frame %}
