@@ -1,0 +1,18 @@
+---
+---
+
+@import index, font, basic, layout, classes, github-dark
+
+body > *
+  padding: 1.5em
+  box-shadow: 0 1em 2em -1em reduce(10), 0 1px reduce(10)
+
+@media (min-width: 40em)
+  body > *
+    padding: 1.75em calc(42% - 16rem)
+
+@media (prefers-color-scheme: dark)
+  body > *
+    background: dark(8)
+    color: $light
+    box-shadow: 0 0 0 1px dark(16)

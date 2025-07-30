@@ -1,23 +1,19 @@
 ---
 ---
 
-$font-size: calc(0.85rem + 0.2vw)
-$link-color: #27f
 
 @import index, font, basic, layout, github-dark
 
 body
   display: block
-  padding: 0 calc(40% - 16rem)
+  padding: 0 calc(40% - 16em)
 
 body > *
   margin: 2em 1.5em
 
-header a, footer a
-  font-weight: bold
-  &:hover
-    color: $link-color
-    text-decoration: none
+header a:hover, footer a:hover
+  color: $link-color
+  text-decoration: none
 
 @media (prefers-color-scheme: dark)
   body

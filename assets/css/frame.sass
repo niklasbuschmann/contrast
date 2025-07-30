@@ -3,42 +3,45 @@
 
 @import index, font, basic, layout, classes, github-dark
 
+body
+  background: dark(85)
+  padding: 0 calc(38% - 22rem)
+
 body > *
   background: $light
   color: $dark
-  box-shadow: 0 0 1em reduce(10), 0 -1px reduce(10)
   padding: 1.5em
+  box-shadow: 0 0 1em reduce(10), 0 -1px reduce(10)
 
 body > header, body > footer
   background: dark(12)
   color: $light
 
+nav a
+  font-weight: inherit
+
 @media (min-width: 40em)
-{% if site.show_frame %}
-  body
-    background: dark(85)
-    padding: 0 calc(38% - 22rem)
   body > *
     padding: 1.75em calc(22% - 6rem)
-{% else %}
-  body > *
-    padding: 1.75em calc(42% - 16rem)
-{% endif %}
 
 {% if site.show_frame contains "." %}
+
 @media (min-width: 60em)
   body
     background: 0 0/cover url({{ site.show_frame | relative_url }})
     background-attachment: fixed
     padding: 1em calc(38% - 22rem)
-  body > header
+  body > :first-child
     border-radius: 4px 4px 0 0
   body > :last-child
     border-radius: 0 0 4px 4px
-{% endif %}
+
+{% else %}
 
 @media (prefers-color-scheme: dark)
   body, body > header, body > footer, body > *
     background: dark(8)
     color: $light
     box-shadow: 0 0 0 1px dark(16)
+
+{% endif %}

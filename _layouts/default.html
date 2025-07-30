@@ -8,8 +8,10 @@
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% if site.show_minimal %}
 <link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
+{% elsif site.show_frame %}
+<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
 {% else %}
-<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/default.css" | relative_url }}">
 {% endif %}
 {% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
 {% if page.mathjax or site.mathjax %}
@@ -34,7 +36,7 @@
 {{ content }}
 
 {% if site.footer %}
-<footer>
+<footer class="heading">
   <div>{{ site.description }}</div>
   {% include menu.html menu=site.footer %}
 </footer>
