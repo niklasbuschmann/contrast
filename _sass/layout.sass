@@ -1,7 +1,6 @@
 body
   display: flex
   flex-direction: column
-  box-sizing: border-box
   min-height: 100vh
   margin: 0
   -webkit-text-size-adjust: 100%
@@ -11,13 +10,16 @@ body > header, body > footer
   flex-wrap: wrap
   justify-content: space-between
   align-items: center
-  h1
+
+header h1
+  font-size: 1.8em
+  margin: 0
+  body > &
     font-size: 1.35em
-    margin: 0
 
 nav
   margin: .5em -1.3em
-  > a
+  a
     font-weight: bold
     display: inline-block
     margin: 0 1.3em
@@ -27,6 +29,3 @@ nav
 
 article
   flex-grow: 1
-  > header h1
-    font-size: 1.8em
-    margin: 0

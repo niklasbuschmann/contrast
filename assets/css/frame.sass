@@ -10,38 +10,35 @@ body
 body > *
   background: $light
   color: $dark
-  padding: 1.5em
+  padding: 1.75em calc(22% - 6rem)
+  padding: clamp(1.5em, 4vw, 1.75em) max(1.5em, 22% - 6rem)
   box-shadow: 0 0 1em reduce(10), 0 -1px reduce(10)
 
 body > header, body > footer
   background: dark(12)
   color: $light
+  a
+    font-weight: inherit
 
-nav a
-  font-weight: inherit
+{% unless site.show_frame contains "." %}
 
-@media (min-width: 40em)
-  body > *
-    padding: 1.75em calc(22% - 6rem)
+@media (prefers-color-scheme: dark)
+  body, html body > *
+    background: dark(8)
+    color: $light
+    box-shadow: 0 0 0 1px dark(16)
 
-{% if site.show_frame contains "." %}
+{% else %}
 
 @media (min-width: 60em)
   body
     background: 0 0/cover url({{ site.show_frame | relative_url }})
     background-attachment: fixed
-    padding: 1em calc(38% - 22rem)
-  body > :first-child
-    border-radius: 4px 4px 0 0
-  body > :last-child
-    border-radius: 0 0 4px 4px
+    margin: 1em 0
+    min-height: calc(100vh - 2em)
+    > :first-child
+      border-radius: 4px 4px 0 0
+    > :last-child
+      border-radius: 0 0 4px 4px
 
-{% else %}
-
-@media (prefers-color-scheme: dark)
-  body, body > header, body > footer, body > *
-    background: dark(8)
-    color: $light
-    box-shadow: 0 0 0 1px dark(16)
-
-{% endif %}
+{% endunless %}
