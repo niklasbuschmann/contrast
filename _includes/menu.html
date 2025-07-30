@@ -1,5 +1,5 @@
 {%- if include.menu -%}
-<nav>
+<nav class="heading">
 {%- for item in include.menu -%}
   {%- assign node = site.pages | where: "name", item.file | first -%}
   {%- assign url = item.url | default: node.url -%}

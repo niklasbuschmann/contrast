@@ -25,9 +25,9 @@
 {% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
 {% if site.show_sidebar %}{% include sidebar.html %}{% endif %}
 
-<header class="heading {% if site.navigation and site.external %}full{% endif %}">
+<header {% if site.navigation and site.external %}class="full"{% endif %}>
   {% unless site.show_minimal and site.navigation and site.external %}
-    <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+    <h1 class="heading"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
   {% endunless %}
   {% include menu.html menu=site.navigation %}
   {% include menu.html menu=site.external %}
@@ -36,7 +36,7 @@
 {{ content }}
 
 {% if site.footer %}
-<footer class="heading">
+<footer>
   <div>{{ site.description }}</div>
   {% include menu.html menu=site.footer %}
 </footer>

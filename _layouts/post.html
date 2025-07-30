@@ -16,8 +16,8 @@ layout: default
 {% unless site.show_minimal or site.footer  %}
 {% if page.next.url or page.previous.url %}
 <footer class="{% if site.show_frame %}dark{% else %}gray{% endif%}">
-  {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a> {% else %}<span></span>{% endif %}
-  {% if page.previous.url %} <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% else %}<span></span>{% endif %}
+  {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a> {% endif %}
+  {% if page.previous.url %} <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% endif %}
 </footer>
 {% endif %}
 {% endunless %}

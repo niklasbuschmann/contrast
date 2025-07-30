@@ -9,14 +9,14 @@
   width: 100%
   margin: .1em 0 .7em
 
-.heading a
-  box-shadow: 0 2px transparent
-  &:hover
+.heading
+  a
+    box-shadow: 0 2px transparent
+  a:hover
     box-shadow: 0 2px
-
-.heading:not(.full):has(svg) a:hover
-  color: reduce(100)
-  box-shadow: none
+  &:has(svg) a:hover
+    color: reduce(100)
+    box-shadow: none
 
 .more
   margin: 2em 0 1em
