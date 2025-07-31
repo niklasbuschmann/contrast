@@ -6,13 +6,10 @@
 
 body
   padding: 1em calc(40% - 16em)
-
-body > *
-  margin: 1em 1.5em
-
-header a:hover
-  color: $link-color
-  text-decoration: none
+  > *
+    margin: 1em 1.5em
+  > header a:hover, > footer a:hover
+    color: #f08
 
 @media (prefers-color-scheme: dark)
   body
