@@ -1,20 +1,20 @@
-.meta, .archive, h1, h2, h3, h4, h5, h6
+.meta, .hover
   -webkit-font-smoothing: antialiased
 
 .meta time
   opacity: .6
 
-.full h1
+.full
   font-size: 1.5em
   width: 100%
   margin: .1em 0 .7em
 
-.heading
+.hover
   a
     box-shadow: 0 2px transparent
   a:hover
     box-shadow: 0 2px
-  &:has(svg) a:hover
+  nav:has(svg) a:hover
     color: reduce(100)
     box-shadow: none
 
