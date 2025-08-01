@@ -5,13 +5,13 @@
 
 body
   background: light(85)
-  background: light-dark(light(85), light(8))
+  background: light(85, 8)
   padding: 0 calc(38% - 22rem)
 
 body > *
   background: light(100)
-  background: light-dark(light(100), light(8))
-  color: light-dark(light(0), light(100))
+  background: light(100, 8)
+  color: light(0, 100)
   padding: 1.75em calc(22% - 6rem)
   padding: clamp(1.5em, 4vw, 1.75em) max(1.5em, 22% - 6rem)
   border-bottom: 1px solid gray(10)
@@ -19,7 +19,7 @@ body > *
 
 body > header, body > footer
   background: light(12)
-  background: light-dark(light(12), light(8))
+  background: light(12, 8)
   color: light(100)
 
 {% if site.show_frame contains "." %}

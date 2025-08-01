@@ -6,11 +6,7 @@
 body
   font-size: calc(0.8rem + 0.3vw)
   padding: 0 0 0 16.5em
-  background: inherit
-
-@media (prefers-color-scheme: dark)
-  body
-    background: light(8)
+  background: light(100, 8)
 
 body > header, body > footer
   display: none
@@ -26,7 +22,7 @@ aside
   flex-direction: column
   position: fixed
   overflow: auto
-  background: light(8)
+  background: light(6)
   box-shadow: 0 0 0 1px light(14)
   color: light(100)
   margin: 0
@@ -47,7 +43,7 @@ nav a
   transition: .2s background
 
 nav a:hover, nav a.selected
-  background: light(16)
+  background: light(12)
   text-decoration: inherit
 
 nav svg
