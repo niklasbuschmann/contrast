@@ -14,5 +14,3 @@ function toggle() {
 
 if (localStorage.getItem('toggle'))
   toggleColor();
-
-document.head.innerHTML += '<style>body > * {transition: .2s all ease-out}</style>';
