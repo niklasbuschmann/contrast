@@ -6,10 +6,10 @@
 body > *
   padding: 1.75em calc(42% - 16rem)
   padding: clamp(1.5em, 4vw, 1.75em) max(1.5em, calc(42% - 16rem))
-  box-shadow: 0 1em 2em -1em reduce(12), 0 1px reduce(12)
+  box-shadow: 0 1em 2em -1em gray(12), 0 1px gray(12)
 
 @media (prefers-color-scheme: dark)
   body > *
-    background: dark(8)
-    color: $light
-    box-shadow: 0 0 0 1px dark(14)
+    background: light(8)
+    color: light(100)
+    box-shadow: 0 0 0 1px light(14)

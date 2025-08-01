@@ -1,12 +1,13 @@
 $font-size: calc(0.8rem + 0.2vw) !default
 $font-family: "PT Sans", system-ui, sans-serif !default
 $line-height: 1.6 !default
-$link-color: #46f !default
+$link: #46f !default
+$highlight: #f08 !default
 $dark: #111218 !default
 $light: #ffffff !default
 
-@function reduce ($percent)
+@function gray ($percent)
   @return rgba(mix($dark, $light), $percent / 100)
 
-@function dark ($percent)
+@function light ($percent)
   @return lighten($dark, $percent)

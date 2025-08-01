@@ -5,7 +5,7 @@ p
   text-align: justify
 
 a
-  color: $link-color
+  color: $link
   text-decoration: inherit
   transition: .25s
   article &:hover
@@ -21,8 +21,8 @@ footer
   margin-top: auto
 
 blockquote
-  background: reduce(14)
-  border-left: 3px solid reduce(80)
+  background: gray(14)
+  border-left: 3px solid gray(80)
   padding: 1px 1.5em
   opacity: .75
 
@@ -46,14 +46,14 @@ table
 
 th, td
   padding: .5em 1em
-  border: 1px solid reduce(24)
+  border: 1px solid gray(24)
 
 thead, tr:hover td, tr:hover th
-  background: reduce(12)
+  background: gray(12)
 
 pre:not(pre pre)
   font-size: .8em
-  background: reduce(16)
+  background: gray(16)
   border-radius: 4px
   margin: 1.5em 0
   padding: .8em 1.2em
@@ -61,7 +61,7 @@ pre:not(pre pre)
 
 code:not(pre code)
   font-size: .9em
-  background: reduce(16)
+  background: gray(16)
   border-radius: 3px
   margin: 0 .1em
   padding: .2em .4em

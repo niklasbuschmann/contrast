@@ -15,7 +15,7 @@
   a:hover
     box-shadow: 0 2px
   nav:has(svg) a:hover
-    color: reduce(100)
+    color: gray(100)
     box-shadow: none
 
 .more
@@ -26,26 +26,26 @@
   padding: .4em .8em
 
 .more a
-  border: 1.5px solid $link-color
+  border: 1.5px solid $link
   &:hover
-    color: $light
-    background: $link-color
+    color: light(100)
+    background: $link
     text-decoration: inherit
 
 .gray, .dark
   flex-wrap: nowrap
 
 .gray a
-  background: reduce(30)
+  background: gray(30)
   opacity: .6
   &:hover
-    background: reduce(60)
+    background: gray(60)
 
 .dark a
-  background: reduce(20)
+  background: gray(20)
   &:hover
-    background: $light
-    color: $dark
+    background: light(100)
+    color: light(0)
 
 .archive
   font-size: 1.1em
@@ -56,7 +56,7 @@
   a
     color: inherit
     &:hover
-      color: $link-color
+      color: $link
       text-decoration: inherit
 
 .katex-display
