@@ -1,0 +1,32 @@
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+<meta charset="{{ site.encoding }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="author" content="{{ page.author | default: site.author | escape }}">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- if site.show_minimal -%}
+<link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
+{%- elsif site.show_frame -%}
+<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
+{%- else -%}
+<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+{%- endif -%}
+<link rel="stylesheet" href="{{ "/assets/PT-Sans/index.css" | relative_url }}">
+{%- if site.plugins contains "jekyll-feed" -%}
+<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">
+{%- endif -%}
+{%- if page.mathjax or site.mathjax -%}
+<link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">
+{% unless site.plugins contains "jektex" %}
+<script defer src="{{ "/assets/katex/katex.min.js" | relative_url }}"></script>
+<script defer src="{{ "/assets/katex/contrib/auto-render.min.js" | relative_url }}" onload="renderMathInElement(document.body)"></script>
+{%- endunless -%}
+{%- endif -%}
+{%- if site.comments.disqus_shortname and page.layout == "post" -%}
+<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>
+{%- endif -%}
+{%- if site.comments.isso_domain and page.layout == "post" -%}
+<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>
+{%- endif -%}
+{%- if site.show_sidebar %}{% include sidebar.html %}{% endif %}
