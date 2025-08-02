@@ -7,7 +7,7 @@ $dark: #111218 !default
 $light: #ffffff !default
 
 @function gray ($percent)
-  @return rgba(mix($dark, $light), $percent / 100)
+  @return rgba(mix(lighten($dark, 50), darken($light, 50)), $percent / 100)
 
 @function light ($a: 100, $b: false)
   @if $a and $b
