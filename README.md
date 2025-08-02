@@ -10,13 +10,11 @@ Just fork this [repository](https://github.com/niklasbuschmann/contrast) to `you
 
 ## Features
 
- - supports dark mode
- - optional sidebar
- - MathJax support
+ - dark mode
+ - [KaTeX](https://katex.org) included
  - no external ressources
- - included archive page
- - feed generation
- - responsive
+ - optional sidebar
+ - archive page
  - syntax highlighting
  - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
 
@@ -24,7 +22,7 @@ Just fork this [repository](https://github.com/niklasbuschmann/contrast) to `you
 
 To run locally [install Ruby](https://www.ruby-lang.org/en/documentation/installation/) and then run:
 
-```bash
+```
 git clone https://github.com/niklasbuschmann/contrast.git
 cd contrast
 gem install bundler jekyll jekyll-feed
@@ -70,7 +68,7 @@ plugins:
  - jekyll-feed
 ```
 
-## MathJax
+## Math
 
 Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter. [Jektex](https://github.com/yagarea/jektex) can be used to pre-render math on the server side.
 
@@ -80,9 +78,9 @@ Contrast comes preinstalled with a leightweight alternative to MathJax called [K
 
 ## Screenshots
 
-![screenshot](https://github.com/user-attachments/assets/91c7b5fc-37f0-481d-9670-df8530234a7f)
+![screenshot](https://github.com/user-attachments/assets/8f0ef4bc-f079-495e-8c31-5867b8ccd25c)
 
-![screenshot](https://github.com/user-attachments/assets/42d21de5-62d5-4aa1-b662-d113adc0ed96)
+![screenshot](https://github.com/user-attachments/assets/e5e6d189-3251-41f4-baba-ff42be65f666)
 
 ![screenshot](https://github.com/user-attachments/assets/d31879ae-7113-42be-b580-1e96a2aedd29)
 
