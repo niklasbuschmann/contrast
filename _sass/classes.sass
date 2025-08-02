@@ -42,7 +42,7 @@
     background: gray(60)
 
 .dark a
-  background: light(20, 12)
+  background: light-dark(gray(20), transparent)
   &:hover
     background: light(100)
     color: light(0)
@@ -53,11 +53,10 @@
   padding: 1px 0
   li
     margin: .5em 0
-  a
+  a:not(:hover)
     color: inherit
-    &:hover
-      color: $link
-      text-decoration: inherit
+  a:hover
+    text-decoration: inherit
 
 .katex-display
   overflow: auto hidden
