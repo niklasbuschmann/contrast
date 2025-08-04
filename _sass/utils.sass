@@ -5,9 +5,9 @@ $link: light-dark(#46f, #38f) !default
 $highlight: #f08 !default
 
 @function gray ($percent)
-  @return rgba(mix(light(60), gray), calc($percent / 100))
+  @return rgba(mix(light(60), gray), $percent / 100)
 
 @function light ($a: 100, $b: false)
   @if $a and $b
     @return light-dark(light($a), light($b))
-  @return hsl(230deg, 18%, $a + 8%)
+  @return hsl(230deg, 18%, $a + 0%)
