@@ -1,3 +1,6 @@
+.nowrap
+  flex-wrap: nowrap
+
 .archive, .hover
   -webkit-font-smoothing: antialiased
 
@@ -12,41 +15,26 @@
 .hover
   a
     box-shadow: 0 2px transparent
+    border-radius: 0
   a:hover
     box-shadow: 0 2px
   nav:has(svg) a:hover
     color: gray(100)
     box-shadow: none
 
-.more
-  padding: 1em 0
-
-.more a, .gray a, .dark a
-  border-radius: 4px
-  padding: .4em .8em
-
-.more a
-  border: 1.5px solid
-  border-color: $link
+.button
+  background: #27f
+  color: #fff
+  padding: .5em 1em
   &:hover
-    color: light(100, 100)
-    background: $link
+    background: light(20)
     text-decoration: inherit
 
-.gray, .dark
-  flex-wrap: nowrap
-
-.gray a
-  background: gray(30)
-  opacity: .6
-  &:hover
-    background: gray(60)
-
-.dark a
+.dark
   background: light-dark(gray(20), gray(10))
+  padding: .4em .8em
   &:hover
-    background: light(100)
-    color: light(0)
+    background: gray(40)
 
 .archive
   font-size: 1.1em
