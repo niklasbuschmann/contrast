@@ -1,11 +1,8 @@
 .nowrap
   flex-wrap: nowrap
 
-.archive, .hover
+.smooth
   -webkit-font-smoothing: antialiased
-
-.meta time
-  color: gray(100)
 
 .full
   font-size: 1.5em
@@ -23,9 +20,11 @@
     box-shadow: none
 
 .button
+  display: inline-block
   background: #46f
   color: #fff
-  padding: .5em 1em
+  padding: .25em 1em
+  margin: .75em 0
   &:hover
     background: light(20)
     text-decoration: inherit
@@ -35,17 +34,6 @@
   padding: .4em .8em
   &:hover
     background: gray(40)
-
-.archive
-  font-size: 1.1em
-  list-style-type: none
-  padding: 1px 0
-  li
-    margin: .5em 0
-  a:not(:hover)
-    color: inherit
-  a:hover
-    text-decoration: inherit
 
 .katex-display
   overflow: auto hidden

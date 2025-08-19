@@ -3,11 +3,11 @@ title: "Archive"
 layout: default
 ---
 
-<article>
+<div>
   <header><h1>{{ include.title | default: page.title }}</h1></header>
-  <ul class="meta archive">
+  <nav class="smooth">
     {% for post in site.posts %}
-    <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>  <b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></li>
+    <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
     {% endfor %}
-  </ul>
-</article>
+  </nav>
+</div>

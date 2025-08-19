@@ -10,6 +10,14 @@ body > header, body > footer
   flex-wrap: wrap
   justify-content: space-between
   align-items: center
+  nav
+    margin: .5em -1.3em
+  svg
+    font-size: 1.1em
+    vertical-align: sub
+
+body > article, body > div
+  flex-grow: 1
 
 header h1
   font-size: 1.75em
@@ -18,16 +26,13 @@ header h1
     font-size: 1.35em
 
 nav
-  margin: .5em -1.3em
-  a
-    font-weight: bold
-    display: inline-block
-    margin: 0 1.3em
-  svg
+  margin: 1.5em 0
+  div
     font-size: 1.1em
-    vertical-align: sub
-
-article
-  flex-grow: 1
-  footer
-    padding: 1em 0
+    margin: .5em 0
+  a
+    display: inline-block
+    font-weight: bold
+    margin: 0 1.3em
+    &:not(:hover)
+      color: inherit

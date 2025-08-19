@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<header class="hover">
+<header class="hover smooth">
   {% unless site.show_minimal and site.navigation and site.external %}
     <h1 {% if site.navigation and site.external %}class="full"{% endif %}><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
   {% endunless %}
