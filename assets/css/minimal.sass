@@ -5,9 +5,12 @@
 
 body
   padding: 1em calc(40% - 16em)
+  min-height: 0
   > *
     margin: 1em 1.5em
 
-header a:hover, footer a:hover
-  color: $highlight
-  text-decoration: inherit
+header a, footer a, nav a
+  font-weight: bold
+  &:hover
+    color: $highlight
+    text-decoration: inherit
