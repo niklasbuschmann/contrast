@@ -12,12 +12,18 @@ body > header, body > footer
   align-items: center
   nav
     margin: .5em -1.3em
+
+nav
+  margin: 1.5em 0
+  a
+    display: inline-block
+    margin: 0 1.3em
+  div
+    font-size: 1.1em
+    margin: .5em 0
   svg
     font-size: 1.1em
     vertical-align: sub
-
-body > article, body > div
-  flex-grow: 1
 
 header h1
   font-size: 1.75em
@@ -25,14 +31,5 @@ header h1
   body > &
     font-size: 1.35em
 
-nav
-  margin: 1.5em 0
-  div
-    font-size: 1.1em
-    margin: .5em 0
-  a
-    display: inline-block
-    font-weight: bold
-    margin: 0 1.3em
-    &:not(:hover)
-      color: inherit
+article, main
+  flex-grow: 1

@@ -12,10 +12,12 @@ a
   text-decoration: inherit
   transition: .25s
   border-radius: 5px
+  nav &
+    font-weight: bold
+  header &, footer &, nav &:not(:hover)
+    color: inherit
   article &:hover
     text-decoration: underline
-  header &, footer &, aside &
-    color: inherit
 
 hr
   border: 1px solid gray(100)
