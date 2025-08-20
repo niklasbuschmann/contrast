@@ -10,14 +10,16 @@ p
 a
   color: $link
   text-decoration: inherit
+  box-shadow: 0 2px transparent
   transition: .25s
-  border-radius: 5px
-  nav &
+  header &, footer &, nav &
     font-weight: bold
   header &, footer &, nav &:not(:hover)
     color: inherit
   article &:hover
     text-decoration: underline
+  body > header &:hover, body > footer &:hover
+    box-shadow: 0 2px
 
 hr
   border: 1px solid gray(100)

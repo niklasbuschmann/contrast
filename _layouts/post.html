@@ -15,9 +15,9 @@ layout: default
 
 {% unless site.show_minimal or site.footer  %}
 {% if page.next.url or page.previous.url %}
-<footer class="nowrap">
-  {% if page.next.url %}<a class="dark" href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a> {% endif %}
-  {% if page.previous.url %} <a class="dark" href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% endif %}
+<footer class="nowrap {% if site.show_frame %}dark{% else %}smooth{% endif %}">
+  {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a> {% endif %}
+  {% if page.previous.url %} <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% endif %}
 </footer>
 {% endif %}
 {% endunless %}

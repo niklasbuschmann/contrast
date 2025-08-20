@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{{ "/assets/css/sidebar.css" | relative_url }}" media="screen and (min-width: 58em)">
-<aside style="display: none" class="smooth">
+<aside style="display: none">
   <nav>
   {% assign keys = 'navigation,external,footer' | split: ',' %}
   {% for key in keys %}
@@ -15,5 +15,5 @@
   {%- endfor -%}
   {%- endfor -%}
   </nav>
-  <footer><strong>{{ site.description }}</strong></footer>
+  <footer>{{ site.description }}</footer>
 </aside>

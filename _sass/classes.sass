@@ -9,31 +9,29 @@
   width: 100%
   margin: .1em 0 .7em
 
-.hover
-  a
-    box-shadow: 0 2px transparent
-    border-radius: 0
-  a:hover
-    box-shadow: 0 2px
-  nav:has(svg) a:hover
-    color: gray(100)
-    box-shadow: none
+.hover nav:has(svg) a:hover
+  color: gray(100)
+  box-shadow: none
+
+.button, .dark a
+  font-weight: inherit
+  border-radius: 5px
 
 .button
-  display: inline-block
   background: #46f
   color: #fff
   padding: .25em 1em
-  margin: .75em 0
   &:hover
     background: light(20)
     text-decoration: inherit
 
-.dark
+.dark a
   background: light-dark(gray(20), gray(10))
+  margin: 0
   padding: .4em .8em
   &:hover
-    background: gray(40)
+    background: gray(50)
+    box-shadow: none
 
 .katex-display
   overflow: auto hidden
