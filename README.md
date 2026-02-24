@@ -49,15 +49,15 @@ show_frame: true                # display a grey frame on large screens
 show_sidebar: false             # show a sidebar instead of the usual header
 show_minimal: false             # remove all clutter
 
-# Menu                          # for available icons see https://fontawesome.com/v5/icons/
+# Menu                          # for available icons see https://fontawesome.com/search?ip=brands%2Cclassic&ic=free&o=r
 
-navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "archive.html", sidebaricon: home}
+navigation:                     # accepts {file, title, url, icon, sidebaricon, iconsheet}
+  - {file: "archive.html", sidebaricon: house}
   - {file: "README.md", sidebaricon: address-card}
 
-external:                       # accepts {file, title, url, icon, sidebaricon}
+external:                       # accepts {file, title, url, icon, sidebaricon, iconsheet}
   - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
-  - {title: Github, icon: github, url: "https://github.com/"}
+  - {title: Github, icon: github, iconsheet: brands, url: "https://github.com/"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:

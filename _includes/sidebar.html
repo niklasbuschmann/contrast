@@ -8,8 +8,11 @@
     {%- assign url = item.url | default: node.url -%}
     {%- assign title = item.title | default: node.title -%}
     {%- assign icon = item.icon | default: item.sidebaricon -%}
+    {%- assign sheet = item.iconsheet | default: "solid" -%}
     <a href="{{ url | relative_url }}" class="{% if url == page.url %}selected{% endif %}">
-      <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
+      <svg aria-hidden="true" width="1em" height="1em">
+        <use xlink:href="{{ "/assets/fontawesome/sprites-full/" | relative_url }}{{ sheet }}.svg#{{ icon }}"></use>
+      </svg>
       <span>{{ title }}</span>
     </a>
   {%- endfor -%}
