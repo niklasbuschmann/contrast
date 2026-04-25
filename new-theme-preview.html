@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asim Raza - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      /* Dark Theme (Default) */
+      --primary: #10b981;
+      --primary-light: #34d399;
+      --primary-dark: #059669;
+      --bg: #050505;
+      --bg-card: #0f0f0f;
+      --text: #f0f0f0;
+      --text-muted: #888888;
+      --border: rgba(16, 185, 129, 0.15);
+      --glow: rgba(16, 185, 129, 0.08);
+    }
+
+    :root.light {
+      /* Light Theme */
+      --primary: #059669;
+      --primary-light: #10b981;
+      --primary-dark: #047857;
+      --bg: #f8fafc;
+      --bg-card: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: rgba(5, 150, 105, 0.15);
+      --glow: rgba(16, 185, 129, 0.06);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    /* ===== ANIMATED BACKGROUND ===== */
+    .bg-dots {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
+      opacity: 0.4;
+      background-image: 
+        radial-gradient(circle at 1px 1px, var(--glow) 1px, transparent 0);
+      background-size: 40px 40px;
+      transition: opacity 0.4s ease;
+    }
+
+    .bg-glow {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.08;
+      z-index: 0;
+      pointer-events: none;
+      background: var(--primary);
+      transition: background 0.4s ease;
+    }
+
+    .bg-glow-1 { top: -200px; left: -200px; }
+    .bg-glow-2 { bottom: -200px; right: -200px; }
+
+    /* ===== NAVIGATION ===== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(5, 5, 5, 0.9);
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 3rem;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    :root.light .nav {
+      background: rgba(248, 250, 252, 0.9);
+    }
+
+    .nav.scrolled {
+      padding: 0.75rem 3rem;
+    }
+
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.02em;
+      transition: color 0.4s ease;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .nav-link {
+      padding: 0.6rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      position: relative;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .nav-link::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 999px;
+      background: var(--primary);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #000;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+      opacity: 1;
+    }
+
+    .nav-link span {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--bg-card);
+      color: var(--primary);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      margin-left: 1rem;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--primary);
+      transform: rotate(180deg);
+      box-shadow: 0 0 20px var(--glow);
+    }
+
+    /* ===== PAGE SYSTEM ===== */
+    .page { 
+      display: none; 
+      min-height: 100vh;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .page.active { 
+      display: block;
+      opacity: 1;
+    }
+
+    /* ===== HOME PAGE ===== */
+    .home-hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.5rem;
+      background: var(--glow);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      animation: fadeInDown 0.8s ease-out;
+      transition: all 0.4s ease;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--primary);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .hero-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 8rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 40%, var(--primary) 60%, var(--primary-dark) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      animation: fadeInUp 1s ease-out 0.2s both, shimmer 3s linear infinite;
+      transition: background 0.4s ease;
+    }
+
+    @keyframes shimmer {
+      to { background-position: 200% center; }
+    }
+
+    .hero-divider {
+      width: 100px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+      margin: 0 auto 2rem;
+      animation: fadeInUp 1s ease-out 0.4s both;
+      transition: background 0.4s ease;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      animation: fadeInUp 1s ease-out 0.6s both;
+      transition: color 0.4s ease;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 3rem;
+      animation: fadeInUp 1s ease-out 0.8s both;
+    }
+
+    .stat-box {
+      text-align: center;
+      padding: 2rem 2.5rem;
+      background: rgba(15, 15, 15, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    :root.light .stat-box {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .stat-box::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      padding: 1px;
+      background: linear-gradient(135deg, transparent, var(--primary), transparent);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .stat-box:hover {
+      border-color: var(--primary);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px var(--glow);
+    }
+
+    .stat-box:hover::before {
+      opacity: 1;
+    }
+
+    .stat-value {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-family: 'Playfair Display', serif;
+      transition: color 0.4s ease;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 600;
+      transition: color 0.4s ease;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+    }
+
+    .scroll-indicator .mouse {
+      width: 26px;
+      height: 40px;
+      border: 2px solid var(--border);
+      border-radius: 13px;
+      position: relative;
+      transition: border-color 0.4s ease;
+    }
+
+    .scroll-indicator .wheel {
+      width: 3px;
+      height: 8px;
+      background: var(--primary);
+      border-radius: 2px;
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: scrollWheel 1.5s infinite;
+      transition: background 0.4s ease;
+    }
+
+    @keyframes scrollWheel {
+      0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+      100% { opacity: 0; transform: translateX(-50%) translateY(12px); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0) translateX(-50%); }
+      50% { transform: translateY(10px) translateX(-50%); }
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .section {
+      padding: 8rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      transition: color 0.4s ease;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text);
+      transition: color 0.4s ease;
+    }
+
+    .section-line {
+      width: 60px;
+      height: 2px;
+      background: var(--primary);
+      margin: 1.5rem auto;
+      transition: background 0.4s ease;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      transition: color 0.4s ease;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    :root.light .about-card {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .about-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .about-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px var(--glow);
+    }
+
+    .about-card:hover::before {
+      opacity: 1;
+    }
+
+    .about-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      transition: color 0.4s ease;
+    }
+
+    .about-card p {
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-size: 0.95rem;
+      transition: color 0.4s ease;
+    }
+
+    /* ===== BLOG PAGE ===== */
+    .blog-page {
+      padding: 8rem 2rem 4rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .phase-group {
+      margin-bottom: 4rem;
+    }
+
+    .phase-label {
+      font-size: 0.7rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      transition: color 0.4s ease;
+    }
+
+    .phase-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+      color: var(--text);
+      transition: color 0.4s ease;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    :root.light .blog-card {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .blog-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px var(--glow);
+    }
+
+    .blog-card-img-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 220px;
+    }
+
+    .blog-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .blog-card:hover .blog-card-img {
+      transform: scale(1.08);
+    }
+
+    .blog-card-img-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to top, var(--bg-card), transparent);
+      transition: background 0.4s ease;
+    }
+
+    .blog-card-body {
+      padding: 1.75rem;
+    }
+
+    .blog-card-badge {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      background: var(--glow);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: all 0.4s ease;
+    }
+
+    .blog-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+      line-height: 1.4;
+      transition: color 0.4s ease;
+    }
+
+    .blog-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+      transition: color 0.4s ease;
+    }
+
+    .blog-card-meta {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .blog-card-meta span {
+      padding: 0.3rem 0.75rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      transition: all 0.4s ease;
+    }
+
+    :root.light .blog-card-meta span {
+      background: rgba(5, 150, 105, 0.05);
+      border-color: rgba(5, 150, 105, 0.1);
+    }
+
+    /* ===== ARTICLE PAGE ===== */
+    .article-page {
+      padding: 8rem 2rem 4rem;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+      padding: 0.6rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+      cursor: pointer;
+      background: none;
+    }
+
+    .article-back:hover {
+      background: var(--primary);
+      color: #000;
+    }
+
+    .article-hero-img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 24px;
+      margin-bottom: 2.5rem;
+      border: 1px solid var(--border);
+      transition: border-color 0.4s ease;
+    }
+
+    .article-phase {
+      font-size: 0.7rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      transition: color 0.4s ease;
+    }
+
+    .article-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+      transition: color 0.4s ease;
+    }
+
+    .article-meta {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .article-meta span {
+      padding: 0.5rem 1.25rem;
+      background: var(--glow);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: all 0.4s ease;
+    }
+
+    .article-body {
+      color: var(--text-muted);
+      line-height: 2;
+      font-size: 1.15rem;
+      transition: color 0.4s ease;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--text);
+      margin: 3rem 0 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      transition: all 0.4s ease;
+    }
+
+    .article-body p {
+      margin-bottom: 1.75rem;
+    }
+
+    .article-body strong {
+      color: var(--primary);
+      transition: color 0.4s ease;
+    }
+
+    /* ===== CONTACT PAGE ===== */
+    .contact-page {
+      padding: 8rem 2rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      text-align: center;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    :root.light .contact-card {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px var(--glow);
+    }
+
+    .contact-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--glow);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 1.5rem;
+      font-size: 2rem;
+      transition: all 0.4s ease;
+    }
+
+    .contact-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+      transition: color 0.4s ease;
+    }
+
+    .contact-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+      transition: color 0.4s ease;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: var(--primary);
+      color: #000;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      letter-spacing: 0.05em;
+    }
+
+    .contact-btn:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px var(--glow);
+    }
+
+    .contact-note {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      letter-spacing: 0.05em;
+      transition: color 0.4s ease;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      transition: all 0.4s ease;
+    }
+
+    .footer p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      transition: color 0.4s ease;
+    }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      transition: color 0.4s ease;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 960px) {
+      .hero-name { font-size: 5rem; }
+      .hero-stats { flex-wrap: wrap; justify-content: center; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .article-title { font-size: 2.5rem; }
+      .section-title { font-size: 2.5rem; }
+      .nav { padding: 1rem 1.5rem; }
+    }
+
+    @media (max-width: 640px) {
+      .hero-name { font-size: 3.5rem; }
+      .stat-box { padding: 1.5rem; flex: 1; min-width: 120px; }
+      .stat-value { font-size: 2rem; }
+      .section { padding: 5rem 1.5rem; }
+      .section-title { font-size: 2rem; }
+      .article-hero-img { height: 250px; }
+      .article-title { font-size: 2rem; }
+      .nav-links { gap: 0.25rem; }
+      .nav-link { padding: 0.5rem 1rem; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-dots"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">Asim Raza</div>
+      <div class="nav-links">
+        <button class="nav-link active" onclick="showPage('home')"><span>Home</span></button>
+        <button class="nav-link" onclick="showPage('about')"><span>About</span></button>
+        <button class="nav-link" onclick="showPage('blog')"><span>Blog</span></button>
+        <button class="nav-link" onclick="showPage('contact')"><span>Contact</span></button>
+        <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page active">
+    <section class="home-hero">
+      <p class="hero-badge">Computer Engineering Student</p>
+      <h1 class="hero-name">Asim Raza</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-subtitle">Building expertise in programming, systems, and practical engineering at UET Lahore Faisalabad Campus.</p>
+      <div class="hero-stats">
+        <div class="stat-box">
+          <div class="stat-value" data-count="16">0</div>
+          <div class="stat-label">Journey Posts</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">3.83</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">3rd</div>
+          <div class="stat-label">Position</div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">My Journey</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">Building a long-term journey in computer engineering through continuous learning and discipline.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Background</h3>
+          <p>I am Asim Raza from Mandi Bahauddin, pursuing Computer Engineering and building my future through continuous learning and discipline.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Experience</h3>
+          <p>Developing confidence in programming, problem-solving, and technical learning through coursework, labs, and regular study.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Interests</h3>
+          <p>Interested in programming, computer systems, and the way engineering knowledge turns ideas into practical solutions.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div id="about" class="page">
+    <section class="section" style="padding-top: 8rem;">
+      <div class="section-header reveal">
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title">My Story</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Academic Profile</h3>
+          <p>I am Asim Raza, a BSc Computer Engineering student at UET Lahore, Faisalabad Campus. My academic journey is rooted in hard work, self-discipline, and the desire to build strong technical skills.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>How My Journey Began</h3>
+          <p>My path started with balancing FSc Part-II studies and university entrance test preparation. That phase taught me planning, patience, and focus under pressure.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>A Turning Point</h3>
+          <p>A scholarship opportunity changed the direction of my life. The support of Madam Tasmiha, Sir Aftab, and Sir Ahmad Nawaz gave me the chance to continue my education with dignity.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>What I Am Learning</h3>
+          <p>My growth includes programming in Python, database systems, SQL, machine learning projects, and practical discipline from labs and assignments.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Location</h3>
+          <p>I belong to Mandi Bahauddin, Punjab, Pakistan, and this background continues to shape my values, motivation, and long-term academic goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header reveal">
+        <p class="section-label">What Guides Me</p>
+        <h2 class="section-title">My Values</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Gratitude</h3>
+          <p>I never forget the people whose trust and generosity supported my education. Their belief motivates me to work with sincerity.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Consistency</h3>
+          <p>I believe strong results come from daily effort, not shortcuts. My progress is tied to regular practice and discipline.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Skill-Focused Growth</h3>
+          <p>Skills define long-term success, especially in computing and modern engineering fields.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Helping Others</h3>
+          <p>When I guided classmates on the portfolio project, I realized that knowledge becomes stronger when shared with others.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- BLOG PAGE -->
+  <div id="blog" class="page">
+    <section class="blog-page">
+      <div class="section-header reveal">
+        <p class="section-label">My Writings</p>
+        <h2 class="section-title">Journey Posts</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">A complete record of my computer engineering journey, organized by phases.</p>
+      </div>
+
+      <div class="phase-group reveal">
+        <p class="phase-label">Phase 01</p>
+        <h3 class="phase-title">Getting In & Starting Out</h3>
+        <div class="blog-grid">
+          <div class="blog-card" onclick="showArticle(1)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=400&fit=crop" class="blog-card-img" alt="University">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 01</span>
+              <h3>My Journey to Admission in UET Lahore</h3>
+              <p>How I balanced board exams and entry tests to secure admission to UET Lahore, Faisalabad Campus.</p>
+              <div class="blog-card-meta">
+                <span>Admission Journey</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" onclick="showArticle(2)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&h=400&fit=crop" class="blog-card-img" alt="Scholarship">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 02</span>
+              <h3>A Life-Changing Scholarship</h3>
+              <p>The support that made my dreams possible and changed the direction of my life.</p>
+              <div class="blog-card-meta">
+                <span>Scholarship Support</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" onclick="showArticle(3)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&h=400&fit=crop" class="blog-card-img" alt="University">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 03</span>
+              <h3>My First Journey to University</h3>
+              <p>The emotional, uncertain, and unforgettable journey from home to UET Faisalabad.</p>
+              <div class="blog-card-meta">
+                <span>First Departure</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" onclick="showArticle(4)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop" class="blog-card-img" alt="Hostel">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 04</span>
+              <h3>My First Hostel Experience</h3>
+              <p>How my first days in the hostel turned from discomfort into growth and friendship.</p>
+              <div class="blog-card-meta">
+                <span>Hostel Adjustment</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" onclick="showArticle(5)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop" class="blog-card-img" alt="First Day">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 05</span>
+              <h3>My First Day at UET Faisalabad</h3>
+              <p>An unforgettable first day filled with confusion, curiosity, and first classes.</p>
+              <div class="blog-card-meta">
+                <span>First Day</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase-group reveal">
+        <p class="phase-label">Phase 02</p>
+        <h3 class="phase-title">First Semester Growth</h3>
+        <div class="blog-grid">
+          <div class="blog-card" onclick="showArticle(7)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" class="blog-card-img" alt="Lab">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 07</span>
+              <h3>My First Lab Experience</h3>
+              <p>My earliest practical labs taught me coding discipline, ICT tools, and self-study habits.</p>
+              <div class="blog-card-meta">
+                <span>Lab Experience</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" onclick="showArticle(8)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&h=400&fit=crop" class="blog-card-img" alt="Mentor">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 08</span>
+              <h3>A Mentor Who Changed Our Perspective</h3>
+              <p>How Dr. Bilal helped us move beyond labels and focus on technical skills.</p>
+              <div class="blog-card-meta">
+                <span>Mentorship</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" onclick="showArticle(11)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=400&fit=crop" class="blog-card-img" alt="Success">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 11</span>
+              <h3>Completing My First Semester</h3>
+              <p>My first semester ended with a strong CGPA and a machine learning project.</p>
+              <div class="blog-card-meta">
+                <span>Success</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase-group reveal">
+        <p class="phase-label">Phase 03</p>
+        <h3 class="phase-title">Second Semester Momentum</h3>
+        <div class="blog-grid">
+          <div class="blog-card" onclick="showArticle(13)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&h=400&fit=crop" class="blog-card-img" alt="Database">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 13</span>
+              <h3>My First Practical Lab Experience</h3>
+              <p>My first real database lab gave me hands-on confidence with MySQL and Workbench.</p>
+              <div class="blog-card-meta">
+                <span>Database Lab</span>
+                <span>3 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" onclick="showArticle(14)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=600&h=400&fit=crop" class="blog-card-img" alt="Ramzan">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 14</span>
+              <h3>Ramzan Adventures & Online Learning</h3>
+              <p>Ramzan in the hostel taught me responsibility, teamwork, and adaptability.</p>
+              <div class="blog-card-meta">
+                <span>Ramzan</span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" onclick="showArticle(16)">
+            <div class="blog-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" class="blog-card-img" alt="Leadership">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-badge">Article 16</span>
+              <h3>An Online Lab Experience</h3>
+              <p>An online database lab became a turning point where preparation and leadership came together.</p>
+              <div class="blog-card-meta">
+                <span>Leadership</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ARTICLE PAGE -->
+  <div id="article" class="page">
+    <section class="article-page">
+      <button class="article-back" onclick="backToBlog()">← Back to Blog</button>
+      <img id="article-img" class="article-hero-img" src="" alt="">
+      <p id="article-phase" class="article-phase"></p>
+      <h1 id="article-title" class="article-title"></h1>
+      <div id="article-meta" class="article-meta"></div>
+      <div id="article-body" class="article-body"></div>
+    </section>
+  </div>
+
+  <!-- CONTACT PAGE -->
+  <div id="contact" class="page">
+    <section class="contact-page">
+      <div class="section-header reveal">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">I am open to meaningful academic and professional conversations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p>For portfolio feedback, academic discussion, or opportunities</p>
+          <a href="mailto:gondalasim665@gmail.com" class="contact-btn">Send Email</a>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">💻</div>
+          <h3>GitHub</h3>
+          <p>View my work and connect with me through my GitHub profile</p>
+          <a href="https://github.com/asim-raza665" class="contact-btn" target="_blank">View GitHub</a>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">🎓</div>
+          <h3>Academic Base</h3>
+          <p>I am currently pursuing Computer Engineering at UET Lahore, Faisalabad Campus</p>
+          <p class="contact-note">UET Lahore, Faisalabad Campus</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">📍</div>
+          <h3>Location</h3>
+          <p>I belong to Mandi Bahauddin, Punjab, Pakistan</p>
+          <p class="contact-note">Mandi Bahauddin, Punjab, Pakistan</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">Asim Raza</div>
+    <p>Computer Engineering Portfolio — Documenting growth, resilience, and learning.</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const root = document.documentElement;
+      const btn = document.getElementById('themeBtn');
+      if (root.classList.contains('light')) {
+        root.classList.remove('light');
+        btn.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        root.classList.add('light');
+        btn.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('light');
+      document.getElementById('themeBtn').textContent = '☀️';
+    }
+
+    // Article data
+    const articles = {
+      1: {
+        title: "My Journey to Admission in UET Lahore",
+        phase: "Getting In & Starting Out",
+        image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&h=500&fit=crop",
+        stage: "Admission Journey",
+        readTime: "4 min read",
+        body: `<h2>Balancing Board Exams and Entry Test Preparation</h2>
+<p>My journey toward becoming a Computer Engineering student began during the final phase of my FSc Part-II. It was one of the most important and challenging periods of my academic life because I had to handle multiple responsibilities at the same time.</p>
+<p>While many students around me were fully focused only on their board exams, I found myself balancing two major challenges together: preparing seriously for my intermediate examinations and, at the same time, getting ready for different university entrance tests.</p>
+<p>I realized early that securing admission to a well-reputed engineering university was not possible without proper planning, consistent effort, and strong determination. That is why I decided to start my preparation for entry tests alongside my academic studies instead of waiting until the exams were over.</p>
+<h2>Building Confidence Through Competitive Test Experience</h2>
+<p>For my preparation, I mainly relied on my FSc textbooks because they provided the basic concepts required for all entry tests. Along with that, I also used different online platforms that offered practice material, past papers, and mock tests.</p>
+<p>During this preparation period, I also had to travel to different cities to appear in multiple entry tests. These journeys were not only tiring but also added extra pressure because each test was important for my future.</p>
+<p>I attempted the NUST NET twice, and this experience gave me a clear understanding of competitive testing environments. It also helped me identify my weak areas and improve them in the second attempt.</p>`
+      },
+      2: {
+        title: "A Life-Changing Scholarship",
+        phase: "Getting In & Starting Out",
+        image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=900&h=500&fit=crop",
+        stage: "Scholarship Support",
+        readTime: "6 min read",
+        body: `<h2>An Unexpected Opportunity</h2>
+<p>Every student has a story behind their academic journey, but some stories are shaped not only by hard work, but also by unexpected kindness and support from others. My journey toward higher education is one of those stories, a journey where a simple, random meeting changed the direction of my life and made my dreams achievable.</p>
+<p>It all started during my FSc Part-II. One day, while walking in the street, I randomly met an old school friend. During our conversation, he mentioned that his aunt wanted to meet me regarding a scholarship opportunity.</p>
+<h2>The Scholarship That Changed Everything</h2>
+<p>She told me that she was teaching in a private school located in a nearby village. The school was looking for two deserving and capable students who had shown strong academic performance.</p>
+<p>Coming from a financially modest background, I knew how important such support could be for my future. My father is a retired army personnel who served at a lower scale. Despite his continuous efforts, it has always been difficult for him to manage the increasing expenses of higher education.</p>
+<p>This scholarship felt like a ray of hope during a time when financial limitations could have become a barrier to my dreams.</p>`
+      },
+      3: {
+        title: "My First Journey to University",
+        phase: "Getting In & Starting Out",
+        image: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=900&h=500&fit=crop",
+        stage: "First Departure",
+        readTime: "4 min read",
+        body: `<h2>Leaving Home for the First Time</h2>
+<p>The journey to university is always a memorable and emotional moment in a student's life, and mine was no different. In fact, it was one of the most important transitions in my life because it was the first time I was leaving my home to start a completely new phase.</p>
+<p>Early in the morning, around 7 a.m., I left my home with my father on a bike and headed toward the bus stand. That short ride felt very long because my mind was filled with different thoughts and emotions.</p>
+<h2>Arriving at a New City</h2>
+<p>When I finally reached the Faisalabad bus stand, I faced another challenge. The university campus was located in Khurrianwala, which is about 23 kilometers away from the city, and I had no idea how to reach there.</p>
+<p>At that time, I decided to contact my school friend Abdul Rehman for help. He responded quickly and connected me with his uncle, who guided me properly about the route.</p>`
+      },
+      4: {
+        title: "My First Hostel Experience",
+        phase: "Getting In & Starting Out",
+        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=900&h=500&fit=crop",
+        stage: "Hostel Adjustment",
+        readTime: "4 min read",
+        body: `<h2>A New Chapter Begins</h2>
+<p>After securing my admission in UET Lahore (Faisalabad Campus), a completely new chapter of my life began, my very first experience of hostel life. Before joining university, I had never stayed in a hostel or lived away from my home for such a long period.</p>
+<p>When the university announced that hostel rooms would be allotted on a "first come, first serve" basis, I did not take this information very seriously. However, when I reached there, I quickly realized that I had made a mistake.</p>
+<h2>Adjusting to a New Environment</h2>
+<p>As a result, I was left with only one available option, which was Umar Hall. It consisted of large halls where many students lived together. These halls accommodated around 10 to 24 students in a single space.</p>
+<p>However, as the days passed, things slowly started to improve. I began interacting with other students who were living in the same hall. They came from different cities and academic backgrounds, which made the environment diverse and interesting.</p>`
+      },
+      5: {
+        title: "My First Day at UET Faisalabad Campus",
+        phase: "Getting In & Starting Out",
+        image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&h=500&fit=crop",
+        stage: "First Day on Campus",
+        readTime: "4 min read",
+        body: `<h2>The First Morning</h2>
+<p>After settling into hostel life, the next big step in my journey was my very first day of classes at UET Faisalabad Campus. That morning felt completely different from the previous days because it carried a unique mix of excitement, curiosity, and nervousness.</p>
+<p>Since it was my first university class, I wanted everything to go perfectly. I woke up early in the morning, took a shower, got fully ready, and carefully packed my bag with the basic items.</p>
+<h2>Finding the Department</h2>
+<p>The biggest challenge came when we actually reached the campus area. We did not even know where our department was located. This created a moment of confusion among us, as we were all new students trying to find our way.</p>
+<p>After asking a few seniors for directions, we finally managed to locate our department. This small achievement gave us a sense of relief and slightly boosted our confidence.</p>`
+      },
+      7: {
+        title: "My First Lab Experience and Learning New Skills",
+        phase: "First Semester Growth",
+        image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=500&fit=crop",
+        stage: "First Lab Experience",
+        readTime: "4 min read",
+        body: `<h2>First Steps Into Practical Work</h2>
+<p>After settling into the rhythm of my first classes, the next big step in my academic journey was experiencing my first real labs at UET Faisalabad Campus. This phase was both exciting and challenging because it required me to apply the theoretical knowledge I was learning.</p>
+<p>Our first lab in Programming Fundamentals was mainly an introduction to basic coding. Since I had already struggled with understanding variables and Python logic in the classroom, this lab became a real test of my understanding.</p>
+<h2>Learning ICT Tools</h2>
+<p>Alongside Programming Fundamentals, we also had labs in ICT (Information and Communication Technology), which introduced us to tools like Microsoft Word, Excel, and PowerPoint. This was another major challenge for me because, before this, I had very limited experience using a laptop in an academic environment.</p>`
+      },
+      8: {
+        title: "A Mentor Who Changed Our Perspective",
+        phase: "First Semester Growth",
+        image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=900&h=500&fit=crop",
+        stage: "Mentorship and Mindset",
+        readTime: "4 min read",
+        body: `<h2>The Confusion About Our Degree</h2>
+<p>During the early weeks of my university life, one of the most common concerns among students in our class was about our degree program. We were enrolled in BSc Computer Engineering under SEC instead of PEC, and this created a lot of confusion and uncertainty.</p>
+<h2>Dr. Bilal's Guidance</h2>
+<p>At that time, our Programming Fundamentals teacher, Dr. Bilal, played a very important role in guiding us. He explained that in fields like computer engineering and software-related domains, success does not depend solely on the title of "engineer" or the registration with PEC.</p>
+<p>He emphasized that the real value lies in skills. According to him, industries do not focus on whether your degree is under SEC or PEC; they focus on what you can do, what problems you can solve, and how strong your technical abilities are.</p>`
+      },
+      11: {
+        title: "Completing My First Semester",
+        phase: "First Semester Growth",
+        image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=900&h=500&fit=crop",
+        stage: "First Semester Success",
+        readTime: "6 min read",
+        body: `<h2>Preparing for Finals</h2>
+<p>The end of my first semester at UET Faisalabad Campus was both challenging and rewarding. After completing the midterm exams, the next major task was preparing for the final exams, which required comprehensive revision of all the concepts covered throughout the semester.</p>
+<p>During this intense period, I developed several new study habits that proved crucial for my academic success. I began making detailed notes and summaries for each subject, which allowed me to revise efficiently before exams.</p>
+<h2>The Machine Learning Project</h2>
+<p>One of the most exciting and memorable moments of the semester was our final project in Programming Fundamentals. The project was based on creating a Machine Learning model using provided datasets. My group chose to work on a Cardiovascular Disease dataset. Through three days of focused effort, we successfully created and presented our model.</p>`
+      },
+      13: {
+        title: "My First Practical Lab Experience",
+        phase: "Second Semester Momentum",
+        image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=900&h=500&fit=crop",
+        stage: "Database Lab Foundations",
+        readTime: "3 min read",
+        body: `<h2>Starting Database Lab Work</h2>
+<p>Starting a new semester always brings new experiences, and one of the most important parts of my second semester was the beginning of practical lab work. Although officially it was the second lab session, for me it was actually my first lab because I had missed the initial one.</p>
+<p>The main purpose of this lab was to install essential database tools that we would be using throughout the semester. These tools included MySQL Server and MySQL Workbench.</p>
+<h2>Step by Step Learning</h2>
+<p>Before this, I had only theoretical knowledge about databases, and this was my first step toward practical implementation. The teacher guided us step by step, explaining each stage of the installation process carefully.</p>`
+      },
+      14: {
+        title: "Ramzan Adventures and Online Learning",
+        phase: "Second Semester Momentum",
+        image: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=900&h=500&fit=crop",
+        stage: "Ramzan and Adaptability",
+        readTime: "5 min read",
+        body: `<h2>Ramzan in the Hostel</h2>
+<p>The beginning of Ramzan during my second semester brought a completely new and memorable experience into my university life. It was not just a change in routine, but a unique phase filled with learning, independence, and unexpected challenges.</p>
+<p>As hostel students, this was our first time observing Ramzan away from home, which made it both exciting and slightly difficult.</p>
+<h2>Cooking Our Own Iftar</h2>
+<p>This situation led us to make an important decision. Me and my roommates decided that instead of relying completely on the hostel mess, we would arrange our own Iftar. We bought an electric stove so that we could cook simple items ourselves.</p>`
+      },
+      16: {
+        title: "An Online Lab Experience",
+        phase: "Second Semester Momentum",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=500&fit=crop",
+        stage: "Leadership and Responsibility",
+        readTime: "6 min read",
+        body: `<h2>A Different Kind of Lab</h2>
+<p>As my second semester continued, one of the most interesting and slightly challenging experiences came during an online database lab session. This lab was different from the previous ones because it focused more on preparation, understanding, and evaluation.</p>
+<p>In the previous lab, our teacher had given us a detailed task to prepare different types of SQL queries. These included basic queries, aggregate queries, join queries for table relationships, group queries, and queries based on business logic.</p>
+<h2>Taking on Responsibility</h2>
+<p>What happened next was something unexpected but very meaningful for me. After guiding me, Dr. Bilal gave me a responsibility. He asked me to help other students who might have similar questions or confusion regarding the portfolio project.</p>
+<p>This responsibility was new and advanced for me, but I accepted it with great enthusiasm. I felt honored that my teacher trusted me enough to guide others.</p>`
+      }
+    };
+
+    // Page navigation
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => {
+        p.classList.remove('active');
+      });
+      
+      setTimeout(() => {
+        document.getElementById(pageId).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        triggerReveal();
+      }, 100);
+
+      document.querySelectorAll('.nav-link').forEach(a => a.classList.remove('active'));
+      event.target.closest('.nav-link').classList.add('active');
+    }
+
+    // Article view
+    function showArticle(id) {
+      const article = articles[id];
+      if (!article) return;
+
+      document.getElementById('article-img').src = article.image;
+      document.getElementById('article-phase').textContent = article.phase;
+      document.getElementById('article-title').textContent = article.title;
+      document.getElementById('article-meta').innerHTML = 
+        '<span>' + article.stage + '</span><span>' + article.readTime + '</span>';
+      document.getElementById('article-body').innerHTML = article.body;
+
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      setTimeout(() => {
+        document.getElementById('article').classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
+    }
+
+    function backToBlog() {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      setTimeout(() => {
+        document.getElementById('blog').classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        triggerReveal();
+      }, 100);
+      document.querySelectorAll('.nav-link').forEach(a => a.classList.remove('active'));
+      document.querySelectorAll('.nav-link')[2].classList.add('active');
+    }
+
+    // Scroll reveal
+    function triggerReveal() {
+      const reveals = document.querySelectorAll('.reveal');
+      reveals.forEach((el, i) => {
+        setTimeout(() => {
+          el.classList.add('visible');
+        }, i * 100);
+      });
+    }
+
+    // Counter animation
+    function animateCounters() {
+      const counters = document.querySelectorAll('[data-count]');
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-count'));
+        let current = 0;
+        const step = target / 40;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            counter.textContent = target;
+            clearInterval(timer);
+          } else {
+            counter.textContent = Math.floor(current);
+          }
+        }, 40);
+      });
+    }
+
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Init
+    document.addEventListener('DOMContentLoaded', () => {
+      animateCounters();
+      triggerReveal();
+    });
+  </script>
+</body>
+</html>

@@ -2,22 +2,59 @@
 layout: default
 ---
 
-<article>
-  {% include meta.html post=page %}
-  {{ content }}
-  {% if site.comments.isso_domain or site.comments.disqus_shortname %}
-    <hr>
-    {% if site.comments.isso_domain %}<div id="isso-thread"></div>{% endif %}
-    {% if site.comments.disqus_shortname %}<div id="disqus_thread"></div>{% endif %}
-    <noscript>Please enable JavaScript to view comments.</noscript>
-  {% endif %}
+<article class="post-card">
+  <header class="post-hero">
+    {% if page.image %}<img src="{{ page.image }}" alt="{{ page.title }}" class="post-hero-image">{% endif %}
+    {% if page.phase %}<p class="eyebrow">{{ page.phase }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="post-lead">{{ page.summary }}</p>{% endif %}
+    <div class="post-meta-row">
+      {% if page.journey_stage %}<span>{{ page.journey_stage }}</span>{% endif %}
+      {% if page.read_time %}<span>{{ page.read_time }} read</span>{% endif %}
+      {% if page.sequence %}<span>Article {{ page.sequence }}</span>{% endif %}
+    </div>
+    {% if page.tags %}
+    <div class="post-tags" aria-label="Article tags">
+      {% for tag in page.tags %}
+      <a class="post-tag" href="{{ "/blog/" | relative_url }}?tag={{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
 </article>
 
-{% unless site.show_minimal or site.footer  %}
-{% if page.next.url or page.previous.url %}
-<footer class="nowrap {% if site.show_frame %}dark{% else %}smooth{% endif %}">
-  {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a> {% endif %}
-  {% if page.previous.url %} <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% endif %}
-</footer>
-{% endif %}
-{% endunless %}
+<div class="post-footer-stack">
+  <footer class="post-return smooth">
+    <a href="{{ "/blog/" | relative_url }}">Back to the blog</a>
+  </footer>
+
+  <nav class="post-navigation" aria-label="Article navigation">
+    {% if page.previous %}
+    <a class="post-navigation__link" href="{{ page.previous.url | relative_url }}">
+      <span class="post-navigation__label">Previous Article</span>
+      <strong>{{ page.previous.title }}</strong>
+    </a>
+    {% else %}
+    <span class="post-navigation__link post-navigation__link--empty">
+      <span class="post-navigation__label">Previous Article</span>
+      <strong>No earlier article</strong>
+    </span>
+    {% endif %}
+
+    {% if page.next %}
+    <a class="post-navigation__link post-navigation__link--next" href="{{ page.next.url | relative_url }}">
+      <span class="post-navigation__label">Next Article</span>
+      <strong>{{ page.next.title }}</strong>
+    </a>
+    {% else %}
+    <span class="post-navigation__link post-navigation__link--empty post-navigation__link--next">
+      <span class="post-navigation__label">Next Article</span>
+      <strong>No newer article</strong>
+    </span>
+    {% endif %}
+  </nav>
+</div>

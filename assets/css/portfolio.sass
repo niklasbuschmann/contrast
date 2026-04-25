@@ -1,0 +1,1329 @@
+---
+---
+
+html
+  scroll-behavior: smooth
+
+body
+  font-family: "PT Sans", "Segoe UI", sans-serif
+  color: #102033
+  background: #f4efe6
+  background-image: radial-gradient(circle at top left, rgba(15, 123, 131, 0.14), transparent 24%), radial-gradient(circle at top right, rgba(198, 107, 66, 0.15), transparent 22%), linear-gradient(180deg, rgba(255, 255, 255, 0.35), transparent 28%)
+
+body > header,
+body > article,
+body > main,
+body > footer
+  position: relative
+  z-index: 1
+
+.site-header
+  position: sticky
+  top: 0
+  z-index: 20
+  width: 94%
+  max-width: 1120px
+  margin: 1.25rem auto 0
+  padding: 1rem 1.5rem
+  border: 1px solid rgba(255, 255, 255, 0.45)
+  border-radius: 999px
+  background: rgba(10, 24, 39, 0.88)
+  box-shadow: 0 14px 40px rgba(7, 18, 30, 0.2)
+  color: #f7f3ea
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  gap: 0.75rem
+  justify-content: space-between
+
+.site-header__brand
+  display: flex
+  flex-direction: column
+  gap: 0.2rem
+
+.site-header__tagline
+  margin: 0
+  color: rgba(247, 243, 234, 0.72)
+  font-size: 0.72rem
+  letter-spacing: 0.22em
+  text-transform: uppercase
+
+.site-header h1
+  margin: 0
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif
+  letter-spacing: 0.03em
+
+.site-header a
+  border-radius: 999px
+  padding: 0.45rem 0.9rem
+
+.site-header nav
+  display: flex
+  flex-wrap: wrap
+  gap: 0.35rem
+  margin: 0
+
+.site-header nav a
+  color: #f7f3ea
+  font-size: 0.98rem
+  text-decoration: none
+  transition: background 0.2s ease, color 0.2s ease
+
+.site-header nav a:hover,
+.site-header nav a.is-active
+  background: rgba(255, 255, 255, 0.16)
+  color: #ffffff
+
+.theme-toggle
+  min-height: 2.45rem
+  padding: 0.55rem 1rem
+  border: 1px solid rgba(255, 255, 255, 0.16)
+  border-radius: 999px
+  background: rgba(255, 255, 255, 0.04)
+  color: #f7f3ea
+  cursor: pointer
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease
+  font-size: 1.2rem
+  line-height: 1
+  .icon-moon
+    display: inline
+  .icon-sun
+    display: none
+
+.theme-toggle:hover
+  background: rgba(255, 255, 255, 0.12)
+
+.page-card,
+.post-card
+  width: 94%
+  max-width: 1120px
+  margin: 1.35rem auto
+  padding: 2rem
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  border-radius: 28px
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 252, 246, 0.96))
+  box-shadow: 0 28px 70px rgba(16, 32, 51, 0.14)
+  overflow: hidden
+
+.page-hero,
+.post-hero
+  margin-bottom: 2.2rem
+  padding: 2rem
+  border: 1px solid rgba(255, 255, 255, 0.5)
+  border-radius: 20px
+  background: linear-gradient(135deg, rgba(15, 123, 131, 0.12), rgba(255, 255, 255, 0.7) 42%, rgba(198, 107, 66, 0.12))
+
+.home-page .page-hero
+  display: none
+
+.eyebrow
+  margin: 0 0 0.65rem
+  color: #0d5165
+  font-size: 0.8rem
+  font-weight: 700
+  letter-spacing: 0.16em
+  text-transform: uppercase
+
+h1, h2, h3
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif
+  color: #102033
+  line-height: 1.1
+
+h1
+  margin: 0
+  font-size: 4.2rem
+
+h2
+  margin: 0
+  font-size: 2.35rem
+
+h3
+  margin: 0 0 0.7rem
+  font-size: 1.32rem
+
+p
+  color: #415263
+  line-height: 1.78
+  font-size: 1.03rem
+
+.page-lead,
+.post-lead,
+.hero-subtitle
+  font-size: 1.14rem
+  color: #213447
+  max-width: 52rem
+
+.hero-grid
+  display: grid
+  grid-template-columns: 1.7fr 0.9fr
+  gap: 1.4rem
+  align-items: stretch
+
+.hero-copy,
+.profile-panel,
+.feature-card,
+.metric-card,
+.timeline-card,
+.about-card,
+.contact-card,
+.journal-card,
+.quote-panel,
+.cta-panel,
+.blog-intro
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  border-radius: 18px
+  background: rgba(255, 251, 244, 0.92)
+  box-shadow: 0 16px 40px rgba(16, 32, 51, 0.08)
+
+.hero-copy
+  padding: 2.2rem
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(232, 246, 244, 0.92))
+
+.profile-panel
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 1.7rem
+  background: linear-gradient(180deg, rgba(10, 24, 39, 0.96), rgba(15, 43, 64, 0.96))
+  color: #f7f3ea
+
+.profile-panel p,
+.profile-panel li
+  color: rgba(247, 243, 234, 0.88)
+
+.profile-badge
+  width: 78px
+  height: 78px
+  display: grid
+  place-items: center
+  margin-bottom: 1rem
+  border-radius: 24px
+  background: linear-gradient(135deg, #f9d7c1, #8ee0d7)
+  color: #102033
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif
+  font-size: 2rem
+  font-weight: 700
+
+.profile-role
+  margin: 0 0 1rem
+  font-size: 1.1rem
+  color: #ffffff
+
+.profile-facts
+  margin: 0
+  padding-left: 1.15rem
+
+.profile-facts li
+  margin: 0.5rem 0
+
+.section-block
+  margin-top: 2rem
+
+.section-heading
+  display: flex
+  flex-direction: column
+  gap: 0.35rem
+  margin-bottom: 1rem
+
+.feature-grid,
+.metric-grid,
+.timeline-grid,
+.about-grid,
+.contact-grid,
+.journal-grid
+  display: grid
+  gap: 1rem
+
+.feature-grid
+  grid-template-columns: repeat(2, 1fr)
+
+.metric-grid
+  grid-template-columns: repeat(4, 1fr)
+
+.timeline-grid,
+.about-grid,
+.journal-grid
+  grid-template-columns: repeat(2, 1fr)
+
+.contact-grid
+  grid-template-columns: repeat(3, 1fr)
+
+.feature-card,
+.metric-card,
+.timeline-card,
+.about-card,
+.contact-card,
+.journal-card
+  padding: 1.35rem
+
+.metric-card
+  display: flex
+  flex-direction: column
+  gap: 0.45rem
+  align-items: flex-start
+  justify-content: space-between
+  background: linear-gradient(180deg, rgba(15, 123, 131, 0.08), rgba(255, 255, 255, 0.92))
+
+.metric-value
+  display: inline-block
+  min-width: 68px
+  padding: 0.4rem 0.85rem
+  border-radius: 999px
+  background: #d8f0ee
+  color: #0d5165
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif
+  font-size: 1.8rem
+
+.metric-label
+  color: #415263
+
+.quote-panel
+  margin-top: 2rem
+  padding: 2rem
+  background: linear-gradient(135deg, rgba(16, 32, 51, 0.96), rgba(15, 123, 131, 0.88))
+  color: #f8f4ec
+
+.quote-panel blockquote
+  margin: 0
+  padding: 0
+  background: transparent
+  border: 0
+  color: #ffffff
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif
+  font-size: 2rem
+  line-height: 1.4
+
+.quote-mark
+  margin: 0
+  font-size: 4rem
+  line-height: 1
+  color: rgba(255, 255, 255, 0.35)
+
+.quote-source
+  margin: 1rem 0 0
+  color: rgba(248, 244, 236, 0.78)
+
+.cta-panel
+  margin-top: 2rem
+  padding: 1.8rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 1rem
+  background: linear-gradient(135deg, rgba(255, 244, 233, 0.95), rgba(220, 244, 241, 0.95))
+
+.button-row
+  display: flex
+  flex-wrap: wrap
+  gap: 0.75rem
+  margin-top: 1.5rem
+
+.primary-link,
+.secondary-link,
+.post-return a,
+.phase-links a
+  display: inline-block
+  padding: 0.8rem 1.2rem
+  border-radius: 999px
+  font-weight: 700
+  text-decoration: none
+  box-shadow: none
+
+.primary-link
+  background: linear-gradient(135deg, #0f7b83, #0d5165)
+  color: #ffffff
+
+.primary-link:hover
+  background: linear-gradient(135deg, #118a93, #0d4a5d)
+  box-shadow: none
+
+.secondary-link,
+.phase-links a,
+.post-return a
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: rgba(255, 255, 255, 0.72)
+  color: #102033
+
+.secondary-link:hover,
+.phase-links a:hover,
+.post-return a:hover
+  background: rgba(216, 240, 238, 0.72)
+  box-shadow: none
+
+.blog-intro
+  padding: 1.4rem
+  margin-bottom: 2rem
+
+.blog-intro--compact
+  margin-bottom: 1.3rem
+
+.folder-browser
+  margin-bottom: 2rem
+
+.folder-grid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 1rem
+
+.folder-card
+  position: relative
+  width: 100%
+  padding: 1.45rem
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  border-radius: 22px
+  appearance: none
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(242, 249, 248, 0.96))
+  box-shadow: 0 18px 40px rgba(16, 32, 51, 0.1)
+  color: #102033
+  font: inherit
+  text-align: left
+  cursor: pointer
+  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease, background 0.24s ease
+
+.folder-card:hover
+  transform: translateY(-4px)
+  border-color: rgba(13, 81, 101, 0.34)
+  box-shadow: 0 24px 46px rgba(16, 32, 51, 0.14)
+
+.folder-card.is-active
+  border-color: rgba(13, 81, 101, 0.42)
+  background: linear-gradient(180deg, rgba(232, 247, 245, 0.98), rgba(255, 251, 244, 0.98))
+  box-shadow: 0 26px 50px rgba(13, 81, 101, 0.16)
+
+.folder-card__tab
+  display: inline-block
+  width: 4.6rem
+  height: 0.85rem
+  margin-bottom: 1rem
+  border-radius: 1rem 1rem 0.4rem 0.4rem
+  background: linear-gradient(135deg, rgba(15, 123, 131, 0.18), rgba(198, 107, 66, 0.16))
+
+.folder-card__label
+  display: block
+  margin-bottom: 0.45rem
+  color: #0d5165
+  font-size: 0.76rem
+  font-weight: 700
+  letter-spacing: 0.12em
+  text-transform: uppercase
+
+.folder-card strong
+  display: block
+  margin-bottom: 0.7rem
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif
+  font-size: 1.55rem
+  line-height: 1.08
+
+.folder-card p
+  margin: 0
+
+.folder-card__stats
+  display: flex
+  flex-wrap: wrap
+  gap: 0.55rem
+  margin-top: 1rem
+
+.folder-card__stats span,
+.folder-panel__summary span
+  display: inline-flex
+  align-items: center
+  padding: 0.34rem 0.78rem
+  border-radius: 999px
+  background: rgba(15, 123, 131, 0.12)
+  color: #0d5165
+  font-size: 0.84rem
+  font-weight: 700
+
+.folder-panels
+  margin-top: 0.5rem
+
+.blog-folder-panel
+  padding: 1.45rem
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  border-radius: 22px
+  background: rgba(255, 251, 244, 0.92)
+  box-shadow: 0 18px 40px rgba(16, 32, 51, 0.08)
+
+.folder-panel__hero
+  display: flex
+  justify-content: space-between
+  gap: 1rem
+  align-items: flex-start
+  margin-bottom: 1.25rem
+
+.folder-panel__description
+  max-width: 46rem
+  margin: 0.8rem 0 0
+
+.folder-panel__summary
+  display: flex
+  flex-wrap: wrap
+  gap: 0.55rem
+  justify-content: flex-end
+
+.folder-posts
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 1rem
+
+.folder-posts .journal-card
+  transition: opacity 0.3s ease, transform 0.3s ease
+
+.category-filters
+  display: flex
+  flex-wrap: wrap
+  gap: 0.85rem
+  margin-top: 1.25rem
+  align-items: center
+
+.category-tag
+  min-height: 2.8rem
+  padding: 0.72rem 1.2rem
+  border-radius: 999px
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: rgba(255, 255, 255, 0.72)
+  color: #102033
+  font-size: 0.95rem
+  font-weight: 700
+  line-height: 1
+  white-space: nowrap
+  cursor: pointer
+  box-shadow: 0 10px 24px rgba(16, 32, 51, 0.06)
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease
+  &:hover
+    background: rgba(216, 240, 238, 0.72)
+    border-color: #0d5165
+    transform: translateY(-1px)
+    box-shadow: 0 14px 28px rgba(16, 32, 51, 0.1)
+  &.active
+    background: linear-gradient(135deg, #0f7b83, #0d5165)
+    color: #ffffff
+    border-color: transparent
+    box-shadow: 0 16px 30px rgba(13, 81, 101, 0.2)
+
+.semester-tag
+  padding: 0.25rem 0.65rem
+  border-radius: 999px
+  background: rgba(198, 107, 66, 0.12)
+  color: #c66b42
+  font-size: 0.75rem
+  font-weight: 700
+
+.post-tags
+  display: flex
+  flex-wrap: wrap
+  gap: 0.4rem
+  margin-top: 0.75rem
+
+.post-tag
+  display: inline-flex
+  align-items: center
+  padding: 0.2rem 0.6rem
+  border-radius: 999px
+  background: rgba(15, 123, 131, 0.08)
+  color: #0d5165
+  font-size: 0.7rem
+  font-weight: 600
+  letter-spacing: 0.03em
+  text-decoration: none
+
+.post-tag:hover
+  background: rgba(15, 123, 131, 0.16)
+  box-shadow: none
+
+#posts-container
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 1rem
+
+#posts-container .journal-card
+  transition: opacity 0.3s ease, transform 0.3s ease
+
+.journal-card--interactive
+  cursor: pointer
+  scroll-margin-top: 8rem
+
+.journal-card--interactive:hover
+  transform: translateY(-4px)
+  box-shadow: 0 20px 40px rgba(16, 32, 51, 0.14)
+
+.journal-card--interactive:focus-visible
+  outline: 2px solid rgba(15, 123, 131, 0.4)
+  outline-offset: 4px
+
+.phase-section
+  margin-top: 2rem
+
+.journal-card
+  display: flex
+  flex-direction: column
+  gap: 0.9rem
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 252, 252, 0.94))
+
+.post-image
+  width: 100%
+  height: 180px
+  object-fit: cover
+  border-radius: 12px
+  margin: 0
+
+.post-hero-image
+  width: 100%
+  max-height: 360px
+  object-fit: cover
+  border-radius: 16px
+  margin-bottom: 1.5rem
+
+.journal-index,
+.post-meta-row span,
+.journal-meta span,
+.contact-note
+  display: inline-block
+  padding: 0.32rem 0.75rem
+  border-radius: 999px
+  background: rgba(15, 123, 131, 0.12)
+  color: #0d5165
+  font-size: 0.9rem
+  font-weight: 700
+
+.journal-card h3 a
+  color: #102033
+  text-decoration: none
+
+.journal-card h3 a:hover
+  color: #0d5165
+  box-shadow: none
+
+.journal-meta,
+.post-meta-row
+  display: flex
+  flex-wrap: wrap
+  gap: 0.55rem
+
+.prose
+  max-width: 54rem
+
+.prose p
+  margin: 0 0 1rem
+
+.prose p:first-child::first-letter
+  float: left
+  padding-right: 0.35rem
+  line-height: 0.9
+  color: #c66b42
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif
+  font-size: 3.2rem
+
+.post-return
+  width: 94%
+  max-width: 1120px
+  margin: -0.2rem auto 1.35rem
+  padding: 0
+  text-align: right
+  background: transparent
+  box-shadow: none
+
+.post-footer-stack
+  width: 94%
+  max-width: 1120px
+  margin: -0.2rem auto 1.35rem
+
+.post-navigation
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 1rem
+
+.post-navigation__link
+  display: flex
+  flex-direction: column
+  gap: 0.35rem
+  padding: 1.2rem
+  border: 1px solid rgba(162, 184, 205, 0.14)
+  border-radius: 18px
+  background: linear-gradient(180deg, rgba(11, 23, 35, 0.94), rgba(8, 17, 27, 0.96))
+  color: #f4f8fb
+  text-decoration: none
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18)
+
+.post-navigation__link strong
+  color: #f4f8fb
+
+.post-navigation__link:hover
+  background: linear-gradient(180deg, rgba(16, 31, 45, 0.96), rgba(10, 22, 34, 0.96))
+  transform: translateY(-2px)
+
+.post-navigation__label
+  color: #7ddacb
+  font-size: 0.82rem
+  font-weight: 700
+  letter-spacing: 0.08em
+  text-transform: uppercase
+
+.post-navigation__link--next
+  text-align: right
+
+.post-navigation__link--empty
+  opacity: 0.7
+
+.site-footer
+  width: 94%
+  max-width: 1120px
+  margin: 0 auto 1.35rem
+  padding: 1.25rem 1.5rem
+  border: 1px solid rgba(255, 255, 255, 0.35)
+  border-radius: 24px
+  background: rgba(10, 24, 39, 0.9)
+  color: rgba(247, 243, 234, 0.84)
+  box-shadow: 0 16px 36px rgba(7, 18, 30, 0.18)
+
+.site-footer a
+  color: #f7f3ea
+  text-decoration: none
+
+.site-footer nav
+  display: flex
+  flex-wrap: wrap
+  gap: 0.35rem
+
+.site-footer nav a
+  padding: 0.35rem 0.8rem
+  border-radius: 999px
+
+.site-footer nav a:hover
+  background: rgba(255, 255, 255, 0.12)
+  box-shadow: none
+
+@media (max-width: 960px)
+  .hero-grid,
+  .feature-grid,
+  .metric-grid,
+  .timeline-grid,
+  .about-grid,
+  .contact-grid,
+  .journal-grid
+    grid-template-columns: 1fr
+
+  .cta-panel
+    flex-direction: column
+    align-items: flex-start
+
+  h1
+    font-size: 3.5rem
+
+  h2
+    font-size: 2.05rem
+
+@media (max-width: 720px)
+  .site-header
+    width: 96%
+    padding: 0.95rem 1rem
+    border-radius: 28px
+
+  .site-header h1
+    width: 100%
+
+  .page-card,
+  .post-card,
+  .site-footer,
+  .post-return,
+  .post-footer-stack
+    width: 96%
+    padding: 1.2rem
+
+  h1
+    font-size: 2.8rem
+
+  h2
+    font-size: 1.8rem
+
+  .profile-panel,
+  .hero-copy,
+  .page-hero,
+  .post-hero,
+  .feature-card,
+  .metric-card,
+  .timeline-card,
+  .about-card,
+  .contact-card,
+  .journal-card,
+  .blog-folder-panel,
+  .quote-panel,
+  .cta-panel,
+  .blog-intro
+    padding: 1.2rem
+
+  .post-navigation
+    grid-template-columns: 1fr
+
+body
+  color: #d6e3ee
+  background: #07111a
+  background-image: radial-gradient(circle at top left, rgba(82, 214, 196, 0.12), transparent 24%), radial-gradient(circle at top right, rgba(125, 166, 255, 0.14), transparent 20%), linear-gradient(180deg, rgba(12, 24, 36, 0.92), rgba(5, 12, 20, 1))
+
+h1, h2, h3
+  color: #f4f8fb
+
+p
+  color: rgba(214, 227, 238, 0.8)
+
+.page-card,
+.post-card
+  border: 1px solid rgba(162, 184, 205, 0.12)
+  background: linear-gradient(180deg, rgba(10, 20, 32, 0.96), rgba(7, 15, 26, 0.98))
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.35)
+
+.page-hero,
+.post-hero
+  border: 1px solid rgba(162, 184, 205, 0.12)
+  background: linear-gradient(135deg, rgba(82, 214, 196, 0.08), rgba(13, 24, 39, 0.85) 42%, rgba(125, 166, 255, 0.08))
+
+.eyebrow
+  color: #7ddacb
+
+.page-lead,
+.post-lead,
+.hero-subtitle
+  color: #dce7f2
+
+.hero-copy,
+.feature-card,
+.metric-card,
+.timeline-card,
+.about-card,
+.contact-card,
+.journal-card,
+.quote-panel,
+.cta-panel,
+.blog-intro,
+.profile-panel,
+.about-summary-card,
+.service-card,
+.hero-visual-card,
+.project-card
+  border: 1px solid rgba(162, 184, 205, 0.12)
+  background: linear-gradient(180deg, rgba(11, 23, 35, 0.94), rgba(8, 17, 27, 0.96))
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24)
+
+.portfolio-hero
+  align-items: stretch
+
+.hero-copy
+  background: linear-gradient(145deg, rgba(16, 31, 45, 0.96), rgba(10, 22, 34, 0.96))
+
+.hero-grid--single
+  grid-template-columns: 1fr
+  max-width: 920px
+  margin: 0 auto
+
+.hero-copy--centered
+  text-align: center
+  padding: 3rem 2.2rem
+
+.hero-copy--centered .hero-subtitle
+  max-width: 42rem
+  margin: 1rem auto 0
+
+.button-row--centered
+  justify-content: center
+
+.summary-shell
+  max-width: 980px
+  margin-left: auto
+  margin-right: auto
+
+.feature-grid--summary
+  grid-template-columns: repeat(2, 1fr)
+
+.feature-grid--summary .feature-card p
+  margin: 0 0 0.65rem
+
+.metric-grid--simple
+  grid-template-columns: repeat(3, 1fr)
+
+.metric-grid--simple .metric-card
+  min-height: 100%
+
+.quote-panel--simple
+  max-width: 980px
+  margin-left: auto
+  margin-right: auto
+
+.summary-shell .feature-card,
+.metric-grid--simple .metric-card,
+.quote-panel--simple,
+.hero-copy--centered
+  position: relative
+  overflow: hidden
+
+.summary-shell .feature-card::before,
+.metric-grid--simple .metric-card::before,
+.quote-panel--simple::before,
+.hero-copy--centered::before
+  content: ""
+  position: absolute
+  inset: 0
+  background-image: linear-gradient(rgba(125, 166, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(125, 166, 255, 0.05) 1px, transparent 1px)
+  background-size: 32px 32px
+  pointer-events: none
+
+.summary-shell .feature-card > *,
+.metric-grid--simple .metric-card > *,
+.quote-panel--simple > *,
+.hero-copy--centered > *
+  position: relative
+  z-index: 1
+
+.hero-meta
+  display: flex
+  flex-wrap: wrap
+  gap: 0.65rem
+  margin-top: 1.25rem
+
+.hero-meta span,
+.project-tag
+  display: inline-block
+  padding: 0.4rem 0.8rem
+  border-radius: 999px
+  background: rgba(82, 214, 196, 0.12)
+  color: #7ddacb
+  font-size: 0.88rem
+  font-weight: 700
+
+.hero-visual-card
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 1.4rem
+  gap: 1rem
+
+.hero-visual-art
+  padding: 0.75rem
+  border-radius: 20px
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01))
+
+.hero-visual-art svg
+  width: 100%
+  height: auto
+
+.hero-visual-copy h3
+  margin-bottom: 0.65rem
+
+.profile-panel p,
+.profile-panel li
+  color: rgba(247, 243, 234, 0.88)
+
+.about-home-layout
+  display: grid
+  grid-template-columns: 0.95fr 1.55fr
+  gap: 1rem
+
+.about-summary-card
+  padding: 1.4rem
+
+.about-points
+  list-style: none
+  margin: 1rem 0 0
+  padding: 0
+  display: grid
+  gap: 0.9rem
+
+.about-points li
+  display: flex
+  flex-direction: column
+  gap: 0.2rem
+  padding: 0.95rem 1rem
+  border-radius: 16px
+  background: rgba(255, 255, 255, 0.03)
+
+.about-points strong
+  color: #7ddacb
+  font-size: 0.9rem
+  letter-spacing: 0.04em
+  text-transform: uppercase
+
+.about-points span
+  color: #f4f8fb
+
+.feature-grid--portfolio
+  grid-template-columns: repeat(3, 1fr)
+
+.section-intro
+  max-width: 48rem
+
+.service-grid,
+.project-grid
+  display: grid
+  gap: 1rem
+
+.service-grid
+  grid-template-columns: repeat(3, 1fr)
+
+.service-card
+  padding: 1.45rem
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease
+
+.service-card:hover,
+.project-card:hover,
+.post-preview-card:hover,
+.feature-card:hover
+  transform: translateY(-4px)
+  border-color: rgba(125, 166, 255, 0.25)
+  box-shadow: 0 22px 42px rgba(0, 0, 0, 0.3)
+
+.service-icon
+  width: 52px
+  height: 52px
+  display: grid
+  place-items: center
+  margin-bottom: 1rem
+  border-radius: 16px
+  background: linear-gradient(135deg, rgba(82, 214, 196, 0.18), rgba(125, 166, 255, 0.18))
+  color: #f4f8fb
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif
+  font-size: 1.25rem
+  font-weight: 700
+
+.metric-grid--portfolio
+  grid-template-columns: repeat(3, 1fr)
+
+.metric-card
+  background: linear-gradient(180deg, rgba(14, 31, 46, 0.92), rgba(8, 17, 27, 0.96))
+
+.metric-card p
+  margin: 0
+
+.metric-value
+  background: rgba(82, 214, 196, 0.14)
+  color: #7ddacb
+  min-width: auto
+  max-width: 100%
+
+.metric-label
+  color: #f4f8fb
+
+.project-grid
+  grid-template-columns: repeat(3, 1fr)
+
+.project-card
+  padding: 1.45rem
+  display: flex
+  flex-direction: column
+  gap: 0.9rem
+
+.post-preview-card
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease
+
+.journal-index,
+.post-meta-row span,
+.journal-meta span,
+.contact-note
+  background: rgba(82, 214, 196, 0.12)
+  color: #7ddacb
+
+.journal-card h3 a
+  color: #f4f8fb
+
+.journal-card h3 a:hover
+  color: #7ddacb
+
+.secondary-link,
+.phase-links a,
+.post-return a
+  border: 1px solid rgba(162, 184, 205, 0.16)
+  background: rgba(255, 255, 255, 0.03)
+  color: #e6eef5
+
+.secondary-link:hover,
+.phase-links a:hover,
+.post-return a:hover
+  background: rgba(82, 214, 196, 0.12)
+
+.quote-panel
+  background: linear-gradient(135deg, rgba(10, 24, 39, 0.96), rgba(19, 58, 81, 0.92))
+
+.site-footer
+  background: rgba(5, 11, 18, 0.95)
+
+.folder-card
+  border: 1px solid rgba(162, 184, 205, 0.14)
+  background: linear-gradient(180deg, rgba(14, 29, 44, 0.96), rgba(8, 18, 28, 0.98))
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28)
+  color: #f4f8fb
+
+.folder-card:hover
+  border-color: rgba(125, 166, 255, 0.34)
+  box-shadow: 0 26px 48px rgba(0, 0, 0, 0.34)
+
+.folder-card.is-active
+  border-color: rgba(82, 214, 196, 0.4)
+  background: linear-gradient(180deg, rgba(17, 39, 56, 0.98), rgba(9, 21, 32, 0.98))
+  box-shadow: 0 28px 54px rgba(0, 0, 0, 0.36)
+
+.folder-card__tab
+  background: linear-gradient(135deg, rgba(82, 214, 196, 0.28), rgba(125, 166, 255, 0.22))
+
+.folder-card__label
+  color: #7ddacb
+
+.folder-card__stats span,
+.folder-panel__summary span
+  background: rgba(82, 214, 196, 0.12)
+  color: #7ddacb
+
+.blog-folder-panel
+  border: 1px solid rgba(162, 184, 205, 0.12)
+  background: linear-gradient(180deg, rgba(11, 23, 35, 0.94), rgba(8, 17, 27, 0.96))
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24)
+
+html[data-theme="light"] body,
+body.light-theme
+  color: #102033
+  background: #f4efe6
+  background-image: radial-gradient(circle at top left, rgba(15, 123, 131, 0.12), transparent 24%), radial-gradient(circle at top right, rgba(198, 107, 66, 0.12), transparent 22%), linear-gradient(180deg, rgba(255, 255, 255, 0.58), transparent 28%)
+
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3
+  color: #102033
+
+html[data-theme="light"] p,
+body.light-theme p
+  color: #415263
+
+html[data-theme="light"] .page-card,
+html[data-theme="light"] .post-card,
+body.light-theme .page-card,
+body.light-theme .post-card
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 252, 246, 0.98))
+  box-shadow: 0 28px 70px rgba(16, 32, 51, 0.12)
+
+html[data-theme="light"] .page-hero,
+html[data-theme="light"] .post-hero,
+body.light-theme .page-hero,
+body.light-theme .post-hero
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: linear-gradient(135deg, rgba(15, 123, 131, 0.08), rgba(255, 255, 255, 0.92) 42%, rgba(198, 107, 66, 0.08))
+
+html[data-theme="light"] .hero-copy,
+html[data-theme="light"] .feature-card,
+html[data-theme="light"] .metric-card,
+html[data-theme="light"] .timeline-card,
+html[data-theme="light"] .about-card,
+html[data-theme="light"] .contact-card,
+html[data-theme="light"] .journal-card,
+html[data-theme="light"] .quote-panel,
+html[data-theme="light"] .cta-panel,
+html[data-theme="light"] .blog-intro,
+html[data-theme="light"] .blog-folder-panel,
+html[data-theme="light"] .post-navigation__link,
+body.light-theme .hero-copy,
+body.light-theme .feature-card,
+body.light-theme .metric-card,
+body.light-theme .timeline-card,
+body.light-theme .about-card,
+body.light-theme .contact-card,
+body.light-theme .journal-card,
+body.light-theme .quote-panel,
+body.light-theme .cta-panel,
+body.light-theme .blog-intro,
+body.light-theme .blog-folder-panel,
+body.light-theme .post-navigation__link
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 252, 252, 0.96))
+  box-shadow: 0 16px 40px rgba(16, 32, 51, 0.08)
+
+html[data-theme="light"] .site-header,
+body.light-theme .site-header
+  background: rgba(255, 255, 255, 0.86)
+  border: 1px solid rgba(16, 32, 51, 0.08)
+  color: #102033
+
+html[data-theme="light"] .site-header a,
+html[data-theme="light"] .theme-toggle,
+body.light-theme .site-header a,
+body.light-theme .theme-toggle
+  color: #102033
+
+html[data-theme="light"] .site-header__tagline,
+body.light-theme .site-header__tagline
+  color: rgba(16, 32, 51, 0.64)
+
+html[data-theme="light"] .site-header nav a:hover,
+html[data-theme="light"] .site-header nav a.is-active,
+html[data-theme="light"] .theme-toggle:hover,
+body.light-theme .site-header nav a:hover,
+body.light-theme .site-header nav a.is-active,
+body.light-theme .theme-toggle:hover
+  background: rgba(15, 123, 131, 0.12)
+  color: #102033
+
+html[data-theme="light"] .secondary-link,
+html[data-theme="light"] .phase-links a,
+html[data-theme="light"] .post-return a,
+body.light-theme .secondary-link,
+body.light-theme .phase-links a,
+body.light-theme .post-return a
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: rgba(255, 255, 255, 0.74)
+  color: #102033
+
+html[data-theme="light"] .secondary-link:hover,
+html[data-theme="light"] .phase-links a:hover,
+html[data-theme="light"] .post-return a:hover,
+body.light-theme .secondary-link:hover,
+body.light-theme .phase-links a:hover,
+body.light-theme .post-return a:hover
+  background: rgba(216, 240, 238, 0.74)
+
+html[data-theme="light"] .site-footer,
+body.light-theme .site-footer
+  background: rgba(255, 255, 255, 0.9)
+  color: #102033
+
+html[data-theme="light"] .site-footer a,
+body.light-theme .site-footer a
+  color: #102033
+
+html[data-theme="light"] .theme-toggle,
+body.light-theme .theme-toggle
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: rgba(255, 255, 255, 0.74)
+  color: #102033
+  .icon-moon
+    display: none
+  .icon-sun
+    display: inline
+
+html[data-theme="light"] .category-tag,
+body.light-theme .category-tag
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: rgba(255, 255, 255, 0.74)
+  color: #102033
+  &:hover
+    background: rgba(216, 240, 238, 0.74)
+  &.active
+    background: linear-gradient(135deg, #0f7b83, #0d5165)
+    color: #ffffff
+
+html[data-theme="light"] .post-tag,
+body.light-theme .post-tag
+  background: rgba(15, 123, 131, 0.08)
+  color: #0d5165
+
+html[data-theme="light"] .post-tag:hover,
+body.light-theme .post-tag:hover
+  background: rgba(15, 123, 131, 0.16)
+
+html[data-theme="light"] .folder-card,
+body.light-theme .folder-card
+  border: 1px solid rgba(16, 32, 51, 0.12)
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(242, 249, 248, 0.96))
+  box-shadow: 0 18px 40px rgba(16, 32, 51, 0.1)
+  color: #102033
+
+html[data-theme="light"] .folder-card:hover,
+body.light-theme .folder-card:hover
+  border-color: rgba(13, 81, 101, 0.34)
+  box-shadow: 0 24px 46px rgba(16, 32, 51, 0.14)
+
+html[data-theme="light"] .folder-card.is-active,
+body.light-theme .folder-card.is-active
+  border-color: rgba(13, 81, 101, 0.42)
+  background: linear-gradient(180deg, rgba(232, 247, 245, 0.98), rgba(255, 251, 244, 0.98))
+  box-shadow: 0 26px 50px rgba(13, 81, 101, 0.16)
+
+html[data-theme="light"] .folder-card__tab,
+body.light-theme .folder-card__tab
+  background: linear-gradient(135deg, rgba(15, 123, 131, 0.18), rgba(198, 107, 66, 0.16))
+
+html[data-theme="light"] .folder-card__label,
+body.light-theme .folder-card__label
+  color: #0d5165
+
+html[data-theme="light"] .folder-card__stats span,
+html[data-theme="light"] .folder-panel__summary span,
+body.light-theme .folder-card__stats span,
+body.light-theme .folder-panel__summary span
+  background: rgba(15, 123, 131, 0.12)
+  color: #0d5165
+
+html[data-theme="light"] .semester-tag,
+body.light-theme .semester-tag
+  background: rgba(198, 107, 66, 0.12)
+  color: #c66b42
+
+html[data-theme="light"] .metric-label,
+body.light-theme .metric-label
+  color: #415263
+
+html[data-theme="light"] .metric-value,
+body.light-theme .metric-value
+  background: rgba(15, 123, 131, 0.12)
+  color: #0d5165
+
+html[data-theme="light"] .journal-card h3 a,
+body.light-theme .journal-card h3 a
+  color: #102033
+
+html[data-theme="light"] .journal-index,
+html[data-theme="light"] .post-meta-row span,
+html[data-theme="light"] .journal-meta span,
+body.light-theme .journal-index,
+body.light-theme .post-meta-row span,
+body.light-theme .journal-meta span
+  background: rgba(15, 123, 131, 0.12)
+  color: #0d5165
+
+html[data-theme="light"] .eyebrow,
+body.light-theme .eyebrow
+  color: #0d5165
+
+/* ── LIGHT MODE: quote-panel fix ── */
+html[data-theme="light"] .quote-panel,
+body.light-theme .quote-panel
+  background: linear-gradient(135deg, rgba(15, 123, 131, 0.12), rgba(220, 244, 241, 0.95))
+
+html[data-theme="light"] .quote-panel blockquote,
+body.light-theme .quote-panel blockquote
+  color: #102033
+
+html[data-theme="light"] .quote-panel .quote-source,
+body.light-theme .quote-panel .quote-source
+  color: #415263
+
+@media (max-width: 960px)
+  .about-home-layout,
+  .folder-grid,
+  .feature-grid--portfolio,
+  .feature-grid--summary,
+  .service-grid,
+  .metric-grid--portfolio,
+  .metric-grid--simple,
+  .project-grid,
+  #posts-container,
+  .folder-posts
+    grid-template-columns: 1fr
+
+  .folder-panel__hero
+    flex-direction: column
+
+  .folder-panel__summary
+    justify-content: flex-start
+
+  .category-tag
+    min-height: 2.55rem
+    padding: 0.65rem 1rem
+    font-size: 0.84rem
+    white-space: nowrap
+
+  .site-header
+    justify-content: center
+
+  .site-header__brand
+    width: 100%
+    align-items: center
+    text-align: center

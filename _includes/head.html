@@ -1,9 +1,29 @@
-<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+<title>{% if page.title and page.title != "Home" %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="dark">
+<script>
+  (function() {
+    try {
+      var storedTheme = localStorage.getItem('site-theme');
+      if (storedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        var colorSchemeMeta = document.querySelector('meta[name="color-scheme"]');
+        if (colorSchemeMeta) {
+          colorSchemeMeta.setAttribute('content', 'light');
+        }
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (error) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<meta name="description" content="{{ page.description | default: site.description | escape }}">
+<meta name="theme-color" content="#0f2a3f">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 {%- if site.show_minimal -%}
 <link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
@@ -13,6 +33,7 @@
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
 {%- endif -%}
 <link rel="stylesheet" href="{{ "/assets/PT-Sans/index.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/portfolio.css" | relative_url }}">
 {%- if site.plugins contains "jekyll-feed" -%}
 <link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">
 {%- endif -%}
@@ -29,4 +50,5 @@
 {%- if site.comments.isso_domain and page.layout == "post" -%}
 <script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>
 {%- endif -%}
+<script defer src="{{ "/assets/js/toggle-color.js" | relative_url }}"></script>
 {%- if site.show_sidebar %}{% include sidebar.html %}{% endif %}

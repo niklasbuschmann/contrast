@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
+<head>
+  {% include head.html %}
+</head>
+<body class="{{ page.layout }}{% if page.body_class %} {{ page.body_class }}{% endif %}">
+  <header class="site-header hover smooth">
+    {% unless site.show_minimal and site.navigation and site.external %}
+      <div class="site-header__brand">
+        <h1 {% if site.navigation and site.external %}class="full"{% endif %}>
+          <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        </h1>
+        <p class="site-header__tagline">Computer Engineering Portfolio</p>
+      </div>
+    {% endunless %}
+    {% include menu.html menu=site.navigation %}
+    {% include menu.html menu=site.external %}
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark and light theme">
+      <span class="icon-moon">🌙</span>
+      <span class="icon-sun">☀️</span>
+    </button>
+  </header>
 
-{% include head.html %}
+  {{ content }}
 
-<header class="hover smooth">
-  {% unless site.show_minimal and site.navigation and site.external %}
-    <h1 {% if site.navigation and site.external %}class="full"{% endif %}><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-  {% endunless %}
-  {% include menu.html menu=site.navigation %}
-  {% include menu.html menu=site.external %}
-</header>
-
-{{ content }}
-
-{%- if site.footer -%}
-<footer class="hover">
-  <div>{{ site.description }}</div>
-  {% include menu.html menu=site.footer %}
-</footer>
-{%- endif -%}
-
+  {%- if site.footer -%}
+  <footer class="site-footer hover">
+    <div>{{ site.description }}</div>
+    {% include menu.html menu=site.footer %}
+  </footer>
+  {%- endif -%}
+</body>
 </html>

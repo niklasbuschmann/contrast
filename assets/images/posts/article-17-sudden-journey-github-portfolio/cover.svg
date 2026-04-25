@@ -1,0 +1,63 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="70" x2="1080" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081726"/>
+      <stop offset="0.55" stop-color="#0E2A40"/>
+      <stop offset="1" stop-color="#133B56"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="230" y1="150" x2="960" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10253A"/>
+      <stop offset="1" stop-color="#0B1B2B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="240" y1="500" x2="910" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4DD7C4"/>
+      <stop offset="1" stop-color="#79A6FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" rx="34" fill="url(#bg)"/>
+  <circle cx="1028" cy="128" r="168" fill="#1D4C68" fill-opacity="0.28"/>
+  <circle cx="238" cy="594" r="180" fill="#0B4155" fill-opacity="0.18"/>
+
+  <rect x="96" y="86" width="1008" height="503" rx="30" fill="url(#panel)" stroke="#355874" stroke-opacity="0.55"/>
+  <rect x="140" y="128" width="438" height="419" rx="24" fill="#0D2032" stroke="#234862"/>
+  <rect x="618" y="128" width="442" height="232" rx="24" fill="#0C2133" stroke="#234862"/>
+  <rect x="618" y="388" width="442" height="159" rx="24" fill="#0C2133" stroke="#234862"/>
+
+  <path d="M172 447C221 423 270 404 321 390C366 378 409 361 450 339C491 317 529 289 562 254" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M178 500C239 472 298 445 354 419C410 393 463 355 512 307C534 285 554 262 572 238" stroke="#FFC857" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 14"/>
+
+  <circle cx="224" cy="462" r="10" fill="#4DD7C4"/>
+  <circle cx="302" cy="410" r="10" fill="#4DD7C4"/>
+  <circle cx="390" cy="373" r="10" fill="#4DD7C4"/>
+  <circle cx="476" cy="328" r="10" fill="#4DD7C4"/>
+  <circle cx="224" cy="462" r="16" stroke="#DDF7F2" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="302" cy="410" r="16" stroke="#DDF7F2" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="390" cy="373" r="16" stroke="#DDF7F2" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="476" cy="328" r="16" stroke="#DDF7F2" stroke-opacity="0.35" stroke-width="2"/>
+
+  <rect x="660" y="170" width="110" height="146" rx="16" fill="#112B42"/>
+  <rect x="676" y="191" width="78" height="14" rx="7" fill="#4DD7C4" fill-opacity="0.85"/>
+  <rect x="676" y="220" width="78" height="10" rx="5" fill="#79A6FF" fill-opacity="0.55"/>
+  <rect x="676" y="243" width="56" height="10" rx="5" fill="#79A6FF" fill-opacity="0.38"/>
+  <rect x="676" y="272" width="62" height="28" rx="10" fill="#FFC857" fill-opacity="0.9"/>
+
+  <rect x="812" y="168" width="198" height="148" rx="18" fill="#102A40"/>
+  <path d="M836 286H986" stroke="#2C5875" stroke-width="4" stroke-linecap="round"/>
+  <path d="M848 252L878 224L910 240L952 198L980 220" stroke="#4DD7C4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="878" cy="224" r="7" fill="#DDF7F2"/>
+  <circle cx="910" cy="240" r="7" fill="#DDF7F2"/>
+  <circle cx="952" cy="198" r="7" fill="#FFC857"/>
+  <circle cx="980" cy="220" r="7" fill="#DDF7F2"/>
+
+  <rect x="654" y="426" width="368" height="82" rx="18" fill="#102A40"/>
+  <rect x="684" y="452" width="92" height="28" rx="14" fill="#4DD7C4"/>
+  <rect x="792" y="452" width="92" height="28" rx="14" fill="#79A6FF"/>
+  <rect x="900" y="452" width="92" height="28" rx="14" fill="#FFC857"/>
+
+  <text x="182" y="200" fill="#7DDBCD" font-family="PT Sans, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">ARTICLE 17</text>
+  <text x="182" y="262" fill="#F3F8FC" font-family="Palatino Linotype, Georgia, serif" font-size="50" font-weight="700">Sudden Journey</text>
+  <text x="182" y="322" fill="#F3F8FC" font-family="Palatino Linotype, Georgia, serif" font-size="50" font-weight="700">and GitHub Portfolio</text>
+  <text x="182" y="380" fill="#BBD1E3" font-family="PT Sans, Arial, sans-serif" font-size="24">Travel pressure, academic deadlines,</text>
+  <text x="182" y="414" fill="#BBD1E3" font-family="PT Sans, Arial, sans-serif" font-size="24">and completing a portfolio project.</text>
+</svg>

@@ -1,16 +1,48 @@
-function toggleColor() {
-  var meta = document.querySelector('meta[name=color-scheme]');
-  var dark = meta.getAttribute('content') == 'light dark' ? matchMedia('(prefers-color-scheme: light)').matches : meta.getAttribute('content') == 'light';
-  meta.setAttribute('content', dark ? 'dark' : 'light');
-}
+(function () {
+  function applyTheme(theme) {
+    var html = document.documentElement;
+    var meta = document.querySelector('meta[name="color-scheme"]');
+    var isLight = theme === "light";
+    html.setAttribute("data-theme", isLight ? "light" : "dark");
+    if (document.body) {
+      document.body.classList.toggle("light-theme", isLight);
+    }
+    if (meta) {
+      meta.setAttribute("content", isLight ? "light" : "dark");
+    }
+    var toggleButton = document.querySelector("[data-theme-toggle]");
+    if (toggleButton) {
+      // Don't change button content - use CSS to show/hide icons
+    }
+  }
 
-function toggle() {
-  if (localStorage.getItem('toggle'))
-    localStorage.removeItem('toggle');
-  else
-    localStorage.setItem('toggle', 1);
-  toggleColor();
-}
+  function getStoredTheme() {
+    try {
+      return localStorage.getItem("site-theme") || "dark";
+    } catch (error) {
+      return "dark";
+    }
+  }
 
-if (localStorage.getItem('toggle'))
-  toggleColor();
+  function storeTheme(theme) {
+    try {
+      localStorage.setItem("site-theme", theme);
+    } catch (error) {}
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    applyTheme(getStoredTheme());
+
+    var toggleButton = document.querySelector("[data-theme-toggle]");
+    if (!toggleButton) {
+      return;
+    }
+
+    toggleButton.addEventListener("click", function () {
+      var currentTheme = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
+      var nextTheme = currentTheme === "light" ? "dark" : "light";
+      storeTheme(nextTheme);
+      applyTheme(nextTheme);
+    });
+  });
+})();
